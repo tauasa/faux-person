@@ -230,6 +230,6 @@ age bounds, emails, phones, addresses, how region and gender pick names, the
 size and shape of every data file, and the CLI. The build also produces the
 sources and javadoc jars, and fails if anyone adds a runtime dependency.
 
-## Licence
+## License
 
-No licence has been chosen yet, so all rights are reserved until one is.
+MIT License
