@@ -59,10 +59,9 @@ final class DataSet {
 
     final Map<Region, List<FirstName>> firstNames = new EnumMap<>(Region.class);
     final Map<Region, List<Surname>> surnames = new EnumMap<>(Region.class);
-    /** Each region's first names for women (F and U), men (M and U) and anyone. */
+    /** Each region's first names for women (F and U) and for men (M and U). */
     private final Map<Region, Weighted<FirstName>> femaleNames = new EnumMap<>(Region.class);
     private final Map<Region, Weighted<FirstName>> maleNames = new EnumMap<>(Region.class);
-    private final Map<Region, Weighted<FirstName>> anyNames = new EnumMap<>(Region.class);
     private final Map<Region, Weighted<Surname>> weightedSurnames = new EnumMap<>(Region.class);
     final List<Company> companies;
     final List<Street> streets;
@@ -141,7 +140,6 @@ final class DataSet {
             firstNames.put(r, fn);
             femaleNames.put(r, weighted(fn.stream().filter(f -> f.gender() != 'M').toList(), FirstName::weight));
             maleNames.put(r, weighted(fn.stream().filter(f -> f.gender() != 'F').toList(), FirstName::weight));
-            anyNames.put(r, weighted(fn, FirstName::weight));
             List<Surname> sn = read(p + "_surnames.txt", 1, DataSet::surname);
             surnames.put(r, sn);
             weightedSurnames.put(r, weighted(sn, Surname::weight));
@@ -212,14 +210,16 @@ final class DataSet {
 
     /**
      * A first name from the region that suits the gender, each drawn in
-     * proportion to its weight. Women get F and U names, men M and U names,
-     * and nonbinary people any name. One draw from {@code random}.
+     * proportion to its weight. Women get F and U names and men M and U
+     * names. A nonbinary person gets a woman's or a man's name at 50/50, the
+     * way their surname is chosen, so Wikidata's surplus of men doesn't tilt
+     * them toward men's names. One draw from {@code random}, two for nonbinary.
      */
     FirstName pickFirstName(Region r, Gender gender, SplittableRandom random) {
         Weighted<FirstName> names = switch (gender) {
             case FEMALE -> femaleNames.get(r);
             case MALE -> maleNames.get(r);
-            case NONBINARY -> anyNames.get(r);
+            case NONBINARY -> random.nextBoolean() ? femaleNames.get(r) : maleNames.get(r);
         };
         if (names == null) {
             throw new IllegalStateException("no " + gender + " first names in the " + r + " list");

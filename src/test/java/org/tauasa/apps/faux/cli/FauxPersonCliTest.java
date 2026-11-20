@@ -6,7 +6,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
 
 class FauxPersonCliTest {
 
@@ -113,5 +116,28 @@ class FauxPersonCliTest {
     void helpPrintsUsage() {
         assertEquals(0, run("--help"));
         assertTrue(out.contains("--region"), out);
+        assertTrue(out.contains("--data-dir"), out);
+    }
+
+    @Test
+    void dataDirReplacesTheBundledFiles(@TempDir Path dir) throws Exception {
+        Files.writeString(dir.resolve("western_surnames.txt"), "Quill\n");
+        assertEquals(0, run("-n", "20", "-s", "4", "-r", "western", "-f", "pipe", "--data-dir", dir.toString()));
+        out.lines().skip(1).forEach(l -> assertEquals("Quill", l.split("\\|")[1], l));
+    }
+
+    @Test
+    void dataDirProblemsExitNonZeroWithTheReason(@TempDir Path dir) throws Exception {
+        assertEquals(2, run("--data-dir", dir.resolve("missing").toString()));
+        assertTrue(err.contains("not a folder"), err);
+        assertEquals(2, run("--data-dir"));
+        Files.writeString(dir.resolve("western_firstnames.txt"), "Annika|F\n");
+        assertEquals(2, run("--data-dir", dir.toString()));
+        assertTrue(err.contains("western_firstnames.txt"), err);
+        Files.delete(dir.resolve("western_firstnames.txt"));
+        Files.writeString(dir.resolve("western_first_names.txt"), "Annika|X\n");
+        assertEquals(1, run("--data-dir", dir.toString()));
+        assertTrue(err.contains("western_first_names.txt:1") && !err.contains("usage:"), err);
+        assertEquals("", out);
     }
 }

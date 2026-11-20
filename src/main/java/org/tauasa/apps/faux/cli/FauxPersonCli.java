@@ -1,6 +1,9 @@
 package org.tauasa.apps.faux.cli;
 
 import java.io.PrintStream;
+import java.io.UncheckedIOException;
+import java.nio.file.InvalidPathException;
+import java.nio.file.Path;
 import java.time.Clock;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
@@ -32,6 +35,9 @@ public final class FauxPersonCli {
                                    (default today); fix it to get the same birth
                                    dates every day
               -f, --format F       text, pipe or json (default text)
+                  --data-dir DIR   read data files from DIR in place of the bundled
+                                   ones with the same names (README.md, "Use your
+                                   own data")
               -h, --help           show this help
 
             The seed in use is printed to standard error, so a run can be replayed.
@@ -51,7 +57,7 @@ public final class FauxPersonCli {
         System.exit(run(args, System.out, System.err));
     }
 
-    /** Runs the CLI and returns its exit code: 0 ok, 2 bad arguments. */
+    /** Runs the CLI and returns its exit code: 0 ok, 1 a bad data file, 2 bad arguments. */
     static int run(String[] args, PrintStream out, PrintStream err) {
         int count = 10;
         Long seed = null;
@@ -60,6 +66,7 @@ public final class FauxPersonCli {
         int maxAge = 90;
         Format format = Format.TEXT;
         LocalDate today = null;
+        Path dataDir = null;
         try {
             for (int i = 0; i < args.length; i++) {
                 String a = args[i];
@@ -75,6 +82,7 @@ public final class FauxPersonCli {
                     case "--max-age" -> maxAge = nonNegative(a, value(args, ++i, a));
                     case "-f", "--format" -> format = parseFormat(value(args, ++i, a));
                     case "--today" -> today = parseDate(a, value(args, ++i, a));
+                    case "--data-dir" -> dataDir = parsePath(a, value(args, ++i, a));
                     default -> throw new IllegalArgumentException("unknown option: " + a);
                 }
             }
@@ -85,7 +93,7 @@ public final class FauxPersonCli {
             // always agree, even if a run crosses midnight.
             Clock clock = Clock.fixed(today.atStartOfDay(ZoneOffset.UTC).toInstant(), ZoneOffset.UTC);
             PersonGenerator.Builder b = PersonGenerator.builder()
-                    .region(region).ageRange(minAge, maxAge).clock(clock);
+                    .region(region).ageRange(minAge, maxAge).clock(clock).dataDirectory(dataDir);
             if (seed != null) {
                 b.seed(seed);
             }
@@ -112,6 +120,10 @@ public final class FauxPersonCli {
             err.println("faux-person: " + e.getMessage());
             err.print(USAGE);
             return 2;
+        } catch (IllegalStateException | UncheckedIOException e) {
+            // A data file in --data-dir is empty, has a bad line or can't be read.
+            err.println("faux-person: " + e.getMessage());
+            return 1;
         }
     }
 
@@ -143,6 +155,14 @@ public final class FauxPersonCli {
             return LocalDate.parse(v);
         } catch (DateTimeParseException e) {
             throw new IllegalArgumentException(option + " must be a date like 2026-11-20: " + v);
+        }
+    }
+
+    private static Path parsePath(String option, String v) {
+        try {
+            return Path.of(v);
+        } catch (InvalidPathException e) {
+            throw new IllegalArgumentException(option + " is not a valid path: " + v);
         }
     }
 

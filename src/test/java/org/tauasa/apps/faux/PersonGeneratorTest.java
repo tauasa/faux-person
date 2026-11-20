@@ -148,6 +148,20 @@ class PersonGeneratorTest {
     }
 
     @Test
+    void nonbinaryPeopleGetWomensAndMensNamesAboutEvenly() {
+        // Wikidata has far more men, so a pick from every name would lean male.
+        Set<String> women = names(Region.RUS, 'F');
+        Set<String> men = names(Region.RUS, 'M');
+        List<String> firsts = gen(16).region(Region.RUS).genderWeights(0, 0, 1).build().next(4000).stream()
+                .map(Person::firstName).toList();
+        long fromWomen = firsts.stream().filter(f -> women.contains(f) && !men.contains(f)).count();
+        long fromMen = firsts.stream().filter(f -> men.contains(f) && !women.contains(f)).count();
+        // U names sit in both lists; the rest split about evenly.
+        double share = (double) fromWomen / (fromWomen + fromMen);
+        assertTrue(share > 0.45 && share < 0.55, "share of women's names: " + share);
+    }
+
+    @Test
     void firstNamesAreDrawnInProportionToTheirWeight() {
         // Men draw from the M and U names, so Aleksandr's share is of those.
         var men = DATA.firstNames.get(Region.RUS).stream().filter(f -> f.gender() != 'F').toList();

@@ -223,6 +223,7 @@ always goes to stderr, so it never ends up in your output.
 | `--min-age N`, `--max-age N` | Youngest and oldest age | 18, 90 |
 | `--today DATE` | The date ages are counted from, as `YYYY-MM-DD`. With `--seed`, it gives the same birth dates on any day. Another date changes only the birth dates and ages | today |
 | `-f, --format F` | `text`, `pipe` or `json` | `text` |
+| `--data-dir DIR` | Read data files from `DIR` in place of the bundled ones with the same names, as `dataDirectory` does in Java ([Use your own data](#use-your-own-data)) | the bundled data |
 | `-h, --help` | Show the options | |
 
 `-o` and `--rebuild` belong to the script. Every other option is passed to the
@@ -256,7 +257,9 @@ fit):
 ```
 
 When an argument is bad, the CLI names the problem, prints the options, and
-exits with code 2.
+exits with code 2. That includes a `--data-dir` that isn't a folder or holds a
+misspelled file name. When a file in `--data-dir` is empty or has a bad line,
+it names the file and line and exits with code 1.
 
 ## Where the data comes from
 

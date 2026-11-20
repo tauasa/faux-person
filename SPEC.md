@@ -31,6 +31,8 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 | 2026-11-20 | Every data file starts with a **`#` header line** naming its fields, its source and its build date. The build scripts write it |
 | 2026-11-20 | The three files the generator doesn't read (`us_cities_states_zip.txt` and the two `rok_hangul_*.txt`) **moved out of the jar** to `tools/data/extra/` |
 | 2026-11-20 | **`Builder.dataDirectory(Path)`**: a folder whose files replace the bundled ones of the same name. A `.txt` file there with a name the generator doesn't read is an error, not ignored, so a misspelling can't silently fall back to the bundled data |
+| 2026-11-20 | **Non-binary first names are 50/50**: a coin flip picks the women's or the men's list, like the surname. Before, every name was in one list, and men's names outweighed women's. Seeds that produce a non-binary person give different people from that point on |
+| 2026-11-20 | The CLI's **`--data-dir DIR`** passes a folder to `dataDirectory`. A bad data file exits 1; a bad argument still exits 2 |
 | 2026-11-20 | License: **MIT**. Version **0.1.0**, set up for Maven Central. Uploads stop at "validated", so a person presses Publish |
 | 2026-11-20 | **Every data file must be clean Unicode**: strict UTF-8 without a byte-order mark, NFC-normalized, no control or invisible format characters, Unix line endings. `DataSetTest` enforces it |
 | 2026-11-19 | Data files keep the names the owner gave them. First placed at the root of `src/main/resources/`, then moved the same day to **`src/main/resources/org/tauasa/apps/faux/data/`**, so their generic names can't collide with another jar's on a consumer's classpath |
@@ -113,7 +115,7 @@ every seed produces (see *Versioning*).
 |---|---|---|
 | 1 | `region` | The builder's region, or uniform over all 24 when it's `null` |
 | 2 | `gender` | Weighted pick from `genderWeights` |
-| 3 | `firstName` | From the region's first-name file, each in proportion to its weight, in one draw like the surname: from the `F` and `U` names for women, the `M` and `U` names for men, and every name for non-binary |
+| 3 | `firstName` | From the region's first-name file, each in proportion to its weight, in one draw like the surname: from the `F` and `U` names for women, the `M` and `U` names for men. For non-binary, a coin flip picks the women's or the men's list first, as for the surname, so Wikidata's surplus of men doesn't tilt them toward men's names |
 | 4 | `lastName` | From the region's surname file, each in proportion to its weight: one `nextLong(total weight)`, then a binary search of the running totals. Women get the feminine form, men the masculine, non-binary either at 50/50 |
 | 5 | `dateOfBirth` | Uniform day between the earliest and latest birthdays that give an age in range on the clock's today |
 | 6 | `employer` | Uniform from `us_companies_domains.txt` |
@@ -262,7 +264,8 @@ the bundled files' shape.
 | `split()` is reproducible and differs from the parent | Splitting shares state |
 | Every null field of every record is rejected | A half-built record can exist |
 | Each region has 1,000+ distinct first names and surnames, 400+ each for women and men; 20+ cities in each of the 50 states; streets and companies are in the 50 states; 1,000+ companies with distinct domains | A data rebuild shrinks or breaks a file |
-| CLI: count, replay by seed, `--today` fixes birth dates and ages (another day changes only those two columns), pipe columns, JSON shape and escaping, bad arguments exit 2 | The tool's contract breaks |
+| CLI: count, replay by seed, `--today` fixes birth dates and ages (another day changes only those two columns), pipe columns, JSON shape and escaping, bad arguments exit 2, `--data-dir` replaces files and a bad data file exits 1 | The tool's contract breaks |
+| Non-binary people's first names split about 50/50 between women's and men's names | Non-binary names lean toward one gender again |
 
 ## 6. Repo and CI
 
