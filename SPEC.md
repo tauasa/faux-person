@@ -18,6 +18,7 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 
 | Date | Decision |
 |---|---|
+| 2026-11-20 | Generated emails are at the employer's domain with its suffix replaced by the reserved **`.example`** (RFC 2606): `costco.com` becomes `costco.example`. This replaces the 2026-11-19 real-domain ruling below, so no generated email can deliver to a real inbox before 0.1.0 is published. `Company.domain` stays the real domain. Draw order and every seed's people are unchanged; only the email text differs |
 | 2026-11-19 | Generated emails use **real company domains** from `us_companies_domains.txt`, every time, replacing the reserved `example.*` domains. An address like `jane.doe12@costco.com` could belong to a real person and could deliver. Goal 3 is narrowed to match |
 | 2026-11-19 | Addresses use **real street names with their real city, state and ZIP**, plus a random house number 1–9999. A generated address can match a real home. It isn't aimed at any one |
 | 2026-11-19 | Asian and Russian/former-Soviet names are **written in Latin letters**: Asian names folded to ASCII (Ting, Nguyen), others keeping their diacritics (Jüri, Nováková) |
@@ -46,8 +47,9 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 2. **Reproducible.** The same seed and settings always give the same people,
    on any JDK 17+, for a given release of the bundled data.
 3. **Phone numbers are never real.** Every number is in NANP's 555-0100 to
-   555-0199 range, set aside for fiction. Emails and addresses are realistic
-   by decision (above), so generated people must not be used to send anything.
+   555-0199 range, set aside for fiction. **Emails are never deliverable**:
+   they're under the reserved `.example` domain. Addresses use real streets by
+   decision (above), so nothing should be mailed to one.
 4. Zero runtime dependencies.
 
 ## Non-goals for v1
@@ -120,7 +122,7 @@ every seed produces (see *Versioning*).
 | 4 | `lastName` | From the region's surname file, each in proportion to its weight: one `nextLong(total weight)`, then a binary search of the running totals. Women get the feminine form, men the masculine, non-binary either at 50/50 |
 | 5 | `dateOfBirth` | Uniform day between the earliest and latest birthdays that give an age in range on the clock's today |
 | 6 | `employer` | Uniform from `us_companies_domains.txt` |
-| 7 | `email` | `first.last`, folded to lowercase ASCII, plus a 0–99 suffix on a coin flip, `@` the employer's domain |
+| 7 | `email` | `first.last`, folded to lowercase ASCII, plus a 0–99 suffix on a coin flip, `@` the employer's domain with its suffix replaced by `.example` |
 | 8 | `phone` | `(AAA) 555-01NN`: AAA is 200–999 but not N11, NN is 00–99 |
 | 9 | `address` | Uniform line from `us_street_names_city_state_zip.txt`, then a house number 1–9999. Country `US` |
 
@@ -254,7 +256,7 @@ the bundled files' shape.
 |---|---|
 | Same seed, same 1,000 people; different seeds differ; `seed()` replays | Generation stops being reproducible |
 | Ages at `ageRange(30,30)` and `(0,120)` with a fixed clock; 29 February | Date-of-birth bounds are off by one |
-| Email is `first.last[nn]@` the employer's domain, from the company file | Email and employer drift apart |
+| Email is `first.last[nn]@` the employer's domain under `.example`, from the company file, and no two employers share an email domain | Email and employer drift apart, or an email could deliver |
 | Phone matches `^\([2-9]\d{2}\) 555-01\d{2}$`, no N11 | A real-range number can come out |
 | Address is a bundled street line plus a 1–9999 house number | Addresses are invented or mismatched |
 | Per region: names come from that region's files and fit the gender; women get feminine surnames | Region or gender rules break |

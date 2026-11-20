@@ -91,7 +91,7 @@ public final class PersonGenerator {
         };
         LocalDate dob = pickDateOfBirth();
         Company employer = pick(data.companies);
-        String email = emailLocalPart(first, last) + "@" + employer.domain();
+        String email = emailLocalPart(first, last) + "@" + emailDomain(employer.domain());
         String phone = String.format(Locale.ROOT, "(%03d) 555-01%02d", pickAreaCode(), random.nextInt(100));
         DataSet.Street s = pick(data.streets);
         int houseNumber = 1 + random.nextInt(9999);
@@ -466,6 +466,16 @@ public final class PersonGenerator {
             local += random.nextInt(100);
         }
         return local;
+    }
+
+    /**
+     * The employer's domain under the reserved {@code .example} top-level
+     * domain (RFC 2606), so a generated email can never be delivered:
+     * {@code costco.com} becomes {@code costco.example}.
+     */
+    static String emailDomain(String domain) {
+        int dot = domain.lastIndexOf('.');
+        return (dot < 0 ? domain : domain.substring(0, dot)) + ".example";
     }
 
     private static String ascii(String s) {

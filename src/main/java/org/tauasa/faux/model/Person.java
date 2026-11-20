@@ -15,7 +15,7 @@ import java.util.Objects;
  * @param gender      gender
  * @param region      region the names were drawn from
  * @param dateOfBirth date of birth
- * @param email       email address; a generated one is at the employer's domain
+ * @param email       email address; a generated one is at the employer's name under the reserved {@code .example} domain, so it can't be delivered
  * @param phone       phone number; a generated one is in the fictional 555-0100 to 555-0199 range
  * @param address     postal address
  * @param employer    employer
@@ -39,7 +39,7 @@ public record Person(
      * @param gender      gender
      * @param region      region the names were drawn from
      * @param dateOfBirth date of birth
-     * @param email       email address; a generated one is at the employer's domain
+     * @param email       email address; a generated one is at the employer's name under the reserved {@code .example} domain, so it can't be delivered
      * @param phone       phone number; a generated one is in the fictional 555-0100 to 555-0199 range
      * @param address     postal address
      * @param employer    employer

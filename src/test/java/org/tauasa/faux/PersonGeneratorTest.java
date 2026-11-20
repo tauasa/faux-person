@@ -68,15 +68,25 @@ class PersonGeneratorTest {
     }
 
     @Test
-    void emailIsNameAtEmployersDomain() {
+    void emailIsNameAtEmployersNameUnderDotExample() {
         Set<String> domains = DATA.companies.stream().map(Company::domain).collect(Collectors.toSet());
-        Pattern shape = Pattern.compile("^[a-z0-9]+\\.[a-z0-9]+\\d{0,2}@[a-z0-9.-]+$");
+        Pattern shape = Pattern.compile("^[a-z0-9]+\\.[a-z0-9]+\\d{0,2}@[a-z0-9-]+\\.example$");
         for (Person p : gen(3).build().next(2000)) {
             String e = p.email();
             assertTrue(shape.matcher(e).matches(), e);
-            assertTrue(e.endsWith("@" + p.employer().domain()), e);
-            assertTrue(domains.contains(p.employer().domain()), e);
+            String d = p.employer().domain();
+            assertTrue(domains.contains(d), e);
+            assertEquals(d.substring(0, d.lastIndexOf('.')) + ".example", e.substring(e.indexOf('@') + 1), e);
         }
+    }
+
+    @Test
+    void emailDomainsAreUniqueUnderDotExample() {
+        // Dropping the suffix must not merge two employers into one email domain.
+        assertEquals(DATA.companies.size(), DATA.companies.stream()
+                .map(c -> PersonGenerator.emailDomain(c.domain())).distinct().count());
+        assertEquals("costco.example", PersonGenerator.emailDomain("costco.com"));
+        assertEquals("localhost.example", PersonGenerator.emailDomain("localhost"));
     }
 
     @Test

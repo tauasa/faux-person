@@ -3,7 +3,7 @@
 A Java 17 library and command-line tool that generate random, realistic people
 for tests, demos and seed data. Each person has a name, gender, date of birth,
 email, phone, US street address and employer, and the fields agree with each
-other: the email is built from the name at the employer's domain, a woman with
+other: the email is built from the name and the employer, a woman with
 a Russian surname gets the feminine form (Petrova, not Petrov), and the age
 fits the date of birth. Names come up about as often as they do in real life:
 about one South Korean in five is a Kim, and so is about one generated one,
@@ -16,15 +16,17 @@ birth dates on another day. It has no runtime dependencies.
 
 ```text
 $ ./faux-person.sh -n 3 --seed 42 --today 2026-11-20
-Juha Karvonen (male, 63) <juha.karvonen@morganstanley.com> (319) 555-0128, 9694 W 6th Ave, Humboldt, SD 57035, works at Morgan Stanley
-Jose Barra (male, 36) <jose.barra48@fourwaybooks.com> (260) 555-0158, 8418 Golden Aster Ct, Noblesville, IN 46062, works at Four Way Books
-Jens Klausen (male, 73) <jens.klausen@catabasis.com> (959) 555-0112, 4859 Page St, Manchester, NH 03109, works at Catabasis Pharmaceuticals
+Juha Karvonen (male, 63) <juha.karvonen@morganstanley.example> (319) 555-0128, 9694 W 6th Ave, Humboldt, SD 57035, works at Morgan Stanley
+Jose Barra (male, 36) <jose.barra48@fourwaybooks.example> (260) 555-0158, 8418 Golden Aster Ct, Noblesville, IN 46062, works at Four Way Books
+Jens Klausen (male, 73) <jens.klausen@catabasis.example> (959) 555-0112, 4859 Page St, Manchester, NH 03109, works at Catabasis Pharmaceuticals
 ```
 
-> **Don't send anything to a generated person.** Emails use real company
-> domains and addresses use real streets, so a generated email or address can
-> belong to someone real. Phone numbers are always in the 555-0100 to 555-0199
-> range, which is reserved for fiction.
+> **Emails and phone numbers can't reach anyone.** Emails are at the
+> employer's name under `.example`, a domain reserved so mail to it is never
+> delivered (`costco.com` becomes `costco.example`). Phone numbers are always
+> in the 555-0100 to 555-0199 range, which is reserved for fiction. Addresses
+> use real streets with a random house number, so one can match a real home:
+> don't mail anything to a generated address.
 
 ## The model
 
@@ -85,7 +87,7 @@ enums. `PersonGenerator`, in `org.tauasa.faux`, creates people.*
 |---|---|
 | `Person` | Name, gender, the region the names came from, date of birth, email, phone, address and employer. There's no age field, because a stored age goes stale: call `ageOn(date)` |
 | `Address` | Street with house number (`2304 Eileen Ave`), city, two-letter state, five-digit ZIP, and country, always `US` |
-| `Company` | A real US company: name, headquarters city and state, and web domain. It supplies the email domain |
+| `Company` | A real US company: name, headquarters city and state, and web domain. The email domain is its name under `.example` |
 | `Gender` | `FEMALE`, `MALE` or `NONBINARY`. Women get women's and unisex first names and the feminine surname form, men get men's and unisex names and the masculine form. A nonbinary person gets a woman's or a man's first name at 50/50, and either surname form at 50/50 |
 | `Region` | Where the names come from, in 24 values. Three broad ones: `WESTERN` (the Americas, Europe, Australia, New Zealand), `ASIA` (East, South and Southeast Asia) and `RUS` (Russia and the former Soviet Union). Three African: `NAF`, `CAF`, `SAF` (North, Central and Southern Africa). The rest are countries, by ISO code: `ROK` (South Korea), `JPN`, `PHL`, `VNM`, `THA`, `MEX`, `BRA`, `IRN`, `PSE`, `GBR`, `FRA`, `ESP`, `PRT`, `GRC`, `NOR`, `SWE`, `FIN`. The odd one out is `HEB`, which holds Hebrew names, from Israeli citizens |
 
@@ -242,7 +244,7 @@ plus `-r asia`:
 
 ```text
 first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer
-Juha|Karvonen|MALE|FIN|1963-08-07|63|juha.karvonen@morganstanley.com|(319) 555-0128|9694 W 6th Ave|Humboldt|SD|57035|Morgan Stanley
+Juha|Karvonen|MALE|FIN|1963-08-07|63|juha.karvonen@morganstanley.example|(319) 555-0128|9694 W 6th Ave|Humboldt|SD|57035|Morgan Stanley
 ```
 
 `json` prints one array, with each person on its own line (wrapped here to
@@ -251,7 +253,7 @@ fit):
 ```json
 [
   {"firstName":"Maya","lastName":"Guo","gender":"FEMALE","region":"ASIA","dateOfBirth":"2007-02-06","age":19,
-   "email":"maya.guo56@spglobal.com","phone":"(319) 555-0128",
+   "email":"maya.guo56@spglobal.example","phone":"(319) 555-0128",
    "address":{"street":"9694 W 6th Ave","city":"Humboldt","state":"SD","postalCode":"57035","country":"US"},
    "employer":{"name":"S&P Global","city":"New York City","state":"NY","domain":"spglobal.com"}}
 ]
