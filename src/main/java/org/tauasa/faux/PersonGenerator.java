@@ -39,9 +39,11 @@ public final class PersonGenerator {
     private final Region region;
     private final Clock clock;
     private final DataSet data;
+    private final boolean realCompanies;
 
     private PersonGenerator(long seed, SplittableRandom random, int minAge, int maxAge,
-                            int[] genderWeights, Region region, Clock clock, DataSet data) {
+                            int[] genderWeights, Region region, Clock clock, DataSet data,
+                            boolean realCompanies) {
         this.seed = seed;
         this.random = random;
         this.minAge = minAge;
@@ -50,11 +52,13 @@ public final class PersonGenerator {
         this.region = region;
         this.clock = clock;
         this.data = data;
+        this.realCompanies = realCompanies;
     }
 
     /**
      * Starts a builder with the defaults: a random seed, ages 18 to 90, gender
-     * weights 49/49/2, names from every region, and the system clock.
+     * weights 49/49/2, names from every region, the system clock, and
+     * employers marked as not real (see {@link Builder#realCompanies(boolean)}).
      *
      * @return a new builder
      */
@@ -90,8 +94,8 @@ public final class PersonGenerator {
             case NONBINARY -> random.nextBoolean() ? sn.feminine() : sn.masculine();
         };
         LocalDate dob = pickDateOfBirth();
-        Company employer = pick(data.companies);
-        String email = emailLocalPart(first, last) + "@" + emailDomain(employer.domain());
+        Company employer = employer(pick(data.companies));
+        String email = emailLocalPart(first, last) + "@" + employer.domain();
         String phone = String.format(Locale.ROOT, "(%03d) 555-01%02d", pickAreaCode(), random.nextInt(100));
         DataSet.Street s = pick(data.streets);
         int houseNumber = 1 + random.nextInt(9999);
@@ -137,7 +141,8 @@ public final class PersonGenerator {
      * @return the new generator
      */
     public PersonGenerator split() {
-        return new PersonGenerator(seed, random.split(), minAge, maxAge, genderWeights, region, clock, data);
+        return new PersonGenerator(seed, random.split(), minAge, maxAge, genderWeights, region, clock, data,
+                realCompanies);
     }
 
     // ---- One-line conveniences -------------------------------------------
@@ -469,6 +474,16 @@ public final class PersonGenerator {
     }
 
     /**
+     * The company as it appears as an employer. By default its name starts
+     * with {@code *} and its domain is under {@code .example}, so neither reads
+     * as a real person's real employer: {@code *Costco} at {@code costco.example}.
+     * With {@link Builder#realCompanies(boolean)} it's the company as it is.
+     */
+    private Company employer(Company c) {
+        return realCompanies ? c : new Company("*" + c.name(), c.city(), c.state(), emailDomain(c.domain()));
+    }
+
+    /**
      * The employer's domain under the reserved {@code .example} top-level
      * domain (RFC 2606), so a generated email can never be delivered:
      * {@code costco.com} becomes {@code costco.example}.
@@ -497,6 +512,7 @@ public final class PersonGenerator {
         private Region region;
         private Clock clock = Clock.systemDefaultZone();
         private Path dataDirectory;
+        private boolean realCompanies;
 
         private Builder() {
         }
@@ -578,6 +594,24 @@ public final class PersonGenerator {
         }
 
         /**
+         * Whether employers and emails use real companies. By default
+         * ({@code false}) each employer's name starts with {@code *} and its
+         * domain, and so the email's, is under the reserved {@code .example}
+         * domain, which never delivers mail: {@code *Costco},
+         * {@code jane.doe@costco.example}. With {@code true} the employer is the
+         * real company and the email is at its real domain, such as
+         * {@code jane.doe@costco.com}, which could be a real person's inbox.
+         * Either way the same seed gives the same people.
+         *
+         * @param real {@code true} for real company names and email domains
+         * @return this builder
+         */
+        public Builder realCompanies(boolean real) {
+            this.realCompanies = real;
+            return this;
+        }
+
+        /**
          * Checks the settings and builds the generator.
          *
          * @return a new generator
@@ -605,7 +639,8 @@ public final class PersonGenerator {
             }
             long s = seed != null ? seed : new SplittableRandom().nextLong();
             DataSet data = dataDirectory == null ? DataSet.get() : DataSet.load(dataDirectory);
-            return new PersonGenerator(s, new SplittableRandom(s), minAge, maxAge, genderWeights, region, clock, data);
+            return new PersonGenerator(s, new SplittableRandom(s), minAge, maxAge, genderWeights, region, clock, data,
+                    realCompanies);
         }
     }
 }

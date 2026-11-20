@@ -68,16 +68,44 @@ class PersonGeneratorTest {
     }
 
     @Test
-    void emailIsNameAtEmployersNameUnderDotExample() {
-        Set<String> domains = DATA.companies.stream().map(Company::domain).collect(Collectors.toSet());
+    void byDefaultEmployersAreMarkedAndEmailsAreUnderDotExample() {
+        Set<Company> marked = DATA.companies.stream()
+                .map(c -> new Company("*" + c.name(), c.city(), c.state(), PersonGenerator.emailDomain(c.domain())))
+                .collect(Collectors.toSet());
         Pattern shape = Pattern.compile("^[a-z0-9]+\\.[a-z0-9]+\\d{0,2}@[a-z0-9-]+\\.example$");
         for (Person p : gen(3).build().next(2000)) {
             String e = p.email();
             assertTrue(shape.matcher(e).matches(), e);
-            String d = p.employer().domain();
-            assertTrue(domains.contains(d), e);
-            assertEquals(d.substring(0, d.lastIndexOf('.')) + ".example", e.substring(e.indexOf('@') + 1), e);
+            assertTrue(marked.contains(p.employer()), p.employer().toString());
+            assertTrue(e.endsWith("@" + p.employer().domain()), e);
         }
+    }
+
+    @Test
+    void realCompaniesGivesTheRealEmployerAndDomain() {
+        Set<Company> real = Set.copyOf(DATA.companies);
+        Pattern shape = Pattern.compile("^[a-z0-9]+\\.[a-z0-9]+\\d{0,2}@[a-z0-9.-]+$");
+        for (Person p : gen(3).realCompanies(true).build().next(2000)) {
+            assertTrue(real.contains(p.employer()), p.employer().toString());
+            assertTrue(shape.matcher(p.email()).matches(), p.email());
+            assertTrue(p.email().endsWith("@" + p.employer().domain()), p.email());
+        }
+    }
+
+    @Test
+    void realCompaniesChangesOnlyTheEmployerAndEmail() {
+        List<Person> marked = gen(7).build().next(500);
+        List<Person> real = gen(7).realCompanies(true).build().next(500);
+        for (int i = 0; i < marked.size(); i++) {
+            Person m = marked.get(i), r = real.get(i);
+            assertEquals("*" + r.employer().name(), m.employer().name());
+            assertEquals(r.email().substring(0, r.email().indexOf('@')), m.email().substring(0, m.email().indexOf('@')));
+            assertEquals(new Person(r.firstName(), r.lastName(), r.gender(), r.region(), r.dateOfBirth(),
+                    m.email(), r.phone(), r.address(), m.employer()), m);
+        }
+        // split() carries the setting.
+        assertTrue(DATA.companies.contains(gen(7).realCompanies(true).build().split().next().employer()));
+        assertTrue(gen(7).build().split().next().employer().name().startsWith("*"));
     }
 
     @Test
@@ -307,7 +335,8 @@ class PersonGeneratorTest {
             assertTrue(p.firstName().equals("Annika") || p.gender() != Gender.FEMALE, p.toString());
         }
         // Companies and other regions still come from the bundled files.
-        assertTrue(DATA.companies.contains(people.get(0).employer()));
+        String employer = people.get(0).employer().name();
+        assertTrue(DATA.companies.stream().anyMatch(c -> ("*" + c.name()).equals(employer)), employer);
         Person rus = gen(3).region(Region.RUS).dataDirectory(dir).build().next();
         assertEquals(gen(3).region(Region.RUS).build().next(), rus);
     }

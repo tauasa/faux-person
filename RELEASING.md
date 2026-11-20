@@ -71,6 +71,11 @@ to show up in search.
   downloadable by anyone, even while the GitHub repo is private. The POM's
   `scm` and `url` point at `github.com/tauasa/faux-person`, so make the repo
   public too, or those links will lead nowhere.
-- **The generator makes real-looking contact data.** Emails use real company
-  domains and addresses use real streets, as SPEC.md's decisions record. A
-  public release puts that in front of everyone who adds the dependency.
+- **The generator makes real-looking contact data.** By default employers are
+  real companies marked with a leading `*`, and emails are under the reserved
+  `.example` domain, so they can't deliver. `realCompanies(true)`, or the CLI's
+  `--real-companies`, drops the marks and uses real company names and email
+  domains. Addresses use real streets. SPEC.md's decisions record each choice.
+  A public release puts that in front of everyone who adds the dependency, and
+  whether real company names are acceptable, even behind a switch, is a
+  question for a lawyer before the first release.

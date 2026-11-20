@@ -34,6 +34,21 @@ class FauxPersonCliTest {
     }
 
     @Test
+    void realCompaniesSwitchUsesRealNamesAndDomains() {
+        assertEquals(0, run("-n", "50", "-s", "4", "-f", "pipe", "--today", "2026-11-20"));
+        var marked = out.lines().skip(1).toList();
+        assertEquals(0, run("-n", "50", "-s", "4", "-f", "pipe", "--today", "2026-11-20", "--real-companies"));
+        var real = out.lines().skip(1).toList();
+        for (int i = 0; i < marked.size(); i++) {
+            String[] m = marked.get(i).split("\\|"), r = real.get(i).split("\\|");
+            assertTrue(m[6].endsWith(".example"), m[6]);
+            assertTrue(!r[6].endsWith(".example"), r[6]);
+            assertEquals("*" + r[12], m[12]);
+        }
+        assertTrue(FauxPersonCli.USAGE.contains("--real-companies"));
+    }
+
+    @Test
     void sameSeedPrintsTheSameOutput() {
         run("-n", "5", "-s", "99", "-f", "pipe");
         String first = out;

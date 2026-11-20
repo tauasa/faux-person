@@ -3,12 +3,15 @@ package org.tauasa.faux.model;
 import java.util.Objects;
 
 /**
- * A real US company, used as a generated person's employer and email domain.
+ * A US company, used as a generated person's employer and email domain. The
+ * generator draws real companies and, by default, marks them: the name starts
+ * with {@code *} and the domain is under the reserved {@code .example}
+ * ({@code "*Costco"}, {@code "costco.example"}).
  *
- * @param name   company name, for example {@code "Costco"}
+ * @param name   company name, for example {@code "Costco"} or {@code "*Costco"}
  * @param city   headquarters city
  * @param state  headquarters state, two-letter USPS code
- * @param domain primary web domain, for example {@code "costco.com"}
+ * @param domain web domain, for example {@code "costco.com"} or {@code "costco.example"}
  */
 public record Company(String name, String city, String state, String domain) {
 
@@ -18,7 +21,7 @@ public record Company(String name, String city, String state, String domain) {
      * @param name   company name, for example {@code "Costco"}
      * @param city   headquarters city
      * @param state  headquarters state, two-letter USPS code
-     * @param domain primary web domain, for example {@code "costco.com"}
+     * @param domain web domain, for example {@code "costco.com"} or {@code "costco.example"}
      * @throws NullPointerException if any field is {@code null}
      */
     public Company {

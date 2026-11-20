@@ -38,6 +38,10 @@ public final class FauxPersonCli {
                   --data-dir DIR   read data files from DIR in place of the bundled
                                    ones with the same names (README.md, "Use your
                                    own data")
+                  --real-companies employers and emails use real company names
+                                   and domains (default: names start with *
+                                   and emails are under .example, which never
+                                   delivers)
               -h, --help           show this help
 
             The seed in use is printed to standard error, so a run can be replayed.
@@ -67,6 +71,7 @@ public final class FauxPersonCli {
         Format format = Format.TEXT;
         LocalDate today = null;
         Path dataDir = null;
+        boolean realCompanies = false;
         try {
             for (int i = 0; i < args.length; i++) {
                 String a = args[i];
@@ -83,6 +88,7 @@ public final class FauxPersonCli {
                     case "-f", "--format" -> format = parseFormat(value(args, ++i, a));
                     case "--today" -> today = parseDate(a, value(args, ++i, a));
                     case "--data-dir" -> dataDir = parsePath(a, value(args, ++i, a));
+                    case "--real-companies" -> realCompanies = true;
                     default -> throw new IllegalArgumentException("unknown option: " + a);
                 }
             }
@@ -93,7 +99,8 @@ public final class FauxPersonCli {
             // always agree, even if a run crosses midnight.
             Clock clock = Clock.fixed(today.atStartOfDay(ZoneOffset.UTC).toInstant(), ZoneOffset.UTC);
             PersonGenerator.Builder b = PersonGenerator.builder()
-                    .region(region).ageRange(minAge, maxAge).clock(clock).dataDirectory(dataDir);
+                    .region(region).ageRange(minAge, maxAge).clock(clock).dataDirectory(dataDir)
+                    .realCompanies(realCompanies);
             if (seed != null) {
                 b.seed(seed);
             }
