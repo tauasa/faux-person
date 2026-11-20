@@ -1,0 +1,1 @@
+SELECT ?c ?name ?type (COUNT(DISTINCT ?p) AS ?n) WHERE { VALUES ?c { wd:Q916 wd:Q1009 wd:Q929 wd:Q657 wd:Q971 wd:Q974 wd:Q983 wd:Q1000 wd:Q1039 } ?p wdt:P27 ?c. VALUES ?type {wd:Q12308941 wd:Q11879590 wd:Q3409032} ?p wdt:P735 ?g. ?g wdt:P31 ?type; rdfs:label ?name. FILTER(LANG(?name) IN ("en","mul")) } GROUP BY ?c ?name ?type HAVING(COUNT(DISTINCT ?p) >= 2) ORDER BY ?c DESC(?n)

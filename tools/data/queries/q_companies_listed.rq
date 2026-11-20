@@ -1,0 +1,15 @@
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX psv: <http://www.wikidata.org/prop/statement/value/>
+SELECT ?co ?name ?site ?hqName ?coord ?coCoord ?rev WHERE {
+  { SELECT ?co (MAX(COALESCE(?emp, 0)) AS ?rev) WHERE {
+      ?co wdt:P17 wd:Q30; wdt:P414 ?ex.
+      VALUES ?ex { wd:Q13677 wd:Q82059 }
+      OPTIONAL { ?co wdt:P1128 ?emp }
+      FILTER NOT EXISTS { ?co wdt:P576 ?dissolved }
+      FILTER NOT EXISTS { ?co wdt:P2139 ?anyRevenue }
+    } GROUP BY ?co }
+  ?co rdfs:label ?name. FILTER(LANG(?name) IN ("en","mul"))
+  ?co wdt:P856 ?site.
+  OPTIONAL { ?co wdt:P159 ?hq. OPTIONAL { ?hq rdfs:label ?hqName. FILTER(LANG(?hqName) IN ("en","mul")) } OPTIONAL { ?hq wdt:P625 ?coord } }
+  OPTIONAL { ?co wdt:P625 ?coCoord }
+}
