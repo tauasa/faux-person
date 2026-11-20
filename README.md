@@ -103,7 +103,7 @@ Then add it to your project, usually in test scope:
 <dependency>
   <groupId>org.tauasa.apps</groupId>
   <artifactId>faux-person</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.0</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -173,7 +173,7 @@ directly:
 
 ```bash
 mvn package
-java -jar target/faux-person-0.1.0-SNAPSHOT.jar -n 5 -f json
+java -jar target/faux-person-0.1.0.jar -n 5 -f json
 ```
 
 `pipe` prints a header row and then 13 `|`-separated columns:
@@ -232,4 +232,8 @@ sources and javadoc jars, and fails if anyone adds a runtime dependency.
 
 ## Licence
 
-No licence has been chosen yet, so all rights are reserved until one is.
+MIT, in [LICENSE](LICENSE). The bundled GeoNames data is CC BY 4.0, and
+[NOTICE](NOTICE) gives its attribution. Both files ship inside the jar under
+`META-INF/`.
+
+To publish a release to Maven Central, follow [RELEASING.md](RELEASING.md).
