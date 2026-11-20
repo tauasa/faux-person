@@ -8,7 +8,9 @@ a Russian surname gets the feminine form (Petrova, not Petrov), and the age
 fits the date of birth.
 
 Give it a seed and you get the same people every time, so a failing test can
-be replayed exactly. It has no runtime dependencies.
+be replayed exactly. Birth dates count back from today, so the same seed's
+dates move forward a day each day unless you fix the clock (see below). It has
+no runtime dependencies.
 
 ```text
 $ ./faux-person.sh -n 3 --seed 42
@@ -83,7 +85,7 @@ enums. `PersonGenerator`, in `org.tauasa.apps.faux`, creates people.*
 | `Address` | Street with house number (`2304 Eileen Ave`), city, two-letter state, five-digit ZIP, and country, always `US` |
 | `Company` | A real US company: name, headquarters city and state, and web domain. It supplies the email domain |
 | `Gender` | `FEMALE`, `MALE` or `NONBINARY` |
-| `Region` | Where the names come from. `WESTERN`: the Americas, Europe, Australia and New Zealand. `ASIA`: East, South and Southeast Asia, China and India included. 24 values. Three broad ones: `WESTERN` (the Americas, Europe, Australia, New Zealand), `ASIA` (East, South and Southeast Asia) and `RUS` (Russia and the former Soviet Union). Three African: `NAF`, `CAF`, `SAF` (North, Central and Southern Africa). The rest are countries, by ISO code: `ROK` (South Korea), `JPN`, `PHL`, `VNM`, `THA`, `MEX`, `BRA`, `IRN`, `PSE`, `GBR`, `FRA`, `ESP`, `PRT`, `GRC`, `NOR`, `SWE`, `FIN`. The odd one out is `HEB`, which holds Hebrew names, from Israeli citizens |
+| `Region` | Where the names come from, in 24 values. Three broad ones: `WESTERN` (the Americas, Europe, Australia, New Zealand), `ASIA` (East, South and Southeast Asia) and `RUS` (Russia and the former Soviet Union). Three African: `NAF`, `CAF`, `SAF` (North, Central and Southern Africa). The rest are countries, by ISO code: `ROK` (South Korea), `JPN`, `PHL`, `VNM`, `THA`, `MEX`, `BRA`, `IRN`, `PSE`, `GBR`, `FRA`, `ESP`, `PRT`, `GRC`, `NOR`, `SWE`, `FIN`. The odd one out is `HEB`, which holds Hebrew names, from Israeli citizens |
 
 Every record rejects `null` fields.
 
@@ -144,8 +146,9 @@ to replay a run, call `split()` at the same points.
 
 ## Use the command line
 
-`faux-person.sh` builds the jar the first time you run it (this needs Maven),
-then runs the CLI. People go to stdout, or to a file with `-o`. The seed in use
+`faux-person.sh` builds the jar with Maven the first time you run it, and again
+whenever `pom.xml` or anything under `src/` is newer than the jar, then runs the
+CLI. People go to stdout, or to a file with `-o`. The seed in use
 always goes to stderr, so it never ends up in your output.
 
 ```bash
@@ -159,7 +162,7 @@ always goes to stderr, so it never ends up in your output.
 | Option | Does | Default |
 |---|---|---|
 | `-o, --output FILE` | Write to `FILE` instead of stdout. A failed run leaves no file behind | stdout |
-| `--rebuild` | Rebuild the jar first, for example after pulling changes | |
+| `--rebuild` | Rebuild the jar first, even if it looks up to date | |
 | `-n, --count N` | How many people | 10 |
 | `-s, --seed S` | Seed, to get the same people again | random |
 | `-r, --region R` | Any region in lowercase (`western`, `jpn`, `naf`, …), or `mixed`. `--help` lists all 24 | `mixed` |
@@ -188,7 +191,7 @@ fit):
 
 ```json
 [
-  {"firstName":"Hiroshi","lastName":"Tien","gender":"MALE","region":"ASIA","dateOfBirth":"1974-01-21","age":52,
+  {"firstName":"Hiroshi","lastName":"Tien","gender":"MALE","region":"ASIA","dateOfBirth":"1974-01-22","age":52,
    "email":"hiroshi.tien@disney.com","phone":"(849) 555-0148",
    "address":{"street":"761 Rosemary St","city":"Commerce City","state":"CO","postalCode":"80022","country":"US"},
    "employer":{"name":"The Walt Disney Company","city":"Burbank","state":"CA","domain":"disney.com"}}
@@ -205,11 +208,11 @@ UTF-8 and NFC-normalized, built on 2026-11-19 and 2026-11-20:
 
 | Data | How many | Source |
 |---|---|---|
-| First names and surnames for each of the 24 regions | Up to 1,200 per file. Shorter where Wikidata has fewer people, or the country has fewer names: Vietnamese (95 first names), South Korean surnames (123), Palestinian (342 and 188) |
-| South Korean names in Hangul, with romanization | 1,200 first names, 118 surnames | Wikidata. Bundled for later use: the generator doesn't read them yet | Wikidata (CC0), ranked by how many people of each citizenship carry them |
+| First names and surnames for each of the 24 regions | Up to 1,200 per file. Shorter where Wikidata has fewer people, or the country has fewer names: Vietnamese (95 first names), South Korean surnames (123), Palestinian (342 and 188) | Wikidata (CC0), ranked by how many people of each citizenship carry them |
+| South Korean names in Hangul, with romanization | 1,200 first names, 118 surnames | Wikidata. Bundled for later use: the generator doesn't read them yet |
 | US companies with headquarters and domain | 1,500 | Wikidata: by revenue, then NYSE- and Nasdaq-listed companies by employee count |
 | US streets with city, state and ZIP | 1,500, 30 per state | US Census TIGER/Line 2024 (public domain) |
-| US cities with state and ZIP | 1,250, 25 per state | GeoNames (CC BY 4.0) |
+| US cities with state and ZIP | 1,250, 25 per state | GeoNames (CC BY 4.0). Bundled for later use: addresses come from the streets file |
 
 `NOTICE` gives the full attribution. [`tools/data/`](tools/data/) has the
 scripts that rebuild the files. [SPEC.md](SPEC.md) explains how each field is
@@ -227,7 +230,8 @@ mvn verify
 
 This compiles the code and runs the tests. The tests cover reproducibility,
 age bounds, emails, phones, addresses, how region and gender pick names, the
-size and shape of every data file, and the CLI. The build also produces the
+size and shape of every data file, that every data file is clean UTF-8 in NFC,
+and the CLI. The build also produces the
 sources and javadoc jars, and fails if anyone adds a runtime dependency.
 
 ## License
