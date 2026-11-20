@@ -1,3 +1,4 @@
+# street|city|state|zip; streets and ZIP codes from US Census TIGER/Line 2024, city and state from GeoNames (CC BY 4.0), see NOTICE; built 2026-11-19
 Aero Ave|Anchorage|AK|99502
 Bern St|Anchorage|AK|99507
 Botanical Cir|Anchorage|AK|99515

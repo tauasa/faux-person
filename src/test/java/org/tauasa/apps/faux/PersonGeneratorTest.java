@@ -11,6 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.lang.reflect.Method;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.lang.reflect.Modifier;
 import java.time.Clock;
 import java.time.LocalDate;
@@ -23,6 +25,7 @@ import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 
@@ -145,6 +148,23 @@ class PersonGeneratorTest {
     }
 
     @Test
+    void firstNamesAreDrawnInProportionToTheirWeight() {
+        // Men draw from the M and U names, so Aleksandr's share is of those.
+        var men = DATA.firstNames.get(Region.RUS).stream().filter(f -> f.gender() != 'F').toList();
+        long total = men.stream().mapToLong(DataSet.FirstName::weight).sum();
+        DataSet.FirstName top = men.stream().filter(f -> f.name().equals("Aleksandr")).findFirst().orElseThrow();
+        double expected = (double) top.weight() / total;
+        int n = 20000;
+        long seenCount = gen(15).region(Region.RUS).genderWeights(0, 1, 0).build().next(n).stream()
+                .filter(p -> p.firstName().equals("Aleksandr")).count();
+        double seen = (double) seenCount / n;
+        // Five standard deviations either side: this fails only if the weights are ignored.
+        double sd = Math.sqrt(expected * (1 - expected) / n);
+        assertTrue(Math.abs(seen - expected) < 5 * sd, "Aleksandr: expected " + expected + ", saw " + seen);
+        assertTrue(seen > 10.0 / men.size(), "Aleksandr should be far above a uniform 1/" + men.size());
+    }
+
+    @Test
     void mixedRegionUsesEveryRegion() {
         Set<Region> seen = EnumSet.noneOf(Region.class);
         gen(10).build().next(300).forEach(p -> seen.add(p.region()));
@@ -248,5 +268,46 @@ class PersonGeneratorTest {
                 () -> PersonGenerator.generateListOfRandomPeopleFromAroundTheWorld(-1, 3));
         assertThrows(IllegalArgumentException.class,
                 () -> PersonGenerator.generateListOfRandomPeopleFromAroundTheWorld(4, 3));
+    }
+
+    @Test
+    void dataDirectoryReplacesOnlyTheFilesItHolds(@TempDir Path dir) throws Exception {
+        Files.writeString(dir.resolve("western_first_names.txt"), "# name|gender|weight\nAnnika|F|3\nBodhi|M\n");
+        Files.writeString(dir.resolve("western_surnames.txt"), "Quill\n");
+        Files.writeString(dir.resolve("notes.md"), "not a data file, so ignored\n");
+        List<Person> people = PersonGenerator.builder().seed(3).region(Region.WESTERN)
+                .dataDirectory(dir).build().next(200);
+        for (Person p : people) {
+            assertEquals("Quill", p.lastName());
+            assertTrue(Set.of("Annika", "Bodhi").contains(p.firstName()), p.firstName());
+            assertTrue(p.firstName().equals("Annika") || p.gender() != Gender.FEMALE, p.toString());
+        }
+        // Companies and other regions still come from the bundled files.
+        assertTrue(DATA.companies.contains(people.get(0).employer()));
+        Person rus = gen(3).region(Region.RUS).dataDirectory(dir).build().next();
+        assertEquals(gen(3).region(Region.RUS).build().next(), rus);
+    }
+
+    @Test
+    void dataDirectoryRejectsWhatItCantUse(@TempDir Path dir) throws Exception {
+        assertThrows(IllegalArgumentException.class,
+                () -> PersonGenerator.builder().dataDirectory(dir.resolve("missing")).build());
+        Path typo = Files.createDirectory(dir.resolve("typo"));
+        Files.writeString(typo.resolve("western_firstnames.txt"), "Annika|F\n");
+        IllegalArgumentException e = assertThrows(IllegalArgumentException.class,
+                () -> PersonGenerator.builder().dataDirectory(typo).build());
+        assertTrue(e.getMessage().contains("western_firstnames.txt"), e.getMessage());
+        Path bad = Files.createDirectory(dir.resolve("bad"));
+        Files.writeString(bad.resolve("rok_first_names.txt"), "Ji-hoon|M|97\nSu-jin|X\n");
+        IllegalStateException e2 = assertThrows(IllegalStateException.class,
+                () -> PersonGenerator.builder().dataDirectory(bad).build());
+        assertTrue(e2.getMessage().contains("rok_first_names.txt:2"), e2.getMessage());
+    }
+
+    @Test
+    void splitKeepsTheDataDirectory(@TempDir Path dir) throws Exception {
+        Files.writeString(dir.resolve("western_surnames.txt"), "Quill\n");
+        PersonGenerator child = PersonGenerator.builder().region(Region.WESTERN).dataDirectory(dir).build().split();
+        assertEquals("Quill", child.next().lastName());
     }
 }

@@ -7,6 +7,7 @@ that county's file is over 40 MB): street names that carry a house-number
 range and a ZIP, 30 picked at random (fixed seed), each with the city and
 state GeoNames gives for that ZIP.
 """
+import datetime
 import io
 import os
 import random
@@ -114,6 +115,8 @@ def main(counties_tsv, zipfile_path, dl, out):
             lines.append(f"{name}|{city}|{zst}|{z}")
     lines.sort(key=lambda l: (l.split("|")[2], l.split("|")[1].lower(), l.lower()))
     with open(f"{out}/us_street_names_city_state_zip.txt", "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("# street|city|state|zip; streets and ZIP codes from US Census TIGER/Line 2024, city and state "
+                 f"from GeoNames (CC BY 4.0), see NOTICE; built {datetime.date.today().isoformat()}\n")
         fh.write("\n".join(lines) + "\n")
     print(len(lines), "lines from", len({l.split('|')[2] for l in lines}), "states")
 

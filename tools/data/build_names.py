@@ -1,6 +1,9 @@
-"""Build the six name files from Wikidata query results (QLever CSV).
+"""Build the name files from Wikidata query results (QLever CSV).
 
-usage: python3 -I build_names.py <wd-csv-dir> <out-dir>
+usage: python3 -I build_names.py <wd-csv-dir> <out-dir> [<extra-dir>]
+
+The Hangul files go to <extra-dir> (default <out-dir>): the generator doesn't
+read them, so they live in tools/data/extra/, outside the jar.
 
 Each country's names are ranked by how many people with that citizenship
 carry them on Wikidata. Countries are interleaved rank by rank (core
@@ -10,6 +13,8 @@ is at least half its share of the western region's, which keeps out Western
 names (Joseph, Andrew) without dropping Wang, Patel or Anna.
 """
 import csv
+import datetime
+import os
 import re
 import sys
 import unicodedata
@@ -92,7 +97,11 @@ def first_names(path, ascii_only=False, keep=lambda n: True):
     for want in ("F", "M"):
         sub = {c: [n for n in v if gender(n) in (want, "U") and keep(n)] for c, v in ranked.items()}
         chosen += interleave(sub, TARGET // 2, seen)
-    return sorted(((n, gender(n)) for n in chosen), key=lambda t: t[0].lower()), share
+    # Each name's weight is how many people carry it across the region's
+    # countries, as for surnames.
+    counts = weights(path, ascii_only)
+    return sorted(((n, gender(n), max(1, counts.get(n, 0))) for n in chosen),
+                  key=lambda t: t[0].lower()), share
 
 
 # Russian-style masculine -> feminine surname forms, and back.
@@ -153,12 +162,14 @@ def surnames(path, ascii_only=False, keep=lambda n: True, canon=lambda n: n, lim
 
 
 def weights(path, ascii_only=False, canon=lambda n: n):
-    """How many people on Wikidata carry each surname, summed over the
-    region's countries. A name item can have both an "en" and a "mul" label,
-    which the query returns as two identical rows, so identical rows count once."""
+    """How many people on Wikidata carry each name, summed over the region's
+    countries. A name item can have both an "en" and a "mul" label, which the
+    query returns as two identical rows, so identical rows count once. Two
+    first-name items spelled alike (a male and a unisex Kim) differ in type,
+    so both count."""
     seen, out = set(), defaultdict(int)
     for r in csv.DictReader(open(path, encoding="utf-8")):
-        key = (r["c"], r["name"], r["n"])
+        key = tuple(r.values())
         if key in seen:
             continue
         seen.add(key)
@@ -175,22 +186,40 @@ def weighted(m, f, counts):
     return "|".join([m] + ([f] if f != m else []) + [str(max(1, w))])
 
 
+COUNT = "weight is how many people on Wikidata (CC0) carry the name"
+HEADERS = [  # (file-name pattern, header), first match wins
+    (r"^rok_hangul_first_names\.txt$", f"hangul|romanized|gender|weight; gender is F, M or U (either); {COUNT}"),
+    (r"^rok_hangul_surnames\.txt$", f"hangul|romanized|weight; {COUNT}"),
+    (r"_first_names\.txt$", f"name|gender|weight; gender is F, M or U (either); {COUNT}"),
+    (r"_surnames\.txt$", f"name|weight, or masculine|feminine|weight; {COUNT}"),
+]
+
+
+def header(path):
+    """The '#' line every data file starts with: its fields, source and build date."""
+    base = os.path.basename(path)
+    for pat, text in HEADERS:
+        if re.search(pat, base):
+            return f"# {text}; built {datetime.date.today().isoformat()}"
+    raise ValueError(f"no header for {base}")
+
+
 def write(path, lines):
     # NFC, so a name like "José" is always one code point per letter, whatever
     # form Wikidata stored it in.
-    lines = [unicodedata.normalize("NFC", l) for l in lines]
+    lines = [header(path)] + [unicodedata.normalize("NFC", l) for l in lines]
     with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + "\n")
     print(path, len(lines))
 
 
-def main(src, out):
+def main(src, out, extra=None):
     west_first, wf_share = first_names(f"{src}/first_W.csv")
-    write(f"{out}/western_first_names.txt", [f"{n}|{g}" for n, g in west_first])
+    write(f"{out}/western_first_names.txt", [f"{n}|{g}|{w}" for n, g, w in west_first])
     for reg, name in (("A", "asia"), ("R", "rus")):
         _, _, share = load(f"{src}/first_{reg}.csv", reg == "A")
         names, _ = first_names(f"{src}/first_{reg}.csv", reg == "A", not_western(share, wf_share))
-        write(f"{out}/{name}_first_names.txt", [f"{n}|{g}" for n, g in names])
+        write(f"{out}/{name}_first_names.txt", [f"{n}|{g}|{w}" for n, g, w in names])
 
     west_ranked, _, _ = load(f"{src}/sur_W.csv")
     west_pool = {n for v in west_ranked.values() for n in v}
@@ -219,7 +248,7 @@ def main(src, out):
 
     rok(src, out, wf_share)
     countries(src, out)
-    rok_hangul(src, out)
+    rok_hangul(src, extra or out)
     more_regions(src, out)
 
 
@@ -248,7 +277,7 @@ def rok(src, out, wf_share):
     first = only(f"{src}/first_A.csv", ROK, f"{src}/first_K.csv")
     _, _, share = load(first, True)
     names, _ = first_names(first, True, not_western(share, wf_share))
-    write(f"{out}/rok_first_names.txt", [f"{n}|{g}" for n, g in names])
+    write(f"{out}/rok_first_names.txt", [f"{n}|{g}|{w}" for n, g, w in names])
     # Every surname carried by 3+ South Korean citizens on Wikidata. Korea has
     # only about 280 surnames, so this list is short by nature.
     sur = only(f"{src}/sur_A.csv", ROK, f"{src}/sur_K.csv")
@@ -283,7 +312,7 @@ def countries(src, out):
         fkeep = lambda n, sh=f_share, av=f_avoid, k=factor: all(not_western(sh, o, k)(n) for o in av)
         skeep = lambda n, sh=s_share, av=s_avoid, k=factor: all(not_western(sh, o, k)(n) for o in av)
         names, _ = first_names(fpath, ascii_only, fkeep)
-        write(f"{out}/{prefix}_first_names.txt", [f"{n}|{g}" for n, g in names])
+        write(f"{out}/{prefix}_first_names.txt", [f"{n}|{g}|{w}" for n, g, w in names])
         sur, _ = surnames(spath, ascii_only, skeep)
         sc = weights(spath, ascii_only)
         write(f"{out}/{prefix}_surnames.txt", [weighted(n, n, sc) for n in sur])
@@ -338,7 +367,7 @@ def rok_hangul(src, out):
             picked.append((ko, best_rom(rom, ko), g_of(ko)))
             if len(picked) >= TARGET:
                 break
-    write(f"{out}/rok_hangul_first_names.txt", [f"{k}|{r}|{g}" for k, r, g in sorted(picked)])
+    write(f"{out}/rok_hangul_first_names.txt", [f"{k}|{r}|{g}|{count[k]}" for k, r, g in sorted(picked)])
 
     count, _, rom = group(f"{src}/sur_ROKKO.csv", False)
     sur = [(ko, best_rom(rom, ko)) for ko in sorted(count) if best_rom(rom, ko)]
@@ -419,7 +448,7 @@ def more_regions(src, out):
             fkeep = lambda n, base=fkeep: base(n) and n.lower() not in cf
             skeep = lambda n, base=skeep: base(n) and n.lower() not in cs
         names, _ = first_names(fpath, ascii_only, fkeep)
-        write(f"{out}/{prefix}_first_names.txt", [f"{n}|{g}" for n, g in names])
+        write(f"{out}/{prefix}_first_names.txt", [f"{n}|{g}|{w}" for n, g, w in names])
         sur, _ = surnames(spath, ascii_only, skeep)
         if prefix == "grc":
             pool = {n for v in load(spath)[0].values() for n in v}
@@ -437,4 +466,4 @@ def more_regions(src, out):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    main(*sys.argv[1:4])

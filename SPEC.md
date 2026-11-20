@@ -27,6 +27,10 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 | 2026-11-19 | **`rok_hangul_first_names.txt`** and **`rok_hangul_surnames.txt`** hold South Korean names in Hangul beside their romanization. They're bundled but the generator doesn't read them yet |
 | 2026-11-20 | Sixteen more regions: `JPN`, `PHL`, `VNM`, `THA`, `NAF` (North Africa), `CAF` (Central Africa), `SAF` (Southern Africa), `BRA`, `GBR`, `FRA`, `ESP`, `PRT`, `GRC`, `NOR`, `SWE`, `FIN`. Mixed mode picks from all 24 |
 | 2026-11-20 | **Surnames are drawn by weight**: each surname file ends every line with how many people on Wikidata, in that region's countries, carry the name. Every seed gives different surnames than before. Still 0.1.0, since nothing was released |
+| 2026-11-20 | **First names are drawn by weight too**, the same way, from weighted lists for women (`F` and `U` names), men (`M` and `U`) and anyone. A name now takes one draw instead of redrawing until it fits, so every seed gives different people again. The Hangul first-name file carries weights as well |
+| 2026-11-20 | Every data file starts with a **`#` header line** naming its fields, its source and its build date. The build scripts write it |
+| 2026-11-20 | The three files the generator doesn't read (`us_cities_states_zip.txt` and the two `rok_hangul_*.txt`) **moved out of the jar** to `tools/data/extra/` |
+| 2026-11-20 | **`Builder.dataDirectory(Path)`**: a folder whose files replace the bundled ones of the same name. A `.txt` file there with a name the generator doesn't read is an error, not ignored, so a misspelling can't silently fall back to the bundled data |
 | 2026-11-20 | License: **MIT**. Version **0.1.0**, set up for Maven Central. Uploads stop at "validated", so a person presses Publish |
 | 2026-11-20 | **Every data file must be clean Unicode**: strict UTF-8 without a byte-order mark, NFC-normalized, no control or invisible format characters, Unix line endings. `DataSetTest` enforces it |
 | 2026-11-19 | Data files keep the names the owner gave them. First placed at the root of `src/main/resources/`, then moved the same day to **`src/main/resources/org/tauasa/apps/faux/data/`**, so their generic names can't collide with another jar's on a consumer's classpath |
@@ -109,7 +113,7 @@ every seed produces (see *Versioning*).
 |---|---|---|
 | 1 | `region` | The builder's region, or uniform over all 24 when it's `null` |
 | 2 | `gender` | Weighted pick from `genderWeights` |
-| 3 | `firstName` | Uniform from the region's first-name file, redrawn until it fits: `F` or `U` names for women, `M` or `U` for men, any name for non-binary |
+| 3 | `firstName` | From the region's first-name file, each in proportion to its weight, in one draw like the surname: from the `F` and `U` names for women, the `M` and `U` names for men, and every name for non-binary |
 | 4 | `lastName` | From the region's surname file, each in proportion to its weight: one `nextLong(total weight)`, then a binary search of the running totals. Women get the feminine form, men the masculine, non-binary either at 50/50 |
 | 5 | `dateOfBirth` | Uniform day between the earliest and latest birthdays that give an age in range on the clock's today |
 | 6 | `employer` | Uniform from `us_companies_domains.txt` |
@@ -117,7 +121,8 @@ every seed produces (see *Versioning*).
 | 8 | `phone` | `(AAA) 555-01NN`: AAA is 200–999 but not N11, NN is 00–99 |
 | 9 | `address` | Uniform line from `us_street_names_city_state_zip.txt`, then a house number 1–9999. Country `US` |
 
-`us_cities_states_zip.txt` is bundled and loaded but not drawn from in v1.
+Every file is read from the builder's `dataDirectory` when it holds a file of
+that name, and from the bundled data otherwise.
 
 ### Concurrency
 
@@ -128,19 +133,26 @@ people change too; a replay must split at the same points. Don't call `.parallel
 ## 3. The bundled data
 
 UTF-8, one entry per line, fields separated by `|`, in `src/main/resources/org/tauasa/apps/faux/data/`.
-Blank lines and lines starting with `#` are skipped. A missing or empty file,
+Blank lines and lines starting with `#` are skipped. Every file's first line is
+a `#` header naming its fields, source and build date, for example
+`# name|gender|weight; gender is F, M or U (either); weight is how many people
+on Wikidata (CC0) carry the name; built 2026-11-20`. A missing or empty file,
 or a line with too few fields, fails at first use with `IllegalStateException`
-naming the file and line. [`tools/data/`](tools/data/) holds the scripts that built
+naming the file and line. The jar holds exactly the 50 files the generator
+reads; the other three are in `tools/data/extra/`, marked *(extra)* below. [`tools/data/`](tools/data/) holds the scripts that built
 them, and `NOTICE` gives sources and licenses.
 
-**Surname weights.** Every `*_surnames.txt` line ends in a whole number of 1 or
-more: how many people on Wikidata, in the region's countries, carry the name.
+**Name weights.** Every `*_first_names.txt` and `*_surnames.txt` line ends in a
+whole number of 1 or more: how many people on Wikidata, in the region's
+countries, carry the name. A first-name line is `Aleksandr|M|16684`.
 Identical rows from an item's `en` and `mul` labels count once, and a feminine
 form's count adds to its masculine form's (Ivanova to Ivanov). So a line is
-`Kim|6766`, `Petrov|Petrova|1663` or `Papadopoulos|Papadopoulou|129`. A line
+`Kim|6766`, `Petrov|Petrova|1663` or `Papadopoulos|Papadopoulou|129`. A
+surname line
 with no weight has weight 1, so an unweighted file is drawn uniformly. The
 formats in the table below leave the weight out. For Korea this gives Kim
-19%, Lee 14% and Park 7%, against about 21%, 15% and 8% in South Korea.
+19%, Lee 14% and Park 7%, against about 21%, 15% and 8% in South Korea. A
+first-name line with no weight has weight 1 too.
 
 | File | Lines | Format | Built from |
 |---|---|---|---|
@@ -156,8 +168,8 @@ formats in the table below leave the weight out. For Korea this gives Kim
 | `irn_first_names.txt`, `irn_surnames.txt` | 539, 844 | same | Wikidata: Iranian citizens, folded to ASCII, less mainly Western names |
 | `heb_first_names.txt`, `heb_surnames.txt` | 846, 1,200 | same | Wikidata: Israeli citizens, folded to ASCII. A name stays only if its share of Israeli people is at least its share of Western, of Russian and of Palestinian people. That drops immigrants' names (Barry, Svetlana) and keeps David, Sarah and Michael |
 | `pse_first_names.txt`, `pse_surnames.txt` | 342, 188 | same | Wikidata: citizens of the State of Palestine, the Palestinian territories and Mandatory Palestine, and people recorded as ethnically Palestinian, less mainly Western or Israeli names. Wikidata holds few Palestinian people, and few women among them: 96 of the first names fit a woman |
-| `rok_hangul_first_names.txt` | 1,200 | `hangul\|romanized\|F/M/U` | Wikidata: the Korean (`ko`) labels of South Korean given names, with the romanization most people carry (지훈\|Ji-hoon\|M) |
-| `rok_hangul_surnames.txt` | 118 | `hangul\|romanized` | Wikidata: same, for surnames (김\|Kim) |
+| `rok_hangul_first_names.txt` *(extra)* | 1,200 | `hangul\|romanized\|F/M/U\|weight` | Wikidata: the Korean (`ko`) labels of South Korean given names, with the romanization most people carry, and how many carry the Hangul name under any romanization (지훈\|Ji-hoon\|M\|97) |
+| `rok_hangul_surnames.txt` *(extra)* | 118 | `hangul\|romanized\|weight` | Wikidata: same, for surnames (김\|Kim\|6768) |
 
 Sixteen more regions follow the same format, `name|F/M/U` for first names and
 `name` for surnames. The exception is Greek surnames, which are stored as
@@ -179,7 +191,7 @@ surnames:
 
 The African and European lists keep their diacritics (Félix, João, Härkönen). The Asian lists are folded to ASCII.
 | `us_companies_domains.txt` | 1,500 | `name\|HQ city\|state\|domain` | Wikidata: US businesses ranked by USD revenue, then NYSE- and Nasdaq-listed ones by employees |
-| `us_cities_states_zip.txt` | 1,250 | `city\|state\|zip` | GeoNames (CC BY 4.0): 25 per state, the 10 largest plus 15 at random |
+| `us_cities_states_zip.txt` *(extra)* | 1,250 | `city\|state\|zip` | GeoNames (CC BY 4.0): 25 per state, the 10 largest plus 15 at random |
 | `us_street_names_city_state_zip.txt` | 1,500 | `street\|city\|state\|zip` | Census TIGER/Line 2024 address features (public domain): 30 per state from its largest city's county |
 
 How names were chosen: each country's names are ranked by how many people of
@@ -203,10 +215,12 @@ Andrew without dropping Wang, Patel or Anna.
 - **Names mix countries within a region.** A Vietnamese first name can come
   with an Indian surname. A country column would fix it.
 - **Wikidata counts notable people, not populations.** The ranking and the
-  surname weights favour names common among people with Wikipedia articles,
-  and the gender columns have some noise. For a few countries the weights run
-  high: Nguyen is 46% of Vietnamese surnames here, against about 38% in Vietnam.
-  First names aren't weighted.
+  weights favour names common among people with Wikipedia articles, and the
+  gender columns have some noise. For a few countries the weights run high:
+  Nguyen is 46% of Vietnamese surnames here, against about 38% in Vietnam.
+  First-name weights lean toward older generations, since most notable people
+  were born decades ago: John and Charles lead the Western names, not Liam or
+  Olivia.
 - **Lithuanian and Latvian feminine surnames** aren't derived. The feminine
   form equals the masculine.
 
@@ -242,6 +256,9 @@ the bundled files' shape.
 | Address is a bundled street line plus a 1–9999 house number | Addresses are invented or mismatched |
 | Per region: names come from that region's files and fit the gender; women get feminine surnames | Region or gender rules break |
 | Weights `(1,0,0)` and `(0,0,1)`; mixed covers all regions | Weights are ignored |
+| The jar holds exactly the files the generator reads; every data file starts with a header | A file is left out, or an unused one creeps back in |
+| `dataDirectory` replaces only the files it holds, survives `split()`, and rejects a missing folder, a misspelled file and a bad line | Your own data is ignored or half-read |
+| Kim's share of 20,000 South Korean surnames, and Aleksandr's of 20,000 Russian men's first names, within 5 SD of their weights; every name file is weighted | Name weights are ignored or lost |
 | `split()` is reproducible and differs from the parent | Splitting shares state |
 | Every null field of every record is rejected | A half-built record can exist |
 | Each region has 1,000+ distinct first names and surnames, 400+ each for women and men; 20+ cities in each of the 50 states; streets and companies are in the 50 states; 1,000+ companies with distinct domains | A data rebuild shrinks or breaks a file |

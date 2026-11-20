@@ -51,6 +51,27 @@ class DataSetTest {
 
     @ParameterizedTest
     @EnumSource(Region.class)
+    void everyFirstNameFileIsWeighted(Region r) {
+        var fn = DATA.firstNames.get(r);
+        assertTrue(fn.stream().allMatch(f -> f.weight() >= 1), r.toString());
+        // Weighted, not uniform: the most common first name outweighs the median one.
+        long max = fn.stream().mapToLong(DataSet.FirstName::weight).max().orElseThrow();
+        long median = fn.stream().mapToLong(DataSet.FirstName::weight).sorted().skip(fn.size() / 2).findFirst().orElseThrow();
+        assertTrue(max >= 5 * median, r + ": max " + max + ", median " + median);
+    }
+
+    @Test
+    void firstNameLinesParseWithAndWithoutWeights() {
+        assertEquals(new DataSet.FirstName("Ana", 'F', 1), DataSet.firstName(new String[] {"Ana", "F"}));
+        assertEquals(new DataSet.FirstName("Ji-hoon", 'M', 97), DataSet.firstName(new String[] {"Ji-hoon", "M", "97"}));
+        assertEquals(new DataSet.FirstName("Alex", 'U', 1), DataSet.firstName(new String[] {"Alex", ""}));
+        assertThrows(IllegalArgumentException.class, () -> DataSet.firstName(new String[] {"Ana", "F", "0"}));
+        assertThrows(IllegalArgumentException.class, () -> DataSet.firstName(new String[] {"Ana", "F", "lots"}));
+        assertThrows(IllegalArgumentException.class, () -> DataSet.firstName(new String[] {"Ana", "X"}));
+    }
+
+    @ParameterizedTest
+    @EnumSource(Region.class)
     void everySurnameFileIsWeighted(Region r) {
         var sn = DATA.surnames.get(r);
         assertTrue(sn.stream().allMatch(s -> s.weight() >= 1), r.toString());
@@ -75,15 +96,16 @@ class DataSetTest {
     void hangulFilesPairKoreanScriptWithItsRomanization() throws Exception {
         Pattern hangul = Pattern.compile("[\\uAC00-\\uD7A3]{1,3}");
         Pattern roman = Pattern.compile("[A-Z][A-Za-z'-]*[a-z]");
-        List<String> first = resource("rok_hangul_first_names.txt");
-        List<String> sur = resource("rok_hangul_surnames.txt");
+        List<String> first = extra("rok_hangul_first_names.txt");
+        List<String> sur = extra("rok_hangul_surnames.txt");
         assertTrue(first.size() >= 1000, "first names: " + first.size());
         assertTrue(sur.size() >= 100, "surnames: " + sur.size());
         for (String line : first) {
             String[] f = line.split("\\|", -1);
-            assertEquals(3, f.length, line);
+            assertEquals(4, f.length, line);
             assertTrue(hangul.matcher(f[0]).matches() && roman.matcher(f[1]).matches(), line);
             assertTrue(f[2].matches("[FMU]"), line);
+            assertTrue(Long.parseLong(f[3]) >= 1, line);
         }
         for (String line : sur) {
             String[] f = line.split("\\|", -1);
@@ -102,13 +124,8 @@ class DataSetTest {
      */
     @Test
     void everyDataFileIsCleanUnicode() throws Exception {
-        java.nio.file.Path dir = java.nio.file.Path.of(
-                DataSetTest.class.getResource("/org/tauasa/apps/faux/data/").toURI());
-        List<java.nio.file.Path> files;
-        try (var s = java.nio.file.Files.list(dir)) {
-            files = s.filter(p -> p.toString().endsWith(".txt")).sorted().toList();
-        }
-        assertTrue(files.size() >= 50, "data files: " + files.size());
+        List<java.nio.file.Path> files = allDataFiles();
+        assertTrue(files.size() >= 53, "data files: " + files.size());
         for (java.nio.file.Path p : files) {
             String name = p.getFileName().toString();
             byte[] raw = java.nio.file.Files.readAllBytes(p);
@@ -136,17 +153,59 @@ class DataSetTest {
     private static List<String> resource(String name) throws Exception {
         try (var in = DataSetTest.class.getResourceAsStream("/org/tauasa/apps/faux/data/" + name)) {
             assertTrue(in != null, name + " missing");
-            return new String(in.readAllBytes(), StandardCharsets.UTF_8).lines().filter(l -> !l.isBlank()).toList();
+            return entries(new String(in.readAllBytes(), StandardCharsets.UTF_8));
+        }
+    }
+
+    /** The data files kept outside the jar until the generator reads them. */
+    private static final java.nio.file.Path EXTRA = java.nio.file.Path.of("tools/data/extra");
+
+    private static List<String> extra(String name) throws Exception {
+        return entries(java.nio.file.Files.readString(EXTRA.resolve(name)));
+    }
+
+    private static List<String> entries(String text) {
+        return text.lines().filter(l -> !l.isBlank() && !l.startsWith("#")).toList();
+    }
+
+    private static List<java.nio.file.Path> allDataFiles() throws Exception {
+        java.nio.file.Path bundled = java.nio.file.Path.of(
+                DataSetTest.class.getResource("/org/tauasa/apps/faux/data/").toURI());
+        List<java.nio.file.Path> files = new java.util.ArrayList<>();
+        for (java.nio.file.Path dir : List.of(bundled, EXTRA)) {
+            try (var s = java.nio.file.Files.list(dir)) {
+                s.filter(p -> p.toString().endsWith(".txt")).sorted().forEach(files::add);
+            }
+        }
+        return files;
+    }
+
+    @Test
+    void theJarHoldsExactlyTheFilesTheGeneratorReads() throws Exception {
+        java.nio.file.Path bundled = java.nio.file.Path.of(
+                DataSetTest.class.getResource("/org/tauasa/apps/faux/data/").toURI());
+        try (var s = java.nio.file.Files.list(bundled)) {
+            assertEquals(new java.util.TreeSet<>(DataSet.fileNames()),
+                    s.map(p -> p.getFileName().toString()).collect(Collectors.toCollection(java.util.TreeSet::new)));
         }
     }
 
     @Test
-    void everyStateHasAtLeast20Cities() {
-        Map<String, Long> perState = DATA.cities.stream()
-                .collect(Collectors.groupingBy(DataSet.City::state, Collectors.counting()));
+    void everyDataFileStartsWithAHeader() throws Exception {
+        for (java.nio.file.Path p : allDataFiles()) {
+            String first = java.nio.file.Files.readString(p).lines().findFirst().orElse("");
+            assertTrue(first.matches("# [^;]+\\|[^;]+(; [^;]+)+; built \\d{4}-\\d{2}-\\d{2}"), p + ": " + first);
+        }
+    }
+
+    @Test
+    void everyStateHasAtLeast20Cities() throws Exception {
+        List<String[]> cities = extra("us_cities_states_zip.txt").stream().map(l -> l.split("\\|", -1)).toList();
+        cities.forEach(c -> assertEquals(3, c.length, String.join("|", c)));
+        Map<String, Long> perState = cities.stream().collect(Collectors.groupingBy(c -> c[1], Collectors.counting()));
         assertEquals(STATES, perState.keySet());
         perState.forEach((st, n) -> assertTrue(n >= 20, st + " has " + n));
-        DATA.cities.forEach(c -> assertTrue(ZIP.matcher(c.postalCode()).matches(), c.toString()));
+        cities.forEach(c -> assertTrue(ZIP.matcher(c[2]).matches(), String.join("|", c)));
     }
 
     @Test

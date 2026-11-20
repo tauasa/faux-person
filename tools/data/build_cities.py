@@ -7,6 +7,7 @@ at random (fixed seed) from the rest, each with one of its ZIP codes.
 Also writes counties.tsv (state, county FIPS, county name, biggest city) for
 the street builder.
 """
+import datetime
 import random
 import sys
 import unicodedata
@@ -60,6 +61,7 @@ def main(src, out):
             counties.append(f"{st}\t{fips}\t{name}\t{c}")
     lines.sort(key=lambda l: (l.split("|")[1], l.lower()))
     with open(f"{out}/us_cities_states_zip.txt", "w", encoding="utf-8", newline="\n") as fh:
+        fh.write(f"# city|state|zip; GeoNames (CC BY 4.0), see NOTICE; built {datetime.date.today().isoformat()}\n")
         fh.write("\n".join(lines) + "\n")
     with open(f"{out}/counties.tsv", "w", encoding="utf-8") as fh:
         fh.write("\n".join(counties) + "\n")

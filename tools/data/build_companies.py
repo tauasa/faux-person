@@ -24,6 +24,7 @@ Domain: the registrable part of the official website
 (corporate.exxonmobil.com -> exxonmobil.com), preferring .com. A domain
 already taken by a higher-ranked company is skipped.
 """
+import datetime
 import csv
 import math
 import re
@@ -162,6 +163,8 @@ def main(out, limit, places_path, postal_path, *sources):
             city, st = c["hq"].most_common(1)[0][0]
             lines.append(f"{c['name']}|{city}|{st}|{d}")
     with open(f"{out}/us_companies_domains.txt", "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("# name|city|state|domain; Wikidata (CC0), headquarters placed with GeoNames (CC BY 4.0), "
+                 f"see NOTICE; built {datetime.date.today().isoformat()}\n")
         fh.write("\n".join(lines) + "\n")
     print(len(lines), "companies;", len(dropped), "left out for no placeable HQ, e.g.", dropped[:12])
 

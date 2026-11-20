@@ -1,3 +1,4 @@
+# name|weight, or masculine|feminine|weight; weight is how many people on Wikidata (CC0) carry the name; built 2026-11-20
 Aadland|7
 Aagaard|26
 Aakre|13

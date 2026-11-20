@@ -1,3 +1,4 @@
+# city|state|zip; GeoNames (CC BY 4.0), see NOTICE; built 2026-11-19
 Anchorage|AK|99695
 Bethel|AK|99559
 Big Lake|AK|99652

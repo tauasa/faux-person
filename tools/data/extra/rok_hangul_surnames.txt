@@ -1,3 +1,4 @@
+# hangul|romanized|weight; weight is how many people on Wikidata (CC0) carry the name; built 2026-11-20
 가|Ga|4
 갈|Kal|4
 감|Kam|9

@@ -1,20 +1,22 @@
 faux-person
 Copyright 2026 Tauasa Timoteo
 
-The bundled data files in src/main/resources/org/tauasa/apps/faux/data/ were
-built on 2026-11-19 by the scripts in tools/data/ from these sources:
+The data files in src/main/resources/org/tauasa/apps/faux/data/ (bundled in
+the jar) and tools/data/extra/ (in the source repository only) were built on
+2026-11-19 and 2026-11-20 by the scripts in tools/data/ from these sources.
+Each file's first line gives its build date.
 
 1. Wikidata (https://www.wikidata.org), CC0 1.0, queried through the QLever
    endpoint (https://qlever.dev) and the Wikidata Query Service.
    - every *_first_names.txt and *_surnames.txt file, and the two
-     rok_hangul_*.txt files: given and family names ranked by how many people
-     of each citizenship carry them.
+     rok_hangul_*.txt files in tools/data/extra/: given and family names
+     ranked by how many people of each citizenship carry them.
    - us_companies_domains.txt: company names, headquarters and official
      websites.
 
 2. GeoNames (https://www.geonames.org), licensed under the Creative Commons
    Attribution 4.0 License (https://creativecommons.org/licenses/by/4.0/).
-   - us_cities_states_zip.txt: US postal codes and populated places
+   - us_cities_states_zip.txt, in tools/data/extra/: US postal codes and populated places
      (export/zip/US.zip, export/dump/cities1000.zip).
    - us_street_names_city_state_zip.txt: the city and state for each ZIP code.
    - us_companies_domains.txt: headquarters coordinates resolved to a city.

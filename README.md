@@ -5,8 +5,9 @@ for tests, demos and seed data. Each person has a name, gender, date of birth,
 email, phone, US street address and employer, and the fields agree with each
 other: the email is built from the name at the employer's domain, a woman with
 a Russian surname gets the feminine form (Petrova, not Petrov), and the age
-fits the date of birth. Surnames come up about as often as they do in real life:
-about one South Korean in five is a Kim, and so is about one generated one.
+fits the date of birth. Names come up about as often as they do in real life:
+about one South Korean in five is a Kim, and so is about one generated one,
+and Aleksandr is the most common name for a Russian man.
 
 Give it a seed and you get the same people every time, so a failing test can
 be replayed exactly. Birth dates count back from today, so fix the date too
@@ -15,9 +16,9 @@ birth dates on another day. It has no runtime dependencies.
 
 ```text
 $ ./faux-person.sh -n 3 --seed 42 --today 2026-11-20
-Walter Joensuu (male, 46) <walter.joensuu6@iff.com> (545) 555-0151, 2925 Florence Ave, Las Vegas, NV 89120, works at International Flavors & Fragrances
-Yusaku Kobayashi (male, 42) <yusaku.kobayashi41@up.com> (486) 555-0121, 3661 26th Ave, Brooklyn, NY 11214, works at Union Pacific Corporation
-Ilia Martynova (female, 72) <ilia.martynova57@comtech.com> (235) 555-0144, 9172 Lambach Ln, Louisville, KY 40220, works at Comtech
+Juha Karvonen (male, 63) <juha.karvonen@morganstanley.com> (319) 555-0128, 9694 W 6th Ave, Humboldt, SD 57035, works at Morgan Stanley
+Jose Barra (male, 36) <jose.barra48@fourwaybooks.com> (260) 555-0158, 8418 Golden Aster Ct, Noblesville, IN 46062, works at Four Way Books
+Jens Klausen (male, 73) <jens.klausen@catabasis.com> (959) 555-0112, 4859 Page St, Manchester, NH 03109, works at Catabasis Pharmaceuticals
 ```
 
 > **Don't send anything to a generated person.** Emails use real company
@@ -169,6 +170,34 @@ The rest follow the same pattern: `Asians`, `Russians`, `Japanese`, `Filipinos`,
 seed, so you can't replay its people. Use the builder when you need a seed,
 an age range or a fixed date.
 
+### Use your own data
+
+Point the builder at a folder of your own data files. Each file in it replaces
+the bundled file with the same name, and every other file still comes from the
+bundled data:
+
+```java
+import java.nio.file.Path;
+
+PersonGenerator gen = PersonGenerator.builder()
+        .dataDirectory(Path.of("my-data"))   // say, my-data/western_surnames.txt
+        .build();
+```
+
+The names are `<region>_first_names.txt` and `<region>_surnames.txt` for each
+region in lowercase (`western`, `rok`, …), plus `us_companies_domains.txt` and
+`us_street_names_city_state_zip.txt`. Each file uses the format its bundled
+copy names in its first line, such as `# name|gender|weight`. Weights are
+optional, and a name without one counts as 1. Lines starting with `#` are
+skipped.
+
+`build()` reads the files, so a mistake shows up there. It throws
+`IllegalArgumentException` if the folder doesn't exist, or holds a `.txt`
+file with a name it doesn't know, which is usually a misspelling that would
+otherwise be quietly ignored. It throws `IllegalStateException`, naming the
+file and line, for an empty file or a bad line. Each `build()` reads the
+folder again, so build once and reuse the generator, or `split()` it.
+
 ## Use the command line
 
 `faux-person.sh` builds the jar with Maven the first time you run it, and again
@@ -211,7 +240,7 @@ plus `-r asia`:
 
 ```text
 first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer
-Walter|Joensuu|MALE|FIN|1980-04-04|46|walter.joensuu6@iff.com|(545) 555-0151|2925 Florence Ave|Las Vegas|NV|89120|International Flavors & Fragrances
+Juha|Karvonen|MALE|FIN|1963-08-07|63|juha.karvonen@morganstanley.com|(319) 555-0128|9694 W 6th Ave|Humboldt|SD|57035|Morgan Stanley
 ```
 
 `json` prints one array, with each person on its own line (wrapped here to
@@ -219,10 +248,10 @@ fit):
 
 ```json
 [
-  {"firstName":"Hiroshi","lastName":"Zhang","gender":"MALE","region":"ASIA","dateOfBirth":"1974-01-22","age":52,
-   "email":"hiroshi.zhang@disney.com","phone":"(849) 555-0148",
-   "address":{"street":"761 Rosemary St","city":"Commerce City","state":"CO","postalCode":"80022","country":"US"},
-   "employer":{"name":"The Walt Disney Company","city":"Burbank","state":"CA","domain":"disney.com"}}
+  {"firstName":"Maya","lastName":"Guo","gender":"FEMALE","region":"ASIA","dateOfBirth":"2007-02-06","age":19,
+   "email":"maya.guo56@spglobal.com","phone":"(319) 555-0128",
+   "address":{"street":"9694 W 6th Ave","city":"Humboldt","state":"SD","postalCode":"57035","country":"US"},
+   "employer":{"name":"S&P Global","city":"New York City","state":"NY","domain":"spglobal.com"}}
 ]
 ```
 
@@ -231,16 +260,20 @@ exits with code 2.
 
 ## Where the data comes from
 
-53 bundled files in `src/main/resources/org/tauasa/apps/faux/data/`, all
-UTF-8 and NFC-normalized, built on 2026-11-19 and 2026-11-20:
+50 bundled files in `src/main/resources/org/tauasa/apps/faux/data/`, all
+UTF-8 and NFC-normalized. Each file's first line names its fields, its source
+and the date it was built:
 
 | Data | How many | Source |
 |---|---|---|
-| First names and surnames for each of the 24 regions | Up to 1,200 per file. Shorter where Wikidata has fewer people, or the country has fewer names: Vietnamese (95 first names), South Korean surnames (123), Palestinian (342 and 188) | Wikidata (CC0), ranked by how many people of each citizenship carry them. Each surname also carries that count as its weight (`Kim|6766`), and surnames are drawn in proportion to it |
-| South Korean names in Hangul, with romanization | 1,200 first names, 118 surnames | Wikidata. Bundled for later use: the generator doesn't read them yet |
+| First names and surnames for each of the 24 regions | Up to 1,200 per file. Shorter where Wikidata has fewer people, or the country has fewer names: Vietnamese (95 first names), South Korean surnames (123), Palestinian (342 and 188) | Wikidata (CC0), ranked by how many people of each citizenship carry them. Each name also carries that count as its weight (`Kim|6766`, `Aleksandr|M|16684`), and names are drawn in proportion to it. Wikidata counts notable people, so the weights lean toward older generations' names |
 | US companies with headquarters and domain | 1,500 | Wikidata: by revenue, then NYSE- and Nasdaq-listed companies by employee count |
 | US streets with city, state and ZIP | 1,500, 30 per state | US Census TIGER/Line 2024 (public domain) |
-| US cities with state and ZIP | 1,250, 25 per state | GeoNames (CC BY 4.0). Bundled for later use: addresses come from the streets file |
+
+Three more files are in [`tools/data/extra/`](tools/data/extra/), outside the
+jar, until the generator reads them: South Korean names in Hangul with their
+romanization and weights (1,200 first names, 118 surnames, from Wikidata), and
+1,250 US cities with state and ZIP (25 per state, from GeoNames).
 
 `NOTICE` gives the full attribution. [`tools/data/`](tools/data/) has the
 scripts that rebuild the files. [SPEC.md](SPEC.md) explains how each field is
@@ -258,9 +291,10 @@ mvn verify
 
 This compiles the code and runs the tests. The tests cover reproducibility,
 age bounds, emails, phones, addresses, how region and gender pick names, that
-surnames come up in proportion to their weights, the size and shape of every
+names come up in proportion to their weights, the size and shape of every
 data file, that every data file is clean UTF-8 in NFC, that every region has its
-own quick-list method, and the CLI. The build also produces the sources and
+own quick-list method, that every data file has a header and the jar holds
+only the files the generator reads, `dataDirectory`, and the CLI. The build also produces the sources and
 javadoc jars, and fails if anyone adds a runtime dependency.
 
 ## License

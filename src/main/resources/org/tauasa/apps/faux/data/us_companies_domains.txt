@@ -1,3 +1,4 @@
+# name|city|state|domain; Wikidata (CC0), headquarters placed with GeoNames (CC BY 4.0), see NOTICE; built 2026-11-20
 Amazon|Seattle|WA|amazon.com
 Walmart|Bentonville|AR|walmart.com
 ExxonMobil|Spring|TX|exxonmobil.com

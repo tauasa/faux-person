@@ -1,5 +1,6 @@
 package org.tauasa.apps.faux;
 
+import java.nio.file.Path;
 import java.text.Normalizer;
 import java.time.Clock;
 import java.time.LocalDate;
@@ -40,7 +41,7 @@ public final class PersonGenerator {
     private final DataSet data;
 
     private PersonGenerator(long seed, SplittableRandom random, int minAge, int maxAge,
-                            int[] genderWeights, Region region, Clock clock) {
+                            int[] genderWeights, Region region, Clock clock, DataSet data) {
         this.seed = seed;
         this.random = random;
         this.minAge = minAge;
@@ -48,7 +49,7 @@ public final class PersonGenerator {
         this.genderWeights = genderWeights.clone();
         this.region = region;
         this.clock = clock;
-        this.data = DataSet.get();
+        this.data = data;
     }
 
     /**
@@ -81,7 +82,7 @@ public final class PersonGenerator {
         // what every seed produces (SPEC.md, "How each field is made").
         Region r = region != null ? region : Region.values()[random.nextInt(Region.values().length)];
         Gender gender = pickGender();
-        String first = pickFirstName(r, gender);
+        String first = data.pickFirstName(r, gender, random).name();
         DataSet.Surname sn = data.pickSurname(r, random);
         String last = switch (gender) {
             case FEMALE -> sn.feminine();
@@ -136,7 +137,7 @@ public final class PersonGenerator {
      * @return the new generator
      */
     public PersonGenerator split() {
-        return new PersonGenerator(seed, random.split(), minAge, maxAge, genderWeights, region, clock);
+        return new PersonGenerator(seed, random.split(), minAge, maxAge, genderWeights, region, clock, data);
     }
 
     // ---- One-line conveniences -------------------------------------------
@@ -441,24 +442,6 @@ public final class PersonGenerator {
         return n < genderWeights[0] + genderWeights[1] ? Gender.MALE : Gender.NONBINARY;
     }
 
-    private String pickFirstName(Region r, Gender gender) {
-        List<DataSet.FirstName> all = data.firstNames.get(r);
-        if (gender == Gender.NONBINARY) {
-            return pick(all).name();  // any name, whichever gender it's usually given to
-        }
-        char want = gender == Gender.FEMALE ? 'F' : 'M';
-        // Redraw until the name fits: F or U for women, M or U for men. Every
-        // bundled list is about half each, so this takes two draws on average.
-        // The cap stops a hand-edited list with none of one gender from hanging.
-        for (int tries = 0; tries < 1000; tries++) {
-            DataSet.FirstName f = pick(all);
-            if (f.gender() == want || f.gender() == 'U') {
-                return f.name();
-            }
-        }
-        throw new IllegalStateException("no " + gender + " first names in the " + r + " list");
-    }
-
     private LocalDate pickDateOfBirth() {
         LocalDate today = LocalDate.now(clock);
         LocalDate latest = today.minusYears(minAge);                 // turns minAge today
@@ -503,6 +486,7 @@ public final class PersonGenerator {
         private int[] genderWeights = {49, 49, 2};
         private Region region;
         private Clock clock = Clock.systemDefaultZone();
+        private Path dataDirectory;
 
         private Builder() {
         }
@@ -569,10 +553,29 @@ public final class PersonGenerator {
         }
 
         /**
+         * A folder of your own data files, read in place of the bundled ones
+         * with the same names, such as {@code western_first_names.txt} or
+         * {@code us_companies_domains.txt}. Files it doesn't hold come from
+         * the bundled data. The files are read when {@link #build()} runs, and
+         * use the bundled files' formats (README.md, "Use your own data").
+         *
+         * @param dir a folder, or {@code null} for the bundled data only
+         * @return this builder
+         */
+        public Builder dataDirectory(Path dir) {
+            this.dataDirectory = dir;
+            return this;
+        }
+
+        /**
          * Checks the settings and builds the generator.
          *
          * @return a new generator
-         * @throws IllegalArgumentException if the age range or weights are invalid
+         * @throws IllegalArgumentException if the age range or weights are invalid,
+         *         the data directory isn't a folder, or it holds a {@code .txt} file
+         *         whose name isn't a data file's
+         * @throws IllegalStateException    if a data file in the data directory is
+         *         empty or has a bad line; the message names the file and line
          */
         public PersonGenerator build() {
             if (minAge < 0 || maxAge > 120 || minAge > maxAge) {
@@ -591,7 +594,8 @@ public final class PersonGenerator {
                 throw new IllegalArgumentException("gender weights are too large");
             }
             long s = seed != null ? seed : new SplittableRandom().nextLong();
-            return new PersonGenerator(s, new SplittableRandom(s), minAge, maxAge, genderWeights, region, clock);
+            DataSet data = dataDirectory == null ? DataSet.get() : DataSet.load(dataDirectory);
+            return new PersonGenerator(s, new SplittableRandom(s), minAge, maxAge, genderWeights, region, clock, data);
         }
     }
 }
