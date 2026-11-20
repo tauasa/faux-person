@@ -31,7 +31,20 @@ public record Person(
         Address address,
         Company employer) {
 
-    /** Rejects {@code null} fields. */
+    /**
+     * Rejects {@code null} fields.
+     *
+     * @param firstName   given name
+     * @param lastName    family name
+     * @param gender      gender
+     * @param region      region the names were drawn from
+     * @param dateOfBirth date of birth
+     * @param email       email address; a generated one is at the employer's domain
+     * @param phone       phone number; a generated one is in the fictional 555-0100 to 555-0199 range
+     * @param address     postal address
+     * @param employer    employer
+     * @throws NullPointerException if any field is {@code null}
+     */
     public Person {
         Objects.requireNonNull(firstName, "firstName");
         Objects.requireNonNull(lastName, "lastName");

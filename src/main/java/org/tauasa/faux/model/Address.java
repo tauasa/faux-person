@@ -13,7 +13,16 @@ import java.util.Objects;
  */
 public record Address(String street, String city, String state, String postalCode, String country) {
 
-    /** Rejects {@code null} fields. */
+    /**
+     * Rejects {@code null} fields.
+     *
+     * @param street     house number and street, for example {@code "1234 Maple Ave"}
+     * @param city       city name, for example {@code "Springfield"}
+     * @param state      two-letter USPS state code, for example {@code "IL"}
+     * @param postalCode five-digit ZIP code, for example {@code "62704"}
+     * @param country    ISO 3166-1 alpha-2 country code, {@code "US"} in v1
+     * @throws NullPointerException if any field is {@code null}
+     */
     public Address {
         Objects.requireNonNull(street, "street");
         Objects.requireNonNull(city, "city");
