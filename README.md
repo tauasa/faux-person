@@ -5,7 +5,8 @@ for tests, demos and seed data. Each person has a name, gender, date of birth,
 email, phone, US street address and employer, and the fields agree with each
 other: the email is built from the name at the employer's domain, a woman with
 a Russian surname gets the feminine form (Petrova, not Petrov), and the age
-fits the date of birth.
+fits the date of birth. Surnames come up about as often as they do in real life:
+about one South Korean in five is a Kim, and so is about one generated one.
 
 Give it a seed and you get the same people every time, so a failing test can
 be replayed exactly. Birth dates count back from today, so fix the date too
@@ -14,9 +15,9 @@ birth dates on another day. It has no runtime dependencies.
 
 ```text
 $ ./faux-person.sh -n 3 --seed 42 --today 2026-11-20
-Walter Brotherus (male, 46) <walter.brotherus6@iff.com> (545) 555-0151, 2925 Florence Ave, Las Vegas, NV 89120, works at International Flavors & Fragrances
-Yusaku Tomonaga (male, 42) <yusaku.tomonaga41@up.com> (486) 555-0121, 3661 26th Ave, Brooklyn, NY 11214, works at Union Pacific Corporation
-Ilia Holub (female, 72) <ilia.holub57@comtech.com> (235) 555-0144, 9172 Lambach Ln, Louisville, KY 40220, works at Comtech
+Walter Joensuu (male, 46) <walter.joensuu6@iff.com> (545) 555-0151, 2925 Florence Ave, Las Vegas, NV 89120, works at International Flavors & Fragrances
+Yusaku Kobayashi (male, 42) <yusaku.kobayashi41@up.com> (486) 555-0121, 3661 26th Ave, Brooklyn, NY 11214, works at Union Pacific Corporation
+Ilia Martynova (female, 72) <ilia.martynova57@comtech.com> (235) 555-0144, 9172 Lambach Ln, Louisville, KY 40220, works at Comtech
 ```
 
 > **Don't send anything to a generated person.** Emails use real company
@@ -131,6 +132,25 @@ List<Person> team = gen.next(20);
 List<Person> adults = gen.stream().filter(x -> x.ageOn(LocalDate.now()) >= 21).limit(100).toList();
 ```
 
+For a quick list with the default settings, use one of the static methods.
+There's one for each region, named for its people:
+
+```java
+List<Person> anyone    = PersonGenerator.generateListOfRandomPeople(10);
+List<Person> world     = PersonGenerator.generateListOfRandomPeopleFromAroundTheWorld(5, 20); // 5 to 20 people
+List<Person> mexicans  = PersonGenerator.generateListOfRandomPeople(10, Region.MEX);
+List<Person> americans = PersonGenerator.generateListOfRandomAmericans(10);  // WESTERN names
+List<Person> koreans   = PersonGenerator.generateListOfRandomKoreans(10);    // ROK
+```
+
+The rest follow the same pattern: `Asians`, `Russians`, `Japanese`, `Filipinos`,
+`Vietnamese`, `Thais`, `Mexicans`, `Brazilians`, `Iranians`, `Israelis` (`HEB`),
+`Palestinians`, `NorthAfricans`, `CentralAfricans`, `SouthernAfricans`,
+`Britons`, `French`, `Spaniards`, `Portuguese`, `Greeks`, `Norwegians`,
+`Swedes` and `Finns`. There's no US-only region, so `Americans` draws from
+`WESTERN`, which also covers Europe and Australia. Each call picks a new random
+seed, so you can't replay its people. Use the builder when you need to.
+
 To replay a failure, log `gen.seed()` and pass it back to `.seed(...)`. That
 works even if you didn't set a seed, because the generator reports the random
 one it picked. Pass `.clock(Clock.fixed(...))` too if a test checks ages, so
@@ -186,7 +206,7 @@ plus `-r asia`:
 
 ```text
 first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer
-Walter|Brotherus|MALE|FIN|1980-04-04|46|walter.brotherus6@iff.com|(545) 555-0151|2925 Florence Ave|Las Vegas|NV|89120|International Flavors & Fragrances
+Walter|Joensuu|MALE|FIN|1980-04-04|46|walter.joensuu6@iff.com|(545) 555-0151|2925 Florence Ave|Las Vegas|NV|89120|International Flavors & Fragrances
 ```
 
 `json` prints one array, with each person on its own line (wrapped here to
@@ -194,8 +214,8 @@ fit):
 
 ```json
 [
-  {"firstName":"Hiroshi","lastName":"Tien","gender":"MALE","region":"ASIA","dateOfBirth":"1974-01-22","age":52,
-   "email":"hiroshi.tien@disney.com","phone":"(849) 555-0148",
+  {"firstName":"Hiroshi","lastName":"Zhang","gender":"MALE","region":"ASIA","dateOfBirth":"1974-01-22","age":52,
+   "email":"hiroshi.zhang@disney.com","phone":"(849) 555-0148",
    "address":{"street":"761 Rosemary St","city":"Commerce City","state":"CO","postalCode":"80022","country":"US"},
    "employer":{"name":"The Walt Disney Company","city":"Burbank","state":"CA","domain":"disney.com"}}
 ]
@@ -211,7 +231,7 @@ UTF-8 and NFC-normalized, built on 2026-11-19 and 2026-11-20:
 
 | Data | How many | Source |
 |---|---|---|
-| First names and surnames for each of the 24 regions | Up to 1,200 per file. Shorter where Wikidata has fewer people, or the country has fewer names: Vietnamese (95 first names), South Korean surnames (123), Palestinian (342 and 188) | Wikidata (CC0), ranked by how many people of each citizenship carry them |
+| First names and surnames for each of the 24 regions | Up to 1,200 per file. Shorter where Wikidata has fewer people, or the country has fewer names: Vietnamese (95 first names), South Korean surnames (123), Palestinian (342 and 188) | Wikidata (CC0), ranked by how many people of each citizenship carry them. Each surname also carries that count as its weight (`Kim|6766`), and surnames are drawn in proportion to it |
 | South Korean names in Hangul, with romanization | 1,200 first names, 118 surnames | Wikidata. Bundled for later use: the generator doesn't read them yet |
 | US companies with headquarters and domain | 1,500 | Wikidata: by revenue, then NYSE- and Nasdaq-listed companies by employee count |
 | US streets with city, state and ZIP | 1,500, 30 per state | US Census TIGER/Line 2024 (public domain) |

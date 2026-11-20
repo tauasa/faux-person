@@ -1,10 +1,5 @@
 package org.tauasa.apps.faux;
 
-import org.tauasa.apps.faux.model.Address;
-import org.tauasa.apps.faux.model.Company;
-import org.tauasa.apps.faux.model.Gender;
-import org.tauasa.apps.faux.model.Person;
-import org.tauasa.apps.faux.model.Region;
 import java.text.Normalizer;
 import java.time.Clock;
 import java.time.LocalDate;
@@ -14,6 +9,12 @@ import java.util.Locale;
 import java.util.Objects;
 import java.util.SplittableRandom;
 import java.util.stream.Stream;
+
+import org.tauasa.apps.faux.model.Address;
+import org.tauasa.apps.faux.model.Company;
+import org.tauasa.apps.faux.model.Gender;
+import org.tauasa.apps.faux.model.Person;
+import org.tauasa.apps.faux.model.Region;
 
 /**
  * Generates random, internally consistent {@link Person}s.
@@ -81,7 +82,7 @@ public final class PersonGenerator {
         Region r = region != null ? region : Region.values()[random.nextInt(Region.values().length)];
         Gender gender = pickGender();
         String first = pickFirstName(r, gender);
-        DataSet.Surname sn = pick(data.surnames.get(r));
+        DataSet.Surname sn = data.pickSurname(r, random);
         String last = switch (gender) {
             case FEMALE -> sn.feminine();
             case MALE -> sn.masculine();
@@ -136,6 +137,299 @@ public final class PersonGenerator {
      */
     public PersonGenerator split() {
         return new PersonGenerator(seed, random.split(), minAge, maxAge, genderWeights, region, clock);
+    }
+
+    // ---- One-line conveniences -------------------------------------------
+    // Each call uses a new generator with a random seed and the default
+    // settings, so its people can't be replayed. Use builder() for a seed, an
+    // age range or a fixed clock.
+
+    /**
+     * A list of random people from every region, with the default settings.
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     * @throws IllegalArgumentException if {@code howMany} is negative
+     */
+    public static List<Person> generateListOfRandomPeople(int howMany) {
+        return generateListOfRandomPeople(howMany, null);
+    }
+
+    /**
+     * A list of random people from around the world, of a random length: a
+     * count from {@code minHowMany} to {@code maxHowMany}, inclusive, each
+     * person from a region picked at random. Default settings otherwise.
+     *
+     * @param minHowMany the fewest people, zero or more
+     * @param maxHowMany the most people, at least {@code minHowMany}
+     * @return a new mutable list of people
+     * @throws IllegalArgumentException if {@code minHowMany} is negative or
+     *         greater than {@code maxHowMany}
+     */
+    public static List<Person> generateListOfRandomPeopleFromAroundTheWorld(int minHowMany, int maxHowMany) {
+        if (minHowMany < 0 || minHowMany > maxHowMany) {
+            throw new IllegalArgumentException(
+                    "need 0 <= minHowMany <= maxHowMany: " + minHowMany + ".." + maxHowMany);
+        }
+        PersonGenerator gen = builder().build();
+        // The count comes from a generator of its own, so the people drawn
+        // depend only on the seed, not on how many were asked for.
+        int howMany = minHowMany + new SplittableRandom(gen.seed()).split()
+                .nextInt(maxHowMany - minHowMany + 1);
+        return gen.next(howMany);
+    }
+
+    /**
+     * A list of random people with names from one region, with the default
+     * settings.
+     *
+     * @param howMany how many, zero or more
+     * @param region  a region, or {@code null} for every region
+     * @return a new mutable list of people
+     * @throws IllegalArgumentException if {@code howMany} is negative
+     */
+    public static List<Person> generateListOfRandomPeople(int howMany, Region region) {
+        return builder().region(region).build().next(howMany);
+    }
+
+    /**
+     * A list of random Americans, with names from the {@link Region#WESTERN} pool (the Americas, Europe, Australia and New Zealand), since there's no US-only region.
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomAmericans(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.WESTERN);
+    }
+
+    /**
+     * A list of random Asians ({@link Region#ASIA}: East, South and Southeast Asia).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomAsians(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.ASIA);
+    }
+
+    /**
+     * A list of random Russians ({@link Region#RUS}: Russia and the former Soviet Union).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomRussians(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.RUS);
+    }
+
+    /**
+     * A list of random South Koreans ({@link Region#ROK}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomKoreans(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.ROK);
+    }
+
+    /**
+     * A list of random Japanese people ({@link Region#JPN}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomJapanese(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.JPN);
+    }
+
+    /**
+     * A list of random Filipinos ({@link Region#PHL}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomFilipinos(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.PHL);
+    }
+
+    /**
+     * A list of random Vietnamese people ({@link Region#VNM}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomVietnamese(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.VNM);
+    }
+
+    /**
+     * A list of random Thais ({@link Region#THA}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomThais(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.THA);
+    }
+
+    /**
+     * A list of random Mexicans ({@link Region#MEX}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomMexicans(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.MEX);
+    }
+
+    /**
+     * A list of random Brazilians ({@link Region#BRA}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomBrazilians(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.BRA);
+    }
+
+    /**
+     * A list of random Iranians ({@link Region#IRN}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomIranians(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.IRN);
+    }
+
+    /**
+     * A list of random Israelis, with Hebrew names ({@link Region#HEB}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomIsraelis(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.HEB);
+    }
+
+    /**
+     * A list of random Palestinians ({@link Region#PSE}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomPalestinians(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.PSE);
+    }
+
+    /**
+     * A list of random North Africans ({@link Region#NAF}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomNorthAfricans(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.NAF);
+    }
+
+    /**
+     * A list of random Central Africans ({@link Region#CAF}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomCentralAfricans(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.CAF);
+    }
+
+    /**
+     * A list of random Southern Africans ({@link Region#SAF}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomSouthernAfricans(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.SAF);
+    }
+
+    /**
+     * A list of random Britons ({@link Region#GBR}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomBritons(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.GBR);
+    }
+
+    /**
+     * A list of random French people ({@link Region#FRA}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomFrench(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.FRA);
+    }
+
+    /**
+     * A list of random Spaniards ({@link Region#ESP}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomSpaniards(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.ESP);
+    }
+
+    /**
+     * A list of random Portuguese people ({@link Region#PRT}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomPortuguese(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.PRT);
+    }
+
+    /**
+     * A list of random Greeks ({@link Region#GRC}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomGreeks(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.GRC);
+    }
+
+    /**
+     * A list of random Norwegians ({@link Region#NOR}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomNorwegians(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.NOR);
+    }
+
+    /**
+     * A list of random Swedes ({@link Region#SWE}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomSwedes(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.SWE);
+    }
+
+    /**
+     * A list of random Finns ({@link Region#FIN}).
+     *
+     * @param howMany how many, zero or more
+     * @return a new mutable list of people
+     */
+    public static List<Person> generateListOfRandomFinns(int howMany) {
+        return generateListOfRandomPeople(howMany, Region.FIN);
     }
 
     private Gender pickGender() {

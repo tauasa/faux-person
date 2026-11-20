@@ -152,6 +152,29 @@ def surnames(path, ascii_only=False, keep=lambda n: True, canon=lambda n: n, lim
     return sorted(interleave(sub, limit, set()), key=str.lower), share
 
 
+def weights(path, ascii_only=False, canon=lambda n: n):
+    """How many people on Wikidata carry each surname, summed over the
+    region's countries. A name item can have both an "en" and a "mul" label,
+    which the query returns as two identical rows, so identical rows count once."""
+    seen, out = set(), defaultdict(int)
+    for r in csv.DictReader(open(path, encoding="utf-8")):
+        key = (r["c"], r["name"], r["n"])
+        if key in seen:
+            continue
+        seen.add(key)
+        name = fold(r["name"]) if ascii_only else r["name"]
+        if VALID.match(name):
+            out[canon(name)] += int(r["n"])
+    return out
+
+
+def weighted(m, f, counts):
+    """A surname line with its weight last: "Kim|13532", "Petrov|Petrova|401".
+    A feminine form's count adds to its masculine form's; the weight is at least 1."""
+    w = counts.get(m, 0) + (counts.get(f, 0) if f != m else 0)
+    return "|".join([m] + ([f] if f != m else []) + [str(max(1, w))])
+
+
 def write(path, lines):
     # NFC, so a name like "José" is always one code point per letter, whatever
     # form Wikidata stored it in.
@@ -180,13 +203,19 @@ def main(src, out):
         if len(pairs) >= TARGET:
             break
         limit += TARGET - len(pairs)
-    write(f"{out}/western_surnames.txt", [f"{m}|{f}" if f != m else m for m, f in pairs])
+    wc = weights(f"{src}/sur_W.csv")
+    write(f"{out}/western_surnames.txt", [weighted(m, f, wc) for m, f in pairs])
     _, _, a_share = load(f"{src}/sur_A.csv", True)
     asia_sur, _ = surnames(f"{src}/sur_A.csv", True, not_western(a_share, ws_share))
-    write(f"{out}/asia_surnames.txt", asia_sur)
+    ac = weights(f"{src}/sur_A.csv", True)
+    write(f"{out}/asia_surnames.txt", [weighted(n, n, ac) for n in asia_sur])
     _, _, r_share = load(f"{src}/sur_R.csv", canon=masculine)
     rus_sur, _ = surnames(f"{src}/sur_R.csv", keep=not_western(r_share, ws_share), canon=masculine)
-    write(f"{out}/rus_surnames.txt", [f"{m}|{feminine(m)}" for m in rus_sur])
+    # Counts are folded onto the masculine form, so Ivanova's count is in Ivanov's.
+    rc = weights(f"{src}/sur_R.csv", canon=masculine)
+    write(f"{out}/rus_surnames.txt",
+          ["|".join([m] + ([feminine(m)] if feminine(m) != m else []) + [str(max(1, rc.get(m, 0)))])
+           for m in rus_sur])
 
     rok(src, out, wf_share)
     countries(src, out)
@@ -225,7 +254,8 @@ def rok(src, out, wf_share):
     sur = only(f"{src}/sur_A.csv", ROK, f"{src}/sur_K.csv")
     ranked, _, _ = load(sur, True)
     picked = sorted({n for v in ranked.values() for n in v if n not in ROK_NOT_KOREAN}, key=str.lower)
-    write(f"{out}/rok_surnames.txt", picked)
+    kc = weights(sur, True)
+    write(f"{out}/rok_surnames.txt", [weighted(n, n, kc) for n in picked])
 
 
 
@@ -255,7 +285,8 @@ def countries(src, out):
         names, _ = first_names(fpath, ascii_only, fkeep)
         write(f"{out}/{prefix}_first_names.txt", [f"{n}|{g}" for n, g in names])
         sur, _ = surnames(spath, ascii_only, skeep)
-        write(f"{out}/{prefix}_surnames.txt", sur)
+        sc = weights(spath, ascii_only)
+        write(f"{out}/{prefix}_surnames.txt", [weighted(n, n, sc) for n in sur])
 
 
 HANGUL = re.compile(r"^[\uAC00-\uD7A3]{1,3}$")
@@ -311,7 +342,7 @@ def rok_hangul(src, out):
 
     count, _, rom = group(f"{src}/sur_ROKKO.csv", False)
     sur = [(ko, best_rom(rom, ko)) for ko in sorted(count) if best_rom(rom, ko)]
-    write(f"{out}/rok_hangul_surnames.txt", [f"{k}|{r}" for k, r in sur])
+    write(f"{out}/rok_hangul_surnames.txt", [f"{k}|{r}|{count[k]}" for k, r in sur])
 
 
 # Single-country and sub-continental regions added 2026-11-19.
@@ -398,9 +429,11 @@ def more_regions(src, out):
                 pairs = pair_genders(sur, pool)
             finally:
                 FEM_TO_MASC = saved
-            write(f"{out}/{prefix}_surnames.txt", [f"{m}|{f}" if f != m else m for m, f in pairs])
+            gc = weights(spath, ascii_only)
+            write(f"{out}/{prefix}_surnames.txt", [weighted(m, f, gc) for m, f in pairs])
         else:
-            write(f"{out}/{prefix}_surnames.txt", sur)
+            sc = weights(spath, ascii_only)
+            write(f"{out}/{prefix}_surnames.txt", [weighted(n, n, sc) for n in sur])
 
 
 if __name__ == "__main__":

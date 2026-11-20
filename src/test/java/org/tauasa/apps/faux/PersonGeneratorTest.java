@@ -10,11 +10,15 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 import java.time.Clock;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
+import java.util.EnumMap;
 import java.util.EnumSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -125,6 +129,22 @@ class PersonGeneratorTest {
     }
 
     @Test
+    void surnamesAreDrawnInProportionToTheirWeight() {
+        var sn = DATA.surnames.get(Region.ROK);
+        long total = sn.stream().mapToLong(DataSet.Surname::weight).sum();
+        DataSet.Surname kim = sn.stream().filter(s -> s.masculine().equals("Kim")).findFirst().orElseThrow();
+        double expected = (double) kim.weight() / total;
+        int n = 20000;
+        long kims = gen(14).region(Region.ROK).build().next(n).stream()
+                .filter(p -> p.lastName().equals("Kim")).count();
+        double seen = (double) kims / n;
+        // Five standard deviations either side: this fails only if the weights are ignored.
+        double sd = Math.sqrt(expected * (1 - expected) / n);
+        assertTrue(Math.abs(seen - expected) < 5 * sd, "Kim: expected " + expected + ", saw " + seen);
+        assertTrue(seen > 10.0 / sn.size(), "Kim should be far above a uniform 1/" + sn.size());
+    }
+
+    @Test
     void mixedRegionUsesEveryRegion() {
         Set<Region> seen = EnumSet.noneOf(Region.class);
         gen(10).build().next(300).forEach(p -> seen.add(p.region()));
@@ -162,5 +182,71 @@ class PersonGeneratorTest {
         return DATA.firstNames.get(r).stream()
                 .filter(f -> f.gender() == gender || f.gender() == 'U')
                 .map(DataSet.FirstName::name).collect(Collectors.toSet());
+    }
+
+    @Test
+    void generateListOfRandomPeopleGivesTheCountAskedFor() {
+        assertEquals(25, PersonGenerator.generateListOfRandomPeople(25).size());
+        assertEquals(0, PersonGenerator.generateListOfRandomPeople(0).size());
+        assertThrows(IllegalArgumentException.class, () -> PersonGenerator.generateListOfRandomPeople(-1));
+    }
+
+    @Test
+    void generateListOfRandomPeopleKeepsToTheRegionGiven() {
+        List<Person> people = PersonGenerator.generateListOfRandomPeople(50, Region.MEX);
+        assertTrue(people.stream().allMatch(p -> p.region() == Region.MEX));
+        // null means every region, as it does in the builder.
+        Set<Region> mixed = PersonGenerator.generateListOfRandomPeople(500, null).stream()
+                .map(Person::region).collect(Collectors.toSet());
+        assertTrue(mixed.size() > 1, "null should mix regions: " + mixed);
+    }
+
+    @Test
+    void americansHaveWesternNames() {
+        List<Person> people = PersonGenerator.generateListOfRandomAmericans(40);
+        assertEquals(40, people.size());
+        assertTrue(people.stream().allMatch(p -> p.region() == Region.WESTERN));
+    }
+
+    /** Each region has exactly one generateListOfRandomX(int), and it keeps to that region. */
+    @Test
+    void everyRegionHasItsOwnConvenienceMethod() throws Exception {
+        Map<Region, String> owner = new EnumMap<>(Region.class);
+        for (Method m : PersonGenerator.class.getMethods()) {
+            if (!Modifier.isStatic(m.getModifiers()) || !m.getName().startsWith("generateListOfRandom")
+                    || m.getName().equals("generateListOfRandomPeople")
+                    || m.getName().equals("generateListOfRandomPeopleFromAroundTheWorld")) {
+                continue;
+            }
+            @SuppressWarnings("unchecked")
+            List<Person> people = (List<Person>) m.invoke(null, 30);
+            assertEquals(30, people.size(), m.getName());
+            Set<Region> regions = people.stream().map(Person::region).collect(Collectors.toSet());
+            assertEquals(1, regions.size(), m.getName() + " mixed regions: " + regions);
+            Region r = regions.iterator().next();
+            String before = owner.put(r, m.getName());
+            assertEquals(null, before, r + " has two methods: " + before + " and " + m.getName());
+        }
+        assertEquals(EnumSet.allOf(Region.class), owner.keySet());
+    }
+
+    @Test
+    void peopleFromAroundTheWorldComeInARandomCountWithinTheBounds() {
+        Set<Integer> sizes = new java.util.HashSet<>();
+        Set<Region> regions = EnumSet.noneOf(Region.class);
+        for (int i = 0; i < 200; i++) {
+            List<Person> people = PersonGenerator.generateListOfRandomPeopleFromAroundTheWorld(5, 15);
+            assertTrue(people.size() >= 5 && people.size() <= 15, "size " + people.size());
+            sizes.add(people.size());
+            people.forEach(p -> regions.add(p.region()));
+        }
+        assertTrue(sizes.size() > 5, "the count should vary: " + sizes);
+        assertTrue(regions.size() > 20, "people should come from many regions: " + regions);
+        assertEquals(7, PersonGenerator.generateListOfRandomPeopleFromAroundTheWorld(7, 7).size());
+        assertEquals(0, PersonGenerator.generateListOfRandomPeopleFromAroundTheWorld(0, 0).size());
+        assertThrows(IllegalArgumentException.class,
+                () -> PersonGenerator.generateListOfRandomPeopleFromAroundTheWorld(-1, 3));
+        assertThrows(IllegalArgumentException.class,
+                () -> PersonGenerator.generateListOfRandomPeopleFromAroundTheWorld(4, 3));
     }
 }

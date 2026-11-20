@@ -3,6 +3,7 @@ package org.tauasa.apps.faux;
 import org.tauasa.apps.faux.model.Company;
 import org.tauasa.apps.faux.model.Region;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.nio.charset.StandardCharsets;
@@ -48,6 +49,28 @@ class DataSetTest {
         assertTrue(women * 4 >= first && men * 4 >= first, r + ": women " + women + ", men " + men);
     }
 
+    @ParameterizedTest
+    @EnumSource(Region.class)
+    void everySurnameFileIsWeighted(Region r) {
+        var sn = DATA.surnames.get(r);
+        assertTrue(sn.stream().allMatch(s -> s.weight() >= 1), r.toString());
+        // Weighted, not uniform: the most common surname outweighs the median one.
+        long max = sn.stream().mapToLong(DataSet.Surname::weight).max().orElseThrow();
+        long median = sn.stream().mapToLong(DataSet.Surname::weight).sorted().skip(sn.size() / 2).findFirst().orElseThrow();
+        assertTrue(max >= 5 * median, r + ": max " + max + ", median " + median);
+    }
+
+    @Test
+    void surnameLinesParseWithAndWithoutWeights() {
+        assertEquals(new DataSet.Surname("Kim", "Kim", 1), DataSet.surname(new String[] {"Kim"}));
+        assertEquals(new DataSet.Surname("Kim", "Kim", 6766), DataSet.surname(new String[] {"Kim", "6766"}));
+        assertEquals(new DataSet.Surname("Petrov", "Petrova", 1),
+                DataSet.surname(new String[] {"Petrov", "Petrova"}));
+        assertEquals(new DataSet.Surname("Petrov", "Petrova", 1663),
+                DataSet.surname(new String[] {"Petrov", "Petrova", "1663"}));
+        assertThrows(IllegalArgumentException.class, () -> DataSet.surname(new String[] {"Kim", "0"}));
+    }
+
     @Test
     void hangulFilesPairKoreanScriptWithItsRomanization() throws Exception {
         Pattern hangul = Pattern.compile("[\\uAC00-\\uD7A3]{1,3}");
@@ -64,8 +87,9 @@ class DataSetTest {
         }
         for (String line : sur) {
             String[] f = line.split("\\|", -1);
-            assertEquals(2, f.length, line);
+            assertEquals(3, f.length, line);
             assertTrue(hangul.matcher(f[0]).matches() && roman.matcher(f[1]).matches(), line);
+            assertTrue(Long.parseLong(f[2]) >= 1, line);
         }
         assertEquals(first.size(), first.stream().map(l -> l.split("\\|")[0]).distinct().count());
     }

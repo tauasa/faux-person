@@ -26,6 +26,7 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 | 2026-11-19 | Four more regions: **`MEX`** (Mexico), **`IRN`** (Iran), **`HEB`** (Hebrew names, from Israeli citizens) and **`PSE`** (Palestine). Mixed mode picks from all eight. A Chinese region was built and then dropped at the owner's request |
 | 2026-11-19 | **`rok_hangul_first_names.txt`** and **`rok_hangul_surnames.txt`** hold South Korean names in Hangul beside their romanization. They're bundled but the generator doesn't read them yet |
 | 2026-11-20 | Sixteen more regions: `JPN`, `PHL`, `VNM`, `THA`, `NAF` (North Africa), `CAF` (Central Africa), `SAF` (Southern Africa), `BRA`, `GBR`, `FRA`, `ESP`, `PRT`, `GRC`, `NOR`, `SWE`, `FIN`. Mixed mode picks from all 24 |
+| 2026-11-20 | **Surnames are drawn by weight**: each surname file ends every line with how many people on Wikidata, in that region's countries, carry the name. Every seed gives different surnames than before. Still 0.1.0, since nothing was released |
 | 2026-11-20 | License: **MIT**. Version **0.1.0**, set up for Maven Central. Uploads stop at "validated", so a person presses Publish |
 | 2026-11-20 | **Every data file must be clean Unicode**: strict UTF-8 without a byte-order mark, NFC-normalized, no control or invisible format characters, Unix line endings. `DataSetTest` enforces it |
 | 2026-11-19 | Data files keep the names the owner gave them. First placed at the root of `src/main/resources/`, then moved the same day to **`src/main/resources/org/tauasa/apps/faux/data/`**, so their generic names can't collide with another jar's on a consumer's classpath |
@@ -109,7 +110,7 @@ every seed produces (see *Versioning*).
 | 1 | `region` | The builder's region, or uniform over all 24 when it's `null` |
 | 2 | `gender` | Weighted pick from `genderWeights` |
 | 3 | `firstName` | Uniform from the region's first-name file, redrawn until it fits: `F` or `U` names for women, `M` or `U` for men, any name for non-binary |
-| 4 | `lastName` | Uniform from the region's surname file. Women get the feminine form, men the masculine, non-binary either at 50/50 |
+| 4 | `lastName` | From the region's surname file, each in proportion to its weight: one `nextLong(total weight)`, then a binary search of the running totals. Women get the feminine form, men the masculine, non-binary either at 50/50 |
 | 5 | `dateOfBirth` | Uniform day between the earliest and latest birthdays that give an age in range on the clock's today |
 | 6 | `employer` | Uniform from `us_companies_domains.txt` |
 | 7 | `email` | `first.last`, folded to lowercase ASCII, plus a 0–99 suffix on a coin flip, `@` the employer's domain |
@@ -131,6 +132,15 @@ Blank lines and lines starting with `#` are skipped. A missing or empty file,
 or a line with too few fields, fails at first use with `IllegalStateException`
 naming the file and line. [`tools/data/`](tools/data/) holds the scripts that built
 them, and `NOTICE` gives sources and licenses.
+
+**Surname weights.** Every `*_surnames.txt` line ends in a whole number of 1 or
+more: how many people on Wikidata, in the region's countries, carry the name.
+Identical rows from an item's `en` and `mul` labels count once, and a feminine
+form's count adds to its masculine form's (Ivanova to Ivanov). So a line is
+`Kim|6766`, `Petrov|Petrova|1663` or `Papadopoulos|Papadopoulou|129`. A line
+with no weight has weight 1, so an unweighted file is drawn uniformly. The
+formats in the table below leave the weight out. For Korea this gives Kim
+19%, Lee 14% and Park 7%, against about 21%, 15% and 8% in South Korea.
 
 | File | Lines | Format | Built from |
 |---|---|---|---|
@@ -192,9 +202,11 @@ Andrew without dropping Wang, Patel or Anna.
 - **Iranian and Palestinian lists are short** (539 and 342 first names), and women's names are a minority in both, because Wikidata has fewer people from those countries.
 - **Names mix countries within a region.** A Vietnamese first name can come
   with an Indian surname. A country column would fix it.
-- **Wikidata counts notable people, not populations.** The ranking favours
-  names common among people with Wikipedia articles, and the gender columns
-  have some noise.
+- **Wikidata counts notable people, not populations.** The ranking and the
+  surname weights favour names common among people with Wikipedia articles,
+  and the gender columns have some noise. For a few countries the weights run
+  high: Nguyen is 46% of Vietnamese surnames here, against about 38% in Vietnam.
+  First names aren't weighted.
 - **Lithuanian and Latvian feminine surnames** aren't derived. The feminine
   form equals the masculine.
 

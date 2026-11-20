@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeParseException;
 import java.util.Locale;
+
 import org.tauasa.apps.faux.PersonGenerator;
 import org.tauasa.apps.faux.model.Person;
 import org.tauasa.apps.faux.model.Region;
@@ -22,7 +23,7 @@ public final class FauxPersonCli {
     static final String USAGE = """
             usage: faux-person [options]
 
-              -n, --count N        how many people to print (default 10)
+              -n, --count N        how many people to generate (default 10)
               -s, --seed S         seed, to get the same people again (default random)
               -r, --region R       %s or mixed (default mixed)
                   --min-age N      youngest age (default 18)
