@@ -1,0 +1,1500 @@
+Amazon|Seattle|WA|amazon.com
+Walmart|Bentonville|AR|walmart.com
+ExxonMobil|Spring|TX|exxonmobil.com
+Apple Inc.|Cupertino|CA|apple.com
+McKesson Corporation|Irving|TX|mckesson.com
+Alphabet Inc.|Mountain View|CA|abc.xyz
+UnitedHealth Group|Minnetonka|MN|uhc.com
+CVS Health|West Warwick|RI|cvshealth.com
+Berkshire Hathaway|Omaha|NE|berkshirehathaway.com
+Microsoft|Redmond|WA|microsoft.com
+Costco|Issaquah|WA|costco.com
+Cencora|Chesterbrook|PA|cencora.com
+Nvidia|Santa Clara|CA|nvidia.com
+Meta Platforms|Menlo Park|CA|meta.com
+Phillips 66|Alief|TX|phillips66.com
+Cardinal Health|Dublin|OH|cardinalhealth.com
+AT&T|Dallas|TX|att.com
+JPMorgan Chase|New York City|NY|jpmorganchase.com
+Marathon Petroleum|Findlay|OH|marathonpetroleum.com
+Valero Energy|San Antonio|TX|valero.com
+Ford Motor Company|Dearborn|MI|ford.com
+The Cigna Group|Bloomfield|CT|cigna.com
+General Motors|Detroit|MI|gm.com
+The Home Depot|Marietta|GA|homedepot.com
+Elevance Health|Indianapolis|IN|elevancehealth.com
+Kroger|Cincinnati|OH|kroger.com
+GE Aerospace|Evendale|OH|geaerospace.com
+Cargill|Minnetonka|MN|cargill.com
+Centene Corporation|St. Louis|MO|centene.com
+Verizon Communications|New York City|NY|verizon.com
+Walgreens Boots Alliance|Deerfield|IL|walgreensbootsalliance.com
+Hewlett-Packard|Palo Alto|CA|hp.com
+Comcast|Philadelphia|PA|cmcsa.com
+Fannie Mae|Chillum|MD|fanniemae.com
+Bank of America|Charlotte|NC|bankofamerica.com
+Target Corporation|Minneapolis|MN|target.com
+IBM|Armonk|NY|ibm.com
+Citigroup|New York City|NY|citigroup.com
+Dell Inc.|Round Rock|TX|dell.com
+Archer Daniels Midland|Chicago|IL|adm.com
+Boeing|Chicago|IL|boeing.com
+United Parcel Service|Sandy Springs|GA|ups.com
+Pfizer|New York City|NY|pfizer.com
+Tesla|Austin|TX|tesla.com
+Lowe's|Mooresville|NC|lowes.com
+Johnson & Johnson|New Brunswick|NJ|jnj.com
+FedEx|Memphis|TN|fedex.com
+Humana|Louisville|KY|humana.com
+PepsiCo|Purchase|NY|pepsico.com
+Wells Fargo|San Francisco|CA|wellsfargo.com
+Prudential Financial|Newark|NJ|prudential.com
+Procter & Gamble|Mansfield|OH|pg.com
+Freddie Mac|McLean|VA|freddiemac.com
+The Walt Disney Company|Burbank|CA|disney.com
+Energy Transfer|Dallas|TX|energytransfer.com
+State Farm Insurance|Bloomington|IL|statefarm.com
+T-Mobile US|Bellevue|WA|t-mobile.com
+RTX|Arlington|VA|rtx.com
+Intel|Santa Clara|CA|intel.com
+ConocoPhillips|Houston|TX|conocophillips.com
+Albertsons|Boise|ID|albertsonscompanies.com
+Progressive Corporation|Mayfield|OH|progressive.com
+MetLife|New York City|NY|metlife.com
+American International Group|New York City|NY|aig.com
+Lockheed Martin|Bethesda|MD|lockheedmartin.com
+Sysco|Houston|TX|sysco.com
+Walgreens|Deerfield|IL|walgreens.com
+Bunge Limited|White Plains|NY|bunge.com
+Caterpillar|Irving|TX|caterpillar.com
+Merck & Co.|Rahway|NJ|merck.com
+Broadcom|Palo Alto|CA|broadcom.com
+Morgan Stanley|New York City|NY|morganstanley.com
+Delta Air Lines|Atlanta|GA|delta.com
+Deere & Company|Moline|IL|deere.com
+HCA Healthcare|Nashville|TN|hcahealthcare.com
+Goldman Sachs|New York City|NY|goldmansachs.com
+Enterprise Products|Houston|TX|enterpriseproducts.com
+AbbVie|North Chicago|IL|abbvie.com
+Oracle Corporation|Austin|TX|oracle.com
+Hewlett Packard Enterprise|Spring|TX|hpe.com
+Cisco|San Jose|CA|cisco.com
+Dow Inc.|Midland|MI|dow.com
+Publix|Lakeland|FL|publix.com
+Tyson Foods|Springdale|AR|tyson.com
+Mondelez International|Chicago|IL|mondelezinternational.com
+Charter Communications|Stamford|CT|charter.com
+Nationwide Mutual Insurance Company|Columbus|OH|nationwide.com
+American Express|New York City|NY|americanexpress.com
+American Airlines Group|Fort Worth|TX|aa.com
+Best Buy|Richfield|MN|bestbuy.com
+Allstate|Northbrook|IL|allstate.com
+TJX Companies|Framingham|MA|tjx.com
+SLB|Houston|TX|slb.com
+Liberty Mutual Insurance|Boston|MA|libertymutualgroup.com
+The Coca-Cola Company|Atlanta|GA|coca-colacompany.com
+PBF Energy|Parsippany|NJ|pbfenergy.com
+Nike|Beaverton|OR|nike.com
+Bristol-Myers Squibb|New York City|NY|bms.com
+Netflix, Inc.|Los Gatos|CA|netflix.net
+Eli Lilly and Company|Indianapolis|IN|lilly.com
+United Airlines Holdings|Chicago|IL|united.com
+Qualcomm|San Diego|CA|qualcomm.com
+Uber|San Francisco|CA|uber.com
+Abbott Laboratories|North Chicago|IL|abbott.com
+Kohlberg Kravis Roberts|New York City|NY|kkr.com
+Plains All American Pipeline|Houston|TX|plainsallamerican.com
+Honeywell|Charlotte|NC|honeywell.com
+Nucor|Charlotte|NC|nucor.com
+Hess Corporation|New York City|NY|hess.com
+Northrop Grumman Corporation|Falls Church|VA|northropgrumman.com
+New York Life Insurance Company|New York City|NY|newyorklife.com
+Visa|San Francisco|CA|visa.com
+General Dynamics|Reston|VA|gd.com
+Thermo Fisher Scientific|Waltham|MA|thermofisher.com
+NBCUniversal|New York City|NY|nbcuniversal.com
+CHS Inc.|Inver Grove Heights|MN|chsinc.com
+HF Sinclair|Dallas|TX|hollyfrontier.com
+Salesforce|San Francisco|CA|salesforce.com
+Dollar General|Goodlettsville|TN|dollargeneral.com
+USAA|San Antonio|TX|usaa.com
+Starbucks|Seattle|WA|starbucks.com
+The Travelers Companies|New York City|NY|travelers.com
+Occidental Petroleum|Houston|TX|oxy.com
+Exelon|Chicago|IL|exeloncorp.com
+3M|Maplewood|MN|3m.com
+Mars, Incorporated|McLean|VA|mars.com
+AMD|Santa Clara|CA|amd.com
+Capital One|McLean|VA|capitalone.com
+Northwestern Mutual|Milwaukee|WI|northwesternmutual.com
+Lennar Corporation|Miami|FL|lennar.com
+D. R. Horton|Arlington|TX|drhorton.com
+Cheniere Energy|Houston|TX|cheniere.com
+Mastercard|Purchase|NY|mastercard.com
+Gilead Sciences|Foster City|CA|gilead.com
+Amtrak|Chillum|MD|amtrak.com
+Philip Morris International|Stamford|CT|pmi.com
+NRG Energy|Princeton|NJ|nrg.com
+Danaher Corporation|Arlington|VA|danaher.com
+CBRE, Inc.|Los Angeles|CA|cbre.com
+Micron Technology|Boise|ID|micron.com
+International Paper|Memphis|TN|internationalpaper.com
+PACCAR|Bellevue|WA|paccar.com
+Flex Ltd.|San Jose|CA|flex.com
+Duke Energy|Charlotte|NC|duke-energy.com
+The Hartford|Hartford|CT|thehartford.com
+Dollar Tree|Chesapeake|VA|dollartree.com
+NextEra Energy|Juno Beach|FL|nexteraenergy.com
+McDonald's|Chicago|IL|mcdonalds.com
+Macy's, Inc.|Cincinnati|OH|macysinc.com
+Applied Materials|Santa Clara|CA|appliedmaterials.com
+Kraft Heinz|Pittsburgh|PA|kraftheinzcompany.com
+Amgen|Thousand Oaks|CA|amgen.com
+Altria|Richmond|VA|altria.com
+BNSF Railway|Fort Worth|TX|bnsf.com
+EOG Resources|Houston|TX|eogresources.com
+Aflac|Columbus|GA|aflac.com
+Live Nation Entertainment|Beverly Hills|CA|livenationentertainment.com
+OpenAI|San Francisco|CA|openai.com
+DXC Technology|Tysons|VA|dxc.com
+Massachusetts Mutual Life Insurance Company|Springfield|MA|massmutual.com
+Union Pacific Corporation|Omaha|NE|up.com
+Emerson Electric|St. Louis|MO|emerson.com
+Baker Hughes|Houston|TX|bakerhughes.com
+Merrill|New York City|NY|ml.com
+Pioneer Natural Resources|Irving|TX|pxd.com
+Block, Inc.|San Francisco|CA|block.xyz
+Southwest Airlines|Dallas|TX|southwest.com
+U.S. Steel|Pittsburgh|PA|ussteel.com
+Lumen Technologies|Monroe|LA|lumen.com
+U.S. Bancorp|Minneapolis|MN|usbank.com
+Cleveland-Cliffs|Cleveland|OH|clevelandcliffs.com
+Marriott International|Bethesda|MD|marriott.com
+Goodyear Tire and Rubber Company|Akron|OH|goodyear.com
+Ross Dress for Less|Dublin|CA|rossstores.com
+Builders FirstSource|Dallas|TX|bldr.com
+DuPont|Wilmington|DE|dupont.com
+Blackstone Inc.|New York City|NY|blackstone.com
+Eaton Corporation|Cleveland|OH|eaton.com
+Staples Inc.|Framingham|MA|staples.com
+ONEOK|Tulsa|OK|oneok.com
+Sherwin-Williams|Cleveland|OH|sherwin-williams.com
+Kimberly-Clark|Irving|TX|kimberly-clark.com
+Expand Energy|Oklahoma City|OK|chk.com
+Charles Schwab Corporation|San Francisco|CA|schwab.com
+Marsh & McLennan Companies|New York City|NY|mmc.com
+Devon Energy|Oklahoma City|OK|devonenergy.com
+Becton Dickinson|San Jose|CA|bd.com
+Texas Instruments|Dallas|TX|ti.com
+Waste Management, Inc|Houston|TX|wm.com
+Cognizant Technology Solutions|Teaneck|NJ|cognizant.com
+BlackRock|New York City|NY|blackrock.com
+Moderna|Cambridge|MA|modernatx.com
+Lincoln National Corporation|Fort Wayne|IN|lincolnfinancial.com
+DTE Energy|Detroit|MI|dteenergy.com
+Kinder Morgan|Houston|TX|kindermorgan.com
+The Mosaic Company|Plymouth|MN|mosaicco.com
+General Mills|Golden Valley|MN|generalmills.com
+Fluor|Irving|TX|fluor.com
+SpaceX|Brownsville|TX|spacex.com
+Lyondell Chemical|Houston|TX|lyondellbasell.com
+Stryker Corporation|Portage|MI|stryker.com
+L3Harris Technologies|Melbourne|FL|l3harris.com
+Xerox|Norwalk|CT|xerox.com
+Colgate-Palmolive Company|New York City|NY|colgatepalmolive.com
+Estée Lauder Companies|New York City|NY|elcompanies.com
+Fiserv|Brookfield|WI|fiserv.com
+PPG Industries|Pittsburgh|PA|ppg.com
+Adobe|San Jose|CA|adobe.com
+Principal Financial Group|Des Moines|IA|principal.com
+Corteva|Arlington|VA|corteva.com
+Lam Research|Fremont|CA|lamresearch.com
+Dominion Energy|Richmond|VA|dominionenergy.com
+Stanley Black & Decker|New Britain|CT|stanleyblackanddecker.com
+Synchrony Financial|Stamford|CT|synchronybank.com
+Baxter International|Deerfield|IL|baxter.com
+Gap Inc.|San Francisco|CA|gapinc.com
+Automatic Data Processing|Roseland|NJ|adp.com
+The Bank of New York Mellon|New York City|NY|bnymellon.com
+AutoZone|Memphis|TN|autozone.com
+PulteGroup|Atlanta|GA|pulte.com
+FirstEnergy|Akron|OH|firstenergycorp.com
+LabCorp|Burlington|NC|labcorp.com
+Regeneron Pharmaceuticals|Greenburgh|NY|regeneron.com
+McKinsey & Company|New York City|NY|mckinsey.com
+Fidelity Investments|Boston|MA|fidelity.com
+Parker Hannifin|Cleveland|OH|parker.com
+Westlake Corporation|Houston|TX|westlake.com
+Consolidated Edison|Manhattan|NY|coned.com
+Republic Services|Phoenix|AZ|republicservices.com
+Fidelity National Financial|Jacksonville|FL|fnf.com
+Omnicom Group|New York City|NY|omnicomgroup.com
+Kellanova|Battle Creek|MI|kelloggcompany.com
+Xcel Energy|Minneapolis|MN|xcelenergy.com
+YouTube LLC|San Bruno|CA|youtube.com
+Loews Corporation|New York City|NY|loews.com
+XPO, Inc.|Greenwich|CT|xpo.com
+Seagate Technology|Cupertino|CA|seagate.com
+CSX Corporation|Jacksonville|FL|csx.com
+J. B. Hunt|Lowell|AR|jbhunt.com
+BorgWarner|Auburn Hills|MI|borgwarner.com
+Expedia Group|Seattle|WA|expediagroup.com
+Bechtel|Reston|VA|bechtel.com
+Las Vegas Sands|Paradise|NV|lasvegassands.com
+O'Reilly Auto Parts|Springfield|MO|oreillyauto.com
+Biogen|Cambridge|MA|biogen.com
+Ameriprise Financial|Minneapolis|MN|ameriprise.com
+Otis Worldwide Corporation|Farmington|CT|otis.com
+Corning Inc.|Corning|NY|corning.com
+Fox Corporation|New York City|NY|foxcorporation.com
+Entergy|New Orleans|LA|entergy.com
+Textron|Providence|RI|textron.com
+BAE Systems Inc.|Falls Church|VA|baesystems.com
+VMware|Palo Alto|CA|vmware.com
+Public Service Enterprise Group|Newark|NJ|pseg.com
+Kodak|Rochester|NY|kodak.com
+Unum|Chattanooga|TN|unum.com
+MGM Resorts International|Las Vegas|NV|mgmresorts.com
+Discover Financial|Wilmington|DE|discover.com
+Markel Corporation|Richmond|VA|markelcorp.com
+Kingston Technology|Fountain Valley|CA|kingston.com
+Norfolk Southern Corporation|Norfolk|VA|norfolksouthern.com
+PPL|Allentown|PA|pplweb.com
+Intuit|Mountain View|CA|intuit.com
+Air Products & Chemicals|Detroit|MI|airproducts.com
+Amphenol|Wallingford|CT|amphenol.com
+Edison International|Rosemead|CA|edison.com
+Hormel|Austin|MN|hormel.com
+CenterPoint Energy|Houston|TX|centerpointenergy.com
+Eversource Energy|New Britain|CT|eversource.com
+Newmont Mining Corporation|Denver|CO|newmont.com
+State Street Corporation|Boston|MA|statestreet.com
+Hilton Worldwide|McLean|VA|hilton.com
+Analog Devices|Norwood|MA|analog.com
+Avis Budget Group|Parsippany|NJ|avisbudgetgroup.com
+APA Corporation|Houston|TX|apachecorp.com
+Williams Companies|Tulsa|OK|williams.com
+eBay|San Jose|CA|ebay.com
+Huntington Ingalls Industries|Newport News|VA|hii.com
+Hearst Communications|New York City|NY|hearst.com
+Voya Financial|New York City|NY|voya.com
+Raymond James Financial|St. Petersburg|FL|raymondjames.com
+S&P Global|New York City|NY|spglobal.com
+AGCO|Duluth|GA|agcocorp.com
+Airbnb|San Francisco|CA|airbnb.com
+Penske Automotive Group|Bloomfield Hills|MI|penskeautomotive.com
+Simplot|Boise|ID|simplot.com
+Weyerhaeuser|Seattle|WA|weyerhaeuser.com
+Quest Diagnostics|Secaucus|NJ|questdiagnostics.com
+American Tower Corporation|Boston|MA|americantower.com
+NVR, Inc.|Reston|VA|nvrinc.com
+The Hershey Company|Hershey|PA|thehersheycompany.com
+Vertiv|Westerville|OH|vertiv.com
+Howard Hanna Real Estate Services|Pittsburgh|PA|howardhanna.com
+Bloomberg L.P.|New York City|NY|bloomberg.com
+Celanese Corporation|Irving|TX|celanese.com
+Diamondback Energy|Midland|TX|diamondbackenergy.com
+Intercontinental Exchange|Atlanta|GA|theice.com
+Cincinnati Financial|Fairfield|OH|cinfin.com
+Continental Resources|Oklahoma City|OK|clr.com
+Constellation Brands|Victor|NY|cbrands.com
+KLA Corporation|Milpitas|CA|kla.com
+Perdue Farms|Salisbury|MD|perduefarms.com
+Motorola Solutions|Chicago|IL|motorolasolutions.com
+Coterra Energy|Houston|TX|cabotog.com
+Sirius XM Rad|New York City|NY|siriusxm.com
+Vertex Pharmaceuticals|Boston|MA|vrtx.com
+Activision Blizzard|Santa Monica|CA|activisionblizzard.com
+KBR, Inc.|Houston|TX|kbr.com
+Franklin Templeton Investments|San Mateo|CA|franklintempleton.com
+Ally Financial|Detroit|MI|ally.com
+Solventum|Eagan|MN|solventum.com
+News Corp|New York City|NY|newscorp.com
+M&T Bank|Buffalo|NY|mtb.com
+Zoetis|Florham Park|NJ|zoetis.com
+Citizens Financial Group|Providence|RI|citizensbank.com
+Palo Alto Networks|Santa Clara|CA|paloaltonetworks.com
+Coinbase|San Francisco|CA|coinbase.com
+Rockwell Automation|Milwaukee|WI|rockwellautomation.com
+T. Rowe Price|Baltimore|MD|troweprice.com
+Suffolk Construction Company|Boston|MA|suffolk.com
+Electronic Arts|Decatur|GA|ea.com
+Albemarle Corporation|Baton Rouge|LA|albemarle.com
+Orlando Health|Orlando|FL|orlandohealth.com
+KeyBank|Cleveland|OH|key.com
+Sony Music|New York City|NY|sonymusic.com
+onsemi|Scottsdale|AZ|onsemi.com
+Ralph Lauren Corporation|New York City|NY|ralphlauren.com
+Turner Construction|New York City|NY|turnerconstruction.com
+Yum! Brands|Louisville|KY|yum.com
+Cushman & Wakefield|New York City|NY|cushmanwakefield.com
+Agilent Technologies|Santa Clara|CA|agilent.com
+Yum China|Plano|TX|yumchina.com
+Lubrizol|Wickliffe|OH|lubrizol.com
+Northern Trust|Decatur|IL|northerntrust.com
+Ball Corporation|Broomfield|CO|ball.com
+Christie’s|New York City|NY|christies.com
+GlobalFoundries|Clifton Park|NY|gf.com
+Hasbro|Pawtucket|RI|hasbro.com
+Nasdaq, Inc.|New York City|NY|nasdaq.com
+Intuitive Surgical|Sunnyvale|CA|intuitive.com
+Moody's Corporation|New York City|NY|moodys.com
+Ametek|Berwyn|PA|ametek.com
+Sinclair Broadcast Group|Rockwall|TX|sbgi.net
+Alexion Pharmaceuticals|Cheshire|CT|alexion.com
+Warner Music Group|New York City|NY|wmg.com
+Bain & Company|Boston|MA|bain.com
+Roper Technologies|Wilmington|DE|roperind.com
+Avon Products Inc.|New York City|NY|avonworldwide.com
+Hologic|Marlborough|MA|hologic.com
+Fifth Third Bank|Cincinnati|OH|53.com
+Olive Garden|Orlando|FL|olivegarden.com
+Western Union|Denver|CO|westernunion.com
+Equinix|Redwood City|CA|equinix.com
+Xylem Inc.|White Plains|NY|xylem.com
+Skyworks Solutions|Woburn|MA|skyworksinc.com
+Microchip Technology|Chandler|AZ|microchip.com
+TransDigm Group Inc.|Cleveland|OH|transdigm.com
+Western & Southern Financial Group|Cincinnati|OH|westernsouthern.com
+Leidos|Reston|VA|leidos.com
+Airgas|Radnor|PA|airgas.com
+Skanska USA|New York City|NY|skanska.com
+Henry Ford Health|Detroit|MI|henryford.com
+GameStop|Grapevine|TX|gamestop.com
+Barnes & Noble|New York City|NY|barnesandnoble.com
+Booz Allen Hamilton|Tysons|VA|boozallen.com
+CME Group|Chicago|IL|cmegroup.com
+Kind Snacks|Utica|NY|kindsnacks.com
+Domino's Pizza|Ann Arbor|MI|dominos.com
+Herbalife|Madera|CA|herbalife.com
+Regions Financial Corporation|Birmingham|AL|regions.com
+NCR Corporation|Atlanta|GA|ncrvoyix.com
+Anthropic|San Francisco|CA|anthropic.com
+Logitech|Newark|CA|logitech.com
+Chipotle Mexican Grill|Newport Beach|CA|chipotle.com
+Nexstar Media Group|Irving|TX|nexstar.tv
+Rivian Automotive|Detroit|MI|rivian.com
+CACI|Arlington|VA|caci.com
+Zoom Communications|San Jose|CA|zoom.com
+Euronet Worldwide|Leawood|KS|euronet.com
+Brown-Forman|Louisville|KY|brown-forman.com
+Public Storage|Glendale|CA|publicstorage.com
+Old Dominion Freight Line|Thomasville|NC|odfl.com
+Brink's|Richmond|VA|brinks.com
+Noble Energy|Houston|TX|nobleenergyinc.com
+Stifel|St. Louis|MO|stifel.com
+Starz Entertainment|Santa Monica|CA|lionsgate.com
+Trimble|Westminster|CO|trimble.com
+Skechers|Manhattan Beach|CA|skechers.com
+ServiceNow|Santa Clara|CA|servicenow.com
+NetApp|Sunnyvale|CA|netapp.com
+Light & Wonder|Enterprise|NV|scientificgames.com
+Take-Two Interactive|New York City|NY|take2games.com
+Citrix Systems|Fort Lauderdale|FL|citrix.com
+Akamai Technologies|Worcester|MA|akamai.com
+Equifax|Atlanta|GA|equifax.com
+Six Flags|Charlotte|NC|sixflags.com
+BitGo|Sioux Falls|SD|bitgo.com
+CrowdStrike|Austin|TX|crowdstrike.com
+ITT Corporation|Stamford|CT|itt.com
+Avaya|Santa Clara|CA|avaya.com
+USA Today Co.|Tysons|VA|usatodayco.com
+Exide|Milton|GA|exide.com
+Palantir Technologies|Miami|FL|palantir.com
+TRI Pointe Group|Irvine|CA|tripointegroup.com
+Science Applications International Corporation|Tysons|VA|saic.com
+AECOM|Los Angeles|CA|aecom.com
+General Atomics|San Diego|CA|ga.com
+Tupperware|Orlando|FL|tupperwarebrands.com
+Legg Mason|Baltimore|MD|leggmason.com
+HubSpot|Cambridge|MA|hubspot.com
+AvalonBay|Arlington|VA|avaloncommunities.com
+SRA International|Centreville|VA|csra.com
+Gen Digital|Tempe|AZ|gendigital.com
+BWX Technologies|Lynchburg|VA|bwxt.com
+MongoDB Inc.|Utica|NY|mongodb.com
+Houlihan Lokey|Los Angeles|CA|hl.com
+EPAM Systems|State College|PA|epam.com
+GoDaddy|Tempe|AZ|godaddy.com
+Exelis Inc.|McLean|VA|exelisinc.com
+Groupon|Chicago|IL|groupon.com
+Reality Labs|Madera|CA|oculus.com
+Curtiss-Wright|Charlotte|NC|curtisswright.com
+MoneyGram|Dallas|TX|moneygram.com
+Red Hat|Raleigh|NC|redhat.com
+doTerra|Pleasant Grove|UT|doterra.com
+Duracell|Bethel|CT|duracell.com
+Burger King|Miami|FL|bk.com
+Oshkosh Corporation|Oshkosh|WI|oshkoshcorp.com
+Quiksilver|Huntington Beach|CA|quiksilver.com
+Autodesk|San Francisco|CA|autodesk.com
+Sabre Corporation|Southlake|TX|sabre.com
+HarperCollins|New York City|NY|harpercollins.com
+Fox Factory|Duluth|GA|ridefox.com
+Bausch & Lomb|Rochester|NY|bausch.com
+Cengage Group|Stamford|CT|cengagegroup.com
+Polycom|San Jose|CA|polycom.com
+Verisign|Reston|VA|verisign.com
+Jacobs Engineering Group|Dallas|TX|jacobs.com
+Brady Corporation|Milwaukee|WI|bradycorp.com
+United Launch Alliance|Centennial|CO|ulalaunch.com
+East Kentucky Power Cooperative|Winchester|KY|ekpc.coop
+Teledyne Technologies|Thousand Oaks|CA|teledyne.com
+Kaman Corporation|Bloomfield|CT|kaman.com
+Gensler|San Francisco|CA|gensler.com
+Applebee's|Kansas City|MO|applebees.com
+Aviation Capital Group|Newport Beach|CA|aviationcapitalgroup.com
+Suncoast Credit Union|Tampa|FL|suncoastcreditunion.com
+Bed Bath & Beyond, Inc.|Midvale|UT|bedbathandbeyond.com
+Sierra Nevada Corporation|Sparks|NV|sncorp.com
+Sotheby's|New York City|NY|sothebys.com
+Blumhouse Productions|Los Angeles|CA|blumhouse.com
+Central Bancompany|Jefferson City|MO|centralbank.net
+Fortinet|Sunnyvale|CA|fortinet.com
+Databricks|San Francisco|CA|databricks.com
+International Motors|Lisle|IL|international.com
+Golden 1 Credit Union|Sacramento|CA|golden1.com
+Getty Images|Seattle|WA|gettyimages.com
+Adventist HealthCare|Gaithersburg|MD|adventisthealthcare.com
+The Drees Company|Fort Mitchell|KY|dreeshomes.com
+FEI Company|Hillsboro|OR|fei.com
+Moog Inc.|Cheektowaga|NY|moog.com
+Entrust|Shakopee|MN|entrust.com
+Precision Castparts Corp.|Portland|OR|precast.com
+Azenta Life Sciences|Burlington|MA|azenta.com
+Shutterstock|New York City|NY|shutterstock.com
+Viasat|Carlsbad|CA|viasat.com
+California Water Service Group|San Jose|CA|calwatergroup.com
+Arconic|Pittsburgh|PA|arconic.com
+AAR Corp|Wood Dale|IL|aarcorp.com
+Esterline|Bellevue|WA|esterline.com
+Triumph Group|Berwyn|PA|triumphgroup.com
+TRUE MANUFACTURING CO., INC.|O'Fallon|MO|truemfg.com
+AM General|South Bend|IN|amgeneral.com
+Genesys|Daly City|CA|genesys.com
+Lyft|San Francisco|CA|lyft.com
+Fiesta Restaurant Group|Dallas|TX|frgi.com
+Empire State Realty Trust|New York City|NY|empirestaterealtytrust.com
+Cloudflare|San Francisco|CA|cloudflare.com
+Stratasys|Eden Prairie|MN|stratasys.com
+Tidewater|Houston|TX|tdw.com
+Pandora|Oakland|CA|pandora.com
+National Western Life|Austin|TX|nationalwesternlife.com
+Rubrik|Palo Alto|CA|rubrik.com
+Lucid Motors|Newark|CA|lucidmotors.com
+LifeWave, Inc.|Suwanee|GA|lifewave.com
+SRI International|Menlo Park|CA|sri.com
+Zagg|South Salt Lake|UT|zagg.com
+Extreme Networks|San Jose|CA|extremenetworks.com
+Roku, Inc.|Los Gatos|CA|roku.com
+Yelp|San Francisco|CA|yelp.com
+Anduril Industries|Madera|CA|anduril.com
+Strategy|Tysons|VA|microstrategy.com
+Bumble Holding Limited|Austin|TX|bumble.com
+Ruth's Hospitality Group|Winter Park|FL|rhgi.com
+Corgan|Dallas|TX|corgan.com
+Grid Dynamics Holdings|San Ramon|CA|griddynamics.com
+Potbelly Sandwich Shop|Chicago|IL|potbelly.com
+Quantum Corporation|San Jose|CA|quantum.com
+Axiom Space|Houston|TX|axiomspace.com
+Pollo Tropical|Miami|FL|pollotropical.com
+SmithGroup|Detroit|MI|smithgroup.com
+IHOP|Glendale|CA|ihop.com
+Nature's Sunshine Products|Lehi|UT|naturessunshine.com
+Samsara|San Francisco|CA|samsara.com
+Taco Cabana|San Antonio|TX|tacocabana.com
+Printful|Charlotte|NC|printful.com
+Delaware Electric Cooperative|Greenwood|DE|delaware.coop
+Stimson Lumber Company Inc.|Portland|OR|stimsonlumber.com
+CommunityAmerica Credit Union|Kansas City|MO|communityamerica.com
+Check 'n Go|Kenwood|OH|checkngo.com
+Pragmatics|Reston|VA|pragmatics.com
+Salt & Stone|Los Angeles|CA|saltandstone.com
+Kanda Software|Newton|MA|kandasoft.com
+Matterport|Sunnyvale|CA|matterport.com
+Sega of America|Irvine|CA|sega.com
+ZipRecruiter|Santa Monica|CA|ziprecruiter.com
+Emmis Communications|Indianapolis|IN|emmis.com
+Ultralife Corporation|Newark|NY|ultralifecorporation.com
+Embarcadero Technologies|Austin|TX|embarcadero.com
+Perma-Fix Environmental Services|Atlanta|GA|perma-fix.com
+PragerU|Calabasas|CA|prageru.com
+Educators Credit Union|Mount Pleasant|WI|ecu.com
+Radio Free Asia|Arlington|VA|rfa62zl6z6owmtlf.onion
+MannKind Corporation|Danbury|CT|mannkindcorp.com
+MidwayUSA|Columbia|MO|midwayusa.com
+ExOne|Monroeville|PA|exone.com
+Narco Freedom|The Bronx|NY|narcofreedom.com
+TechniGraphics, Inc.|Wooster|OH|tgstech.com
+Omidyar Network|Redwood City|CA|omidyar.com
+Big Cedar Lodge|Hollister|MO|bigcedar.com
+Second Stage Theater|New York City|NY|2st.com
+Relevant Radio|Green Bay|WI|relevantradio.com
+Exagen Inc.|Vista|CA|exagen.com
+Alpha Teknova|Hollister|CA|teknova.com
+OptiNose (United States)|Yardley|PA|optinose.com
+Rocky Mountain Chocolate|Durango|CO|rmcf.com
+Young & Reckless|Los Angeles|CA|youngandreckless.com
+Biblica|Colorado Springs|CO|biblica.com
+States Newsroom|Chapel Hill|NC|statesnewsroom.com
+Digimarc|Beaverton|OR|digimarc.com
+Netlify|San Francisco|CA|netlify.com
+Network For Teaching Entrepreneurship|New York City|NY|nfte.com
+Yeshivat Shaare Torah|New York City|NY|tripod.com
+Funko|Wenatchee|WA|funko.com
+Phunware|Austin|TX|phunware.com
+The Children's Place|Secaucus|NJ|childrensplace.com
+MedicAlert|Turlock|CA|medicalertcyprus.com
+ABC-CLIO|Santa Barbara|CA|abc-clio.com
+Schine State Theatre|Sandusky|OH|sanduskystate.com
+American Cinematheque|Los Angeles|CA|americancinematheque.com
+Professional Photographers of America|Atlanta|GA|ppa.com
+Rigetti Computing|Berkeley|CA|rigetti.com
+Trinity Repertory Company|Providence|RI|trinityrep.com
+Alabama Shakespeare Festival|Montgomery|AL|asf.net
+Breakthrough|New York City|NY|breakthrough.com
+Lensic Theater|Santa Fe|NM|lensic.com
+Atla|Chicago|IL|atla.com
+Techlogix|Woburn|MA|techlogix.com
+Center for Open Science|Charlottesville|VA|cos.io
+The New Press|New York City|NY|thenewpress.com
+OneAmerica Financial Partners, Inc.|Indianapolis|IN|oneamerica.com
+Interplay Entertainment|Beverly Hills|CA|interplay.com
+Legiit|Myrtle Beach|SC|legiit.com
+Kalamazoo Civic Theatre|Kalamazoo|MI|kazoocivic.com
+Athersys|Cleveland|OH|athersys.com
+Warner Bros. Television Studios|Burbank|CA|warnerbros.com
+Lifeway Christian Resources|Nashville|TN|lifeway.com
+MennoMedia|Harrisonburg|VA|mennomedia.ca
+Trump Media & Technology Group|Palm Beach|FL|tmtgcorp.com
+Playhouse Theater|Des Moines|IA|dmplayhouse.com
+Loft Cinema|Tucson|AZ|loftcinema.com
+Euclid Techlabs|Beltsville|MD|euclidtechlabs.com
+Unicorn Riot|Minneapolis|MN|unicornriot.ninja
+Baptist Standard|Plano|TX|baptiststandard.com
+King Arts Complex|Columbus|OH|thekingartscomplex.com
+Shared Interest|New York City|NY|shared-interest.com
+Valentine Theatre|Toledo|OH|valentinetheatre.com
+IDENETY|San Antonio|TX|idenety.com
+Ignyte Group|Arlington|VA|ignytegroup.com
+United States Federation of Worker Cooperatives|San Francisco|CA|usworker.coop
+Coastal and Estuarine Research Federation|Seattle|WA|cerf.science
+World Poetry Books|New York City|NY|worldpoetrybooks.com
+Plaza Theatre Company|Cleburne|TX|plaza-theatre.com
+Avon Theatre Film Center|Stamford|CT|avontheatre.com
+BBN Holding|San Francisco|CA|bbn.one
+Mockingbird Ministries Inc|Charlottesville|VA|mbird.com
+Purism|South San Francisco|CA|puri.sm
+American Genre Film Archive|Austin|TX|americangenrefilm.com
+Four Way Books|New York City|NY|fourwaybooks.com
+iDentity Corporation Worldwide|Atlanta|GA|theidentitycorporation.com
+Sprouse Upholstery, Inc.|Springdale|AR|sprouseupholstery.com
+North American Students of Cooperation|Chicago|IL|nasco.coop
+Code Ocean, Inc.|New York City|NY|codeocean.com
+Star Quest Production Network|Roswell|GA|sqpn.com
+Virgin Galactic|Las Cruces|NM|virgingalactic.com
+Attic Theatre|Atlanta|GA|theattictheatre.com
+Experimenter Publishing|Hillsborough|NH|amazingstories.com
+Charles H. Kerr Publishing Company|Chicago|IL|charleshkerr.com
+Desert Diamond Casinos|Tucson|AZ|ddcaz.com
+Constellis Holdings|Reston|VA|constellisgroup.com
+CNHI|Montgomery|AL|cnhi.com
+Google|Mountain View|CA|about.google
+Bath & Body Works, Inc.|Columbus|OH|lb.com
+Whole Foods Market|Austin|TX|wholefoodsmarket.com
+Western Digital|San Jose|CA|westerndigital.com
+Nordstrom|Seattle|WA|nordstrom.com
+Halliburton|Houston|TX|halliburton.com
+Pilgrim's Corp|Greeley|CO|pilgrims.com
+Alcoa|New York City|NY|alcoa.com
+Boston Scientific|Marlborough|MA|bostonscientific.com
+PNC Financial Services|Pittsburgh|PA|pnc.com
+Illinois Tool Works|Glenview|IL|itw.com
+Aetna|Hartford|CT|aetna.com
+Interpublic Group of Companies|New York City|NY|interpublic.com
+The Cheesecake Factory|Calabasas|CA|thecheesecakefactory.com
+The Hertz Corporation|Estero|FL|hertz.com
+Dick's Sporting Goods|Coraopolis|PA|dickssportinggoods.com
+Avery Dennison|Glendale|CA|avery.com
+AMC Theatres|Kansas City|MO|amctheatres.com
+Victoria’s Secret|Reynoldsburg|OH|victoriassecret.com
+Truist Financial|Charlotte|NC|truist.com
+LKQ Corporation|Chicago|IL|lkqcorp.com
+Aéropostale|New York City|NY|aeropostale.com
+United Parks & Resorts|Orlando|FL|unitedparks.com
+WW International|New York City|NY|weightwatchers.com
+Dutch Bros. Coffee|Tempe|AZ|dutchbros.com
+Tenneco|Lake Forest|IL|tenneco.com
+Carvana|Tempe|AZ|carvana.com
+Papa John's|Louisville|KY|papajohns.com
+Chiquita Brands International|Fort Lauderdale|FL|chiquita.com
+JetBlue Airways|Long Island City|NY|jetblue.com
+Jeld-Wen|Charlotte|NC|jeld-wen.com
+Workday, Inc.|Pleasanton|CA|workday.com
+Pacific Gas and Electric Company|San Francisco|CA|pge.com
+Newell Brands|Atlanta|GA|newellbrands.com
+Flowserve|Irving|TX|flowserve.com
+Rocket Companies|Detroit|MI|rocket.com
+Edwards Lifesciences|Irvine|CA|edwardslifesciences.com
+Optimum Communications|Bethpage|NY|alticeusa.com
+Kennametal|Latrobe|PA|kennametal.com
+Domtar|Fort Mill|SC|domtar.com
+Harsco Corporation|Camp Hill|PA|harsco.com
+Bally's Corporation|Providence|RI|ballys.com
+Robert Half|Menlo Park|CA|roberthalf.com
+Harman International Industries|Stamford|CT|harman.com
+Huntington Bancshares|Columbus|OH|huntington.com
+Pall Corporation|Port Washington|NY|pall.com
+Tiffany & Co.|New York City|NY|tiffany.com
+Covista|Chicago|IL|covista.com
+Allegheny Technologies|Pittsburgh|PA|atimetals.com
+Morningstar, Inc.|Chicago|IL|morningstar.com
+Keysight Technologies|Santa Rosa|CA|keysight.com
+Juniper Networks|Sunnyvale|CA|juniper.net
+Illumina|San Diego|CA|illumina.com
+Commercial Metals Company|Irving|TX|cmc.com
+IHS Inc.|Englewood|CO|ihs.com
+SVB Financial Group|New York City|NY|svb.com
+Extra Space Storage|Salt Lake City|UT|extraspace.com
+SunPower|San Jose|CA|sunpower.com
+Bio-Rad Laboratories|Hercules|CA|bio-rad.com
+Teradata|San Diego|CA|teradata.com
+Parametric Technology Corporation|Boston|MA|ptc.com
+Steel Dynamics|Fort Wayne|IN|steeldynamics.com
+Plantronics|Santa Cruz|CA|poly.com
+SunEdison|Belmont|CA|sunedison.com
+Waters Corporation|Milford|MA|waters.com
+Camping World|Lincolnshire|IL|campingworld.com
+Marvell Technology|Santa Clara|CA|marvell.com
+Abercrombie & Fitch|New Albany|OH|abercrombie.com
+People Incorporated|New York City|NY|people-incorporated.com
+U.S. Cellular|Chicago|IL|uscellular.com
+Kansas City Southern|Kansas City|MO|kcsouthern.com
+National Instruments|Austin|TX|ni.com
+ReachLocal|Woodland Hills|CA|reachlocal.de
+Symbol Technologies|Holtsville|NY|symbol.com
+Media General|Richmond|VA|mediageneral.com
+Molson Coors Brewing Company|Chicago|IL|molsoncoors.com
+Kirby Corporation|Houston|TX|kirbycorp.com
+IDEXX Laboratories, Inc.|Westbrook|ME|idexx.com
+Vivint Solar|Lehi|UT|vivintsolar.com
+Ultimate Software|Weston|FL|ultimatesoftware.com
+Rackspace Technology|San Antonio|TX|rackspace.com
+ANSYS, Inc.|Canonsburg|PA|ansys.com
+FTI Consulting|Arlington|VA|fticonsulting.com
+Altafiber|Cincinnati|OH|altafiber.com
+Mueller Water Products|Atlanta|GA|muellerwaterproducts.com
+Krispy Kreme|Winston-Salem|NC|krispykreme.com
+UiPath|New York City|NY|uipath.com
+NACCO Industries|Cleveland|OH|nacco.com
+Zendesk|San Francisco|CA|zendesk.com
+Deltek|Herndon|VA|deltek.com
+PGT Windows and Doors|Venice|FL|pgtwindows.com
+CIT Group|New York City|NY|cit.com
+Haemonetics|Boston|MA|haemonetics.com
+Simon Property Group|Indianapolis|IN|simon.com
+Lazard|New York City|NY|lazard.com
+Pinterest Inc.|San Francisco|CA|pinterest.de
+Teradyne|North Reading|MA|teradyne.com
+Wolfspeed|Durham|NC|wolfspeed.com
+Materion|Mayfield Heights|OH|materion.com
+Alamo Group|Seguin|TX|alamo-group.com
+Tennant Company|Minneapolis|MN|tennantco.com
+NextGen Healthcare Information Systems|Atlanta|GA|nextgen.com
+Claritev|McLean|VA|claritev.com
+Bentley Systems|Exton|PA|bentley.com
+SouthState Bank|Winter Haven|FL|southstatebank.com
+Simpson Manufacturing Company|Pleasanton|CA|simpsonmfg.com
+Carlyle Group|Arlington|VA|carlyle.com
+AMC Global Media|New York City|NY|amcglobalmedia.com
+Adtran|Huntsville|AL|adtran.com
+Element Solutions|Miami|FL|platformspecialtyproducts.com
+Unity Technologies|San Francisco|CA|unity.com
+Coeur Mining|Chicago|IL|coeur.com
+Century Casinos|Colorado Springs|CO|cnty.com
+Amylin Pharmaceuticals|San Diego|CA|amylin.com
+WSFS Bank|Wilmington|DE|wsfsbank.com
+Choice Hotels|Rockville|MD|choicehotels.com
+Dolby|San Francisco|CA|dolby.com
+AspenTech Corp.|Bedford|MA|aspentech.com
+Snowflake Inc.|San Mateo|CA|snowflake.com
+Ubiquiti|New York City|NY|ui.com
+MINDBODY|San Luis Obispo|CA|mindbodyonline.com
+Century Aluminum|Chicago|IL|centuryaluminum.com
+Cymer, Inc.|San Diego|CA|cymer.com
+JFrog|Sunnyvale|CA|jfrog.com
+Liveperson Inc.|New York City|NY|liveperson.com
+Dropbox Inc.|San Francisco|CA|dropbox.com
+Zynga|San Francisco|CA|zynga.com
+Cirrus Logic|Austin|TX|cirrus.com
+Vimeo|Utica|NY|vimeo.com
+Sturm, Ruger & Co.|Southport|CT|ruger.com
+Luminex|Austin|TX|luminexcorp.com
+Cray|Seattle|WA|cray.com
+Urban One|Silver Spring|MD|urban1.com
+Atlantic Tele-Network|Beverly|MA|atni.com
+GoPro|San Mateo|CA|gopro.com
+U.S. Auto Parts|Carson|CA|usautoparts.com
+Netgear|San Jose|CA|netgear.com
+Nextdoor|San Francisco|CA|nextdoor.com
+Welltower|Toledo|OH|welltower.com
+ChannelAdvisor|Morrisville|NC|channeladvisor.com
+Upwork|Palo Alto|CA|upwork.com
+Planet Labs|San Francisco|CA|planet.com
+The RMR Group|Newton|MA|rmrgroup.com
+Telenav|Santa Clara|CA|telenav.com
+Kimco Realty|New Hyde Park|NY|kimcorealty.com
+Velodyne Lidar|San Jose|CA|velodynelidar.com
+Zipcar|Boston|MA|zipcar.com
+Cardlytics|Atlanta|GA|cardlytics.com
+Bankrate|New York City|NY|bankrate.com
+Accelerate Diagnostics|Tucson|AZ|acceleratediagnostics.com
+Exar Corporation|Madera|CA|exar.com
+Tanger Inc.|Greensboro|NC|tanger.com
+Adamis Pharmaceuticals Corporation|San Diego|CA|adamispharmaceuticals.com
+Royal Caribbean Group|Miami|FL|royalcaribbeangroup.com
+Cel-Sci (United States)|Vienna|VA|cel-sci.com
+Tripadvisor|Needham|MA|tripadvisor.com
+Build-A-Bear Workshop|St. Louis|MO|buildabear.com
+Vontier|Raleigh|NC|vontier.com
+Aurora Innovation|Pittsburgh|PA|aurora.tech
+Viatris|Pittsburgh|PA|viatris.com
+CDW|Vernon Hills|IL|cdw.com
+Callaway Golf Company|Carlsbad|CA|callawaygolf.com
+Campbell's|Camden|NJ|campbells.com
+ThoughtWorks|Chicago|IL|thoughtworks.com
+Aaron's, Inc.|Atlanta|GA|aarons.com
+C3.ai|Redwood City|CA|c3.ai
+Vistra|Irving|TX|vistracorp.com
+Carnival Corporation|Haines City|FL|carnivalcorp.com
+Axsome Therapeutics|New York City|NY|axsome.com
+BioAtla|San Diego|CA|bioatla.com
+Eagle Pharmaceuticals|Woodcliff Lake|NJ|eagleus.com
+Insulet (United States)|Bedford|MA|insulet.com
+Alpine Immune Sciences|Seattle|WA|alpineimmunesciences.com
+Delek US|Brentwood|TN|delekus.com
+Penumbra|Alameda|CA|penumbrainc.com
+GRAIL|Menlo Park|CA|grail.com
+Immersion Corporation|San Jose|CA|immersion.com
+Cerner|North Kansas City|MO|cerner.com
+MP Materials|Las Vegas|NV|mpmaterials.com
+Five9 Inc.|San Ramon|CA|five9.com
+DirecTV|El Segundo|CA|directv.com
+Thredup|San Francisco|CA|thredup.com
+Shake Shack|New York City|NY|olo.com
+U-Haul Holding Company|Reno|NV|amerco.com
+BridgeBio|Palo Alto|CA|bridgebio.com
+Luminar Technologies|Orlando|FL|luminartech.com
+TopBuild Corp.|Daytona Beach|FL|topbuild.com
+Digital Turbine|Wilmington|DE|digitalturbine.com
+Envista Holdings Corporation|Brea|CA|envistaco.com
+TG Therapeutics|New York City|NY|tgtherapeutics.com
+WillScot Mobile Mini Holdings Corp.|Phoenix|AZ|willscotmobilemini.com
+Relay Therapeutics|Cambridge|MA|relaytx.com
+Ensysce Biosciences|La Jolla|CA|ensysce.com
+ShockWave Medical (United States)|Lucerne Valley|CA|shockwavemedical.com
+Redwire|Jacksonville|FL|rdw.com
+VBI Vaccines|Cambridge|MA|vbivaccines.com
+Kyndryl|New York City|NY|kyndryl.com
+TPI Composites|Scottsdale|AZ|tpicomposites.com
+Klaviyo|Boston|MA|klaviyo.com
+WRAP Technologies|Tempe|AZ|wrap.com
+Rocket Pharmaceuticals Inc.|Princeton|NJ|rocketpharma.com
+Nkarta Therapeutics (United States)|South San Francisco|CA|nkartatx.com
+LiveWire|Milwaukee|WI|livewire.com
+Definium Therapeutics|New York City|NY|definiumtx.com
+Newegg|La Puente|CA|newegg.com
+Pagaya technologies|New York City|NY|pagaya.com
+English|Chico|CA|tcbk.com
+Ciena|Hanover|MD|ciena.com
+ArcBest|Fort Smith|AR|arcb.com
+Archer Aviation|San Jose|CA|archer.com
+Opiant Pharmaceuticals|Santa Monica|CA|opiant.com
+Orion Office REIT|Phoenix|AZ|onlreit.com
+Franchise Group|Delaware|OH|franchisegrp.com
+Encore Wire|McKinney|TX|encorewire.com
+Matthews International|Pittsburgh|PA|matw.com
+Coty|New York City|NY|coty.com
+Embark Technology|San Francisco|CA|embarktrucks.com
+Oklo|Sunnyvale|CA|oklo.com
+Coherent, Inc.|Santa Clara|CA|coherent.com
+United Wholesale Mortgage|Pontiac|MI|uwm.com
+DigitalBridge|Boca Raton|FL|digitalbridge.com
+Columbia Sportswear Company|Cedar Mill|OR|columbia.com
+Cerence Inc.|Burlington|MA|cerence.com
+Asana Inc.|San Francisco|CA|asana.com
+Comerica|Dallas|TX|comerica.com
+Reddit Inc.|San Francisco|CA|redditinc.com
+Compuware|Detroit|MI|compuware.com
+Conagra Brands, Inc.|Chicago|IL|conagrabrands.com
+AST SpaceMobile|Midland|TX|ast-science.com
+Convergys|Cincinnati|OH|convergys.com
+The Cooper Companies|San Ramon|CA|coopercos.com
+Cooper Tire & Rubber Company|Findlay|OH|coopertire.com
+Sparklight|Phoenix|AZ|sparklight.com
+Service Corporation International|Houston|TX|sci-corp.com
+Sealy Corporation|Trinity|NC|sealyinc.com
+PVH Corp.|New York City|NY|pvh.com
+Mirum Pharmaceuticals|Foster City|CA|mirumpharma.com
+CoreCivic|Nashville|TN|corecivic.com
+Arrowhead Pharmaceuticals|Pasadena|CA|arrowheadpharma.com
+Nuance Communications|Burlington|MA|nuance.com
+Riot Platforms, Inc.|Castle Rock|CO|riotplatforms.com
+First Solar|Tempe|AZ|firstsolar.com
+Frontier Airlines|Denver|CO|flyfrontier.com
+Riverbed Technology|Redwood City|CA|riverbed.com
+Blue Owl Capital|New York City|NY|blueowlcapitalcorporation.com
+GE HealthCare|Chicago|IL|gehealthcare.com
+Seer, Inc|Redwood City|CA|seer.bio
+Scholastic Corporation|New York City|NY|scholastic.com
+Silvergate Capital|La Jolla|CA|silvergate.com
+Daktronics|Brookings|SD|daktronics.com
+One Stop Systems, Inc.|Escondido|CA|onestopsystems.com
+Precision BioSciences|Durham|NC|precisionbiosciences.com
+FMC Technologies|Houston|TX|fmctechnologies.com
+Bank of the Sierra|Porterville|CA|bankofthesierra.com
+Deckers Outdoor Corporation|Goleta|CA|deckers.com
+Bridge Investment Group|Salt Lake City|UT|bridgeig.com
+Del Taco|Lake Forest|CA|deltaco.com
+Baldwin Piano Company|Trumann|AR|baldwinpiano.com
+Terran Orbital Corporation|Irvine|CA|terranorbital.com
+GE Vernova|Cambridge|MA|gevernova.com
+Denny's|Spartanburg|SC|dennys.com
+Rambus|Sunnyvale|CA|rambus.com
+Newsmax Media|West Palm Beach|FL|newsmax.com
+Dish|Meridian|CO|dish.com
+Energizer Holdings, Inc.|St. Louis|MO|energizerholdings.com
+TKO Group Holdings|New York City|NY|tkogrp.com
+Golden Flake|Birmingham|AL|goldenflake.com
+DDR Corp.|Beachwood|OH|ddr.com
+T1 Energy|Dover|DE|t1energy.com
+Recursion Pharmaceuticals|Salt Lake City|UT|recursion.com
+908 Devices Inc.|Boston|MA|908devices.com
+Diebold Nixdorf|North Canton|OH|dieboldnixdorf.com
+Janover|Boca Raton|FL|janover.co
+Sonim Technologies|San Mateo|CA|sonimtech.com
+Genesee & Wyoming|Darien|CT|gwrr.com
+TTM Technologies|Santa Ana|CA|ttm.com
+Dollar Thrifty Automotive Group|Tulsa|OK|dollar.com
+Camden National Corporation|Camden|ME|camdennationalcorporation.com
+Cullinan Oncology|Cambridge|MA|cullinanoncology.com
+Sidus Space|Merritt Island|FL|sidusspace.com
+CleanSpark|Henderson|NV|cleanspark.com
+Omega Therapeutics|Cambridge|MA|omegatherapeutics.com
+Aehr Test Systems|Fremont|CA|aehr.com
+HarborOne Bancorp|Brockton|MA|harboronebancorp.com
+Acutus Medical|Carlsbad|CA|acutusmedical.com
+Richtech Robotics|Las Vegas|NV|richtechrobotics.com
+Comtech|Chandler|AZ|comtech.com
+BigBear.ai|Crofton|MD|bigbear.ai
+Duolingo Inc|Pittsburgh|PA|duolingo.com
+The Howard Hughes Corporation|Dallas|TX|howardhughes.com
+LiveRamp|San Francisco|CA|liveramp.com
+Rallybio|New Haven|CT|rallybio.com
+Xos, Inc.|Los Angeles|CA|xostrucks.com
+Dun & Bradstreet|Jacksonville|FL|dnb.com
+Vital Farms|Austin|TX|vitalfarms.com
+Levi Strauss & Co.|San Francisco|CA|levi.com
+EchoStar|Englewood|CO|echostar.com
+Ecolab|Saint Paul|MN|ecolab.com
+TransMontaigne|Denver|CO|transmontaigne.com
+Chicken Soup for the Soul Entertainment|Cos Cob|CT|cssentertainment.com
+OppFi Inc.|Chicago|IL|oppfi.com
+FirstSun Capital|Denver|CO|firstsuncb.com
+Symetra|Bellevue|WA|symetra.com
+Nathan's Famous|Jericho|NY|nathansfamous.com
+Allegiant Air|Enterprise|NV|allegiantair.com
+Resolute Holdings Management, Inc|New York City|NY|resoluteholdings.com
+RealNetworks|Seattle|WA|realnetworks.com
+Office Depot|Boca Raton|FL|officedepot.com
+Southside Bank|Tyler|TX|southside.com
+EnerSys|Reading|PA|enersys.com
+Helicos Biosciences|Cambridge|MA|helicosbio.com
+Etsy|Brooklyn|NY|etsy.com
+Uniti|Little Rock|AR|uniti.com
+Versant|New York City|NY|versantmedia.com
+Aircastle|Stamford|CT|aircastle.com
+Hilton Grand Vacations|Orlando|FL|hiltongrandvacations.com
+TierOne Bank|Lincoln|NE|tieronebank.com
+USA Rare Earth|Stillwater|OK|usare.com
+Metsera Inc|New York City|NY|metsera.com
+Heartland Express|North Liberty|IA|heartlandexpress.com
+W. R. Berkley|Greenwich|CT|wrberkley.com
+Marten Transport|Mondovi|WI|marten.com
+MBIA|Armonk|NY|mbia.com
+Navitas Semiconductor|Torrance|CA|navitassemi.com
+Expeditors International|Seattle|WA|expeditors.com
+Express|Columbus|OH|express.com
+Figma Inc|San Francisco|CA|figma.com
+FICO|San Jose|CA|fico.com
+Hyperliquid Strategies|New York City|NY|hypestrat.xyz
+Federal Signal Corporation|Oak Brook|IL|federalsignal.com
+FedEx Freight|Memphis|TN|fedexfreight.com
+Alkami Technology|Plano|TX|alkami.com
+Turning Point Brands|Louisville|KY|turningpointbrands.com
+Bottomline Technologies|Portsmouth|NH|bottomline.com
+Hayward Industries|Charlotte|NC|hayward.com
+Mercury Insurance|Brea|CA|mercuryinsurance.com
+Hippo Insurance|Palo Alto|CA|hippo.com
+Horace Mann Educators Corporation|Springfield|IL|horacemann.com
+Hagerty Insurance|Traverse City|MI|hagerty.com
+CSW Industrials|Dallas|TX|csw.com
+Fidelity National Information Services|Jacksonville|FL|fisglobal.com
+Lynden|Seattle|WA|lynden.com
+West Coast Community Bancorp|Santa Cruz|CA|wccb.com
+Lexmark|Lexington|KY|lexmark.com
+Unnamed Paramount-Warner Bros. company|Los Angeles|CA|skydance.com
+First Horizon National Corporation|Memphis|TN|fhnc.com
+Sunoco|Dallas|TX|sunoco.com
+Hyatt Hotels Corporation|Chicago|IL|hyatt.com
+Hyperion Solutions Corporation|Santa Clara|CA|hyperion.com
+Freeport-McMoRan|Phoenix|AZ|fcx.com
+Revlon|New York City|NY|revlon.com
+Hospira|Lake Forest|IL|hospira.com
+Whirlpool Corporation|Benton Harbor|MI|whirlpoolcorp.com
+ManpowerGroup|Milwaukee|WI|manpowergroup.com
+Smithfield Foods|Smithfield|VA|smithfieldfoods.com
+Wiley|Hoboken|NJ|wiley.com
+Genworth Financial|Richmond|VA|genworth.com
+GEO Group|Boca Raton|FL|geogroup.com
+CooperVision|Pleasanton|CA|coopervision.com
+Safeway|Pleasanton|CA|safeway.com
+Sarepta Therapeutics|Cambridge|MA|sarepta.com
+California Pizza Kitchen|Los Angeles|CA|cpk.com
+Craft Brew Alliance|Portland|OR|craftbrew.com
+Dexcom|San Diego|CA|dexcom.com
+Harmonic Inc.|San Jose|CA|harmonicinc.com
+I.D. Systems|Woodcliff Lake|NJ|powerfleet.com
+Luna Innovations|Roanoke|VA|lunainnovations.com
+Medivation|San Francisco|CA|medivation.com
+Mindspeed Technologies|Newport Beach|CA|mindspeed.com
+Natural Alternatives International|San Marcos|CA|nai-online.com
+Netlist Inc.|Irvine|CA|netlist.com
+Tractor Supply Company|Brentwood|TN|tractorsupply.com
+WME Group|Beverly Hills|CA|endeavorco.com
+Liberty Media|Castle Rock|CO|libertymedia.com
+Alleghany Corporation|New York City|NY|alleghany.com
+CallidusCloud|Pleasanton|CA|calliduscloud.com
+Kimball International|Jasper|IN|kimballinternational.com
+RetailMeNot|Austin|TX|retailmenot.com
+Republic Airways Holdings|Indianapolis|IN|rjet.com
+Jack in the Box|San Diego|CA|jackinthebox.com
+Kelly Services|Troy|MI|kellyservices.com
+The Timberland Company|Portsmouth|NH|timberland.com
+Iridium|McLean|VA|iridium.com
+OM Group|Cleveland|OH|omgi.com
+Synaptics|Santa Clara|CA|synaptics.com
+Corcept Therapeutics|Menlo Park|CA|corcept.com
+Madison Square Garden Sports|New York City|NY|msgsports.com
+PGi|Atlanta|GA|pgi.com
+Lionbridge|Waltham|MA|lionbridge.com
+Infoblox|Santa Clara|CA|infoblox.com
+Monotype|Woburn|MA|monotype.com
+Quidel|San Diego|CA|quidel.com
+Haynes International|Kokomo|IN|haynesintl.com
+Tivity Health|Franklin|TN|tivityhealth.com
+Cepheid|Sunnyvale|CA|cepheid.com
+ImmunoGen Inc.|Waltham|MA|immunogen.com
+Enpro Industries|Charlotte|NC|enproindustries.com
+Publicis Sapient|Cambridge|MA|publicissapient.com
+Isle of Capri Casinos|Creve Coeur|MO|isleofcapricasino.com
+A10 Networks|San Jose|CA|a10networks.com
+Auburn National Bancorporation|Auburn|AL|auburnbank.com
+Knoll|East Greenville|PA|knoll.com
+Cineverse|Los Angeles|CA|cineverse.com
+Datadog|New York City|NY|datadoghq.com
+Eagle Materials|Dallas|TX|eaglematerials.com
+Enzon Pharmaceuticals|Piscataway|NJ|enzon.com
+Fidelity Southern Corporation|Atlanta|GA|fidelitysouthern.com
+Gaming and Leisure Properties|Wyomissing|PA|glpropinc.com
+Span-America Medical Systems|Greenville|SC|spanamerica.com
+W. W. Grainger|Lake Forest|IL|grainger.com
+SurveyMonkey|San Mateo|CA|surveymonkey.com
+Host Hotels & Resorts|Bethesda|MD|hosthotels.com
+Snap-on|Kenosha|WI|snapon.com
+Pivotal Software|San Francisco|CA|pivotal.io
+Valvoline|Lexington|KY|valvoline.com
+The McClatchy Company|Sacramento|CA|mcclatchy.com
+Veeco|Plainview|NY|veeco.com
+Interface, Inc.|Atlanta|GA|interfaceinc.com
+International Flavors & Fragrances|New York City|NY|iff.com
+US Foods|Rosemont|IL|usfoods.com
+Koss Corporation|Milwaukee|WI|koss.com
+Iron Mountain Incorporated|Boston|MA|ironmountain.com
+Acceleron Pharma|Boston|MA|acceleron.com
+Agios Pharmaceuticals|Cambridge|MA|agios.com
+BBCN|Los Angeles|CA|bbcnbank.com
+Ambit Biosciences|San Diego|CA|ambitbio.com
+Annaly Capital Management|New York City|NY|annaly.com
+AuthenTec|Melbourne|FL|authentec.com
+Corpay|Atlanta|GA|corpay.com
+Galyan's|Plainfield|IN|galyans.com
+Griffon Corporation|New York City|NY|griffon.com
+Vulcan Materials Company|Birmingham|AL|vulcanmaterials.com
+Kratos Defense & Security Solutions|San Diego|CA|sat.com
+Grant Prideco|Houston|TX|grantprideco.com
+Jive Software|Palo Alto|CA|jivesoftware.com
+United Bank|Charleston|WV|bankwithunited.com
+SEACOR Holdings|Fort Lauderdale|FL|seacorholdings.com
+Community West Bancshares|Goleta|CA|communitywest.com
+Beacon Roofing Supply|Herndon|VA|becn.com
+Copart|Dallas|TX|copart.com
+TD Cowen|New York City|NY|cowen.com
+Moelis & Company|Utica|NY|moelis.com
+CyrusOne|Carrollton|TX|cyrusone.com
+CAMCO FINANCIAL|Cambridge|OH|advantagebankonline.com
+Isac|Oak Brook|IL|treehousefoods.com
+United Security Bancshares|Fresno|CA|unitedsecuritybank.com
+Nutanix|San Jose|CA|nutanix.com
+Castlight Health|San Francisco|CA|castlighthealth.com
+Zeltiq Aesthetics|Pleasanton|CA|zeltiq.com
+Zulily|Seattle|WA|zulily.com
+Rocket Fuel Inc.|Redwood City|CA|rocketfuel.com
+Dover Corporation|Downers Grove|IL|dovercorporation.com
+Ellie Mae|Pleasanton|CA|elliemae.com
+Alnylam Pharmaceuticals|Cambridge|MA|alnylam.com
+AMAG Pharmaceuticals|Waltham|MA|amagpharma.com
+American States Water|San Dimas|CA|aswater.com
+Green Dot Corporation|Pasadena|CA|greendot.com
+Healthpeak Properties|Long Beach|CA|hcpi.com
+Hersha Hospitality Trust|Philadelphia|PA|hersha.com
+Hornbeck Offshore Services|Covington|LA|hornbeckoffshore.com
+K. Hovnanian Homes|Red Bank|NJ|khov.com
+Insperity|Humble|TX|insperity.com
+KCG Holdings|Jersey City|NJ|kcg.com
+Vital Energy|Tulsa|OK|laredopetro.com
+Pediatrix Medical Group|Sunrise|FL|pediatrix.com
+NCI Building Systems|Cary|NC|cornerstonebuildingbrands.com
+ONE Gas|Tulsa|OK|onegas.com
+Amwell|Boston|MA|americanwell.com
+Packaging Corporation of America|Lake Forest|IL|packagingcorp.com
+Quaker Chemical Corporation|Conshohocken|PA|quakerchem.com
+Rogers Corporation|Windham|CT|rogerscorp.com
+SM Energy|Denver|CO|sm-energy.com
+Swift Transportation|Phoenix|AZ|swifttrans.com
+Terra Nitrogen Company|Deerfield|IL|corporate-ir.net
+Brooks Automation|Chelmsford|MA|brooks.com
+Titanium Metals|Dallas|TX|timet.com
+California First National Bancorp|Irvine|CA|calfirstbancorp.com
+Vail Resorts|Broomfield|CO|vailresorts.com
+Versar|Springfield|VA|versar.com
+Clean Diesel Technologies|Ventura|CA|cdti.com
+CoStar Group|Arlington|VA|costargroup.com
+Assertio Therapeutics|Newark|CA|assertiotx.com
+EPlus Inc|Herndon|VA|eplus.com
+FuelCell Energy|Danbury|CT|fuelcellenergy.com
+Gentherm Incorporated|Northville|MI|gentherm.com
+Harvard Bioscience|Holliston|MA|harvardbioscience.com
+HomeTrust Bancshares|Asheville|NC|hometrustbanking.com
+Amneal Pharmaceuticals, Inc.|Hayward|CA|amneal.com
+Intercept Pharmaceuticals|New York City|NY|interceptpharma.com
+Intersect ENT|Menlo Park|CA|intersectent.com
+IPC Healthcare|North Hollywood|CA|hospitalist.com
+Ironwood Pharmaceuticals|Cambridge|MA|ironwoodpharma.com
+J. Alexander's|Nashville|TN|jalexanders.com
+J2 Global|Los Angeles|CA|j2global.com
+Juno Online Services|San Francisco|CA|juno.com
+Kopin Corporation|Westborough|MA|kopin.com
+Bausch Health|Wilmington|DE|bauschhealth.com
+Enphase Energy|Petaluma|CA|enphase.com
+SoFi|San Francisco|CA|sofi.com
+Jones Lang LaSalle|Chicago|IL|jll.com
+CarGurus|Cambridge|MA|cargurus.com
+Comverse|Wakefield|MA|xura.com
+Poshmark|Menlo Park|CA|poshmark.com
+DigitalOcean|New York City|NY|digitalocean.com
+Hyundai Motor America|Fountain Valley|CA|hyundaiusa.com
+Southern California Edison|Rosemead|CA|sce.com
+Kulicke & Soffa Industries|Washington|PA|kns.com
+Mackinac Financial Corporation|Manistique|MI|bankmbank.com
+MedAssets|Alpharetta|GA|nthrive.com
+East Boston Savings Bank|Peabody|MA|ebsb.com
+eGain|Sunnyvale|CA|egain.com
+National Research Corporation|Lincoln|NE|nrchealth.com
+Novavax|Gaithersburg|MD|novavax.com
+ON24|San Francisco|CA|on24.com
+Organovo|San Diego|CA|organovo.com
+Patriot National Bancorp|Stamford|CT|pnbk.com
+Repligen|Waltham|MA|repligen.com
+Marchex|Seattle|WA|marchex.com
+Carrols Restaurant Group|Syracuse|NY|carrols.com
+SciQuest|Morrisville|NC|sciquest.com
+Mattersight Corporation|Chicago|IL|mattersight.com
+Silgan Holdings|Stamford|CT|silganholdings.com
+SPS Commerce|Minneapolis|MN|spscommerce.com
+OmniVision Technologies|Santa Clara|CA|ovt.com
+Paycom|Oklahoma City|OK|paycom.com
+Huron Consulting Group|Chicago|IL|huronconsultinggroup.com
+VirnetX|South Lake Tahoe|CA|virnetx.com
+Willdan Group|Anaheim|CA|willdan.com
+Vision Sciences Inc.|Orangeburg|NY|visionsciences.com
+Voltari|New York City|NY|voltari.com
+Weingarten Realty|Houston|TX|weingarten.com
+PRA Health Sciences|Raleigh|NC|prahs.com
+Medpace|Cincinnati|OH|medpace.com
+Taylor Corporation|North Mankato|MN|taylor.com
+Mississippi Power|Gulfport|MS|mississippipower.com
+M/A-COM Technology Solutions|Lowell|MA|macom.com
+Veris Residential|Jersey City|NJ|mack-cali.com
+Sandy Spring Bank|Olney|MD|sandyspringbank.com
+JBG Smith|Chevy Chase|MD|jbgsmith.com
+Hatteras Financial Corp|Winston-Salem|NC|hatfin.com
+Heidrick & Struggles|Chicago|IL|heidrick.com
+LayerOne|Dallas|TX|layerone.com
+Newpark Resources|The Woodlands|TX|newpark.com
+Nektar Therapeutics|San Francisco|CA|nektar.com
+NIC Inc.|Olathe|KS|egov.com
+ZIOPHARM Oncology|Boston|MA|ziopharm.com
+Opko Health Inc.|Miami|FL|opko.com
+CareCloud|Vincentown|NJ|carecloud.com
+SJW Group|San Jose|CA|sjwgroup.com
+Pixelworks|San Jose|CA|pixelworks.com
+Pernix Therapeutics Holdings|Morristown|NJ|pernixtx.com
+PacWest Bancorp|Los Angeles|CA|pacwestbancorp.com
+Catabasis Pharmaceuticals|Cambridge|MA|catabasis.com
+Tesco Corporation|Houston|TX|tescocorp.com
+National Rural Utilities Cooperative Finance Corporation|Oak Hill|VA|nrucfc.coop
+UFP Technologies|Haverhill|MA|ufpt.com
+Natural Grocers|Lakewood|CO|naturalgrocers.com
+Zynex|Englewood|CO|zynexmed.com
+U.S. Concrete|Euless|TX|us-concrete.com
+Proto Labs|Maple Plain|MN|protolabs.com
+Civeo Corporation|Houston|TX|civeo.com
+Seagen|Bothell|WA|seattlegenetics.com
+Oil States International|Houston|TX|oilstatesintl.com
+Glacier Bancorp, Inc|Kalispell|MT|glacierbancorp.com
+Hub Group|Oak Brook|IL|hubgroup.com
+Kansas City Life Insurance Company|Kansas City|MO|kclife.com
+Cummins|Columbus|IN|cummins.com
+Key Tronic|Spokane Valley|WA|keytronic.com
+Gartner|Stamford|CT|gartner.com
+Clearwater Analytics|Boise|ID|clearwater-analytics.com
+Agilysys|Alpharetta|GA|agilysys.com
+Brixmor Property Group|New York City|NY|brixmor.com
+NewMarket Corporation|Richmond|VA|newmarket.com
+Tempur-Pedic|Lexington|KY|tempurpedic.com
+Nu Skin Enterprises|Provo|UT|nuskin.com
+Koppers|Pittsburgh|PA|koppers.com
+Peabody Energy|St. Louis|MO|peabodyenergy.com
+Reinsurance Group of America|St. Louis|MO|rgare.com
+Owens-Illinois|Toledo|OH|o-i.com
+Odyssey Marine Exploration|Tampa|FL|shipwreck.net
+Leggett & Platt|Carthage|MO|leggett.com
+Farmer Brothers|Northlake|TX|farmerbros.com
+Catalyst Pharmaceuticals|Coral Gables|FL|catalystpharma.com
+Envivio|South San Francisco|CA|envivio.com
+ForgeRock|San Francisco|CA|forgerock.com
+Methode Electronics|Decatur|IL|methode.com
+Syneos Health|Burlington|MA|syneoshealth.com
+Taboola|New York City|NY|taboola.com
+Robinhood|Palo Alto|CA|robinhood.com
+Bryn Mawr Trust|Bryn Mawr|PA|bmt.com
+Astra|Alameda|CA|astra.com
+Habit Burger & Grill|Irvine|CA|habitburger.com
+Sears Hometown and Outlet Stores|Hoffman Estates|IL|shos.com
+Qorvo|Greensboro|NC|qorvo.com
+Supermicro|San Jose|CA|supermicro.com
+National Oilwell Varco|Houston|TX|nov.com
+Beyond Meat|El Segundo|CA|beyondmeat.com
+Bill.com, LLC|Palo Alto|CA|bill.com
+VMware Carbon Black|Waltham|MA|carbonblack.com
+Tandy Leather Factory|Fort Worth|TX|tandyleatherfactory.com
+Life Technologies|Carlsbad|CA|lifetechnologies.com
+Kite Pharma|Santa Monica|CA|kitepharma.com
+Globus Medical|Audubon|PA|globusmedical.com
+Hertz Car Sales|Chicago|IL|hertzcarsales.com
+Splunk|San Francisco|CA|splunk.com
+Skillz|Las Vegas|NV|firy.com
+Stitch Fix|San Francisco|CA|stitchfix.com
+Quality Technology Services|Overland Park|KS|qtsdatacenters.com
+Wealthfront|Palo Alto|CA|wealthfront.com
+Polaris|Medina|MN|polaris.com
+The Honest Company|Los Angeles|CA|honest.com
+Allegro MicroSystems|Manchester|NH|allegromicro.com
+Greenhill & Co.|New York City|NY|greenhill.com
+Rayonier Advanced Materials|Jacksonville|FL|rayonieram.com
+OncoMed|Redwood City|CA|oncomed.com
+Amicus Therapeutics|Princeton|NJ|amicusrx.com
+Extreme Reach|Needham|MA|extremereach.com
+Sprinklr|Utica|NY|sprinklr.com
+Sweetgreen|Culver City|CA|sweetgreen.com
+Caesars Entertainment|Reno|NV|caesars.com
+Global Industrial|Port Washington|NY|globalindustrial.com
+Booking Holdings|Norwalk|CT|bookingholdings.com
+Louisiana-Pacific|Nashville|TN|lpcorp.com
+Tradeweb Llc|Jersey City|NJ|tradeweb.com
+Vivmark Residential|Bel Air|MD|equityapartments.com
+MTS Systems Corporation|Eden Prairie|MN|mts.com
+FactSet|Norwalk|CT|factset.com
+McCormick & Company|Hunt Valley|MD|mccormickcorporation.com
+McDermott International|Houston|TX|mcdermott.com
+Mesa Air Group|Phoenix|AZ|mesa-air.com
+IDT Corporation|Newark|NJ|idtenergy.com
+Harley-Davidson|Milwaukee|WI|harley-davidson.com
+Terex|Westport|CT|terex.com
+Molex|Lisle|IL|molex.com
+Monster Beverage|Pierz|MN|monsterbevcorp.com
+First Merchants Bank|Muncie|IN|firstmerchants.com
+Helmerich & Payne|Tulsa|OK|hpinc.com
+Murphy USA|El Dorado|AR|murphyusa.com
+Tempur Sealy International|Lexington|KY|tempursealy.com
+Vericel|Cambridge|MA|vcel.com
+NV Energy|Las Vegas|NV|nvenergy.com
+HUI Gold Index|New York City|NY|nyse.com
+Standard BioTools Inc.|South San Francisco|CA|standardbio.com
+Johnson Outdoors|Racine|WI|johnsonoutdoors.com
+Pluralsight|Farmington|UT|pluralsight.com
+NiSource|Merrillville|IN|nisource.com
+Team Health Holdings|Knoxville|TN|teamhealth.com
+Meredian Holdings Group Inc.|Bainbridge|GA|mhgbio.com
+Vapotherm|Stevensville|MD|vapotherm.com
+Ventas, Inc.|Chicago|IL|ventasreit.com
+Catalent|Somerset|NJ|catalent.com
+ClearSign Combustion|Seattle|WA|clearsign.com
+WPX Energy|Tulsa|OK|wpxenergy.com
+SeaChange International|Acton|MA|schange.com
+STX Entertainment|Burbank|CA|stxentertainment.com
+Spire Global|San Francisco|CA|spire.com
+Synageva|Lexington|MA|synageva.com
+Milacron|Cincinnati|OH|milacron.com
+Navient|Wilmington|DE|navient.com
+Varonis Systems|New York City|NY|varonis.com
+Nordson Corporation|Westlake|OH|nordson.com
+WeWork|Utica|NY|wework.com
+Sanderson Farms|Laurel|MS|sandersonfarms.com
+Magellan Health|Scottsdale|AZ|magellanhealth.com
+Pharmacyclics|Sunnyvale|CA|pharmacyclics.com
+Oklahoma Gas & Electric|Oklahoma City|OK|oge.com
+Volcom|Costa Mesa|CA|volcom.com
+Under Armour|Baltimore|MD|underarmour.com
+Zimmer Biomet Holdings|Warsaw|IN|zimmer.com
+Allison Transmission|Indianapolis|IN|allisontransmission.com
+Greif, Inc.|Delaware|OH|greif.com
+H.B. Fuller|Saint Paul|MN|hbfuller.com
+Zions Bancorporation|Salt Lake City|UT|zionsbancorporation.com
+IGATE Patni|Bridgewater|NJ|igate.com
+Arrow Electronics|Englewood|CO|arrow.com
+Arch Resources|St. Louis|MO|archrsc.com
+Chemours|Wilmington|DE|chemours.com
+Fleetmatics|Waltham|MA|fleetmatics.com
+NextEra Energy Partners|Juno Beach|FL|nexteraenergypartners.com
+PerkinElmer|Waltham|MA|perkinelmer.com
+Talen Energy|Allentown|PA|talenenergy.com
+Pacific Biosciences|Menlo Park|CA|pacb.com
+Complete Genomics|San Jose|CA|completegenomics.com
+Performance Food Group|Richmond|VA|pfgc.com
+Forum Energy Technologies|Houston|TX|f-e-t.com
+Bank OZK|Little Rock|AR|ozk.com
+Alico|Fort Myers|FL|alicoinc.com
+DoorDash|San Francisco|CA|doordash.com
+Primoris Services Corporation|Dallas|TX|prim.com
+Teladoc|Purchase|NY|teladoc.com
+Oregon Tool, Inc.|Portland|OR|blount.com
+American Homes 4 Rent|Agoura Hills|CA|americanhomes4rent.com
+Everi Holdings|Spring Valley|NV|everi.com
+Plexus Corporation|Neenah|WI|plexus.com
+Westwood Holdings Group|Dallas|TX|westwoodgroup.com
+WRKCo, Inc.|Richmond|VA|westrock.com
+Hubbell Incorporated|Shelton|CT|hubbell.com
+Del Frisco's Restaurant Group|Irving|TX|dfrg.com
+Vista Outdoor|Clearfield|UT|vistaoutdoor.com
+Ethyl Corporation|Richmond|VA|ethyl.com
+WD-40 Company|San Diego|CA|wd40.com
+DraftKings|Boston|MA|draftkings.com
+Black Stone Minerals|Houston|TX|blackstoneminerals.com
+Denbury Resources|Plano|TX|denbury.com
+RR Donnelley|Chicago|IL|rrd.com
+Cornerstone OnDemand Inc.|Santa Monica|CA|cornerstoneondemand.com
+HashiCorp|San Francisco|CA|hashicorp.com
+BOK Financial Corporation|Tulsa|OK|bokf.com
+Jabil|St. Petersburg|FL|jabil.com
+Ryder|Coral Gables|FL|ryder.com
+Atara Biotherapeutics, Inc.|South San Francisco|CA|atarabio.com
+American Public Education, Inc.|Charles Town|WV|apei.com
+Clearfield, Inc.|Minneapolis|MN|clearfieldconnection.com
+Stone Energy Corporation|Lafayette|LA|stoneenergy.com
+YETI|Austin|TX|yeti.com
+Monolithic Power Systems|San Jose|CA|monolithicpower.com
+Aegion|Wilmington|DE|aegion.com
+Elastic|Mountain View|CA|elastic.co
+SPX Corporation|Charlotte|NC|spx.com
+Clover Health|Franklin|TN|cloverhealth.com
+Harrow Health|Nashville|TN|harrow.com
+Applied Genetic Technologies Corporation|Alachua|FL|agtc.com
+Exact Sciences|Madison|WI|exactsciences.com
+Scansource|Greenville|SC|scansource.com
+Tandem Diabetes Care, Inc.|San Diego|CA|tandemdiabetes.com
+Lennox International|Richardson|TX|lennox.com
+Chart Industries, Inc|Ball Ground|GA|chartindustries.com
+Compass Diversified|Westport|CT|compasstrust.com
+Main Street Capital Corp|Houston|TX|mainstcapital.com
+Wynn Resorts|Las Vegas|NV|wynnresorts.com
+ServiceSource|San Francisco|CA|servicesource.com
+Silicon Laboratories|Austin|TX|silabs.com
+Instacart|San Francisco|CA|instacart.com
+Valhi, Inc.|Dallas|TX|valhi.net
+Albany International|Rochester|NY|albint.com
+Synopsys|Mountain View|CA|synopsys.com
+Southern Company|Atlanta|GA|southerncompany.com
+Speedway Motorsports|Concord|NC|speedwaymotorsports.com
+Outfront Media|New York City|NY|outfrontmedia.com
+Editas Medicine|Cambridge|MA|editasmedicine.com
+Match Group|Kerrville|TX|mtch.com
+RealPage|Richardson|TX|realpage.com
+El Pollo Loco|Irvine|CA|elpolloloco.com
+Avalanche Biotechnologies|Redwood City|CA|adverum.com
+Wintrust Financial|Rosemont|IL|wintrust.com
+DuPont Fabros Technology Inc.|Arlington|VA|dft.com
+Sykes Enterprises|Tampa|FL|sykes.com
+Dentsply Sirona|York|PA|dentsplysirona.com
+Clovis Oncology|Wilmington|DE|clovisoncology.com
+The Scotts Miracle-Gro Company|Marysville|OH|scotts.com
+Kraton Polymers|Houston|TX|kraton.com
+Veeva Systems|Pleasanton|CA|veeva.com
+OnDeck Capital|New York City|NY|ondeck.com
+Brocade Communications Systems|San Jose|CA|brocade.com
+Chuck E. Cheese|Irving|TX|chuckecheese.com
+Zebra Technologies|Lincolnshire|IL|zebra.com
+Glu Mobile|San Francisco|CA|glu.com
+Guess|Los Angeles|CA|guess.com
+DallasNews Corporation|Dallas|TX|ahbelo.com
+Nikola Corporation|Phoenix|AZ|nikolamotor.com
+Washington Prime Group|Columbus|OH|washingtonprime.com
+Envestnet|Chicago|IL|envestnet.com
+United Online|Los Angeles|CA|unitedonline.com
+Nicolet Bankshares|Green Bay|WI|nicoletbank.com
+USANA Health Sciences|Salt Lake City|UT|usana.com
+Toast, Inc.|Boston|MA|toasttab.com
+New Senior Investment Group|New York City|NY|newseniorinv.com
+Dynatrace|Boston|MA|dynatrace.com
+Transphorm|Goleta|CA|transphormusa.com
+UMH Properties|Marlboro|NJ|umh.com
+Howmet Aerospace|Pittsburgh|PA|howmet.com
+Heat Biologics|Durham|NC|heatbio.com
+Virtusa|Westborough|MA|virtusa.com
+Aerie Pharmaceuticals|Durham|NC|aeriepharma.com
+Vishay Intertechnology|Malvern|PA|vishay.com
+The New York Times Company|New York City|NY|nytco.com
+Via|New York City|NY|ridewithvia.com
+Wendy's Company|Sandy Springs|GA|wendys.com
+SemGroup|Tulsa|OK|semgrouplp.com
+Affiliated Managers Group|Beverly|MA|amg.com
+Colfax Corporation|Columbia|MD|colfaxcorp.com
+AGL Resources|Atlanta|GA|aglresources.com
+Williams-Sonoma, Inc.|San Francisco|CA|williams-sonomainc.com
+AppFolio|Santa Barbara|CA|appfolioinc.com
+Constellation Energy|Baltimore|MD|constellation.com
+Worthington Industries|Columbus|OH|worthingtonindustries.com
+E-Trade|New York City|NY|etrade.com
+Sandisk|Milpitas|CA|sandisk.com
+Pinnacle West Capital Corporation|Phoenix|AZ|pinnaclewest.com
+Axalta Coating Systems|Philadelphia|PA|axaltacs.com
+McAfee, LLC|San Jose|CA|mcafee.com
+Blue Apron|Utica|NY|blueapron.com
+Snap Inc.|Venice|CA|snap.com
+Gogo Inflight Internet|Itasca|IL|gogoair.com
+Ameris Bancorp|Jacksonville|FL|amerisbank.com
+AppLovin|Palo Alto|CA|applovin.com
+Weber-Stephen Products|Palatine|IL|weber.com
+Sarcos|Salt Lake City|UT|sarcos.com
+Dell Technologies|Round Rock|TX|delltechnologies.com
+Fortive|Everett|WA|fortive.com
+Astronics|East Aurora|NY|astronics.com
+Essex Property Trust, Inc.|San Mateo|CA|essexapartmenthomes.com
+Post Holdings|St. Louis|MO|postholdings.com
+Federal Realty Investment Trust|Rockville|MD|federalrealty.com
+UDR|Highlands Ranch|CO|udr.com
+Veritiv|Atlanta|GA|veritiv.com
+MAA|Memphis|TN|maac.com
+Winmark|Minneapolis|MN|winmarkcorporation.com
+Chewy|Dania Beach|FL|chewy.com
+Ibotta|Denver|CO|ibotta.com
+Genomic Health|Redwood City|CA|genomichealth.com
+Lundbeck Seattle Biopharmaceuticals|Bothell|WA|alderbio.com
+VIAVI Solutions|Milpitas|CA|viavisolutions.com
+BlackLine|Los Angeles|CA|blackline.com
+Purple Innovation, Inc.|Lehi|UT|onpurple.com
+Affymetrix|Santa Clara|CA|affymetrix.com
+Alliance Data|Columbus|OH|alliancedata.com
+Alpha Natural Resources|Bristol|VA|alphanr.com
+Simmons Bank|Pine Bluff|AR|simmonsbank.com
+Workhorse Group|Cincinnati|OH|workhorse.com
+Acadia Healthcare|Franklin|TN|acadiahealthcare.com
+Fubo|New York City|NY|fubo.tv
+American Eagle Outfitters|Pittsburgh|PA|ae.com
+American Superconductor|Devens|MA|amsc.com
+OneMain Financial|Evansville|IN|onemainfinancial.com
+Renasant Bank|Tupelo|MS|renasantbank.com
+iRobot|Bedford|MA|irobot.com
+UGI Corporation|King of Prussia|PA|ugicorp.com
+GlassBridge Enterprises|Oakdale|MN|imation.eu
+Arista Networks|Santa Clara|CA|arista.com
+AAON|Tulsa|OK|aaon.com
+Aruba Networks|Sunnyvale|CA|arubanetworks.com
+Oramed Pharmaceuticals|New York City|NY|oramed.com
+Richardson Electronics|Wasco|IL|rell.com
+ACCO Brands|Lake Zurich|IL|accobrands.com
+Puma Biotechnology|Los Angeles|CA|pumabiotechnology.com
+Suntory Global Spirits|Deerfield|IL|suntoryglobalspirits.com
+Essential Utilities|Bryn Mawr|PA|essential.co
+Ginkgo Bioworks|Boston|MA|ginkgo.bio
+Black Diamond Equipment|Holladay|UT|blackdiamondequipment.com
+Blackboard|Arlington|VA|blackboard.com
+ADT Inc.|Boca Raton|FL|adt.com
+Boise Cascade|Boise|ID|bc.com
+ZeroFox|Baltimore|MD|zerofox.com
+SomaLogic|Boulder|CO|somalogic.com
+VeriFone|Coral Springs|FL|verifone.com
+AES Corporation|Arlington|VA|aes.com
+Boyd Gaming|Paradise|NV|boydgaming.com
+Broadvision|Redwood City|CA|broadvision.com
+Cameron International|Houston|TX|c-a-m.com
+Aimco|Denver|CO|aimco.com
+Casey's General Stores|Ankeny|IA|caseys.com
+Bloom Energy|Sunnyvale|CA|bloomenergy.com
+Frontier Communications|Stamford|CT|frontier.com
+Cloudera|Palo Alto|CA|cloudera.com
+Cognex Corporation|Natick|MA|cognex.com
+Skullcandy|Park City|UT|skullcandy.com
+MSA Safety|Cranberry Township|PA|msasafety.com
+Rightside Group|Kirkland|WA|rightside.co
+bluebird bio|Cambridge|MA|bluebirdbio.com
+BioNano Genomics|San Diego|CA|bionanogenomics.com
+Solid Power|Louisville|CO|solidpowerbattery.com
+Cidara Therapeutics|San Diego|CA|cidara.com
+Kura Oncology|La Jolla|CA|kuraoncology.com
+Rhythm (United states)|Boston|MA|rhythmtx.com
+Viking Therapeutics|San Diego|CA|vikingtherapeutics.com
+Align Technology|San Jose|CA|aligntech.com
+Lumentum (United States)|Milpitas|CA|lumentum.com
+Alpha and Omega Semiconductor|Sunnyvale|CA|aosmd.com
+Elanco|Greenfield|IN|elanco.com
+Celldex Therapeutics|Hampton|NJ|celldex.com
+Precigen, Inc|Germantown|MD|precigen.com
+MindWalk|Austin|TX|mindwalkai.com
+Superconductor Technologies|Austin|TX|suptech.com
+Cytokinetics|South San Francisco|CA|cytokinetics.com
+Inovio Pharmaceuticals|Plymouth Meeting|PA|inovio.com
+Adaptive Biotechnologies|Seattle|WA|adaptivebiotech.com
+Candel Therapeutics|Auburndale|FL|candeltx.com
+Altimmune, Inc.|Gaithersburg|MD|altimmune.com
+Zynerba Pharmaceuticals|Radnor|PA|zynerba.com
+Arcadia Biosciences (United States)|Davis|CA|arcadiabio.com
+Corbus Pharmaceuticals|Norwood|MA|corbuspharma.com
+Verastem Oncology|Needham|MA|verastem.com
+MaxCyte (United States)|Rockville|MD|maxcyte.com
+Vaxart|San Francisco|CA|vaxart.com
+F5, Inc.|Seattle|WA|f5.com
+Applied Optoelectronics|Sugar Land|TX|ao-inc.com
+Integer|Frisco|TX|integer.net
+Mirion Technologies|Atlanta|GA|mirion.com
+POET Technologies|Storrs|CT|poet-technologies.com
+Travel + Leisure Co.|Parsippany|NJ|travelandleisureco.com
+West Pharmaceutical Services (United States)|Exton|PA|westpharma.com
+East West Bank|Pasadena|CA|eastwestbank.com
+IQVIA Holdings, Inc.|Durham|NC|iqvia.com
+Pacific Premier Bancorp|Irvine|CA|ppbi.com
+Boxed.com|New York City|NY|boxed.com
+Halozyme, Inc.|San Diego|CA|halozyme.com
+Exa Corporation|Boston|MA|exa.com
+GoodRx|Santa Monica|CA|goodrx.com

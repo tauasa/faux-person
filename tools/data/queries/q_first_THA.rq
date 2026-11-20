@@ -1,0 +1,1 @@
+SELECT ?c ?name ?type (COUNT(DISTINCT ?p) + 1 AS ?n) WHERE { BIND(wd:Q869 AS ?c) VALUES ?type {wd:Q12308941 wd:Q11879590 wd:Q3409032} ?g wdt:P31 ?type. { ?g wdt:P407 wd:Q9217 } UNION { ?p0 wdt:P27 wd:Q869; wdt:P735 ?g } ?g rdfs:label ?name. FILTER(LANG(?name) IN ("en","mul")) OPTIONAL { ?p wdt:P735 ?g; wdt:P27 wd:Q869 } } GROUP BY ?c ?name ?type ORDER BY DESC(?n)

@@ -1,4 +1,4 @@
-package org.tauasa.apps.faux;
+package org.tauasa.apps.faux.model;
 
 import java.util.Objects;
 

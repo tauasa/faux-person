@@ -1,0 +1,1250 @@
+Anchorage|AK|99695
+Bethel|AK|99559
+Big Lake|AK|99652
+Chevak|AK|99563
+Craig|AK|99921
+Dillingham|AK|99576
+Eagle River|AK|99577
+Ester|AK|99725
+Fairbanks|AK|99708
+Girdwood|AK|99587
+Healy|AK|99743
+Hooper Bay|AK|99604
+Juneau|AK|99803
+Kenai|AK|99611
+Ketchikan|AK|99950
+King Cove|AK|99612
+North Pole|AK|99705
+Palmer|AK|99645
+Sitka|AK|99835
+Sterling|AK|99672
+Tok|AK|99780
+Unalaska|AK|99685
+Valdez|AK|99686
+Wasilla|AK|99623
+Willow|AK|99688
+Auburn|AL|36832
+Birmingham|AL|35218
+Brookside|AL|35036
+Cowarts|AL|36321
+Decatur|AL|35609
+Dothan|AL|36301
+Enterprise|AL|36331
+Fayette|AL|35555
+Florence|AL|35632
+Frisco City|AL|36445
+Georgiana|AL|36033
+Huntsville|AL|35802
+Jemison|AL|35085
+Kimberly|AL|35091
+Madison|AL|35758
+Marion|AL|36756
+Mobile|AL|36612
+Montgomery|AL|36104
+Opp|AL|36467
+Owens Cross Roads|AL|35763
+Ragland|AL|35131
+Riverside|AL|35135
+Tuscaloosa|AL|35405
+Tuscumbia|AL|35674
+Webb|AL|36376
+Alexander|AR|72002
+Arkadelphia|AR|71998
+Ashdown|AR|71822
+Bentonville|AR|72713
+Benton|AR|72015
+Cabot|AR|72023
+Cave City|AR|72521
+Conway|AR|72034
+Dover|AR|72837
+Eureka Springs|AR|72632
+Fayetteville|AR|72702
+Fort Smith|AR|72917
+Gurdon|AR|71743
+Harrison|AR|72602
+Hot Springs Village|AR|71909
+Jonesboro|AR|72404
+Lake Village|AR|71653
+Little Rock|AR|72222
+Newport|AR|72112
+North Little Rock|AR|72199
+Pine Bluff|AR|71603
+Rogers|AR|72756
+Smackover|AR|71762
+Springdale|AR|72766
+Tuckerman|AR|72473
+Apache Junction|AZ|85120
+Chandler|AZ|85248
+Ganado|AZ|86505
+Gilbert|AZ|85295
+Glendale|AZ|85307
+Houck|AZ|86506
+Lukachukai|AZ|86507
+Mesa|AZ|85277
+Mohave Valley|AZ|86446
+Paradise Valley|AZ|85253
+Parks|AZ|86018
+Peoria|AZ|85383
+Phoenix|AZ|85070
+Queen Creek|AZ|85142
+Saint Michaels|AZ|86511
+Salome|AZ|85348
+Scottsdale|AZ|85260
+Sedona|AZ|86341
+Surprise|AZ|85378
+Taylor|AZ|85939
+Tempe|AZ|85283
+Tonto Basin|AZ|85553
+Tsaile|AZ|86556
+Tucson|AZ|85720
+Willcox|AZ|85644
+Anaheim|CA|92816
+Bakersfield|CA|93383
+Bolinas|CA|94924
+Coalinga|CA|93210
+Colusa|CA|95932
+Duarte|CA|91008
+Dunnigan|CA|95937
+El Cajon|CA|92022
+El Cerrito|CA|94530
+Fresno|CA|93708
+Keyes|CA|95328
+Long Beach|CA|90808
+Los Angeles|CA|90050
+Middletown|CA|95461
+Mill Valley|CA|94941
+Oakland|CA|94619
+Red Bluff|CA|96080
+Richgrove|CA|93261
+Sacramento|CA|94263
+San Diego|CA|92168
+San Francisco|CA|94137
+San Jose|CA|95193
+Santa Clara|CA|95056
+Temecula|CA|92590
+Vallejo|CA|94590
+Alamosa|CO|81102
+Arvada|CO|80004
+Aurora|CO|80012
+Bailey|CO|80421
+Boulder|CO|80308
+Byers|CO|80103
+Center|CO|81125
+Colorado Springs|CO|80946
+Denver|CO|80232
+Dove Creek|CO|81324
+Eaton|CO|80615
+Englewood|CO|80113
+Fort Collins|CO|80525
+Fort Lupton|CO|80621
+Glenwood Springs|CO|81601
+Greeley|CO|80634
+Hudson|CO|80642
+Mancos|CO|81328
+Monument|CO|80132
+Palmer Lake|CO|80133
+Pueblo|CO|81009
+Thornton|CO|80241
+Walden|CO|80480
+Westminster|CO|80030
+Yuma|CO|80759
+Bridgeport|CT|06607
+Bristol|CT|06010
+Canaan|CT|06018
+Colchester|CT|06415
+Danbury|CT|06811
+East Haddam|CT|06423
+Ellington|CT|06029
+Fairfield|CT|06825
+Hartford|CT|06176
+Hebron|CT|06248
+New Britain|CT|06053
+New Fairfield|CT|06812
+New Haven|CT|06530
+Newtown|CT|06470
+Norwalk|CT|06854
+Old Saybrook|CT|06475
+Oxford|CT|06478
+Pawcatuck|CT|06379
+Portland|CT|06480
+Southport|CT|06890
+Stamford|CT|06905
+Waterbury|CT|06749
+West Hartford|CT|06119
+Westport|CT|06888
+Wolcott|CT|06716
+Bear|DE|19701
+Bridgeville|DE|19933
+Claymont|DE|19703
+Clayton|DE|19938
+Delmar|DE|19940
+Dover|DE|19903
+Felton|DE|19943
+Georgetown|DE|19947
+Greenwood|DE|19950
+Harrington|DE|19952
+Hockessin|DE|19707
+Laurel|DE|19956
+Middletown|DE|19709
+Milford|DE|19963
+Millsboro|DE|19966
+Milton|DE|19968
+New Castle|DE|19726
+Newark|DE|19718
+Ocean View|DE|19970
+Rehoboth Beach|DE|19971
+Seaford|DE|19973
+Selbyville|DE|19975
+Smyrna|DE|19977
+Townsend|DE|19734
+Wilmington|DE|19880
+Bagdad|FL|32530
+Cape Coral|FL|33915
+Casselberry|FL|32718
+Clewiston|FL|33440
+Cocoa Beach|FL|32931
+Fort Lauderdale|FL|33306
+Hialeah|FL|33010
+Homestead|FL|33034
+Jacksonville|FL|32214
+Key West|FL|33041
+Lutz|FL|33559
+Marathon|FL|33050
+Miami|FL|33189
+Minneola|FL|34755
+North Palm Beach|FL|33408
+Orlando|FL|32803
+Osprey|FL|34229
+Pembroke Pines|FL|33082
+Port Saint Lucie|FL|34983
+Ruskin|FL|33575
+Silver Springs|FL|34489
+Tallahassee|FL|32313
+Tampa|FL|33688
+The Villages|FL|32162
+Trenton|FL|32693
+Albany|GA|31702
+Alpharetta|GA|30004
+Athens|GA|30603
+Atlanta|GA|30354
+Buena Vista|GA|31803
+Chatsworth|GA|30705
+Columbus|GA|31914
+Decatur|GA|30034
+Douglas|GA|31533
+Guyton|GA|31312
+Louisville|GA|30434
+Lovejoy|GA|30250
+Mableton|GA|30126
+Macon|GA|31207
+Marietta|GA|30008
+Monroe|GA|30655
+Moultrie|GA|31768
+Oakwood|GA|30566
+Roswell|GA|30077
+Sardis|GA|30456
+Savannah|GA|31415
+Shannon|GA|30172
+Villa Rica|GA|30180
+Warner Robins|GA|31093
+Woodbine|GA|31569
+Captain Cook|HI|96704
+Fort Shafter|HI|96858
+Hanapepe|HI|96716
+Hilo|HI|96720
+Honolulu|HI|96830
+Kahului|HI|96733
+Kailua|HI|96734
+Kaneohe|HI|96744
+Kapaau|HI|96755
+Kekaha|HI|96752
+Kihei|HI|96753
+Kilauea|HI|96754
+Kula|HI|96790
+Lawai|HI|96765
+Makawao|HI|96768
+Pearl City|HI|96782
+Princeville|HI|96722
+Schofield Barracks|HI|96857
+Wahiawa|HI|96786
+Waialua|HI|96791
+Waikoloa|HI|96738
+Waimanalo|HI|96795
+Waimea|HI|96796
+Waipahu|HI|96797
+Wheeler Army Airfield|HI|96854
+Akron|IA|51001
+Ames|IA|50010
+Ankeny|IA|50023
+Brooklyn|IA|52211
+Carter Lake|IA|51510
+Cedar Rapids|IA|52410
+Council Bluffs|IA|51503
+Davenport|IA|52809
+Des Moines|IA|50310
+Dubuque|IA|52004
+Dyersville|IA|52040
+Glidden|IA|51443
+Iowa City|IA|52246
+Kingsley|IA|51028
+Marengo|IA|52301
+Monroe|IA|50170
+Moville|IA|51039
+North English|IA|52316
+North Liberty|IA|52317
+Preston|IA|52069
+Sac City|IA|50583
+Sanborn|IA|51248
+Sioux City|IA|51108
+Waterloo|IA|50701
+West Des Moines|IA|50265
+Arco|ID|83213
+Bellevue|ID|83313
+Boise|ID|83713
+Bonners Ferry|ID|83805
+Caldwell|ID|83606
+Coeur d'Alene|ID|83814
+Dubois|ID|83423
+Fairfield|ID|83327
+Fruitland|ID|83619
+Grangeville|ID|83530
+Idaho City|ID|83631
+Idaho Falls|ID|83405
+Iona|ID|83427
+Lewiston|ID|83501
+Malad City|ID|83252
+Meridian|ID|83646
+Nampa|ID|83687
+Orofino|ID|83544
+Pocatello|ID|83204
+Post Falls|ID|83854
+Rigby|ID|83442
+Saint Anthony|ID|83445
+Shelley|ID|83274
+Twin Falls|ID|83301
+Victor|ID|83455
+Aurora|IL|60502
+Bartlett|IL|60103
+Buffalo Grove|IL|60089
+Calumet City|IL|60409
+Carlyle|IL|62231
+Carol Stream|IL|60128
+Centralia|IL|62801
+Champaign|IL|61825
+Chicago|IL|60693
+Elgin|IL|60122
+Glasford|IL|61533
+Grayslake|IL|60030
+Hinckley|IL|60520
+Ina|IL|62846
+Joliet|IL|60431
+Monee|IL|60449
+Naperville|IL|60565
+New Berlin|IL|62670
+Normal|IL|61790
+Peoria|IL|61655
+Rockford|IL|61114
+Springfield|IL|62705
+Streamwood|IL|60107
+Washington|IL|61571
+Waukegan|IL|60085
+Bedford|IN|47421
+Bloomington|IN|47407
+Carmel|IN|46032
+Cicero|IN|46034
+Crawfordsville|IN|47933
+East Chicago|IN|46312
+Evansville|IN|47733
+Fishers|IN|46038
+Fort Wayne|IN|46850
+Gary|IN|46403
+Gas City|IN|46933
+Hammond|IN|46320
+Highland|IN|46322
+Indianapolis|IN|46208
+Knightstown|IN|46148
+Lafayette|IN|47905
+Munster|IN|46321
+New Castle|IN|47362
+Newburgh|IN|47630
+Owensville|IN|47665
+Pierceton|IN|46562
+Shelbyville|IN|46176
+South Bend|IN|46601
+Thorntown|IN|46071
+Westfield|IN|46074
+Andover|KS|67002
+Elwood|KS|66024
+Fort Scott|KS|66701
+Greensburg|KS|67054
+Hillsboro|KS|67063
+Johnson|KS|67855
+Kansas City|KS|66118
+Lawrence|KS|66046
+Lenexa|KS|66285
+Manhattan|KS|66503
+Meade|KS|67864
+Ogden|KS|66517
+Olathe|KS|66061
+Overland Park|KS|66251
+Parsons|KS|67357
+Plains|KS|67869
+Salina|KS|67401
+Scott City|KS|67871
+Seneca|KS|66538
+Shawnee|KS|66218
+Smith Center|KS|66967
+South Hutchinson|KS|67505
+Topeka|KS|66612
+Valley Center|KS|67147
+Wichita|KS|67228
+Booneville|KY|41314
+Bowling Green|KY|42103
+Brandenburg|KY|40108
+Brodhead|KY|40409
+Central City|KY|42330
+Clay|KY|42404
+Covington|KY|41016
+Earlington|KY|42410
+Flemingsburg|KY|41041
+Florence|KY|41022
+Frankfort|KY|40620
+Georgetown|KY|40324
+Grayson|KY|41143
+Hazard|KY|41701
+Hopkinsville|KY|42241
+Irvington|KY|40146
+Lancaster|KY|40444
+Lexington|KY|40544
+Louisville|KY|40291
+Morganfield|KY|42437
+Nicholasville|KY|40356
+Owensboro|KY|42303
+Richmond|KY|40476
+Russell Springs|KY|42642
+Smithland|KY|42081
+Abita Springs|LA|70420
+Alexandria|LA|71315
+Barataria|LA|70036
+Baton Rouge|LA|70898
+Belle Rose|LA|70341
+Bossier City|LA|71113
+Broussard|LA|70518
+Cameron|LA|70631
+Cottonport|LA|71327
+DeQuincy|LA|70633
+Grambling|LA|71245
+Gretna|LA|70056
+Kenner|LA|70062
+Lafayette|LA|70503
+Lake Charles|LA|70609
+Marrero|LA|70073
+Maurice|LA|70555
+Metairie|LA|70055
+Minden|LA|71058
+Monroe|LA|71217
+Montegut|LA|70377
+New Orleans|LA|70130
+Pearl River|LA|70452
+Reserve|LA|70084
+Shreveport|LA|71150
+Ashburnham|MA|01430
+Blackstone|MA|01504
+Boston|MA|02113
+Brighton|MA|02135
+Brockton|MA|02305
+Cambridge|MA|02138
+Dalton|MA|01227
+Dorchester|MA|02121
+Fall River|MA|02723
+Framingham|MA|01701
+Great Barrington|MA|01230
+Lowell|MA|01852
+Medford|MA|02155
+New Bedford|MA|02746
+North Andover|MA|01845
+North Falmouth|MA|02556
+Oak Bluffs|MA|02557
+Quincy|MA|02170
+Randolph|MA|02368
+Shutesbury|MA|01072
+Springfield|MA|01105
+Sterling|MA|01564
+Templeton|MA|01468
+West Chatham|MA|02669
+Worcester|MA|01603
+Accokeek|MD|20607
+Annapolis|MD|21411
+Baltimore|MD|21275
+Barclay|MD|21607
+Boonsboro|MD|21713
+Charlestown|MD|21914
+Cockeysville|MD|21030
+Columbia|MD|21044
+Curtis Bay|MD|21226
+Edgewater|MD|21037
+Ellicott City|MD|21041
+Frederick|MD|21702
+Gaithersburg|MD|20884
+Germantown|MD|20875
+Glen Burnie|MD|21060
+Laurel|MD|20726
+Lexington Park|MD|20653
+Mayo|MD|21106
+North Beach|MD|20714
+Perry Hall|MD|21128
+Pikesville|MD|21208
+Queen Anne|MD|21657
+Rockville|MD|20853
+Silver Spring|MD|20901
+Waldorf|MD|20602
+Acton|ME|04001
+Auburn|ME|04211
+Augusta|ME|04333
+Bangor|ME|04401
+Belgrade|ME|04917
+Biddeford|ME|04005
+Brownville|ME|04414
+Cornish|ME|04020
+Dexter|ME|04930
+Falmouth|ME|04105
+Hebron|ME|04238
+Kennebunk|ME|04043
+Lewiston|ME|04241
+Minot|ME|04258
+Monmouth|ME|04259
+Norway|ME|04268
+Orrington|ME|04474
+Portland|ME|04109
+Randolph|ME|04346
+Saco|ME|04072
+Sanford|ME|04073
+Searsmont|ME|04973
+South Portland|ME|04106
+Sullivan|ME|04664
+Westbrook|ME|04092
+Ann Arbor|MI|48106
+Bellaire|MI|49615
+Clinton Township|MI|48035
+Clio|MI|48420
+Dearborn|MI|48123
+Detroit|MI|48210
+Flint|MI|48504
+Grand Rapids|MI|49518
+Huntington Woods|MI|48070
+Iron Mountain|MI|49801
+Ithaca|MI|48847
+Lansing|MI|48911
+Livonia|MI|48153
+Manistique|MI|49854
+New Buffalo|MI|49117
+Richmond|MI|48062
+Saginaw|MI|48606
+Saint Ignace|MI|49781
+Saint Joseph|MI|49085
+Shepherd|MI|48883
+South Lyon|MI|48178
+Sterling Heights|MI|48312
+Union City|MI|49094
+Walled Lake|MI|48391
+Warren|MI|48089
+Anoka|MN|55303
+Babbitt|MN|55706
+Becker|MN|55308
+Burnsville|MN|55306
+Duluth|MN|55803
+Eden Prairie|MN|55344
+Elgin|MN|55932
+Eveleth|MN|55734
+Lakeland|MN|55043
+Lakeville|MN|55044
+Long Lake|MN|55356
+Maple Grove|MN|55311
+Minneapolis|MN|55484
+Minnetonka|MN|55345
+New Richland|MN|56072
+North Branch|MN|55056
+Pierz|MN|56364
+Pipestone|MN|56164
+Rochester|MN|55901
+Saint Cloud|MN|56301
+Saint Paul|MN|55114
+Slayton|MN|56172
+Springfield|MN|56087
+Starbuck|MN|56381
+Wadena|MN|56482
+Barnhart|MO|63012
+Blue Springs|MO|64015
+Camdenton|MO|65020
+Carl Junction|MO|64834
+Carterville|MO|64835
+Carthage|MO|64836
+Columbia|MO|65212
+Farmington|MO|63640
+Florissant|MO|63031
+Fredericktown|MO|63645
+Hannibal|MO|63401
+Hazelwood|MO|63042
+Independence|MO|64055
+Jackson|MO|63755
+Joplin|MO|64803
+Kansas City|MO|64151
+Lebanon|MO|65536
+Perryville|MO|63775
+Richmond|MO|64085
+Saint Charles|MO|63304
+Saint Joseph|MO|64501
+Saint Peters|MO|63376
+Sikeston|MO|63801
+Springfield|MO|65801
+Unionville|MO|63565
+Ackerman|MS|39735
+Ashland|MS|38603
+Biloxi|MS|39533
+Bruce|MS|38915
+Flora|MS|39071
+Greenville|MS|38702
+Gulfport|MS|39507
+Hattiesburg|MS|39401
+Horn Lake|MS|38637
+Houston|MS|38851
+Jackson|MS|39210
+Laurel|MS|39443
+Meridian|MS|39302
+Morton|MS|39117
+Natchez|MS|39121
+Ocean Springs|MS|39564
+Olive Branch|MS|38654
+Oxford|MS|38655
+Pascagoula|MS|39569
+Pittsboro|MS|38951
+Sardis|MS|38666
+Southaven|MS|38671
+Sunflower|MS|38778
+Tupelo|MS|38802
+Union|MS|39365
+Anaconda|MT|59711
+Belgrade|MT|59714
+Big Sky|MT|59716
+Billings|MT|59114
+Bozeman|MT|59718
+Butte|MT|59707
+Chinook|MT|59523
+Dillon|MT|59725
+Ekalaka|MT|59324
+Eureka|MT|59917
+Frenchtown|MT|59834
+Great Falls|MT|59401
+Hardin|MT|59034
+Havre|MT|59501
+Helena|MT|59623
+Kalispell|MT|59904
+Lincoln|MT|59639
+Miles City|MT|59301
+Missoula|MT|59807
+Ronan|MT|59864
+Roundup|MT|59073
+Ryegate|MT|59074
+Superior|MT|59872
+Terry|MT|59349
+West Yellowstone|MT|59758
+Albemarle|NC|28002
+Asheville|NC|28805
+Cary|NC|27512
+Charlotte|NC|28217
+Clinton|NC|28328
+Coats|NC|27521
+Durham|NC|27713
+Elm City|NC|27822
+Farmville|NC|27828
+Fayetteville|NC|28301
+Goldsboro|NC|27532
+Greensboro|NC|27435
+Hays|NC|28635
+High Point|NC|27268
+Kernersville|NC|27285
+Marshall|NC|28753
+Mount Holly|NC|28120
+Raleigh|NC|27634
+Southmont|NC|27351
+Spencer|NC|28159
+Stanley|NC|28164
+Thurmond|NC|28683
+Wentworth|NC|27375
+Wilmington|NC|28407
+Winston-Salem|NC|27109
+Beach|ND|58621
+Bismarck|ND|58503
+Burlington|ND|58722
+Carrington|ND|58421
+Carson|ND|58529
+Cavalier|ND|58220
+Dickinson|ND|58601
+Fargo|ND|58126
+Finley|ND|58230
+Grafton|ND|58237
+Grand Forks|ND|58202
+Hazen|ND|58545
+Hettinger|ND|58639
+Jamestown|ND|58402
+Mandan|ND|58554
+Manning|ND|58642
+McClusky|ND|58463
+Minnewaukan|ND|58351
+Minot|ND|58707
+Mohall|ND|58761
+Napoleon|ND|58561
+Steele|ND|58482
+Wahpeton|ND|58074
+West Fargo|ND|58078
+Williston|ND|58802
+Albion|NE|68620
+Bayard|NE|69334
+Bellevue|NE|68123
+Benkelman|NE|69021
+Brewster|NE|68821
+Columbus|NE|68601
+Dakota City|NE|68731
+Fairbury|NE|68352
+Fremont|NE|68026
+Grand Island|NE|68802
+Hastings|NE|68902
+Imperial|NE|69033
+Kearney|NE|68847
+Lincoln|NE|68506
+Norfolk|NE|68701
+North Platte|NE|69101
+Omaha|NE|68109
+Ponca|NE|68770
+Red Cloud|NE|68970
+Valentine|NE|69201
+Valley|NE|68064
+Weeping Water|NE|68463
+Wilber|NE|68465
+Wisner|NE|68791
+York|NE|68467
+Antrim|NH|03440
+Brookline|NH|03033
+Center Harbor|NH|03226
+Colebrook|NH|03576
+Concord|NH|03305
+Derry|NH|03038
+Dover|NH|03820
+Epping|NH|03042
+Hanover|NH|03755
+Henniker|NH|03242
+Keene|NH|03431
+Laconia|NH|03246
+Litchfield|NH|03052
+Manchester|NH|03104
+Merrimack|NH|03054
+Nashua|NH|03063
+New Boston|NH|03070
+North Conway|NH|03860
+Portsmouth|NH|03802
+Rochester|NH|03839
+Salem|NH|03079
+Sanbornville|NH|03872
+Whitefield|NH|03598
+Windham|NH|03087
+Woodsville|NH|03785
+Audubon|NJ|08106
+Brick|NJ|08724
+Camden|NJ|08105
+Clark|NJ|07066
+Clifton|NJ|07011
+Edison|NJ|08817
+Egg Harbor City|NJ|08215
+Elizabeth|NJ|07208
+Essex Fells|NJ|07021
+Estell Manor|NJ|08319
+Hightstown|NJ|08520
+Jersey City|NJ|07399
+Keyport|NJ|07735
+Kingston|NJ|08528
+Netcong|NJ|07857
+Newark|NJ|07107
+Paterson|NJ|07504
+Randolph|NJ|07869
+Raritan|NJ|08869
+Somerville|NJ|08876
+Toms River|NJ|08754
+Trenton|NJ|08603
+Tuckerton|NJ|08087
+Wildwood|NJ|08260
+Willingboro|NJ|08046
+Alamogordo|NM|88311
+Albuquerque|NM|87190
+Bayard|NM|88023
+Berino|NM|88024
+Carlsbad|NM|88220
+Clovis|NM|88101
+Deming|NM|88030
+Dona Ana|NM|88032
+Estancia|NM|87016
+Farmington|NM|87401
+Hobbs|NM|88240
+Holloman Air Force Base|NM|88330
+Kirtland|NM|87417
+Las Cruces|NM|88006
+Las Vegas|NM|87701
+Mescalero|NM|88340
+Pecos|NM|87552
+Placitas|NM|87043
+Rio Rancho|NM|87124
+Roswell|NM|88201
+Ruidoso Downs|NM|88346
+Santa Clara|NM|88026
+Santa Fe|NM|87502
+Silver City|NM|88061
+Tierra Amarilla|NM|87575
+Alamo|NV|89001
+Beatty|NV|89003
+Carson City|NV|89711
+Elko|NV|89802
+Eureka|NV|89316
+Fallon|NV|89407
+Fernley|NV|89408
+Gardnerville|NV|89410
+Goldfield|NV|89013
+Hawthorne|NV|89415
+Henderson|NV|89014
+Incline Village|NV|89452
+Las Vegas|NV|89104
+Laughlin|NV|89029
+Minden|NV|89423
+North Las Vegas|NV|89085
+Pahrump|NV|89061
+Reno|NV|89599
+Silver Springs|NV|89429
+Smith|NV|89430
+Sparks|NV|89431
+Sun Valley|NV|89433
+Tonopah|NV|89049
+Winnemucca|NV|89445
+Yerington|NV|89447
+Astoria|NY|11105
+Atlantic Beach|NY|11509
+Bellmore|NY|11710
+Bergen|NY|14416
+Brooklyn|NY|11228
+Buffalo|NY|14206
+Clyde|NY|14433
+Corona|NY|11368
+Cortland|NY|13045
+Elmhurst|NY|11380
+Goshen|NY|10924
+Hicksville|NY|11802
+Jamaica|NY|11435
+Jamestown|NY|14702
+Macedon|NY|14502
+Middle Village|NY|11379
+Montour Falls|NY|14865
+Old Bethpage|NY|11804
+Plainview|NY|11803
+Rochester|NY|14649
+Saint Bonaventure|NY|14778
+Staten Island|NY|10303
+Syracuse|NY|13212
+Vernon|NY|13476
+Yonkers|NY|10710
+Akron|OH|44398
+Bethel|OH|45106
+Bryan|OH|43506
+Canton|OH|44750
+Cincinnati|OH|45204
+Cleveland|OH|44101
+Columbus|OH|43232
+Dayton|OH|45429
+Farmersville|OH|45325
+Hamilton|OH|45011
+Lakeview|OH|43331
+Lorain|OH|44052
+Lowellville|OH|44436
+Masury|OH|44438
+Mechanicsburg|OH|43044
+Oak Hill|OH|45656
+Pioneer|OH|43554
+Portsmouth|OH|45662
+Sebring|OH|44672
+Sidney|OH|45367
+Toledo|OH|43666
+Uhrichsville|OH|44683
+West Liberty|OH|43357
+Willoughby|OH|44094
+Youngstown|OH|44555
+Ada|OK|74821
+Bartlesville|OK|74005
+Broken Arrow|OK|74012
+Chouteau|OK|74337
+Cushing|OK|74023
+Duncan|OK|73534
+Edmond|OK|73025
+Enid|OK|73702
+Harrah|OK|73045
+Hinton|OK|73047
+Hollis|OK|73550
+Lawton|OK|73505
+Lindsay|OK|73052
+Mangum|OK|73554
+Morris|OK|74445
+Muldrow|OK|74948
+Muskogee|OK|74403
+Norman|OK|73026
+Oklahoma City|OK|73130
+Poteau|OK|74953
+Stillwater|OK|74074
+Stroud|OK|74079
+Sulphur|OK|73086
+Tulsa|OK|74186
+Wewoka|OK|74884
+Bandon|OR|97411
+Beaverton|OR|97008
+Bend|OR|97708
+Brownsville|OR|97327
+Burns|OR|97720
+Cornelius|OR|97113
+Corvallis|OR|97331
+Drain|OR|97435
+Eugene|OR|97440
+Gresham|OR|97080
+Hillsboro|OR|97123
+Joseph|OR|97846
+Medford|OR|97501
+Mulino|OR|97042
+Ontario|OR|97914
+Oregon City|OR|97045
+Pendleton|OR|97801
+Portland|OR|97206
+Salem|OR|97310
+Silverton|OR|97381
+Springfield|OR|97477
+Tangent|OR|97389
+Tualatin|OR|97062
+Warren|OR|97053
+Woodburn|OR|97071
+Abington|PA|19001
+Allentown|PA|18104
+Beaverdale|PA|15921
+Bensalem|PA|19020
+Bethlehem|PA|18017
+Carlisle|PA|17015
+Cherryville|PA|18035
+Chinchilla|PA|18410
+Erie|PA|16505
+Falls Creek|PA|15840
+Ford City|PA|16226
+Hiller|PA|15444
+Intercourse|PA|17534
+Kingston|PA|18704
+Lancaster|PA|17601
+Leetsdale|PA|15056
+Mansfield|PA|16933
+Martinsburg|PA|16662
+Minersville|PA|17954
+Philadelphia|PA|19134
+Pittsburgh|PA|15238
+Reading|PA|19611
+Scranton|PA|18509
+Shoemakersville|PA|19555
+Wellsboro|PA|16901
+Barrington|RI|02806
+Bristol|RI|02809
+Charlestown|RI|02813
+Coventry|RI|02816
+Cranston|RI|02910
+Cumberland|RI|02864
+East Providence|RI|02914
+Exeter|RI|02822
+Foster|RI|02825
+Greenville|RI|02828
+Harrisville|RI|02830
+Hopkinton|RI|02833
+Jamestown|RI|02835
+Kingston|RI|02881
+Newport|RI|02840
+North Providence|RI|02911
+Pascoag|RI|02859
+Pawtucket|RI|02861
+Providence|RI|02908
+Tiverton|RI|02878
+Warren|RI|02885
+Warwick|RI|02886
+West Warwick|RI|02893
+Westerly|RI|02891
+Woonsocket|RI|02895
+Aiken|SC|29802
+Barnwell|SC|29812
+Blackville|SC|29817
+Chapin|SC|29036
+Charleston|SC|29425
+Columbia|SC|29203
+Due West|SC|29639
+Gadsden|SC|29052
+Goose Creek|SC|29445
+Graniteville|SC|29829
+Greenville|SC|29615
+Greenwood|SC|29648
+Greer|SC|29650
+Hilton Head Island|SC|29926
+Holly Hill|SC|29059
+Mount Pleasant|SC|29466
+New Ellenton|SC|29809
+North Charleston|SC|29418
+Rock Hill|SC|29731
+Simpsonville|SC|29680
+Summerville|SC|29483
+Sumter|SC|29153
+Timmonsville|SC|29161
+Warrenville|SC|29851
+York|SC|29745
+Aberdeen|SD|57401
+Bison|SD|57620
+Brookings|SD|57006
+Deadwood|SD|57732
+Dell Rapids|SD|57022
+Faulkton|SD|57438
+Gettysburg|SD|57442
+Huron|SD|57350
+Lead|SD|57754
+Lennox|SD|57039
+Leola|SD|57456
+Miller|SD|57362
+Mitchell|SD|57301
+Mobridge|SD|57601
+Murdo|SD|57559
+Oglala|SD|57764
+Onida|SD|57564
+Pierre|SD|57501
+Plankinton|SD|57368
+Rapid City|SD|57703
+Sioux Falls|SD|57186
+Spearfish|SD|57783
+Springfield|SD|57062
+Watertown|SD|57201
+Yankton|SD|57078
+Chattanooga|TN|37411
+Christiana|TN|37037
+Clarksville|TN|37044
+Cordova|TN|38018
+Crossville|TN|38557
+Franklin|TN|37067
+Greenfield|TN|38230
+Grimsley|TN|38565
+Hartsville|TN|37074
+Hohenwald|TN|38462
+Jackson|TN|38314
+Jefferson City|TN|37760
+Johnson City|TN|37602
+Jonesborough|TN|37659
+Kingston Springs|TN|37082
+Knoxville|TN|37915
+Memphis|TN|38168
+Milan|TN|38358
+Murfreesboro|TN|37127
+Nashville|TN|37222
+Oliver Springs|TN|37840
+Red Boiling Springs|TN|37150
+Tracy City|TN|37387
+Westmoreland|TN|37186
+Whiteville|TN|38075
+Arlington|TX|76015
+Austin|TX|78742
+Blossom|TX|75416
+Bovina|TX|79009
+Bridge City|TX|77611
+Corpus Christi|TX|78416
+Crockett|TX|75835
+Dallas|TX|75238
+Dayton|TX|77535
+Devine|TX|78016
+Dumas|TX|79029
+Eagle Lake|TX|77434
+El Paso|TX|79947
+Fort Worth|TX|76197
+Houston|TX|77205
+Kilgore|TX|75663
+Lancaster|TX|75146
+Laredo|TX|78041
+Plano|TX|75026
+San Antonio|TX|78261
+Shiner|TX|77984
+Terrell|TX|75160
+Tom Bean|TX|75489
+Wheeler|TX|79096
+Wolfforth|TX|79382
+Brigham City|UT|84302
+Cedar City|UT|84721
+Centerville|UT|84014
+Grantsville|UT|84029
+Helper|UT|84526
+Ivins|UT|84738
+Junction|UT|84740
+Layton|UT|84041
+Moab|UT|84532
+Mona|UT|84645
+Ogden|UT|84408
+Orem|UT|84097
+Park City|UT|84098
+Provo|UT|84601
+Richmond|UT|84333
+Roy|UT|84067
+Saint George|UT|84791
+Salina|UT|84654
+Salt Lake City|UT|84171
+Sandy|UT|84091
+South Jordan|UT|84095
+Wellington|UT|84542
+Wendover|UT|84083
+West Jordan|UT|84088
+West Valley City|UT|84128
+Alexandria|VA|22331
+Amherst|VA|24521
+Arlington|VA|22201
+Boydton|VA|23917
+Bridgewater|VA|22812
+Chantilly|VA|20152
+Chesapeake|VA|23324
+Danville|VA|24543
+Hampton|VA|23661
+Hopewell|VA|23860
+Lorton|VA|22079
+New Kent|VA|23124
+Newport News|VA|23603
+Norfolk|VA|23541
+Portsmouth|VA|23707
+Richmond|VA|23291
+Roanoke|VA|24011
+Rustburg|VA|24588
+South Hill|VA|23970
+Stanardsville|VA|22973
+Union Hall|VA|24176
+Virginia Beach|VA|23458
+Warm Springs|VA|24484
+Windsor|VA|23487
+Woodbridge|VA|22193
+Barre|VT|05641
+Bennington|VT|05201
+Burlington|VT|05401
+Chester|VT|05143
+Colchester|VT|05446
+Enosburg Falls|VT|05450
+Essex Junction|VT|05453
+Fair Haven|VT|05743
+Guildhall|VT|05905
+Hartford|VT|05047
+Hinesburg|VT|05461
+Hyde Park|VT|05655
+Jamaica|VT|05343
+Manchester Center|VT|05255
+Montpelier|VT|05633
+Northfield|VT|05663
+Rutland|VT|05702
+South Burlington|VT|05407
+Springfield|VT|05156
+Starksboro|VT|05487
+Wilder|VT|05088
+Williston|VT|05495
+Windsor|VT|05089
+Winooski|VT|05404
+Woodstock|VT|05091
+Aberdeen|WA|98520
+Bellevue|WA|98005
+Burlington|WA|98233
+Everett|WA|98204
+Federal Way|WA|98003
+Fox Island|WA|98333
+Kennewick|WA|99336
+Kent|WA|98030
+Lynden|WA|98264
+Marysville|WA|98271
+Moses Lake|WA|98837
+Mukilteo|WA|98275
+Quincy|WA|98848
+Raymond|WA|98577
+Renton|WA|98056
+Seattle|WA|98138
+South Bend|WA|98586
+Spokane|WA|99210
+Stevenson|WA|98648
+Sumas|WA|98295
+Tacoma|WA|98402
+Tumwater|WA|98511
+Vancouver|WA|98660
+Westport|WA|98595
+Yakima|WA|98908
+Appleton|WI|54919
+Ashland|WI|54806
+Baraboo|WI|53913
+Cedarburg|WI|53012
+Columbus|WI|53925
+Eau Claire|WI|54702
+Green Bay|WI|54306
+Hilbert|WI|54129
+Janesville|WI|53546
+Kenosha|WI|53142
+Madison|WI|53704
+Milwaukee|WI|53274
+Omro|WI|54963
+Oshkosh|WI|54906
+Prescott|WI|54021
+Racine|WI|53405
+Sharon|WI|53585
+Spooner|WI|54801
+Verona|WI|53593
+Viroqua|WI|54665
+Waukesha|WI|53187
+Wausau|WI|54403
+Wautoma|WI|54982
+Westfield|WI|53964
+Wisconsin Rapids|WI|54495
+Beckley|WV|25802
+Belington|WV|26250
+Chapmanville|WV|25508
+Charleston|WV|25302
+Clarksburg|WV|26301
+Craigsville|WV|26205
+Fairlea|WV|24902
+Fairmont|WV|26555
+Fayetteville|WV|25840
+Grafton|WV|26354
+Huntington|WV|25707
+Kingwood|WV|26537
+Lavalette|WV|25535
+Martinsburg|WV|25403
+Morgantown|WV|26502
+Mount Hope|WV|25880
+Oak Hill|WV|25901
+Parkersburg|WV|26101
+Princeton|WV|24739
+Sutton|WV|26601
+Weirton|WV|26062
+Wellsburg|WV|26070
+Weston|WV|26452
+Wheeling|WV|26003
+White Sulphur Springs|WV|24986
+Afton|WY|83110
+Casper|WY|82601
+Cheyenne|WY|82003
+Douglas|WY|82633
+Evanston|WY|82930
+Evansville|WY|82636
+Fort Washakie|WY|82514
+Gillette|WY|82717
+Glenrock|WY|82637
+Green River|WY|82935
+Guernsey|WY|82214
+Jackson|WY|83002
+Lander|WY|82520
+Laramie|WY|82073
+Moorcroft|WY|82721
+Pine Bluffs|WY|82082
+Pinedale|WY|82941
+Powell|WY|82435
+Riverton|WY|82501
+Rock Springs|WY|82902
+Sheridan|WY|82801
+Sundance|WY|82729
+Thermopolis|WY|82443
+Worland|WY|82401
+Wright|WY|82732

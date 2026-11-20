@@ -1,0 +1,1 @@
+SELECT ?g ?ko ?rom ?type (COUNT(DISTINCT ?p) AS ?n) WHERE { ?p wdt:P27 wd:Q884; wdt:P735 ?g. VALUES ?type {wd:Q12308941 wd:Q11879590 wd:Q3409032} ?g wdt:P31 ?type; rdfs:label ?ko. FILTER(LANG(?ko)="ko") OPTIONAL { ?g rdfs:label ?rom FILTER(LANG(?rom)="en") } } GROUP BY ?g ?ko ?rom ?type HAVING(COUNT(DISTINCT ?p) >= 2) ORDER BY DESC(?n)

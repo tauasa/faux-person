@@ -1,4 +1,4 @@
-package org.tauasa.apps.faux;
+package org.tauasa.apps.faux.model;
 
 import java.time.LocalDate;
 import java.time.Period;
@@ -13,29 +13,35 @@ import java.util.Objects;
  * @param firstName   given name
  * @param lastName    family name
  * @param gender      gender
+ * @param region      region the names were drawn from
  * @param dateOfBirth date of birth
- * @param email       email address at a domain reserved by RFC 2606
- * @param phone       phone number in the fictional 555-0100 to 555-0199 range
+ * @param email       email address; a generated one is at the employer's domain
+ * @param phone       phone number; a generated one is in the fictional 555-0100 to 555-0199 range
  * @param address     postal address
+ * @param employer    employer
  */
 public record Person(
         String firstName,
         String lastName,
         Gender gender,
+        Region region,
         LocalDate dateOfBirth,
         String email,
         String phone,
-        Address address) {
+        Address address,
+        Company employer) {
 
     /** Rejects {@code null} fields. */
     public Person {
         Objects.requireNonNull(firstName, "firstName");
         Objects.requireNonNull(lastName, "lastName");
         Objects.requireNonNull(gender, "gender");
+        Objects.requireNonNull(region, "region");
         Objects.requireNonNull(dateOfBirth, "dateOfBirth");
         Objects.requireNonNull(email, "email");
         Objects.requireNonNull(phone, "phone");
         Objects.requireNonNull(address, "address");
+        Objects.requireNonNull(employer, "employer");
     }
 
     /**
