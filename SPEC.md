@@ -18,6 +18,7 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 
 | Date | Decision |
 |---|---|
+| 2026-11-20 | The mark is a **`[faux]` suffix** on the employer's name (`Costco [faux]`), in place of the leading `*` decided earlier today. Everything else in the row below stands |
 | 2026-11-20 | By default each employer is **marked**: its name starts with `*` and its domain, and so the email's, is under `.example` (`*Costco`, `jane.doe@costco.example`), in `Person.employer` too. **`Builder.realCompanies(true)`**, or the CLI's **`--real-companies`**, gives the real name and domain instead (`Costco`, `jane.doe@costco.com`). The switch changes only those two fields: the draw order is the same, so a seed gives the same people either way. This refines the ruling below, which left `Company.domain` real |
 | 2026-11-20 | Generated emails are at the employer's domain with its suffix replaced by the reserved **`.example`** (RFC 2606): `costco.com` becomes `costco.example`. This replaces the 2026-11-19 real-domain ruling below, so no generated email can deliver to a real inbox before 0.1.0 is published. `Company.domain` stays the real domain. Draw order and every seed's people are unchanged; only the email text differs |
 | 2026-11-19 | Generated emails use **real company domains** from `us_companies_domains.txt`, every time, replacing the reserved `example.*` domains. An address like `jane.doe12@costco.com` could belong to a real person and could deliver. Goal 3 is narrowed to match |
@@ -50,7 +51,7 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 3. **Phone numbers are never real.** Every number is in NANP's 555-0100 to
    555-0199 range, set aside for fiction. **By default emails are never
    deliverable**: they're under the reserved `.example` domain, and employer
-   names are marked with `*`. `realCompanies(true)` opts into real names and
+   names end in `[faux]`. `realCompanies(true)` opts into real names and
    domains, and its emails can be real inboxes. Addresses use real streets by
    decision (above), so nothing should be mailed to one.
 4. Zero runtime dependencies.
@@ -98,7 +99,7 @@ PersonGenerator gen = PersonGenerator.builder()
     .genderWeights(49, 49, 2)  // FEMALE, MALE, NONBINARY; default shown
     .region(Region.ASIA)       // optional; default null = mixed
     .clock(Clock.systemDefaultZone())
-    .realCompanies(false)      // default false: "*Costco" at costco.example
+    .realCompanies(false)      // default false: "Costco [faux]" at costco.example
     .build();
 
 Person p = gen.next();
@@ -125,7 +126,7 @@ every seed produces (see *Versioning*).
 | 3 | `firstName` | From the region's first-name file, each in proportion to its weight, in one draw like the surname: from the `F` and `U` names for women, the `M` and `U` names for men. For non-binary, a coin flip picks the women's or the men's list first, as for the surname, so Wikidata's surplus of men doesn't tilt them toward men's names |
 | 4 | `lastName` | From the region's surname file, each in proportion to its weight: one `nextLong(total weight)`, then a binary search of the running totals. Women get the feminine form, men the masculine, non-binary either at 50/50 |
 | 5 | `dateOfBirth` | Uniform day between the earliest and latest birthdays that give an age in range on the clock's today |
-| 6 | `employer` | Uniform from `us_companies_domains.txt`. Unless `realCompanies` is on, the name gets a leading `*` and the domain's suffix is replaced by `.example`. No draw |
+| 6 | `employer` | Uniform from `us_companies_domains.txt`. Unless `realCompanies` is on, the name gets the suffix ` [faux]` and the domain's suffix is replaced by `.example`. No draw |
 | 7 | `email` | `first.last`, folded to lowercase ASCII, plus a 0–99 suffix on a coin flip, `@` the employer's domain (step 6) |
 | 8 | `phone` | `(AAA) 555-01NN`: AAA is 200–999 but not N11, NN is 00–99 |
 | 9 | `address` | Uniform line from `us_street_names_city_state_zip.txt`, then a house number 1–9999. Country `US` |
@@ -247,7 +248,7 @@ output. The jar's `Main-Class` is `org.tauasa.faux.cli.FauxPersonCli`.
 | `--today YYYY-MM-DD` | today; the day birth dates and ages are counted from, as a fixed clock |
 | `-f, --format text\|pipe\|json` | text |
 | `--data-dir DIR` | the bundled data; files in DIR replace bundled ones of the same name |
-| `--real-companies` | off: employer names start with `*`, emails are under `.example` |
+| `--real-companies` | off: employer names end in `[faux]`, emails are under `.example` |
 | `-h, --help` | |
 
 `pipe` prints a header and 13 columns. `json` prints one array. A bad argument
@@ -262,7 +263,7 @@ the bundled files' shape.
 |---|---|
 | Same seed, same 1,000 people; different seeds differ; `seed()` replays | Generation stops being reproducible |
 | Ages at `ageRange(30,30)` and `(0,120)` with a fixed clock; 29 February | Date-of-birth bounds are off by one |
-| Email is `first.last[nn]@` the employer's domain; by default every employer is a company from the file with a `*` name and a `.example` domain, and no two share one; with `realCompanies` it's the company as filed; the switch changes nothing else, `split()` keeps it | Email and employer drift apart, a default email could deliver, or the switch changes who is generated |
+| Email is `first.last[nn]@` the employer's domain; by default every employer is a company from the file with a `[faux]` name and a `.example` domain, and no two share one; with `realCompanies` it's the company as filed; the switch changes nothing else, `split()` keeps it | Email and employer drift apart, a default email could deliver, or the switch changes who is generated |
 | Phone matches `^\([2-9]\d{2}\) 555-01\d{2}$`, no N11 | A real-range number can come out |
 | Address is a bundled street line plus a 1–9999 house number | Addresses are invented or mismatched |
 | Per region: names come from that region's files and fit the gender; women get feminine surnames | Region or gender rules break |

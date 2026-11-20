@@ -16,15 +16,15 @@ birth dates on another day. It has no runtime dependencies.
 
 ```text
 $ ./faux-person.sh -n 3 --seed 42 --today 2026-11-20
-Juha Karvonen (male, 63) <juha.karvonen@morganstanley.example> (319) 555-0128, 9694 W 6th Ave, Humboldt, SD 57035, works at *Morgan Stanley
-Jose Barra (male, 36) <jose.barra48@fourwaybooks.example> (260) 555-0158, 8418 Golden Aster Ct, Noblesville, IN 46062, works at *Four Way Books
-Jens Klausen (male, 73) <jens.klausen@catabasis.example> (959) 555-0112, 4859 Page St, Manchester, NH 03109, works at *Catabasis Pharmaceuticals
+Juha Karvonen (male, 63) <juha.karvonen@morganstanley.example> (319) 555-0128, 9694 W 6th Ave, Humboldt, SD 57035, works at Morgan Stanley [faux]
+Jose Barra (male, 36) <jose.barra48@fourwaybooks.example> (260) 555-0158, 8418 Golden Aster Ct, Noblesville, IN 46062, works at Four Way Books [faux]
+Jens Klausen (male, 73) <jens.klausen@catabasis.example> (959) 555-0112, 4859 Page St, Manchester, NH 03109, works at Catabasis Pharmaceuticals [faux]
 ```
 
 > **Emails and phone numbers can't reach anyone.** Employers are real US
 > companies, marked so nobody mistakes them for a real person's employer: the
-> name starts with `*` and the domain is under `.example`, which is reserved so
-> mail to it is never delivered (`*Costco`, `jane.doe@costco.example`). Phone
+> name ends in `[faux]` and the domain is under `.example`, which is reserved
+> so mail to it is never delivered (`Costco [faux]`, `jane.doe@costco.example`). Phone
 > numbers are always in the 555-0100 to 555-0199 range, which is reserved for
 > fiction. Addresses use real streets with a random house number, so one can
 > match a real home: don't mail anything to a generated address.
@@ -92,7 +92,7 @@ enums. `PersonGenerator`, in `org.tauasa.faux`, creates people.*
 |---|---|
 | `Person` | Name, gender, the region the names came from, date of birth, email, phone, address and employer. There's no age field, because a stored age goes stale: call `ageOn(date)` |
 | `Address` | Street with house number (`2304 Eileen Ave`), city, two-letter state, five-digit ZIP, and country, always `US` |
-| `Company` | A US company: name, headquarters city and state, and web domain, which the email uses. Generated ones are real companies, marked by default (`*Costco`, `costco.example`) |
+| `Company` | A US company: name, headquarters city and state, and web domain, which the email uses. Generated ones are real companies, marked by default (`Costco [faux]`, `costco.example`) |
 | `Gender` | `FEMALE`, `MALE` or `NONBINARY`. Women get women's and unisex first names and the feminine surname form, men get men's and unisex names and the masculine form. A nonbinary person gets a woman's or a man's first name at 50/50, and either surname form at 50/50 |
 | `Region` | Where the names come from, in 24 values. Three broad ones: `WESTERN` (the Americas, Europe, Australia, New Zealand), `ASIA` (East, South and Southeast Asia) and `RUS` (Russia and the former Soviet Union). Three African: `NAF`, `CAF`, `SAF` (North, Central and Southern Africa). The rest are countries, by ISO code: `ROK` (South Korea), `JPN`, `PHL`, `VNM`, `THA`, `MEX`, `BRA`, `IRN`, `PSE`, `GBR`, `FRA`, `ESP`, `PRT`, `GRC`, `NOR`, `SWE`, `FIN`. The odd one out is `HEB`, which holds Hebrew names, from Israeli citizens |
 
@@ -233,7 +233,7 @@ always goes to stderr, so it never ends up in your output.
 | `--today DATE` | The date ages are counted from, as `YYYY-MM-DD`. With `--seed`, it gives the same birth dates on any day. Another date changes only the birth dates and ages | today |
 | `-f, --format F` | `text`, `pipe` or `json` | `text` |
 | `--data-dir DIR` | Read data files from `DIR` in place of the bundled ones with the same names, as `dataDirectory` does in Java ([Use your own data](#use-your-own-data)) | the bundled data |
-| `--real-companies` | Use real employer names and email domains (`Costco`, `jane.doe@costco.com`), as `realCompanies(true)` does in Java. The people are the same with or without it | names start with `*`, emails under `.example` |
+| `--real-companies` | Use real employer names and email domains (`Costco`, `jane.doe@costco.com`), as `realCompanies(true)` does in Java. The people are the same with or without it | names end in `[faux]`, emails under `.example` |
 | `-h, --help` | Show the options | |
 
 `-o` and `--rebuild` belong to the script. Every other option is passed to the
@@ -251,7 +251,7 @@ plus `-r asia`:
 
 ```text
 first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer
-Juha|Karvonen|MALE|FIN|1963-08-07|63|juha.karvonen@morganstanley.example|(319) 555-0128|9694 W 6th Ave|Humboldt|SD|57035|*Morgan Stanley
+Juha|Karvonen|MALE|FIN|1963-08-07|63|juha.karvonen@morganstanley.example|(319) 555-0128|9694 W 6th Ave|Humboldt|SD|57035|Morgan Stanley [faux]
 ```
 
 `json` prints one array, with each person on its own line (wrapped here to
@@ -262,7 +262,7 @@ fit):
   {"firstName":"Maya","lastName":"Guo","gender":"FEMALE","region":"ASIA","dateOfBirth":"2007-02-06","age":19,
    "email":"maya.guo56@spglobal.example","phone":"(319) 555-0128",
    "address":{"street":"9694 W 6th Ave","city":"Humboldt","state":"SD","postalCode":"57035","country":"US"},
-   "employer":{"name":"*S&P Global","city":"New York City","state":"NY","domain":"spglobal.example"}}
+   "employer":{"name":"S&P Global [faux]","city":"New York City","state":"NY","domain":"spglobal.example"}}
 ]
 ```
 

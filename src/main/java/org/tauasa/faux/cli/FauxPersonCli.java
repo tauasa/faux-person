@@ -39,7 +39,7 @@ public final class FauxPersonCli {
                                    ones with the same names (README.md, "Use your
                                    own data")
                   --real-companies employers and emails use real company names
-                                   and domains (default: names start with *
+                                   and domains (default: names end in [faux]
                                    and emails are under .example, which never
                                    delivers)
               -h, --help           show this help

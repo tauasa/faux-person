@@ -43,7 +43,7 @@ class FauxPersonCliTest {
             String[] m = marked.get(i).split("\\|"), r = real.get(i).split("\\|");
             assertTrue(m[6].endsWith(".example"), m[6]);
             assertTrue(!r[6].endsWith(".example"), r[6]);
-            assertEquals("*" + r[12], m[12]);
+            assertEquals(r[12] + " [faux]", m[12]);
         }
         assertTrue(FauxPersonCli.USAGE.contains("--real-companies"));
     }

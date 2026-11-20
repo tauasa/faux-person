@@ -474,13 +474,14 @@ public final class PersonGenerator {
     }
 
     /**
-     * The company as it appears as an employer. By default its name starts
-     * with {@code *} and its domain is under {@code .example}, so neither reads
-     * as a real person's real employer: {@code *Costco} at {@code costco.example}.
+     * The company as it appears as an employer. By default its name ends
+     * with {@code " [faux]"} and its domain is under {@code .example}, so
+     * neither reads as a real person's real employer: {@code Costco [faux]} at
+     * {@code costco.example}.
      * With {@link Builder#realCompanies(boolean)} it's the company as it is.
      */
     private Company employer(Company c) {
-        return realCompanies ? c : new Company("*" + c.name(), c.city(), c.state(), emailDomain(c.domain()));
+        return realCompanies ? c : new Company(c.name() + " [faux]", c.city(), c.state(), emailDomain(c.domain()));
     }
 
     /**
@@ -595,9 +596,9 @@ public final class PersonGenerator {
 
         /**
          * Whether employers and emails use real companies. By default
-         * ({@code false}) each employer's name starts with {@code *} and its
-         * domain, and so the email's, is under the reserved {@code .example}
-         * domain, which never delivers mail: {@code *Costco},
+         * ({@code false}) each employer's name ends with {@code " [faux]"} and
+         * its domain, and so the email's, is under the reserved {@code .example}
+         * domain, which never delivers mail: {@code Costco [faux]},
          * {@code jane.doe@costco.example}. With {@code true} the employer is the
          * real company and the email is at its real domain, such as
          * {@code jane.doe@costco.com}, which could be a real person's inbox.

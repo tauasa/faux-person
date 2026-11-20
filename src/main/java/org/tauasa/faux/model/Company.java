@@ -4,11 +4,11 @@ import java.util.Objects;
 
 /**
  * A US company, used as a generated person's employer and email domain. The
- * generator draws real companies and, by default, marks them: the name starts
- * with {@code *} and the domain is under the reserved {@code .example}
- * ({@code "*Costco"}, {@code "costco.example"}).
+ * generator draws real companies and, by default, marks them: the name ends
+ * with {@code " [faux]"} and the domain is under the reserved {@code .example}
+ * ({@code "Costco [faux]"}, {@code "costco.example"}).
  *
- * @param name   company name, for example {@code "Costco"} or {@code "*Costco"}
+ * @param name   company name, for example {@code "Costco"} or {@code "Costco [faux]"}
  * @param city   headquarters city
  * @param state  headquarters state, two-letter USPS code
  * @param domain web domain, for example {@code "costco.com"} or {@code "costco.example"}

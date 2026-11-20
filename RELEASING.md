@@ -72,7 +72,7 @@ to show up in search.
   `scm` and `url` point at `github.com/tauasa/faux-person`, so make the repo
   public too, or those links will lead nowhere.
 - **The generator makes real-looking contact data.** By default employers are
-  real companies marked with a leading `*`, and emails are under the reserved
+  real companies marked with a `[faux]` suffix, and emails are under the reserved
   `.example` domain, so they can't deliver. `realCompanies(true)`, or the CLI's
   `--real-companies`, drops the marks and uses real company names and email
   domains. Addresses use real streets. SPEC.md's decisions record each choice.

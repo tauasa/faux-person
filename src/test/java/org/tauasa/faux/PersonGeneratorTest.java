@@ -70,7 +70,7 @@ class PersonGeneratorTest {
     @Test
     void byDefaultEmployersAreMarkedAndEmailsAreUnderDotExample() {
         Set<Company> marked = DATA.companies.stream()
-                .map(c -> new Company("*" + c.name(), c.city(), c.state(), PersonGenerator.emailDomain(c.domain())))
+                .map(c -> new Company(c.name() + " [faux]", c.city(), c.state(), PersonGenerator.emailDomain(c.domain())))
                 .collect(Collectors.toSet());
         Pattern shape = Pattern.compile("^[a-z0-9]+\\.[a-z0-9]+\\d{0,2}@[a-z0-9-]+\\.example$");
         for (Person p : gen(3).build().next(2000)) {
@@ -98,14 +98,14 @@ class PersonGeneratorTest {
         List<Person> real = gen(7).realCompanies(true).build().next(500);
         for (int i = 0; i < marked.size(); i++) {
             Person m = marked.get(i), r = real.get(i);
-            assertEquals("*" + r.employer().name(), m.employer().name());
+            assertEquals(r.employer().name() + " [faux]", m.employer().name());
             assertEquals(r.email().substring(0, r.email().indexOf('@')), m.email().substring(0, m.email().indexOf('@')));
             assertEquals(new Person(r.firstName(), r.lastName(), r.gender(), r.region(), r.dateOfBirth(),
                     m.email(), r.phone(), r.address(), m.employer()), m);
         }
         // split() carries the setting.
         assertTrue(DATA.companies.contains(gen(7).realCompanies(true).build().split().next().employer()));
-        assertTrue(gen(7).build().split().next().employer().name().startsWith("*"));
+        assertTrue(gen(7).build().split().next().employer().name().endsWith(" [faux]"));
     }
 
     @Test
@@ -336,7 +336,7 @@ class PersonGeneratorTest {
         }
         // Companies and other regions still come from the bundled files.
         String employer = people.get(0).employer().name();
-        assertTrue(DATA.companies.stream().anyMatch(c -> ("*" + c.name()).equals(employer)), employer);
+        assertTrue(DATA.companies.stream().anyMatch(c -> (c.name() + " [faux]").equals(employer)), employer);
         Person rus = gen(3).region(Region.RUS).dataDirectory(dir).build().next();
         assertEquals(gen(3).region(Region.RUS).build().next(), rus);
     }
