@@ -132,8 +132,25 @@ List<Person> team = gen.next(20);
 List<Person> adults = gen.stream().filter(x -> x.ageOn(LocalDate.now()) >= 21).limit(100).toList();
 ```
 
-For a quick list with the default settings, use one of the static methods.
-There's one for each region, named for its people:
+To replay a failure, log `gen.seed()` and pass it back to `.seed(...)`. That
+works even if you didn't set a seed, because the generator reports the random
+one it picked. Pass `.clock(Clock.fixed(...))` too if a test checks ages, so
+"today" doesn't move.
+
+A generator isn't thread-safe. Give each thread its own with `gen.split()`,
+which keeps the settings and starts a separate sequence you can replay.
+Splitting draws from the parent, so it changes the parent's later people too:
+to replay a run, call `split()` at the same points.
+
+`build()` throws `IllegalArgumentException` if the age range falls outside
+0 to 120 or is reversed, or if the gender weights are negative or all zero.
+
+### Quick lists
+
+For a list in one line, use a static method. It uses the defaults (ages 18 to
+90, gender weights 49/49/2, today's date) and throws
+`IllegalArgumentException` for a negative count. There's one method for every
+region, named for its people, and three general ones:
 
 ```java
 List<Person> anyone    = PersonGenerator.generateListOfRandomPeople(10);
@@ -149,20 +166,8 @@ The rest follow the same pattern: `Asians`, `Russians`, `Japanese`, `Filipinos`,
 `Britons`, `French`, `Spaniards`, `Portuguese`, `Greeks`, `Norwegians`,
 `Swedes` and `Finns`. There's no US-only region, so `Americans` draws from
 `WESTERN`, which also covers Europe and Australia. Each call picks a new random
-seed, so you can't replay its people. Use the builder when you need to.
-
-To replay a failure, log `gen.seed()` and pass it back to `.seed(...)`. That
-works even if you didn't set a seed, because the generator reports the random
-one it picked. Pass `.clock(Clock.fixed(...))` too if a test checks ages, so
-"today" doesn't move.
-
-A generator isn't thread-safe. Give each thread its own with `gen.split()`,
-which keeps the settings and starts a separate sequence you can replay.
-Splitting draws from the parent, so it changes the parent's later people too:
-to replay a run, call `split()` at the same points.
-
-`build()` throws `IllegalArgumentException` if the age range falls outside
-0 to 120 or is reversed, or if the gender weights are negative or all zero.
+seed, so you can't replay its people. Use the builder when you need a seed,
+an age range or a fixed date.
 
 ## Use the command line
 
@@ -252,10 +257,11 @@ mvn verify
 ```
 
 This compiles the code and runs the tests. The tests cover reproducibility,
-age bounds, emails, phones, addresses, how region and gender pick names, the
-size and shape of every data file, that every data file is clean UTF-8 in NFC,
-and the CLI. The build also produces the
-sources and javadoc jars, and fails if anyone adds a runtime dependency.
+age bounds, emails, phones, addresses, how region and gender pick names, that
+surnames come up in proportion to their weights, the size and shape of every
+data file, that every data file is clean UTF-8 in NFC, that every region has its
+own quick-list method, and the CLI. The build also produces the sources and
+javadoc jars, and fails if anyone adds a runtime dependency.
 
 ## License
 
