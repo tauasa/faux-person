@@ -1,7 +1,7 @@
 faux-person
 Copyright 2026 Tauasa Timoteo
 
-The data files in src/main/resources/org/tauasa/apps/faux/data/ (bundled in
+The data files in src/main/resources/org/tauasa/faux/data/ (bundled in
 the jar) and tools/data/extra/ (in the source repository only) were built on
 2026-11-19 and 2026-11-20 by the scripts in tools/data/ from these sources.
 Each file's first line gives its build date.

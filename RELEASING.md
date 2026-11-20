@@ -11,22 +11,26 @@ replaced.
 1. **Central Portal account and namespace.** Sign in at
    [central.sonatype.com](https://central.sonatype.com) and add the namespace
    `org.tauasa`. The portal gives you a verification key. Add it as a DNS TXT
-   record on `tauasa.org`, then press *Verify*. That one namespace covers
-   `org.tauasa.apps` (this project) and `org.tauasa` (tui-java).
+   record on `tauasa.org`, then press *Verify*. This project and tui-java both
+   publish under `org.tauasa`.
 2. **A user token.** In the portal, open *View Account*, then *Generate User
-   Token*. Put the token in `~/.m2/settings.xml`, never in this repo:
+   Token*. `~/.m2/settings.xml` reads it from two environment variables, so
+   the token is never stored in a file, and never in this repo:
 
    ```xml
    <settings>
      <servers>
        <server>
          <id>central</id>
-         <username><!-- token username --></username>
-         <password><!-- token password --></password>
+         <username>${env.MAVEN_CENTRAL_USERNAME}</username>
+         <password>${env.MAVEN_CENTRAL_PASSWORD}</password>
        </server>
      </servers>
    </settings>
    ```
+
+   Set both in the terminal you release from, or keep them in the macOS
+   Keychain and export them from `~/.zshrc`.
 
 3. **A GPG key that Central can check.**
 
@@ -37,7 +41,8 @@ replaced.
    ```
 
    Central looks the public key up on a keyserver when it validates the
-   upload. Signing asks for the key's passphrase when it runs.
+   upload. Signing asks for the key's passphrase when it runs; on macOS, set
+   `export GPG_TTY=$(tty)` first, or gpg fails with exit code 2.
 
 ## Each release
 

@@ -1,7 +1,7 @@
 # Rebuilding the bundled data
 
 These scripts built the files in
-`src/main/resources/org/tauasa/apps/faux/data/`, which go in the jar, and in
+`src/main/resources/org/tauasa/faux/data/`, which go in the jar, and in
 `extra/`, which the generator doesn't read yet. Each file's first line is a
 `#` header with its fields, source and build date. They
 need Python 3.10+ and nothing outside the standard library. Rebuilding gives
@@ -13,7 +13,7 @@ Keep downloads in their own folder, outside the repo, and run each script with
 
 ```bash
 D=~/faux-data            # downloads and intermediate files
-OUT=src/main/resources/org/tauasa/apps/faux/data
+OUT=src/main/resources/org/tauasa/faux/data
 EXTRA=tools/data/extra
 mkdir -p $D/wd $D/geonames $D/tiger
 

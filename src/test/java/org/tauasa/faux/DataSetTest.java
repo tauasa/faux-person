@@ -1,7 +1,7 @@
-package org.tauasa.apps.faux;
+package org.tauasa.faux;
 
-import org.tauasa.apps.faux.model.Company;
-import org.tauasa.apps.faux.model.Region;
+import org.tauasa.faux.model.Company;
+import org.tauasa.faux.model.Region;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -151,7 +151,7 @@ class DataSetTest {
     }
 
     private static List<String> resource(String name) throws Exception {
-        try (var in = DataSetTest.class.getResourceAsStream("/org/tauasa/apps/faux/data/" + name)) {
+        try (var in = DataSetTest.class.getResourceAsStream("/org/tauasa/faux/data/" + name)) {
             assertTrue(in != null, name + " missing");
             return entries(new String(in.readAllBytes(), StandardCharsets.UTF_8));
         }
@@ -170,7 +170,7 @@ class DataSetTest {
 
     private static List<java.nio.file.Path> allDataFiles() throws Exception {
         java.nio.file.Path bundled = java.nio.file.Path.of(
-                DataSetTest.class.getResource("/org/tauasa/apps/faux/data/").toURI());
+                DataSetTest.class.getResource("/org/tauasa/faux/data/").toURI());
         List<java.nio.file.Path> files = new java.util.ArrayList<>();
         for (java.nio.file.Path dir : List.of(bundled, EXTRA)) {
             try (var s = java.nio.file.Files.list(dir)) {
@@ -183,7 +183,7 @@ class DataSetTest {
     @Test
     void theJarHoldsExactlyTheFilesTheGeneratorReads() throws Exception {
         java.nio.file.Path bundled = java.nio.file.Path.of(
-                DataSetTest.class.getResource("/org/tauasa/apps/faux/data/").toURI());
+                DataSetTest.class.getResource("/org/tauasa/faux/data/").toURI());
         try (var s = java.nio.file.Files.list(bundled)) {
             assertEquals(new java.util.TreeSet<>(DataSet.fileNames()),
                     s.map(p -> p.getFileName().toString()).collect(Collectors.toCollection(java.util.TreeSet::new)));

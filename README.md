@@ -77,9 +77,9 @@ classDiagram
 ```
 
 *Figure: a `Person` holds a `Gender`, a `Region`, an `Address` and an employer
-`Company`. All five types are in `org.tauasa.apps.faux.model`. `Person`,
+`Company`. All five types are in `org.tauasa.faux.model`. `Person`,
 `Address` and `Company` are immutable records, and `Gender` and `Region` are
-enums. `PersonGenerator`, in `org.tauasa.apps.faux`, creates people.*
+enums. `PersonGenerator`, in `org.tauasa.faux`, creates people.*
 
 | Type | What it holds |
 |---|---|
@@ -105,7 +105,7 @@ Then add it to your project, usually in test scope:
 
 ```xml
 <dependency>
-  <groupId>org.tauasa.apps</groupId>
+  <groupId>org.tauasa</groupId>
   <artifactId>faux-person</artifactId>
   <version>0.1.0</version>
   <scope>test</scope>
@@ -117,9 +117,9 @@ Generate people:
 ```java
 import java.time.LocalDate;
 import java.util.List;
-import org.tauasa.apps.faux.PersonGenerator;
-import org.tauasa.apps.faux.model.Person;
-import org.tauasa.apps.faux.model.Region;
+import org.tauasa.faux.PersonGenerator;
+import org.tauasa.faux.model.Person;
+import org.tauasa.faux.model.Region;
 
 PersonGenerator gen = PersonGenerator.builder()
         .seed(42)                    // optional: the same seed gives the same people
@@ -264,7 +264,7 @@ it names the file and line and exits with code 1.
 
 ## Where the data comes from
 
-50 bundled files in `src/main/resources/org/tauasa/apps/faux/data/`, all
+50 bundled files in `src/main/resources/org/tauasa/faux/data/`, all
 UTF-8 and NFC-normalized. Each file's first line names its fields, its source
 and the date it was built:
 

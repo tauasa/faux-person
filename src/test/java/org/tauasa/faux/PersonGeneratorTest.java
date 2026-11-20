@@ -1,10 +1,10 @@
-package org.tauasa.apps.faux;
+package org.tauasa.faux;
 
-import org.tauasa.apps.faux.model.Address;
-import org.tauasa.apps.faux.model.Company;
-import org.tauasa.apps.faux.model.Gender;
-import org.tauasa.apps.faux.model.Person;
-import org.tauasa.apps.faux.model.Region;
+import org.tauasa.faux.model.Address;
+import org.tauasa.faux.model.Company;
+import org.tauasa.faux.model.Gender;
+import org.tauasa.faux.model.Person;
+import org.tauasa.faux.model.Region;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

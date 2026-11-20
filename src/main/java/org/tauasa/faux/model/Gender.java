@@ -1,4 +1,4 @@
-package org.tauasa.apps.faux.model;
+package org.tauasa.faux.model;
 
 /** The gender of a generated {@link Person}. */
 public enum Gender {

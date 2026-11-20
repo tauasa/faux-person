@@ -1,4 +1,4 @@
-package org.tauasa.apps.faux.model;
+package org.tauasa.faux.model;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

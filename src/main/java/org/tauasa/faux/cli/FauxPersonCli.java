@@ -1,4 +1,4 @@
-package org.tauasa.apps.faux.cli;
+package org.tauasa.faux.cli;
 
 import java.io.PrintStream;
 import java.io.UncheckedIOException;
@@ -10,9 +10,9 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeParseException;
 import java.util.Locale;
 
-import org.tauasa.apps.faux.PersonGenerator;
-import org.tauasa.apps.faux.model.Person;
-import org.tauasa.apps.faux.model.Region;
+import org.tauasa.faux.PersonGenerator;
+import org.tauasa.faux.model.Person;
+import org.tauasa.faux.model.Region;
 
 /**
  * Prints random people to standard output.

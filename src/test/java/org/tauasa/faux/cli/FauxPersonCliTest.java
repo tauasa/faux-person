@@ -1,4 +1,4 @@
-package org.tauasa.apps.faux.cli;
+package org.tauasa.faux.cli;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;

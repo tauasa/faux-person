@@ -1,4 +1,4 @@
-package org.tauasa.apps.faux.model;
+package org.tauasa.faux.model;
 
 import java.time.LocalDate;
 import java.time.Period;

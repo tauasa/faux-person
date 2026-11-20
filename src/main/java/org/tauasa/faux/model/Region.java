@@ -1,4 +1,4 @@
-package org.tauasa.apps.faux.model;
+package org.tauasa.faux.model;
 
 /** Where a generated person's first and last names come from. */
 public enum Region {

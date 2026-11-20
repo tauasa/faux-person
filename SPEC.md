@@ -5,8 +5,8 @@ but fictitious `Person` objects for tests, demos and seed data.
 
 | | |
 |---|---|
-| Coordinates | `org.tauasa.apps:faux-person:0.1.0` |
-| Packages | `org.tauasa.apps.faux` (the generator), `.model` (the records), `.cli` (the tool) |
+| Coordinates | `org.tauasa:faux-person:0.1.0` |
+| Packages | `org.tauasa.faux` (the generator), `.model` (the records), `.cli` (the tool) |
 | Java | 17 (`maven.compiler.release=17`) |
 | Build | Maven |
 | Runtime dependencies | None. JUnit 5 is test-scope only, and the enforcer plugin bans the rest |
@@ -33,9 +33,10 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 | 2026-11-20 | **`Builder.dataDirectory(Path)`**: a folder whose files replace the bundled ones of the same name. A `.txt` file there with a name the generator doesn't read is an error, not ignored, so a misspelling can't silently fall back to the bundled data |
 | 2026-11-20 | **Non-binary first names are 50/50**: a coin flip picks the women's or the men's list, like the surname. Before, every name was in one list, and men's names outweighed women's. Seeds that produce a non-binary person give different people from that point on |
 | 2026-11-20 | The CLI's **`--data-dir DIR`** passes a folder to `dataDirectory`. A bad data file exits 1; a bad argument still exits 2 |
+| 2026-11-20 | groupId is **`org.tauasa`**, the verified Central namespace, in place of `org.tauasa.apps`. The Java packages move with it, from `org.tauasa.apps.faux` to **`org.tauasa.faux`**, and the bundled data from `org/tauasa/apps/faux/data/` to `org/tauasa/faux/data/`. Nothing had been published under the old names |
 | 2026-11-20 | License: **MIT**. Version **0.1.0**, set up for Maven Central. Uploads stop at "validated", so a person presses Publish |
 | 2026-11-20 | **Every data file must be clean Unicode**: strict UTF-8 without a byte-order mark, NFC-normalized, no control or invisible format characters, Unix line endings. `DataSetTest` enforces it |
-| 2026-11-19 | Data files keep the names the owner gave them. First placed at the root of `src/main/resources/`, then moved the same day to **`src/main/resources/org/tauasa/apps/faux/data/`**, so their generic names can't collide with another jar's on a consumer's classpath |
+| 2026-11-19 | Data files keep the names the owner gave them. First placed at the root of `src/main/resources/`, then moved the same day under the package (now **`src/main/resources/org/tauasa/faux/data/`**), so their generic names can't collide with another jar's on a consumer's classpath |
 
 ## Goals
 
@@ -61,9 +62,9 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 
 ## 1. Data model
 
-Immutable records in `org.tauasa.apps.faux.model` (moved there 2026-11-19).
+Immutable records in `org.tauasa.faux.model` (moved there 2026-11-19).
 Every compact constructor rejects `null`. The file loader, `DataSet`, stays
-package-private in `org.tauasa.apps.faux` and isn't part of the API.
+package-private in `org.tauasa.faux` and isn't part of the API.
 
 ```java
 public record Person(String firstName, String lastName, Gender gender, Region region,
@@ -134,7 +135,7 @@ people change too; a replay must split at the same points. Don't call `.parallel
 
 ## 3. The bundled data
 
-UTF-8, one entry per line, fields separated by `|`, in `src/main/resources/org/tauasa/apps/faux/data/`.
+UTF-8, one entry per line, fields separated by `|`, in `src/main/resources/org/tauasa/faux/data/`.
 Blank lines and lines starting with `#` are skipped. Every file's first line is
 a `#` header naming its fields, source and build date, for example
 `# name|gender|weight; gender is F, M or U (either); weight is how many people
@@ -229,7 +230,7 @@ Andrew without dropping Wang, Patel or Anna.
 ## 4. The command-line tool
 
 `java -jar faux-person-<version>.jar [options]` prints people to standard
-output. The jar's `Main-Class` is `org.tauasa.apps.faux.cli.FauxPersonCli`.
+output. The jar's `Main-Class` is `org.tauasa.faux.cli.FauxPersonCli`.
 
 | Option | Default |
 |---|---|

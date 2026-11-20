@@ -1,8 +1,8 @@
-package org.tauasa.apps.faux;
+package org.tauasa.faux;
 
-import org.tauasa.apps.faux.model.Company;
-import org.tauasa.apps.faux.model.Gender;
-import org.tauasa.apps.faux.model.Region;
+import org.tauasa.faux.model.Company;
+import org.tauasa.faux.model.Gender;
+import org.tauasa.faux.model.Region;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -67,7 +67,7 @@ final class DataSet {
     final List<Street> streets;
 
     /** Under the package, so the generic file names can't collide with another jar's. */
-    private static final String RESOURCE_DIR = "/org/tauasa/apps/faux/data/";
+    private static final String RESOURCE_DIR = "/org/tauasa/faux/data/";
 
     static final String COMPANIES = "us_companies_domains.txt";
     static final String STREETS = "us_street_names_city_state_zip.txt";

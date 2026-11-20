@@ -1,4 +1,4 @@
-package org.tauasa.apps.faux;
+package org.tauasa.faux;
 
 import java.nio.file.Path;
 import java.text.Normalizer;
@@ -11,11 +11,11 @@ import java.util.Objects;
 import java.util.SplittableRandom;
 import java.util.stream.Stream;
 
-import org.tauasa.apps.faux.model.Address;
-import org.tauasa.apps.faux.model.Company;
-import org.tauasa.apps.faux.model.Gender;
-import org.tauasa.apps.faux.model.Person;
-import org.tauasa.apps.faux.model.Region;
+import org.tauasa.faux.model.Address;
+import org.tauasa.faux.model.Company;
+import org.tauasa.faux.model.Gender;
+import org.tauasa.faux.model.Person;
+import org.tauasa.faux.model.Region;
 
 /**
  * Generates random, internally consistent {@link Person}s.
