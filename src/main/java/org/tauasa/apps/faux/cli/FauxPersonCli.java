@@ -1,7 +1,10 @@
 package org.tauasa.apps.faux.cli;
 
 import java.io.PrintStream;
+import java.time.Clock;
 import java.time.LocalDate;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeParseException;
 import java.util.Locale;
 import org.tauasa.apps.faux.PersonGenerator;
 import org.tauasa.apps.faux.model.Person;
@@ -24,6 +27,9 @@ public final class FauxPersonCli {
               -r, --region R       %s or mixed (default mixed)
                   --min-age N      youngest age (default 18)
                   --max-age N      oldest age (default 90)
+                  --today DATE     the date ages are counted from, as YYYY-MM-DD
+                                   (default today); fix it to get the same birth
+                                   dates every day
               -f, --format F       text, pipe or json (default text)
               -h, --help           show this help
 
@@ -52,6 +58,7 @@ public final class FauxPersonCli {
         int minAge = 18;
         int maxAge = 90;
         Format format = Format.TEXT;
+        LocalDate today = null;
         try {
             for (int i = 0; i < args.length; i++) {
                 String a = args[i];
@@ -66,16 +73,23 @@ public final class FauxPersonCli {
                     case "--min-age" -> minAge = nonNegative(a, value(args, ++i, a));
                     case "--max-age" -> maxAge = nonNegative(a, value(args, ++i, a));
                     case "-f", "--format" -> format = parseFormat(value(args, ++i, a));
+                    case "--today" -> today = parseDate(a, value(args, ++i, a));
                     default -> throw new IllegalArgumentException("unknown option: " + a);
                 }
             }
-            PersonGenerator.Builder b = PersonGenerator.builder().region(region).ageRange(minAge, maxAge);
+            if (today == null) {
+                today = LocalDate.now();
+            }
+            // One fixed day for both the birth dates and the ages printed, so the two
+            // always agree, even if a run crosses midnight.
+            Clock clock = Clock.fixed(today.atStartOfDay(ZoneOffset.UTC).toInstant(), ZoneOffset.UTC);
+            PersonGenerator.Builder b = PersonGenerator.builder()
+                    .region(region).ageRange(minAge, maxAge).clock(clock);
             if (seed != null) {
                 b.seed(seed);
             }
             PersonGenerator gen = b.build();
             err.println("seed: " + gen.seed());
-            LocalDate today = LocalDate.now();
             if (format == Format.JSON) {
                 out.println("[");
             } else if (format == Format.PIPE) {
@@ -121,6 +135,14 @@ public final class FauxPersonCli {
             throw new IllegalArgumentException(option + " must be 0 or more: " + v);
         }
         return (int) n;
+    }
+
+    private static LocalDate parseDate(String option, String v) {
+        try {
+            return LocalDate.parse(v);
+        } catch (DateTimeParseException e) {
+            throw new IllegalArgumentException(option + " must be a date like 2026-11-20: " + v);
+        }
     }
 
     private static Region parseRegion(String v) {

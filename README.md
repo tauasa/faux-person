@@ -8,12 +8,12 @@ a Russian surname gets the feminine form (Petrova, not Petrov), and the age
 fits the date of birth.
 
 Give it a seed and you get the same people every time, so a failing test can
-be replayed exactly. Birth dates count back from today, so the same seed's
-dates move forward a day each day unless you fix the clock (see below). It has
-no runtime dependencies.
+be replayed exactly. Birth dates count back from today, so fix the date too
+(`--today` on the command line, `.clock(...)` in Java) when you need the same
+birth dates on another day. It has no runtime dependencies.
 
 ```text
-$ ./faux-person.sh -n 3 --seed 42
+$ ./faux-person.sh -n 3 --seed 42 --today 2026-11-20
 Walter Brotherus (male, 46) <walter.brotherus6@iff.com> (545) 555-0151, 2925 Florence Ave, Las Vegas, NV 89120, works at International Flavors & Fragrances
 Yusaku Tomonaga (male, 42) <yusaku.tomonaga41@up.com> (486) 555-0121, 3661 26th Ave, Brooklyn, NY 11214, works at Union Pacific Corporation
 Ilia Holub (female, 72) <ilia.holub57@comtech.com> (235) 555-0144, 9172 Lambach Ln, Louisville, KY 40220, works at Comtech
@@ -153,7 +153,7 @@ always goes to stderr, so it never ends up in your output.
 
 ```bash
 ./faux-person.sh                                   # 10 people to stdout
-./faux-person.sh -n 5 --seed 42                    # the same 5 people every time
+./faux-person.sh -n 5 --seed 42 --today 2026-11-20 # the same 5 people, birth dates too, every day
 ./faux-person.sh -n 1000 -f json -o people.json    # 1,000 people to a file, as JSON
 ./faux-person.sh -n 200 -r rus -f pipe > rus.txt   # or redirect stdout yourself
 ./faux-person.sh -n 50 --min-age 65 --max-age 90 | grep ', FL '
@@ -167,6 +167,7 @@ always goes to stderr, so it never ends up in your output.
 | `-s, --seed S` | Seed, to get the same people again | random |
 | `-r, --region R` | Any region in lowercase (`western`, `jpn`, `naf`, …), or `mixed`. `--help` lists all 24 | `mixed` |
 | `--min-age N`, `--max-age N` | Youngest and oldest age | 18, 90 |
+| `--today DATE` | The date ages are counted from, as `YYYY-MM-DD`. With `--seed`, it gives the same birth dates on any day. Another date changes only the birth dates and ages | today |
 | `-f, --format F` | `text`, `pipe` or `json` | `text` |
 | `-h, --help` | Show the options | |
 
@@ -179,7 +180,9 @@ mvn package
 java -jar target/faux-person-0.1.0.jar -n 5 -f json
 ```
 
-`pipe` prints a header row and then 13 `|`-separated columns:
+`pipe` prints a header row and then 13 `|`-separated columns. This example
+came from `--seed 42 --today 2026-11-20`, and the JSON one below from the same
+plus `-r asia`:
 
 ```text
 first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer

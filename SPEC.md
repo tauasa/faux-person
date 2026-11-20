@@ -209,6 +209,7 @@ output. The jar's `Main-Class` is `org.tauasa.apps.faux.cli.FauxPersonCli`.
 | `-s, --seed S` | random; the seed used goes to standard error |
 | `-r, --region R` | `mixed`; R is any region name in lowercase |
 | `--min-age N`, `--max-age N` | 18, 90 |
+| `--today YYYY-MM-DD` | today; the day birth dates and ages are counted from, as a fixed clock |
 | `-f, --format text\|pipe\|json` | text |
 | `-h, --help` | |
 
@@ -232,7 +233,7 @@ the bundled files' shape.
 | `split()` is reproducible and differs from the parent | Splitting shares state |
 | Every null field of every record is rejected | A half-built record can exist |
 | Each region has 1,000+ distinct first names and surnames, 400+ each for women and men; 20+ cities in each of the 50 states; streets and companies are in the 50 states; 1,000+ companies with distinct domains | A data rebuild shrinks or breaks a file |
-| CLI: count, replay by seed, pipe columns, JSON shape and escaping, bad arguments exit 2 | The tool's contract breaks |
+| CLI: count, replay by seed, `--today` fixes birth dates and ages (another day changes only those two columns), pipe columns, JSON shape and escaping, bad arguments exit 2 | The tool's contract breaks |
 
 ## 6. Repo and CI
 

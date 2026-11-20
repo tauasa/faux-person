@@ -39,6 +39,38 @@ class FauxPersonCliTest {
     }
 
     @Test
+    void todayFixesBirthDatesAndAges() {
+        run("-n", "20", "-s", "5", "-f", "pipe", "--today", "2026-11-20");
+        String first = out;
+        run("-n", "20", "-s", "5", "-f", "pipe", "--today", "2026-11-20");
+        assertEquals(first, out);
+        // Another day changes only the birth dates and ages: the date window's
+        // length changes with the calendar, so the same draw lands elsewhere in
+        // it. Every other column stays the same.
+        run("-n", "20", "-s", "5", "-f", "pipe", "--today", "2027-11-20");
+        var now = first.lines().skip(1).toList();
+        var later = out.lines().skip(1).toList();
+        assertEquals(now.size(), later.size());
+        for (int i = 0; i < now.size(); i++) {
+            String[] x = now.get(i).split("\\|"), y = later.get(i).split("\\|");
+            for (int col = 0; col < x.length; col++) {
+                if (col != 4 && col != 5) {
+                    assertEquals(x[col], y[col], "column " + col + ": " + later.get(i));
+                }
+            }
+        }
+        assertTrue(!first.equals(out), "a different --today should move the birth dates");
+        // Ages are counted from --today, and stay inside the age range on that day.
+        run("-n", "200", "-s", "6", "-f", "pipe", "--today", "2000-02-29", "--min-age", "30", "--max-age", "30");
+        out.lines().skip(1).forEach(l -> {
+            String[] f = l.split("\\|");
+            assertEquals("30", f[5], l);
+            assertEquals(30, java.time.Period.between(java.time.LocalDate.parse(f[4]),
+                    java.time.LocalDate.of(2000, 2, 29)).getYears(), l);
+        });
+    }
+
+    @Test
     void pipeFormatHasAHeaderAndThirteenColumns() {
         assertEquals(0, run("-n", "3", "-s", "2", "--format", "pipe"));
         var lines = out.lines().toList();
@@ -70,6 +102,10 @@ class FauxPersonCliTest {
         assertEquals(2, run("-n", "-3"));
         assertEquals(2, run("--min-age", "50", "--max-age", "40"));
         assertEquals(2, run("--bogus"));
+        assertEquals(2, run("--today", "2026-13-01"));
+        assertTrue(err.contains("--today must be a date like 2026-11-20"), err);
+        assertEquals(2, run("--today", "tomorrow"));
+        assertEquals(2, run("--today"));
         assertTrue(err.contains("usage:"), err);
     }
 
