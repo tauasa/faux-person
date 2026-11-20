@@ -128,6 +128,10 @@ public final class PersonGenerator {
      * A new generator with the same settings and its own reproducible
      * sequence, for another thread.
      *
+     * <p>Splitting draws from this generator, so it changes the people this
+     * generator makes afterwards. Replaying a seed gives the same people only if
+     * {@code split()} is called at the same points.
+     *
      * @return the new generator
      */
     public PersonGenerator split() {

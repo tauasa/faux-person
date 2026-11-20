@@ -1,6 +1,6 @@
 """Build us_companies_domains.txt from Wikidata query results.
 
-usage: python3 -I build_companies.py <out-dir> <limit> <geonames cities1000.txt> <by-revenue.csv> [<supplement.csv>]
+usage: python3 -I build_companies.py <out-dir> <limit> <geonames cities1000.txt> <geonames zip US.txt> <by-revenue.csv> [<supplement.csv>]
 
 Companies come first from by-revenue.csv (US businesses ranked by the highest
 USD revenue Wikidata holds), then from the supplement (NYSE/Nasdaq-listed US
@@ -12,7 +12,10 @@ HQ city: Wikidata's headquarters, when its name is a GeoNames place within
 50 km of its coordinates. A building, campus or neighbourhood resolves to the
 nearest place of 20,000+ people within 40 km. With no HQ coordinates, the
 company's own coordinates are used the same way, then the HQ's name alone
-(most populous match). A company whose HQ can't be placed is left out.
+(most populous match). A company whose HQ can't be placed is left out. A match that is a GeoNames
+neighbourhood (feature code PPLX, such as Hell's Kitchen) moves to the most
+populous place within 40 km, which is the city it belongs to.
+Names with control or invisible format characters are left out too.
 
 Left out: .edu/.org/.gov/.mil domains and names like "University" or
 "Foundation", since Wikidata types some of those as businesses.
@@ -25,6 +28,7 @@ import csv
 import math
 import re
 import sys
+import unicodedata
 from collections import Counter, OrderedDict
 from urllib.parse import urlparse
 
@@ -56,13 +60,18 @@ def domain(url):
     return ".".join(parts[-2:])
 
 
+def clean(value):
+    """True when value has no control or invisible format characters (Unicode Cc, Cf)."""
+    return not any(unicodedata.category(ch) in ("Cc", "Cf") for ch in value)
+
+
 def load_places(path):
-    """GeoNames US populated places: (name, state, lat, lon, population)."""
+    """GeoNames US populated places: (name, state, lat, lon, population, feature code)."""
     out = []
     for line in open(path, encoding="utf-8"):
         f = line.split("\t")
         if f[8] == "US" and f[10] in ABBR.values() and f[6] == "P":
-            out.append((f[1], f[10], float(f[4]), float(f[5]), int(f[14] or 0)))
+            out.append((f[1], f[10], float(f[4]), float(f[5]), int(f[14] or 0), f[7]))
     return out
 
 
@@ -73,7 +82,27 @@ def km(p, lat, lon):
     return 6371 * 2 * math.asin(math.sqrt(a))
 
 
+POSTAL = set()  # (place name, state) the USPS uses as a mailing city; filled in main()
+
+
+def parent_city(places, p):
+    """For a neighbourhood (GeoNames PPLX: Hell's Kitchen, the Chicago Loop),
+    the most populous real place within 40 km, which is the city it's part of.
+    GeoNames also tags some real cities PPLX (Beverly Hills, Culver City), so a
+    PPLX place the USPS uses as a mailing city (Beverly Hills, La Jolla) stays.
+    Anything else is returned as it is."""
+    if p is None or p[5] != "PPLX" or (p[0].lower(), p[1]) in POSTAL:
+        return p
+    near = [q for q in places if q[5] != "PPLX" and abs(q[2] - p[2]) < 0.5 and abs(q[3] - p[3]) < 0.6
+            and km(q, p[2], p[3]) <= 40]
+    return max(near, key=lambda q: q[4]) if near else p
+
+
 def resolve(places, by_name, hq_name, point):
+    return parent_city(places, _resolve(places, by_name, hq_name, point))
+
+
+def _resolve(places, by_name, hq_name, point):
     if point is None:
         return by_name.get(hq_name)
     lon, lat = float(point.group(1)), float(point.group(2))
@@ -104,7 +133,10 @@ def companies(path, places, by_name):
     return sorted(cos.values(), key=lambda c: -c["rank"])
 
 
-def main(out, limit, places_path, *sources):
+def main(out, limit, places_path, postal_path, *sources):
+    for line in open(postal_path, encoding="utf-8"):
+        f = line.split("\t")
+        POSTAL.add((f[2].lower(), f[4]))
     places = load_places(places_path)
     by_name = {}
     for p in places:
@@ -115,7 +147,7 @@ def main(out, limit, places_path, *sources):
         for c in companies(src, places, by_name):
             if len(lines) >= limit:
                 break
-            if not c["domains"] or not c["hq"] or "|" in c["name"]:
+            if not c["domains"] or not c["hq"] or "|" in c["name"] or not clean(c["name"]):
                 dropped.append(c["name"])
                 continue
             if NOT_A_COMPANY.search(c["name"]):
@@ -135,4 +167,4 @@ def main(out, limit, places_path, *sources):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], int(sys.argv[2]), sys.argv[3], *sys.argv[4:])
+    main(sys.argv[1], int(sys.argv[2]), sys.argv[3], sys.argv[4], *sys.argv[5:])

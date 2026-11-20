@@ -39,7 +39,7 @@ python3 -I tools/data/build_streets.py $D/counties.tsv $D/geonames/zip/US.txt $D
 # 4. Companies (Wikidata)
 python3 -I tools/data/wdq.py tools/data/queries/q_companies.rq        $D/wd/companies.csv
 python3 -I tools/data/wdq.py tools/data/queries/q_companies_listed.rq $D/wd/companies_listed.csv
-python3 -I tools/data/build_companies.py $OUT 1500 $D/geonames/cities/cities1000.txt \
+python3 -I tools/data/build_companies.py $OUT 1500 $D/geonames/cities/cities1000.txt $D/geonames/zip/US.txt \
   $D/wd/companies.csv $D/wd/companies_listed.csv
 ```
 

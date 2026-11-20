@@ -194,7 +194,9 @@ public final class FauxPersonCli {
                 case '\r' -> b.append("\\r");
                 case '\t' -> b.append("\\t");
                 default -> {
-                    if (c < 0x20) {
+                    // Below 0x20 is required by JSON. DEL and the two line separators
+                    // are legal JSON but break a <script> block or an older JS engine.
+                    if (c < 0x20 || c == 0x7f || c == '\u2028' || c == '\u2029') {
                         b.append(String.format(Locale.ROOT, "\\u%04x", (int) c));
                     } else {
                         b.append(c);

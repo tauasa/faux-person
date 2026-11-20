@@ -120,7 +120,8 @@ every seed produces (see *Versioning*).
 ### Concurrency
 
 A generator isn't thread-safe. `split()` returns one with the same settings and
-its own reproducible stream. Don't call `.parallel()` on `stream()`.
+its own reproducible stream. It draws from the parent, so the parent's later
+people change too; a replay must split at the same points. Don't call `.parallel()` on `stream()`.
 
 ## 3. The bundled data
 
@@ -142,7 +143,7 @@ them, and `NOTICE` gives sources and licences.
 | `rok_surnames.txt` | 123 | `name` | Wikidata: every surname carried by 3+ South Korean citizens, less the Chinese pinyin, Japanese and single-family names `build_names.py` lists. Korea has only about 280 surnames in all |
 | `mex_first_names.txt`, `mex_surnames.txt` | 1,200, 1,200 | `name\|F/M/U`, `name` | Wikidata: Mexican citizens, diacritics kept (Fabián, Mondragón) |
 | `irn_first_names.txt`, `irn_surnames.txt` | 539, 844 | same | Wikidata: Iranian citizens, folded to ASCII, less mainly Western names |
-| `heb_first_names.txt`, `heb_surnames.txt` | 846, 1,200 | same | Wikidata: Israeli citizens, folded to ASCII. A name stays only if its share of Israeli people is at least its share of Western and of Russian people, and half its Palestinian share. That drops immigrants' names (Barry, Svetlana) and keeps David, Sarah and Michael |
+| `heb_first_names.txt`, `heb_surnames.txt` | 846, 1,200 | same | Wikidata: Israeli citizens, folded to ASCII. A name stays only if its share of Israeli people is at least its share of Western, of Russian and of Palestinian people. That drops immigrants' names (Barry, Svetlana) and keeps David, Sarah and Michael |
 | `pse_first_names.txt`, `pse_surnames.txt` | 342, 188 | same | Wikidata: citizens of the State of Palestine, the Palestinian territories and Mandatory Palestine, and people recorded as ethnically Palestinian, less mainly Western or Israeli names. Wikidata holds few Palestinian people, and few women among them: 96 of the first names fit a woman |
 | `rok_hangul_first_names.txt` | 1,200 | `hangul\|romanized\|F/M/U` | Wikidata: the Korean (`ko`) labels of South Korean given names, with the romanization most people carry (지훈\|Ji-hoon\|M) |
 | `rok_hangul_surnames.txt` | 118 | `hangul\|romanized` | Wikidata: same, for surnames (김\|Kim) |

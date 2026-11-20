@@ -136,6 +136,8 @@ one it picked. Pass `.clock(Clock.fixed(...))` too if a test checks ages, so
 
 A generator isn't thread-safe. Give each thread its own with `gen.split()`,
 which keeps the settings and starts a separate sequence you can replay.
+Splitting draws from the parent, so it changes the parent's later people too:
+to replay a run, call `split()` at the same points.
 
 `build()` throws `IllegalArgumentException` if the age range falls outside
 0 to 120 or is reversed, or if the gender weights are negative or all zero.

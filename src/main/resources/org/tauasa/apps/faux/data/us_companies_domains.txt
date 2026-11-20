@@ -37,7 +37,7 @@ Target Corporation|Minneapolis|MN|target.com
 IBM|Armonk|NY|ibm.com
 Citigroup|New York City|NY|citigroup.com
 Dell Inc.|Round Rock|TX|dell.com
-Archer Daniels Midland|Chicago Loop|IL|adm.com
+Archer Daniels Midland|Chicago|IL|adm.com
 Boeing|Chicago|IL|boeing.com
 United Parcel Service|Sandy Springs|GA|ups.com
 Pfizer|New York City|NY|pfizer.com
@@ -112,10 +112,10 @@ New York Life Insurance Company|New York City|NY|newyorklife.com
 Visa|San Francisco|CA|visa.com
 General Dynamics|Reston|VA|gd.com
 Thermo Fisher Scientific|Waltham|MA|thermofisher.com
-NBCUniversal|Hell's Kitchen|NY|nbcuniversal.com
+NBCUniversal|New York City|NY|nbcuniversal.com
 CHS Inc.|Inver Grove Heights|MN|chsinc.com
 HF Sinclair|Dallas|TX|hollyfrontier.com
-Salesforce|Chinatown|CA|salesforce.com
+Salesforce|San Francisco|CA|salesforce.com
 Dollar General|Goodlettsville|TN|dollargeneral.com
 USAA|San Antonio|TX|usaa.com
 Starbucks|Seattle|WA|starbucks.com
@@ -276,10 +276,10 @@ APA Corporation|Houston|TX|apachecorp.com
 Williams Companies|Tulsa|OK|williams.com
 eBay|San Jose|CA|ebay.com
 Huntington Ingalls Industries|Newport News|VA|hii.com
-Hearst Communications|Hell's Kitchen|NY|hearst.com
-Voya Financial|Hell's Kitchen|NY|voya.com
+Hearst Communications|New York City|NY|hearst.com
+Voya Financial|New York City|NY|voya.com
 Raymond James Financial|St. Petersburg|FL|raymondjames.com
-S&P Global|Hell's Kitchen|NY|spglobal.com
+S&P Global|New York City|NY|spglobal.com
 AGCO|Duluth|GA|agcocorp.com
 Airbnb|San Francisco|CA|airbnb.com
 Penske Automotive Group|Bloomfield Hills|MI|penskeautomotive.com
@@ -290,8 +290,8 @@ American Tower Corporation|Boston|MA|americantower.com
 NVR, Inc.|Reston|VA|nvrinc.com
 The Hershey Company|Hershey|PA|thehersheycompany.com
 Vertiv|Westerville|OH|vertiv.com
-Howard Hanna Real Estate Services|Penn Hills|PA|howardhanna.com
-Bloomberg L.P.|Hell's Kitchen|NY|bloomberg.com
+Howard Hanna Real Estate Services|Pittsburgh|PA|howardhanna.com
+Bloomberg L.P.|New York City|NY|bloomberg.com
 Celanese Corporation|Irving|TX|celanese.com
 Diamondback Energy|Midland|TX|diamondbackenergy.com
 Intercontinental Exchange|Atlanta|GA|theice.com
@@ -462,7 +462,7 @@ Moog Inc.|Cheektowaga|NY|moog.com
 Entrust|Shakopee|MN|entrust.com
 Precision Castparts Corp.|Portland|OR|precast.com
 Azenta Life Sciences|Burlington|MA|azenta.com
-Shutterstock|Gramercy Park|NY|shutterstock.com
+Shutterstock|New York City|NY|shutterstock.com
 Viasat|Carlsbad|CA|viasat.com
 California Water Service Group|San Jose|CA|calwatergroup.com
 Arconic|Pittsburgh|PA|arconic.com
@@ -540,7 +540,7 @@ States Newsroom|Chapel Hill|NC|statesnewsroom.com
 Digimarc|Beaverton|OR|digimarc.com
 Netlify|San Francisco|CA|netlify.com
 Network For Teaching Entrepreneurship|New York City|NY|nfte.com
-Yeshivat Shaare Torah|Gravesend|NY|tripod.com
+Yeshivat Shaare Torah|New York City|NY|tripod.com
 Funko|Wenatchee|WA|funko.com
 Phunware|Austin|TX|phunware.com
 The Children's Place|Secaucus|NJ|childrensplace.com
@@ -557,7 +557,7 @@ Lensic Theater|Santa Fe|NM|lensic.com
 Atla|Chicago|IL|atla.com
 Techlogix|Woburn|MA|techlogix.com
 Center for Open Science|Charlottesville|VA|cos.io
-The New Press|Financial District|NY|thenewpress.com
+The New Press|New York City|NY|thenewpress.com
 OneAmerica Financial Partners, Inc.|Indianapolis|IN|oneamerica.com
 Interplay Entertainment|Beverly Hills|CA|interplay.com
 Legiit|Myrtle Beach|SC|legiit.com
@@ -582,7 +582,7 @@ Coastal and Estuarine Research Federation|Seattle|WA|cerf.science
 World Poetry Books|New York City|NY|worldpoetrybooks.com
 Plaza Theatre Company|Cleburne|TX|plaza-theatre.com
 Avon Theatre Film Center|Stamford|CT|avontheatre.com
-BBN Holding|Chinatown|CA|bbn.one
+BBN Holding|San Francisco|CA|bbn.one
 Mockingbird Ministries Inc|Charlottesville|VA|mbird.com
 Purism|South San Francisco|CA|puri.sm
 American Genre Film Archive|Austin|TX|americangenrefilm.com
@@ -843,7 +843,7 @@ Riot Platforms, Inc.|Castle Rock|CO|riotplatforms.com
 First Solar|Tempe|AZ|firstsolar.com
 Frontier Airlines|Denver|CO|flyfrontier.com
 Riverbed Technology|Redwood City|CA|riverbed.com
-Blue Owl Capital|Hell's Kitchen|NY|blueowlcapitalcorporation.com
+Blue Owl Capital|New York City|NY|blueowlcapitalcorporation.com
 GE HealthCare|Chicago|IL|gehealthcare.com
 Seer, Inc|Redwood City|CA|seer.bio
 Scholastic Corporation|New York City|NY|scholastic.com
@@ -973,7 +973,7 @@ Netlist Inc.|Irvine|CA|netlist.com
 Tractor Supply Company|Brentwood|TN|tractorsupply.com
 WME Group|Beverly Hills|CA|endeavorco.com
 Liberty Media|Castle Rock|CO|libertymedia.com
-Alleghany Corporation|Hell's Kitchen|NY|alleghany.com
+Alleghany Corporation|New York City|NY|alleghany.com
 CallidusCloud|Pleasanton|CA|calliduscloud.com
 Kimball International|Jasper|IN|kimballinternational.com
 RetailMeNot|Austin|TX|retailmenot.com
@@ -1029,7 +1029,7 @@ Annaly Capital Management|New York City|NY|annaly.com
 AuthenTec|Melbourne|FL|authentec.com
 Corpay|Atlanta|GA|corpay.com
 Galyan's|Plainfield|IN|galyans.com
-Griffon Corporation|Hell's Kitchen|NY|griffon.com
+Griffon Corporation|New York City|NY|griffon.com
 Vulcan Materials Company|Birmingham|AL|vulcanmaterials.com
 Kratos Defense & Security Solutions|San Diego|CA|sat.com
 Grant Prideco|Houston|TX|grantprideco.com
@@ -1039,7 +1039,7 @@ SEACOR Holdings|Fort Lauderdale|FL|seacorholdings.com
 Community West Bancshares|Goleta|CA|communitywest.com
 Beacon Roofing Supply|Herndon|VA|becn.com
 Copart|Dallas|TX|copart.com
-TD Cowen|Hell's Kitchen|NY|cowen.com
+TD Cowen|New York City|NY|cowen.com
 Moelis & Company|Utica|NY|moelis.com
 CyrusOne|Carrollton|TX|cyrusone.com
 CAMCO FINANCIAL|Cambridge|OH|advantagebankonline.com
@@ -1098,7 +1098,7 @@ Kopin Corporation|Westborough|MA|kopin.com
 Bausch Health|Wilmington|DE|bauschhealth.com
 Enphase Energy|Petaluma|CA|enphase.com
 SoFi|San Francisco|CA|sofi.com
-Jones Lang LaSalle|Chicago Loop|IL|jll.com
+Jones Lang LaSalle|Chicago|IL|jll.com
 CarGurus|Cambridge|MA|cargurus.com
 Comverse|Wakefield|MA|xura.com
 Poshmark|Menlo Park|CA|poshmark.com
@@ -1139,7 +1139,7 @@ Veris Residential|Jersey City|NJ|mack-cali.com
 Sandy Spring Bank|Olney|MD|sandyspringbank.com
 JBG Smith|Chevy Chase|MD|jbgsmith.com
 Hatteras Financial Corp|Winston-Salem|NC|hatfin.com
-Heidrick & Struggles|Chicago Loop|IL|heidrick.com
+Heidrick & Struggles|Chicago|IL|heidrick.com
 LayerOne|Dallas|TX|layerone.com
 Newpark Resources|The Woodlands|TX|newpark.com
 Nektar Therapeutics|San Francisco|CA|nektar.com
@@ -1337,7 +1337,7 @@ Albany International|Rochester|NY|albint.com
 Synopsys|Mountain View|CA|synopsys.com
 Southern Company|Atlanta|GA|southerncompany.com
 Speedway Motorsports|Concord|NC|speedwaymotorsports.com
-Outfront Media|Gramercy Park|NY|outfrontmedia.com
+Outfront Media|New York City|NY|outfrontmedia.com
 Editas Medicine|Cambridge|MA|editasmedicine.com
 Match Group|Kerrville|TX|mtch.com
 RealPage|Richardson|TX|realpage.com
@@ -1365,7 +1365,7 @@ United Online|Los Angeles|CA|unitedonline.com
 Nicolet Bankshares|Green Bay|WI|nicoletbank.com
 USANA Health Sciences|Salt Lake City|UT|usana.com
 Toast, Inc.|Boston|MA|toasttab.com
-New Senior Investment Group|Hell's Kitchen|NY|newseniorinv.com
+New Senior Investment Group|New York City|NY|newseniorinv.com
 Dynatrace|Boston|MA|dynatrace.com
 Transphorm|Goleta|CA|transphormusa.com
 UMH Properties|Marlboro|NJ|umh.com

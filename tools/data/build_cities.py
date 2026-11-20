@@ -9,6 +9,7 @@ the street builder.
 """
 import random
 import sys
+import unicodedata
 from collections import defaultdict
 
 STATES = ("AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO "
@@ -17,13 +18,18 @@ TOP, RANDOM = 10, 15
 rng = random.Random(20261119)
 
 
+def clean(value):
+    """True when value has no control or invisible format characters (Unicode Cc, Cf)."""
+    return not any(unicodedata.category(ch) in ("Cc", "Cf") for ch in value)
+
+
 def main(src, out):
     zips = defaultdict(list)          # (state, city lower) -> [zip]
     county = {}                       # (state, city lower) -> (county fips, county name)
     for line in open(f"{src}/zip/US.txt", encoding="utf-8"):
         f = line.rstrip("\n").split("\t")
         st, city, z = f[4], f[2], f[1]
-        if st in STATES:
+        if st in STATES and clean(city) and z.isdigit():
             zips[(st, city.lower())].append(z)
             if f[6]:
                 county.setdefault((st, city.lower()), (f[6], f[5]))

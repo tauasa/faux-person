@@ -10,8 +10,10 @@ state GeoNames gives for that ZIP.
 import io
 import os
 import random
+import re
 import struct
 import sys
+import unicodedata
 import urllib.request
 import zipfile
 
@@ -24,6 +26,11 @@ PER_STATE = 30
 MAX_BYTES = 40_000_000
 UA = {"User-Agent": "faux-person-data-builder/0.1"}
 rng = random.Random(20261119)
+
+
+def clean(value):
+    """True when value has no control or invisible format characters (Unicode Cc, Cf)."""
+    return not any(unicodedata.category(ch) in ("Cc", "Cf") for ch in value)
 
 
 def dbf_rows(data, encoding="utf-8"):
@@ -47,6 +54,10 @@ def dbf_rows(data, encoding="utf-8"):
 
 
 def fetch(code, dl):
+    # code is state FIPS + county FIPS, read from downloaded data: hold it to
+    # five digits before it goes into a URL or a file path.
+    if not re.fullmatch(r"\d{5}", code):
+        raise ValueError(f"not a county FIPS code: {code!r}")
     path = f"{dl}/tl_2024_{code}_addrfeat.zip"
     url = f"https://www2.census.gov/geo/tiger/TIGER2024/ADDRFEAT/tl_2024_{code}_addrfeat.zip"
     if not os.path.exists(path):
@@ -54,9 +65,15 @@ def fetch(code, dl):
         if int(head.headers.get("Content-Length", 0)) > MAX_BYTES:
             return None
         with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=300) as r:
-            open(path, "wb").write(r.read())
+            body = r.read(MAX_BYTES + 1)  # don't trust Content-Length alone
+        if len(body) > MAX_BYTES:
+            return None
+        open(path, "wb").write(body)
     with zipfile.ZipFile(path) as z:
-        return z.read(next(n for n in z.namelist() if n.endswith(".dbf")))
+        info = next(i for i in z.infolist() if i.filename.endswith(".dbf"))
+        if info.file_size > 20 * MAX_BYTES:
+            raise ValueError(f"{info.filename} unpacks to {info.file_size} bytes")
+        return z.read(info)
 
 
 def main(counties_tsv, zipfile_path, dl, out):
@@ -84,7 +101,7 @@ def main(counties_tsv, zipfile_path, dl, out):
             name = r.get("FULLNAME", "")
             z = r.get("ZIPL") or r.get("ZIPR")
             has_range = r.get("LFROMHN") or r.get("RFROMHN")
-            if not name or not z or not has_range or z not in city_of:
+            if not name or not z or not has_range or z not in city_of or not clean(name):
                 continue
             if any(ch.isdigit() for ch in name.split()[0]) and name.split()[0].isdigit():
                 continue  # "10 Mile Rd" style keep; pure numbers like "101" drop
