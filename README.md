@@ -86,7 +86,7 @@ enums. `PersonGenerator`, in `org.tauasa.apps.faux`, creates people.*
 | `Person` | Name, gender, the region the names came from, date of birth, email, phone, address and employer. There's no age field, because a stored age goes stale: call `ageOn(date)` |
 | `Address` | Street with house number (`2304 Eileen Ave`), city, two-letter state, five-digit ZIP, and country, always `US` |
 | `Company` | A real US company: name, headquarters city and state, and web domain. It supplies the email domain |
-| `Gender` | `FEMALE`, `MALE` or `NONBINARY` |
+| `Gender` | `FEMALE`, `MALE` or `NONBINARY`. Women get women's and unisex first names and the feminine surname form, men get men's and unisex names and the masculine form. A nonbinary person gets a woman's or a man's first name at 50/50, and either surname form at 50/50 |
 | `Region` | Where the names come from, in 24 values. Three broad ones: `WESTERN` (the Americas, Europe, Australia, New Zealand), `ASIA` (East, South and Southeast Asia) and `RUS` (Russia and the former Soviet Union). Three African: `NAF`, `CAF`, `SAF` (North, Central and Southern Africa). The rest are countries, by ISO code: `ROK` (South Korea), `JPN`, `PHL`, `VNM`, `THA`, `MEX`, `BRA`, `IRN`, `PSE`, `GBR`, `FRA`, `ESP`, `PRT`, `GRC`, `NOR`, `SWE`, `FIN`. The odd one out is `HEB`, which holds Hebrew names, from Israeli citizens |
 
 Every record rejects `null` fields.
@@ -196,7 +196,8 @@ skipped.
 file with a name it doesn't know, which is usually a misspelling that would
 otherwise be quietly ignored. It throws `IllegalStateException`, naming the
 file and line, for an empty file or a bad line. Each `build()` reads the
-folder again, so build once and reuse the generator, or `split()` it.
+folder again, so build once and reuse the generator, or `split()` it. On the
+command line, `--data-dir DIR` does the same.
 
 ## Use the command line
 
@@ -270,8 +271,8 @@ and the date it was built:
 | Data | How many | Source |
 |---|---|---|
 | First names and surnames for each of the 24 regions | Up to 1,200 per file. Shorter where Wikidata has fewer people, or the country has fewer names: Vietnamese (95 first names), South Korean surnames (123), Palestinian (342 and 188) | Wikidata (CC0), ranked by how many people of each citizenship carry them. Each name also carries that count as its weight (`Kim|6766`, `Aleksandr|M|16684`), and names are drawn in proportion to it. Wikidata counts notable people, so the weights lean toward older generations' names |
-| US companies with headquarters and domain | 1,500 | Wikidata: by revenue, then NYSE- and Nasdaq-listed companies by employee count |
-| US streets with city, state and ZIP | 1,500, 30 per state | US Census TIGER/Line 2024 (public domain) |
+| US companies with headquarters and domain | 1,500 | Wikidata: by revenue, then NYSE- and Nasdaq-listed companies by employee count. Headquarters placed with GeoNames (CC BY 4.0) |
+| US streets with city, state and ZIP | 1,500, 30 per state | US Census TIGER/Line 2024 (public domain), with each ZIP's city and state from GeoNames |
 
 Three more files are in [`tools/data/extra/`](tools/data/extra/), outside the
 jar, until the generator reads them: South Korean names in Hangul with their
@@ -292,13 +293,18 @@ generated and lists the data's known gaps:
 mvn verify
 ```
 
-This compiles the code and runs the tests. The tests cover reproducibility,
-age bounds, emails, phones, addresses, how region and gender pick names, that
-names come up in proportion to their weights, the size and shape of every
-data file, that every data file is clean UTF-8 in NFC, that every region has its
-own quick-list method, that every data file has a header and the jar holds
-only the files the generator reads, `dataDirectory`, and the CLI. The build also produces the sources and
-javadoc jars, and fails if anyone adds a runtime dependency.
+This compiles the code and runs the tests. The tests cover:
+
+- reproducibility, age bounds, emails, phones and addresses
+- how region and gender pick names, including the 50/50 split for nonbinary
+  people, and that names come up in proportion to their weights
+- every data file: its size and shape, its header, and that it's clean UTF-8
+  in NFC, plus that the jar holds only the files the generator reads
+- the quick-list methods, one for every region
+- `dataDirectory` and the CLI, `--data-dir` included
+
+The build also produces the sources and javadoc jars, and fails if anyone adds
+a runtime dependency.
 
 ## License
 
