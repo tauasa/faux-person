@@ -6,17 +6,51 @@
 
   <groupId>org.tauasa.apps</groupId>
   <artifactId>faux-person</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.0</version>
   <packaging>jar</packaging>
 
   <name>faux-person</name>
   <description>Generate random, fictitious Person objects for Java tests and demos.</description>
   <url>https://github.com/tauasa/faux-person</url>
+  <inceptionYear>2026</inceptionYear>
+
+  <!-- Maven Central requires licenses, developers and scm. -->
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/license/mit</url>
+      <distribution>repo</distribution>
+      <comments>The bundled GeoNames data is CC BY 4.0; see NOTICE.</comments>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>tauasa</id>
+      <name>Tauasa Timoteo</name>
+      <email>tui@tauasa.org</email>
+      <url>https://github.com/tauasa</url>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:https://github.com/tauasa/faux-person.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/tauasa/faux-person.git</developerConnection>
+    <url>https://github.com/tauasa/faux-person</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/tauasa/faux-person/issues</url>
+  </issueManagement>
 
   <properties>
     <maven.compiler.release>17</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <!-- Fixed timestamps in the jars, so the same source builds byte-identical artifacts. -->
+    <project.build.outputTimestamp>2026-11-20T00:00:00Z</project.build.outputTimestamp>
 
     <junit.version>5.11.4</junit.version>
 
@@ -26,6 +60,8 @@
     <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
     <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
     <maven-enforcer-plugin.version>3.5.0</maven-enforcer-plugin.version>
+    <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
+    <central-publishing-maven-plugin.version>0.7.0</central-publishing-maven-plugin.version>
   </properties>
 
   <!-- No runtime dependencies, by design (SPEC.md). Test scope only. -->
@@ -50,6 +86,20 @@
   </dependencies>
 
   <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <!-- Ship the license and the data attributions inside the jar. -->
+      <resource>
+        <directory>${project.basedir}</directory>
+        <targetPath>META-INF</targetPath>
+        <includes>
+          <include>LICENSE</include>
+          <include>NOTICE</include>
+        </includes>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -133,4 +183,62 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <!--
+      Signs every artifact and uploads them to the Maven Central Portal:
+        mvn -Prelease deploy
+      Needs a GPG key, and a Central Portal user token in ~/.m2/settings.xml
+      under <server><id>central</id>. RELEASING.md has the steps. The upload
+      stops at "validated": a person checks it and presses Publish in the
+      portal, because a Central release can't be deleted.
+    -->
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-enforcer-plugin</artifactId>
+            <version>${maven-enforcer-plugin.version}</version>
+            <executions>
+              <execution>
+                <id>enforce-release</id>
+                <goals><goal>enforce</goal></goals>
+                <configuration>
+                  <rules>
+                    <requireReleaseVersion><message>Central takes no -SNAPSHOT versions.</message></requireReleaseVersion>
+                    <requireReleaseDeps/>
+                  </rules>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>${maven-gpg-plugin.version}</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals><goal>sign</goal></goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.sonatype.central</groupId>
+            <artifactId>central-publishing-maven-plugin</artifactId>
+            <version>${central-publishing-maven-plugin.version}</version>
+            <extensions>true</extensions>
+            <configuration>
+              <publishingServerId>central</publishingServerId>
+              <autoPublish>false</autoPublish>
+              <waitUntil>validated</waitUntil>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
