@@ -230,10 +230,10 @@ age bounds, emails, phones, addresses, how region and gender pick names, the
 size and shape of every data file, and the CLI. The build also produces the
 sources and javadoc jars, and fails if anyone adds a runtime dependency.
 
-## Licence
+## License
 
-MIT, in [LICENSE](LICENSE). The bundled GeoNames data is CC BY 4.0, and
-[NOTICE](NOTICE) gives its attribution. Both files ship inside the jar under
-`META-INF/`.
+MIT License, in [LICENSE](LICENSE). The bundled GeoNames data is CC BY 4.0,
+and [NOTICE](NOTICE) gives its attribution. Both files ship inside the jar
+under `META-INF/`.
 
 To publish a release to Maven Central, follow [RELEASING.md](RELEASING.md).

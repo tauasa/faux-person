@@ -90,7 +90,7 @@
       <resource>
         <directory>src/main/resources</directory>
       </resource>
-      <!-- Ship the licence and the data attributions inside the jar. -->
+      <!-- Ship the license and the data attributions inside the jar. -->
       <resource>
         <directory>${project.basedir}</directory>
         <targetPath>META-INF</targetPath>

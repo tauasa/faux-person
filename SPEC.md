@@ -26,7 +26,7 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 | 2026-11-19 | Four more regions: **`MEX`** (Mexico), **`IRN`** (Iran), **`HEB`** (Hebrew names, from Israeli citizens) and **`PSE`** (Palestine). Mixed mode picks from all eight. A Chinese region was built and then dropped at the owner's request |
 | 2026-11-19 | **`rok_hangul_first_names.txt`** and **`rok_hangul_surnames.txt`** hold South Korean names in Hangul beside their romanization. They're bundled but the generator doesn't read them yet |
 | 2026-11-20 | Sixteen more regions: `JPN`, `PHL`, `VNM`, `THA`, `NAF` (North Africa), `CAF` (Central Africa), `SAF` (Southern Africa), `BRA`, `GBR`, `FRA`, `ESP`, `PRT`, `GRC`, `NOR`, `SWE`, `FIN`. Mixed mode picks from all 24 |
-| 2026-11-20 | Licence: **MIT**. Version **0.1.0**, set up for Maven Central. Uploads stop at "validated", so a person presses Publish |
+| 2026-11-20 | License: **MIT**. Version **0.1.0**, set up for Maven Central. Uploads stop at "validated", so a person presses Publish |
 | 2026-11-20 | **Every data file must be clean Unicode**: strict UTF-8 without a byte-order mark, NFC-normalized, no control or invisible format characters, Unix line endings. `DataSetTest` enforces it |
 | 2026-11-19 | Data files keep the names the owner gave them. First placed at the root of `src/main/resources/`, then moved the same day to **`src/main/resources/org/tauasa/apps/faux/data/`**, so their generic names can't collide with another jar's on a consumer's classpath |
 
@@ -130,7 +130,7 @@ UTF-8, one entry per line, fields separated by `|`, in `src/main/resources/org/t
 Blank lines and lines starting with `#` are skipped. A missing or empty file,
 or a line with too few fields, fails at first use with `IllegalStateException`
 naming the file and line. [`tools/data/`](tools/data/) holds the scripts that built
-them, and `NOTICE` gives sources and licences.
+them, and `NOTICE` gives sources and licenses.
 
 | File | Lines | Format | Built from |
 |---|---|---|---|
