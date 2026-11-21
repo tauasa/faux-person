@@ -117,7 +117,7 @@ The artifact is on Maven Central. Add it to your project (usually in _test_ scop
 <dependency>
   <groupId>org.tauasa</groupId>
   <artifactId>faux-person</artifactId>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -161,7 +161,7 @@ to replay a run, call `split()` at the same points.
 
 `NameGenerator` and `CompanyGenerator` work like `PersonGenerator`: a builder,
 `next()`, `next(n)`, `stream()`, `seed()` and `split()`, and the same seed
-gives the same results. They're in 0.2.0, which isn't on Maven Central yet.
+gives the same results. They're new in 0.2.0.
 
 ```java
 import org.tauasa.faux.CompanyGenerator;
@@ -281,7 +281,7 @@ directly:
 
 ```bash
 mvn package
-java -jar target/faux-person-0.2.0-SNAPSHOT.jar -n 5 -f json
+java -jar target/faux-person-0.2.0.jar -n 5 -f json
 ```
 
 `pipe` prints a header row and then 13 `|`-separated columns. This example
@@ -337,8 +337,8 @@ American States Water [faux], San Dimas, CA (aswater.example)
 line. Without the scripts, run their classes from the jar:
 
 ```bash
-java -cp target/faux-person-0.2.0-SNAPSHOT.jar org.tauasa.faux.cli.FauxNameCli -n 5
-java -cp target/faux-person-0.2.0-SNAPSHOT.jar org.tauasa.faux.cli.FauxCompanyCli -n 5
+java -cp target/faux-person-0.2.0.jar org.tauasa.faux.cli.FauxNameCli -n 5
+java -cp target/faux-person-0.2.0.jar org.tauasa.faux.cli.FauxCompanyCli -n 5
 ```
 
 The three scripts share their code in `faux-common.sh`, which isn't run on its
