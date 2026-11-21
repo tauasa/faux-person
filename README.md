@@ -234,7 +234,7 @@ directly:
 
 ```bash
 mvn package
-java -jar target/faux-person-0.1.0.jar -n 5 -f json
+java -jar target/faux-person-0.1.1-SNAPSHOT.jar -n 5 -f json
 ```
 
 `pipe` prints a header row and then 13 `|`-separated columns. This example
