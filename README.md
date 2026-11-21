@@ -100,15 +100,7 @@ Every record rejects `null` fields.
 
 ## Use it in a Java project
 
-It isn't on Maven Central yet. Install it into your local Maven repository:
-
-```bash
-git clone https://github.com/tauasa/faux-person.git
-cd faux-person
-mvn install
-```
-
-Then add it to your project, usually in test scope:
+The artifact is on Maven Central. Add it to your project (usually in _test_ scope):
 
 ```xml
 <dependency>
