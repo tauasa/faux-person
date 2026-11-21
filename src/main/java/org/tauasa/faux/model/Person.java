@@ -10,8 +10,7 @@ import java.util.Objects;
  * <p>Age is not stored, because a stored age goes stale. Call
  * {@link #ageOn(LocalDate)} with the date you want it for.
  *
- * @param firstName   given name
- * @param lastName    family name
+ * @param name        first name and surname
  * @param gender      gender
  * @param region      region the names were drawn from
  * @param dateOfBirth date of birth
@@ -21,8 +20,7 @@ import java.util.Objects;
  * @param employer    employer
  */
 public record Person(
-        String firstName,
-        String lastName,
+        Name name,
         Gender gender,
         Region region,
         LocalDate dateOfBirth,
@@ -34,8 +32,7 @@ public record Person(
     /**
      * Rejects {@code null} fields.
      *
-     * @param firstName   given name
-     * @param lastName    family name
+     * @param name        first name and surname
      * @param gender      gender
      * @param region      region the names were drawn from
      * @param dateOfBirth date of birth
@@ -46,8 +43,7 @@ public record Person(
      * @throws NullPointerException if any field is {@code null}
      */
     public Person {
-        Objects.requireNonNull(firstName, "firstName");
-        Objects.requireNonNull(lastName, "lastName");
+        Objects.requireNonNull(name, "name");
         Objects.requireNonNull(gender, "gender");
         Objects.requireNonNull(region, "region");
         Objects.requireNonNull(dateOfBirth, "dateOfBirth");
@@ -55,6 +51,24 @@ public record Person(
         Objects.requireNonNull(phone, "phone");
         Objects.requireNonNull(address, "address");
         Objects.requireNonNull(employer, "employer");
+    }
+
+    /**
+     * The first name, the same as {@code name().firstName()}.
+     *
+     * @return given name
+     */
+    public String firstName() {
+        return name.firstName();
+    }
+
+    /**
+     * The surname, the same as {@code name().lastName()}.
+     *
+     * @return family name
+     */
+    public String lastName() {
+        return name.lastName();
     }
 
     /**

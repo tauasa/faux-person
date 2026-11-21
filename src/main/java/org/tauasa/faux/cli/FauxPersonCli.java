@@ -1,8 +1,9 @@
 package org.tauasa.faux.cli;
 
+import static org.tauasa.faux.cli.CliSupport.field;
+
 import java.io.PrintStream;
 import java.io.UncheckedIOException;
-import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
 import java.time.Clock;
 import java.time.LocalDate;
@@ -11,6 +12,7 @@ import java.time.format.DateTimeParseException;
 import java.util.Locale;
 
 import org.tauasa.faux.PersonGenerator;
+import org.tauasa.faux.cli.CliSupport.Format;
 import org.tauasa.faux.model.Person;
 import org.tauasa.faux.model.Region;
 
@@ -45,9 +47,7 @@ public final class FauxPersonCli {
               -h, --help           show this help
 
             The seed in use is printed to standard error, so a run can be replayed.
-            """.formatted(regionList());
-
-    enum Format { TEXT, PIPE, JSON }
+            """.formatted(CliSupport.regionList());
 
     private FauxPersonCli() {
     }
@@ -80,14 +80,14 @@ public final class FauxPersonCli {
                         out.print(USAGE);
                         return 0;
                     }
-                    case "-n", "--count" -> count = nonNegative(a, value(args, ++i, a));
-                    case "-s", "--seed" -> seed = parseLong(a, value(args, ++i, a));
-                    case "-r", "--region" -> region = parseRegion(value(args, ++i, a));
-                    case "--min-age" -> minAge = nonNegative(a, value(args, ++i, a));
-                    case "--max-age" -> maxAge = nonNegative(a, value(args, ++i, a));
-                    case "-f", "--format" -> format = parseFormat(value(args, ++i, a));
-                    case "--today" -> today = parseDate(a, value(args, ++i, a));
-                    case "--data-dir" -> dataDir = parsePath(a, value(args, ++i, a));
+                    case "-n", "--count" -> count = CliSupport.nonNegative(a, CliSupport.value(args, ++i, a));
+                    case "-s", "--seed" -> seed = CliSupport.parseLong(a, CliSupport.value(args, ++i, a));
+                    case "-r", "--region" -> region = CliSupport.parseRegion(CliSupport.value(args, ++i, a));
+                    case "--min-age" -> minAge = CliSupport.nonNegative(a, CliSupport.value(args, ++i, a));
+                    case "--max-age" -> maxAge = CliSupport.nonNegative(a, CliSupport.value(args, ++i, a));
+                    case "-f", "--format" -> format = CliSupport.parseFormat(CliSupport.value(args, ++i, a));
+                    case "--today" -> today = parseDate(a, CliSupport.value(args, ++i, a));
+                    case "--data-dir" -> dataDir = CliSupport.parsePath(a, CliSupport.value(args, ++i, a));
                     case "--real-companies" -> realCompanies = true;
                     default -> throw new IllegalArgumentException("unknown option: " + a);
                 }
@@ -106,22 +106,10 @@ public final class FauxPersonCli {
             }
             PersonGenerator gen = b.build();
             err.println("seed: " + gen.seed());
-            if (format == Format.JSON) {
-                out.println("[");
-            } else if (format == Format.PIPE) {
-                out.println("first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer");
-            }
-            for (int i = 0; i < count; i++) {
-                Person p = gen.next();
-                switch (format) {
-                    case TEXT -> out.println(text(p, today));
-                    case PIPE -> out.println(pipe(p, today));
-                    case JSON -> out.println("  " + json(p, today) + (i < count - 1 ? "," : ""));
-                }
-            }
-            if (format == Format.JSON) {
-                out.println("]");
-            }
+            LocalDate on = today;
+            CliSupport.print(out, format,
+                    "first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer",
+                    count, gen::next, p -> text(p, on), p -> pipe(p, on), p -> json(p, on));
             return 0;
         } catch (IllegalArgumentException e) {
             err.println("faux-person: " + e.getMessage());
@@ -134,70 +122,11 @@ public final class FauxPersonCli {
         }
     }
 
-    private static String value(String[] args, int i, String option) {
-        if (i >= args.length) {
-            throw new IllegalArgumentException(option + " needs a value");
-        }
-        return args[i];
-    }
-
-    private static long parseLong(String option, String v) {
-        try {
-            return Long.parseLong(v);
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException(option + " must be a whole number: " + v);
-        }
-    }
-
-    private static int nonNegative(String option, String v) {
-        long n = parseLong(option, v);
-        if (n < 0 || n > Integer.MAX_VALUE) {
-            throw new IllegalArgumentException(option + " must be 0 or more: " + v);
-        }
-        return (int) n;
-    }
-
     private static LocalDate parseDate(String option, String v) {
         try {
             return LocalDate.parse(v);
         } catch (DateTimeParseException e) {
             throw new IllegalArgumentException(option + " must be a date like 2026-11-20: " + v);
-        }
-    }
-
-    private static Path parsePath(String option, String v) {
-        try {
-            return Path.of(v);
-        } catch (InvalidPathException e) {
-            throw new IllegalArgumentException(option + " is not a valid path: " + v);
-        }
-    }
-
-    private static Region parseRegion(String v) {
-        String s = v.toLowerCase(Locale.ROOT);
-        if (s.equals("mixed")) {
-            return null;
-        }
-        for (Region r : Region.values()) {
-            if (r.name().equalsIgnoreCase(s)) {
-                return r;
-            }
-        }
-        throw new IllegalArgumentException("region must be " + regionList() + " or mixed: " + v);
-    }
-
-    /** "western, asia, ..., pse", from the enum, so a new region needs no edit here. */
-    private static String regionList() {
-        return java.util.Arrays.stream(Region.values())
-                .map(r -> r.name().toLowerCase(Locale.ROOT))
-                .collect(java.util.stream.Collectors.joining(", "));
-    }
-
-    private static Format parseFormat(String v) {
-        try {
-            return Format.valueOf(v.toUpperCase(Locale.ROOT));
-        } catch (IllegalArgumentException e) {
-            throw new IllegalArgumentException("format must be text, pipe or json: " + v);
         }
     }
 
@@ -227,33 +156,5 @@ public final class FauxPersonCli {
                 + "," + field("country", a.country()) + "}"
                 + ",\"employer\":{" + field("name", e.name()) + "," + field("city", e.city())
                 + "," + field("state", e.state()) + "," + field("domain", e.domain()) + "}}";
-    }
-
-    private static String field(String name, String value) {
-        return "\"" + name + "\":" + quote(value);
-    }
-
-    static String quote(String s) {
-        StringBuilder b = new StringBuilder(s.length() + 2).append('"');
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            switch (c) {
-                case '"' -> b.append("\\\"");
-                case '\\' -> b.append("\\\\");
-                case '\n' -> b.append("\\n");
-                case '\r' -> b.append("\\r");
-                case '\t' -> b.append("\\t");
-                default -> {
-                    // Below 0x20 is required by JSON. DEL and the two line separators
-                    // are legal JSON but break a <script> block or an older JS engine.
-                    if (c < 0x20 || c == 0x7f || c == '\u2028' || c == '\u2029') {
-                        b.append(String.format(Locale.ROOT, "\\u%04x", (int) c));
-                    } else {
-                        b.append(c);
-                    }
-                }
-            }
-        }
-        return b.append('"').toString();
     }
 }

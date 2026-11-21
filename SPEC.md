@@ -1,11 +1,12 @@
 # faux-person: specification
 
 A Java library and command-line tool that generate random, realistic-looking
-but fictitious `Person` objects for tests, demos and seed data.
+but fictitious `Person` objects for tests, demos and seed data, and names and
+companies on their own.
 
 | | |
 |---|---|
-| Coordinates | `org.tauasa:faux-person:0.1.0` |
+| Coordinates | `org.tauasa:faux-person`: 0.1.0 released, 0.2.0 in progress |
 | Packages | `org.tauasa.faux` (the generator), `.model` (the records), `.cli` (the tool) |
 | Java | 17 (`maven.compiler.release=17`) |
 | Build | Maven |
@@ -18,6 +19,7 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 
 | Date | Decision |
 |---|---|
+| 2026-11-20 | Version **0.2.0**. `Person`'s first and last name become one **`Name`** record (`firstName`, `lastName`), and `Person` keeps `firstName()` and `lastName()` as shortcuts. **`NameGenerator`** and **`CompanyGenerator`** generate names and companies on their own, with the same builder shape as `PersonGenerator`, and `PersonGenerator` draws through them. The draw order is unchanged, so every seed gives the same people as 0.1.0, and the person CLI's output is the same. Two more CLIs, **`FauxNameCli`** and **`FauxCompanyCli`**, run from `faux-name.sh` and `faux-company.sh`. Building a `Person` by hand changes, so it's a minor bump |
 | 2026-11-20 | The mark is a **`[faux]` suffix** on the employer's name (`Costco [faux]`), in place of the leading `*` decided earlier today. Everything else in the row below stands |
 | 2026-11-20 | By default each employer is **marked**: its name starts with `*` and its domain, and so the email's, is under `.example` (`*Costco`, `jane.doe@costco.example`), in `Person.employer` too. **`Builder.realCompanies(true)`**, or the CLI's **`--real-companies`**, gives the real name and domain instead (`Costco`, `jane.doe@costco.com`). The switch changes only those two fields: the draw order is the same, so a seed gives the same people either way. This refines the ruling below, which left `Company.domain` real |
 | 2026-11-20 | Generated emails are at the employer's domain with its suffix replaced by the reserved **`.example`** (RFC 2606): `costco.com` becomes `costco.example`. This replaces the 2026-11-19 real-domain ruling below, so no generated email can deliver to a real inbox before 0.1.0 is published. `Company.domain` stays the real domain. Draw order and every seed's people are unchanged; only the email text differs |
@@ -73,10 +75,15 @@ Every compact constructor rejects `null`. The file loader, `DataSet`, stays
 package-private in `org.tauasa.faux` and isn't part of the API.
 
 ```java
-public record Person(String firstName, String lastName, Gender gender, Region region,
+public record Person(Name name, Gender gender, Region region,
                      LocalDate dateOfBirth, String email, String phone,
                      Address address, Company employer) {
     public int ageOn(LocalDate date);   // completed years; date before birth -> IllegalArgumentException
+    public String firstName();          // name().firstName()
+    public String lastName();           // name().lastName()
+}
+public record Name(String firstName, String lastName) {
+    public String fullName();           // "Elena Nikitina"
 }
 public record Address(String street, String city, String state, String postalCode, String country) {}
 public record Company(String name, String city, String state, String domain) {}
@@ -133,6 +140,27 @@ every seed produces (see *Versioning*).
 
 Every file is read from the builder's `dataDirectory` when it holds a file of
 that name, and from the bundled data otherwise.
+
+### Names and companies on their own
+
+```java
+NameGenerator names = NameGenerator.builder()
+    .seed(42L).region(Region.RUS).genderWeights(49, 49, 2).dataDirectory(null).build();
+Name n = names.next();
+
+CompanyGenerator companies = CompanyGenerator.builder()
+    .seed(42L).realCompanies(false).dataDirectory(null).build();
+Company c = companies.next();
+```
+
+Both have `seed()`, `next()`, `next(int)`, `stream()` and `split()` as above,
+plus `NameGenerator.generateListOfRandomNames(n[, region])` and
+`CompanyGenerator.generateListOfRandomCompanies(n)`. `NameGenerator` makes
+draws 1 to 4 of the table above for each name, and `CompanyGenerator` draw 6
+for each company. `PersonGenerator` calls the same code for those steps, so a
+seed's first name is its first person's name. A name is drawn for a gender,
+but `Name` doesn't hold it. `NameGenerator.build()` rejects the same gender
+weights as `PersonGenerator`.
 
 ### Concurrency
 
@@ -254,6 +282,18 @@ output. The jar's `Main-Class` is `org.tauasa.faux.cli.FauxPersonCli`.
 `pipe` prints a header and 13 columns. `json` prints one array. A bad argument
 prints the problem and the usage to standard error and exits with 2.
 
+Two more CLIs are in the same jar, run with `java -cp`. Both take `-n`, `-s`,
+`-f`, `--data-dir` and `-h` as above, print the seed to standard error, and
+exit the same way:
+
+| Class | Script | Also takes | `pipe` columns |
+|---|---|---|---|
+| `org.tauasa.faux.cli.FauxNameCli` | `faux-name.sh` | `-r, --region R` | `first\|last` |
+| `org.tauasa.faux.cli.FauxCompanyCli` | `faux-company.sh` | `--real-companies` | `name\|city\|state\|domain` |
+
+The three scripts share `faux-common.sh`, which builds the jar when the source
+is newer and handles `-o FILE` and `--rebuild`.
+
 ## 5. Tests
 
 `mvn verify` runs them. Each checks behaviour from the public API, or checks
@@ -276,6 +316,9 @@ the bundled files' shape.
 | Each region has 1,000+ distinct first names and surnames, 400+ each for women and men; 20+ cities in each of the 50 states; streets and companies are in the 50 states; 1,000+ companies with distinct domains | A data rebuild shrinks or breaks a file |
 | CLI: count, replay by seed, `--today` fixes birth dates and ages (another day changes only those two columns), pipe columns, JSON shape and escaping, bad arguments exit 2, `--data-dir` replaces files and a bad data file exits 1, `--real-companies` drops the marks | The tool's contract breaks |
 | Non-binary people's first names split about 50/50 between women's and men's names | Non-binary names lean toward one gender again |
+| `NameGenerator`: replay by seed, names from the chosen region, `(1,0,0)` gives women's names and feminine surnames, `split()`, `dataDirectory`, and a seed's first name equals its first person's | Names drift from how people are drawn |
+| `CompanyGenerator`: replay by seed, marked by default, `realCompanies` changes only the marks, `split()`, `dataDirectory` | A default company could deliver mail, or the switch changes which company is drawn |
+| Name and company CLIs: formats, replay, `--data-dir`, bad arguments exit 2, a bad data file exits 1, `--real-companies` | Their contract breaks |
 
 ## 6. Repo and CI
 

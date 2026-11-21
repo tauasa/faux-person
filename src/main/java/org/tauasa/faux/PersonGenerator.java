@@ -14,6 +14,7 @@ import java.util.stream.Stream;
 import org.tauasa.faux.model.Address;
 import org.tauasa.faux.model.Company;
 import org.tauasa.faux.model.Gender;
+import org.tauasa.faux.model.Name;
 import org.tauasa.faux.model.Person;
 import org.tauasa.faux.model.Region;
 
@@ -84,23 +85,16 @@ public final class PersonGenerator {
     public Person next() {
         // The order of draws below is part of the contract: changing it changes
         // what every seed produces (SPEC.md, "How each field is made").
-        Region r = region != null ? region : Region.values()[random.nextInt(Region.values().length)];
-        Gender gender = pickGender();
-        String first = data.pickFirstName(r, gender, random).name();
-        DataSet.Surname sn = data.pickSurname(r, random);
-        String last = switch (gender) {
-            case FEMALE -> sn.feminine();
-            case MALE -> sn.masculine();
-            case NONBINARY -> random.nextBoolean() ? sn.feminine() : sn.masculine();
-        };
+        NameGenerator.Drawn drawn = NameGenerator.draw(data, region, genderWeights, random);
+        Name name = drawn.name();
         LocalDate dob = pickDateOfBirth();
-        Company employer = employer(pick(data.companies));
-        String email = emailLocalPart(first, last) + "@" + employer.domain();
+        Company employer = CompanyGenerator.draw(data, realCompanies, random);
+        String email = emailLocalPart(name.firstName(), name.lastName()) + "@" + employer.domain();
         String phone = String.format(Locale.ROOT, "(%03d) 555-01%02d", pickAreaCode(), random.nextInt(100));
         DataSet.Street s = pick(data.streets);
         int houseNumber = 1 + random.nextInt(9999);
         Address address = new Address(houseNumber + " " + s.street(), s.city(), s.state(), s.postalCode(), "US");
-        return new Person(first, last, gender, r, dob, email, phone, address, employer);
+        return new Person(name, drawn.gender(), drawn.region(), dob, email, phone, address, employer);
     }
 
     /**
@@ -438,15 +432,6 @@ public final class PersonGenerator {
         return generateListOfRandomPeople(howMany, Region.FIN);
     }
 
-    private Gender pickGender() {
-        int total = genderWeights[0] + genderWeights[1] + genderWeights[2];
-        int n = random.nextInt(total);
-        if (n < genderWeights[0]) {
-            return Gender.FEMALE;
-        }
-        return n < genderWeights[0] + genderWeights[1] ? Gender.MALE : Gender.NONBINARY;
-    }
-
     private LocalDate pickDateOfBirth() {
         LocalDate today = LocalDate.now(clock);
         LocalDate latest = today.minusYears(minAge);                 // turns minAge today
@@ -471,27 +456,6 @@ public final class PersonGenerator {
             local += random.nextInt(100);
         }
         return local;
-    }
-
-    /**
-     * The company as it appears as an employer. By default its name ends
-     * with {@code " [faux]"} and its domain is under {@code .example}, so
-     * neither reads as a real person's real employer: {@code Costco [faux]} at
-     * {@code costco.example}.
-     * With {@link Builder#realCompanies(boolean)} it's the company as it is.
-     */
-    private Company employer(Company c) {
-        return realCompanies ? c : new Company(c.name() + " [faux]", c.city(), c.state(), emailDomain(c.domain()));
-    }
-
-    /**
-     * The employer's domain under the reserved {@code .example} top-level
-     * domain (RFC 2606), so a generated email can never be delivered:
-     * {@code costco.com} becomes {@code costco.example}.
-     */
-    static String emailDomain(String domain) {
-        int dot = domain.lastIndexOf('.');
-        return (dot < 0 ? domain : domain.substring(0, dot)) + ".example";
     }
 
     private static String ascii(String s) {
@@ -627,17 +591,7 @@ public final class PersonGenerator {
                 throw new IllegalArgumentException(
                         "age range must satisfy 0 <= min <= max <= 120: " + minAge + ".." + maxAge);
             }
-            for (int w : genderWeights) {
-                if (w < 0) {
-                    throw new IllegalArgumentException("gender weights must not be negative");
-                }
-            }
-            if ((long) genderWeights[0] + genderWeights[1] + genderWeights[2] == 0) {
-                throw new IllegalArgumentException("gender weights must not all be zero");
-            }
-            if ((long) genderWeights[0] + genderWeights[1] + genderWeights[2] > Integer.MAX_VALUE) {
-                throw new IllegalArgumentException("gender weights are too large");
-            }
+            NameGenerator.checkGenderWeights(genderWeights);
             long s = seed != null ? seed : new SplittableRandom().nextLong();
             DataSet data = dataDirectory == null ? DataSet.get() : DataSet.load(dataDirectory);
             return new PersonGenerator(s, new SplittableRandom(s), minAge, maxAge, genderWeights, region, clock, data,

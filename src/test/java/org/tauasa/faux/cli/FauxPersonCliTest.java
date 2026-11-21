@@ -107,9 +107,9 @@ class FauxPersonCliTest {
 
     @Test
     void jsonStringsAreEscaped() {
-        assertEquals("\"a\\\"b\\\\c\\n\"", FauxPersonCli.quote("a\"b\\c\n"));
-        assertEquals("\"\\u0001\"", FauxPersonCli.quote("\u0001"));
-        assertEquals("\"\\u007f\\u2028\\u2029\"", FauxPersonCli.quote("\u007f\u2028\u2029"));
+        assertEquals("\"a\\\"b\\\\c\\n\"", CliSupport.quote("a\"b\\c\n"));
+        assertEquals("\"\\u0001\"", CliSupport.quote("\u0001"));
+        assertEquals("\"\\u007f\\u2028\\u2029\"", CliSupport.quote("\u007f\u2028\u2029"));
     }
 
     @Test

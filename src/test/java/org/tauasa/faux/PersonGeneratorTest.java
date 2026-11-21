@@ -70,7 +70,7 @@ class PersonGeneratorTest {
     @Test
     void byDefaultEmployersAreMarkedAndEmailsAreUnderDotExample() {
         Set<Company> marked = DATA.companies.stream()
-                .map(c -> new Company(c.name() + " [faux]", c.city(), c.state(), PersonGenerator.emailDomain(c.domain())))
+                .map(c -> new Company(c.name() + " [faux]", c.city(), c.state(), CompanyGenerator.exampleDomain(c.domain())))
                 .collect(Collectors.toSet());
         Pattern shape = Pattern.compile("^[a-z0-9]+\\.[a-z0-9]+\\d{0,2}@[a-z0-9-]+\\.example$");
         for (Person p : gen(3).build().next(2000)) {
@@ -100,7 +100,7 @@ class PersonGeneratorTest {
             Person m = marked.get(i), r = real.get(i);
             assertEquals(r.employer().name() + " [faux]", m.employer().name());
             assertEquals(r.email().substring(0, r.email().indexOf('@')), m.email().substring(0, m.email().indexOf('@')));
-            assertEquals(new Person(r.firstName(), r.lastName(), r.gender(), r.region(), r.dateOfBirth(),
+            assertEquals(new Person(r.name(), r.gender(), r.region(), r.dateOfBirth(),
                     m.email(), r.phone(), r.address(), m.employer()), m);
         }
         // split() carries the setting.
@@ -112,9 +112,9 @@ class PersonGeneratorTest {
     void emailDomainsAreUniqueUnderDotExample() {
         // Dropping the suffix must not merge two employers into one email domain.
         assertEquals(DATA.companies.size(), DATA.companies.stream()
-                .map(c -> PersonGenerator.emailDomain(c.domain())).distinct().count());
-        assertEquals("costco.example", PersonGenerator.emailDomain("costco.com"));
-        assertEquals("localhost.example", PersonGenerator.emailDomain("localhost"));
+                .map(c -> CompanyGenerator.exampleDomain(c.domain())).distinct().count());
+        assertEquals("costco.example", CompanyGenerator.exampleDomain("costco.com"));
+        assertEquals("localhost.example", CompanyGenerator.exampleDomain("localhost"));
     }
 
     @Test

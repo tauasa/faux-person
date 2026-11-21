@@ -17,8 +17,16 @@ class PersonTest {
     private static final Company COMPANY = new Company("Costco", "Issaquah", "WA", "costco.com");
 
     private static Person bornOn(LocalDate dob) {
-        return new Person("Ada", "Lovelace", Gender.FEMALE, Region.WESTERN, dob,
+        return new Person(new Name("Ada", "Lovelace"), Gender.FEMALE, Region.WESTERN, dob,
                 "ada.lovelace@costco.com", "(217) 555-0142", ADDRESS, COMPANY);
+    }
+
+    @Test
+    void nameShortcutsMatchTheName() {
+        Person p = bornOn(LocalDate.of(1990, 6, 15));
+        assertEquals("Ada", p.firstName());
+        assertEquals("Lovelace", p.lastName());
+        assertEquals("Ada Lovelace", p.name().fullName());
     }
 
     @Test
@@ -44,13 +52,21 @@ class PersonTest {
     /** Each case nulls one field, so removing any single null check fails a case. */
     static Stream<Function<Object[], Object>> eachNullField() {
         Stream.Builder<Function<Object[], Object>> b = Stream.builder();
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < 8; i++) {
             int at = i;
             b.add(args -> {
                 Object[] a = args.clone();
                 a[at] = null;
-                return new Person((String) a[0], (String) a[1], (Gender) a[2], (Region) a[3],
-                        (LocalDate) a[4], (String) a[5], (String) a[6], (Address) a[7], (Company) a[8]);
+                return new Person((Name) a[0], (Gender) a[1], (Region) a[2],
+                        (LocalDate) a[3], (String) a[4], (String) a[5], (Address) a[6], (Company) a[7]);
+            });
+        }
+        for (int i = 0; i < 2; i++) {
+            int at = i;
+            b.add(args -> {
+                String[] a = {"Ada", "Lovelace"};
+                a[at] = null;
+                return new Name(a[0], a[1]);
             });
         }
         for (int i = 0; i < 5; i++) {
@@ -75,7 +91,7 @@ class PersonTest {
     @ParameterizedTest
     @MethodSource("eachNullField")
     void recordsRejectEveryNullField(Function<Object[], Object> build) {
-        Object[] valid = {"Ada", "Lovelace", Gender.FEMALE, Region.WESTERN, LocalDate.of(1990, 1, 1),
+        Object[] valid = {new Name("Ada", "Lovelace"), Gender.FEMALE, Region.WESTERN, LocalDate.of(1990, 1, 1),
                 "a.l@costco.com", "(217) 555-0142", ADDRESS, COMPANY};
         assertThrows(NullPointerException.class, () -> build.apply(valid));
     }
