@@ -65,7 +65,6 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
   fraud. They stay out by design.
 - Locales other than US addresses and phones.
 - Matching names to a single country within a region (see *Known limits*).
-- Publishing to Maven Central.
 - Thread-safe sharing of one generator (see *Concurrency*).
 
 ## 1. Data model
@@ -322,8 +321,7 @@ the bundled files' shape.
 
 ## 6. Repo and CI
 
-- GitHub `tauasa/faux-person`, private. `main` isn't protected: GitHub needs a
-  paid plan for that on a private repo.
+- GitHub `tauasa/faux-person`, public. `main` isn't protected.
 - `.githooks/pre-commit` from Sanvio Factory, with `core.hooksPath` set in each clone.
 - GitHub Actions runs `mvn -B verify` on JDK 17 for pull requests and pushes to `main`.
 - `LICENSE`: MIT (decided 2026-11-20). `LICENSE` and `NOTICE` ship in the jar under `META-INF/`.
