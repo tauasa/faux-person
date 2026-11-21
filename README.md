@@ -246,6 +246,13 @@ file and line, for an empty file or a bad line. Each `build()` reads the
 folder again, so build once and reuse the generator, or `split()` it. On the
 command line, `--data-dir DIR` does the same.
 
+### Save people to a database
+
+[faux-person-jpa](https://github.com/tauasa/faux-person-jpa) is a
+small application that generates people and saves them through JPA, with
+Hibernate and an H2 file it creates itself. It stores each company once, and
+a saved person reads back as the same `Person`.
+
 ## Use the command line
 
 `faux-person.sh` builds the jar with Maven the first time you run it, and again
