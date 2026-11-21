@@ -1,6 +1,6 @@
 # faux-person
 
-A Java 17 library and command-line tool that generate random, realistic people
+A Java library and command-line tool that generates random, realistic people
 for tests, demos and seed data. Each person has a name, gender, date of birth,
 email, phone, US street address and employer, and the fields agree with each
 other: the email is built from the name and the employer, a woman with
