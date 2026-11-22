@@ -1,3 +1,11 @@
+# Introduction
+This project was vibe coded in around eight hours over the course of two days. I used <a href="https://github.com/SanvioLabs/sanvio-factory">SanvioLabs Factory</a> with Claude Code and this was the initial prompt:
+
+```text
+I need a reusable CLI tool to generate random, _believable_ "person" data that I can pipe to another application. Write it in java.
+````
+I didn't have to write any code, and only made changes when prompted to do so. Everything outside of this section, including this JavaFX desktop application <a href="https://github.com/tauasa/faux-person-fx">faux-person-fx</a>, was created with AI using <a href="https://github.com/SanvioLabs/sanvio-factory">SanvioLabs Factory</a> and Claude Code using VS Code as the UI.
+
 # faux-person
 
 A Java library and command-line tool that generates random, realistic people
