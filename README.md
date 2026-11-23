@@ -4,7 +4,9 @@ This project was vibe coded in around eight hours over the course of two days. I
 ```text
 I need a reusable CLI tool to generate random, _believable_ "person" data that I can pipe to another application. Write it in java.
 ````
-I didn't have to write any code, and only made changes when prompted to do so. Everything outside of this section, including this JavaFX desktop application <a href="https://github.com/tauasa/faux-person-fx">faux-person-fx</a>, was created with AI using <a href="https://github.com/SanvioLabs/sanvio-factory">SanvioLabs Factory</a> and Claude Code using VS Code as the UI.
+I didn't have to write any code, and only made changes when prompted to do so. Everything outside of this section, including the JavaFX desktop application <a href="https://github.com/tauasa/faux-person-fx">faux-person-fx</a> and <a href="https://github.com/tauasa/faux-person-web">faux-person-web</a> webapps, was created with AI using Claude + <a href="https://github.com/SanvioLabs/sanvio-factory">SanvioLabs Factory</a> with VS Code.
+
+You can try out the <a href="https://github.com/tauasa/faux-person-web">faux-person-web</a> webapp instance running here: https://apps.tauasa.org/faux-person-web
 
 # faux-person
 
