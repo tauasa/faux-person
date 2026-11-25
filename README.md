@@ -1,12 +1,13 @@
 # Introduction
-This project was vibe coded in around eight hours over the course of two days. I used <a href="https://github.com/SanvioLabs/sanvio-factory">SanvioLabs Factory</a> with Claude Code and this was the initial prompt:
-
+This project was vibe coded in around eight hours over the course of two days using the <a href="https://github.com/SanvioLabs/sanvio-factory">SanvioLabs Factory</a> harness with Claude Code. This was the initial prompt:
 ```text
 I need a reusable CLI tool to generate random, _believable_ "person" data that I can pipe to another application. Write it in java.
 ````
-I didn't have to write any code, and only made changes when prompted to do so. Everything outside of this section, including the JavaFX desktop application <a href="https://github.com/tauasa/faux-person-fx">faux-person-fx</a> and <a href="https://github.com/tauasa/faux-person-web">faux-person-web</a> webapps, was created with AI using Claude + <a href="https://github.com/SanvioLabs/sanvio-factory">SanvioLabs Factory</a> with VS Code.
+I didn't have to write any code, and only made a few hand changes when prompted to do so. Everything outside of this introduction, including the <a href="https://github.com/tauasa/faux-person-fx">JavaFX desktop application</a>, <a href="https://github.com/tauasa/faux-person-web">faux-person-web webapp</a>, was created with Claude + <a href="https://github.com/SanvioLabs/sanvio-factory">SanvioLabs Factory</a> using VS Code (I didn't even have to open a shell).
 
-You can try out the <a href="https://github.com/tauasa/faux-person-web">faux-person-web</a> webapp instance running here: https://apps.tauasa.org/faux-person-web
+You can try out the <a href="https://github.com/tauasa/faux-person-web">faux-person-web</a> webapp instance running here: https://apps.tauasa.org/faux-person-web.
+
+Feedback and comments are welcome, or just submit a pull request.
 
 # faux-person
 
