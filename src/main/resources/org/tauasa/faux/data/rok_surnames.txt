@@ -33,7 +33,6 @@ Han||688|한
 Heo||236|허
 Ho||8|호
 Hong||454|홍
-Hong||3|훙
 Hwang||463|황
 Hwangbo||4|황보
 Hyeon||83|현
@@ -57,7 +56,6 @@ Ko||360|고
 Kook||21|국
 Kwak||159|곽
 Kwon||407|권
-Lee||112|리
 Lee||4976|이
 Ma||32|마
 Maeng||20|맹
@@ -93,7 +91,6 @@ Shin||720|신
 So||30|소
 Son||305|손
 Song||492|송
-Song||4|쑹
 Sunwoo||12|선우
 Tae||14|태
 Tak||7|탁
