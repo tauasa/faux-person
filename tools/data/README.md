@@ -2,7 +2,7 @@
 
 These scripts built the files in
 `src/main/resources/org/tauasa/faux/data/`, which go in the jar, and in
-`extra/`, which the generator doesn't read yet. Each file's first line is a
+`extra/`, which the generator doesn't read. Each file's first line is a
 `#` header with its fields, source and build date. They
 need Python 3.10+ and nothing outside the standard library. Rebuilding gives
 different files whenever Wikidata or GeoNames has changed, and that changes

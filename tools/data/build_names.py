@@ -258,6 +258,11 @@ def main(src, out):
 # name, and single families.
 ROK_NOT_KOREAN = {"Zheng", "Zhang", "Zhao", "Liu", "Xu", "Jiang", "Huang", "Quan", "Yin", "Wu",
                   "Shi", "Dang", "Sun", "Li", "Arai", "Linton", "Young"}
+# Hangul surnames whose romanization another, South Korean, surname shares:
+# 리 is North Korea's spelling of 이 (Lee), and 쑹 and 훙 are Chinese readings
+# of 송 (Song) and 홍 (Hong). Kept, they'd make a South Korean Lee, Song or Hong
+# come out in the wrong Hangul.
+ROK_NOT_KOREAN_HANGUL = {"리", "쑹", "훙"}
 
 
 
@@ -344,7 +349,8 @@ def rok(src, out):
           [f"{r}|{g}|{count[k]}|{k}" for k, r, g in sorted(picked, key=lambda t: (t[1].lower(), t[0]))])
 
     count, _, rom = group(f"{src}/sur_ROKKO.csv", False)
-    sur = [(ko, best_rom(rom, ko)) for ko in count if best_rom(rom, ko) and best_rom(rom, ko) not in ROK_NOT_KOREAN]
+    sur = [(ko, best_rom(rom, ko)) for ko in count if best_rom(rom, ko)
+           and best_rom(rom, ko) not in ROK_NOT_KOREAN and ko not in ROK_NOT_KOREAN_HANGUL]
     write(f"{out}/rok_surnames.txt",
           [f"{r}||{count[k]}|{k}" for k, r in sorted(sur, key=lambda t: (t[1].lower(), t[0]))])
 

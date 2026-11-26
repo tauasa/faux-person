@@ -120,8 +120,8 @@ Hangul. All seven types are in `org.tauasa.faux.model`. `Person`, `Name`,
 | Type | What it holds |
 |---|---|
 | `Person` | Name, gender, the region the names came from, date of birth, email, phone, address and employer. There's no age field, because a stored age goes stale: call `ageOn(date)`. `firstName()` and `lastName()` are shortcuts for `name().firstName()` and `name().lastName()` |
-| `Name` | A first name and a surname from one region, in Latin letters, the surname in the form that fits the gender (`Anna Petrova`). `fullName()` gives `"Anna Petrova"`. `nativeName()` gives the name in its own script where the region's data has one, and is empty otherwise. Today only `ROK` does |
-| `NativeName` | The name in its own script: first name, surname, and the full name as that language writes it. For `Yeong-min Kim` it's `영민`, `김` and `김영민`, surname first with no space |
+| `Name` | A first name and a surname from one region, in Latin letters, the surname in the form that fits the gender (`Anna Petrova`). `fullName()` gives `"Anna Petrova"`. `nativeName()` gives the name in its own script where the region's data has one, and is empty otherwise. Today only `ROK` does. New in 0.3.0, which isn't on Maven Central yet |
+| `NativeName` | New in 0.3.0. The name in its own script: first name, surname, and the full name as that language writes it. For `Yeong-min Kim` it's `영민`, `김` and `김영민`, surname first with no space |
 | `Address` | Street with house number (`2304 Eileen Ave`), city, two-letter state, five-digit ZIP, and country, always `US` |
 | `Company` | A US company: name, headquarters city and state, and web domain, which the email uses. Generated ones are real companies, marked by default (`Costco [faux]`, `costco.example`) |
 | `Gender` | `FEMALE`, `MALE` or `NONBINARY`. Women get women's and unisex first names and the feminine surname form, men get men's and unisex names and the masculine form. A nonbinary person gets a woman's or a man's first name at 50/50, and either surname form at 50/50 |
@@ -199,8 +199,9 @@ NameGenerator names = NameGenerator.builder()
 Name n = names.next();               // Elena Nikitina
 String full = n.fullName();          // "Elena Nikitina"
 
+// 0.3.0 and later: a South Korean name carries its Hangul.
 Name k = NameGenerator.builder().seed(42).region(Region.ROK).build().next();
-String hangul = k.nativeName().map(NativeName::fullName).orElse("");   // "김영민" for Yeong-min Kim
+String hangul = k.nativeName().map(NativeName::fullName).orElse("");   // "전영민" for Yeong-min Jeon
 
 CompanyGenerator companies = CompanyGenerator.builder()
         .seed(42)                    // optional
@@ -263,7 +264,7 @@ copy names in its first line, such as `# name|gender|weight`. Weights are
 optional, and a name without one counts as 1. Lines starting with `#` are
 skipped.
 
-Any region's names can carry their own script as a fourth field:
+From 0.3.0, any region's names can carry their own script as a fourth field:
 `Ji-hoon|M|97|지훈` for a first name, and `Kim||6768|김` for a surname (the
 empty second field means the feminine form is the same). A name gets a
 `nativeName` only when both its first name and its surname have one.
@@ -323,7 +324,7 @@ java -jar target/faux-person-0.3.0-SNAPSHOT.jar -n 5 -f json
 
 `pipe` prints a header row and then 14 `|`-separated columns. The last,
 `native`, is the name in its own script, and it's empty except for South
-Koreans. This example came from `--seed 42 --today 2026-11-20`, and the JSON
+Koreans. It's new in 0.3.0: 0.2.0 prints 13 columns. This example came from `--seed 42 --today 2026-11-20`, and the JSON
 one below from the same plus `-r asia`:
 
 ```text
@@ -336,11 +337,11 @@ A South Korean shows the Hangul in every format: first in the brackets in
 `lastName` in `json`. The email stays in Latin letters. With `-r rok`:
 
 ```text
-Yeong-min Kim (김영민, female, 19) <yeongmin.kim56@spglobal.example> (319) 555-0128, 9694 W 6th Ave, Humboldt, SD 57035, works at S&P Global [faux]
+Yeong-min Jeon (전영민, female, 19) <yeongmin.jeon56@spglobal.example> (319) 555-0128, 9694 W 6th Ave, Humboldt, SD 57035, works at S&P Global [faux]
 ```
 
 ```json
-{"firstName":"Yeong-min","lastName":"Kim","nativeName":{"firstName":"영민","lastName":"김","fullName":"김영민"},"gender":"FEMALE", ...}
+{"firstName":"Yeong-min","lastName":"Jeon","nativeName":{"firstName":"영민","lastName":"전","fullName":"전영민"},"gender":"FEMALE", ...}
 ```
 
 `json` prints one array, with each person on its own line (wrapped here to
@@ -374,9 +375,9 @@ Stepan|Malakhov|
 Pēteris|Klymenko|
 
 $ ./faux-name.sh -n 3 --seed 42 -r rok
-Yeong-min Kim (김영민)
-Ju-won Ju (주주원)
-Chang-hun Lee (이창훈)
+Yeong-min Jeon (전영민)
+Ju-won Lee (이주원)
+Chang-hun Kim (김창훈)
 
 $ ./faux-company.sh -n 2 --seed 42
 Griffon Corporation [faux], New York City, NY (griffon.example)
@@ -407,7 +408,7 @@ and the date it was built:
 
 | Data | How many | Source |
 |---|---|---|
-| First names and surnames for each of the 24 regions | Up to 1,200 per file. Shorter where Wikidata has fewer people, or the country has fewer names: Vietnamese (95 first names), South Korean surnames (111), Palestinian (342 and 188) | Wikidata (CC0), ranked by how many people of each citizenship carry them. Each name also carries that count as its weight (`Kim||6768|김`, `Aleksandr|M|16684`), and names are drawn in proportion to it. Wikidata counts notable people, so the weights lean toward older generations' names. South Korean names come from their Korean (Hangul) labels, each with the romanization most people carry |
+| First names and surnames for each of the 24 regions | Up to 1,200 per file. Shorter where Wikidata has fewer people, or the country has fewer names: Vietnamese (95 first names), South Korean surnames (108), Palestinian (342 and 188) | Wikidata (CC0), ranked by how many people of each citizenship carry them. Each name also carries that count as its weight (`Kim||6768|김`, `Aleksandr|M|16684`), and names are drawn in proportion to it. Wikidata counts notable people, so the weights lean toward older generations' names. South Korean names come from their Korean (Hangul) labels, each with the romanization most people carry |
 | US companies with headquarters and domain | 1,500 | Wikidata: by revenue, then NYSE- and Nasdaq-listed companies by employee count. Headquarters placed with GeoNames (CC BY 4.0) |
 | US streets with city, state and ZIP | 1,500, 30 per state | US Census TIGER/Line 2024 (public domain), with each ZIP's city and state from GeoNames |
 
