@@ -120,7 +120,7 @@ Hangul. All seven types are in `org.tauasa.faux.model`. `Person`, `Name`,
 | Type | What it holds |
 |---|---|
 | `Person` | Name, gender, the region the names came from, date of birth, email, phone, address and employer. There's no age field, because a stored age goes stale: call `ageOn(date)`. `firstName()` and `lastName()` are shortcuts for `name().firstName()` and `name().lastName()` |
-| `Name` | A first name and a surname from one region, in Latin letters, the surname in the form that fits the gender (`Anna Petrova`). `fullName()` gives `"Anna Petrova"`. `nativeName()` gives the name in its own script where the region's data has one, and is empty otherwise. Today only `ROK` does. New in 0.3.0, which isn't on Maven Central yet |
+| `Name` | A first name and a surname from one region, in Latin letters, the surname in the form that fits the gender (`Anna Petrova`). `fullName()` gives `"Anna Petrova"`. `nativeName()` gives the name in its own script where the region's data has one, and is empty otherwise. Today only `ROK` does. New in 0.3.0 |
 | `NativeName` | New in 0.3.0. The name in its own script: first name, surname, and the full name as that language writes it. For `Yeong-min Kim` it's `영민`, `김` and `김영민`, surname first with no space |
 | `Address` | Street with house number (`2304 Eileen Ave`), city, two-letter state, five-digit ZIP, and country, always `US` |
 | `Company` | A US company: name, headquarters city and state, and web domain, which the email uses. Generated ones are real companies, marked by default (`Costco [faux]`, `costco.example`) |
@@ -137,7 +137,7 @@ The artifact is on Maven Central. Add it to your project (usually in _test_ scop
 <dependency>
   <groupId>org.tauasa</groupId>
   <artifactId>faux-person</artifactId>
-  <version>0.2.0</version>
+  <version>0.3.0</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -319,7 +319,7 @@ directly:
 
 ```bash
 mvn package
-java -jar target/faux-person-0.3.0-SNAPSHOT.jar -n 5 -f json
+java -jar target/faux-person-0.3.0.jar -n 5 -f json
 ```
 
 `pipe` prints a header row and then 14 `|`-separated columns. The last,
@@ -393,8 +393,8 @@ American States Water [faux], San Dimas, CA (aswater.example)
 one company with its city, state and domain, per line. Without the scripts, run their classes from the jar:
 
 ```bash
-java -cp target/faux-person-0.3.0-SNAPSHOT.jar org.tauasa.faux.cli.FauxNameCli -n 5
-java -cp target/faux-person-0.3.0-SNAPSHOT.jar org.tauasa.faux.cli.FauxCompanyCli -n 5
+java -cp target/faux-person-0.3.0.jar org.tauasa.faux.cli.FauxNameCli -n 5
+java -cp target/faux-person-0.3.0.jar org.tauasa.faux.cli.FauxCompanyCli -n 5
 ```
 
 The three scripts share their code in `faux-common.sh`, which isn't run on its

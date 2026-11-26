@@ -6,7 +6,7 @@ companies on their own.
 
 | | |
 |---|---|
-| Coordinates | `org.tauasa:faux-person:0.2.0` |
+| Coordinates | `org.tauasa:faux-person:0.3.0` |
 | Packages | `org.tauasa.faux` (the generator), `.model` (the records), `.cli` (the tool) |
 | Java | 17 (`maven.compiler.release=17`) |
 | Build | Maven |

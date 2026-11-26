@@ -5,7 +5,7 @@ range or a bundled file changes what a seed produces, so it's called out here
 (see *Versioning* in [SPEC.md](SPEC.md)). Earlier rulings are in SPEC.md's
 *Decisions* table.
 
-## 0.3.0 (unreleased)
+## 0.3.0 (2026-11-25)
 
 - **Names in their own script.** `Name` gains `Optional<NativeName> nativeName()`,
   and the new `NativeName` record holds the first name, surname and full name as
