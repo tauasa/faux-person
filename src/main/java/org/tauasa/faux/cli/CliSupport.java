@@ -9,6 +9,8 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
+import org.tauasa.faux.model.Name;
+import org.tauasa.faux.model.NativeName;
 import org.tauasa.faux.model.Region;
 
 /** Argument parsing and output shared by the three command-line tools. */
@@ -105,6 +107,17 @@ final class CliSupport {
 
     static String field(String name, String value) {
         return "\"" + name + "\":" + quote(value);
+    }
+
+    /** The name in its own script, written as that language writes it, or "" when there's none. */
+    static String nativeFull(Name n) {
+        return n.nativeName().map(NativeName::fullName).orElse("");
+    }
+
+    /** {@code ,"nativeName":{...}} to follow a JSON name, or "" when there's none, so the key is left out. */
+    static String nativeJson(Name n) {
+        return n.nativeName().map(x -> ",\"nativeName\":{" + field("firstName", x.firstName()) + ","
+                + field("lastName", x.lastName()) + "," + field("fullName", x.fullName()) + "}").orElse("");
     }
 
     static String quote(String s) {

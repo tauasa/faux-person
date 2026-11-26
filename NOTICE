@@ -8,9 +8,10 @@ Each file's first line gives its build date.
 
 1. Wikidata (https://www.wikidata.org), CC0 1.0, queried through the QLever
    endpoint (https://qlever.dev) and the Wikidata Query Service.
-   - every *_first_names.txt and *_surnames.txt file, and the two
-     rok_hangul_*.txt files in tools/data/extra/: given and family names
-     ranked by how many people of each citizenship carry them.
+   - every *_first_names.txt and *_surnames.txt file: given and family names
+     ranked by how many people of each citizenship carry them. The South
+     Korean files pair each name's Korean (Hangul) label with its most common
+     romanization.
    - us_companies_domains.txt: company names, headquarters and official
      websites.
 

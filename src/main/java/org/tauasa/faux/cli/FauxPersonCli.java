@@ -108,7 +108,7 @@ public final class FauxPersonCli {
             err.println("seed: " + gen.seed());
             LocalDate on = today;
             CliSupport.print(out, format,
-                    "first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer",
+                    "first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer|native",
                     count, gen::next, p -> text(p, on), p -> pipe(p, on), p -> json(p, on));
             return 0;
         } catch (IllegalArgumentException e) {
@@ -130,10 +130,13 @@ public final class FauxPersonCli {
         }
     }
 
+    /** {@code Ji-hoon Kim (김지훈, male, 34) ...}: the native form leads the brackets when there is one. */
     static String text(Person p, LocalDate today) {
         var a = p.address();
-        return String.format(Locale.ROOT, "%s %s (%s, %d) <%s> %s, %s, %s, %s %s, works at %s",
-                p.firstName(), p.lastName(), p.gender().name().toLowerCase(Locale.ROOT), p.ageOn(today),
+        String nat = CliSupport.nativeFull(p.name());
+        return String.format(Locale.ROOT, "%s %s (%s%s, %d) <%s> %s, %s, %s, %s %s, works at %s",
+                p.firstName(), p.lastName(), nat.isEmpty() ? "" : nat + ", ",
+                p.gender().name().toLowerCase(Locale.ROOT), p.ageOn(today),
                 p.email(), p.phone(), a.street(), a.city(), a.state(), a.postalCode(), p.employer().name());
     }
 
@@ -141,13 +144,14 @@ public final class FauxPersonCli {
         var a = p.address();
         return String.join("|", p.firstName(), p.lastName(), p.gender().name(), p.region().name(),
                 p.dateOfBirth().toString(), Integer.toString(p.ageOn(today)), p.email(), p.phone(),
-                a.street(), a.city(), a.state(), a.postalCode(), p.employer().name());
+                a.street(), a.city(), a.state(), a.postalCode(), p.employer().name(), CliSupport.nativeFull(p.name()));
     }
 
     static String json(Person p, LocalDate today) {
         var a = p.address();
         var e = p.employer();
         return "{" + field("firstName", p.firstName()) + "," + field("lastName", p.lastName())
+                + CliSupport.nativeJson(p.name())
                 + "," + field("gender", p.gender().name()) + "," + field("region", p.region().name())
                 + "," + field("dateOfBirth", p.dateOfBirth().toString()) + ",\"age\":" + p.ageOn(today)
                 + "," + field("email", p.email()) + "," + field("phone", p.phone())

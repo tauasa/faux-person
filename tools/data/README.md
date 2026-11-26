@@ -19,14 +19,15 @@ mkdir -p $D/wd $D/geonames $D/tiger
 
 # 1. Names (Wikidata via QLever). The queries/*.rq files hold each region's
 #    country list. wdq.py retries when the endpoint rate-limits (HTTP 429).
-#    W, R, A are the western, rus and asia regions. rok, jpn and phl are cut
+#    W, R, A are the western, rus and asia regions. jpn and phl are cut
 #    from A, and bra, gbr, fra, esp, prt, grc, nor, swe and fin from W. ISR
-#    feeds heb, and ROKKO holds the Hangul labels.
+#    feeds heb, and ROKKO feeds rok: Hangul labels, each written with its
+#    most common romanization and the Hangul as the native field.
 for r in W R A MEX IRN ISR PSE ROKKO VNM THA NAF CAF SAF; do
   python3 -I tools/data/wdq.py tools/data/queries/q_first_$r.rq $D/wd/first_$r.csv
   python3 -I tools/data/wdq.py tools/data/queries/q_sur_$r.rq   $D/wd/sur_$r.csv
 done
-python3 -I tools/data/build_names.py $D/wd $OUT $EXTRA    # Hangul files go to $EXTRA
+python3 -I tools/data/build_names.py $D/wd $OUT
 
 # 2. Cities (GeoNames, CC BY 4.0)
 curl -sSfL -o $D/geonames/US.zip https://download.geonames.org/export/zip/US.zip

@@ -1,9 +1,9 @@
 """Build the name files from Wikidata query results (QLever CSV).
 
-usage: python3 -I build_names.py <wd-csv-dir> <out-dir> [<extra-dir>]
+usage: python3 -I build_names.py <wd-csv-dir> <out-dir>
 
-The Hangul files go to <extra-dir> (default <out-dir>): the generator doesn't
-read them, so they live in tools/data/extra/, outside the jar.
+The South Korean files come from the Hangul (ROKKO) queries: each line is a
+romanized name with its Hangul form last, as the native field.
 
 Each country's names are ranked by how many people with that citizenship
 carry them on Wikidata. Countries are interleaved rank by rank (core
@@ -188,8 +188,10 @@ def weighted(m, f, counts):
 
 COUNT = "weight is how many people on Wikidata (CC0) carry the name"
 HEADERS = [  # (file-name pattern, header), first match wins
-    (r"^rok_hangul_first_names\.txt$", f"hangul|romanized|gender|weight; gender is F, M or U (either); {COUNT}"),
-    (r"^rok_hangul_surnames\.txt$", f"hangul|romanized|weight; {COUNT}"),
+    (r"^rok_first_names\.txt$", "name|gender|weight|native; name is the most common romanization of the Hangul"
+     f" name in native; gender is F, M or U (either); {COUNT} under any romanization"),
+    (r"^rok_surnames\.txt$", "name||weight|native; name is the most common romanization of the Hangul name in"
+     f" native, the same for women and men; {COUNT} under any romanization"),
     (r"_first_names\.txt$", f"name|gender|weight; gender is F, M or U (either); {COUNT}"),
     (r"_surnames\.txt$", f"name|weight, or masculine|feminine|weight; {COUNT}"),
 ]
@@ -213,7 +215,7 @@ def write(path, lines):
     print(path, len(lines))
 
 
-def main(src, out, extra=None):
+def main(src, out):
     west_first, wf_share = first_names(f"{src}/first_W.csv")
     write(f"{out}/western_first_names.txt", [f"{n}|{g}|{w}" for n, g, w in west_first])
     for reg, name in (("A", "asia"), ("R", "rus")):
@@ -246,45 +248,16 @@ def main(src, out, extra=None):
           ["|".join([m] + ([feminine(m)] if feminine(m) != m else []) + [str(max(1, rc.get(m, 0)))])
            for m in rus_sur])
 
-    rok(src, out, wf_share)
     countries(src, out)
-    rok_hangul(src, extra or out)
+    rok(src, out)
     more_regions(src, out)
 
 
-# South Korea: citizens of Q884 only, from the asia query results.
-ROK = "Q884"
-# Surnames Wikidata lists for South Korean citizens that aren't Korean
-# romanizations: Chinese pinyin forms (Korean-Chinese people), a Japanese
+# Surnames Wikidata lists for South Korean citizens that aren't Korean, by
+# their romanization: Chinese readings (Korean-Chinese people), a Japanese
 # name, and single families.
 ROK_NOT_KOREAN = {"Zheng", "Zhang", "Zhao", "Liu", "Xu", "Jiang", "Huang", "Quan", "Yin", "Wu",
                   "Shi", "Dang", "Sun", "Li", "Arai", "Linton", "Young"}
-
-
-def only(path, country, tmp):
-    """Write the rows of one country to tmp, so load() and the selection rules apply unchanged."""
-    with open(path, encoding="utf-8") as fin, open(tmp, "w", encoding="utf-8", newline="") as fout:
-        r = csv.DictReader(fin)
-        w = csv.DictWriter(fout, fieldnames=r.fieldnames)
-        w.writeheader()
-        for row in r:
-            if row["c"].endswith("/" + country):
-                w.writerow(row)
-    return tmp
-
-
-def rok(src, out, wf_share):
-    first = only(f"{src}/first_A.csv", ROK, f"{src}/first_K.csv")
-    _, _, share = load(first, True)
-    names, _ = first_names(first, True, not_western(share, wf_share))
-    write(f"{out}/rok_first_names.txt", [f"{n}|{g}|{w}" for n, g, w in names])
-    # Every surname carried by 3+ South Korean citizens on Wikidata. Korea has
-    # only about 280 surnames, so this list is short by nature.
-    sur = only(f"{src}/sur_A.csv", ROK, f"{src}/sur_K.csv")
-    ranked, _, _ = load(sur, True)
-    picked = sorted({n for v in ranked.values() for n in v if n not in ROK_NOT_KOREAN}, key=str.lower)
-    kc = weights(sur, True)
-    write(f"{out}/rok_surnames.txt", [weighted(n, n, kc) for n in picked])
 
 
 
@@ -321,14 +294,14 @@ def countries(src, out):
 HANGUL = re.compile(r"^[\uAC00-\uD7A3]{1,3}$")
 
 
-def rok_hangul(src, out):
-    """South Korean names in Hangul, with their most common romanization.
+def rok(src, out):
+    """South Korean names: the romanization most people carry, with the Hangul last.
 
     From q_first_ROKKO.rq and q_sur_ROKKO.rq: Wikidata name items carried by
     South Korean citizens, by their Korean ("ko") label. Several romanized
     items share one Hangul spelling (Ji-hyeon and Ji-hyun are both 지현), so
     counts are summed per Hangul name and the romanization most people carry
-    is kept.
+    is kept. Lines are "Ji-hoon|M|97|지훈" and "Kim||6768|김".
     """
     def group(path, has_type):
         count, gender, rom = defaultdict(int), defaultdict(lambda: defaultdict(int)), defaultdict(lambda: defaultdict(int))
@@ -367,11 +340,13 @@ def rok_hangul(src, out):
             picked.append((ko, best_rom(rom, ko), g_of(ko)))
             if len(picked) >= TARGET:
                 break
-    write(f"{out}/rok_hangul_first_names.txt", [f"{k}|{r}|{g}|{count[k]}" for k, r, g in sorted(picked)])
+    write(f"{out}/rok_first_names.txt",
+          [f"{r}|{g}|{count[k]}|{k}" for k, r, g in sorted(picked, key=lambda t: (t[1].lower(), t[0]))])
 
     count, _, rom = group(f"{src}/sur_ROKKO.csv", False)
-    sur = [(ko, best_rom(rom, ko)) for ko in sorted(count) if best_rom(rom, ko)]
-    write(f"{out}/rok_hangul_surnames.txt", [f"{k}|{r}|{count[k]}" for k, r in sur])
+    sur = [(ko, best_rom(rom, ko)) for ko in count if best_rom(rom, ko) and best_rom(rom, ko) not in ROK_NOT_KOREAN]
+    write(f"{out}/rok_surnames.txt",
+          [f"{r}||{count[k]}|{k}" for k, r in sorted(sur, key=lambda t: (t[1].lower(), t[0]))])
 
 
 # Single-country and sub-continental regions added 2026-11-19.
@@ -466,4 +441,4 @@ def more_regions(src, out):
 
 
 if __name__ == "__main__":
-    main(*sys.argv[1:4])
+    main(*sys.argv[1:3])

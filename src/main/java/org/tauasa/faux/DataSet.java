@@ -34,10 +34,15 @@ import java.util.function.ToLongFunction;
 final class DataSet {
 
     /**
-     * A first name, the gender it is used for (F, M or U for either), and how
-     * often it's drawn relative to the region's other first names.
+     * A first name, the gender it is used for (F, M or U for either), how
+     * often it's drawn relative to the region's other first names, and the
+     * name in its own script, or null when the file has none.
      */
-    record FirstName(String name, char gender, long weight) {}
+    record FirstName(String name, char gender, long weight, String nativeName) {
+        FirstName(String name, char gender, long weight) {
+            this(name, gender, weight, null);
+        }
+    }
 
     /** Names to draw from, with running totals of their weights. */
     private record Weighted<T>(List<T> items, long[] totals) {
@@ -50,9 +55,15 @@ final class DataSet {
 
     /**
      * A surname in its masculine and feminine forms (the same for most languages),
-     * and how often it's drawn relative to the region's other surnames.
+     * how often it's drawn relative to the region's other surnames, and the
+     * surname in its own script, the same for both forms, or null when the
+     * file has none.
      */
-    record Surname(String masculine, String feminine, long weight) {}
+    record Surname(String masculine, String feminine, long weight, String nativeName) {
+        Surname(String masculine, String feminine, long weight) {
+            this(masculine, feminine, weight, null);
+        }
+    }
 
     /** A street with the city, state and ZIP it runs through. */
     record Street(String street, String city, String state, String postalCode) {}
@@ -163,15 +174,24 @@ final class DataSet {
     }
 
     /**
-     * Parses {@code name|gender}, with an optional weight last
-     * ({@code Ji-hoon|M|97}). With no weight, the name has weight 1.
+     * Parses {@code name|gender}, with an optional weight
+     * ({@code Ji-hoon|M|97}) and then an optional name in its own script
+     * ({@code Ji-hoon|M|97|지훈}). With no weight, the name has weight 1.
      */
     static FirstName firstName(String[] f) {
         char g = f[1].isEmpty() ? 'U' : f[1].charAt(0);
         if (f[1].length() > 1 || "FMU".indexOf(g) < 0) {
             throw new IllegalArgumentException("gender must be F, M or U: " + f[1]);
         }
-        return new FirstName(f[0], g, f.length > 2 ? weight(f[2]) : 1);
+        return new FirstName(f[0], g, f.length > 2 ? weight(f[2]) : 1, f.length > 3 ? nativeName(f[3]) : null);
+    }
+
+    /** A native-script field: present and not blank, since the field is only there to give one. */
+    private static String nativeName(String s) {
+        if (s.isEmpty()) {
+            throw new IllegalArgumentException("the native name, when given, must not be empty");
+        }
+        return s;
     }
 
     private static long weight(String s) {
@@ -190,9 +210,15 @@ final class DataSet {
     /**
      * Parses {@code name}, {@code masculine|feminine}, either with a weight last
      * ({@code Kim|6766}, {@code Petrov|Petrova|1663}). With no weight, the surname
-     * has weight 1, so an unweighted file is drawn uniformly.
+     * has weight 1, so an unweighted file is drawn uniformly. Four fields add the
+     * surname in its own script: {@code masculine|feminine|weight|native}, with
+     * the feminine form left empty when it's the same ({@code Kim||6768|김}).
      */
     static Surname surname(String[] f) {
+        if (f.length >= 4) {
+            String feminine = f[1].isEmpty() ? f[0] : f[1];
+            return new Surname(f[0], feminine, weight(f[2]), nativeName(f[3]));
+        }
         int n = f.length;
         long weight = 1;
         if (n >= 2 && f[n - 1].matches("\\d+")) {
