@@ -299,7 +299,7 @@ directly:
 
 ```bash
 mvn package
-java -jar target/faux-person-0.2.1-SNAPSHOT.jar -n 5 -f json
+java -jar target/faux-person-0.3.0-SNAPSHOT.jar -n 5 -f json
 ```
 
 `pipe` prints a header row and then 13 `|`-separated columns. This example
@@ -355,8 +355,8 @@ American States Water [faux], San Dimas, CA (aswater.example)
 line. Without the scripts, run their classes from the jar:
 
 ```bash
-java -cp target/faux-person-0.2.1-SNAPSHOT.jar org.tauasa.faux.cli.FauxNameCli -n 5
-java -cp target/faux-person-0.2.1-SNAPSHOT.jar org.tauasa.faux.cli.FauxCompanyCli -n 5
+java -cp target/faux-person-0.3.0-SNAPSHOT.jar org.tauasa.faux.cli.FauxNameCli -n 5
+java -cp target/faux-person-0.3.0-SNAPSHOT.jar org.tauasa.faux.cli.FauxCompanyCli -n 5
 ```
 
 The three scripts share their code in `faux-common.sh`, which isn't run on its
