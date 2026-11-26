@@ -1,4 +1,4 @@
-# name|gender|weight|native; native is the Cyrillic spelling most people carry, from Wikidata's ru labels, where it has one; gender is F, M or U (either); weight is how many people on Wikidata (CC0) carry the name; built 2026-11-20
+# name|gender|weight|native; gender is F, M or U (either); weight is how many people on Wikidata (CC0) carry the name; native is the Russian Cyrillic spelling most people carry, from Wikidata's ru labels, where it has one, with the hand fixes NATIVE_FIXES in build_names.py lists; native spellings added 2026-11-26; built 2026-11-20
 Abbas|M|33|Аббас
 Abdulla|M|32
 Abraham|M|136|Авраамий
@@ -266,7 +266,7 @@ Ekaterine|F|13|Екатерин
 Eldar|M|65|Эльдар
 Eldor|M|10
 Eleanor|F|31|Элеанор
-Elena|F|1206|Элена
+Elena|F|1206|Елена
 Elene|F|13
 Eleonora|F|97|Элеонора
 Elfriede|F|22|Эльфрида
@@ -315,7 +315,7 @@ Eugen|M|166
 Eugenia|F|50
 Eugenie|F|6|Эжени
 Eugenija|F|18
-Eva|F|143|Эва
+Eva|F|143|Ева
 Eve|F|78|Ив
 Evelina|F|35|Эвелина
 Evgenia|F|547|Евгения
@@ -702,7 +702,7 @@ Mihkel|M|275|Михкель
 Mikalai|M|367|Николай
 Mikhail|M|8598|Михаил
 Mikheil|M|176|Михаил
-Mikita|M|18|Мікіта
+Mikita|M|18
 Mikola|M|16|Микола
 Mikołaj|M|21|Миколай
 Mila|U|14|Мила
@@ -1090,7 +1090,7 @@ Viktoriia|F|8
 Viktorija|F|47|Виктория
 Viktoriya|F|442|Виктория
 Viktors|M|85|Викторс
-Viktoryja|F|10|Вікторыя
+Viktoryja|F|10
 Vilma|F|50|Вилма
 Violeta|F|25|Виолета
 Violetta|F|18|Виолетта
@@ -1141,7 +1141,7 @@ Yakau|M|23|Яков
 Yakiv|M|67|Яков
 Yakov|M|592|Яков
 Yana|F|78|Яна
-Yanina|F|4|Яніна
+Yanina|F|4|Янина
 Yaraslaw|M|15|Ярослав
 Yaroslav|M|474|Ярослав
 Yaroslava|F|34|Ярослава

@@ -107,7 +107,7 @@ class DataSetTest {
         assertThrows(IllegalArgumentException.class, () -> DataSet.surname(new String[] {"Kim", "", "many", "김"}));
     }
 
-    /** South Korea's names are romanized, each with its Hangul form; no other region has a native form yet. */
+    /** South Korea's names are romanized, each with its Hangul form, one line per Hangul name. */
     @Test
     void koreanNamesCarryTheirHangul() {
         Pattern hangul = Pattern.compile("[\\uAC00-\\uD7A3]{1,3}");
@@ -127,7 +127,7 @@ class DataSetTest {
     private static final Map<Region, Object[]> SCRIPTS = Map.of(
             Region.ROK, new Object[] {"[\\uAC00-\\uD7A3]+", 100},
             Region.JPN, new Object[] {"[\\u3005\\u3040-\\u30FF\\u4E00-\\u9FFF]+", 99},
-            Region.RUS, new Object[] {"[\\u0400-\\u04FF]+(-[\\u0400-\\u04FF]+)*", 85},
+            Region.RUS, new Object[] {"[\\u0410-\\u044F\\u0401\\u0451]+(-[\\u0410-\\u044F\\u0401\\u0451]+)*", 85},
             Region.GRC, new Object[] {"[\\u0370-\\u03FF\\u1F00-\\u1FFF]+(-[\\u0370-\\u03FF\\u1F00-\\u1FFF]+)*", 80},
             Region.HEB, new Object[] {"[\\u0590-\\u05FF]+([ '\\u05F3\\u05F4-][\\u0590-\\u05FF]+)*", 85},
             Region.PSE, new Object[] {"[\\u0600-\\u06FF\\u0750-\\u077F]+( [\\u0600-\\u06FF\\u0750-\\u077F]+)*", 90},

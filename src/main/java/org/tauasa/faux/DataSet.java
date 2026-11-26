@@ -215,11 +215,11 @@ final class DataSet {
 
     /**
      * Parses {@code name}, {@code masculine|feminine}, either with a weight last
-     * ({@code Kim|6768}, {@code Petrov|Petrova|1663}). With no weight, the surname
+     * ({@code Kim|6768}, {@code Petrov|Petrova|906}). With no weight, the surname
      * has weight 1, so an unweighted file is drawn uniformly. Four fields add the
      * surname in its own script: {@code masculine|feminine|weight|native}, with
      * the feminine form left empty when it's the same ({@code Kim||6768|김}).
-     * A fifth gives the feminine form's ({@code Petrov|Petrova|1663|Петров|Петрова});
+     * A fifth gives the feminine form's ({@code Petrov|Petrova|906|Петров|Петрова});
      * without it, a feminine form that differs has no native spelling.
      */
     static Surname surname(String[] f) {

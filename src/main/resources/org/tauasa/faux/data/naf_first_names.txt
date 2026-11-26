@@ -1,4 +1,4 @@
-# name|gender|weight|native; native is the Arabic spelling most people carry, from Wikidata's ar labels, where it has one; gender is F, M or U (either); weight is how many people on Wikidata (CC0) carry the name; built 2026-11-20
+# name|gender|weight|native; gender is F, M or U (either); weight is how many people on Wikidata (CC0) carry the name; native is the Arabic spelling most people carry, from Wikidata's ar labels, where it has one; native spellings added 2026-11-26; built 2026-11-20
 A'isha|F|5|عائشة
 Aamir|M|2
 Abbas|M|27|عباس

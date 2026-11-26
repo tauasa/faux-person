@@ -1,4 +1,4 @@
-# masculine|feminine|weight|native|native feminine, the feminine empty when it's the masculine; native is the Persian spelling most people carry, from Wikidata's fa labels, where it has one; weight is how many people on Wikidata (CC0) carry the name; built 2026-11-20
+# masculine|feminine|weight|native|native feminine; the feminine empty when it's the masculine, and the native feminine only when it differs; weight is how many people on Wikidata (CC0) carry the name; native is the Persian spelling most people carry, from Wikidata's fa labels, where it has one; native spellings added 2026-11-26; built 2026-11-20
 Aali|2
 Abadi|5
 Abar|2

@@ -34,6 +34,9 @@ for r in jpn rus grc heb pse naf irn; do
   python3 -I tools/data/wdq.py tools/data/queries/q_native_sur_$r.rq   $D/wd/native_sur_$r.csv
 done
 python3 -I tools/data/build_names.py $D/wd $OUT
+# Or the native spellings alone, on the lists as they are, which keeps every
+# seed's draws. 0.4.0's were added this way, to lists built on 2026-11-20:
+#   python3 -I tools/data/build_names.py native $D/wd $OUT
 
 # 2. Cities (GeoNames, CC BY 4.0)
 curl -sSfL -o $D/geonames/US.zip https://download.geonames.org/export/zip/US.zip

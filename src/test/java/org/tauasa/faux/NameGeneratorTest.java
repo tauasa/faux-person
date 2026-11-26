@@ -130,6 +130,27 @@ class NameGeneratorTest {
         }
     }
 
+    /** A non-binary person's native surname is the same form, feminine or masculine, as their Latin one. */
+    @Test
+    void aNonBinaryNativeSurnameFollowsTheLatinForm() {
+        var bySurname = new java.util.HashMap<String, DataSet.Surname>();
+        DATA.surnames.get(Region.RUS).forEach(s -> {
+            bySurname.put(s.masculine(), s);
+            bySurname.put(s.feminine(), s);
+        });
+        int both = 0;
+        for (Name n : NameGenerator.builder().seed(19).region(Region.RUS).genderWeights(0, 0, 1).build().next(500)) {
+            DataSet.Surname s = bySurname.get(n.lastName());
+            if (s.feminine().equals(s.masculine()) || n.nativeName().isEmpty()) {
+                continue;
+            }
+            boolean feminine = n.lastName().equals(s.feminine());
+            both += feminine ? 1 : 0;
+            assertEquals(feminine ? s.nativeFeminine() : s.nativeName(), n.nativeName().get().lastName(), n.toString());
+        }
+        assertTrue(both > 50, "feminine forms seen: " + both);
+    }
+
     /** A native name needs both halves: a data file with Hangul first names but plain surnames gives none. */
     @Test
     void aNativeNameNeedsBothHalves(@TempDir Path dir) throws Exception {

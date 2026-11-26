@@ -1,4 +1,4 @@
-# name|gender|weight|native; native is the Persian spelling most people carry, from Wikidata's fa labels, where it has one; gender is F, M or U (either); weight is how many people on Wikidata (CC0) carry the name; built 2026-11-20
+# name|gender|weight|native; gender is F, M or U (either); weight is how many people on Wikidata (CC0) carry the name; native is the Persian spelling most people carry, from Wikidata's fa labels, where it has one; native spellings added 2026-11-26; built 2026-11-20
 Abazar|M|20
 Abbas|M|147|عباس
 Abdi|M|2

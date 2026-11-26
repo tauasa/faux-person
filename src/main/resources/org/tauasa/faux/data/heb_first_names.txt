@@ -1,4 +1,4 @@
-# name|gender|weight|native; native is the Hebrew spelling most people carry, from Wikidata's he labels, where it has one; gender is F, M or U (either); weight is how many people on Wikidata (CC0) carry the name; built 2026-11-20
+# name|gender|weight|native; gender is F, M or U (either); weight is how many people on Wikidata (CC0) carry the name; native is the Hebrew spelling most people carry, from Wikidata's he labels, where it has one, with the hand fixes NATIVE_FIXES in build_names.py lists; native spellings added 2026-11-26; built 2026-11-20
 Aaron|M|107|אהרן
 Aba|M|4
 Abba|M|6|אבא

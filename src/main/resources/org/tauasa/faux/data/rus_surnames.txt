@@ -1,4 +1,4 @@
-# masculine|feminine|weight|native|native feminine, the feminine empty when it's the masculine; native is the Cyrillic spelling most people carry, from Wikidata's ru labels, where it has one; weight is how many people on Wikidata (CC0) carry the name; built 2026-11-20
+# masculine|feminine|weight|native|native feminine; the feminine empty when it's the masculine, and the native feminine only when it differs; weight is how many people on Wikidata (CC0) carry the name; native is the Russian Cyrillic spelling most people carry, from Wikidata's ru labels, where it has one, the feminine built from the masculine ending where it has a rule; native spellings added 2026-11-26; built 2026-11-20
 Abakirov|Abakirova|6|Абакиров|Абакирова
 Abashidze||74|Абашидзе
 Abbasov|Abbasova|78|Аббасов|Аббасова
@@ -15,12 +15,12 @@ Adamson||43|Адамсон
 Adlerberg|11
 Adomaitis|12
 Afanasyev|Afanasyeva|206|Афанасьев|Афанасьева
-Afanasyew||7|Афанасьеў
+Afanasyew|7
 Afandiyev|Afandiyeva|42|Эфендиев|Эфендиева
 Agafonov|Agafonova|60|Агафонов|Агафонова
 Agapov|Agapova|48|Агапов|Агапова
 Ageyev|Ageyeva|70|Агеев|Агеева
-Ahmadov|Ahmadova|35|Аҳмадов|Аҳмадова
+Ahmadov|Ahmadova|35
 Ahmedov|Ahmedova|10|Агьмедов|Агьмедова
 Ahmetjanov|Ahmetjanova|3|Ахметжанов|Ахметжанова
 Akayev|Akayeva|18
@@ -88,7 +88,7 @@ Avetisyan||93|Аветисян
 Avramenko||47|Авраменко
 Azarov|Azarova|62|Азаров|Азарова
 Azatyan||11|Азатян
-Azimov|Azimova|9|Азімов|Азімова
+Azimov|Azimova|9
 Azizov|Azizova|13|Азизов|Азизова
 Ağayev|Ağayeva|65|Агаев|Агаева
 Babayan||22|Бабаян
@@ -99,7 +99,7 @@ Badalyan||15|Бадалян
 Bagdonas||15|Багдонас
 Baghdasaryan|11
 Bagrationi||47|Багратиони
-Bahdanovich||10|Багдановіч
+Bahdanovich|10
 Bairamov|Bairamova|30|Байрамов|Байрамова
 Bakradze||29|Бакрадзе
 Bakunin|Bakunina|27|Бакунин|Бакунина
@@ -116,7 +116,7 @@ Barons|7
 Barseghyan||25|Барсегян
 Bartkus||8|Барткус
 Barysas|5
-Barysyevich||7|Барысевіч
+Barysyevich|7
 Basov|Basova|36|Басов|Басова
 Baumann||19|Бауман
 Bayramov|Bayramova|22|Байрамов|Байрамова
@@ -210,7 +210,7 @@ Dadashov|Dadashova|7|Дадашов|Дадашова
 Dadiani||23|Дадиани
 Dambrauskas||7|Дамбраускас
 Danilin|Danilina|29|Данилин|Данилина
-Danilov|Danilova|199|Данілов|Данілова
+Danilov|Danilova|199|Данилов|Данилова
 Dargis||7|Даргис
 Dashkyevich||7|Дашкевич
 Datsenko|16
@@ -221,7 +221,7 @@ Davydov|Davydova|236|Давыдов|Давыдова
 Dementyev|Dementyeva|52|Дементьев|Дементьева
 Demianchuk|11
 Demidov|Demidova|102|Демидов|Демидова
-Denisov|Denisova|155|Денісов|Денісова
+Denisov|Denisova|155
 Denysenko||35|Денисенко
 Derevianko||27|Деревянко
 Derkach|30
@@ -249,7 +249,7 @@ Eller||29|Эллер
 Engelgardt||38|Энгельгардт
 Engelhardt||23|Энгельгардт
 Epstein|Epsteina|26|Эпштейн
-Ergaliev|Ergalieva|6|Ерғалиев|Ерғалиева
+Ergaliev|Ergalieva|6
 Ergashev|Ergasheva|3
 Eristavi||53|Эристави
 Erkinov|Erkinova|3
@@ -376,7 +376,7 @@ Ibraguimov|Ibraguimova|148|Ибрагимов|Ибрагимова
 Ignatenko||37|Игнатенко
 Ignatov|Ignatova|54|Игнатов|Игнатова
 Ignatyev|Ignatyeva|104|Игнатьев|Игнатьева
-Ihnatsyenka||7|Ігнаценка
+Ihnatsyenka|7
 Ilchenko|25
 Ilves|55
 Ilyin|Ilyina|193|Ильин|Ильина
@@ -390,7 +390,7 @@ Ismayilov|Ismayilova|16
 Ismayılov|Ismayılova|27|Исмаилов|Исмаилова
 Istrati|4
 Ivanauskas||10|Иванаускас
-Ivanenko||54|Іваненко
+Ivanenko||54|Иваненко
 Ivanov|Ivanova|1663|Иванов|Иванова
 Ivanovsky|Ivanovskaya|48
 Ivanow||9|Иванов
@@ -429,10 +429,10 @@ Kalandadze|23
 Kalashnikov|Kalashnikova|85|Калашников|Калашникова
 Kalda|30
 Kalinauskas||5|Калинаускас
-Kalinin|Kalinina|157|Калінін
+Kalinin|Kalinina|157|Калинин|Калинина
 Kallas||70|Каллас
 Kalniņš||71|Калныньш
-Kalyesnikaw||3|Калеснікаў
+Kalyesnikaw|3
 Kamensky|Kamenskaya|52|Каменский|Каменская
 Kamilov|Kamilova|3
 Kaminskas|6
@@ -441,7 +441,7 @@ Kapanadze||24|Капанадзе
 Kaplan||39|Каплан
 Kaplenko||9|Капленко
 Karapetyan||47|Карапетян
-Karatkevich||8|Караткевіч
+Karatkevich|8
 Karimov|Karimova|99|Каримов|Каримова
 Karpenko||77|Карпенко
 Karpinski|Karpinska|17|Карпинский|Карпинская
@@ -452,7 +452,7 @@ Kask||112|Каск
 Katz||47|Кац
 Kavalchuk||3|Кавальчук
 Kavalenka||4|Каваленка
-Kavalyow||19|Кавалёў
+Kavalyow|19
 Kavtaradze||22|Кавтарадзе
 Kazak||9|Казак
 Kazakov|Kazakova|161|Казаков|Казакова
@@ -496,7 +496,7 @@ Kobzev|Kobzeva|28|Кобзев|Кобзева
 Kocharyan||26|Кочарян
 Kochetkov|Kochetkova|62|Кочетков|Кочеткова
 Kogan||102|Коган
-Kolasaw||3|Коласаў
+Kolasaw|3
 Kolesnikov|Kolesnikova|204|Колесников|Колесникова
 Kolesnyk|30
 Kolosov|Kolosova|55
@@ -552,7 +552,7 @@ Kroders||16|Кродерс
 Krouglov|Krouglova|46|Круглов|Круглова
 Krylov|Krylova|168|Крылов|Крылова
 Kryukov|Kryukova|82|Крюков|Крюкова
-Krywko||3|Крыўко
+Krywko|3
 Krüger||11|Крюгер
 Krūmiņa|16
 Krūmiņš||45|Круминьш
@@ -598,7 +598,7 @@ Lavrentyev|Lavrentyeva|49|Лаврентьев|Лаврентьева
 Lavrov|Lavrova|123|Лавров|Лаврова
 Lazarev|Lazareva|169
 Lebedev|Lebedeva|520|Лебедев|Лебедева
-Lebedzew||8|Лебедзеў
+Lebedzew|8
 Lebid||17|Лебедь
 Leonov|Leonova|125|Леонов|Леонова
 Leontyev|Leontyeva|101|Леонтьев|Леонтьева
@@ -612,7 +612,7 @@ Lezhava||28|Лежава
 Liepiņa|19
 Liepiņš||40|Лиепиньш
 Liiv||67|Лийв
-Likhtarovich||3|Ліхтаровіч
+Likhtarovich|3
 Lill||34|Лилл
 Linde||23|Линде
 Liniņa|7
@@ -707,7 +707,7 @@ Mironov|Mironova|179|Миронов|Миронова
 Miroshnychenko||61|Мирошниченко
 Mirzayev|Mirzayeva|22
 Mirzoev|Mirzoeva|3|Мирзоев|Мирзоева
-Mishchenko||51|Міщенко
+Mishchenko|51
 Mitrofanov|Mitrofanova|45|Митрофанов|Митрофанова
 Mkhitaryan||24|Мхитарян
 Mkrtchyan||67|Мкртчян
@@ -824,7 +824,7 @@ Pocius||10|Поцюс
 Poghossian||51|Погосян
 Poghosyan|8
 Pokrovsky|Pokrovskaya|117|Покровский|Покровская
-Polishchuk||20|Поліщук
+Polishchuk|20
 Polyakov|Polyakova|201|Поляков|Полякова
 Polyanskiy|Polyanskaya|56|Полянский|Полянская
 Ponomarenko||122|Пономаренко
@@ -847,7 +847,7 @@ Protopopov|Protopopova|29|Протопопов|Протопопова
 Prudnikov|Prudnikova|25
 Pryščepa|3
 Putniņš|10
-Pyatrow||7|Пятроў
+Pyatrow|7
 Pylypchuk||17|Пилипчук
 Pärn||68|Пярн
 Põld|28
@@ -1119,7 +1119,7 @@ Vlasenko||53|Власенко
 Vlasov|Vlasova|177|Власов|Власова
 Vohidov|Vohidova|10|Вахидов|Вахидова
 Volchek||12|Волчек
-Volkaw||8|Волкаў
+Volkaw|8
 Volkov|Volkova|608
 Volodin|Volodina|51|Володин|Володина
 Vorobey||7|Воробей
@@ -1155,14 +1155,14 @@ Yurchenko||79|Юрченко
 Yurevich||3|Юревич
 Yurkevich||25|Юркевич
 Yusupov|Yusupova|85|Юсупов|Юсупова
-Zakharaw||3|Захараў
+Zakharaw|3
 Zakharov|Zakharova|307|Захаров|Захарова
 Zakirov|Zakirova|43|Закиров|Закирова
 Zaleski|Zaleska|13|Залеский|Залеская
 Zamyatin|Zamyatina|56|Замятин|Замятина
 Zaripov|Zaripova|50|Зарипов|Зарипова
 Zariņš||35|Зариньш
-Zaytsaw||8|Зайцаў
+Zaytsaw|8
 Zaytsev|Zaytseva|320|Зайцев|Зайцева
 Zeynallı|10
 Zhaksylykov|Zhaksylykova|3|Жаксылыков|Жаксылыкова
@@ -1171,10 +1171,10 @@ Zhorobekov|Zhorobekova|7|Жоробеков|Жоробекова
 Zhuk||28|Жук
 Zhukov|Zhukova|239|Жуков|Жукова
 Zhukovsky|Zhukovskaya|56|Жуковский|Жуковская
-Zhukowski|Zhukowska|3|Жукоўскі
+Zhukowski|Zhukowska|3
 Zhuravlyov|Zhuravlyova|133|Журавлёв|Журавлёва
 Zhvania||20|Жвания
-Zimin|Zimina|58|Зімін
+Zimin|Zimina|58
 Zimmermann|23
 Zinkyevich||3|Зинкевич
 Zinovyev|Zinovyeva|66|Зиновьев|Зиновьева
