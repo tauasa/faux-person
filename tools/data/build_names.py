@@ -251,6 +251,7 @@ def main(src, out):
     countries(src, out)
     rok(src, out)
     more_regions(src, out)
+    add_native(src, out)
 
 
 # Surnames Wikidata lists for South Korean citizens that aren't Korean, by
@@ -444,6 +445,107 @@ def more_regions(src, out):
         else:
             sc = weights(spath, ascii_only)
             write(f"{out}/{prefix}_surnames.txt", [weighted(n, n, sc) for n in sur])
+
+
+# Regions whose names get their own script, from the native_<kind>_<prefix>.csv
+# results of q_native_<kind>_<prefix>.rq: the language's label, and a pattern
+# a label must match to count as written in that script.
+ARABIC = r"[\u0600-\u06FF\u0750-\u077F]+(?: [\u0600-\u06FF\u0750-\u077F]+)*"
+NATIVE = {
+    "rus": ("ru", "Cyrillic", r"[\u0400-\u04FF]+(?:-[\u0400-\u04FF]+)*"),
+    "grc": ("el", "Greek", r"[\u0370-\u03FF\u1F00-\u1FFF]+(?:-[\u0370-\u03FF\u1F00-\u1FFF]+)*"),
+    "heb": ("he", "Hebrew", r"[\u0590-\u05FF]+(?:[ '\u05F3\u05F4-][\u0590-\u05FF]+)*"),
+    "pse": ("ar", "Arabic", ARABIC),
+    "naf": ("ar", "Arabic", ARABIC),
+    "irn": ("fa", "Persian", ARABIC),
+    "jpn": ("ja", "Japanese", r"[\u3005\u3040-\u30FF\u4E00-\u9FFF]+"),
+}
+# Thai isn't here: Wikidata has a Thai-script label for under 3% of the Thai
+# names in tha_*.txt, too few to give anyone a native name.
+
+# Hand fixes, (prefix, kind, Latin name): native. Wikidata's most-carried label
+# for these is the Hebrew spelling of the English name (דייוויד for David),
+# because Israelis there are linked to the international name item; Israelis
+# named David write it דוד.
+NATIVE_FIXES = {("heb", "first", "David"): "דוד", ("heb", "first", "Jonathan"): "יונתן"}
+KANJI = re.compile(r"[\u3005\u4E00-\u9FFF]")
+LATIN = re.compile(r"^[A-Za-z\u00C0-\u024F'\u2019 -]+$")
+# Russian feminine surnames, when Wikidata has no item for the feminine form:
+# the masculine ending and what it becomes. Only endings whose feminine adds a
+# letter or swaps the adjective ending, so the spelling is never a guess.
+RU_FEMININE = [("ский", "ская"), ("цкий", "цкая"), ("ов", "ова"), ("ев", "ева"), ("ёв", "ёва"),
+               ("ин", "ина"), ("ын", "ына")]
+
+
+def add_native(src, out):
+    """Write each region's own-script spelling onto its name lines.
+
+    The lists don't change, so neither do the draws: a line gains a fourth
+    field, the native spelling most people on Wikidata carry for that Latin
+    name (Aleksandr|M|16684|Александр). A surname whose feminine form differs
+    gains a fifth for it (Petrov|Petrova|1663|Петров|Петрова), from Wikidata,
+    or for Russian from its masculine ending. A name with no native spelling
+    on Wikidata stays as it was.
+    """
+    for prefix, (lang, script, pattern) in NATIVE.items():
+        ok = re.compile(f"^(?:{pattern})$")
+        for kind in ("first", "sur"):
+            best = defaultdict(lambda: defaultdict(int))
+            for r in csv.DictReader(open(f"{src}/native_{kind}_{prefix}.csv", encoding="utf-8")):
+                nat = unicodedata.normalize("NFC", r["nat"].strip())
+                if not ok.match(nat):
+                    continue
+                for name in r["names"].split("|"):
+                    if LATIN.match(name):
+                        best[fold(name).lower()][nat] += int(r["n"])
+
+            def native(name):
+                if (prefix, kind, name) in NATIVE_FIXES:
+                    return NATIVE_FIXES[(prefix, kind, name)]
+                found = best.get(fold(name).lower())
+                if not found:
+                    return None
+                # Japanese: a kanji spelling over a kana one, which is usually a
+                # generic reading item (たかし) that many people are linked to.
+                prefer = (lambda t: bool(KANJI.search(t[0]))) if prefix == "jpn" else (lambda t: True)
+                return max(found.items(), key=lambda t: (prefer(t), t[1], t[0]))[0]
+
+            path = f"{out}/{prefix}_{'first_names' if kind == 'first' else 'surnames'}.txt"
+            lines = open(path, encoding="utf-8").read().splitlines()
+            head, body, hit, weight_all, weight_hit = lines[0], [], 0, 0, 0
+            for line in lines[1:]:
+                f = line.split("|")
+                if kind == "first":
+                    nat, w = native(f[0]), int(f[2])
+                    out_line = f"{line}|{nat}" if nat else line
+                else:
+                    w = int(f[-1])
+                    m, fem = f[0], (f[1] if len(f) == 3 else f[0])
+                    nat = native(m)
+                    nat_f = None
+                    if nat and fem != m:
+                        # Russian: from the masculine ending when it has a rule, so
+                        # the pair always matches (Иванов, Иванова); else Wikidata.
+                        if prefix == "rus":
+                            nat_f = next((nat[:-len(e)] + to for e, to in RU_FEMININE if nat.endswith(e)), None)
+                        nat_f = nat_f or native(fem)
+                    if nat:
+                        out_line = f"{m}|{fem if fem != m else ''}|{w}|{nat}" + (f"|{nat_f}" if nat_f else "")
+                    else:
+                        out_line = line
+                weight_all += w
+                if nat:
+                    hit += 1
+                    weight_hit += w
+                body.append(out_line)
+            fields = "name|gender|weight|native" if kind == "first" else \
+                "masculine|feminine|weight|native|native feminine, the feminine empty when it's the masculine"
+            note = (f"native is the {script} spelling most people carry, from Wikidata's {lang} labels, "
+                    "where it has one")
+            rest = head.split("; ", 1)[1]
+            with open(path, "w", encoding="utf-8", newline="\n") as fh:
+                fh.write("\n".join([f"# {fields}; {note}; {rest}"] + body) + "\n")
+            print(f"{path}: {hit}/{len(body)} lines, {100 * weight_hit / max(1, weight_all):.0f}% of weight")
 
 
 if __name__ == "__main__":

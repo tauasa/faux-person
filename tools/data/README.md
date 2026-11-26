@@ -27,6 +27,12 @@ for r in W R A MEX IRN ISR PSE ROKKO VNM THA NAF CAF SAF; do
   python3 -I tools/data/wdq.py tools/data/queries/q_first_$r.rq $D/wd/first_$r.csv
   python3 -I tools/data/wdq.py tools/data/queries/q_sur_$r.rq   $D/wd/sur_$r.csv
 done
+# Native spellings for jpn, rus, grc, heb, pse, naf and irn: each name item's
+# label in that language beside its English one, by how many people carry it.
+for r in jpn rus grc heb pse naf irn; do
+  python3 -I tools/data/wdq.py tools/data/queries/q_native_first_$r.rq $D/wd/native_first_$r.csv
+  python3 -I tools/data/wdq.py tools/data/queries/q_native_sur_$r.rq   $D/wd/native_sur_$r.csv
+done
 python3 -I tools/data/build_names.py $D/wd $OUT
 
 # 2. Cities (GeoNames, CC BY 4.0)

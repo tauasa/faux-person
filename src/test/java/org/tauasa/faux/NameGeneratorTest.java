@@ -79,18 +79,55 @@ class NameGeneratorTest {
         }
     }
 
-    /** Mixed people: only South Koreans have a native name, and their email stays in romanized ASCII. */
+    /**
+     * Mixed people: only the regions with a script have native names, every South
+     * Korean has one, and emails stay in romanized ASCII.
+     */
     @Test
-    void onlyKoreanNamesHaveANativeForm() {
+    void onlyRegionsWithAScriptHaveANativeForm() {
+        Set<Region> scripts = Set.of(Region.ROK, Region.JPN, Region.RUS, Region.GRC, Region.HEB, Region.PSE,
+                Region.NAF, Region.IRN);
         int koreans = 0;
         for (Person p : PersonGenerator.builder().seed(12).build().next(2000)) {
-            assertEquals(p.region() == Region.ROK, p.name().nativeName().isPresent(), p.toString());
+            if (p.name().nativeName().isPresent()) {
+                assertTrue(scripts.contains(p.region()), p.toString());
+                assertTrue(p.email().matches("[a-z]+\\.[a-z]+\\d{0,2}@[a-z0-9.-]+"), p.email());
+            }
             if (p.region() == Region.ROK) {
                 koreans++;
-                assertTrue(p.email().matches("[a-z]+\\.[a-z]+\\d{0,2}@[a-z0-9.-]+"), p.email());
+                assertTrue(p.name().nativeName().isPresent(), p.toString());
             }
         }
         assertTrue(koreans > 20, "koreans: " + koreans);
+    }
+
+    /** Japanese is surname first with no space; the others first name, space, surname. */
+    @Test
+    void nativeFullNamesUseEachLanguagesOrder() {
+        for (Name n : NameGenerator.builder().seed(15).region(Region.JPN).build().next(300)) {
+            n.nativeName().ifPresent(k -> assertEquals(k.lastName() + k.firstName(), k.fullName(), n.toString()));
+        }
+        for (Region r : List.of(Region.RUS, Region.HEB, Region.NAF)) {
+            for (Name n : NameGenerator.builder().seed(16).region(r).build().next(300)) {
+                n.nativeName().ifPresent(k -> assertEquals(k.firstName() + " " + k.lastName(), k.fullName(), n.toString()));
+            }
+        }
+    }
+
+    /** A Russian woman's native surname is the feminine form, a man's the masculine. */
+    @Test
+    void nativeSurnamesFollowTheGender() {
+        var bySurname = new java.util.HashMap<String, DataSet.Surname>();
+        DATA.surnames.get(Region.RUS).forEach(s -> {
+            bySurname.put(s.masculine(), s);
+            bySurname.put(s.feminine(), s);
+        });
+        for (Name n : NameGenerator.builder().seed(17).region(Region.RUS).genderWeights(1, 0, 0).build().next(300)) {
+            n.nativeName().ifPresent(k -> assertEquals(bySurname.get(n.lastName()).nativeFeminine(), k.lastName(), n.toString()));
+        }
+        for (Name n : NameGenerator.builder().seed(18).region(Region.RUS).genderWeights(0, 1, 0).build().next(300)) {
+            n.nativeName().ifPresent(k -> assertEquals(bySurname.get(n.lastName()).nativeName(), k.lastName(), n.toString()));
+        }
     }
 
     /** A native name needs both halves: a data file with Hangul first names but plain surnames gives none. */

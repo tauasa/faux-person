@@ -106,9 +106,9 @@ class FauxPersonCliTest {
         out.lines().skip(1).forEach(l -> assertTrue(l.matches(".*\\|[\\uAC00-\\uD7A3]{2,6}"), l));
         assertEquals(0, run("-n", "3", "-s", "2", "-r", "rok", "-f", "json"));
         assertEquals(3, out.split("\"nativeName\":\\{\"firstName\":\"[^\"]+\",\"lastName\":\"[^\"]+\",\"fullName\":\"").length - 1, out);
-        assertEquals(0, run("-n", "3", "-s", "2", "-r", "rus", "-f", "json"));
+        assertEquals(0, run("-n", "3", "-s", "2", "-r", "gbr", "-f", "json"));
         assertTrue(!out.contains("nativeName"), out);
-        assertEquals(0, run("-n", "3", "-s", "2", "-r", "rus", "-f", "pipe"));
+        assertEquals(0, run("-n", "3", "-s", "2", "-r", "gbr", "-f", "pipe"));
         out.lines().skip(1).forEach(l -> assertTrue(l.endsWith("|"), l));
     }
 
@@ -117,7 +117,8 @@ class FauxPersonCliTest {
         assertEquals(0, run("-n", "2", "-s", "3", "-f", "json", "-r", "rus"));
         String t = out.strip();
         assertTrue(t.startsWith("[") && t.endsWith("]"), t);
-        assertEquals(2, t.split("\"firstName\"").length - 1);
+        // One record per line; a native name's object has its own firstName key.
+        assertEquals(2, t.lines().filter(l -> l.startsWith("  {\"firstName\"")).count(), t);
         assertTrue(t.contains("\"region\":\"RUS\""), t);
     }
 

@@ -56,12 +56,18 @@ final class DataSet {
     /**
      * A surname in its masculine and feminine forms (the same for most languages),
      * how often it's drawn relative to the region's other surnames, and the
-     * surname in its own script, the same for both forms, or null when the
-     * file has none.
+     * surname in its own script: {@code nativeName} for the masculine form and
+     * {@code nativeFeminine} for the feminine one (Петров, Петрова). Either is
+     * null when the file has none. When the two Latin forms are the same, so are
+     * the native ones.
      */
-    record Surname(String masculine, String feminine, long weight, String nativeName) {
+    record Surname(String masculine, String feminine, long weight, String nativeName, String nativeFeminine) {
         Surname(String masculine, String feminine, long weight) {
-            this(masculine, feminine, weight, null);
+            this(masculine, feminine, weight, null, null);
+        }
+
+        Surname(String masculine, String feminine, long weight, String nativeName) {
+            this(masculine, feminine, weight, nativeName, feminine.equals(masculine) ? nativeName : null);
         }
     }
 
@@ -213,11 +219,16 @@ final class DataSet {
      * has weight 1, so an unweighted file is drawn uniformly. Four fields add the
      * surname in its own script: {@code masculine|feminine|weight|native}, with
      * the feminine form left empty when it's the same ({@code Kim||6768|김}).
+     * A fifth gives the feminine form's ({@code Petrov|Petrova|1663|Петров|Петрова});
+     * without it, a feminine form that differs has no native spelling.
      */
     static Surname surname(String[] f) {
         if (f.length >= 4) {
             String feminine = f[1].isEmpty() ? f[0] : f[1];
-            return new Surname(f[0], feminine, weight(f[2]), nativeName(f[3]));
+            String nativeMasculine = nativeName(f[3]);
+            String nativeFeminine = f.length >= 5 ? nativeName(f[4])
+                    : feminine.equals(f[0]) ? nativeMasculine : null;
+            return new Surname(f[0], feminine, weight(f[2]), nativeMasculine, nativeFeminine);
         }
         int n = f.length;
         long weight = 1;

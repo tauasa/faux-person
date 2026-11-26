@@ -1,0 +1,1 @@
+SELECT ?g ?nat (GROUP_CONCAT(DISTINCT STR(?en); separator="|") AS ?names) (COUNT(DISTINCT ?p) AS ?n) WHERE { VALUES ?c { wd:Q17 } ?p wdt:P27 ?c; wdt:P735 ?g. ?g rdfs:label ?nat. FILTER(LANG(?nat)="ja") ?g rdfs:label ?en. FILTER(LANG(?en) IN ("en","mul")) } GROUP BY ?g ?nat ORDER BY DESC(?n)
