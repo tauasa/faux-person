@@ -19,6 +19,7 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 
 | Date | Decision |
 |---|---|
+| 2026-11-26 | For 0.4.0: **native names in seven more regions**: Japanese (`JPN`, kanji, or kana where Wikidata has no kanji), Cyrillic (`RUS`), Greek (`GRC`), Hebrew (`HEB`), Arabic (`PSE`, `NAF`) and Persian (`IRN`). Unlike South Korea's, the lists don't change: each existing line gains the native spelling most people on Wikidata carry for that Latin name, so **draws are unchanged and every seed gives the same people**, who only gain a native form. Japanese prefers a kanji spelling to a kana one and is written surname first with no space; the rest first name, space, surname. A surname line gains a fifth field for a feminine form that differs (`Petrov\|Petrova\|1663\|Петров\|Петрова`); Russian builds it from the masculine ending. A name with no native spelling on Wikidata stays without one, so coverage varies: at seed 42, every Japanese person has a native name, 93% of Palestinians, 84% of Greeks and Russians, 75% of Israelis, 57% of North Africans and 23% of Iranians. Thai was asked for and left out: Wikidata has Thai script for under 3% of the Thai names. A few spellings are hand fixes where Wikidata's most-carried label is a foreign form of the name (David דוד and Jonathan יונתן in Hebrew, Elena Елена and Eva Ева in Russian). For those seven regions every seed's people are the same in Latin letters, but `Name` and `Person` no longer `equals` 0.3.0's, and every output format adds their native name, so golden files that hold those regions change |
 | 2026-11-25 | For 0.3.0: **names in their own script**. `Name` gains `Optional<NativeName> nativeName()`, and a new **`NativeName`** record holds the first name, surname and full name as that language writes it (`영민`, `김`, `김영민`). `Region` doesn't change. Any region's first-name and surname lines may carry the native form as a fourth field, and a name gets one only when both halves have it. Today only `ROK` does: `rok_first_names.txt` and `rok_surnames.txt` are rebuilt from the Hangul lists, each line the romanization most people carry with its Hangul last, and the two `rok_hangul_*.txt` files leave `tools/data/extra/`. The Hangul lists' surnames drop the same non-Korean names as before, plus 리, 쑹 and 훙, so a South Korean Lee, Song or Hong is always 이, 송 or 홍. The full name's order is set per region as each one gains native names: South Korea's is surname first with no space. Adding a third component to `Name` breaks source and behavior that relied on two: a record pattern `Name(var f, var l)` no longer compiles, a mapper that calls the canonical constructor needs the third argument, and a generated South Korean name no longer `equals` a hand-built `new Name(first, last)`. On 0.x that's a minor bump. Draws are unchanged in number and order, so for a given seed only South Korean people change, and only their names and emails. Emails still use the romanized name. The CLIs add the native name in brackets in `text`, a last `native` column in `pipe`, and a `nativeName` object in `json` |
 | 2026-11-20 | Version **0.2.0**. `Person`'s first and last name become one **`Name`** record (`firstName`, `lastName`), and `Person` keeps `firstName()` and `lastName()` as shortcuts. **`NameGenerator`** and **`CompanyGenerator`** generate names and companies on their own, with the same builder shape as `PersonGenerator`, and `PersonGenerator` draws through them. The draw order is unchanged, so every seed gives the same people as 0.1.0, and the person CLI's output is the same. Two more CLIs, **`FauxNameCli`** and **`FauxCompanyCli`**, run from `faux-name.sh` and `faux-company.sh`. Building a `Person` by hand changes, so it's a minor bump |
 | 2026-11-20 | The mark is a **`[faux]` suffix** on the employer's name (`Costco [faux]`), in place of the leading `*` decided earlier today. Everything else in the row below stands |
@@ -133,7 +134,7 @@ every seed produces (see *Versioning*).
 | 1 | `region` | The builder's region, or uniform over all 24 when it's `null` |
 | 2 | `gender` | Weighted pick from `genderWeights` |
 | 3 | `firstName` | From the region's first-name file, each in proportion to its weight, in one draw like the surname: from the `F` and `U` names for women, the `M` and `U` names for men. For non-binary, a coin flip picks the women's or the men's list first, as for the surname, so Wikidata's surplus of men doesn't tilt them toward men's names |
-| 4 | `lastName` | From the region's surname file, each in proportion to its weight: one `nextLong(total weight)`, then a binary search of the running totals. Women get the feminine form, men the masculine, non-binary either at 50/50. When the first name's and the surname's lines both carry a native form, the name gets a `NativeName` from them: for `ROK`, surname first with no space (`김영민`). Only `ROK` has native names today; each region that gains them gets its order decided then (Japanese is also surname first), and until then the code puts first name, space, surname. No draw |
+| 4 | `lastName` | From the region's surname file, each in proportion to its weight: one `nextLong(total weight)`, then a binary search of the running totals. Women get the feminine form, men the masculine, non-binary either at 50/50. When the first name's and the surname's lines both carry a native form, the name gets a `NativeName` from them: for `ROK` and `JPN`, surname first with no space (`김영민`, `佐藤博`), and for the others first name, space, surname (`Анна Петрова`). Each region that gains native names gets its order decided then. A woman's native surname is the feminine form's, a man's the masculine's, and a non-binary person's follows the same coin flip as their Latin surname. No draw |
 | 5 | `dateOfBirth` | Uniform day between the earliest and latest birthdays that give an age in range on the clock's today |
 | 6 | `employer` | Uniform from `us_companies_domains.txt`. Unless `realCompanies` is on, the name gets the suffix ` [faux]` and the domain's suffix is replaced by `.example`. No draw |
 | 7 | `email` | `first.last` from the romanized name, folded to lowercase ASCII, plus a 0–99 suffix on a coin flip, `@` the employer's domain (step 6) |
@@ -187,7 +188,7 @@ whole number of 1 or more: how many people on Wikidata, in the region's
 countries, carry the name. A first-name line is `Aleksandr|M|16684`.
 Identical rows from an item's `en` and `mul` labels count once, and a feminine
 form's count adds to its masculine form's (Ivanova to Ivanov). So a line is
-`Kim|6768`, `Petrov|Petrova|1663` or `Papadopoulos|Papadopoulou|129`. A
+`Kim|6768`, `Petrov|Petrova|906` or `Papadopoulos|Papadopoulou|129`. A
 surname line
 with no weight has weight 1, so an unweighted file is drawn uniformly. The
 formats in the table below leave the weight out. For Korea this gives Kim
@@ -197,8 +198,23 @@ first-name line with no weight has weight 1 too.
 **Native names.** A first-name or surname line can carry the name in its own
 script as a fourth field, after the weight: `Ji-hoon|M|97|지훈`, and
 `Kim||6768|김`, where the empty second field means the feminine form is the
-same. Three fields still mean `masculine|feminine|weight`. A native field that
-is present must not be empty. Only the South Korean files have one today.
+same. Three fields still mean `masculine|feminine|weight`. A fifth field gives
+the feminine form's native spelling when it differs:
+`Petrov|Petrova|906|Петров|Петрова`. Without it, a feminine form that differs
+has none. A native field that is present must not be empty.
+
+Eight regions have native spellings: `ROK` (Hangul) on every line, and `JPN`
+(kanji, or kana where Wikidata has no kanji item), `RUS` (Russian Cyrillic),
+`GRC` (Greek), `HEB` (Hebrew), `PSE` and `NAF` (Arabic) and `IRN` (Persian) on
+the lines Wikidata has a label for. Those files list the native field in their
+header and keep the formats in the table below, with `|native` (and for a
+feminine surname that differs, `|native feminine`) added. Their share of each
+list's weight with a native spelling: JPN 99.6% of first names and 100% of
+surnames, PSE 95–97%, RUS 87–95%, GRC 85–98%, HEB 87–95%, NAF 63% of surnames
+and 92% of first names, IRN 43% of surnames and 69% of first names. A name
+needs both halves to have a native form. Russian feminine surnames are built
+from the masculine ending (Иванов, Иванова); a few spellings are hand fixes,
+listed as `NATIVE_FIXES` in `build_names.py`.
 
 | File | Lines | Format | Built from |
 |---|---|---|---|
@@ -327,7 +343,7 @@ the bundled files' shape.
 | CLI: count, replay by seed, `--today` fixes birth dates and ages (another day changes only those two columns), pipe columns, JSON shape and escaping, bad arguments exit 2, `--data-dir` replaces files and a bad data file exits 1, `--real-companies` drops the marks | The tool's contract breaks |
 | Non-binary people's first names split about 50/50 between women's and men's names | Non-binary names lean toward one gender again |
 | `NameGenerator`: replay by seed, names from the chosen region, `(1,0,0)` gives women's names and feminine surnames, `split()`, `dataDirectory`, and a seed's first name equals its first person's | Names drift from how people are drawn |
-| Native names: every South Korean line carries one Hangul name, no other region's does; a Korean name's Hangul comes from its own lines, surname first; in mixed people only South Koreans have one, and their emails stay ASCII; a plain surname file gives none; the fourth field parses and an empty one is rejected; each CLI format shows it | A name loses or mismatches its script, or an email picks up Hangul |
+| Native names: every South Korean line carries one Hangul name; each region's native spellings are in its script and cover at least the floor `DataSetTest` sets, and regions without a script have none; a Korean name's Hangul comes from its own lines, surname first, and Japanese too; Russian women get the feminine native form and men the masculine; in mixed people only regions with a script have one, and emails stay ASCII; a plain surname file gives none; the fourth and fifth fields parse and an empty one is rejected; each CLI format shows it | A name loses or mismatches its script, a woman gets a man's form, or an email picks up a native script |
 | `CompanyGenerator`: replay by seed, marked by default, `realCompanies` changes only the marks, `split()`, `dataDirectory` | A default company could deliver mail, or the switch changes which company is drawn |
 | Name and company CLIs: formats, replay, `--data-dir`, bad arguments exit 2, a bad data file exits 1, `--real-companies` | Their contract breaks |
 

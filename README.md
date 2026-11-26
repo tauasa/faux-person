@@ -111,8 +111,9 @@ classDiagram
 ```
 
 *Figure: a `Person` holds a `Name`, a `Gender`, a `Region`, an `Address` and
-an employer `Company`. A South Korean's `Name` also holds a `NativeName` in
-Hangul. All seven types are in `org.tauasa.faux.model`. `Person`, `Name`,
+an employer `Company`. A `Name` also holds a `NativeName` in its own script
+when its region has one: Hangul, kanji, Cyrillic, Greek, Hebrew, Arabic or
+Persian. All seven types are in `org.tauasa.faux.model`. `Person`, `Name`,
 `NativeName`, `Address` and `Company` are immutable records, and `Gender` and
 `Region` are enums. In `org.tauasa.faux`, `PersonGenerator` creates people,
 `NameGenerator` names and `CompanyGenerator` companies.*
@@ -120,8 +121,8 @@ Hangul. All seven types are in `org.tauasa.faux.model`. `Person`, `Name`,
 | Type | What it holds |
 |---|---|
 | `Person` | Name, gender, the region the names came from, date of birth, email, phone, address and employer. There's no age field, because a stored age goes stale: call `ageOn(date)`. `firstName()` and `lastName()` are shortcuts for `name().firstName()` and `name().lastName()` |
-| `Name` | A first name and a surname from one region, in Latin letters, the surname in the form that fits the gender (`Anna Petrova`). `fullName()` gives `"Anna Petrova"`. `nativeName()` gives the name in its own script where the region's data has one, and is empty otherwise. Today only `ROK` does. New in 0.3.0 |
-| `NativeName` | New in 0.3.0. The name in its own script: first name, surname, and the full name as that language writes it. For `Yeong-min Kim` it's `영민`, `김` and `김영민`, surname first with no space |
+| `Name` | A first name and a surname from one region, in Latin letters, the surname in the form that fits the gender (`Anna Petrova`). `fullName()` gives `"Anna Petrova"`. `nativeName()` gives the name in its own script where the region's data has one, and is empty otherwise. New in 0.3.0 for `ROK` (Hangul); 0.4.0 adds `JPN` (kanji, or kana where Wikidata has none), `RUS` (Cyrillic), `GRC` (Greek), `HEB` (Hebrew), `PSE` and `NAF` (Arabic) and `IRN` (Persian), for the names Wikidata spells in that script |
+| `NativeName` | New in 0.3.0. The name in its own script: first name, surname, and the full name as that language writes it. For `Yeong-min Kim` it's `영민`, `김` and `김영민`, surname first with no space, as Japanese is too; for `Anna Petrova`, `Анна`, `Петрова` and `Анна Петрова` |
 | `Address` | Street with house number (`2304 Eileen Ave`), city, two-letter state, five-digit ZIP, and country, always `US` |
 | `Company` | A US company: name, headquarters city and state, and web domain, which the email uses. Generated ones are real companies, marked by default (`Costco [faux]`, `costco.example`) |
 | `Gender` | `FEMALE`, `MALE` or `NONBINARY`. Women get women's and unisex first names and the feminine surname form, men get men's and unisex names and the masculine form. A nonbinary person gets a woman's or a man's first name at 50/50, and either surname form at 50/50 |
@@ -266,8 +267,10 @@ skipped.
 
 From 0.3.0, any region's names can carry their own script as a fourth field:
 `Ji-hoon|M|97|지훈` for a first name, and `Kim||6768|김` for a surname (the
-empty second field means the feminine form is the same). A name gets a
-`nativeName` only when both its first name and its surname have one.
+empty second field means the feminine form is the same). From 0.4.0 a fifth
+field gives the feminine form's native spelling when it differs:
+`Petrov|Petrova|906|Петров|Петрова`. A name gets a `nativeName` only when both
+its first name and its surname have one.
 
 `build()` reads the files, so a mistake shows up there. It throws
 `IllegalArgumentException` if the folder doesn't exist, or holds a `.txt`
@@ -323,8 +326,9 @@ java -jar target/faux-person-0.4.0-SNAPSHOT.jar -n 5 -f json
 ```
 
 `pipe` prints a header row and then 14 `|`-separated columns. The last,
-`native`, is the name in its own script, and it's empty except for South
-Koreans. It's new in 0.3.0: 0.2.0 prints 13 columns. This example came from `--seed 42 --today 2026-11-20`, and the JSON
+`native`, is the name in its own script, and it's empty for regions without
+one and for names Wikidata doesn't spell in it. It's new in 0.3.0: 0.2.0 prints
+13 columns. This example came from `--seed 42 --today 2026-11-20`, and the JSON
 one below from the same plus `-r asia`:
 
 ```text
@@ -370,9 +374,9 @@ and run the same jar as `faux-person.sh`, take its `-o`, `--rebuild`, `-n`,
 ```text
 $ ./faux-name.sh -n 3 --seed 42 -r rus -f pipe
 first|last|native
-Elena|Nikitina|
-Stepan|Malakhov|
-Pēteris|Klymenko|
+Elena|Nikitina|Елена Никитина
+Stepan|Malakhov|Степан Малахов
+Pēteris|Klymenko|Петерис Клименко
 
 $ ./faux-name.sh -n 3 --seed 42 -r rok
 Yeong-min Jeon (전영민)

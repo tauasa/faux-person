@@ -155,16 +155,19 @@ public final class NameGenerator {
         Gender gender = pickGender(genderWeights, random);
         DataSet.FirstName fn = data.pickFirstName(r, gender, random);
         DataSet.Surname sn = data.pickSurname(r, random);
-        String last = switch (gender) {
-            case FEMALE -> sn.feminine();
-            case MALE -> sn.masculine();
-            case NONBINARY -> random.nextBoolean() ? sn.feminine() : sn.masculine();
+        // One choice of form, so the native surname matches the Latin one.
+        boolean feminine = switch (gender) {
+            case FEMALE -> true;
+            case MALE -> false;
+            case NONBINARY -> random.nextBoolean();
         };
-        return new Drawn(r, gender, new Name(fn.name(), last, nativeName(r, fn.nativeName(), sn.nativeName())));
+        String last = feminine ? sn.feminine() : sn.masculine();
+        String nativeLast = feminine ? sn.nativeFeminine() : sn.nativeName();
+        return new Drawn(r, gender, new Name(fn.name(), last, nativeName(r, fn.nativeName(), nativeLast)));
     }
 
     /** Regions whose names are written surname first with no space in their own script. */
-    private static final Set<Region> SURNAME_FIRST = EnumSet.of(Region.ROK);
+    private static final Set<Region> SURNAME_FIRST = EnumSet.of(Region.ROK, Region.JPN);
 
     /**
      * The name in its own script when both the first name and the surname have

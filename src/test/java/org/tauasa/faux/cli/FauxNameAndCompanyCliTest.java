@@ -37,10 +37,10 @@ class FauxNameAndCompanyCliTest {
         out.lines().forEach(l -> assertTrue(l.matches("\\S.* \\S.*"), l));
         assertTrue(err.contains("seed: 1"), err);
 
-        assertEquals(0, run(FauxNameCli::run, "-n", "5", "-s", "1", "-r", "rus", "-f", "pipe"));
+        assertEquals(0, run(FauxNameCli::run, "-n", "5", "-s", "1", "-r", "gbr", "-f", "pipe"));
         assertEquals("first|last|native", out.lines().findFirst().orElseThrow());
         assertEquals(6, out.lines().count());
-        // Russian names have no native form here, so the last column is empty.
+        // British names have no native form, so the last column is empty.
         out.lines().skip(1).forEach(l -> assertEquals(3, l.split("\\|", -1).length, l));
         out.lines().skip(1).forEach(l -> assertTrue(l.endsWith("|"), l));
 

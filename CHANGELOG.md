@@ -5,6 +5,26 @@ range or a bundled file changes what a seed produces, so it's called out here
 (see *Versioning* in [SPEC.md](SPEC.md)). Earlier rulings are in SPEC.md's
 *Decisions* table.
 
+## 0.4.0 (unreleased)
+
+- **Native names in seven more regions:** Japanese (`JPN`, in kanji, or kana
+  where Wikidata has no kanji, surname first), Cyrillic (`RUS`), Greek (`GRC`), Hebrew (`HEB`), Arabic (`PSE`, `NAF`)
+  and Persian (`IRN`), beside South Korea's Hangul.
+- **Seeds:** the same people in Latin letters. The name lists are the same; each
+  line only gains its native spelling from Wikidata, so every seed draws the same
+  names, emails and everything else as 0.3.0.
+- **Breaks:** for those seven regions a generated `Name` or `Person` now carries
+  a native name, so it no longer `equals` the same person from 0.3.0.
+- **Output:** for those regions, `text` adds the native name in brackets, the
+  `pipe` `native` column is filled in, and `json` adds a `nativeName` object.
+  Golden files holding those regions' people change.
+- **Coverage varies** with what Wikidata spells in each script. At seed 42:
+  every Japanese person, 93% of Palestinians, 84% of Greeks and Russians, 75% of Israelis, 57% of
+  North Africans and 23% of Iranians have a native name. Thai isn't included:
+  Wikidata has Thai script for under 3% of the Thai names.
+- **Data:** a surname line can carry a fifth field, the feminine form's native
+  spelling (`Petrov|Petrova|906|Петров|Петрова`).
+
 ## 0.3.0 (2026-11-25)
 
 - **Names in their own script.** `Name` gains `Optional<NativeName> nativeName()`,

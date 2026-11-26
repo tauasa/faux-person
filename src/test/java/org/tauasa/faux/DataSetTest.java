@@ -107,7 +107,7 @@ class DataSetTest {
         assertThrows(IllegalArgumentException.class, () -> DataSet.surname(new String[] {"Kim", "", "many", "김"}));
     }
 
-    /** South Korea's names are romanized, each with its Hangul form; no other region has a native form yet. */
+    /** South Korea's names are romanized, each with its Hangul form, one line per Hangul name. */
     @Test
     void koreanNamesCarryTheirHangul() {
         Pattern hangul = Pattern.compile("[\\uAC00-\\uD7A3]{1,3}");
@@ -121,12 +121,71 @@ class DataSetTest {
         // One line per Hangul name.
         assertEquals(first.size(), first.stream().map(DataSet.FirstName::nativeName).distinct().count());
         assertEquals(sur.size(), sur.stream().map(DataSet.Surname::nativeName).distinct().count());
-        for (Region r : Region.values()) {
-            if (r != Region.ROK) {
-                assertTrue(DATA.firstNames.get(r).stream().allMatch(f -> f.nativeName() == null), r.toString());
-                assertTrue(DATA.surnames.get(r).stream().allMatch(s -> s.nativeName() == null), r.toString());
-            }
+    }
+
+    /** Each region's script, and the share of name weight that must have a native spelling. */
+    private static final Map<Region, Object[]> SCRIPTS = Map.of(
+            Region.ROK, new Object[] {"[\\uAC00-\\uD7A3]+", 100},
+            Region.JPN, new Object[] {"[\\u3005\\u3040-\\u30FF\\u4E00-\\u9FFF]+", 99},
+            Region.RUS, new Object[] {"[\\u0410-\\u044F\\u0401\\u0451]+(-[\\u0410-\\u044F\\u0401\\u0451]+)*", 85},
+            Region.GRC, new Object[] {"[\\u0370-\\u03FF\\u1F00-\\u1FFF]+(-[\\u0370-\\u03FF\\u1F00-\\u1FFF]+)*", 80},
+            Region.HEB, new Object[] {"[\\u0590-\\u05FF]+([ '\\u05F3\\u05F4-][\\u0590-\\u05FF]+)*", 85},
+            Region.PSE, new Object[] {"[\\u0600-\\u06FF\\u0750-\\u077F]+( [\\u0600-\\u06FF\\u0750-\\u077F]+)*", 90},
+            Region.NAF, new Object[] {"[\\u0600-\\u06FF\\u0750-\\u077F]+( [\\u0600-\\u06FF\\u0750-\\u077F]+)*", 60},
+            Region.IRN, new Object[] {"[\\u0600-\\u06FF\\u0750-\\u077F]+( [\\u0600-\\u06FF\\u0750-\\u077F]+)*", 40});
+
+    /**
+     * Native spellings are in their region's script, cover most of each list's
+     * weight (floors a little under the built coverage), and only the regions
+     * with a script have any.
+     */
+    @ParameterizedTest
+    @EnumSource(Region.class)
+    void nativeNamesAreInTheirRegionsScript(Region r) {
+        var first = DATA.firstNames.get(r);
+        var sur = DATA.surnames.get(r);
+        Object[] script = SCRIPTS.get(r);
+        if (script == null) {
+            assertTrue(first.stream().allMatch(f -> f.nativeName() == null), r.toString());
+            assertTrue(sur.stream().allMatch(s -> s.nativeName() == null && s.nativeFeminine() == null), r.toString());
+            return;
         }
+        Pattern p = Pattern.compile((String) script[0]);
+        first.stream().filter(f -> f.nativeName() != null)
+                .forEach(f -> assertTrue(p.matcher(f.nativeName()).matches(), f.toString()));
+        sur.forEach(s -> {
+            if (s.nativeName() != null) {
+                assertTrue(p.matcher(s.nativeName()).matches(), s.toString());
+            }
+            if (s.nativeFeminine() != null) {
+                assertTrue(p.matcher(s.nativeFeminine()).matches(), s.toString());
+                assertTrue(s.nativeName() != null, "a feminine native needs a masculine one: " + s);
+            }
+            if (s.feminine().equals(s.masculine())) {
+                assertEquals(s.nativeName(), s.nativeFeminine(), s.toString());
+            }
+        });
+        int floor = (Integer) script[1];
+        long fw = first.stream().mapToLong(DataSet.FirstName::weight).sum();
+        long fn = first.stream().filter(f -> f.nativeName() != null).mapToLong(DataSet.FirstName::weight).sum();
+        long sw = sur.stream().mapToLong(DataSet.Surname::weight).sum();
+        long sn = sur.stream().filter(s -> s.nativeName() != null).mapToLong(DataSet.Surname::weight).sum();
+        assertTrue(fn * 100 >= fw * floor, r + " first names: " + (100 * fn / fw) + "%");
+        assertTrue(sn * 100 >= sw * floor, r + " surnames: " + (100 * sn / sw) + "%");
+    }
+
+    /** Russian feminine surnames follow their masculine form: Иванов, Иванова. */
+    @Test
+    void russianFeminineSurnamesMatchTheirMasculine() {
+        DataSet.Surname ivanov = DATA.surnames.get(Region.RUS).stream()
+                .filter(s -> s.masculine().equals("Ivanov")).findFirst().orElseThrow();
+        assertEquals("Иванов", ivanov.nativeName());
+        assertEquals("Иванова", ivanov.nativeFeminine());
+        assertEquals(new DataSet.Surname("Petrov", "Petrova", 1663, "Петров", "Петрова"),
+                DataSet.surname(new String[] {"Petrov", "Petrova", "1663", "Петров", "Петрова"}));
+        // Four fields with a feminine form that differs: no native spelling for it.
+        assertEquals(null, DataSet.surname(new String[] {"Angelopoulos", "Angelopoulou", "21", "Αγγελόπουλος"})
+                .nativeFeminine());
     }
 
     /**
