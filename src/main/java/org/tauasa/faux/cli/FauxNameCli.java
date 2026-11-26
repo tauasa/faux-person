@@ -76,8 +76,8 @@ public final class FauxNameCli {
             }
             NameGenerator gen = b.build();
             err.println("seed: " + gen.seed());
-            CliSupport.print(out, format, "first|last", count, gen::next,
-                    Name::fullName, FauxNameCli::pipe, FauxNameCli::json);
+            CliSupport.print(out, format, "first|last|native", count, gen::next,
+                    FauxNameCli::text, FauxNameCli::pipe, FauxNameCli::json);
             return 0;
         } catch (IllegalArgumentException e) {
             err.println("faux-name: " + e.getMessage());
@@ -89,11 +89,18 @@ public final class FauxNameCli {
         }
     }
 
+    /** {@code Ji-hoon Kim (김지훈)}, or just {@code Anna Petrova} when there's no native form. */
+    static String text(Name n) {
+        String nat = CliSupport.nativeFull(n);
+        return n.fullName() + (nat.isEmpty() ? "" : " (" + nat + ")");
+    }
+
     static String pipe(Name n) {
-        return n.firstName() + "|" + n.lastName();
+        return n.firstName() + "|" + n.lastName() + "|" + CliSupport.nativeFull(n);
     }
 
     static String json(Name n) {
-        return "{" + field("firstName", n.firstName()) + "," + field("lastName", n.lastName()) + "}";
+        return "{" + field("firstName", n.firstName()) + "," + field("lastName", n.lastName())
+                + CliSupport.nativeJson(n) + "}";
     }
 }

@@ -93,27 +93,40 @@ class DataSetTest {
     }
 
     @Test
-    void hangulFilesPairKoreanScriptWithItsRomanization() throws Exception {
+    void nativeNamesParseAsTheFourthField() {
+        assertEquals(new DataSet.FirstName("Ji-hoon", 'M', 97, "지훈"),
+                DataSet.firstName(new String[] {"Ji-hoon", "M", "97", "지훈"}));
+        assertEquals(new DataSet.Surname("Kim", "Kim", 6768, "김"),
+                DataSet.surname(new String[] {"Kim", "", "6768", "김"}));
+        assertEquals(new DataSet.Surname("Petrov", "Petrova", 1663, "Петров"),
+                DataSet.surname(new String[] {"Petrov", "Petrova", "1663", "Петров"}));
+        // Three fields still mean masculine|feminine|weight, with no native form.
+        assertEquals(null, DataSet.surname(new String[] {"Petrov", "Petrova", "1663"}).nativeName());
+        assertThrows(IllegalArgumentException.class, () -> DataSet.firstName(new String[] {"Ji-hoon", "M", "97", ""}));
+        assertThrows(IllegalArgumentException.class, () -> DataSet.surname(new String[] {"Kim", "", "6768", ""}));
+        assertThrows(IllegalArgumentException.class, () -> DataSet.surname(new String[] {"Kim", "", "many", "김"}));
+    }
+
+    /** South Korea's names are romanized, each with its Hangul form; no other region has a native form yet. */
+    @Test
+    void koreanNamesCarryTheirHangul() {
         Pattern hangul = Pattern.compile("[\\uAC00-\\uD7A3]{1,3}");
         Pattern roman = Pattern.compile("[A-Z][A-Za-z'-]*[a-z]");
-        List<String> first = extra("rok_hangul_first_names.txt");
-        List<String> sur = extra("rok_hangul_surnames.txt");
-        assertTrue(first.size() >= 1000, "first names: " + first.size());
-        assertTrue(sur.size() >= 100, "surnames: " + sur.size());
-        for (String line : first) {
-            String[] f = line.split("\\|", -1);
-            assertEquals(4, f.length, line);
-            assertTrue(hangul.matcher(f[0]).matches() && roman.matcher(f[1]).matches(), line);
-            assertTrue(f[2].matches("[FMU]"), line);
-            assertTrue(Long.parseLong(f[3]) >= 1, line);
+        var first = DATA.firstNames.get(Region.ROK);
+        var sur = DATA.surnames.get(Region.ROK);
+        first.forEach(f -> assertTrue(roman.matcher(f.name()).matches()
+                && f.nativeName() != null && hangul.matcher(f.nativeName()).matches(), f.toString()));
+        sur.forEach(s -> assertTrue(roman.matcher(s.masculine()).matches() && s.feminine().equals(s.masculine())
+                && s.nativeName() != null && hangul.matcher(s.nativeName()).matches(), s.toString()));
+        // One line per Hangul name.
+        assertEquals(first.size(), first.stream().map(DataSet.FirstName::nativeName).distinct().count());
+        assertEquals(sur.size(), sur.stream().map(DataSet.Surname::nativeName).distinct().count());
+        for (Region r : Region.values()) {
+            if (r != Region.ROK) {
+                assertTrue(DATA.firstNames.get(r).stream().allMatch(f -> f.nativeName() == null), r.toString());
+                assertTrue(DATA.surnames.get(r).stream().allMatch(s -> s.nativeName() == null), r.toString());
+            }
         }
-        for (String line : sur) {
-            String[] f = line.split("\\|", -1);
-            assertEquals(3, f.length, line);
-            assertTrue(hangul.matcher(f[0]).matches() && roman.matcher(f[1]).matches(), line);
-            assertTrue(Long.parseLong(f[2]) >= 1, line);
-        }
-        assertEquals(first.size(), first.stream().map(l -> l.split("\\|")[0]).distinct().count());
     }
 
     /**
@@ -125,7 +138,7 @@ class DataSetTest {
     @Test
     void everyDataFileIsCleanUnicode() throws Exception {
         List<java.nio.file.Path> files = allDataFiles();
-        assertTrue(files.size() >= 53, "data files: " + files.size());
+        assertTrue(files.size() >= 51, "data files: " + files.size());
         for (java.nio.file.Path p : files) {
             String name = p.getFileName().toString();
             byte[] raw = java.nio.file.Files.readAllBytes(p);
@@ -157,7 +170,7 @@ class DataSetTest {
         }
     }
 
-    /** The data files kept outside the jar until the generator reads them. */
+    /** The data file kept outside the jar until the generator reads it. */
     private static final java.nio.file.Path EXTRA = java.nio.file.Path.of("tools/data/extra");
 
     private static List<String> extra(String name) throws Exception {

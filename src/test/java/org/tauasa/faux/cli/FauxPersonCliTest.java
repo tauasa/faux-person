@@ -89,11 +89,27 @@ class FauxPersonCliTest {
     }
 
     @Test
-    void pipeFormatHasAHeaderAndThirteenColumns() {
+    void pipeFormatHasAHeaderAndFourteenColumns() {
         assertEquals(0, run("-n", "3", "-s", "2", "--format", "pipe"));
         var lines = out.lines().toList();
         assertEquals(4, lines.size());
-        lines.forEach(l -> assertEquals(13, l.split("\\|", -1).length, l));
+        assertTrue(lines.get(0).endsWith("|employer|native"), lines.get(0));
+        lines.forEach(l -> assertEquals(14, l.split("\\|", -1).length, l));
+    }
+
+    /** A South Korean's Hangul name leads the text brackets, fills the last pipe column and is a JSON object. */
+    @Test
+    void koreansShowTheirHangulInEachFormat() {
+        assertEquals(0, run("-n", "3", "-s", "2", "-r", "rok", "--today", "2026-11-20"));
+        out.lines().forEach(l -> assertTrue(l.matches("[A-Za-z' -]+ \\([\\uAC00-\\uD7A3]{2,6}, \\w+, \\d+\\) <.*"), l));
+        assertEquals(0, run("-n", "3", "-s", "2", "-r", "rok", "-f", "pipe"));
+        out.lines().skip(1).forEach(l -> assertTrue(l.matches(".*\\|[\\uAC00-\\uD7A3]{2,6}"), l));
+        assertEquals(0, run("-n", "3", "-s", "2", "-r", "rok", "-f", "json"));
+        assertEquals(3, out.split("\"nativeName\":\\{\"firstName\":\"[^\"]+\",\"lastName\":\"[^\"]+\",\"fullName\":\"").length - 1, out);
+        assertEquals(0, run("-n", "3", "-s", "2", "-r", "rus", "-f", "json"));
+        assertTrue(!out.contains("nativeName"), out);
+        assertEquals(0, run("-n", "3", "-s", "2", "-r", "rus", "-f", "pipe"));
+        out.lines().skip(1).forEach(l -> assertTrue(l.endsWith("|"), l));
     }
 
     @Test

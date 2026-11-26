@@ -61,6 +61,48 @@ class NameGeneratorTest {
         }
     }
 
+    /**
+     * A South Korean name carries its Hangul, from the same lines as its romanized
+     * first name and surname, written surname first with no space.
+     */
+    @Test
+    void koreanNamesCarryTheirHangulSurnameFirst() {
+        var hangulOf = new java.util.HashMap<String, String>();
+        DATA.firstNames.get(Region.ROK).forEach(f -> hangulOf.put("first:" + f.name(), f.nativeName()));
+        DATA.surnames.get(Region.ROK).forEach(s -> hangulOf.merge("last:" + s.masculine(), s.nativeName(),
+                (a, b) -> a + "/" + b));  // Lee is both 이 and 리
+        for (Name n : NameGenerator.builder().seed(11).region(Region.ROK).build().next(500)) {
+            var k = n.nativeName().orElseThrow(() -> new AssertionError(n.toString()));
+            assertEquals(hangulOf.get("first:" + n.firstName()), k.firstName(), n.toString());
+            assertTrue(Set.of(hangulOf.get("last:" + n.lastName()).split("/")).contains(k.lastName()), n.toString());
+            assertEquals(k.lastName() + k.firstName(), k.fullName(), n.toString());
+        }
+    }
+
+    /** Mixed people: only South Koreans have a native name, and their email stays in romanized ASCII. */
+    @Test
+    void onlyKoreanNamesHaveANativeForm() {
+        int koreans = 0;
+        for (Person p : PersonGenerator.builder().seed(12).build().next(2000)) {
+            assertEquals(p.region() == Region.ROK, p.name().nativeName().isPresent(), p.toString());
+            if (p.region() == Region.ROK) {
+                koreans++;
+                assertTrue(p.email().matches("[a-z]+\\.[a-z]+\\d{0,2}@[a-z0-9.-]+"), p.email());
+            }
+        }
+        assertTrue(koreans > 20, "koreans: " + koreans);
+    }
+
+    /** A native name needs both halves: a data file with Hangul first names but plain surnames gives none. */
+    @Test
+    void aNativeNameNeedsBothHalves(@TempDir Path dir) throws Exception {
+        Files.writeString(dir.resolve("rok_surnames.txt"), "Kim|6768\n");
+        for (Name n : NameGenerator.builder().seed(14).region(Region.ROK).dataDirectory(dir).build().next(50)) {
+            assertEquals("Kim", n.lastName());
+            assertTrue(n.nativeName().isEmpty(), n.toString());
+        }
+    }
+
     @Test
     void genderWeightsPickTheFormOfTheName() {
         Set<String> women = DATA.firstNames.get(Region.RUS).stream()

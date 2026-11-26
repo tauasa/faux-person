@@ -2,12 +2,16 @@ package org.tauasa.faux;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.EnumSet;
 import java.util.List;
+import java.util.Optional;
+import java.util.Set;
 import java.util.SplittableRandom;
 import java.util.stream.Stream;
 
 import org.tauasa.faux.model.Gender;
 import org.tauasa.faux.model.Name;
+import org.tauasa.faux.model.NativeName;
 import org.tauasa.faux.model.Region;
 
 /**
@@ -17,7 +21,9 @@ import org.tauasa.faux.model.Region;
  *
  * <p>Each name is drawn for a gender, picked by weight as for a person, so the
  * first name and the surname's form agree: a Russian woman's name is
- * {@code Anna Petrova}, not {@code Anna Petrov}. The same seed and settings
+ * {@code Anna Petrova}, not {@code Anna Petrov}. Where the region's data has
+ * names in their own script, as South Korea's has Hangul, the name carries that
+ * form too ({@link Name#nativeName()}). The same seed and settings
  * always give the same names. A generator is not thread-safe: give each thread
  * its own with {@link #split()}.
  *
@@ -147,14 +153,29 @@ public final class NameGenerator {
     static Drawn draw(DataSet data, Region region, int[] genderWeights, SplittableRandom random) {
         Region r = region != null ? region : Region.values()[random.nextInt(Region.values().length)];
         Gender gender = pickGender(genderWeights, random);
-        String first = data.pickFirstName(r, gender, random).name();
+        DataSet.FirstName fn = data.pickFirstName(r, gender, random);
         DataSet.Surname sn = data.pickSurname(r, random);
         String last = switch (gender) {
             case FEMALE -> sn.feminine();
             case MALE -> sn.masculine();
             case NONBINARY -> random.nextBoolean() ? sn.feminine() : sn.masculine();
         };
-        return new Drawn(r, gender, new Name(first, last));
+        return new Drawn(r, gender, new Name(fn.name(), last, nativeName(r, fn.nativeName(), sn.nativeName())));
+    }
+
+    /** Regions whose names are written surname first with no space in their own script. */
+    private static final Set<Region> SURNAME_FIRST = EnumSet.of(Region.ROK);
+
+    /**
+     * The name in its own script when both the first name and the surname have
+     * one. No draw, so it doesn't change what any seed produces.
+     */
+    static Optional<NativeName> nativeName(Region r, String first, String last) {
+        if (first == null || last == null) {
+            return Optional.empty();
+        }
+        String full = SURNAME_FIRST.contains(r) ? last + first : first + " " + last;
+        return Optional.of(new NativeName(first, last, full));
     }
 
     private static Gender pickGender(int[] genderWeights, SplittableRandom random) {

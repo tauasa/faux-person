@@ -22,6 +22,12 @@ class PersonTest {
     }
 
     @Test
+    void aNameWithoutANativeFormHasAnEmptyOne() {
+        assertEquals(java.util.Optional.empty(), new Name("Ada", "Lovelace").nativeName());
+        assertEquals(new Name("Ada", "Lovelace"), new Name("Ada", "Lovelace", java.util.Optional.empty()));
+    }
+
+    @Test
     void nameShortcutsMatchTheName() {
         Person p = bornOn(LocalDate.of(1990, 6, 15));
         assertEquals("Ada", p.firstName());
@@ -67,6 +73,15 @@ class PersonTest {
                 String[] a = {"Ada", "Lovelace"};
                 a[at] = null;
                 return new Name(a[0], a[1]);
+            });
+        }
+        b.add(args -> new Name("Ji-hoon", "Kim", null));
+        for (int i = 0; i < 3; i++) {
+            int at = i;
+            b.add(args -> {
+                String[] a = {"지훈", "김", "김지훈"};
+                a[at] = null;
+                return new NativeName(a[0], a[1], a[2]);
             });
         }
         for (int i = 0; i < 5; i++) {

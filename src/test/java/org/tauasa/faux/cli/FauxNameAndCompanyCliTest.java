@@ -38,13 +38,23 @@ class FauxNameAndCompanyCliTest {
         assertTrue(err.contains("seed: 1"), err);
 
         assertEquals(0, run(FauxNameCli::run, "-n", "5", "-s", "1", "-r", "rus", "-f", "pipe"));
-        assertEquals("first|last", out.lines().findFirst().orElseThrow());
+        assertEquals("first|last|native", out.lines().findFirst().orElseThrow());
         assertEquals(6, out.lines().count());
-        out.lines().skip(1).forEach(l -> assertEquals(2, l.split("\\|").length, l));
+        // Russian names have no native form here, so the last column is empty.
+        out.lines().skip(1).forEach(l -> assertEquals(3, l.split("\\|", -1).length, l));
+        out.lines().skip(1).forEach(l -> assertTrue(l.endsWith("|"), l));
+
+        assertEquals(0, run(FauxNameCli::run, "-n", "4", "-s", "1", "-r", "rok"));
+        out.lines().forEach(l -> assertTrue(l.matches("[A-Za-z' -]+ \\([\\uAC00-\\uD7A3]{2,6}\\)"), l));
+        assertEquals(0, run(FauxNameCli::run, "-n", "4", "-s", "1", "-r", "rok", "-f", "pipe"));
+        out.lines().skip(1).forEach(l -> assertTrue(l.matches("[^|]+\\|[^|]+\\|[\\uAC00-\\uD7A3]{2,6}"), l));
+        assertEquals(0, run(FauxNameCli::run, "-n", "4", "-s", "1", "-r", "rok", "-f", "json"));
+        assertEquals(4, out.split("\"nativeName\"").length - 1, out);
 
         assertEquals(0, run(FauxNameCli::run, "-n", "2", "-s", "1", "-f", "json"));
         assertTrue(out.startsWith("[") && out.strip().endsWith("]"), out);
-        assertEquals(2, out.split("\"firstName\"").length - 1);
+        // One record per line; a Korean name's nativeName object has its own firstName key.
+        assertEquals(2, out.lines().filter(l -> l.startsWith("  {\"firstName\"")).count(), out);
     }
 
     @Test

@@ -66,7 +66,13 @@ classDiagram
     class Name {
         String firstName
         String lastName
+        Optional~NativeName~ nativeName
         String fullName()
+    }
+    class NativeName {
+        String firstName
+        String lastName
+        String fullName
     }
     class Address {
         String street
@@ -97,6 +103,7 @@ classDiagram
         ... 24 values
     }
     Person --> Name : name
+    Name --> NativeName : nativeName, when the region has one
     Person --> Address : address
     Person --> Company : employer
     Person --> Gender
@@ -104,15 +111,17 @@ classDiagram
 ```
 
 *Figure: a `Person` holds a `Name`, a `Gender`, a `Region`, an `Address` and
-an employer `Company`. All six types are in `org.tauasa.faux.model`. `Person`,
-`Name`, `Address` and `Company` are immutable records, and `Gender` and
+an employer `Company`. A South Korean's `Name` also holds a `NativeName` in
+Hangul. All seven types are in `org.tauasa.faux.model`. `Person`, `Name`,
+`NativeName`, `Address` and `Company` are immutable records, and `Gender` and
 `Region` are enums. In `org.tauasa.faux`, `PersonGenerator` creates people,
 `NameGenerator` names and `CompanyGenerator` companies.*
 
 | Type | What it holds |
 |---|---|
 | `Person` | Name, gender, the region the names came from, date of birth, email, phone, address and employer. There's no age field, because a stored age goes stale: call `ageOn(date)`. `firstName()` and `lastName()` are shortcuts for `name().firstName()` and `name().lastName()` |
-| `Name` | A first name and a surname from one region, the surname in the form that fits the gender (`Anna Petrova`). `fullName()` gives `"Anna Petrova"` |
+| `Name` | A first name and a surname from one region, in Latin letters, the surname in the form that fits the gender (`Anna Petrova`). `fullName()` gives `"Anna Petrova"`. `nativeName()` gives the name in its own script where the region's data has one, and is empty otherwise. Today only `ROK` does |
+| `NativeName` | The name in its own script: first name, surname, and the full name as that language writes it. For `Yeong-min Kim` it's `영민`, `김` and `김영민`, surname first with no space |
 | `Address` | Street with house number (`2304 Eileen Ave`), city, two-letter state, five-digit ZIP, and country, always `US` |
 | `Company` | A US company: name, headquarters city and state, and web domain, which the email uses. Generated ones are real companies, marked by default (`Costco [faux]`, `costco.example`) |
 | `Gender` | `FEMALE`, `MALE` or `NONBINARY`. Women get women's and unisex first names and the feminine surname form, men get men's and unisex names and the masculine form. A nonbinary person gets a woman's or a man's first name at 50/50, and either surname form at 50/50 |
@@ -179,6 +188,8 @@ import org.tauasa.faux.CompanyGenerator;
 import org.tauasa.faux.NameGenerator;
 import org.tauasa.faux.model.Company;
 import org.tauasa.faux.model.Name;
+import org.tauasa.faux.model.NativeName;
+import org.tauasa.faux.model.Region;
 
 NameGenerator names = NameGenerator.builder()
         .seed(42)                    // optional
@@ -187,6 +198,9 @@ NameGenerator names = NameGenerator.builder()
         .build();
 Name n = names.next();               // Elena Nikitina
 String full = n.fullName();          // "Elena Nikitina"
+
+Name k = NameGenerator.builder().seed(42).region(Region.ROK).build().next();
+String hangul = k.nativeName().map(NativeName::fullName).orElse("");   // "김영민" for Yeong-min Kim
 
 CompanyGenerator companies = CompanyGenerator.builder()
         .seed(42)                    // optional
@@ -249,6 +263,11 @@ copy names in its first line, such as `# name|gender|weight`. Weights are
 optional, and a name without one counts as 1. Lines starting with `#` are
 skipped.
 
+Any region's names can carry their own script as a fourth field:
+`Ji-hoon|M|97|지훈` for a first name, and `Kim||6768|김` for a surname (the
+empty second field means the feminine form is the same). A name gets a
+`nativeName` only when both its first name and its surname have one.
+
 `build()` reads the files, so a mistake shows up there. It throws
 `IllegalArgumentException` if the folder doesn't exist, or holds a `.txt`
 file with a name it doesn't know, which is usually a misspelling that would
@@ -302,13 +321,26 @@ mvn package
 java -jar target/faux-person-0.3.0-SNAPSHOT.jar -n 5 -f json
 ```
 
-`pipe` prints a header row and then 13 `|`-separated columns. This example
-came from `--seed 42 --today 2026-11-20`, and the JSON one below from the same
-plus `-r asia`:
+`pipe` prints a header row and then 14 `|`-separated columns. The last,
+`native`, is the name in its own script, and it's empty except for South
+Koreans. This example came from `--seed 42 --today 2026-11-20`, and the JSON
+one below from the same plus `-r asia`:
 
 ```text
-first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer
-Juha|Karvonen|MALE|FIN|1963-08-07|63|juha.karvonen@morganstanley.example|(319) 555-0128|9694 W 6th Ave|Humboldt|SD|57035|Morgan Stanley [faux]
+first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer|native
+Juha|Karvonen|MALE|FIN|1963-08-07|63|juha.karvonen@morganstanley.example|(319) 555-0128|9694 W 6th Ave|Humboldt|SD|57035|Morgan Stanley [faux]|
+```
+
+A South Korean shows the Hangul in every format: first in the brackets in
+`text`, in the `native` column in `pipe`, and as a `nativeName` object after
+`lastName` in `json`. The email stays in Latin letters. With `-r rok`:
+
+```text
+Yeong-min Kim (김영민, female, 19) <yeongmin.kim56@spglobal.example> (319) 555-0128, 9694 W 6th Ave, Humboldt, SD 57035, works at S&P Global [faux]
+```
+
+```json
+{"firstName":"Yeong-min","lastName":"Kim","nativeName":{"firstName":"영민","lastName":"김","fullName":"김영민"},"gender":"FEMALE", ...}
 ```
 
 `json` prints one array, with each person on its own line (wrapped here to
@@ -336,10 +368,15 @@ and run the same jar as `faux-person.sh`, take its `-o`, `--rebuild`, `-n`,
 
 ```text
 $ ./faux-name.sh -n 3 --seed 42 -r rus -f pipe
-first|last
-Elena|Nikitina
-Stepan|Malakhov
-Pēteris|Klymenko
+first|last|native
+Elena|Nikitina|
+Stepan|Malakhov|
+Pēteris|Klymenko|
+
+$ ./faux-name.sh -n 3 --seed 42 -r rok
+Yeong-min Kim (김영민)
+Ju-won Ju (주주원)
+Chang-hun Lee (이창훈)
 
 $ ./faux-company.sh -n 2 --seed 42
 Griffon Corporation [faux], New York City, NY (griffon.example)
@@ -348,11 +385,11 @@ American States Water [faux], San Dimas, CA (aswater.example)
 
 | Script | Also takes | `pipe` columns | `json` fields |
 |---|---|---|---|
-| `faux-name.sh` | `-r, --region R` | `first\|last` | `firstName`, `lastName` |
+| `faux-name.sh` | `-r, --region R` | `first\|last\|native` | `firstName`, `lastName`, and `nativeName` when there is one |
 | `faux-company.sh` | `--real-companies` | `name\|city\|state\|domain` | `name`, `city`, `state`, `domain` |
 
-`text` prints one name, or one company with its city, state and domain, per
-line. Without the scripts, run their classes from the jar:
+`text` prints one name, with its native form in brackets when it has one, or
+one company with its city, state and domain, per line. Without the scripts, run their classes from the jar:
 
 ```bash
 java -cp target/faux-person-0.3.0-SNAPSHOT.jar org.tauasa.faux.cli.FauxNameCli -n 5
@@ -370,14 +407,13 @@ and the date it was built:
 
 | Data | How many | Source |
 |---|---|---|
-| First names and surnames for each of the 24 regions | Up to 1,200 per file. Shorter where Wikidata has fewer people, or the country has fewer names: Vietnamese (95 first names), South Korean surnames (123), Palestinian (342 and 188) | Wikidata (CC0), ranked by how many people of each citizenship carry them. Each name also carries that count as its weight (`Kim|6766`, `Aleksandr|M|16684`), and names are drawn in proportion to it. Wikidata counts notable people, so the weights lean toward older generations' names |
+| First names and surnames for each of the 24 regions | Up to 1,200 per file. Shorter where Wikidata has fewer people, or the country has fewer names: Vietnamese (95 first names), South Korean surnames (111), Palestinian (342 and 188) | Wikidata (CC0), ranked by how many people of each citizenship carry them. Each name also carries that count as its weight (`Kim||6768|김`, `Aleksandr|M|16684`), and names are drawn in proportion to it. Wikidata counts notable people, so the weights lean toward older generations' names. South Korean names come from their Korean (Hangul) labels, each with the romanization most people carry |
 | US companies with headquarters and domain | 1,500 | Wikidata: by revenue, then NYSE- and Nasdaq-listed companies by employee count. Headquarters placed with GeoNames (CC BY 4.0) |
 | US streets with city, state and ZIP | 1,500, 30 per state | US Census TIGER/Line 2024 (public domain), with each ZIP's city and state from GeoNames |
 
-Three more files are in [`tools/data/extra/`](tools/data/extra/), outside the
-jar, until the generator reads them: South Korean names in Hangul with their
-romanization and weights (1,200 first names, 118 surnames, from Wikidata), and
-1,250 US cities with state and ZIP (25 per state, from GeoNames).
+One more file is in [`tools/data/extra/`](tools/data/extra/), outside the
+jar, until the generator reads it: 1,250 US cities with state and ZIP (25 per
+state, from GeoNames).
 
 `NOTICE` gives the full attribution. [`tools/data/`](tools/data/) has the
 scripts that rebuild the files. [SPEC.md](SPEC.md) explains how each field is
