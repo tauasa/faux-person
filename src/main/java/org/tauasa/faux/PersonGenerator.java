@@ -88,7 +88,7 @@ public final class PersonGenerator {
         NameGenerator.Drawn drawn = NameGenerator.draw(data, region, genderWeights, random);
         Name name = drawn.name();
         LocalDate dob = pickDateOfBirth();
-        Company employer = CompanyGenerator.draw(data, realCompanies, random);
+        Company employer = CompanyGenerator.draw(data.employers(drawn.region()), realCompanies, random);
         String email = emailLocalPart(name.firstName(), name.lastName()) + "@" + employer.domain();
         String phone = String.format(Locale.ROOT, "(%03d) 555-01%02d", pickAreaCode(), random.nextInt(100));
         DataSet.Street s = pick(data.streets);
@@ -548,7 +548,9 @@ public final class PersonGenerator {
          * with the same names, such as {@code western_first_names.txt} or
          * {@code us_companies_domains.txt}. Files it doesn't hold come from
          * the bundled data. The files are read when {@link #build()} runs, and
-         * use the bundled files' formats (README.md, "Use your own data").
+         * use the bundled files' formats (README.md, "Use your own data"). An
+         * empty {@code intl_companies_domains.txt} leaves the international
+         * companies out, so employers come only from your US file.
          *
          * @param dir a folder, or {@code null} for the bundled data only
          * @return this builder

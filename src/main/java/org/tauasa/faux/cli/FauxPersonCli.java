@@ -159,6 +159,7 @@ public final class FauxPersonCli {
                 + "," + field("state", a.state()) + "," + field("postalCode", a.postalCode())
                 + "," + field("country", a.country()) + "}"
                 + ",\"employer\":{" + field("name", e.name()) + "," + field("city", e.city())
-                + "," + field("state", e.state()) + "," + field("domain", e.domain()) + "}}";
+                + "," + field("state", e.state()) + "," + field("country", e.country())
+                + "," + field("domain", e.domain()) + "}}";
     }
 }

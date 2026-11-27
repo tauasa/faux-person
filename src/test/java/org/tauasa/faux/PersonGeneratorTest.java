@@ -70,7 +70,8 @@ class PersonGeneratorTest {
     @Test
     void byDefaultEmployersAreMarkedAndEmailsAreUnderDotExample() {
         Set<Company> marked = DATA.companies.stream()
-                .map(c -> new Company(c.name() + " [faux]", c.city(), c.state(), CompanyGenerator.exampleDomain(c.domain())))
+                .map(c -> new Company(c.name() + " [faux]", c.city(), c.state(), c.country(),
+                        CompanyGenerator.exampleDomain(c.domain())))
                 .collect(Collectors.toSet());
         Pattern shape = Pattern.compile("^[a-z0-9]+\\.[a-z0-9]+\\d{0,2}@[a-z0-9-]+\\.example$");
         for (Person p : gen(3).build().next(2000)) {
@@ -78,6 +79,43 @@ class PersonGeneratorTest {
             assertTrue(shape.matcher(e).matches(), e);
             assertTrue(marked.contains(p.employer()), p.employer().toString());
             assertTrue(e.endsWith("@" + p.employer().domain()), e);
+        }
+    }
+
+    /**
+     * A person works for a company in their region's countries; a small region's
+     * people in its nearby countries (Palestine: the Arab Middle East, Central
+     * Africa: Africa); WESTERN's anywhere.
+     */
+    @org.junit.jupiter.params.ParameterizedTest
+    @org.junit.jupiter.params.provider.EnumSource(Region.class)
+    void employersComeFromThePersonsRegion(Region r) {
+        Set<String> own = DataSet.COUNTRIES.get(r);
+        Set<String> near = DataSet.NEARBY.get(r);
+        long ownCount = own == null ? 0 : DATA.companies.stream().filter(c -> own.contains(c.country())).count();
+        Set<String> allowed = own == null ? null : ownCount >= DataSet.MIN_EMPLOYERS ? own : near;
+        Set<String> seen = new java.util.HashSet<>();
+        for (Person p : gen(21).region(r).realCompanies(true).build().next(400)) {
+            seen.add(p.employer().country());
+            if (allowed != null) {
+                assertTrue(allowed.contains(p.employer().country()), r + ": " + p.employer());
+            }
+        }
+        if (r == Region.WESTERN) {
+            assertTrue(seen.size() > 20, "WESTERN should draw from every company: " + seen.size() + " countries");
+        }
+        // Nobody in Palestine works for an Israeli company.
+        if (r == Region.PSE) {
+            assertTrue(!seen.contains("IL"), seen.toString());
+        }
+    }
+
+    /** An empty international file in a data directory leaves only the US companies. */
+    @Test
+    void anEmptyInternationalFileLeavesOnlyUsEmployers(@TempDir Path dir) throws Exception {
+        Files.writeString(dir.resolve("intl_companies_domains.txt"), "# none\n");
+        for (Person p : gen(22).region(Region.JPN).dataDirectory(dir).build().next(50)) {
+            assertEquals("US", p.employer().country(), p.employer().toString());
         }
     }
 

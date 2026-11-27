@@ -287,10 +287,22 @@ class DataSetTest {
             assertTrue(ZIP.matcher(s.postalCode()).matches(), s.toString());
         });
         DATA.companies.forEach(c -> {
-            assertTrue(STATES.contains(c.state()), c.toString());
+            if (c.country().equals("US")) {
+                assertTrue(STATES.contains(c.state()), c.toString());
+            } else {
+                assertEquals("", c.state(), c.toString());
+                // A current ISO 3166-1 code: no SU, DD, YU or XK.
+                assertTrue(java.util.Set.of(java.util.Locale.getISOCountries()).contains(c.country()), c.toString());
+            }
             assertTrue(c.domain().matches("[a-z0-9-]+(\\.[a-z0-9-]+)+"), c.toString());
         });
-        assertTrue(DATA.companies.size() >= 1000);
+        long us = DATA.companies.stream().filter(c -> c.country().equals("US")).count();
+        assertTrue(us >= 1000, "US companies: " + us);
+        assertTrue(DATA.companies.size() - us >= 3000, "international companies: " + (DATA.companies.size() - us));
+        assertTrue(DATA.companies.stream().map(Company::country).distinct().count() >= 100, "countries");
         assertEquals(DATA.companies.size(), DATA.companies.stream().map(Company::domain).distinct().count());
+        // Marked, a domain keeps its first label, so those must differ too.
+        assertEquals(DATA.companies.size(),
+                DATA.companies.stream().map(c -> CompanyGenerator.exampleDomain(c.domain())).distinct().count());
     }
 }

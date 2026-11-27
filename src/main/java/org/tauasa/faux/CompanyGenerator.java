@@ -9,7 +9,8 @@ import java.util.stream.Stream;
 import org.tauasa.faux.model.Company;
 
 /**
- * Generates random {@link Company}s from the bundled list of US companies.
+ * Generates random {@link Company}s from the bundled companies: about 1,500 in
+ * the US and 4,000 in other countries, drawn alike.
  *
  * <p>By default each company is marked, as {@link PersonGenerator} marks an
  * employer: its name ends with {@code " [faux]"} and its domain is under the
@@ -123,17 +124,28 @@ public final class CompanyGenerator {
      * "How each field is made"), so the two draw the same way.
      */
     static Company draw(DataSet data, boolean real, SplittableRandom random) {
-        Company c = data.companies.get(random.nextInt(data.companies.size()));
-        return real ? c : new Company(c.name() + " [faux]", c.city(), c.state(), exampleDomain(c.domain()));
+        return draw(data.companies, real, random);
+    }
+
+    /**
+     * Draws one company uniformly from {@code companies} and marks it unless
+     * {@code real}. One draw from {@code random}.
+     */
+    static Company draw(List<Company> companies, boolean real, SplittableRandom random) {
+        Company c = companies.get(random.nextInt(companies.size()));
+        return real ? c : new Company(c.name() + " [faux]", c.city(), c.state(), c.country(), exampleDomain(c.domain()));
     }
 
     /**
      * The domain under the reserved {@code .example} top-level domain
-     * (RFC 2606), so an email at it can never be delivered:
-     * {@code costco.com} becomes {@code costco.example}.
+     * (RFC 2606), so an email at it can never be delivered: its first label
+     * and {@code .example}, so {@code costco.com} becomes {@code costco.example}
+     * and {@code sony.co.jp} becomes {@code sony.example}. The bundled files keep
+     * every company's first label different, so their marked domains are too; a
+     * data directory's own files must do the same, or two companies share one.
      */
     static String exampleDomain(String domain) {
-        int dot = domain.lastIndexOf('.');
+        int dot = domain.indexOf('.');
         return (dot < 0 ? domain : domain.substring(0, dot)) + ".example";
     }
 
@@ -158,9 +170,11 @@ public final class CompanyGenerator {
         }
 
         /**
-         * A folder of your own data files. Its {@code us_companies_domains.txt},
-         * if it has one, replaces the bundled list, as
-         * {@link PersonGenerator.Builder#dataDirectory(Path)} reads it.
+         * A folder of your own data files. Its {@code us_companies_domains.txt}
+         * and {@code intl_companies_domains.txt}, if it has them, replace the
+         * bundled lists, as {@link PersonGenerator.Builder#dataDirectory(Path)}
+         * reads them. An empty {@code intl_companies_domains.txt} (or one with
+         * only {@code #} lines) leaves the international companies out.
          *
          * @param dir a folder, or {@code null} for the bundled data only
          * @return this builder
