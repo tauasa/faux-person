@@ -54,6 +54,10 @@ python3 -I tools/data/wdq.py tools/data/queries/q_companies.rq        $D/wd/comp
 python3 -I tools/data/wdq.py tools/data/queries/q_companies_listed.rq $D/wd/companies_listed.csv
 python3 -I tools/data/build_companies.py $OUT 1500 $D/geonames/cities/cities1000.txt $D/geonames/zip/US.txt \
   $D/wd/companies.csv $D/wd/companies_listed.csv
+# Companies outside the US: 4,000, at most 120 per country. Needs the US file
+# first, so no marked domain repeats a US one.
+python3 -I tools/data/wdq.py tools/data/queries/q_companies_intl.rq $D/wd/companies_intl.csv
+python3 -I tools/data/build_companies_intl.py $D/wd/companies_intl.csv $OUT 120 4000
 ```
 
 The 2026-11-19 build added one step to step 4 by hand: for companies with no

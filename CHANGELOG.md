@@ -7,6 +7,25 @@ range or a bundled file changes what a seed produces, so it's called out here
 
 ## 0.4.0 (unreleased)
 
+- **International companies:** 4,000 companies from 178 countries beside the
+  1,500 US ones, in `intl_companies_domains.txt`. A person's employer comes
+  from their region's countries (a Japanese person works for a Japanese
+  company); `WESTERN`, and regions with fewer than 20 companies of their own
+  (Palestine and Central Africa), draw from every company. `CompanyGenerator`
+  draws from every company.
+- **Seeds:** every seed's employers and emails change; nothing else about a
+  person does. Golden files that hold employers or emails change.
+- **Breaks:** `Company` gains a `country` component (ISO 3166-1 alpha-2), and
+  `state` is empty outside the US. `new Company(name, city, state, domain)`
+  still builds a US company, but a record pattern with four components no
+  longer compiles.
+- **Output:** the company CLI's `pipe` adds a `country` column
+  (`name|city|state|country|domain`) and its `json` a `country` field; a
+  person's JSON employer adds `country`; `text` shows a non-US company's
+  country where a US one's state goes.
+- **Marked domains** keep the domain's first label: `sony.co.jp` becomes
+  `sony.example`. Every US company's is the same as before.
+
 - **Native names in seven more regions:** Japanese (`JPN`, in kanji, or kana
   where Wikidata has no kanji, surname first), Cyrillic (`RUS`), Greek (`GRC`), Hebrew (`HEB`), Arabic (`PSE`, `NAF`)
   and Persian (`IRN`), beside South Korea's Hangul.

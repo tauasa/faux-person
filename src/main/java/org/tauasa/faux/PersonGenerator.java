@@ -88,7 +88,7 @@ public final class PersonGenerator {
         NameGenerator.Drawn drawn = NameGenerator.draw(data, region, genderWeights, random);
         Name name = drawn.name();
         LocalDate dob = pickDateOfBirth();
-        Company employer = CompanyGenerator.draw(data, realCompanies, random);
+        Company employer = CompanyGenerator.draw(data.employers(drawn.region()), realCompanies, random);
         String email = emailLocalPart(name.firstName(), name.lastName()) + "@" + employer.domain();
         String phone = String.format(Locale.ROOT, "(%03d) 555-01%02d", pickAreaCode(), random.nextInt(100));
         DataSet.Street s = pick(data.streets);

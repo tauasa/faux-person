@@ -123,17 +123,27 @@ public final class CompanyGenerator {
      * "How each field is made"), so the two draw the same way.
      */
     static Company draw(DataSet data, boolean real, SplittableRandom random) {
-        Company c = data.companies.get(random.nextInt(data.companies.size()));
-        return real ? c : new Company(c.name() + " [faux]", c.city(), c.state(), exampleDomain(c.domain()));
+        return draw(data.companies, real, random);
+    }
+
+    /**
+     * Draws one company uniformly from {@code companies} and marks it unless
+     * {@code real}. One draw from {@code random}.
+     */
+    static Company draw(List<Company> companies, boolean real, SplittableRandom random) {
+        Company c = companies.get(random.nextInt(companies.size()));
+        return real ? c : new Company(c.name() + " [faux]", c.city(), c.state(), c.country(), exampleDomain(c.domain()));
     }
 
     /**
      * The domain under the reserved {@code .example} top-level domain
-     * (RFC 2606), so an email at it can never be delivered:
-     * {@code costco.com} becomes {@code costco.example}.
+     * (RFC 2606), so an email at it can never be delivered: its first label
+     * and {@code .example}, so {@code costco.com} becomes {@code costco.example}
+     * and {@code sony.co.jp} becomes {@code sony.example}. The data files keep
+     * every company's first label different, so marked domains are too.
      */
     static String exampleDomain(String domain) {
-        int dot = domain.lastIndexOf('.');
+        int dot = domain.indexOf('.');
         return (dot < 0 ? domain : domain.substring(0, dot)) + ".example";
     }
 

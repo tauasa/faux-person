@@ -1,0 +1,16 @@
+PREFIX wikibase: <http://wikiba.se/ontology#>
+SELECT ?co ?name ?site ?iso ?hqName ?hqIsPlace ?admName ?links (MAX(?emp) AS ?employees) WHERE {
+  ?co wikibase:sitelinks ?links. FILTER(?links >= 4)
+  ?co wdt:P17 ?c. FILTER(?c != wd:Q30)
+  ?c wdt:P297 ?iso.
+  ?co wdt:P31/wdt:P279* wd:Q4830453.
+  FILTER NOT EXISTS { ?co wdt:P576 ?dissolved }
+  ?co wdt:P856 ?site.
+  ?co rdfs:label ?name. FILTER(LANG(?name) = "en")
+  OPTIONAL { ?co wdt:P1128 ?emp }
+  OPTIONAL {
+    ?co wdt:P159 ?hq. ?hq rdfs:label ?hqName. FILTER(LANG(?hqName) = "en")
+    OPTIONAL { ?hq wdt:P31/wdt:P279* wd:Q486972. BIND(true AS ?hqIsPlace) }
+    OPTIONAL { ?hq wdt:P131 ?adm. ?adm wdt:P31/wdt:P279* wd:Q486972. ?adm rdfs:label ?admName. FILTER(LANG(?admName) = "en") }
+  }
+} GROUP BY ?co ?name ?site ?iso ?hqName ?hqIsPlace ?admName ?links ORDER BY DESC(?links)

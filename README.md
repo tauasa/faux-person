@@ -124,7 +124,7 @@ Persian. All seven types are in `org.tauasa.faux.model`. `Person`, `Name`,
 | `Name` | A first name and a surname from one region, in Latin letters, the surname in the form that fits the gender (`Anna Petrova`). `fullName()` gives `"Anna Petrova"`. `nativeName()` gives the name in its own script where the region's data has one, and is empty otherwise. New in 0.3.0 for `ROK` (Hangul); 0.4.0 adds `JPN` (kanji, or kana where Wikidata has none), `RUS` (Cyrillic), `GRC` (Greek), `HEB` (Hebrew), `PSE` and `NAF` (Arabic) and `IRN` (Persian), for the names Wikidata spells in that script |
 | `NativeName` | New in 0.3.0. The name in its own script: first name, surname, and the full name as that language writes it. For `Yeong-min Kim` it's `영민`, `김` and `김영민`, surname first with no space, as Japanese is too; for `Anna Petrova`, `Анна`, `Петрова` and `Анна Петрова` |
 | `Address` | Street with house number (`2304 Eileen Ave`), city, two-letter state, five-digit ZIP, and country, always `US` |
-| `Company` | A US company: name, headquarters city and state, and web domain, which the email uses. Generated ones are real companies, marked by default (`Costco [faux]`, `costco.example`) |
+| `Company` | A company: name, headquarters city, state (US companies only; empty elsewhere), country (ISO code, from 0.4.0) and web domain, which the email uses. 1,500 US companies and, from 0.4.0, 4,000 from 178 other countries; a person works for one in their region's countries. Generated ones are real companies, marked by default (`Costco [faux]`, `costco.example`) |
 | `Gender` | `FEMALE`, `MALE` or `NONBINARY`. Women get women's and unisex first names and the feminine surname form, men get men's and unisex names and the masculine form. A nonbinary person gets a woman's or a man's first name at 50/50, and either surname form at 50/50 |
 | `Region` | Where the names come from, in 24 values. Three broad ones: `WESTERN` (the Americas, Europe, Australia, New Zealand), `ASIA` (East, South and Southeast Asia) and `RUS` (Russia and the former Soviet Union). Three African: `NAF`, `CAF`, `SAF` (North, Central and Southern Africa). The rest are countries, by ISO code: `ROK` (South Korea), `JPN`, `PHL`, `VNM`, `THA`, `MEX`, `BRA`, `IRN`, `PSE`, `GBR`, `FRA`, `ESP`, `PRT`, `GRC`, `NOR`, `SWE`, `FIN`. The odd one out is `HEB`, which holds Hebrew names, from Israeli citizens |
 
@@ -208,7 +208,7 @@ CompanyGenerator companies = CompanyGenerator.builder()
         .seed(42)                    // optional
         .realCompanies(false)        // optional: true for real names and domains
         .build();
-Company c = companies.next();        // Griffon Corporation [faux], griffon.example
+Company c = companies.next();        // Hewlett-Packard [faux], hp.example
 ```
 
 A name is drawn for a gender, so the first name and the surname's form agree,
@@ -259,8 +259,8 @@ PersonGenerator gen = PersonGenerator.builder()
 ```
 
 The names are `<region>_first_names.txt` and `<region>_surnames.txt` for each
-region in lowercase (`western`, `rok`, …), plus `us_companies_domains.txt` and
-`us_street_names_city_state_zip.txt`. Each file uses the format its bundled
+region in lowercase (`western`, `rok`, …), plus `us_companies_domains.txt`,
+`intl_companies_domains.txt` and `us_street_names_city_state_zip.txt`. Each file uses the format its bundled
 copy names in its first line, such as `# name|gender|weight`. Weights are
 optional, and a name without one counts as 1. Lines starting with `#` are
 skipped.
@@ -333,7 +333,7 @@ one below from the same plus `-r asia`:
 
 ```text
 first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer|native
-Juha|Karvonen|MALE|FIN|1963-08-07|63|juha.karvonen@morganstanley.example|(319) 555-0128|9694 W 6th Ave|Humboldt|SD|57035|Morgan Stanley [faux]|
+Juha|Karvonen|MALE|FIN|1963-08-07|63|juha.karvonen@fazergroup.example|(319) 555-0128|9694 W 6th Ave|Humboldt|SD|57035|Fazer [faux]|
 ```
 
 A South Korean shows the Hangul in every format: first in the brackets in
@@ -354,9 +354,9 @@ fit):
 ```json
 [
   {"firstName":"Maya","lastName":"Guo","gender":"FEMALE","region":"ASIA","dateOfBirth":"2007-02-06","age":19,
-   "email":"maya.guo56@spglobal.example","phone":"(319) 555-0128",
+   "email":"maya.guo56@hkexpress.example","phone":"(319) 555-0128",
    "address":{"street":"9694 W 6th Ave","city":"Humboldt","state":"SD","postalCode":"57035","country":"US"},
-   "employer":{"name":"S&P Global [faux]","city":"New York City","state":"NY","domain":"spglobal.example"}}
+   "employer":{"name":"HK Express [faux]","city":"Hong Kong","state":"","country":"CN","domain":"hkexpress.example"}}
 ]
 ```
 
@@ -384,14 +384,14 @@ Ju-won Lee (이주원)
 Chang-hun Kim (김창훈)
 
 $ ./faux-company.sh -n 2 --seed 42
-Griffon Corporation [faux], New York City, NY (griffon.example)
-American States Water [faux], San Dimas, CA (aswater.example)
+Hewlett-Packard [faux], Palo Alto, CA (hp.example)
+Alibaba Group [faux], Hangzhou, CN (alibabagroup.example)
 ```
 
 | Script | Also takes | `pipe` columns | `json` fields |
 |---|---|---|---|
 | `faux-name.sh` | `-r, --region R` | `first\|last\|native` | `firstName`, `lastName`, and `nativeName` when there is one |
-| `faux-company.sh` | `--real-companies` | `name\|city\|state\|domain` | `name`, `city`, `state`, `domain` |
+| `faux-company.sh` | `--real-companies` | `name\|city\|state\|country\|domain` | `name`, `city`, `state`, `country`, `domain` |
 
 `text` prints one name, with its native form in brackets when it has one, or
 one company with its city, state and domain, per line. Without the scripts, run their classes from the jar:
@@ -414,6 +414,7 @@ and the date it was built:
 |---|---|---|
 | First names and surnames for each of the 24 regions | Up to 1,200 per file. Shorter where Wikidata has fewer people, or the country has fewer names: Vietnamese (95 first names), South Korean surnames (108), Palestinian (342 and 188) | Wikidata (CC0), ranked by how many people of each citizenship carry them. Each name also carries that count as its weight (`Kim||6768|김`, `Aleksandr|M|16684`), and names are drawn in proportion to it. Wikidata counts notable people, so the weights lean toward older generations' names. South Korean names come from their Korean (Hangul) labels, each with the romanization most people carry |
 | US companies with headquarters and domain | 1,500 | Wikidata: by revenue, then NYSE- and Nasdaq-listed companies by employee count. Headquarters placed with GeoNames (CC BY 4.0) |
+| Companies outside the US with headquarters city, country and domain | 4,000 from 178 countries, at most 120 each | Wikidata: by how many Wikipedia language editions have an article on them, less schools, public bodies, clubs and charities |
 | US streets with city, state and ZIP | 1,500, 30 per state | US Census TIGER/Line 2024 (public domain), with each ZIP's city and state from GeoNames |
 
 One more file is in [`tools/data/extra/`](tools/data/extra/), outside the

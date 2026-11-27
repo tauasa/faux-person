@@ -12,8 +12,8 @@ Each file's first line gives its build date.
      ranked by how many people of each citizenship carry them. The South
      Korean files pair each name's Korean (Hangul) label with its most common
      romanization.
-   - us_companies_domains.txt: company names, headquarters and official
-     websites.
+   - us_companies_domains.txt and intl_companies_domains.txt: company names,
+     headquarters, countries and official websites.
 
 2. GeoNames (https://www.geonames.org), licensed under the Creative Commons
    Attribution 4.0 License (https://creativecommons.org/licenses/by/4.0/).

@@ -113,18 +113,19 @@ class FauxPersonCliTest {
     }
 
     /**
-     * Golden: the 13 Latin-letter columns of seed 42's first 1,000 people, as 0.3.0
-     * printed them. Native names are only added beside them, so this fails when
-     * anything changes who a seed draws. Update the hash only with a CHANGELOG line
-     * saying what changed.
+     * Golden: the 13 Latin-letter columns of seed 42's first 1,000 people. Native
+     * names are only added beside them, so this fails when anything changes who a
+     * seed draws. Update the hash only with a CHANGELOG line saying what changed.
+     * 0.4.0's: employers come from the person's region, so employer and email
+     * changed from 0.3.0's and nothing else did.
      */
     @Test
-    void seed42sPeopleAreTheSameAs030() throws Exception {
+    void seed42sPeopleArePinned() throws Exception {
         assertEquals(0, run("-n", "1000", "-s", "42", "--today", "2026-11-20", "-f", "pipe"));
         String latin = String.join("\n", out.lines().skip(1)
                 .map(l -> String.join("|", java.util.Arrays.copyOf(l.split("\\|", -1), 13))).toList());
         byte[] sha = java.security.MessageDigest.getInstance("SHA-256").digest(latin.getBytes(StandardCharsets.UTF_8));
-        assertEquals("ae15c10aa254f5bd4de7d3a0479fbfa3ee996d143ad2832fb055dbdcb7aba294",
+        assertEquals("83a66370159255aedb5ea19ef9c92849bbbe6e377405b2ab551dfd60f2b1becb",
                 java.util.HexFormat.of().formatHex(sha));
     }
 

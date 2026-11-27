@@ -1,0 +1,4001 @@
+# name|city|country|domain; country is the ISO 3166-1 alpha-2 code; Wikidata (CC0), ranked by how many Wikipedia language editions have an article on the company; built 2026-11-26
+Nintendo|Kyoto|JP|nintendo.com
+Volkswagen|Wolfsburg|DE|vw.com
+Mercedes-Benz|Stuttgart|DE|mercedes-benz.com
+BMW|Munich|DE|bmw.com
+Audi AG|Ingolstadt|DE|audi.com
+Sony Group|Tokyo|JP|sony.com
+Nokia|Espoo|FI|nokia.com
+Renault|Boulogne-Billancourt|FR|renaultgroup.com
+Adidas AG|Herzogenaurach|DE|adidas.com
+Grupo Televisa|Mexico City|MX|televisa.com
+Lufthansa|Cologne|DE|lufthansa.com
+Huawei|Shenzhen|CN|huawei.com
+Yamaha Motor Company|Iwata|JP|yamaha-motor.com
+Nestlé|Vevey|CH|nestle.com
+Porsche|Stuttgart|DE|porsche.com
+Nissan|Yokohama|JP|nissan-global.com
+Reuters|London|GB|reuters.com
+Turkish Airlines|Istanbul|TR|turkishairlines.com
+Xiaomi|Beijing|CN|mi.com
+Fiat|Turin|IT|fiat.com
+Opel|Rüsselsheim am Main|DE|opel.com
+Air France|Tremblay-en-France|FR|airfrance.com
+Lamborghini|Metropolitan City of Bologna|IT|lamborghini.com
+TV Azteca|Mexico City|MX|tvazteca.com
+Lenovo|Beijing|CN|lenovo.com
+Suzuki Motor Corporation|Hamamatsu|JP|globalsuzuki.com
+Studio Ghibli|Kajinochō|JP|ghibli.jp
+British Airways|London|GB|britishairways.com
+VietJet Air|Ho Chi Minh City|VN|vietjetair.com
+Mazda|Fuchū-chō|JP|mazda.com
+DeepSeek|Hangzhou|CN|deepseek.com
+VfL Wolfsburg|Wolfsburg|DE|vfl-wolfsburg.de
+Škoda Auto|Mladá Boleslav|CZ|skoda-auto.com
+Kia|Seoul|KR|kia.com
+Siemens|Munich|DE|siemens.com
+Gazprom|Saint Petersburg|RU|gazprom.ru
+LG Group|Seoul|KR|lg.com
+ABS-CBN Corporation|Quezon City|PH|abs-cbn.com
+Alfa Romeo|Turin|IT|alfaromeo.com
+Shell|London|GB|shell.com
+LMU Munich|Munich|DE|lmu.de
+Hyundai Motor Company|Seoul|DE|hyundai.com
+Toshiba|Tokyo|JP|toshiba.com
+Aeroflot|Moscow|RU|aeroflot.com
+Gucci|Florence|IT|gucci.com
+Korean Broadcasting System|Seoul|KR|kbs.co.kr
+Roscosmos State Corporation|Moscow|RU|roscosmos.ru
+Emirates|Al Garhoud|AE|emirates.com
+Yandex|Moscow|RU|yandex.com
+Norwegian Air Shuttle|Fornebu|NO|norwegian.com
+ETH Zurich|Zurich|CH|ethz.ch
+AB Volvo|Gothenburg|SE|volvogroup.com
+Togg|Gebze|TR|togg.com.tr
+Baidu|Beijing|CN|baidu.com
+ASUS|Taipei|TW|asus.com
+Mitsubishi|Tokyo|JP|mitsubishi.com
+Alibaba Group|Hangzhou|CN|alibabagroup.com
+H&M|Stockholm|SE|hm.com
+Deutsche Bank|Frankfurt|DE|db.com
+Qantas Airways|Mascot|AU|qantas.com
+Puma|Herzogenaurach|DE|puma.com
+Louis Vuitton|Paris|FR|louisvuitton.com
+Tata Motors Limited|Mumbai|IN|tatamotors.com
+Volkswagen Group|Wolfsburg|DE|volkswagenag.com
+Air Canada|Montreal|CA|aircanada.com
+Seoul Broadcasting System|Seoul|KR|sbs.co.kr
+Aston Martin Lagonda|Gaydon|GB|astonmartinlagonda.com
+Robert Bosch|Gerlingen|DE|bosch.com
+Saudi Aramco|Dhahran|SA|aramco.com
+HTC|New Taipei City|TW|htc.com
+GMM Grammy|Bangkok|TH|gmmgrammy.com
+Nikon|Tokyo|JP|nikon.com
+Prada|Milan|IT|pradagroup.com
+Bayer|Leverkusen|DE|bayer.com
+BP|London|GB|bp.com
+Qatar Airways|Doha|QA|qatarairways.com
+Rolex|Geneva|CH|rolex.com
+Austrian Airlines|Schwechat|AT|austrian.com
+Singapore Airlines|Singapore|SG|singaporeair.com
+Unilever|Rotterdam|GB|unilever.com
+Air India|Gurgaon|IN|airindia.com
+Etihad Airways|Abu Dhabi|AE|etihad.com
+Uniqlo|Yamaguchi|JP|uniqlo.com
+oppo|Chang'an Town|CN|oppo.com
+Chanel|Paris|FR|chanel.com
+SAP|Walldorf|DE|sap.com
+RAI|Rome|IT|rai.it
+Maserati|Metropolitan City of Bologna|IT|maserati.com
+Zara|Perpignan|ES|zara.com
+Deutsche Bahn|Bezirk Mitte|DE|deutschebahn.com
+Michelin|Clermont-Ferrand|FR|michelin.com
+Embraer|São José dos Campos|BR|embraer.com
+Japan Airlines|Higashi-Shinagawa|JP|jal.co.jp
+Rolls-Royce Motor Cars|Chichester|GB|rolls-roycemotorcars.com
+Thai Airways|Chatuchak|TH|thaiairways.com
+Samsung Electronics|Seoul|KR|samsung.com
+Vodafone|London|GB|vodafone.com
+Ericsson|Kista|SE|ericsson.com
+Mitsubishi Motors|Tokyo|JP|mitsubishi-motors.com
+Swiss International Air Lines|Kloten|CH|swiss.com
+Bentley|Crewe|GB|bentleymotors.com
+Lancia|Turin|IT|lancia.com
+Versace|Milan|IT|versace.com
+Hitachi|Marunouchi|JP|hitachi.com
+Subaru|Ebisu|JP|subaru-global.com
+Lacoste S.A.|Paris|FR|lacoste.com
+Agence France-Presse|Paris|FR|afp.com
+Vietnam Airlines|Hanoi|VN|vietnamairlines.com
+BASF|Ludwigshafen|DE|basf.com
+L'Oréal|Paris|FR|loreal.com
+Tencent|Maling|CN|tencent.com
+Air China|Beijing|CN|airchina.com
+Hermès|Paris|FR|hermes.com
+Konami|Tokyo|JP|konami.com
+Finnair|Veromies|FI|finnair.com
+Lexus|Nagoya|JP|discoverlexus.com
+Lidl|Neckarsulm|DE|lidl.de
+All Nippon Airways|Higashi-Shinbashi|JP|ana.co.jp
+Yamaha|Naka-ku|JP|yamaha.com
+SEAT|Martorell|ES|seat.com
+Capcom|Chūō-ku|JP|capcom.com
+Czech Airlines|Prague|CZ|csa.cz
+Mines ParisTech|Paris|FR|psl.eu
+Williams Racing|Grove|GB|williamsf1.com
+Tupolev|Basmanny District|RU|uacrussia.ru
+LOT Polish Airlines|Włochy|PL|lot.com
+Cathay Pacific|Hong Kong|CN|cathaypacific.com
+Tesco|Welwyn Garden City|GB|tescoplc.com
+LVMH|Paris|FR|lvmh.com
+Scania|Södertälje|SE|scania.com
+Casio|Tokyo|JP|casio.com
+SK Slavia Prague|Prague|CZ|slavia.cz
+AC Sparta Prague|Prague|CZ|sparta.cz
+Aldi|Mülheim an der Ruhr|DE|aldi.com
+Christian Dior|Paris|FR|dior.com
+South African Airways|Kempton Park|ZA|flysaa.com
+UBS|Zurich|CH|ubs.com
+DHL|Stadtbezirk Bonn|DE|dhl.com
+GSK|London|GB|gsk.com
+AstraZeneca|Cambridge|GB|astrazeneca.com
+Air Liquide|Invalides|FR|airliquide.com
+TSMC|Longtan|TW|tsmc.com
+Virgin Atlantic|Crawley|GB|virginatlantic.com
+Air New Zealand|Auckland|NZ|airnewzealand.com
+European Bank for Reconstruction and Development|London|GB|ebrd.com
+PricewaterhouseCoopers|London|GB|pwc.com
+Barclays|London|GB|barclays.co.uk
+Volvo Cars|Gothenburg|SE|volvocars.com
+Carlsberg Group|Copenhagen|DK|carlsberggroup.com
+Russian Aircraft Corporation MiG|Moscow|RU|migavia.ru
+Channel One Russia|Ostankinsky District|RU|1tv.ru
+TASS|Presnensky District|RU|tass.ru
+Société nationale des chemins de fer français|Paris|FR|groupe-sncf.com
+Pirelli|Milan|IT|pirelli.com
+Isuzu|Yokohama|JP|isuzu.co.jp
+Wizz Air|Budapest|HU|wizzair.com
+Dolce & Gabbana|Milan|IT|dolcegabbana.com
+Mosfilm|Ramenki District|RU|mosfilm.ru
+Mojang Studios|Stockholm|SE|mojang.com
+Antonov|Kyiv|UA|antonov.com
+ByteDance|Beijing|CN|bytedance.com
+Bridgestone|Tokyo|JP|bridgestone.com
+Lukoil|Moscow|RU|lukoil.com
+The Lego Group|Billund|DK|lego.com
+China Airlines|Dayuan District|TW|china-airlines.com
+Burberry|London|GB|burberry.com
+Bulgari|Rome|IT|bulgari.com
+MyHeritage|Or Yehuda|IL|myheritage.com
+Supercell|Ruoholahti|FI|supercell.com
+7-Eleven|Dallas|AU|7-eleven.com
+Ajinomoto|Kyōbashi|JP|ajinomoto.co.jp
+Azerbaijan Airlines|Baku|AZ|azal.az
+Credit Suisse|Zurich|CH|credit-suisse.com
+EgyptAir|Cairo|EG|egyptair.com
+GAZ|Nizhny Novgorod|RU|gaz.ru
+Giorgio Armani|Milan|IT|armani.com
+NEC|Tokyo|JP|nec.com
+Sony Interactive Entertainment|Tokyo|JP|sonyinteractive.com
+Accenture|Dublin|IE|accenture.com
+Sanofi|Paris|FR|sanofi.com
+Petrobras|Rio de Janeiro|BR|petrobras.com.br
+Saab Group|Stockholm|SE|saab.com
+Aegean Airlines|Kifisia|GR|aegeanair.com
+Moscow Conservatory|Moscow|SU|mosconsv.ru
+Canadian Broadcasting Corporation|Ottawa|CA|radio-canada.ca
+China Southern Airlines|Guangzhou|CN|csair.com
+Iveco|Turin|IT|iveco.com
+Realme|Shenzhen|CN|realme.com
+TAP Air Portugal|Lisbon|PT|flytap.com
+Deutsche Telekom|Bonn|DE|telekom.com
+Danone|Paris|ES|danone.com
+ZTE|Shenzhen|CN|zte.com.cn
+Vivendi|Paris|FR|vivendi.com
+Asiana Airlines|Seoul|KR|flyasiana.com
+Square Enix|Tokyo|JP|square-enix.com
+Canonical Ltd.|London|GB|canonical.com
+AliExpress|Hangzhou|CN|aliexpress.com
+Fuji Television|Daiba|JP|fujitv.com
+Sci-Hub|Saint Petersburg|RU|sci-hub.su
+Sberbank|Moscow|RU|sberbank.ru
+Allianz SE|Munich|DE|allianz.com
+Airbus|Leiden|FR|airbus.com
+Maersk|Copenhagen|DK|maersk.com
+Geely|Hangzhou|CN|geely.com
+vivo|Dongguan|CN|vivo.com
+German Federal Bank|Frankfurt|DE|bundesbank.de
+Kaspersky Lab|Moscow|RU|kaspersky.com
+Avianca|Bogotá|CO|avianca.com
+AvtoVAZ|Tolyatti|RU|avtovaz.ru
+Croatia Airlines|Zagreb|HR|croatiaairlines.com
+EL AL Israel Airlines Ltd.|Tel Aviv|IL|elal.co.il
+Kamaz|Naberezhnye Chelny|RU|kamaz.ru
+Kenya Airways|Embakasi|KE|kenya-airways.com
+Sveriges Television|Stockholm|SE|svt.se
+smart|Stuttgart|DE|smart.com
+Engie|Paris|FR|engie.com
+ArcelorMittal|Luxembourg|LU|arcelormittal.com
+Hugo Boss|Metzingen|DE|hugoboss.com
+Dassault Aviation|Paris|FR|dassault-aviation.com
+Elsevier|Amsterdam|SG|elsevier.com
+KTM|Mattighofen|AT|ktm.com
+Leica Camera|Wetzlar|DE|leica-camera.com
+Ducati|Metropolitan City of Bologna|IT|ducati.com
+Hankyu Corporation|Ikeda|JP|hankyu.co.jp
+IndiGo|Gurgaon|IN|goindigo.in
+Miramax|Los Angeles|CA|miramax.com
+Nauru Airlines|Yaren District|NR|nauruair.com
+Pakistan International Airlines|Karachi|PK|piac.com.pk
+SriLankan Airlines|Katunayake|LK|srilankan.com
+Virgin Records|Los Angeles|GB|virginmusic.com
+Fujifilm Corporation|Tokyo|JP|fujifilm.com
+Swarovski|Wattens|AT|swarovski.com
+Daihatsu|Osaka|JP|daihatsu.com
+Harrods|London|GB|harrods.com
+SM Entertainment|Seoul|KR|smentertainment.com
+Koenigsegg|Ängelholm|SE|koenigsegg.com
+Air Serbia|Belgrade|RS|airserbia.com
+Belavia|Minsk|BY|belavia.by
+Taj Mahal Palace Hotel|Mumbai|IN|tajhotels.com
+Vinci|Nanterre|FR|vinci.com
+Novartis|Basel|CH|novartis.com
+Electrolux|Stockholm|SE|electroluxgroup.com
+flydubai|Dubai|AE|flydubai.com
+Telewizja Polska|Warsaw|PL|tvp.pl
+OnePlus|Shenzhen|CN|oneplus.com
+Lotus Cars|Hethel|GB|lotuscars.com
+TAROM|Otopeni|RO|tarom.ro
+Givenchy|Paris|FR|givenchy.com
+Philippine Airlines|Pasay|PH|philippineairlines.com
+Rosneft|Moscow|RU|rosneft.com
+AXA|Paris|FR|axa.com
+Petronas|Kuala Lumpur|MY|petronas.com
+Kawasaki Heavy Industries|Kobe|JP|kawasaki.com
+De Beers|London|ZA|debeersgroup.com
+Pegasus Airlines|Istanbul|TR|flypgs.com
+Air Astana|Almaty|KZ|airastana.com
+Vauxhall|Chalton|GB|vauxhall.co.uk
+Fitch Group|London|GB|fitchratings.com
+Tatra|Kopřivnice|CZ|tatra.cz
+Paris Opera|Quartier de la Chaussée-d'Antin|FR|operadeparis.fr
+BioNTech|Mainz|DE|biontech.de
+Heckler & Koch|Oberndorf am Neckar|DE|hk-usa.com
+Shueisha|Hitotsubashi|JP|shueisha.co.jp
+Paradox Interactive|Stockholm|SE|paradoxplaza.com
+Illumination|Santa Monica|SG|illumination.com
+BYD Auto|Xi'an|CN|byd.com
+JVC|Yokohama|JP|jvc.com
+Jollibee|Pasig|PH|jollibee.com.ph
+Royal Jordanian|Amman|JO|rj.com
+Safran|Paris|FR|safran-group.com
+Saudia|Jeddah|SA|saudia.com
+Station F|Paris|FR|stationf.co
+TV Tokyo|Roppongi|JP|tv-tokyo.co.jp
+The Jerusalem Post|Jerusalem|IL|jpost.com
+Yle|Länsi-Pasila|FI|yle.fi
+Russian Railways|Moscow|RU|rzd.ru
+Infosys limited|Bengaluru|IN|infosys.com
+thyssenkrupp AG|Essen|DE|thyssenkrupp.com
+Schneider Electric|Rueil-Malmaison|FR|se.com
+RTL Group|Kirchberg|DE|rtlgroup.com
+ASICS|Kobe|JP|asics.com
+BlackBerry|Waterloo|CA|blackberry.com
+Blansko|Blansko|CZ|blansko.cz
+ELBO|Sindos|GR|elvo.gr
+EVA Air|Luzhu District|TW|evaair.com
+Eurowings|Düsseldorf|DE|eurowings.com
+Fendi|Rome|IT|fendi.com
+IONIS Education Group|Paris|FR|ionis-group.com
+Kappa|Turin|IT|kappa.com
+Mercedes F1 Team|Brackley|GB|mercedesamgf1.com
+Sputnik|Moscow|RU|sputnikglobe.com
+Umbro|Manchester|AU|umbro.com
+Saint-Gobain|La Défense|FR|saint-gobain.com
+Kering|Paris|FR|kering.com
+Commerzbank AG|Frankfurt-Innenstadt I|DE|commerzbank.com
+Olympus Corporation|Tokyo|JP|olympus-global.com
+Swiss Federal Railways|Bern|CH|cff.ch
+Gameloft|Paris|FR|gameloft.com
+DR|Copenhagen|DK|dr.dk
+Air Koryo|Pyongyang|KP|airkoryo.com.kp
+Bild|Berlin|DE|bild.de
+Cosworth|Northampton|GB|cosworth.com
+Kintetsu Railway Co., Ltd.|Tennōji Ward|JP|kintetsu.co.jp
+Lion Air|Jakarta|ID|lionair.co.id
+Toei Animation|Tokyo|JP|toei-anim.co.jp
+Capgemini|Paris|FR|capgemini.com
+State Bank of India|Mumbai|IN|bank.in
+Continental AG|Hanover|DE|continental.com
+Virgin Group|London|GB|virgin.com
+Austrian Federal Railways|Vienna|AT|oebb.at
+Eni|Rome|IT|eni.com
+National Center for Scientific Research|Paris|FR|cnrs.fr
+Swiss National Bank|Bern|CH|snb.ch
+Beaux-Arts de Paris|Paris|FR|beauxartsparis.fr
+Bloomsbury Publishing|London|GB|bloomsbury.com
+Cartier|Paris|FR|cartier.com
+Dailymotion|Paris|FR|dailymotion.com
+KG Mobility|Pyeongtaek|KR|kg-mobility.com
+Oman Air|Muscat|OM|omanair.com
+Ray-Ban|Milan|IT|ray-ban.com
+Rio Tinto Group|London|AU|riotinto.com
+Routledge|London|GB|routledge.com
+T-Series|Delhi|IN|tseries.com
+Toho|Yūrakuchō|JP|toho.co.jp
+Österreichischer Rundfunk|Vienna|AT|orf.at
+PetroChina Company Limited|Beijing|CN|petrochina.com.cn
+Reliance Industries Limited|Mumbai|IN|ril.com
+Sinopec|Beijing|CN|sinopechongkong.com
+Credit Agricole Group|Paris|FR|credit-agricole.com
+East Japan Railway Company|Yoyogi|JP|jreast.co.jp
+Mahindra & Mahindra|Mumbai|IN|mahindra.com
+Diageo|London|GB|diageo.com
+Rheinmetall AG|Düsseldorf|DE|rheinmetall.com
+DJI|Beijing|CN|dji.com
+Bombardier|Dorval|CA|bombardier.com
+Raidió Teilifís Éireann|Donnybrook|IE|rte.ie
+Kodansha|Otowa|JP|kodansha.co.jp
+SK Sigma Olomouc|Olomouc|CZ|sigmafotbal.cz
+Aardman Animations|Bristol|GB|aardman.com
+Aeroméxico|Mexico City|MX|aeromexico.com
+Air Mauritius|Port Louis|MU|airmauritius.com
+Cinecittà|Rome|IT|cinecitta.com
+Cunard Line|Southampton|GB|cunard.com
+GEM|Grenoble|FR|grenoble-em.com
+Hoffmann-La Roche|Basel|CH|roche.com
+ResearchGate|Berlin|DE|researchgate.net
+Shein|Singapore|CN|shein.com
+TAG Heuer|Marin-Epagnier|CH|tagheuer.com
+TU Dresden|Dresden|DE|tu-dresden.de
+Uzbekistan Airways|Tashkent|UZ|uzairways.com
+Glencore|Baar|CH|glencore.com
+Anheuser-Busch InBev|Brussels|BE|ab-inbev.com
+Enel|Rome|IT|enel.com
+Merck KGaA|Darmstadt|DE|merckgroup.com
+Charité|Berlin|DE|charite.de
+Pioneer Corporation|Kawasaki|JP|pioneer.jp
+Benetton Group|Treviso|IT|benetton.com
+France Télévisions|Paris|FR|francetelevisions.fr
+Air Transat|Montreal|CA|airtransat.com
+ITA Airways|Rome|IT|ita-airways.com
+Patek Philippe & Co.|Geneva|CH|patek.com
+GUM|Moscow|RU|gum.ru
+Pininfarina|Metropolitan City of Turin|IT|pininfarina.it
+Lonely Planet|Melbourne|AU|lonelyplanet.com
+JYP Entertainment|Seoul|KR|jype.com
+Oricon|Roppongi|JP|oricon.co.jp
+Aerolíneas Argentinas|Buenos Aires|AR|aerolineas.com.ar
+Air Arabia|Sharjah|AE|airarabia.com
+Chupa Chups|Barcelona|ES|chupachups.com
+Copa Airlines|Panama City|PA|copaair.com
+Fila, Inc.|Seoul|KR|fila.com
+Gulf Air|Al-Muharraq|BH|gulfair.com
+Kuwait Airways|Kuwait City|KW|kuwaitairways.com
+Omega SA|Biel/Bienne|CH|omegawatches.com
+Seiko|Ginza|JP|seiko.co.jp
+TU Wien|Wieden|AT|tuwien.at
+Tivoli Gardens|Copenhagen|DK|tivoli.dk
+Tokyo Electric Power Company Holdings|Uchisaiwaichō|JP|tepco.co.jp
+United Press International|Washington, D.C.|ES|upi.com
+VGTRK|Moscow|RU|vgtrk.ru
+Rosatom|Zamoskvorechye District|RU|rosatom.ru
+Marks & Spencer|Leeds|GB|marksandspencer.ie
+Standard Chartered|London|GB|sc.com
+Carl Zeiss AG|Oberkochen|DE|zeiss.com
+Legrand|Limoges|FR|legrandgroup.com
+Bacardi|Hamilton|BM|bacardi.com
+Moskvitch|Moscow|RU|moskvich-auto.ru
+FN Herstal|Herstal|BE|fnherstal.com
+eToro|Tel Aviv|GB|etoro.com
+Rhaetian Railway|Chur|CH|rhb.ch
+ATR|Tunis|FR|atr-aircraft.com
+Bottega Veneta|Vicenza|IT|bottegaveneta.com
+Celine|Paris|FR|celine.com
+China Mobile|Beijing|CN|10086.cn
+Middle East Airlines - Air Liban|Beirut|LB|mea.com.lb
+Soyuzmultfilm|Ostankinsky District|RU|souzmult.ru
+UniCredit|Milan|IT|unicreditgroup.eu
+Viva Entertainment|Quezon City|PH|viva.com.ph
+China National Petroleum Corporation|Beijing|CN|cnpc.com.cn
+China Construction Bank|Beijing|CN|ccb.com
+METRO Group|Düsseldorf|DE|metroag.de
+British American Tobacco|London|GB|bat.com
+Rolls-Royce|London|GB|rolls-royce.com
+Henkel KGaA|Düsseldorf|DE|henkel.com
+BHP Group|Melbourne|AU|bhp.com
+Telenor|Fornebu|NO|telenor.com
+Pernod Ricard|Paris|FR|pernod-ricard.com
+Micro-Star International|Zhonghe District|TW|msi.com
+Makita|Anjō|JP|makita.co.jp
+Tokyo Metro|Higashi-Ueno|JP|tokyometro.jp
+Rakuten Group, Inc.|Tamagawa|JP|rakuten.co.jp
+Rossiya|Saint Petersburg|RU|rossiya-airlines.com
+Kyoto Animation|Uji|JP|kyotoanimation.co.jp
+Air India Express|Kochi|IN|airindiaexpress.in
+Apple Records|London|GB|applerecords.com
+Arkia|Tel Aviv|IL|arkia.com
+Game Freak|Tokyo|JP|gamefreak.co.jp
+Go First|Mumbai|IN|flygofirst.com
+LATAM Airlines|Las Condes|CL|latam.com
+Macmillan Publishers|London|GB|macmillan.com
+NTV|Moscow|RU|ntv.ru
+Royal Air Maroc|Casablanca|MA|royalairmaroc.com
+Steinway & Sons|Hamburg|DE|steinway.com
+Tissot|Le Locle|CH|tissotwatches.com
+Turkmenistan Airlines|Ashgabat|TM|turkmenistanairlines.tm
+Virgin Australia|Bowen Hills|AU|virginaustralia.com
+WestJet|Calgary|CA|westjet.com
+DHL Group|Stadtbezirk Bonn|DE|dpdhl.com
+SAIC Motor|Shanghai|CN|saicmotor.com
+Bertelsmann|Gütersloh|DE|bertelsmann.com
+Dongfeng Motor Corporation|Wuhan|CN|dfmc.com.cn
+STMicroelectronics|Plan-les-Ouates|CH|st.com
+E.ON|Essen|DE|eon.com
+MediaTek|Hsinchu City|TW|mediatek.com
+Canadian Pacific Railway|Calgary|CA|cpr.ca
+Azovstal|Mariupol|RU|metinvestholding.com
+Air Algérie|Algiers|DZ|airalgerie.dz
+UCLouvain|Louvain-la-Neuve|BE|uclouvain.be
+Arm Holdings|Cambridge|GB|arm.com
+McLaren Automotive|Woking|GB|mclaren.com
+Air Greenland|Nuuk|GL|airgreenland.com
+Bank of Estonia|Tallinn|EE|eestipank.ee
+Bouygues|Paris|FR|bouygues.com
+Breitling|Grenchen|CH|breitling.com
+Condor Flugdienst|Frankfurt|DE|condor.com
+Deutsche Grammophon|Berlin|DE|deutschegrammophon.com
+Gaumont|Paris|FR|gaumont.fr
+Georgian Airways|Tbilisi|GE|georgian-airways.com
+Hisense|Qingdao|CN|hisense.com
+Komatsu Limited|Tokyo|JP|komatsu.jp
+Meizu|Zhuhai|CN|meizu.com
+National Gallery of Armenia|Yerevan|AM|gallery.am
+Pathé|New York City|FR|pathe.com
+Razer Inc.|Irvine|SG|razer.com
+Rožnov pod Radhoštěm|Rožnov pod Radhoštěm|CZ|roznov.cz
+Spar|Amsterdam|AT|spar-international.com
+West Japan Railway Company|Shibata|JP|westjr.co.jp
+Primark|Dublin|IE|primark.com
+Bata Limited|Lausanne|CH|bata.com
+Swedish Armed Forces|Stockholm|SE|forsvarsmakten.se
+booking.com|Amsterdam|GB|booking.com
+Bic|Paris|FR|bic.com
+S.P. Korolev Rocket and Space Corporation Energia|Korolyov|RU|energia.ru
+Deutsche Börse|Frankfurt|DE|deutsche-boerse.com
+Luxair|Munsbach|LU|luxair.lu
+Bitdefender|Bucharest|RO|bitdefender.com
+CD Projekt|Warsaw|PL|cdprojekt.com
+Mistral AI|Paris|FR|mistral.ai
+Saint Petersburg Conservatory|Saint Petersburg|RU|conservatory.ru
+Madhouse|Tokyo|JP|madhouse.co.jp
+Aprilia|Metropolitan City of Venice|IT|aprilia.com
+Bandai Namco Entertainment|Tokyo|JP|bandainamcoent.com
+Flipkart|Bengaluru|IN|flipkart.com
+Hino Motors|Hino|JP|hino-global.com
+Honor Device Co., Ltd.|Shenzhen|CN|honor.com
+Ibanez|Nagoya|JP|ibanez.com
+Iraqi Airways|Baghdad|IQ|iraqiairways.com.iq
+Jetstar Airways|Melbourne|AU|jetstar.com
+Nepal Airlines|Kathmandu|NP|nepalairlines.com.np
+Penguin Books|London|GB|penguin.co.uk
+Royal Brunei Airlines|Bandar Seri Begawan|BN|flyroyalbrunei.com
+Royal Mail|London|GB|royalmail.com
+Shanghai Airlines|Shanghai|CN|shanghai-air.com
+SpiceJet|Gurgaon|IN|spicejet.com
+The Pokémon Company|Roppongi|JP|pokemon.co.jp
+Tim Hortons|Oakville|CA|timhortons.com
+Éditions Gallimard|Paris|FR|gallimard.fr
+Publicis|Paris|FR|publicisgroupe.com
+VTB Bank|Saint Petersburg|RU|vtb.com
+Novo|Bagsværd|DK|novonordisk.com
+Leonardo|Rome|IT|leonardo.com
+TDK|Tokyo|JP|tdk.com
+Chery|Wuhu|CN|cheryinternational.com
+Banca Monte dei Paschi di Siena|Siena|IT|mps.it
+Tetra Pak|Pully|SE|tetrapak.com
+SK Hynix|Icheon|KR|skhynix.com
+Axel Springer SE|Berlin|DE|axelspringer.de
+Tele2|Stockholm|SE|tele2.com
+Narodowy Bank Polski|Warsaw|PL|nbp.pl
+Roland Corporation|Hamamatsu|JP|roland.com
+BenQ|Taipei|TW|benq.com
+Trivago|Düsseldorf|DE|trivago.com
+Shogakukan|Hitotsubashi|JP|shogakukan.co.jp
+Hasselblad|Gothenburg|SE|hasselblad.com
+9GAG|Hong Kong|CN|9gag.com
+Air Austral|Saint-Denis|FR|air-austral.com
+Al Arabiya|Riyadh|SA|alarabiya.net
+Austrian National Bank|Alsergrund|AT|oenb.at
+Azerbaijan Railways|Baku|AZ|ady.az
+Bajaj Auto|Pune|IN|bajajauto.com
+DICE|Stockholm|SE|dice.se
+Hainan Airlines|Haikou|CN|hainanairlines.com
+Herzog & de Meuron|Basel|CH|herzogdemeuron.com
+Hindustan Aeronautics Limited|Bengaluru|IN|hal-india.co.in
+Hungarian National Bank|Budapest|HU|mnb.hu
+Interfax|Moscow|RU|interfax.com
+Italian Stock Exchange|Milan|IT|borsaitaliana.it
+Liebherr Group|Bulle|CH|liebherr.com
+Maruti Suzuki|New Delhi|IN|marutisuzuki.com
+Nuclear Blast|Donzdorf|DE|nuclearblast.de
+PDVSA|Caracas|VE|pdvsa.com
+Proton|Shah Alam|MY|proton.com
+Sainsbury's|London|GB|sainsburys.co.uk
+SunExpress|Muratpaşa|TR|sunexpress.com
+Tunisair|Tunis|TN|tunisair.com
+UAZ|Ulyanovsk|RU|uaz.ru
+Vale|Rio de Janeiro|BR|vale.com
+Victorinox|Ibach|CH|victorinox.com
+State Grid Corporation of China|Beijing|CN|sgcc.com.cn
+Teleperformance|Paris|FR|teleperformance.com
+Great Wall Motor|Baoding|CN|gwmanz.com
+TCL Technology|Huizhou|CN|tcl.com
+Hilti|Schaan|LI|hilti.com
+Aviva|London|GB|aviva.com
+České dráhy|Prague|CZ|cd.cz
+Telia Company|Stockholm|SE|teliacompany.com
+Stihl|Waiblingen|DE|stihl.com
+Israel Aerospace Industries Ltd|Lod|IL|iai.co.il
+Harland and Wolff|Belfast|GB|harland-wolff.com
+Alexander McQueen|London|GB|alexandermcqueen.com
+Bangkok Airways|Bangkok|TH|bangkokair.com
+Bilibili|Yangpu District|CN|bilibili.com
+Dr. Martens|Wollaston|GB|drmartens.com
+Edelweiss Air|Kloten|CH|flyedelweiss.com
+Hyundai Motor Group|Seoul|KR|hyundaimotorgroup.com
+Jet2.com|Leeds|GB|jet2.com
+Lenfilm|Saint Petersburg|RU|lenfilm.ru
+Official Charts Company|London|GB|officialcharts.com
+Olivetti|Metropolitan City of Turin|IT|olivetti.com
+Sinovac Biotech|St. John's|CN|sinovac.com
+Swatch|Biel/Bienne|CH|swatch.com
+TP-Link|Shenzhen|CN|tp-link.com
+The Sydney Morning Herald|Sydney|AU|smh.com.au
+Ural Airlines|Yekaterinburg|RU|uralairlines.ru
+Yeti Airlines|Kathmandu|NP|yetiairlines.com
+The Royal Bank of Scotland|Edinburgh|GB|rbs.co.uk
+Pemex|Mexico City|MX|pemex.com
+Evergrande Group|Shenzhen|CN|evergrande.com
+Tata Steel|Mumbai|IN|tatasteel.com
+Kyocera|Fushimi-ku|JP|kyocera.com
+Assicurazioni Generali|Trieste|IT|generali.com
+Mitsubishi Heavy Industries|Tokyo|JP|mhi.com
+Commonwealth Bank|Sydney|AU|commbank.com.au
+Bank of Montreal|Toronto|CA|bmo.com
+Teva Pharmaceutical Industries Ltd.|Ramat HaHayal|IL|tevapharm.com
+Vestas|Aarhus|DK|vestasromania.com
+Nordea|Helsinki|FI|nordea.com
+Thomson Reuters|Toronto|CA|thomsonreuters.com
+Turkcell|Istanbul|TR|turkcell.com.tr
+XPeng|Guangzhou|CN|xpeng-auto.es
+BelAZ|Zhodzina|BY|belaz.by
+Shopify|Ottawa|CA|shopify.com
+Renault Korea Motors|Busan|KR|renaultkoream.com
+Velcro|Manchester|CH|velcro.com
+Smartwings|Prague|CZ|smartwings.com
+ESET|Bratislava|SK|eset.com
+Hummel International|Aarhus|DK|hummel.net
+Sorbonne Nouvelle-Paris 3|Paris|FR|sorbonne-nouvelle.fr
+Inmarsat|London|GB|inmarsat.com
+Kadokawa Shoten|Tokyo|JP|kadokawa.co.jp
+FK Dukla Prague|Prague|CZ|fkdukla.cz
+Air Madagascar|Antananarivo|MG|madagascarairlines.com
+Arts et Métiers ParisTech|Paris|FR|artsetmetiers.fr
+Beriev|Taganrog|RU|beriev.com
+Braun|Kronberg im Taunus|DE|braun.com
+Carl Walther GmbH|Arnsberg|DE|carl-walther.com
+China State Railway Group|Beijing|CN|china-railway.com.cn
+Faber-Castell|Stein|DE|faber-castell.com
+Grupo Bimbo|Mexico City|MX|grupobimbo.com
+HMD Global|Espoo|FI|hmd.com
+Haier|Qingdao|CN|haier.com
+Hong Kong Airlines|Chek Lap Kok|CN|hongkongairlines.com
+Husqvarna Group|Huskvarna|SE|husqvarnagroup.com
+KUKA|Augsburg|DE|kuka.com
+Korean Stock Exchange|Busan|KR|krx.co.kr
+Lao Airlines|Vientiane|LA|laoairlines.com
+Mediaset|Milan|IT|mfemediaforeurope.com
+Moscow Exchange|Moscow|RU|moex.com
+Märklin|Göppingen|DE|maerklin.de
+Pearson plc|London|GB|pearson.com
+Reckitt|Slough|GB|reckitt.com
+SKF|Gothenburg|SE|skf.com
+Sigma Corporation|Kawasaki|JP|sigmaphoto.com
+Trenitalia|Rome|IT|trenitalia.com
+Zruč nad Sázavou|Zruč nad Sázavou|CZ|mesto-zruc.cz
+airblue|Karachi|PK|airblue.com
+Éditions Larousse|Paris|FR|editions-larousse.fr
+Naftogaz of Ukraine|Kyiv|UA|naftogaz.com
+State Oil Company of Azerbaijan Republic|Baku|AZ|socar.az
+KBC Group|Brussels|BE|kbc.com
+Beiersdorf|Hamburg|DE|beiersdorf.com
+Swisscom|Ittigen|CH|swisscom.ch
+Miele|Gütersloh|DE|miele.com
+RWE|Essen|DE|rwe.com
+Central Japan Railway Company|Nakamura-ku|JP|jr-central.co.jp
+Citizen Watch|Tokyo|JP|citizen.co.jp
+Agfa-Gevaert|Leverkusen|DE|agfa.com
+Ülker|Istanbul|TR|ulker.com.tr
+Rafael Advanced Defense Systems|Kiryat Yam|IL|rafael.co.il
+Gigabyte Technology|Xindian District|TW|giga-byte.com
+Intelsat|Luxembourg|LU|intelsat.com
+Taito|Tokyo|JP|taito.co.jp
+Abarth|Turin|IT|abarth.com
+Accademia della Crusca|Florence|IT|accademiadellacrusca.it
+Agencia EFE|Castilla|ES|efe.com
+Air Cairo|Cairo|EG|aircairo.com
+Asahi Breweries|Azumabashi|JP|asahibeer.com
+Barilla Group|Parma|IT|barillagroup.com
+Beko|Istanbul|TR|bekocorporate.com
+Brabus|Bottrop|DE|brabus.com
+Buddha Air|Jawalakhel|NP|buddhaair.com
+Cebu Pacific|Cebu City|PH|cebupacificair.com
+Changan Automobile|Chongqing|CN|globalchangan.com
+Doubleday|New York City|GB|knopfdoubleday.com
+Drukair|Paro|BT|drukair.com.bt
+FAW Group|Changchun|CN|faw.com
+Ferrovie dello Stato Italiane|Rome|IT|fsitaliane.it
+Kone|Espoo|FI|kone.com
+Maybelline|New York City|BR|maybelline.com
+Nok Air|Sathon|TH|nokair.com
+OSRAM Licht AG|Munich|DE|ams-osram.com
+Production I.G|Tokyo|JP|production-ig.co.jp
+Scoot|Singapore|SG|flyscoot.com
+Shenzhen Airlines|Shenzhen|CN|shenzhenair.com
+Shimano|Sakai|JP|shimanoservicecenter.com
+StudioCanal|Boulogne-Billancourt|GB|studiocanal.com
+TUI Group|Hanover|DE|tuigroup.com
+VAIO|Azumino|JP|vaio.com
+Valentino|Milan|FR|valentino.com
+Youku|Beijing|CN|youku.com
+Tata Consultancy Services|Mumbai|IN|tcs.com
+América Móvil|Mexico City|MX|americamovil.com
+Transneft|Moscow|RU|transneft.ru
+El Corte Inglés|Goya|ES|elcorteingles.es
+International Airlines Group|London|ES|iairgroup.com
+Heidelberg Materials|Heidelberg|DE|heidelbergmaterials.com
+Jaguar Land Rover|Coventry|GB|jaguarlandrover.com
+Munich Re|Munich|DE|munichre.com
+Konica Minolta|Tokyo|JP|konicaminolta.us
+Uralvagonzavod|Nizhny Tagil|RU|uralvagonzavod.ru
+NTT DoCoMo|Nagatachō|JP|docomo.ne.jp
+OMV|Vienna|AT|omv.com
+Elbit Systems Ltd.|Haifa|IL|elbitsystems.com
+Hungarian State Railways|Budapest|HU|mavcsoport.hu
+Swiss Re|Zurich|CH|swissre.com
+Minsk Automobile Plant|Minsk|BY|maz.by
+Roshen|Budapest|UA|roshen.com
+Wix.com|Tel Aviv|IL|wix.com
+Česká televize|Prague|CZ|ceskatelevize.cz
+Similarweb|Givatayim|IL|similarweb.com
+Korg|Tokyo|JP|korg.com
+Quantic Dream|Paris|FR|quanticdream.com
+A-1 Pictures|Tokyo|JP|a1p.jp
+Arik Air|Ikeja|NG|arikair.com
+Australian Securities Exchange|Sydney|AU|asx.com.au
+BMW M|Munich|DE|bmw-m.com
+Bank of Slovenia|Ljubljana|SI|bsi.si
+Bulgarian State Railways|Sofia|BG|bdz.bg
+Claas|Harsewinkel|DE|claas.com
+Croatian National Bank|Zagreb|HR|hnb.hr
+Estonian Railways|Tallinn|EE|evr.ee
+Gruppo Intesa Sanpaolo|Turin|IT|intesasanpaolo.com
+Hachette|Paris|FR|hachette.com
+Hyundai|Seoul|KR|hyundaigroup.com
+IMI Systems|Ramat HaSharon|IL|imisystems.com
+Indonesia AirAsia|Jakarta|ID|airasia.com
+Kaufland|Neckarsulm|DE|kaufland.de
+Mediterranean Shipping Company|Geneva|CH|msc.com
+Mitsubishi Electric|Tokyo|JP|mitsubishielectric.com
+Nong Shim Ltd.|Seoul|KR|nongshim.com
+OneCoin|Sofia|BG|onelife.eu
+Pacific Airlines|Ho Chi Minh City|VN|pacificairlines.com
+Rare Ltd.|Twycross|GB|rare.co.uk
+Ricoh|Tokyo|JP|ricoh.com
+Sanrio|Tokyo|JP|sanrio.com
+Skandinaviska Enskilda Banken|Stockholm|SE|sebgroup.com
+Suntory|Dōjimahama|JP|suntory.co.jp
+TVR|Whiteley|GB|tvr.co.uk
+The Adecco Group|Zurich|CH|adeccogroup.com
+Tsingtao Brewery|Qingdao|CN|tsingtao.com
+UFA|Potsdam|DE|ufa.de
+UTair Aviation|Khanty-Mansiysk|RU|utair.ru
+VIA Technologies|New Taipei City|TW|viatech.com
+Westdeutscher Rundfunk|Cologne|DE|wdr.de
+Wildberries|Koledino|RU|wildberries.ru
+Edeka|Hamburg-Nord|DE|edeka.de
+China North Industries Group Corporation Limited|Beijing|CN|norincogroup.com.cn
+BT Group|London|GB|bt.com
+Nornickel|Moscow|RU|nornickel.ru
+Polish State Railways|Warsaw|PL|pkp.pl
+Rusal|Moscow|JE|rusal.com
+POSCO|Pohang|KR|posco.com
+Bashneft|Ufa|RU|bashneft.com
+MegaFon|Moscow|RU|megafon.com
+Fincantieri|Trieste|IT|fincantieri.com
+The Body Shop|Littlehampton|GB|thebodyshop.com
+Danske Bank|Copenhagen|DK|danskebank.com
+Billa|Wiener Neudorf|AT|billa.at
+Costa Coffee|Dunstable|GB|costa.co.uk
+De'Longhi|Treviso|IT|delonghi.com
+NetEase|George Town|CN|163.com
+GM Korea|Incheon|KR|gm-korea.co.kr
+Neoplan|Stuttgart|DE|neoplan.com
+Nissin Food Products|Nishinakajima|JP|nissin.com
+Tallink|Tallinn|EE|tallink.com
+Mizuno Corporation|Osaka|JP|mizuno.com
+Bolt|Tallinn|EE|bolt.eu
+Lavazza|Turin|IT|lavazza.com
+Via Rail|Montreal|CA|viarail.ca
+Blohm+Voss|Hamburg|DE|nvl.de
+FromSoftware|Tokyo|JP|fromsoftware.jp
+Toei Company|Tokyo|JP|toei.co.jp
+Accademia Nazionale dei Lincei|Rome|IT|lincei.it
+Air France Hop|Bouguenais|FR|hop.fr
+Air Niugini|Port Moresby|PG|airniugini.com.pg
+Ariana Afghan Airlines|Shahr-e Naw|AF|flyariana.com
+Audemars Piguet|Le Brassus|CH|audemarspiguet.com
+Bank of Finland|Kruununhaka|FI|suomenpankki.fi
+Bulgarian National Bank|Sofia|BG|bnb.bg
+Canadian National Railway|Downtown Montreal|CA|cn.ca
+Chloé|Paris|FR|chloe.com
+Comac|Shanghai|CN|comac.cc
+Enercon|Aurich|DE|enercon.de
+Fremantle|London|GB|fremantle.com
+Hapag-Lloyd|Hamburg|DE|hapag-lloyd.com
+Hybe|Seoul|KR|hybecorp.com
+J.C. Bamford Excavators|Rocester|GB|jcb.com
+Kam Air|Kabul|AF|kamair.com
+Liseberg|Gothenburg|SE|liseberg.se
+London Metal Exchange|London|GB|lme.com
+Mitsui Group|Tokyo|JP|mitsui.com
+Nespresso|Vevey|CH|nespresso.com
+Nio Inc.|Hefei|CN|nio.com
+Nouvelair|Monastir|TN|nouvelair.com
+Opéra-Comique|Paris|FR|opera-comique.com
+Parker Pen Company|Newhaven|GB|parkerpen.com
+Sat.1|Berlin|DE|sat1.de
+Sichuan Airlines|Chengdu|CN|sichuanair.com
+Smirnoff|Moscow|RU|smirnoff.com
+South African Broadcasting Corporation|Johannesburg|ZA|sabc.co.za
+TBS Education|Toulouse|ES|tbs-education.fr
+Temasek Holdings|Singapore|SG|temasek.com.sg
+Thales Alenia Space|Cannes|FR|thalesaleniaspace.com
+Twinings Tea|Andover|GB|twinings.co.uk
+UnionPay|Pudong|CN|unionpayintl.com
+Xiamen Airlines|Xiamen|CN|xiamenair.com
+Rostec|Moscow|RU|rostec.ru
+Ping An Insurance|Shenzhen|CN|pingan.com
+Asda|Leeds|GB|asda.com
+Itaú Unibanco|São Paulo|BR|itau.com.br
+Contemporary Amperex Technology Co. Limited|Ningde|CN|catl.com
+Arriva|Sunderland|GB|arriva.co.uk
+Kubota|Osaka|JP|kubota.com
+Subaru Corporation|Tokyo|JP|subaru.co.jp
+PrivatBank|Dnipro|UA|privatbank.ua
+Arla Foods|Aarhus|DK|arla.com
+Turkish Aerospace Industries|Ankara|TR|tusas.com
+Bandai Namco Holdings|Tokyo|JP|bandainamco.co.jp
+Gorenje|Velenje|SI|gorenje.com
+Renault Trucks|Lyon|FR|renault-trucks.com
+Solvay S.A.|Brussels|BE|solvay.com
+Eesti Energia|Tallinn|EE|enefit.ee
+Solaris Bus & Coach|Bolechowo|PL|solarisbus.com
+Frankfurter Rundschau|Frankfurt|DE|fr.de
+MikroTik|Riga|LV|mikrotik.com
+MAPPA|Tokyo|JP|mappa.co.jp
+JetBrains|Prague|CZ|jetbrains.com
+Babelsberg Studio|Potsdam|DE|studiobabelsberg.com
+SK Dynamo České Budějovice|České Budějovice|CZ|dynamocb.cz
+Agenzia Nazionale Stampa Associata|Rome|IT|ansa.it
+Agoda|Singapore|SG|agoda.com
+Azerbaijanfilm|Baku|AZ|azerbaijanfilm.az
+BitChute|Sheridan|GB|bitchute.com
+Bösendorfer|Vienna|AT|boesendorfer.com
+Carpatair|Timișoara|RO|carpatair.com
+Cubana de Aviación|Havana|CU|cubana.cu
+Excelia|La Rochelle|FR|excelia-group.fr
+Family Mart|Toshima|JP|family.co.jp
+Fendt|Marktoberdorf|DE|fendt.com
+FlixBus|Munich|DE|flixbus.com
+Gol Transportes Aéreos|São Paulo|BR|voegol.com.br
+Helvetic Airways|Kloten|CH|helvetic.com
+Israir Airlines|Tel Aviv|IL|israir.co.il
+Jio|Navi Mumbai|IN|jio.com
+Kikkoman|Noda|JP|kikkoman.co.jp
+Knorr|Heilbronn|DE|knorr.com
+La Poste|Paris|FR|laposte.fr
+MV Agusta|Schiranna|IT|mvagusta.com
+Monumenta Germaniae Historica|Munich|DE|mgh.de
+Moschino|Milan|IT|moschino.com
+NPO Lavochkin|Khimki|SU|laspace.ru
+Nasdaq Stockholm AB|Stockholm|SE|nasdaqomxnordic.com
+National Opera of Ukraine|Kyiv|UA|opera.com.ua
+Nexon|Tokyo|JP|nexon.co.jp
+OTP Bank|Budapest|HU|otpbank.hu
+Pony Canyon|Tokyo|JP|ponycanyon.biz
+Rimac Automobili|Sveta Nedelja|HR|rimac-automobili.com
+RwandAir|Kigali|RW|rwandair.com
+Selfridges|City of Westminster|GB|selfridges.com
+Sokol|Prague|CZ|sokol.eu
+Speedo International Limited|Nottingham|GB|speedo.com
+Syrian Air|Damascus|SY|syrian-airlines.net
+TUI fly Deutschland|Langenhagen|DE|tuifly.com
+Takeda Pharmaceutical Company|Chūō-ku|JP|takeda.co.jp
+Tamron|Saitama|DE|tamron.com
+Taylor & Francis|Milton|GB|taylorandfrancis.com
+Toronto-Dominion Bank|Old Toronto|CA|td.com
+Vkusno i Tochka|Moscow|RU|qsrsystem.com
+Warsaw Stock Exchange|Warsaw|PL|gpw.pl
+G4S|London|GB|g4s.com
+Sonatrach|Algiers|DZ|sonatrach.com
+Midea|Beijiao Town|CN|midea.com
+China Baowu Steel Group|Shanghai|CN|baowugroup.com
+CMA CGM|Métropole Aix-Marseille-Provence|FR|cma-cgm.com
+Linde Group|Woking|IE|linde.com
+Iran Khodro|Tehran|IR|ikco.ir
+Zurich Insurance Group|Zurich|CH|zurich.com
+Severstal|Cherepovets|RU|severstal.com
+China Unicom|Beijing|CN|chinaunicom.com
+ALROSA|Mirny|RU|alrosa.ru
+MOL Group|Budapest|HU|molgroup.info
+HD Hyundai Heavy Industries|Ulsan|KR|hhi.co.kr
+Alfa-Bank|Moscow|RU|alfabank.ru
+Hankook Tire & Technology|Seongnam|KR|hankooktire.com
+LG Chem|Seoul|KR|lgchem.com
+Zeekr|Ningbo|CN|zeekrglobal.com
+Minsk Tractor Works|Minsk|BY|belarus-tractor.com
+DSB|Taastrup|DK|dsb.dk
+Wargaming|Nicosia|CY|wargaming.com
+De La Rue|Basingstoke|GB|delarue.com
+Emaar Properties|Dubai|AE|emaar.com
+Nokian Tyres|Nokia|FI|nokiantyres.com
+GSC Game World|Kyiv|UA|gsc-game.com
+Jawa|Týnec nad Sázavou|CZ|jawa.eu
+New Japan Pro-Wrestling|Noge|JP|njpw1972.com
+Air Atlanta Icelandic|Kópavogur|IS|airatlanta.com
+Air Cambodia|Phnom Penh|KH|cambodiaangkorair.com
+AlloCiné|Paris|FR|allocine.fr
+Best Western|Phoenix|CA|bestwestern.com
+CJ Group|Seoul|KR|cj.net
+Castrol|Reading|GB|castrol.com
+Costa Cruises|Genoa|IT|costacruises.com
+Czech National Bank|Prague|CZ|cnb.cz
+D-Link|Taipei|TW|dlink.com
+Deutz AG|Cologne|DE|deutz.com
+Dravida Munnetra Kazhagam|Chennai|IN|dmk.in
+ESP Guitars|Tokyo|JP|espguitars.com
+Elite Model Management|Paris|FR|theeliteworldgroup.com
+Elron|Tallinn|EE|elron.ee
+Four Seasons Hotels and Resorts|Toronto|CA|fourseasons.com
+Games Workshop|Nottingham|GB|warhammer.com
+HK Express|Hong Kong|CN|hkexpress.com
+Hero MotoCorp|New Delhi|IN|heromotocorp.com
+Korea Railroad Corporation|Daejeon|KR|korail.com
+MIAT Mongolian Airlines|Ulaanbaatar|MN|miat.com
+Migros|Zurich|CH|migros.ch
+Mizuho Financial Group|Ōtemachi|JP|mizuho-fg.com
+Nelvana|Toronto|CA|nelvana.com
+Nine Network|Willoughby|AU|9now.com.au
+Nismo|Tokyo|JP|nismo.com
+ONE Championship|Downtown Core|SG|onefc.com
+Paulaner Brewery|Au|DE|paulaner.de
+Polestar|Gothenburg|SE|polestar.com
+Polyphony Digital|Tokyo|JP|polyphony.co.jp
+Port of Tallinn|Tallinn|EE|ts.ee
+Posti Group|Helsinki|FI|posti.fi
+Realtek|Hsinchu City|TW|realtek.com
+Red Bull Powertrains|Milton Keynes|AT|redbullpowertrains.com
+Red Wings Airlines|Vnukovo|RU|flyredwings.com
+Rocket Lab|Long Beach|NZ|rocketlabcorp.com
+Royal Swedish Opera|Stockholm|SE|operan.se
+SNK|Yodogawa-ku|JP|snk-corp.co.jp
+Singtel|Singapore|SG|singtel.com
+Stora Enso|Helsinki|FI|storaenso.com
+Sudan Airways|Khartoum|SD|sudanair.com
+São Paulo Stock Exchange|São Paulo|BR|b3.com.br
+TU Braunschweig|Brunswick|DE|tu-braunschweig.de
+TUI Airways|Luton|GB|tui.co.uk
+TVB|Düsseldorf|DE|tvb.com
+Tajik Air|Dushanbe|TJ|tajikair.tj
+Vacheron Constantin|Plan-les-Ouates|CH|vacheron-constantin.com
+YKK|Kanda-Izumichō|JP|ykk.co.jp
+Yemenia|Sanaa|YE|yemenia.com
+Yonex|Tokyo|JP|yonex.com
+Yutong|Zhengzhou|CN|yutong.com
+ZF Friedrichshafen AG|Friedrichshafen|DE|zf.com
+Kazakhstan Temir Zholy|Astana|KZ|railways.kz
+Surgutneftegas|Surgut|RU|surgutneftegas.ru
+WPP plc|Saint Helier|GB|wpp.com
+Transmashholding|Moscow|RU|tmholding.ru
+KazMunayGas|Astana|KZ|kmg.kz
+Scotiabank|Toronto|CA|scotiabank.com
+Orlen|Płock|PL|orlen.pl
+JD.com|Beijing|CN|jd.com
+Belarusian Railway|Minsk|BY|rw.by
+Imperial Brands|Bristol|GB|imperialbrandsplc.com
+Shiseido|Ginza|JP|shiseido.com
+TIM Group|Milan|IT|gruppotim.it
+Hydro-Quebec|Montreal|CA|hydroquebec.com
+Fraport|Frankfurt|DE|fraport.com
+Renesas Electronics|Tokyo|JP|renesas.com
+SK Telecom|Seoul|KR|sktelecom.com
+Vattenfall|Stockholm|SE|vattenfall.com
+Wärtsilä|Helsinki|FI|wartsila.com
+Lifan Group|Chongqing|CN|lifan.com
+Atlassian|Sydney|AU|atlassian.com
+IHG Hotels & Resorts|Denham|GB|ihgplc.com
+VR Group|Helsinki|FI|vrgroup.fi
+Pivdenmash|Dnipro|UA|yuzhmash.com
+Hesburger|Turku|FI|hesburger.fi
+Trafigura|Singapore|SG|trafigura.com
+VARTA AG|Hagen|DE|varta-ag.com
+Meyer Werft|Papenburg|DE|meyerwerft.de
+KrAZ|Kremenchuk|UA|autokraz.com.ua
+Howaldtswerke-Deutsche Werft|Kiel|DE|hdw.de
+Future plc|Bath|GB|futureplc.com
+Lufthansa CityLine|Freising|DE|lufthansacityline.com
+Staedtler|Nuremberg|DE|staedtler.com
+Bang & Olufsen|Struer|DK|bang-olufsen.com
+Israel Railways|Lod|IL|rail.co.il
+Kyodo News|Higashi-Shinbashi|JP|kyodonews.jp
+Volga-Dnepr Airlines|Ulyanovsk|RU|volga-dnepr.com
+Nordisk Film|Copenhagen|DK|nordiskfilm.com
+SCS Software|Prague|CZ|scssoft.com
+Barrandov Studios|Prague|CZ|barrandov.cz
+FK Příbram|Příbram|CZ|fkpribram.cz
+AJet|Ankara|TR|ajet.com
+Air Albania|Tirana|AL|airalbania.com.al
+Air Burkina|Ouagadougou|BF|air-burkina.com
+Air Corsica|Ajaccio|FR|aircorsica.com
+Air Iceland|Reykjavík|IS|airiceland.is
+Air Macau|Macau|CN|airmacau.com.mo
+Aircalin|Nouméa|NC|aircalin.com
+Alpina|Buchloe|DE|alpina-automobiles.com
+Audio-Technica|Machida|JP|audio-technica.com
+Banco de Portugal|Lisbon|PT|bportugal.pt
+Bank of Greece|Athens|GR|bankofgreece.gr
+Batik Air|Jakarta|ID|batikair.com
+Bones|Tokyo|JP|bones.co.jp
+Cabo Verde Airlines|Praia|CV|caboverdeairlines.com
+Caterham Cars|Crawley|GB|caterhamcars.com
+Check Point|Tel Aviv|IL|checkpoint.com
+DiDi|Beijing|CN|didiglobal.com
+Enter Air|Warsaw|PL|enterair.pl
+Evergreen Marine|Luzhu District|TW|evergreen-marine.com
+Funai|Daitō-shi|JP|funai.co.jp
+Hessischer Rundfunk|Frankfurt|DE|hr.de
+IHI Corporation|Tokyo|JP|ihi.co.jp
+JioStar|Mumbai|IN|startv.com
+Kirin Holdings|Nakano Shikinomachi|JP|kirinholdings.com
+LAM Mozambique Airlines|Maputo|MZ|lam.co.mz
+Li-Ning Company Limited|George Town|KY|lining.com
+Lloyd's of London|City of London|GB|lloyds.com
+Lucky Air|Kunming|CN|luckyair.net
+MAN Truck & Bus|Munich|DE|mantruckandbus.com
+Macron|Metropolitan City of Bologna|IT|macron.com
+Marimekko|Herttoniemen yritysalue|FI|marimekko.com
+Marshall Amplification|London|GB|marshall.com
+Max Mara|Reggio Emilia|IT|maxmara.com
+Mercedes AMG High Performance Powertrains|Brixworth|GB|mercedes-amg-hpp.com
+Montblanc International GmbH|Hamburg|DE|montblanc.com
+Network Rail|London|GB|networkrail.co.uk
+Openmoko|Xindian District|TW|openmoko.com
+Orange Sky Golden Harvest|Hong Kong|CN|osgh.com.hk
+Pertamina|Jakarta|ID|pertamina.com
+Piaget|Geneva|CH|piaget.com
+Pilot Corporation|Tokyo|JP|pilotpen.com
+QatarEnergy|Doha|QA|qp.com.qa
+Ram Trucks|Auburn Hills|CA|ramtrucks.com
+Ràdio i Televisió d'Andorra|Andorra la Vella|AD|rtva.ad
+Studio Pierrot|Mitaka|JP|pierrot.jp
+Sveriges Radio|Stockholm|SE|sverigesradio.se
+TAAG Angola Airlines|Luanda|AO|taag.com
+Tata Daewoo|Gunsan|KR|tata-daewoo.com
+The Illustrated London News|London|GB|iln.co.uk
+VinFast|Haiphong|VN|vinfastauto.com
+Vistara|New Delhi|IN|airvistara.com
+Wacom|Kazo|JP|wacom.com
+Wolt|Helsinki|FI|wolt.com
+Yakovlev Corporation|Irkutsk|RU|irkut.com
+Fresenius SE & Co. KGaA|Bad Homburg vor der Höhe|DE|fresenius.com
+Associated British Foods|London|GB|abf.co.uk
+Almaz-Antey|Moscow|RU|almaz-antey.ru
+Würth|Künzelsau|DE|wuerth.de
+Japan Tobacco|Toranomon|JP|jt.com
+Tatneft|Almetyevsk|RU|tatneft.ru
+Daikin Industries|Umeda|JP|daikin.com
+Atlas Copco|Nacka|SE|atlascopco.com
+DBS Bank|Singapore|SG|dbs.com.sg
+Gazprombank|Moscow|RU|gazprombank.ru
+Ashok Leyland|Chennai|IN|ashokleyland.com
+Dr. Oetker|Bielefeld|DE|oetker.com
+UCB|Brussels metropolitan area|BE|ucb.com
+Ørsted|Fredericia|DK|orsted.com
+Ineos|Luxembourg|GB|ineos.com
+Kalashnikov Concern|Leninský district|RU|kalashnikovgroup.ru
+Kirov Plant|Saint Petersburg|RU|kzgroup.ru
+AUTODOC|Lichtenberg|DE|autodoc.de
+ADAC|Munich|DE|adac.de
+Gdańsk Shipyard|Gdańsk|PL|gdanskshipyard.pl
+Pesa|Bydgoszcz|PL|pesa.pl
+Vitol|Geneva|CH|vitol.com
+Presidential Administration of Russia|Tverskoy District|RU|kremlin.ru
+AERO Vodochody Aerospace|Odolena Voda|CZ|aero.cz
+Audi Sport|Neckarsulm|DE|audi-mediacenter.com
+ZAZ|Zaporizhzhia|UA|avtozaz.com
+Qt Group Plc|Espoo|FI|qt.io
+International Watch Company|Schaffhausen|CH|iwc.com
+Avira|Tettnang|DE|avira.com
+TMS Entertainment|Nakano|JP|tms-e.co.jp
+HAL Laboratory|Tokyo|JP|hallab.co.jp
+Serbian Railways|Belgrade|RS|zeleznicesrbije.com
+Kunstakademie Düsseldorf|Düsseldorf|DE|kunstakademie-duesseldorf.de
+Criterion Games|Guildford|GB|criteriongames.com
+THQ Nordic|Vienna|AT|thqnordic.com
+Dexia|Brussels metropolitan area|FR|dexia.com
+AKG Acoustics|Vienna|AT|akg.com
+Abu Dhabi National Oil Company|Abu Dhabi|AE|adnoc.ae
+Air Botswana|Gaborone|BW|airbotswana.co.bw
+Air Busan|Busan|KR|airbusan.com
+Air Do|Sapporo|JP|airdo.jp
+Antonov Airlines|Kyiv|UA|antonov-airlines.com
+Arkane Studios|Lyon|FR|arkane-studios.com
+Australia and New Zealand Banking Group|Melbourne|AU|anz.co.nz
+BAIC Group|Beijing|CN|baicgroup.com.cn
+Bank of Communications|Shanghai|CN|bankcomm.com
+Bank of Ireland|Dublin|IE|bankofireland.com
+Bank of Scotland|Edinburgh|GB|bankofscotland.co.uk
+Bertone|Turin|IT|bertone.it
+Bharti Airtel|New Delhi|IN|airtel.com
+China National Offshore Oil Corporation|Beijing|CN|cnooc.com.cn
+CityJet|Swords|IE|cityjet.com
+Corendon Airlines|Antalya|TR|corendon-airlines.com
+Daallo Airlines|Dubai|DJ|daallo.biz
+Denso|Kariya|JP|denso.com
+Die Schweizerische Post|Bern|CH|post.ch
+F-Secure|Helsinki|FI|f-secure.com
+Fortum|Espoo|FI|fortum.com
+Foster and Partners|London|GB|fosterandpartners.com
+Georgian Railway|Tbilisi|GE|railway.ge
+Grab|Singapore|SG|grab.com
+Hokkaido Railway Company|Chūō-ku|JP|jrhokkaido.co.jp
+Hongqi|Changchun|CN|hongqi-auto.com
+Hotel Sacher Vienna|Vienna|AT|sacher.com
+Hyundai Rotem|Uiwang|KR|hyundai-rotem.co.kr
+Kenzo|Paris|FR|kenzo.com
+King|London|MT|king.com
+Krafton|Seongnam|KR|krafton.com
+Lufthansa Cargo|Frankfurt|DE|lufthansa-cargo.com
+Mandarin Airlines|Taipei|TW|mandarin-airlines.com
+Marv Studios|London|GB|marv.com
+Miniclip|Neuchâtel|CH|miniclip.com
+Mitteldeutscher Rundfunk|Leipzig|DE|mdr.de
+Morgan Motor Company|Malvern|GB|morgan-motor.co.uk
+NC|Seoul|KR|ncsoft.com
+NDTV|New Delhi|IN|ndtv.com
+National Iranian Oil Company|Tehran|IR|nioc.ir
+Naver Corporation|Seongnam|KR|navercorp.com
+Oil and Natural Gas Corporation|Dehradun|IN|ongcindia.com
+Powszechna Kasa Oszczędności Bank Polski|Warsaw|PL|pkobp.pl
+STS|Moscow|RU|televizorus.tv
+Skrill|London|GB|skrill.com
+Slovenske železnice|Ljubljana|SI|sz.si
+Smartavia|Arkhangelsk|RU|nordavia.ru
+Strix Television|Stockholm|SE|strix.se
+Systembolaget|Stockholm|SE|systembolaget.se
+Talgo|Las Rozas de Madrid|ES|talgo.com
+The Swatch Group|Biel/Bienne|CH|swatchgroup.com
+Tuborg Brewery|Copenhagen|DK|tuborg.com
+Volaris|Mexico City|MX|volaris.com
+Wipro|Bengaluru|IN|wipro.com
+Wētā FX|Wellington|NZ|wetafx.co.nz
+Zyle Daewoo Bus|Bucheon|KR|daewoobus.co.kr
+iQIYI|Beijing|CN|iqiyi.com
+Aviation Industry Corporation of China, Ltd.|Beijing|CN|avic.com
+Russian Post|Moscow|RU|pochta.ru
+China Aerospace Science and Technology Corporation|Beijing|CN|spacechina.com
+Quanta Computer|Taipei|TW|quantatw.com
+Lafarge|Paris|FR|lafarge.ca
+Biedronka|Kostrzyn|PL|biedronka.pl
+Prudential plc|London|GB|prudentialplc.com
+Richemont|Geneva|CH|richemont.com
+Fininvest|Rome|IT|fininvest.it
+Zalando|Berlin|DE|zalando.com
+MTU Aero Engines|Munich|DE|mtu.de
+Škoda Transportation|Plzeň|CZ|skodagroup.com
+Lundbeck|Valby|DK|lundbeck.com
+TVS Motor Company|Chennai|IN|tvsmotor.com
+Société Nationale des Chemins de Fer Luxembourgeois|Luxembourg|LU|cfl.lu
+Stena Line|Gothenburg|SE|stenaline.com
+Rába Járműipari Holding Nyrt.|Győr|HU|raba.hu
+1C Company|Moscow|RU|1c.ru
+German Federal Archives|Koblenz|DE|bundesarchiv.de
+Budweiser Budvar|České Budějovice|CZ|budejovickybudvar.cz
+ASRock|Taipei|TW|asrock.com
+4A Games|Sliema|MT|4a-games.com.mt
+Cyprus Airways|Larnaca|CY|cyprusairways.com
+MAXXI|Rome|IT|fondazionemaxxi.it
+AIDA Cruises|Rostock|DE|aida.de
+Aero Mongolia|Ulaanbaatar|MN|aeromongolia.mn
+Air Hong Kong|Hong Kong|CN|airhongkong.com.hk
+Air Vanuatu|Port Vila|VU|airvanuatu.com
+Alcon|Geneva|CH|alcon.com
+Beijing Capital Airlines|Beijing|CN|jdair.net
+China Ocean Shipping Co., Ltd.|Shanghai|CN|coscoshipping.com
+Cipla|Mumbai|IN|cipla.com
+DK|London|GB|dk.com
+Darul Uloom Deoband|Deoband|IN|darululoom-deoband.com
+Debenhams PLC|London|GB|debenhams.com
+Dovzhenko Film Studios|Kyiv|UA|dovzhenkofilm.com.ua
+Forever 21|Los Angeles|CA|urban-planet.com
+Genesis Motor|Seoul|KR|genesis.com
+Godiva Chocolatier|New York City|BE|godiva.com
+Handelsbanken|Stockholm|SE|handelsbanken.se
+Italdesign Giugiaro|Metropolitan City of Turin|IT|italdesign.it
+JBS S.A.|São Paulo|BR|jbs.com.br
+Jeju Air|Jeju|KR|jejuair.net
+KT Corporation|Seongnam|KR|kt.com
+Koç Holding|Istanbul|TR|koc.com.tr
+KraussMaffei|Parsdorf|DE|kraussmaffeigroup.com
+Lietuvos geležinkeliai, AB|Vilnius|LT|litrail.lt
+MBC Group|Riyadh|SA|mbc.net
+MSC Cruises|Geneva|CH|msccruises.com
+Miu Miu|Milan|IT|miumiu.com
+Mixue Ice Cream & Tea|Zhengzhou|CN|mixue.com
+Musixmatch|Metropolitan City of Bologna|IT|musixmatch.com
+Nordica|Tallinn|EE|nordica.ee
+Orient Thai Airlines|Khlong Toei|TH|flyorientthai.com
+PEGATRON|Taipei|TW|pegatroncorp.com
+Paytm|Noida|IN|paytm.com
+Primus stove|Stockholm|SE|primusequipment.com
+Rimowa|Cologne|DE|rimowa.com
+SJ AB|Stockholm|SE|sj.se
+SK Group|Seoul|KR|sk.com
+Shandong Airlines|Jinan|CN|shandongair.com.cn
+Sky Airline|Santiago|CL|skyairline.com
+Skytrax|London|EG|skytraxratings.com
+Sohu|Beijing|CN|sohu.com
+Spring Airlines|Shanghai|CN|ch.com
+Tel Aviv Stock Exchange|Tel Aviv|IL|tase.co.il
+Türk Telekom|Ankara|TR|turktelekom.com.tr
+Wanda Group|Beijing|CN|wanda-group.com
+Wise|London|GB|wise.com
+Working Title Films|London|GB|workingtitlefilms.com
+YouGov|London|GB|yougov.com
+Zastava Arms|Kragujevac|RS|zastava-arms.co.rs
+bwin|Vienna|AT|bwin-uk.co
+Jardine Matheson|Hong Kong|BM|jardines.com
+SABIC|Riyadh|SA|sabic.com
+Gazprom Neft|Saint Petersburg|RU|gazprom-neft.com
+Lloyds Banking Group|London|GB|lloydsbankinggroup.com
+Centrica|Windsor|GB|centrica.com
+Telstra|Melbourne|AU|telstra.com.au
+C&A|Düsseldorf|BE|c-and-a.com
+Oversea-Chinese Banking Corporation|Singapore|SG|ocbc.com
+Motor Sich|Zaporizhzhia|UA|motorsich.com
+United Microelectronics Corporation|Yilan City|TW|umc.com
+Baltika Breweries|Saint Petersburg|RU|baltika.ru
+Sandoz|Basel|CH|sandoz.com
+Neste|Espoo|FI|neste.com
+Groupe TF1|Boulogne-Billancourt|FR|groupe-tf1.fr
+Krško Nuclear Power Plant|Vrbina|SI|nek.si
+CVC Capital Partners|Saint Helier|GB|cvc.com
+Don’t Nod|Paris|FR|dont-nod.com
+Cube Entertainment|Seoul|KR|cubeent.co.kr
+La Fémis|Paris|FR|femis.fr
+Hikvision|Hangzhou|CN|hikvision.com
+AIA Group|Hong Kong|HK|aia.com
+Al Jazeera Media Network|Doha|QA|aljazeera.net
+Amundi|Paris|FR|amundi.com
+Aylo|Luxembourg|CA|aylo.com
+B92|Belgrade|RS|b92.net
+Brilliance Auto|Shenyang|CN|brilliance-auto.com
+CJ ENM|Seoul|KR|cjenm.com
+Campagnolo|Vicenza|IT|campagnolo.com
+Cooler Master|New Taipei City|TW|coolermaster.com
+Creative Technology|Singapore|SG|creative.com
+EasyJet Switzerland|Geneva|CH|easyjet.com
+Fabryka Samochodów Osobowych|Warsaw|PL|fso-sa.com.pl
+Freebird Airlines|Istanbul|TR|freebirdairlines.com
+GAC Group|Guangzhou|CN|gac.com.cn
+Gaijin Entertainment|Budapest|HU|gaijinent.com
+Giant Bicycles|Dajia District|TW|giant-bicycles.com
+Givaudan S.A.|Vernier|CH|givaudan.com
+Gree Electric|Zhuhai|CN|gree.com
+HiSilicon|Shenzhen|CN|hisilicon.com
+JAC Group|Hefei|CN|jac.com.cn
+Jubba Airways|Mogadishu|SO|jubbaairways.com
+Kazakhfilm|Almaty|KZ|kazakhfilmstudios.kz
+Kazan Helicopters|Kazan|RU|kazanhelicopters.com
+Lanvin|Paris|FR|lanvin.com
+MTN Group|Johannesburg|ZA|mtn.com
+Mango|Johannesburg|ZA|flymango.com
+Moncler|Milan|IT|monclergroup.com
+Nando's|Johannesburg|ZA|nandos.com
+National Post|Toronto|CA|nationalpost.com
+NorrlandsOperan|Umeå|SE|norrlandsoperan.se
+Okay Airways|Beijing|CN|okair.net
+Pledis Entertainment|Seoul|KR|pledis.co.kr
+Rossiya Segodnya|Khamovniki District|RU|rossiyasegodnya.com
+SYM|Taipei|TW|sym-global.com
+Samsonite|Mansfield|LU|samsonite.com
+Singapore Stock Exchange|Singapore|SG|sgx.com
+Sky UK|Isleworth|GB|sky.com
+TUIfly Nordic|Stockholm|SE|tuiflynordic.se
+TeleRadio-Moldova|Chișinău|MD|trm.md
+Valmet|Espoo|FI|valmet.com
+Volvo Trucks|Gothenburg|SE|volvotrucks.com
+Widerøe|Bodø|NO|wideroe.no
+Yash Raj Films|Mumbai|IN|yashrajfilms.com
+Zim Integrated Shipping Services Ltd|Haifa|IL|zim.com
+beIN SPORTS|Doha|QA|beinsports.com
+Magnit|Krasnodar|RU|magnit.ru
+Saudi Binladin Group|Jeddah|SA|sbgom.com
+Medtronic plc|Fridley|IE|medtronic.com
+Strabag|Vienna|AT|strabag.com
+RusHydro|Krasnoyarsk|RU|rushydro.ru
+Intersport|Bern|CH|intersport.com
+EF|Zurich|CH|ef.com
+Assa Abloy|Stockholm|SE|assaabloy.com
+Khrunichev State Research and Production Space Center|Moscow|RU|khrunichev.ru
+National Australia Bank|Melbourne|AU|nab.com.au
+Arçelik|Istanbul|TR|arcelik.com.tr
+Tietoevry|Helsinki|FI|tieto.com
+Foton Motor|Beijing|CN|foton.com.cn
+NPO Mashinostroyeniya|Reutov|RU|npomash.ru
+Amer Sports|Helsinki|FI|amersports.com
+De Lijn|Mechelen|BE|delijn.be
+Julius Baer Group|Zurich|CH|juliusbaer.com
+Tofaş|Istanbul|TR|tofas.com.tr
+Groupe ADP|Tremblay-en-France|FR|parisaeroport.fr
+Ukrinform|Kyiv|UA|ukrinform.ua
+Pivdenne Design Office|Dnipro|UA|yuzhnoye.com
+Kyivstar|Kyiv|UA|kyivstar.ua
+Latvian Railways|Riga|LV|ldz.lv
+LOMO|Saint Petersburg|RU|lomo.ru
+City Football Group|Manchester|GB|cityfootballgroup.com
+Rostelecom|Moscow|RU|rt.ru
+LET Aircraft Industries|Kunovice|CZ|let.cz
+Železnici na Republika Severna Makedonija Transport|Skopje|MK|mzt.mk
+Jagex|Cambridge|GB|jagex.com
+Bohemia Interactive|Mníšek pod Brdy|CZ|bohemia.net
+Playground Games|Leamington Spa|GB|playground-games.com
+Mubi|London|GB|mubi.com
+Media Molecule|Guildford|GB|mediamolecule.com
+ASL Airlines Belgium|Liège|IE|aslairlines.be
+Adani Group|Ahmedabad|IN|adani.com
+Air Calédonie|Nouméa|FR|air-caledonie.nc
+Alliance Air|Delhi|IN|allianceair.in
+Autosan|Sanok|PL|autosan.pl
+Bank Leumi Le- Israel B.m.|Lod|IL|leumi.co.il
+Bel Ami|Bratislava|SK|belamionline.com
+Belarusfilm|Minsk|BY|belarusfilm.by
+Casterman|Tournai|BE|casterman.com
+Cayman Airways|George Town|GB|caymanairways.com
+Challenge Airlines IL|Tel Aviv|IL|cal-cargo.com
+China Petrochemical Corporation|Beijing|CN|sinopecgroup.com
+Citilink|Jakarta|ID|citilink.co.id
+Clarivate|Philadelphia|GB|clarivate.com
+Coop Himmelb(l)au|Vienna|AT|coop-himmelblau.at
+DAZN|London|GB|dazn.com
+Denza|Shenzhen|CN|tengshiauto.com
+Elisa|Helsinki|FI|elisa.com
+Esprit Holdings|Ratingen|HK|esprit.com
+Eurolines|Brussels|BE|eurolines.com
+European Air Charter|Sofia|BG|euaircharter.com
+Fjällräven|Örnsköldsvik|SE|fjallraven.com
+GANT|Stockholm|SE|gant.com
+Geberit|Rapperswil-Jona|CH|geberit.com
+Investor|Stockholm|SE|investorab.com
+Jazz Aviation|Enfield|CA|flyjazz.ca
+Jordan Aviation|Amman|JO|jordanaviation.jo
+Kenwood Limited|Havant|GB|kenwoodworld.com
+Klarna|Stockholm|SE|klarna.com
+Lagardère Group|Paris|FR|lagardere.com
+Legea|Metropolitan City of Naples|IT|legea.com
+Lloyds Bank|London|GB|lloydsbank.com
+MFK Karviná|Karviná|CZ|mfkkarvina.cz
+Mapillary|Malmö|SE|mapillary.com
+Mexican Stock Exchange|Mexico City|MX|bmv.com.mx
+National Film Board of Canada|Îlot Balmoral|CA|nfb.ca
+Nielsen Company|New York City|BR|nielsen.com
+Nordic Regional Airlines|Vantaa|FI|flynorra.com
+Nordwind Airlines|Moscow|RU|nordwindairlines.ru
+Novatek|Tarko-Sale|RU|novatek.ru
+OnLive|Hanoi|VN|onlive.vn
+Palgrave Macmillan|Basingstoke|GB|palgrave.com
+Pilatus Aircraft|Stans|CH|pilatus-aircraft.com
+Pleyel et Cie|Thouaré-sur-Loire|FR|pleyel.com
+Portugália|Lisbon|PT|portugalia-airlines.pt
+Poșta Română|Bucharest|RO|posta-romana.ro
+Ramoji Film City|Hyderabad|IN|ramojifilmcity.com
+Rocksteady Studios|London|GB|rocksteadyltd.com
+S. C. Johnson & Son|Racine|CH|scjohnson.com
+SCAT Airlines|Shymkent|KZ|scat.kz
+SGS S.A.|Geneva|CH|sgs.com
+Savoy Hotel|London|GB|thesavoylondon.com
+Scuola Normale Superiore|Pisa|IT|sns.it
+Semiconductor Manufacturing International Corporation|Shanghai|CN|smics.com
+Silk Way Airline|Baku|AZ|silkwayairlines.com
+Société Nationale de Radiodiffusion et de Télévision|Rabat|MA|snrt.ma
+Source Music|Seoul|KR|sourcemusic.com
+South African Reserve Bank|Pretoria|ZA|reservebank.co.za
+Starship Entertainment|Seoul|KR|starship-ent.com
+Surinam Airways|Paramaribo|SR|flyslm.com
+Taimyr Air Company|Norilsk|RU|nordstar.su
+Thai Smile|Bangkok|TH|thaismileair.com
+Tibet Airlines|Lhasa|CN|tibetairlines.com.cn
+Transavia France|Orly|FR|transavia.com
+Transsion Holdings|Shenzhen|CN|transsion.com
+Trigana Air Service|Jakarta|ID|trigana-air.com
+Trinity Airways|Dongin-dong|KR|trinityairways.com
+Valeo|Paris|FR|valeo.com
+Västerbottens Folkblad|Umeå|SE|folkbladet.nu
+Yamal Airlines|Salekhard|RU|yamal-airlines.ru
+Zagreb Stock Exchange|Zagreb|HR|zse.hr
+Zoho Corporation|Chennai|IN|zohocorp.com
+China Telecommunications Corporation|Beijing|CN|ctexcel.com
+Leroy Merlin|Lille|FR|leroymerlin.pt
+DP World|Dubai|AE|dpworld.com
+T-Bank|Moscow|RU|tbank.ru
+Dole plc|Dublin|IE|dole.com
+Česká pošta|Prague|CZ|ceskaposta.cz
+Digi|Sector 5|RO|digi-communications.ro
+Sanoma Corporation|Helsinki|FI|sanoma.com
+Kesko|Kalasatama|FI|kesko.fi
+Railways of the Slovak Republic|Bratislava|SK|zsr.sk
+etisalat|Abu Dhabi|AE|eand.com
+INA|Zagreb|HR|ina.hr
+Bank Hapoalim B.M.|Tel Aviv|IL|bankhapoalim.co.il
+Telekom Srbija|Belgrade|RS|telekomsrbija.com
+Vodacom|Midrand|ZA|vodacom.com
+Fiskars|Toukola|FI|fiskarsgroup.com
+Železničná spoločnosť Slovensko|Bratislava|SK|zssk.sk
+NPO Energomash|Khimki|RU|npoenergomash.ru
+Getlink|Paris|FR|getlinkgroup.com
+Doppelmayr Garaventa Group|Wolfurt|CH|doppelmayr.com
+Boliviana de Aviación|Cochabamba|BO|boa.bo
+Česká zbrojovka Uherský Brod|Uherský Brod|CZ|czfirearms.com
+Illy|Trieste|IT|illy.com
+Hublot|Nyon|CH|hublot.com
+Panini Group|Modena|IT|paninigroup.com
+Bursa Malaysia|Kuala Lumpur|MY|bursamalaysia.com
+Eidos Montreal|Montreal|CA|eidosmontreal.com
+Latvijas Radio|Riga|LV|latvijasradio.lv
+11 Bit Studios|Warsaw|PL|11bitstudios.com
+Hiab Corporation|Ruoholahti|FI|hiab.com
+Croatia Records|Gornja Dubrava|HR|crorec.net
+Accademia di San Luca|Rome|IT|accademiasanluca.it
+A1 Telekom Austria Group|Vienna|AT|a1.net
+Atari SA|Lyon|FR|atari.com
+Avia|Prague|CZ|avia.cz
+Bank Al-Maghrib|Rabat|MA|bkam.ma
+Benelli Armi|Urbino|IT|benelli.it
+Bolshoi Ballet|Moscow|RU|bolshoi.ru
+Canadian Imperial Bank of Commerce|Toronto|CA|cibc.com
+Cemex|San Pedro Garza García|MX|cemex.com
+Chengdu Airlines|Chengdu|CN|cdal.com.cn
+China Global Television Network|Beijing|CN|cgtn.com
+DSP Media|Seoul|KR|dspmedia.co.kr
+Dana Air|Lagos|NG|flydanaair.com
+Emirates SkyCargo|Dubai|AE|skycargo.com
+Essity|Stockholm|SE|essity.com
+Europcar|Paris|FR|europcar.com
+FNC Entertainment|Cheongdam-dong|KR|fncent.com
+Fonterra|Auckland|NZ|fonterra.com
+Foras na Gaeilge|Belfast|IE|gaeilge.ie
+Garena|Singapore|ID|garena.co.id
+Gorky Film Studio|Ostankinsky District|RU|gorkyfilm.ru
+HMM|Seoul|KR|hmm21.com
+Iittala|Helsinki|FI|iittala.com
+Indian Oil Corporation|New Delhi|IN|iocl.com
+Israel Weapon Industries|Ramat HaSharon|IL|iwi.net
+Jadrolinija|Rijeka|HR|jadrolinija.hr
+Jaeger-LeCoultre|Le Sentier|CH|jaeger-lecoultre.com
+Janes|London|FR|janes.com
+Kalaallit Nunaata Radioa|Nuuk|GL|knr.gl
+Kiton|Metropolitan City of Naples|IT|kiton.com
+Lonza Group|Basel|CH|lonza.com
+MTR Corporation Limited|Kowloon Bay|CN|mtr.com.hk
+Mediacorp|Singapore|SG|mediacorp.sg
+Modern Times Group|Stockholm|SE|mtg.se
+Naspers|Cape Town|ZA|naspers.com
+Outokumpu|Espoo|FI|outokumpu.com
+Playdead|Copenhagen|DK|playdead.com
+Plesio|Saint-Étienne|FR|plesio.fr
+Pyeonghwa Motors|Seoul|KP|pyeonghwamotors.com
+Republike Srpske Railways|Doboj|BA|zrs-rs.com
+Slovak National Gallery|Bratislava|SK|sng.sk
+Sun d'Or International Airlines|Tel Aviv|IL|sundor.co.il
+Sunclass Airlines|Copenhagen|DK|sunclassairlines.dk
+Swedish Match|Stockholm|SE|swedishmatch.com
+Thuraya|Abu Dhabi|AE|thuraya.com
+Tunisair Express|Tunis|TN|tunisairexpress.net
+Tus Airways|Larnaca|CY|tusairways.com
+US-Bangla Airlines|Dhaka|BD|usbair.com
+VEON|Dubai|BM|veon.com
+Volvo Buses|Gothenburg|SE|volvobuses.com
+YPF|Buenos Aires|AR|ypf.com
+Zenith|Le Locle|CH|zenith-watches.com
+Zyxel|Hsinchu City|TW|zyxel.com
+CRRC|Beijing|CN|crrcgc.cc
+Johnson Controls|Cork|BE|johnsoncontrols.com
+Ukrainian Defense Industry|Kyiv|UA|ukroboronprom.com.ua
+Canada Post|Ottawa|CA|canadapost-postescanada.ca
+Mechel|Moscow|RU|mechel.ru
+Triumph International|Bad Zurzach|CH|triumph.com
+Krungthai Bank|Bangkok|TH|krungthai.com
+Ziraat Bank|Ankara|TR|ziraatbank.com.tr
+Sabadell Bank|Sabadell|ES|bancsabadell.com
+Ozon|Moscow|RU|ozon.ru
+Alpha Bank|Athens|GR|alpha.gr
+GfK|Nuremberg|LU|gfk.com
+ROKETSAN|Ankara|TR|roketsan.com.tr
+Rosoboronexport|Moscow|RU|rusarm.ru
+Uralmash|Yekaterinburg|RU|uralmash.ru
+Swedish Security Service|Stockholm|SE|sakerhetspolisen.se
+NSO Group|Herzliya|IL|nsogroup.com
+Krasnoyarsk Dam|Divnogorsk|RU|kges.ru
+IRIVER|Seoul|KR|iriver.co.kr
+Suunto|Vantaa|FI|suunto.com
+Larian Studios|Ghent|BE|larian.com
+Kvartal 95|Kyiv|UA|kvartal95.com
+Trans Adriatic Pipeline|Baar|AL|tap-ag.com
+Bank Norwegian|Fornebu|NO|banknorwegian.no
+Petrof|Hradec Králové|CZ|petrof.cz
+Andøya Space|Andenes|NO|andoyaspace.no
+Odesa Film Studio|Odesa|UA|odesafilmstudio.com.ua
+505 Games|Milan|IT|505games.com
+Air Côte d'Ivoire|Abidjan|CI|aircotedivoire.com
+Air Inuit|Montreal|CA|airinuit.com
+Air Kiribati|South Tarawa|KI|airkiribati.com.ki
+Air Sinai|Cairo|EG|flyairsinai.com
+AirBridgeCargo Airlines|Moscow|RU|airbridgecargo.com
+Amul|Anand|IN|amul.com
+Anker|Changsha|CN|anker.com
+Ant Group|Hangzhou|CN|antgroup.com
+Axpo Holding|Baden|CH|axpo.com
+Bharat Heavy Electricals Limited|New Delhi|IN|bhel.com
+Bharat Petroleum|Mumbai|IN|bharatpetroleum.in
+Bhutan Airlines|Thimphu|BT|bhutanairlines.bt
+Campari Group|Milan|IT|camparigroup.com
+Caran d'Ache|Geneva|CH|carandache.com
+China State Construction Engineering Group Co. Ltd.|Beijing|CN|cscec.com
+China United Airlines|Beijing|CN|flycua.com
+Coop Cooperative|Basel|CH|coop.ch
+Crusaders|Christchurch|NZ|crusaders.co.nz
+D-Wave Systems|Burnaby|CA|dwavequantum.com
+DAT|Vamdrup|DK|dat.dk
+Davidoff|Basel|CH|davidoff.com
+Douban|Beijing|CN|douban.com
+Dr. Reddy's Laboratories|Hyderabad|IN|drreddys.com
+EQT Partners|Stockholm|SE|eqtpartners.com
+EuroAtlantic Airways|Lisbon|PT|flyeuroatlantic.pt
+Finnish National Opera|Helsinki|FI|oopperabaletti.fi
+Focus Entertainment|Paris|FR|focus-entmt.com
+Hang Seng Bank|Central|CN|hangseng.com
+Indonesia Stock Exchange|Jakarta|ID|idx.co.id
+Israel Electric Corporation|Haifa|IL|iec.co.il
+Jet Time|Copenhagen|DK|jet-time.dk
+Korea Aerospace Industries|Sacheon|KR|koreaaero.com
+Leinster Rugby|Dublin|IE|leinsterrugby.ie
+Liepājas tramvajs|Liepāja|LV|liepajas-tramvajs.lv
+Madman Entertainment|Melbourne|AU|madman.com.au
+Maybank|Kuala Lumpur|MY|maybank.com
+Melon|Los Angeles|KR|melon.com
+Missoni|Milan|IT|missoni.com
+Munster Rugby|Limerick|IE|munsterrugby.ie
+OYO Rooms|Gurgaon|IN|oyorooms.com
+Osem|Shoham|IL|osem.co.il
+People Can Fly|Warsaw|PL|peoplecanfly.com
+Rambler|Moscow|RU|rambler.ru
+Rediff|Mumbai|IN|rediff.com
+Reserve Bank of New Zealand|Wellington|NZ|govt.nz
+Rochefort|Rochefort|BE|trappistes-rochefort.com
+SIG Group|Neuhausen am Rheinfall|CH|sig.biz
+Saipem|Milan|IT|saipem.com
+SalamAir|Muscat|OM|salamair.com
+Salvatore Ferragamo|Florence|IT|ferragamo.com
+Samsung Life Insurance|Seoul|KR|samsunglife.com
+Securitas|Stockholm|SE|securitas.com
+Shaheen Air|Karachi|PK|shaheenair.com
+Shopee|Singapore|SG|shopee.com
+SodaStream|Kfar Saba|IL|sodastream.com
+Somon Air|Dushanbe|TJ|somonair.com
+Sun Pharmaceutical|Mumbai|IN|sunpharma.com
+UPM|Helsinki|FI|upm.com
+United Overseas Bank|Singapore|MY|uobgroup.com
+Urumqi Air|Ürümqi|CN|urumqi-air.com
+Vietnam Air Services Company|Ho Chi Minh City|VN|vasco.com.vn
+Viva|Apodaca|MX|vivaaerobus.com
+Young Africans S.C.|Dar es Salaam|TZ|yangasc.co.tz
+Zomato|New Delhi|IN|zomato.com
+Life Insurance Corporation of India|Mumbai|IN|licindia.in
+Magna International|Aurora|CA|magna.com
+United Shipbuilding Corporation|Saint Petersburg|RU|oaoosk.ru
+Acciona|Alcobendas|ES|acciona.com
+Danfoss|Nordborg|DK|danfoss.com
+Dia|Madrid Metropolitan Area|ES|diacorporate.com
+Telus Communications|Vancouver|CA|telus.com
+ECCO|Bredebro|DK|ecco.com
+Telekom (Greece)|Marousi|GR|ote.gr
+Uralkali|Berezniki|RU|uralkali.com
+Magnitogorsk Iron and Steel Works|Magnitogorsk|RU|mmk.ru
+Powszechny Zakład Ubezpieczeń|Warsaw|PL|pzu.pl
+Mapei|Milan|IT|mapei.com
+Gedeon Richter Ltd.|Budapest|HU|richter.hu
+Konecranes|Hyvinkää|FI|konecranes.com
+An Post|Dublin|IE|anpost.com
+NIS|Novi Sad|RS|nis.rs
+Podravka|Koprivnica|HR|podravka.hr
+King Long|Xiamen|CN|king-long.com
+Lazada Group|Singapore|SG|lazada.com
+Toyota Motor Manufacturing Czech Republic|Kolín|CZ|toyotacz.com
+Desigual|Barcelona|ES|desigual.com
+Mowi|Bergen|NO|mowi.com
+Slovnaft|Bratislava|SK|slovnaft.sk
+Renren|Beijing|CN|renren.com
+Azercell|Baku|AZ|azercell.com
+Grindeks|Riga|LV|grindeks.com
+A. Le Coq|Tartu|EE|alecoq.ee
+Israel Shipyards Industries Ltd|Haifa|IL|is-ind.com
+Avalanche Studios Group|Stockholm|SE|avalanchestudios.com
+Warhorse Studios|Prague|CZ|warhorsestudios.cz
+Digital Extremes|London|CA|digitalextremes.com
+Prague Stock Exchange|Prague|CZ|pse.cz
+Nasdaq Riga|Riga|LV|nasdaqbaltic.com
+3|Hong Kong|HK|three.com
+AMC Airlines|Cairo|EG|amcairlines.com
+Aerogaviota|Havana|CU|aerogaviota.com
+Airlink|Johannesburg|ZA|flyairlink.com
+Aluminum Corporation of China|Beijing|CN|chalco.com.cn
+Anta|George Town|KY|anta.com
+Assimil|Cologne|FR|assimil.com
+AvaTrade|Dublin|IE|avatrade.com
+Azimuth|Rostov-on-Don|RU|azimuth.ru
+BH Air|Sofia|BG|bhairlines.com
+Banco Comercial Português|Porto|PT|millenniumbcp.pt
+Bank of Uganda|Kampala|UG|bou.or.ug
+Bank of the Republic of Haiti|Port-au-Prince|HT|brh.ht
+Bharat Sanchar Nigam Limited|New Delhi|IN|bsnl.co.in
+Bybit|Dubai|AE|bybit.com
+CIMB|Kuala Lumpur|MY|cimb.com
+China Merchants Bank|Shenzhen|CN|cmbchina.com
+China Post|Beijing|CN|chinapost.com.cn
+Clariant|Muttenz|CH|clariant.com
+Coca-Cola HBC|Steinhausen|CH|coca-colahellenic.com
+Compagnie Internationale des Wagons-Lits|Paris|BE|newrest.eu
+Domestic Airlines|Algiers|DZ|tassiliairlines.dz
+Doosan Group|Seoul|KR|doosan.com
+Festina|Barcelona|ES|festinagroup.com
+Glovo|Barcelona|ES|glovoapp.com
+Industria Aeronautică Română|Ghimbav|RO|iar.ro
+Kakao|Seoul|KR|kakaocorp.com
+LGT Group|Vaduz|LI|lgt.com
+Larsen & Toubro|Mumbai|IN|larsentoubro.com
+Livraria Lello|Porto|PT|livrarialello.pt
+Lynk & Co|Gothenburg|CN|lynkco.com
+MASwings|Kepayan|MY|airborneo.com
+MINISO|Guangzhou|CN|miniso.com
+Marcopolo|Caxias do Sul|BR|marcopolo.com.br
+Matrox|Dorval|CA|matrox.com
+MiniMax Group|Shanghai|CN|minimax.io
+Novolipetsk Steel|Moscow|RU|nlmk.com
+Otokar|Adapazarı|TR|otokar.com.tr
+Pepco|Poznań|PL|pepco.at
+PocketBook International|Lugano|CH|pocketbook-int.com
+Polyus|Moscow|RU|polyus.com
+Prague Conservatory|Prague|CZ|prazskakonzervator.cz
+Rainbow Bridge World|Dongdaemun District|KR|rbbridge.com
+Rex Airlines|Mascot|AU|rex.com.au
+Rotax|Gunskirchen|CA|rotax.com
+Rothschild & Co|Paris|FR|rothschildandco.com
+Royal Copenhagen|Copenhagen|DK|royalcopenhagen.com
+SCA|Stockholm|SE|sca.com
+Saipa|Tehran|IR|saipacorp.com
+Samoa Airways|Apia|WS|samoaairways.com
+Sisu Auto|Raseborg|FI|sisuauto.com
+Stroh|Klagenfurt am Wörthersee|AT|stroh.at
+TAM-Europe|Maribor|SI|tam-motors.eu
+Tarsier Studios|Malmö|SE|tarsier.se
+Telia Eesti|Tallinn|EE|telia.ee
+The Black Label|Seoul|KR|theblacklabel.com
+Ulysse Nardin|Le Locle|CH|ulysse-nardin.ch
+Ural Automotive Plant|Miass|RU|uralaz.ru
+Veuve Clicquot|Reims|FR|veuve-clicquot.com
+WordPress.com|San Francisco|SE|wordpress.com
+Grupo ACS|Castilla|ES|grupoacs.com
+Sistema|Moscow|RU|sistema.com
+Indra Sistemas|Alcobendas|ES|indracompany.com
+Hanwha Group|Seoul|KR|hanwha.com
+Maxima Grupė, UAB|Vilnius|LT|maximagrupe.eu
+Hanwha Ocean|Geoje|KR|hanwhaocean.com
+Sika AG|Baar|CH|sika.com
+AOC International|New Taipei City|TW|aoc.com
+Falck|Copenhagen|DK|falck.com
+İşbank|Ankara|TR|isbank.com.tr
+Korea Electric Power Corporation|Naju|KR|kepco.co.kr
+Bestseller (Company)|Brande|DK|bestseller.com
+Progress State Research and Production Rocket Space Center|Samara|RU|samspace.ru
+Embracer Group|Karlstad|SE|embracer.com
+Suzlon Energy|Pune|IN|suzlon.com
+Vnesheconombank|Moscow|RU|veb.ru
+ATAC|Rome|IT|roma.it
+Aker Solutions|Fornebu|NO|akersolutions.com
+Lindex Group|Helsinki|FI|stockmanngroup.fi
+TIM|Milan|IT|tim.it
+Optus|Sydney|AU|optus.com.au
+YIT|Helsinki|FI|yitgroup.com
+Kemira|Helsinki|FI|kemira.com
+Bank of Cyprus|Nicosia|CY|bankofcyprus.com
+Orion Corporation|Niittykumpu|FI|orion.fi
+Aviadvigatel|Perm|RU|avid.ru
+Weleda|Arlesheim|CH|weleda.com
+WildBrain|Halifax|CA|wildbrain.com
+IMZ-Ural|Redmond|RU|imz-ural.com
+Croteam|Zagreb|HR|croteam.com
+Frictional Games|Helsingborg|SE|frictionalgames.com
+Air Canada Rouge|Montreal|CA|flyrouge.com
+Air Seoul|Seoul|KR|flyairseoul.com
+Allied Irish Banks|Dublin|IE|aib.ie
+American Apparel Inc.|Los Angeles|AU|americanapparel.com
+Aurora|Yuzhno-Sakhalinsk|RU|flyaurora.ru
+BLRT Grupp|Tallinn|EE|blrt.ee
+BLS AG|Bern|CH|bls.ch
+Balmain|Paris|FR|balmain.com
+Bangkok Bank|Bangkok|TH|bangkokbank.com
+Bank Polska Kasa Opieki|Warsaw|PL|pekao.com.pl
+Bank of Taiwan|Taipei|TW|bot.com.tw
+Beenox|Quebec City|CA|beenox.com
+Betsson|Stockholm|SE|betsson.com
+Bharat Biotech International|Hyderabad|IN|bharatbiotech.com
+Boliden AB|Stockholm|SE|boliden.com
+Brookfield Corporation|Toronto|CA|brookfield.com
+Brussels Intercommunal Transport Company|Brussels|BE|stib-mivb.be
+CBR|Montreal|CA|cbr.com
+Certina Kurth Frères|Le Locle|CH|certina.com
+Cham Wings Airlines|Damascus|SY|chamwings.com
+Charoen Pokphand|Bangkok|TH|cpthailand.com
+Chelyabinsk Tractor Plant|Chelyabinsk|RU|chtz-uraltrac.ru
+Chopard|Geneva|CH|chopard.de
+Colnago|Metropolitan City of Milan|IT|colnago.com
+Cyprus Stock Exchange|Nicosia|CY|cse.com.cy
+Dyrehavsbakken|Klampenborg|DK|bakken.dk
+Eastar Jet|Seoul|KR|eastarjet.com
+Egged|Tel Aviv|IL|egged.co.il
+Energoatom|Kyiv|UA|energoatom.com.ua
+Ermenegildo Zegna Group|Milan|IT|zegna.com
+Eurobank|Athens|GR|eurobank.gr
+Faurecia|Nanterre|FR|faurecia.com
+Fenris Creations|Reykjavík|IS|fenris.com
+Fomento de Construcciones y Contratas|Fuencarral-El Pardo|ES|fcc.es
+GMMTV|Bangkok|TH|gmm-tv.com
+Gazprom-Media|Presnensky District|RU|gazprom-media.com
+Hanjin|Seoul|KR|hanjin.co.kr
+Hôtel des Mille Collines|Kigali|RW|millecollines.rw
+Icl Group Ltd|Tel Aviv|IL|icl-group.com
+IrAero|Irkutsk|RU|iraero.ru
+Ivchenko-Progress|Zaporizhzhia|UA|ivchenko-progress.com
+Jellyfish Entertainment|Seoul|KR|jelly-fish.co.kr
+Jin Air|Seoul|KR|jinair.com
+Jumeirah|Dubai|AE|jumeirah.com
+Le Dôme|Lyon|FR|restaurant-ledome.com
+Lite-On Technology|Taipei|TW|liteon.com
+Lucha Libre AAA Worldwide|Mexico City|MX|luchalibreaaa.com
+MBK Entertainment|Yeoksam-dong|KR|mbk-ent.co.kr
+MNG Airlines|Istanbul|TR|mngairlines.com
+Magneti Marelli|Metropolitan City of Milan|IT|magnetimarelli.com
+Mayora Indah|Jakarta|ID|mayoraindah.co.id
+Micromax|Gurgaon|IN|micromaxinfo.com
+Moulinex|Metropolis of Lyon|FR|moulinex.com
+Myanmar Airways International|Yangon|MM|maiair.com
+Mythos|Sindos|GR|mythosbeer.gr
+Nadeo|Paris|FR|nadeo.com
+Next Level Games|Vancouver|CA|nextlevelgames.com
+Patria|Kluuvi|FI|patriagroup.com
+Pavlovo Bus Factory|Pavlovo|RU|autobus.ru
+Piraeus Bank|Athens|GR|piraeusbank.gr
+Qatargas|Doha|QA|qatargas.com
+Radiotelevisiun Svizra Rumantscha|Chur|CH|rtr.ch
+Rappler|Pasig|PH|rappler.com
+Repco|Rowville|AU|repco.co.nz
+Reserve Bank of Zimbabwe|Harare|ZW|rbz.co.zw
+Sabian|Meductic|CA|sabian.com
+Samsung Heavy Industries|Seongnam|KR|samsungshi.com
+San Miguel beer|Mandaluyong|PH|sanmiguel.com.ph
+Silicon Integrated Systems|Hsinchu City|TW|sis.com.tw
+Slovenská pošta|Banská Bystrica|SK|posta.sk
+Solomon Airlines|Honiara|SB|flysolomons.com
+Starbreeze Studios|Stockholm|SE|starbreeze.com
+Starlux Airlines|Neihu District|TW|starlux-airlines.com
+SteelSeries|Frederiksberg|DK|steelseries.com
+Strauss Group Ltd.|Petah Tikva|IL|strauss-group.com
+Studio Dragon|Seoul|KR|studiodragon.net
+TGI Fridays|Carrollton|IE|tgifridays.com
+TaleWorlds|Ankara|TR|taleworlds.com
+Telkom Indonesia|Bandung|ID|telkom.co.id
+Thermaltake Technology|Neihu District|TW|thermaltake.com
+Ubisoft Quebec|Quebec City|CA|ubisoft.ca
+Umeå Energi|Umeå|SE|umeaenergi.se
+Vatican Publishing House|Vatican City|VA|libreriaeditricevaticana.va
+Volvo Penta|Gothenburg|SE|volvopenta.com
+Vostok watches|Chistopol|RU|vostokinc.com
+Woollim Entertainment|Seoul|KR|woolliment.com
+aussieBum|Sydney|AU|aussiebum.com
+CRH|Dublin|IE|crh.com
+Uzbek Railways|Tashkent|UZ|uzrailway.uz
+PJSC Inter RAO|Moscow|RU|interrao.ru
+Gerdau|Porto Alegre|BR|gerdau.com.br
+PPF Group|Prague|CZ|ppf.eu
+PGE Polska Grupa Energetyczna|Warsaw|PL|pgesa.pl
+Prysmian Group|Milan|IT|prysmian.com
+Polskie Górnictwo Naftowe i Gazownictwo|Warsaw|PL|pgnig.pl
+Chunghwa Telecom|Taipei|TW|cht.com.tw
+Belposhta|Minsk|BY|belpost.by
+Czechoslovak Group|Prague|CZ|csg.com
+Banca Transilvania|Cluj-Napoca|RO|bancatransilvania.ro
+Rostselmash|Rostov-on-Don|RU|rostselmash.com
+Fazer|Helsinki|FI|fazergroup.com
+Cellcom Israel Ltd.|Netanya|IL|cellcom.co.il
+Sampo Group|Helsinki|FI|sampo.com
+Metrowagonmash|Mytishchi|RU|metrowagonmash.ru
+Intourist|Moscow|RU|intourist.com
+Mansudae Art Studio|Pyongyang|KP|mansudaeartstudio.com
+HELLENiQ ENERGY|Marousi|GR|helpe.gr
+Taurus|Porto Alegre|BR|taurusarmas.com.br
+Acronis|Singapore|SG|acronis.com
+Legoland Billund|Billund|DK|legoland.dk
+Żabka|Poznań|PL|zabka.pl
+Belkommunmash|Minsk|BY|holdingbkm.com
+Hekurudha Shqiptare|Durrës|AL|hekurudha.al
+Ladurée|Paris|FR|laduree.com
+Multitude AG|Zug|FI|ferratumgroup.com
+Atomic Skis|Altenmarkt im Pongau|AT|atomic.com
+Vanemuine|Tartu|EE|vanemuine.ee
+Airkenya Express|Nairobi|KE|airkenya.com
+CI Games S.A.|Warsaw|PL|cigames.com
+Birra Korça|Korçë|AL|birrakorca.com.al
+Belga|Brussels metropolitan area|BE|belga.be
+Canadian Tire|Toronto|CA|canadiantire.ca
+Air Antilles|Pointe-à-Pitre|FR|airantilles.com
+Air North|Whitehorse|CA|flyairnorth.com
+Air Thanlwin|Yangon|MM|yangonair.com
+Albawings|Tirana|AL|albawings.com
+Ashley Madison|Toronto|CA|ashleymadison.com
+Asky Airlines|Lomé|TG|flyasky.com
+Asobo Studio|Bordeaux|FR|asobostudio.com
+Astralis|Copenhagen|DK|astralis.gg
+Bank of Algeria|Algiers|DZ|bank-of-algeria.dz
+Bank of Botswana|Gaborone|BW|bankofbotswana.bw
+Bank of Mongolia|Ulaanbaatar|MN|mongolbank.mn
+Bank of the Republic of Burundi|Bujumbura|BI|brb.bi
+Biostar Microtech International|Taipei|TW|biostar.com.tw
+Blue Dart Aviation|Chennai|IN|bluedartaviation.com
+Café Gerbeaud|Budapest|HU|gerbeaud.hu
+Cameco|Saskatoon|CA|cameco.com
+Century Pacific Food|Pasig|PH|centurypacific.com.ph
+Coffee Stain Studios|Skövde|SE|coffeestainstudios.com
+Coupang|Seoul|KR|coupang.com
+Cowon Systems|Seoul|KR|cowonglobal.com
+Degtyarev plant|Kovrov|RU|zid.ru
+Diamond Aircraft Industries|Wiener Neustadt|AT|diamondaircraft.com
+ENSEEIHT|Toulouse|FR|enseeiht.fr
+ETA SA|Grenchen|CH|eta.ch
+Efes Beverage Group|Istanbul|TR|anadoluefes.com
+EgyptAir Cargo|Cairo|EG|egyptair-cargo.com
+Ellinair|Thessaloniki|GR|ellinair.com
+Eskom|Sandton|ZA|eskom.co.za
+Eznis Airways|Ulaanbaatar|MN|eznis.com
+Grupo Modelo|Mexico City|MX|grupomodelo.com
+HC Sparta Praha|Prague|CZ|hcsparta.cz
+Haemimont Games|Sofia|BG|haemimontgames.com
+Hindustan Petroleum|Mumbai|IN|hindustanpetroleum.com
+Hyundai Mobis|Seoul|KR|mobis.co.kr
+Iran Aircraft Manufacturing Industrial Company|Isfahan|IR|hesa.ir
+Israel Discount Bank Ltd.|Rishon LeZion|IL|discountbank.co.il
+Kereta Api Indonesia|Bandung|ID|kai.id
+Kish Air|Tehran|IR|kishairline.com
+Kuwait Petroleum Corporation|Kuwait City|KW|kpc.com.kw
+LG Display|Seoul|KR|lgdisplay.com
+LKAB|Luleå|SE|lkab.com
+Louis Dreyfus Group|Rotterdam|FR|louisdreyfus.com
+MDPI|Basel|CH|mdpi.com
+Martini & Rossi|Turin|IT|martini.com
+Northvolt|Stockholm|SE|northvolt.com
+Nuvoton|Hsinchu City|TW|nuvoton.com
+PNG Air|Port Moresby|PG|apng.com
+Panerai Watches|Milan|IT|panerai.com
+Peroni Brewery|Rome|IT|birraperoni.it
+Petrol Ofisi|Istanbul|TR|petrolofisi.com.tr
+Porter Airlines|Toronto|CA|flyporter.com
+Preply|New York City|UA|preply.com
+Rainbow S.p.A.|Loreto|IT|rbw.it
+Rete Ferroviaria Italiana|Rome|IT|rfi.it
+Riyadh Air|Riyadh|SA|riyadhair.com
+Rogers Communications|Toronto|CA|rogers.com
+Røde Microphones|Silverwater|AU|rode.com
+SSAB|Stockholm|SE|ssab.com
+Sasol|Johannesburg|ZA|sasol.com
+Shinsegae|Seoul|KR|shinsegae.com
+Silk Way West Airlines|Baku|AZ|silkwaywest.com
+Storstockholms Lokaltrafik|Stockholm|SE|sl.se
+TRAM Metropolità d'Alacant|Alicante|ES|tramalacant.es
+TS Entertainment|Seoul|KR|tsenter.co.kr
+Thai Lion Air|Bangkok|TH|lionairthai.com
+Transcend Information|Taipei|TW|transcend-info.com
+Umicore|Brussels metropolitan area|BE|umicore.com
+Uni Air|Zhongshan District|TW|uniair.com.tw
+WebMoney|Moscow|RU|webmoney.ru
+World Scientific|Singapore|SG|worldscientific.com
+Yang Ming Marine Transport Corporation|Keelung|TW|yangming.com
+Éditions du Seuil|Paris|FR|seuil.com
+Poczta Polska|Warsaw|PL|poczta-polska.pl
+Viettel Group|Hanoi|VN|viettel.vn
+Novonor|Salvador|BR|novonor.com
+DSV|Hedehusene|DK|dsv.com
+STX Corporation|Changwon|KR|stx.co.kr
+Sabancı Holding|Istanbul|TR|sabanci.com
+Perusahaan Listrik Negara|Jakarta|ID|pln.co.id
+Orange Polska|Warsaw|PL|orange.pl
+NTPC Limited|New Delhi|IN|ntpc.co.in
+Kazatomprom|Astana|KZ|kazatomprom.kz
+Grundfos|Bjerringbro|DK|grundfos.com
+Saudi Telecom Company|Riyadh|SA|stc.com.sa
+Wienerberger|Vienna|AT|wienerberger.com
+Kasikornbank|Bangkok|TH|kasikornbank.com
+Lululemon Athletica|Vancouver|CA|lululemon.com
+Volvo Construction Equipment|Brussels metropolitan area|SE|volvoce.com
+Puig|L'Hospitalet de Llobregat|ES|puig.com
+OMV Petrom|Bucharest|RO|omvpetrom.com
+Agrale|Caxias do Sul|BR|agrale.com.br
+PTT Public Company Limited|Chatuchak|TH|pttplc.com
+Sonangol Group|Luanda|AO|sonangol.co.ao
+Wiener Linien|Landstraße|AT|wienerlinien.at
+Ecopetrol|Bogotá|CO|ecopetrol.com.co
+Digikala|Tehran|IR|digikala.com
+JSC Information Satellite Systems Reshetnev|Zheleznogorsk|RU|iss-reshetnev.com
+Egmont International Holding|Copenhagen|DK|egmont.com
+Transelectrica|Bucharest|RO|transelectrica.ro
+Orlen Lietuva, AB|Juodeikiai|LT|orlenlietuva.lt
+Nordic Semiconductor|Trondheim|NO|nordicsemi.com
+CD Projekt RED|Łódź|PL|cdprojektred.com
+Antara|Jakarta|ID|antarafoto.com
+Elan|Begunje na Gorenjskem|SI|elan.si
+CyberLink|New Taipei City|TW|cyberlink.com
+Hispasat|Alcobendas|ES|hispasat.com
+Wenger|Delémont|CH|wenger.ch
+Samyang Optics|Masan|KR|lksamyang.com
+Arctic Umiaq Line|Nuuk|GL|visitgreenland.com
+Klei Entertainment|Vancouver|CA|klei.com
+Clavia|Stockholm|SE|nordkeyboards.com
+Gillet|Gembloux|BE|gillet-automobiles.com
+Air Peace|Ikeja|NG|flyairpeace.com
+Alexandria Airlines|Cairo|EG|alexandriaairlines.net
+Arajet|Santo Domingo|DO|arajet.com
+Asian News International|New Delhi|IN|aninews.in
+Aurus|Moscow|RU|aurusmotors.com
+Autoliv|Stockholm|SE|autoliv.com
+Axiata|Kuala Lumpur|MY|axiata.com
+Bank of Zambia|Lusaka|ZM|boz.zm
+Bimota|Rimini|IT|bimota.it
+Circumvesuviana|Naples|IT|eavsrl.it
+Coal India|Kolkata|IN|coalindia.in
+Cochin Shipyard|Thevara|IN|cochinshipyard.com
+Compal Electronics|Taipei|TW|compal.com
+Corus Entertainment|Toronto|CA|corusent.com
+Disney Studios Australia|Sydney|AU|disneystudiosaustralia.com
+Elenger|Tallinn|EE|elenger.ee
+Frogwares|Dublin|UA|frogwares.com
+Galp Energia|Lisbon|PT|galp.com
+Gloria Jean's Coffees|Castle Hill|AU|gloriajeans.com
+Glénat Éditions|Grenoble|FR|glenat.com
+Goupil & Co|Paris|FR|goupilandcie.com
+Gudang Garam|Kediri|ID|gudanggaramtbk.com
+HBL Pakistan|Karachi|PK|hbl.com
+HCL Technologies|Noida|IN|hcltech.com
+Hindustan Unilever|Mumbai|IN|hul.co.in
+IMAX Corporation|Mississauga|CA|imax.com
+IST Entertainment|Seoul|KR|istent.co.kr
+Il Sole 24 Ore|Milan|IT|ilsole24ore.com
+Jumbo|Veghel|BE|jumbo.com
+KAvZ|Kurgan|RU|bus.ru
+LG Uplus|Hangangno-dong|KR|uplus.co.kr
+Malawi Airlines|Lilongwe|MW|malawian-airlines.com
+Malyshev Factory|Kharkiv|UA|malyshevplant.com
+Mandarin Oriental Hotel Group|Hong Kong|BM|mandarinoriental.com
+Mauritania Airlines|Nouakchott|MR|mauritaniaairlines.mr
+Maya Island Air|Belize City|BZ|mayaislandair.com
+Mengniu Dairy|Hohhot|HK|mengniu.com.cn
+Mir Publishers|Moscow|RU|mir-publishers.ru
+Moon Studios|Vienna|AT|moongamestudios.com
+New Zealand Exchange Ltd|Wellington|NZ|nzx.com
+Nile Air|Cairo|EG|nileair.com
+OCP Group|Casablanca|MA|ocpgroup.ma
+On AG|Zurich|CH|on.com
+Ottogi|Seoul|KR|ottogi.co.kr
+Pepe Jeans|Barcelona|ES|pepejeans.com
+Poste Air Cargo|Rome|IT|posteaircargo.it
+Radisson Blu|Brussels metropolitan area|SE|radissonblu.com
+Regent Airways|Dhaka|BD|flyregent.com
+Reliance Communications|Navi Mumbai|IN|rcom.co.in
+Reserve Bank of Malawi|Lilongwe|MW|rbm.mw
+Riga Film Studio|Riga|LV|studio.lv
+Romanian National Opera|Bucharest|RO|operanb.ro
+Saeco|Metropolitan City of Bologna|IT|saeco.com
+Samsung C&T Corporation|Seoul|KR|samsungcnt.com
+Sapphire Technology|Sha Tin New Town|HK|sapphiretech.com
+Silicon Power|Taipei|TW|silicon-power.com
+Skandia|Stockholm|SE|skandia.se
+Sokos Hotel Viru|Tallinn|EE|sokoshotels.fi
+Sun Air of Scandinavia|Billund|DK|sun-air.dk
+Supraphon|Prague|CZ|supraphon.cz
+Swiggy|Bengaluru|IN|swiggy.com
+TEMSA|Adana|TR|temsa.com
+Tara Air|Kathmandu|NP|taraair.com
+Telekom Malaysia|Kuala Lumpur|MY|tm.com.my
+The Coalition|Vancouver|CA|thecoalitionstudio.com
+Titan Cement|Athens|GR|titan.gr
+True Corporation|Bangkok|TH|true.th
+Tungsram|Budapest|HU|tungsram.com
+Voestalpine|Linz|AT|voestalpine.com
+W Motors|Dubai|AE|wmotors.ae
+West Atlantic Sweden|Gothenburg|SE|westair.se
+Zagrebačka banka|Zagreb|HR|zaba.hr
+iHeartRadio|Manhattan|PR|iheart.com
+ATB-Market|Dnipro|UA|atbmarket.com
+Klimov|Saint Petersburg|RU|klimov.ru
+Australia Post|Melbourne|AU|auspost.com.au
+Swissport|Opfikon|CH|swissport.com
+Genting Group|Kuala Lumpur|MY|genting.com
+Ukrtelecom|Kyiv|UA|ukrtelecom.ua
+Kazakhmys|London|KZ|mykazakhmys.kz
+ČEZ Group|Prague|CZ|cez.cz
+KGHM Polska Miedź|Lubin|PL|kghm.com
+Sevmash|Severodvinsk|RU|sevmash.ru
+NPO Saturn|Rybinsk|RU|npo-saturn.ru
+Experian|Dublin|IE|experian.com
+Public Power Corporation SA|Athens|GR|dei.gr
+Evoke plc|Gibraltar|GI|evokeplc.com
+Mundys|Rome|IT|mundys.com
+Braskem|Camaçari|BR|braskem.com.br
+TBC Bank|Tbilisi|GE|tbcbank.ge
+Novonesis|Bagsværd|DK|novonesis.com
+Bank of Georgia|Tbilisi|GE|bankofgeorgia.ge
+Bezeq The Israeli Telecommunication Corp. Ltd.|Tel Aviv|IL|bezeq.co.il
+BWT AG|Mondsee|AT|bwt.com
+KYE Systems Corp.|Taipei|TW|geniusnet.com
+Valio|Pitäjänmäki industrial area|FI|valio.fi
+Trenord|Milan|IT|trenord.it
+Barco|Kortrijk|BE|barco.com
+Nammo|Raufoss|NO|nammo.com
+Storebrand|Lysaker|NO|storebrand.com
+Pliva|Zagreb|HR|pliva.hr
+Kharkiv Tractor Plant|Kharkiv|UA|xtz.ua
+Red Eléctrica de España|Alcobendas|ES|redeia.com
+Cargojet|Mississauga|CA|cargojet.com
+Avio|Metropolitan City of Rome|IT|avio.com
+Latvenergo|Riga|LV|latvenergo.lv
+Hostinger|Vilnius|LT|hostinger.com
+Italo - Nuovo Trasporto Viaggiatori|Rome|IT|italotreno.it
+Josef Manner & Comp AG|Vienna|AT|manner.com
+Koh-i-Noor Hardtmuth|České Budějovice|CZ|koh-i-noor.cz
+WB Games Montréal|Montreal|CA|wbgamesmontreal.com
+Rimi Baltic|Riga|LV|rimibaltic.com
+Australian Associated Press|Sydney|AU|aap.com.au
+Private Media Group|Barcelona|ES|private.com
+Barry Callebaut|Zurich|CH|barry-callebaut.com
+Amanita Design|Brno|CZ|amanita-design.net
+A-ba-ba-ha-la-ma-ha|Kyiv|UA|ababahalamaha.com.ua
+Advanced Info Service|Bangkok|TH|ais.co.th
+Aero Contractors|Ikeja|NG|flyaero.com
+Air Marshall Islands|Majuro|MH|airmarshallislands.net
+Air Montenegro|Podgorica|ME|airmontenegro.com
+Airfast Indonesia|Tangerang|ID|airfastindonesia.com
+Alko|Helsinki|FI|alko.fi
+Allen & Unwin|Crows Nest|AU|allenandunwin.com
+Always|Rome|IT|always.com
+AmBev|São Paulo|BR|ambev.com.br
+Antico Caffè Greco|via Condotti|IT|anticocaffegreco.eu
+Aria Air|Dubai|IR|ariaairline.ir
+BMC|İzmir|TR|bmc.com.tr
+Bahrain Air|Al-Muharraq|BH|bahrainair.net
+Bank of Cape Verde|Praia|CV|bcv.cv
+Belshina|Babruysk|BY|belshina.by
+Blue Islands|Saint Peter Port|GG|blueislands.com
+Bluebird Airways|Heraklion|GR|bluebirdair.com
+Bombardier Recreational Products|Montreal|CA|brp.com
+Bonnier Group|Stockholm|SE|bonnier.com
+Bratislava Stock Exchange|Bratislava|SK|bsse.sk
+Buffalo Airways|Hay River|CA|buffaloairways.com
+CEIBA Intercontinental|Malabo|GQ|irc-conseil.com
+Camair-Co|Douala|CM|camair-co.cm
+Centalion|Geneva|CY|centalion.com
+Cervélo|Toronto|CA|cervelo.com
+China Television|Taipei|TW|ctv.com.tw
+Delek Group Ltd.|Herzliya|IL|delek.co.il
+Dharma Productions|Mumbai|IN|dharma-production.com
+Dollarama|Montreal|CA|dollarama.com
+Dupuis|Marcinelle|BE|dupuis.com
+Eicher Motors|Gurgaon|IN|eicher.in
+Erste Bank Polska|Wola|PL|erste.pl
+Evelop Airlines|Palma|ES|iberojet.com
+Fiat Professional|Turin|IT|fiatprofessional.com
+FlyArystan|Almaty|KZ|flyarystan.com
+Ford Otosan|Istanbul|TR|fordotosan.com.tr
+Foxtel|Macquarie Park|AU|foxtel.com.au
+FxPro|London|MC|fxpro.com
+Hellenic Post|Athens|GR|elta.gr
+HiteJinro|Seoul|KR|hitejinro.com
+Huhtamäki|Espoo|FI|huhtamaki.com
+IC Markets|Sydney|AU|icmarkets.com
+IFM Paris|Paris|FR|ifmparis.fr
+Inter Press Service|Rome|IT|ipsnews.net
+KM Malta Airlines|Luqa|MT|kmmaltairlines.com
+Kakao Entertainment|Seongnam|KR|kakaoent.com
+Karsan|Bursa|TR|karsan.com.tr
+Kazakhstan Stock Exchange|Almaty|KZ|kase.kz
+Keretapi Tanah Melayu|Kuala Lumpur|MY|ktmb.com.my
+Les Éditions de Minuit|Paris|FR|leseditionsdeminuit.fr
+Lynx Nature Books|Barcelona|ES|lynxnaturebooks.com
+Lyria|Paris|FR|tgv-lyria.com
+MZKT|Minsk|BY|mzkt.by
+Main Channel|Tbilisi|GE|mtavari.tv
+Matica hrvatska|Zagreb|HR|matica.hr
+Max Hamburgers|Luleå|SE|maxburgers.com
+Mettler Toledo|Tiel|CH|mt.com
+Milestone S.r.l.|Milan|IT|milestone.it
+Minarelli|Metropolitan City of Bologna|IT|motoriminarelli.it
+Nice Ltd|Ra'anana|IL|nice.com
+ONCF|Rabat|MA|oncf.ma
+OXXO|Monterrey|MX|oxxo.com
+Obolon CJSC|Kyiv|UA|obolon.com
+Old Mutual|London|ZA|oldmutual.com
+Oschadbank|Pecherskyi District|UA|oschadbank.ua
+Pelita Air Service|Jakarta|ID|pelita-air.com
+Phase One|Copenhagen|DK|phaseone.com
+Pinarello|Treviso|IT|pinarello.com
+Piëch Automotive|Zurich|CH|piech.com
+Plasser & Theurer|Vienna|AT|plassertheurer.at
+Playlife|Treviso|IT|playlife.com
+Prensa Latina|Havana|CU|prensa-latina.cu
+Público|Lisbon|PT|publico.pt
+QNB Group|Doha|QA|qnb.com
+RAF-Avia|Riga|LV|rafavia.lv
+RE/MAX|Denver|CA|remax.com
+Reason Studios|Stockholm|SE|reasonstudios.com
+Restaurant Brands International|Oakville|CA|rbi.com
+S-Oil|Seoul|KR|s-oil.com
+SANY Heavy Industry Co., Ltd|Changsha|HK|sanyexcavator.com
+SF Studios|Stockholm|SE|sfstudios.se
+STP Airways|São Tomé|ST|stpairways.st
+Saku Brewery|Saku|EE|saku.ee
+Shinhan Bank|Seoul|KR|shinhan.com
+Soltam Systems|Yokneam Illit|IL|soltam.co.il
+SonAir|Luanda|AO|sonair.co.ao
+SprintAir|Warsaw|PL|sprintair.eu
+Star Perú|Lima|PE|starperu.com
+Storytel|Stockholm|SE|storytel.com
+Swiss Life|Zurich|CH|swisslife.com
+Tata Play|New Delhi|IN|tataplay.com
+Tata Power|Mumbai|IN|tatapower.com
+Telesat|Ottawa|CA|telesat.com
+The Canadian Press|Toronto|CA|thecanadianpress.com
+Trans Maldivian Airways|Malé|MV|transmaldivian.com
+Tudor Watches|Geneva|CH|tudorwatch.com
+U Fleků|Prague|CZ|ufleku.cz
+Unibet|Gżira|MT|unibet.fr
+Viacom18|Mumbai|IN|viacom18.com
+WAFA|Ramallah|PS|wafa.ps
+Woodside Energy|Perth|AU|woodside.com
+Zebre|Parma|IT|zebreparma.it
+Zenith Bank|Lagos|NG|zenithbank.com
+Zwack|Budapest|HU|zwackunicum.hu
+bpost|Brussels|BE|bpost.be
+Éditions Grasset|Paris|FR|grasset.fr
+Jerónimo Martins|Lisbon|PT|jeronimomartins.com
+Standard Bank|Johannesburg|ZA|standardbank.com
+Wistron|New Taipei City|TW|wistron.com
+AUO Corporation|Hsinchu City|TW|auo.com
+Bank Austria|Vienna|AT|bankaustria.at
+Bancolombia|Medellín|CO|bancolombia.com
+Rexel|Paris|FR|rexel.com
+Bank Central Asia|Jakarta|ID|bca.co.id
+Trelleborg AB|Trelleborg|SE|trelleborg.com
+Sheriff|Tiraspol|MD|sheriff.md
+Suncor Energy|Calgary|CA|suncor.com
+Maroc Telecom|Rabat|MA|iam.ma
+Scandic Hotels Group|Stockholm|SE|scandichotelsgroup.com
+LexisNexis|New York City|SG|lexisnexis.com
+ATM|Milan|IT|atm.it
+PKP Intercity|Warsaw|PL|intercity.pl
+Mercator|Ljubljana|SI|mercator.si
+SAS Group|Stockholm|SE|sasgroup.net
+Playtech|Douglas|IM|playtech.com
+Macro Bank|Buenos Aires|AR|macro.com.ar
+GSP Belgrade|Belgrade|RS|gsp.rs
+Zurich Cantonal Bank|Zurich|CH|zkb.ch
+Ignitis|Vilnius|LT|ignitisgrupe.lt
+Hrvatski Telekom|Zagreb|HR|hrvatskitelekom.hr
+A4Tech|Taipei|TW|a4tech.com
+Jyske Bank|Silkeborg|DK|jyskebank.dk
+Royal Unibrew|Faxe|DK|royalunibrew.com
+Delta Holding|Belgrade|RS|deltaholding.rs
+Mobileye|Jerusalem|IL|mobileye.com
+BorsodChem|Kazincbarcika|HU|borsodchem-group.com
+Verbund|Vienna|AT|verbund.com
+Austal|Henderson|AU|austal.com
+Genmab|Copenhagen|DK|genmab.com
+Rosenbauer|Leonding|AT|rosenbauer.com
+Olpha|Olaine|LV|olainfarm.lv
+Klépierre|Paris|FR|klepierre.com
+Acne Studios|Stockholm|SE|acnestudios.com
+Appenzeller Bahnen|Herisau|CH|appenzellerbahnen.ch
+ZLIN AERO|Otrokovice|CZ|zlinaircraft.eu
+Flying Wild Hog|Warsaw|PL|flyingwildhog.com
+Store Norske Spitsbergen Kulkompani|Longyearbyen|NO|snsk.no
+1Malaysia Development Berhad|Kuala Lumpur|MY|1mdb.com.my
+AGV|Alessandria|IT|agv.com
+Agrosuper|Rancagua|CL|agrosuper.cl
+Air ACT|Istanbul|TR|actairlines.com
+Air Creebec|Waskaganish|CA|aircreebec.ca
+Air Mandalay|Yangon|MM|airmandalay.com
+Airnorth|Darwin|AU|airnorth.com.au
+Allegro|Poznań|PL|allegro.sk
+Altice Portugal|Lisbon|PT|altice.pt
+Amapola Flyg|Stockholm|SE|amapola.nu
+Amar Chitra Katha|Mumbai|IN|amarchitrakatha.com
+Arabia|Helsinki|FI|arabia.fi
+Arutz Sheva|Beit El|IL|israelnationalnews.com
+Atomic Energy of Canada Limited|Chalk River|CA|aecl.ca
+Ay Yapım|Beşiktaş|TR|ayyapim.tv
+BKV|Budapest|HU|bkv.hu
+BMC Switzerland|Grenchen|CH|bmc-switzerland.com
+BRF|Itajaí|BR|brf-br.com
+BRIO|Malmö|SE|brio-toys.com
+Balaji Telefilms|Mumbai|IN|balajitelefilms.com
+Banco Central de Timor-Leste|Dili|TL|bancocentral.tl
+Bank Mandiri|Jakarta|ID|bankmandiri.co.id
+Bank of Mauritius|Port Louis|MU|bom.mu
+Bank of Namibia|Windhoek|NA|bon.com.na
+Baume et Mercier|Bellevue|CH|baume-et-mercier.com
+Beta Motor|Metropolitan City of Florence|IT|betamotor.com
+Bharat Dynamics Limited|Hyderabad|IN|bdl-india.in
+Bharat Electronics|Bengaluru|IN|bel-india.in
+Bolex|Yverdon-les-Bains|CH|bolex.com
+CTT Correios de Portugal|Lisbon|PT|ctt.pt
+Cairo Aviation|Cairo|EG|cairoaviation.com
+Canada Goose Inc.|Toronto|CA|canada-goose.com
+Centrale Bank van Suriname|Paramaribo|SR|cbvs.sr
+Chubb Corp.|Warren|CH|chubb.com
+Codelco|Santiago|CL|codelco.com
+Companhia Siderúrgica Nacional|Rio de Janeiro|BR|csn.com.br
+Copa Airlines Colombia|Bogotá|CO|wingo.com
+Crypto.com|Singapore|SG|crypto.com
+De Agostini Editore|Novara|IT|gruppodeagostini.it
+Delta Electronics|Taipei|TW|deltaww.com
+Demel|Vienna|AT|demel.com
+Din Tai Fung|Taipei|AE|dintaifungusa.com
+Dubai Islamic Bank|Dubai|AE|dib.ae
+Empresas Polar|Caracas|VE|empresaspolar.com
+Erste Group|Vienna|AT|erstegroup.com
+Fabrika automobila Priboj|Priboj|RS|fap.co.rs
+Fantagio|Seoul|KR|fantagio.kr
+Foreca|Espoo|FI|foreca.com
+GIC Private Limited|Singapore|SG|gic.com.sg
+GS Group|Seoul|KR|gsholdings.com
+Georgian Film Studio|Tbilisi|GE|georgianfilm.ge
+Gesellschaft der Musikfreunde|Vienna|AT|musikverein.at
+Girard-Perregaux|La Chaux-de-Fonds|CH|girard-perregaux.com
+Globe Telecom|Manila|PH|globe.com.ph
+Groupama|Paris|FR|groupama.com
+Grupo Imagen|Mexico City|MX|imagen.com.mx
+HC Energie Karlovy Vary|Karlovy Vary|CZ|hokejkv.cz
+Halfbrick Studios|Brisbane|AU|halfbrick.com
+Halkbank|Ankara|TR|halkbank.com.tr
+Hunnu Air|Ulaanbaatar|MN|hunnuair.com
+Hyundai Steel|Incheon|KR|hyundai-steel.com
+ITC Limited|Kolkata|IN|itcportal.com
+Iliad|Paris|FR|iliad.fr
+Indian Railway Catering and Tourism Corporation|New Delhi|IN|irctc.com
+Interair South Africa|Johannesburg|ZA|interair.co.za
+Intimissimi|Dossobuono|IT|intimissimi.com
+Jonckheere|Roeselare|BE|vdljonckheere.be
+KR Motors|Changwon|KR|krmotors.com
+KT Genie Music|Seoul|KR|geniemusic.co.kr
+Keppel Ltd.|Singapore|SG|keppel.com
+Korea Gas Corporation|Daegu|KR|kogas.or.kr
+Kuwait Oil Company|Al Ahmadi|KW|kockw.com
+Lundin Energy|Stockholm|SE|lundin-energy.com
+Maison Margiela|Paris|FR|maisonmargiela.com
+Maple Leaf Foods|Toronto|CA|mapleleaf.ca
+McCain Foods|Florenceville-Bristol|CA|mccain.com
+Mediobanca|Milan|IT|mediobanca.com
+Mekorot|Tel Aviv|IL|mekorot.co.il
+Mio|Taoyuan|TW|mio.com
+Moto Morini|Metropolitan City of Bologna|IT|motomorini.eu
+NAD Electronics|Pickering|CA|nadelectronics.com
+Nesma Airlines|Cairo|SA|nesmaairlines.com
+Nigerian National Petroleum Corporation|Abuja|NG|nnpcgroup.com
+NovoAir|Dhaka|BD|flynovoair.com
+NutriAsia|Taguig|PH|nutriasia.com
+O Estado de S. Paulo|São Paulo|BR|estadao.com.br
+OP Pohjola|Vallila|FI|op.fi
+Oi|Brasília|BR|oi.com.br
+Petroperú|Lima|PE|petroperu.com.pe
+Pindad|Bandung|ID|pindad.com
+PostBus Switzerland|Bern|CH|postauto.ch
+Public Bank Berhad|Kuala Lumpur|MY|publicbankgroup.com
+QNAP Systems|Xizhi District|TW|qnap.com
+RIU Hotels & Resorts|Palma|ES|riu.com
+Radio New Zealand|Wellington|NZ|rnz.co.nz
+Ramboll|Copenhagen|DK|ramboll.com
+Roger Dubuis|Geneva|CH|rogerdubuis.com
+Sarajevska Pivara|Sarajevo|BA|sarajevska-pivara.com
+Sarekat Islam|Jakarta|ID|si.or.id
+Sergio Bonelli Editore|Milan|IT|sergiobonelli.it
+Sonova|Stäfa|CH|sonova.com
+Sparco|Metropolitan City of Turin|IT|sparco-official.com
+State Printing Company|Budapest|HU|any.hu
+Stellantis Europe|Turin|IT|stellantis.com
+Sulzer|Winterthur|CH|sulzer.com
+Swissmint|Bern|CH|swissmint.ch
+Synology Inc.|Taipei|TW|synology.com
+Tailwind Airlines|Istanbul|TR|tailwind.com.tr
+Tallinna Kaubamaja Group|Tallinn|EE|tkmgroup.ee
+Tech Mahindra India|Mumbai|IN|techmahindra.com
+Tecnam|Metropolitan City of Naples|IT|tecnam.com
+ThaiBev|Bangkok|TH|thaibev.com
+Toon Boom Animation|Montreal|CA|toonboom.com
+Transocean|Steinhausen|CH|deepwater.com
+Trussardi|Milan|IT|trussardi.com
+Universal Edition|Vienna|AT|universaledition.com
+UzAuto Motors|Asaka|UZ|uzautomotors.com
+VTech|Tai Po District|HK|vtech.com
+Vatican Post|Holy See|VA|postevaticane.va
+Viaplay Group|Stockholm|SE|viaplaygroup.com
+Vienna Insurance Group|Vienna|AT|vig.com
+Vietnam Railways|Hanoi|VN|vr.com.vn
+Wakaliwood|Kampala|UG|wakaliwood.com
+Wesfarmers|Perth|AU|wesfarmers.com.au
+Woolworths Group|Sydney|AU|woolworthsgroup.com.au
+Woori Bank|Seoul|KR|wooribank.com
+Yerevan Brandy Company|Yerevan|AM|araratbrandy.com
+Zagato|Metropolitan City of Milan|IT|zagato.it
+Zagreb Film|Zagreb|HR|zagrebfilm.hr
+lifecell|Kyiv|UA|lifecell.ua
+Éditions Albin Michel|Paris|FR|albin-michel.fr
+Öhlins|Upplands Väsby|SE|ohlins.com
+CGI Group|Montreal|CA|cgi.com
+Bank Rakyat Indonesia|Jakarta|ID|bri.co.id
+Meliá Hotels International|Palma|ES|meliahotelsinternational.com
+Smurfit Westrock Group|Dublin|IE|smurfitkappa.com
+Agrokor|Zagreb|HR|agrokor.hr
+Tenaris|Luxembourg|LU|tenaris.com
+Ackermans & van Haaren|Antwerp|BE|avh.be
+Siam Commercial Bank|Bangkok|TH|scb.co.th
+Dino Polska|Krotoszyn|PL|marketdino.pl
+Belaruskali|Salihorsk|BY|belaruskali.by
+Coloplast|Humlebæk|DK|coloplast.com
+Konzum|Zagreb|HR|konzum.hr
+Velux|Hørsholm|DK|velux.com
+Erdemir|Karadeniz Ereğli|TR|erdemir.com.tr
+Aperam|Luxembourg|LU|aperam.com
+Agrana|Vienna|AT|agrana.com
+FLSmidth|Valby|DK|fls.com
+Alrajhi Bank|Riyadh|SA|alrajhibank.com.sa
+TDC|Copenhagen|DK|tdcgroup.com
+IFS AB|Linköping|SE|ifs.com
+Orlen Unipetrol|Prague|CZ|orlenunipetrol.cz
+Nakheel Properties|Dubai|AE|nakheel.com
+Axis Communications|Lund|SE|axis.com
+Central European Media Enterprises|Hamilton|BM|cme.net
+Transgaz|Mediaș|RO|transgaz.ro
+Pick Szeged|Szeged|HU|pick.hu
+Statnett|Nydalen|NO|statnett.no
+Burgeranch|Netanya|IL|burgeranch.co.il
+Piaggio Aerospace|Genoa|IT|piaggioaerospace.it
+Rabita Bank|Baku|AZ|rabitabank.com
+Achema, AB|Jonava|LT|achema.com
+Altri|Porto|PT|altri.pt
+Hellenic Train|Athens|GR|hellenictrain.gr
+Amber Latvijas balzams|Riga|LV|balzams.lv
+Trainkos|Kosovo Polje|RS|trainkos.com
+Viaplay|Stockholm|SE|viaplay.com
+Cyanide|Paris|FR|cyanide-studio.com
+Aker|Fornebu|NO|akerasa.com
+Nord Pool Spot AS|Trondheim|NO|nordpoolgroup.com
+Sweco|Stockholm|SE|swecogroup.com
+4F|Kraków|PL|4fstore.com
+ASFiNAG|Vienna|AT|asfinag.at
+AdGuard|Limassol|CY|adguard.com
+Administration of the Patrimony of the Apostolic See|Vatican City|VA|vatican.va
+Agribank|Hanoi|VN|evn.com.vn
+Air Bucharest|Bucharest|RO|airbucharest.ro
+Air Mali|Bamako|ML|air-mali.com
+Air Premia|Seoul|KR|airpremia.com
+Al-Naser Airlines|Baghdad|IQ|alnaserairlines.com
+AlMasria Universal Airlines|Cairo|EG|almasriaairlines.com
+Alten|Boulogne-Billancourt|FR|alten.com
+Anthon Berg|Ballerup|DK|tomsgroup.com
+Antonio Zamperla S.p.A|Vicenza|IT|zamperla.com
+Artek|Kamppi|FI|artek.fi
+Aruba Airlines|Oranjestad|AW|arubaairlines.com
+Avianca Cargo|Medellín|CO|aviancacargo.com
+Azienda del Consorzio Trasporti Veneziano|Venice|IT|avmspa.it
+Bank Melli Iran|Tehran|IR|bmi.ir
+Bearskin Airlines|Sioux Lookout|CA|bearskinairlines.com
+Birra Ichnusa|Metropolitan City of Cagliari|IT|birraichnusa.it
+Bluebird Nordic|Keflavík|IS|bluebirdcargo.com
+Borealis|Vienna|AT|borealisgroup.com
+Brodosplit|Split|HR|brodosplit.hr
+Buddha Bar|Paris|FR|buddhabar.com
+Chair Airlines|Opfikon|CH|chair.ch
+Coles Supermarkets|Melbourne|AU|coles.com.au
+Compagnie Générale de Navigation sur le lac Léman|Lausanne|CH|cgn.ch
+DTAC|Bangkok|TH|dtac.co.th
+Dabur|Ghaziabad|IN|dabur.com
+Dangote Group|Lagos|NG|dangote.com
+Dargaud|Paris|FR|dargaud.com
+Eagle Air|Kampala|UG|eagleair-ug.com
+Emirates NBD|Dubai|AE|emiratesnbd.com
+Estonian Folklore Archives|Tartu|EE|folklore.ee
+Etro|Milan|IT|etro.com
+Eurasian Natural Resources Corporation|Luxembourg|KZ|enrc.com
+Fantic Motor|Dosson|IT|fantic.com
+Flanders Classics|Vilvoorde|BE|flandersclassics.be
+FlySafair|Johannesburg|ZA|flysafair.co.za
+Force Motors|Pune|IN|forcemotors.com
+Fábrica Argentina de Aviones|Córdoba|AR|fadeasa.com.ar
+Föroya Bjór|Klaksvík|FO|foroyabjor.dk
+Group Lala|Gómez Palacio|MX|lala.com.mx
+Groupe Bruxelles Lambert|Brussels|BE|gbl.com
+Harlequin Enterprises|Toronto|CA|harlequin.com
+Hartwall|Helsinki|FI|hartwall.fi
+Helsinki City Transport|Helsinki|FI|hkl.fi
+Hitachi Rail Italy|Naples|IT|hitachirail.com
+Hootsuite|Vancouver|CA|hootsuite.com
+Imperial Oil|Calgary|CA|imperialoil.ca
+Indonesian Aerospace|Bandung|ID|indonesian-aerospace.com
+Indosat Ooredoo Hutchison|Jakarta|ID|indosatooredoo.com
+JAK Members Bank|Skövde|SE|jak.se
+Jambojet|Nairobi|KE|jambojet.com
+Jet Asia Airways|Bangkok|TH|flyjetasia.com
+Journey Beyond|Marleston|AU|journeybeyondrail.com.au
+Khazanah Nasional|Kuala Lumpur|MY|khazanah.com.my
+Kinepolis|Brussels metropolitan area|BE|kinepolis.com
+Kingdom Holding Company|Riyadh|SA|kingdom.com.sa
+Konfrontacja Sztuk Walki|Warsaw|PL|kswmma.com
+Korea National Oil Corporation|Ulsan|KR|knoc.co.kr
+Kuwait Petroleum International|Kuwait City|KW|q8.com
+LASER Airlines|Caracas|VE|laserairlines.com
+Lausanne HC|Lausanne|CH|lausannehc.ch
+Lavasoft|Montreal|SE|lavasoft.com
+Loblaw Companies|Brampton|CA|loblaw.ca
+Luxgen|Sanyi Township|TW|luxgen-motor.com.tw
+Lyoness|St. Gallen|CH|lyoness-corporate.com
+Magyar Távirati Iroda|Budapest District I|HU|mti.hu
+Maxis Communications|Kuala Lumpur|MY|maxis.com.my
+Moldcell|Chișinău|MD|moldcell.md
+NI Railways|Belfast|IE|translink.co.uk
+Nubank|Berlin|BR|nubank.com.br
+Orascom Construction Industries|Cairo|EG|orascom.com
+Oticon|Smørum|DK|oticon.com
+PCCW Limited|Hong Kong|HK|pccw.com
+Paz Retail And Energy|Yakum|IL|paz.co.il
+Peter Lang|Lausanne|CH|peterlang.com
+Petroleum Air Services|Cairo|EG|pas.com.eg
+Petrovietnam|Hanoi|VN|pvn.vn
+Pingo Doce|Lisbon|PT|pingodoce.pt
+Power Grid Corporation of India|Gurgaon|IN|powergridindia.com
+RUAG Holding|Bern|CH|ruag.com
+Radio Philippines Network|Quezon City|PH|rpnradio.com
+Rauch|Rankweil|AT|rauch.cc
+Raymond Weil|Geneva|CH|raymond-weil.com
+Record Report|Caracas|VE|recordreport.com.ve
+Red Chillies Entertainment|Mumbai|IN|redchillies.com
+Reliance Anil Dhirubhai Ambani Group|Navi Mumbai|IN|reliancegroupindia.com
+Roman|Brașov|RO|roman.ro
+Royal Greenland|Nuuk|DK|royalgreenland.com
+S Group|Helsinki|FI|s-kanava.fi
+Safair|Kempton Park|ZA|safairoperations.com
+Scandlines|Copenhagen|DK|scandlines.com
+Signify|Eindhoven|BE|signify.com
+Sinar Mas Group|Jakarta|ID|sinarmas.com
+Sita Air|Kathmandu|NP|sitaair.com.np
+Sky Angkor Airlines|Siem Reap|KH|skywingsair.com
+Sociedad Química y Minera de Chile|Santiago|CL|sqm.com
+Stagg Music|Brussels|BE|staggmusic.com
+StarHub|Singapore|SG|starhub.com
+Sulake Corporation|Helsinki|FI|sulake.com
+Swedavia|Stockholm|SE|swedavia.com
+Swissquote|Gland|CH|swissquote.ch
+Síminn|Reykjavík|IS|siminn.is
+Tajikfilm|Dushanbe|SU|tojikfilm.tj
+Tata Sons|Mumbai|IN|tata.com
+Tel Aviv Cinematheque|Tel Aviv|IL|cinema.co.il
+The Israel Corporation Ltd.|Tel Aviv|IL|israelcorp.com
+The Saudi National Bank|Jeddah|SA|alahli.com
+Thorens|Basel|CH|thorens.com
+Tokopedia|Jakarta|ID|tokopedia.com
+United Airways|Dhaka|BD|uabdl.com
+Ursus Breweries|Cluj-Napoca|RO|ursus.ro
+VakıfBank|Istanbul|TR|vakifbank.com.tr
+Viohalco|Brussels metropolitan area|BE|viohalco.com
+Vitra|Birsfelden|CH|vitra.com
+Walmart de México y Centroamérica|Mexico City|MX|walmex.mx
+Weatherford International|Geneva|CH|weatherford.com
+Wētā Workshop|Wellington|NZ|wetanz.com
+emart|Seoul|KR|emart.com
+DTEK|Donetsk|UA|dtek.com
+Aero Engine Corporation of China|Beijing|BE|aecc.cn
+Raiffeisen Bank International|Vienna|AT|rbinternational.com
+Illich Steel & Iron Works|Mariupol|UA|ilyich.com.ua
+Asseco Poland|Rzeszów|PL|asseco.pl
+LPP|Gdańsk|PL|lppsa.com
+Telecom Argentina|Buenos Aires|AR|telecom.com.ar
+Big C|Bangkok|TH|bigc.co.th
+Sunlife|Montreal|CA|sunlife.com
+DFDS|Copenhagen|DK|dfds.com
+Orica|Melbourne|AU|orica.com
+Axia Energia|Rio de Janeiro|BR|axia.com.br
+Belarusbank|Minsk|BY|belarusbank.by
+DNV|Høvik|NO|dnv.com
+Zaporizhstal|Zaporizhzhia|UA|zaporizhstal.com
+Nippon Steel Slovakia|Košice|SK|nipponsteel.com
+Rompetrol|Bucharest|RO|rompetrol.com
+Gazprom Transgaz Belarus|Minsk|BY|btg.by
+Tine|Kalbakken|NO|tine.no
+O2 Czech Republic|Prague|CZ|o2.cz
+Slovenské elektrárne|Bratislava|SK|seas.sk
+Rīgas satiksme|Riga|LV|rigassatiksme.lv
+Mega Brands|Montreal|CA|megabrands.com
+Omantel|Muscat|OM|omantel.om
+Finavia|Vantaa|FI|finavia.fi
+Oatly AB|Malmö|SE|oatly.com
+Eurowag|Prague|CZ|eurowag.com
+Petrol Group|Ljubljana|SI|petrol.eu
+BharatBenz|Chennai|IN|bharatbenz.com
+Newag|Nowy Sącz|PL|newag.pl
+Tet|Riga|LV|tet.lv
+Pošta Crne Gore|Podgorica|ME|postacg.me
+EA Montreal|Montreal|CA|eamontreal.com
+Swedish Coast Guard|Karlskrona|SE|kustbevakningen.se
+Latvian Mobile Telephone|Riga|LV|lmt.lv
+Redes Energéticas Nacionais|Lisbon|PT|ren.pt
+Mowag|Kreuzlingen|CH|gdels.com
+DFI Inc.|Xizhi District|TW|dfi.com.tw
+Skype Technologies|Luxembourg|LU|skype.com
+AerCap|Amsterdam|IE|aercap.com
+Leadtek Research|Taipei|TW|leadtek.com
+Sveriges Utbildningsradio|Stockholm|SE|ur.se
+Andorra Telecom|Santa Coloma d'Andorra|AD|andorratelecom.ad
+Piatnik & Söhne|Vienna|AT|piatnik.com
+WESTbahn|Vienna|AT|westbahn.at
+Etihad Rail|Abu Dhabi|AE|etihadrail.ae
+Verkehrsbetrieb LIECHTENSTEINmobil|Schaan|LI|liemobil.li
+Compulsion Games|Montreal|CA|compulsiongames.com
+The Conversation|Waltham|AU|theconversation.com
+Kings Bay|Ny-Ålesund|NO|kingsbay.no
+Aeropostal Alas de Venezuela|Caracas|VE|aeropostal.com
+Air Dilijans|Yerevan|AM|airdilijans.com
+Airports of Thailand|Bangkok|TH|airportthai.co.th
+AlbaStar|Palma|ES|albastar.es
+Alliance Airlines|Brisbane|AU|allianceairlines.com.au
+Altium Limited|La Jolla|AU|altium.com
+Amcor|Zurich|AU|amcor.com
+Amdocs|St. Louis|IL|amdocs.com
+Andritz|Graz|AT|andritz.com
+Arrinera|Warsaw|PL|arrinera.com
+Asian Paints|Mumbai|IN|asianpaints.com
+Austrian Mint|Vienna|AT|muenzeoesterreich.at
+BCP Group|Casablanca|MA|groupebcp.com
+BOTAŞ|Ankara|TR|finmaxft.com
+Belneftekhim|Minsk|BY|belneftekhim.by
+Bloober Team|Kraków|PL|blooberteam.com
+Blue Wing Airlines|Paramaribo|SR|bluewingairlines.com
+Bogdan Group|Cherkasy|UA|bogdan.ua
+Braathens Regional|Trollhättan|SE|flygbra.se
+Budapest Aircraft Service|Budapest|HU|baseairlines.hu
+C-JeS Studios|Seoul|KR|c-jes.com
+CARNet|Zagreb|HR|carnet.hr
+CJ CGV|Seoul|KR|cgv.co.kr
+Café Hawelka|Vienna|AT|hawelka.at
+Calm Air|Winnipeg|CA|calmair.com
+Cencosud|Las Condes|AR|cencosud.com
+Central Group|Pathum Wan|TH|centralgroup.com
+Central Mountain Air|Smithers|CA|flycma.com
+Clic Air|Bogotá|CO|clicair.co
+Coridel Entertainment|Seoul|KR|coridelent.com
+Cyta|Nicosia|CY|cyta.com.cy
+DOT LT|Karmėlava|LT|dot.lt
+Dekra SE|Stuttgart|ES|dekra.com
+Denel|Centurion|ZA|denel.co.za
+Duvel Moortgat Brewery|Breendonk|BE|duvelmoortgat.be
+Eagle Air Iceland|Reykjavík|IS|ernir.is
+Edelaraudtee|Türi|EE|edel.ee
+Erste Bank|Vienna|AT|erstebank.at
+Esselte|Stockholm|SE|esselte.com
+Eterna|Grenchen|CH|eterna.com
+FEMSA|Monterrey|MX|femsa.com
+Firmenich|Geneva|CH|firmenich.com
+First Quantum Minerals|Vancouver|CA|first-quantum.com
+Flair Airlines|Edmonton|CA|flyflair.com
+Folli Follie|Athens|GR|ffgroup.com
+Formosa Television|New Taipei City|TW|ftv.com.tw
+Freepik|Málaga|ES|magnific.com
+Frozenbyte|Helsinki|FI|frozenbyte.com
+Galderma|Zug|CH|galderma.com
+Geneva Public Transport|Grand-Lancy|CH|tpg.ch
+Grupo Elektra|Mexico City|MX|elektra.com.mx
+Grupo México|Mexico City|MX|gmexico.com
+Gösser|Leoben|AT|goesser.at
+Hanoi Stock Exchange|Hanoi|VN|hnx.vn
+Hexagon AB|Stockholm|SE|hexagon.com
+HiSky|Chișinău|MD|hisky.md
+Humax|Seongnam|KR|humaxdigital.com
+Hungry Jack's|Osborne Park|AU|hungryjacks.com.au
+Hyosung|Seoul|KR|hyosung.com
+Imedi Media Holding|Tbilisi|GE|imedi.ge
+Indomaret|Jakarta|ID|indomaret.co.id
+Intercontinental Broadcasting Corporation|Quezon City|PH|ibctv13.com
+Israel Postal Company|Jerusalem|IL|israelpost.co.il
+Japan Tobacco International|Geneva|CH|jti.com
+Jelcz|Jelcz-Laskowice|PL|jelcz.com.pl
+JetSmart|Santiago|CL|jetsmart.com
+Julius Meinl|Vienna|AT|juliusmeinl.com
+King Power|Bangkok|TH|kingpower.com
+LATAM Cargo Chile|Las Condes|CL|latamcargo.com
+Leonidas|Anderlecht|BE|leonidas.com
+Lynx Air|Calgary|CA|flylynx.com
+Línea Aérea Amaszonas|La Paz|BO|amaszonas.com
+Mahanagar Telephone Nigam|New Delhi|IN|mtnl.net.in
+MasAir Cargo Mexico|Mexico City|MX|masair.com
+Metsähallitus|Itä-Pasila|FI|metsa.fi
+Minoan Lines|Heraklion|GR|minoan.gr
+Modenas|Gurun|MY|modenas.my
+Mofos|Montreal|CA|mofos.com
+National Film Development Corporation of India|Mumbai|IN|nfdcindia.com
+National Iranian Gas Company|Tehran|IR|iraniangas.ir
+National Television and Radio Company of Uzbekistan|Tashkent|UZ|mtrk.uz
+Nova Bus|Saint-Eustache|SE|novabus.com
+Ola Cabs|Bengaluru|IN|olacabs.com
+Onex Corporation|Toronto|CA|onex.com
+Orbest|Lisbon|PT|orbest.com
+Palit Microsystems|Taipei|TW|palit.biz
+Partners Group|Baar|CH|partnersgroup.com
+Petro-Canada|Calgary|CA|petro-canada.ca
+Pink (Serbia)|Belgrade|RS|pink.rs
+Plasan|Sasa|IL|plasansasa.com
+Polar Electro|Vihiluoto|FI|polar.com
+Polish Scientific Publishers PWN|Warsaw|PL|pwn.pl
+Polregio|Wola|PL|polregio.pl
+Potash Corporation of Saskatchewan|Saskatoon|CA|potashcorp.com
+Privilege Style|Palma|ES|privilegestyle.com
+Qazaq Air|Almaty|KZ|vietjetqazaqstan.kz
+Queensland Rail|Brisbane|AU|queenslandrail.com.au
+Raaberbahn|Sopron|HU|raaberbahn.at
+Radiofabrik|Salzburg|AT|radiofabrik.at
+Radiotelevisione svizzera di lingua italiana|Lugano|CH|rsi.ch
+Raw Fury|Stockholm|SE|rawfury.com
+ST Engineering|Singapore|SG|stengg.com
+Sahara India Pariwar|Samastipur|IN|sahara.in
+Samsung Engineering|Seoul|KR|samsungengineering.com
+State Oil Fund of Azerbaijan|Nizami raion|AZ|oilfund.az
+TAV Airports Holding|Istanbul|TR|tavairports.com
+TMBThanachart Bank PCL.|Bangkok|TH|ttbbank.com
+Taiwan Power Company|Taipei|TW|taipower.com.tw
+Tata Consumer Products|Kolkata|IN|tataconsumer.com
+Taybeh Brewery|Taybeh, Ramallah|PS|taybehbeer.com
+Tbilisi Aircraft Manufacturing|Tbilisi|GE|tam.ge
+Tectoy|São Paulo|BR|tectoy.com.br
+Telkomsel|Jakarta|ID|telkomsel.co.id
+Tong Li Publishing|Taipei|TW|tongli.com.tw
+Tower Semiconductor Ltd.|Migdal HaEmek|IL|towersemi.com
+Türksat|Gölbaşı|TR|turksat.com.tr
+Uponor|Vantaa|FI|uponor.com
+Ushahidi Inc.|Nairobi|KE|ushahidi.com
+Vietcombank|Hanoi|VN|vietcombank.com.vn
+Yettel Serbia|Belgrade|RS|yettel.rs
+Zorlu Holding Company|Istanbul|TR|zorlu.com.tr
+iStock|Calgary|CA|istockphoto.com
+mBank|Wola|PL|mbank.pl
+monday.com|Tel Aviv|IL|monday.com
+TE Connectivity|Schaffhausen|CH|te.com
+WSP Global|Montreal|CA|wsp.com
+AngloGold Ashanti|Johannesburg|ZA|anglogoldashanti.com
+Schindler Elevator|Ebikon|CH|schindler.com
+Techint|Milan|AR|techint.com
+Inventec|Taipei|TW|inventec.com
+Kerry Group|Tralee|IE|kerrygroup.com
+Ecobank|Lomé|TG|ecobank.com
+QBE Insurance|Sydney|AU|qbe.com
+Proximus Group|Brussels metropolitan area|BE|proximus.com
+Rockwool|Hedehusene|DK|rockwool.com
+Metsä Group|Helsinki|FI|metsagroup.com
+Reliance Infrastructure|Mumbai|IN|rinfra.com
+Winbond|Taichung|TW|winbond.com
+Banco de Chile|Santiago|CL|bancochile.cl
+Československá obchodní banka|Prague|CZ|csob.cz
+GN Store Nord|Ballerup|DK|gn.com
+Komerční banka|Prague|CZ|kb.cz
+TV5 Network, Inc.|Mandaluyong|PH|tv5.com.ph
+Partner Communications Company Ltd.|Rosh HaAyin|IL|partner.co.il
+Antofagasta plc|London|CL|antofagasta.co.uk
+The Pictet Group|Geneva|CH|pictet.com
+AMP Limited|Sydney|AU|amp.com.au
+Romgaz|Mediaș|RO|romgaz.ro
+Tata Chemicals|Mumbai|IN|tatachemicals.com
+Syriatel|Ashrafiyat Sahnaya|SY|syriatel.sy
+TC Energy|Calgary|CA|tcenergy.com
+Grupo Abril|São Paulo|BR|grupoabril.com.br
+Magyar Suzuki|Esztergom|HU|suzuki.hu
+Playrix|Dublin|IE|playrix.com
+Plzeňský Prazdroj|Plzeň|CZ|pilsnerurquell.com
+Thule|Malmö|SE|thulegroup.com
+Kcell|Almaty|KZ|kcell.kz
+Allwyn Greece|Athens|GR|allwyn.gr
+Normal|Skanderborg|DK|normalstores.com
+Íslandsbanki|Reykjavík|IS|islandsbanki.is
+Alkaloid|Skopje|MK|alkaloid.com.mk
+Pasažieru vilciens|Riga|LV|vivi.lv
+Universal Robots|Odense|DK|universal-robots.com
+Đuro Đaković|Slavonski Brod|HR|duro-dakovic.com
+Lifosa, AB|Kėdainiai|LT|lifosa.com
+Cellebrite|Petah Tikva|IL|cellebrite.com
+Nilfisk|Copenhagen|DK|nilfisk.com
+Office québécois de la langue française|Montreal|CA|qc.ca
+Leo Express|Prague|CZ|leoexpress.com
+Avioane Craiova|Craiova|RO|acv.ro
+Swedish National Heritage Board|Stockholm|SE|raa.se
+ABS Jets|Prague|CZ|absjets.cz
+Garanti BBVA|Istanbul|TR|garantibbva.com.tr
+Lian Li Industrial|Keelung|TW|lian-li.com
+Sweet Baby Inc.|Montreal|CA|sweetbabyinc.com
+AOpen|Taipei|TW|aopen.com
+Air Kasaï|Kinshasa|CD|airkasai.cd
+Air Nunavut|Iqaluit|CA|airnunavut.ca
+Air Senegal|Dakar|SN|flyairsenegal.com
+Airlines of Tasmania|Hobart|AU|airtasmania.com.au
+Akwa Group|Casablanca|MA|akwagroup.com
+Alfamart|Tangerang|PH|alfamart.com.ph
+Almarai Company|Riyadh|SA|almarai.com
+Amman Stock Exchange|Amman|JO|exchange.jo
+Amorepacific Corporation|Seoul|KR|amorepacific.com
+Apollo Tyres|Gurgaon|IN|apollotyres.com
+Arab Bank|Amman|JO|arabbank.com
+Armenia Airways|Yerevan|AM|armeniaairways.am
+Armenpress|Yerevan|AM|armenpress.am
+Around Us Entertainment|Seoul|KR|aroundusent.com
+Asian Wings Airways|Yangon|MM|asianwingsair.com
+Augarten porcelain|Vienna|AT|augarten.at
+BC Ferries|Victoria|CA|bcferries.com
+BH Telecom|Sarajevo|BA|bhtelecom.ba
+BIM|Istanbul|TR|bim.com.tr
+Bank Millennium|Mokotów|PL|bankmillennium.pl
+Bank for Investment and Development of Vietnam|Hanoi|VN|bidv.com.vn
+Bank of Ayudhya|Bangkok|TH|krungsri.com
+Banorte|Monterrey|MX|banorte.com
+Bekaert|Waregem|BE|bekaert.com
+Bell Media|Toronto|CA|bellmedia.ca
+Bosnalijek|Sarajevo|BA|bosnalijek.ba
+Brainly|Kraków|PL|brainly.com
+Brave Entertainment|Seoul|KR|bravesound.com
+Bulgarian Posts|Sofia|BG|bgpost.bg
+Bus Éireann|Broadstone|IE|buseireann.ie
+CHIMEI Corporation|Rende District|TW|chimeicorp.com
+CJ ENM Films & Television|Istanbul|KR|cjenmturkiye.com
+Caixa Geral de Depósitos|Lisbon|PT|cgd.pt
+Canadian Bank Note Company|Ottawa|CA|cbnco.com
+Canadian North|Kanata|CA|canadiannorth.com
+CapitaLand|Singapore|SG|capitaland.com
+Cargo Air|Sofia|BG|cargoair.bg
+Cartoon Saloon|Kilkenny|IE|cartoonsaloon.ie
+CelcomDigi|Shah Alam|MY|celcomdigi.com
+Center for the Greek Language|Thessaloniki|GR|greeklanguage.gr
+Chandamama|Mumbai|IN|chandamama.com
+Comores Aviation International|Moroni|KM|comoresaviation.com
+Copersucar|São Paulo|BR|copersucar.com.br
+Crowdin|Tallinn|EE|crowdin.com
+Dvůr Králové Zoo|Dvůr Králové nad Labem|CZ|safaripark.cz
+E. Wedel|Warsaw|PL|wedel.com
+EP Petroecuador|Quito|EC|eppetroecuador.ec
+ESAB|Gothenburg|SE|esab.com
+Eir|Dublin|IE|eir.ie
+Electrecord|Bucharest|RO|electrecord.com
+Engie Electrabel|Brussels|BE|electrabel.be
+Espresso House|Stockholm|SE|espressohouse.com
+Evergreen Group|Taipei|TW|evergreen-group.com
+Far EasTone|Taipei|TW|fetnet.net
+Farfetch|London|PT|farfetch.com
+Fingrid|Metsälä|FI|fingrid.fi
+Fly Baghdad|Baghdad|IQ|flybaghdad.net
+FlyBosnia|Sarajevo|BA|flybosnia.ba
+Fortescue Ltd|Perth|AU|fmgl.com.au
+G.Skill|Taipei|TW|gskill.com
+Getinge AB|Getinge|SE|getinge.com
+Godrej Group|Mumbai|IN|godrej.com
+Gravity Corporation|Seoul|KR|gravity.co.kr
+HJ Shipbuilding & Construction|Bongnae-dong|KR|hjsc.co.kr
+Hanwha Aerospace|Changwon|KR|hanwhaaerospace.com
+Himalaya Airlines|Kathmandu|NP|himalaya-airlines.com
+Hindalco Industries|Mumbai|IN|hindalco.com
+Hyundai Engineering and Construction|Seoul|KR|hdec.kr
+ICEYE|Espoo|FI|iceye.com
+IOI Group|Putrajaya|MY|ioigroup.com
+Indofood|Jakarta|ID|indofood.com
+Jack & Jones|Brande|DK|jackjones.com
+Jumbo|Moschato|GR|e-jumbo.gr
+KCC Corporation|Seoul|KR|kccworld.co.kr
+Kalev|Lehmja|EE|kalev.eu
+Korea Development Bank|Seoul|KR|kdb.co.kr
+Korea Hydro & Nuclear Power|Gyeongju|KR|khnp.co.kr
+Kosova Airlines|Pristina|XK|kosovaairlines.com
+Krakatau Steel|Cilegon|ID|krakatausteel.com
+LIG Defense&Aerospace|Yongin|KR|lignex1.com
+La Prensa|Buenos Aires|AR|laprensa.com.ar
+Lao Air|Vientiane|LA|laoskyway.com
+Lauda Europe Ltd|Birkirkara|MT|lauda-europe.com
+MEASAT Satellite Systems|Cyberjaya|MY|measat.com
+Magyar Pénzverő Zrt.|Budapest|HU|penzvero.hu
+Mann Yatanarpon Airlines|Yangon|MM|airmyp.com
+Manufacturing Commercial Vehicles|Obour City|EG|mcv-eg.com
+Marabou|Upplands Väsby|SE|marabou.se
+Marcussen & Søn|Aabenraa|DK|marcussen-son.dk
+Metso|Helsinki|FI|mogroup.com
+Milrem Robotics|Tallinn|EE|milremrobotics.com
+Mingalar Aviation Services|Yangon|MM|airkbz.com
+Mint of Poland|Warsaw|PL|mennica.com.pl
+Mizrahi Tefahot Bank Ltd.|Ramat Gan|IL|mizrahi-tefahot.co.il
+Mýflug|Reykjahlíð|IS|myflug.is
+NLB banka|Belgrade|RS|nlbkb.rs
+New Kabul Bank|Kabul|AF|newkabulbank.af
+Ninja Kiwi|Auckland|NZ|ninjakiwi.com
+Noctua|Vienna|AT|noctua.at
+Nordiska Kompaniet|Stockholm|SE|nk.se
+Norma Editorial|Barcelona|ES|normaeditorial.com
+Nyxair|Tallinn|EE|flynyx.com
+OSN|Dubai|SA|osn.com
+Olvi|Iisalmi|FI|olvi.fi
+Openbravo|Barcelona|ES|openbravo.com
+Opera Krakowska|Kraków|PL|krakow.pl
+Oyak Renault|Istanbul|TR|renault.com.tr
+PZL Mielec|Mielec|PL|pzlmielec.com.pl
+PZL-Świdnik|Świdnik|PL|pzlswidnik.pl
+Pars Khodro|Tehran|IR|parskhodro.ir
+Penalty|São Paulo|BR|penalty.com.br
+Petroleum Development Oman|Muscat|OM|pdo.co.om
+PhonePe|Bengaluru|IN|phonepe.com
+Pirinsko Pivo|Blagoevgrad|BG|pirinskopivo.bg
+Porsche Holding|Salzburg|AT|porsche-holding.com
+Portuguese Investment Bank|Porto|PT|bancobpi.pt
+Preem|Stockholm|SE|preem.com
+Prvi Partizan|Užice|RS|prvipartizan.com
+RADWIN|Tel Aviv|IL|radwin.com
+Rabén & Sjögren|Stockholm|SE|rabensjogren.se
+Radisson Hotel Group|Minnetonka|BE|radissonhotelgroup.com
+RasGas|Ras Laffan Industrial City|QA|rasgas.com
+Rebel News|Toronto|CA|rebelnews.com
+Ritek|Hsinchu City|TW|ritek.com
+Royal Enfield India|Gurgaon|IN|royalenfield.com
+Royal Wings|Amman|JO|royalwings.com.jo
+Ruby Star|Minsk|BY|rubystar.by
+SBS Transit|Singapore|SG|sbstransit.com.sg
+Sabesp|São Paulo|BR|sabesp.com.br
+Samick|Incheon|KR|samick.co.kr
+Samyang Foods|Seoul|KR|samyangfoods.com
+Saputo|Montreal|CA|saputo.com
+Seadrill|Hamilton|BM|seadrill.com
+Selver|Tallinn|EE|selver.ee
+Spin Master|Toronto|CA|spinmaster.com
+State Export-Import Bank of Ukraine|Kyiv|UA|eximb.com
+Steyr Tractor|Sankt Valentin|AT|steyr-traktoren.com
+Stiftskeller St. Peter|Salzburg|AT|stpeter.at
+Strandfaraskip Landsins|Tvøroyri|FO|ssl.fo
+Sun Hung Kai Properties|Hong Kong|HK|shkp.com
+Swedish Transport Administration|Borlänge|SE|trafikverket.se
+Søstrene Grene|Aarhus|DK|sostrenegrene.com
+TOP Media|Samseong-dong|KR|itopgroup.com
+Trade Air|Zagreb|HR|trade-air.com
+Transporte Aéreo Militar|La Paz|BO|tamep.bo
+Tunis Afrique Presse|Tunis|TN|info.tn
+Tunisavia|Tunis|TN|tunisavia.com.tn
+ULS Airlines Cargo|Istanbul|TR|ulsairlines.com
+Ukraine Air Alliance|Kyiv|UA|uaa-avia.com
+Ukrnafta|Kyiv|UA|ukrnafta.com
+Uzbekneftegaz|Tashkent|UZ|ung.uz
+VY flygbussarna|Stockholm|SE|flygbussarna.se
+Vietinbank|Hanoi|VN|vietinbank.vn
+Volkswagen Trucks and Buses|Resende|BR|vwco.com.br
+WEG Industries|Jaraguá do Sul|BR|weg.net
+WOT Services|Helsinki|FI|mywot.com
+Want Want|Taipei|TW|want-want.com
+Wasabröd|Stockholm|SE|wasa.com
+Waterford Crystal|Waterford|IE|waterford.com
+Wilmar International|Singapore|SG|wilmar-international.com
+Winia Electronics|Seoul|KR|winia-elec.com
+Woolworths Supermarkets|Bella Vista|AU|woolworths.com.au
+XADO|Kharkiv|UA|xado.com
+Yıldız Holding|Istanbul|TR|yildizholding.com.tr
+ÖAF|Vienna|AT|oeaf.at
+Żywiec Brewery|Żywiec|PL|grupazywiec.pl
+Itaúsa|São Paulo|BR|itausa.com.br
+Toll Group|Melbourne|AU|tollgroup.com
+Tenaga Nasional|Kuala Lumpur|MY|tnb.com.my
+Elektroprivreda Srbije|Belgrade|RS|eps.rs
+Bank Negara Indonesia|Jakarta|ID|bni.co.id
+Banque Misr|Cairo|EG|banquemisr.com
+BlueScope Steel|Melbourne|AU|bluescope.com
+Doğan Holding Company|Istanbul|TR|doganholding.com.tr
+Denizbank|Istanbul|TR|denizbank.com
+If P&C Insurance|Stockholm|SE|if.no
+Kinross Gold|Toronto|CA|kinross.com
+Cimpor|Lisbon|PT|cimpor.pt
+Novokramatorsky Mashinostroitelny Zavod|Kramatorsk|UA|nkmz.com
+ING Bank Śląski|Katowice|PL|ing.pl
+American President Lines|Singapore|SG|apl.com
+Tryg|Ballerup|DK|tryg.com
+BRD - Société Générale|Sector 1|RO|brd.ro
+Motor Oil Hellas|Marousi|GR|moh.gr
+Continental Barum|Otrokovice|CZ|barum-online.com
+NLB Group|Ljubljana|SI|nlb.si
+Aerospace Industrial Development Corporation|Taichung|TW|aidc.com.tw
+Tikkurila|Vantaa|FI|tikkurilagroup.com
+R-kioski|Espoo|FI|rkiosk.ee
+Orion Corporation|Seoul|KR|orionworld.com
+Telenet group|Mechelen|BE|telenet.be
+Clas Ohlson|Insjön|SE|clasohlson.se
+Saab Dynamics|Karlskoga|SE|saabgroup.com
+Almirall|Barcelona|ES|almirall.com
+ECO3|Mortsel|BE|eco3.com
+Seznam.cz|Prague|CZ|seznam.cz
+Goodyear Dunlop Sava Tires|Kranj|SI|sava-tires.com
+MEO|Lisbon|PT|meo.pt
+EVS Broadcast Equipment|Seraing|BE|evs.com
+Royal Arctic Line|Nuuk|GL|ral.gl
+Volgren|Perth|AU|volgren.com.au
+Energinet|Erritsø|DK|energinet.dk
+Radvision|Tel Aviv|IL|radvision.com
+Text|Wrocław|PL|text.com
+Meteorological Service of New Zealand|Wellington|NZ|metservice.com
+Overland Airways|Ikeja|NG|overlandairways.com
+Bank of Greenland|Nuuk|GL|banken.gl
+Fjord Line|Egersund|NO|fjordline.com
+Getir|Istanbul|TR|getir.com
+Nøgne Ø|Grimstad|NO|nogne-o.com
+748 Air Services|Nairobi|KE|748airservices.com
+888poker|Gibraltar|GI|888poker.com
+888sport|Gibraltar|GI|888sport.com
+AGL Energy|Sydney|AU|agl.com.au
+ANEK Lines|Chania|GR|anek.gr
+AOMG|Seoul|KR|aomgofficial.com
+ASG Business Aviation|Baku|AZ|businessaviation.az
+Aer Lingus Regional|Dublin|IE|aerlingus.com
+Aerosucre|Barranquilla|CO|aerosucre.com.co
+Afghan Telecom|Kabul|AF|afghantelecom.af
+African Parks Network|Johannesburg|ZA|africanparks.eu
+Ahlstrom-Munksjö|Helsinki|FI|ahlstrom.com
+Aimpoint AB|Malmö|SE|aimpoint.com
+Air Djibouti|Djibouti|DJ|air-djibouti.com
+Air Incheon|Incheon|KR|air-incheon.com
+Air Urga|Kropyvnytskyi|UA|urga.com.ua
+Akadémiai Kiadó|Budapest|HU|akademiai.hu
+Akbank|Istanbul|TR|akbank.com
+Allied Air|Lagos|NG|alliedairng.com
+Antec|Fremont|TW|antec.com
+Aramark|Philadelphia|CA|aramark.com
+Arion Bank|Reykjavík|IS|arionbanki.is
+Asam Sahitya Sabha|Jorhat|IN|asamsahityasabha.com
+Asia Cargo Airlines|Jakarta|ID|asiacargonetworkgroup.com
+Astro Malaysia|Bukit Jalil|MY|astro.com.my
+AtkinsRéalis|Montreal|CA|atkinsrealis.com
+Atlantic Petroleum|Tórshavn|FO|petroleum.fo
+Atlantis Armenian Airlines|Yerevan|AM|atlantis.am
+Aviastar|Jakarta|ID|aviastar.biz
+Ayit Aviation and Tourism|Beersheba|IL|ayit.co.il
+BEML Limited|Bengaluru|IN|bemlindia.com
+BTA Bank|Almaty|KZ|bta.kz
+Balai Pustaka|Jakarta|ID|balaipustaka.co.id
+Balkantourist|Sofia|BG|balkantourist.bg
+Banco Safra|São Paulo|BR|safra.com.br
+Banco Santander-Chile|Santiago|CL|santander.cl
+Banque et Caisse d'Épargne de l'État|Luxembourg|LU|bcee.lu
+Beltelecom|Minsk|BY|beltelecom.by
+Bernama|Kuala Lumpur|MY|bernama.com
+Bluehost|Provo|IR|bluehost.com
+Botswana Stock Exchange|Gaborone|BW|bse.co.bw
+Britannia Industries|Bengaluru|IN|britannia.co.in
+C9 Entertainment|Seoul|KR|c9ent.co.kr
+CBA|Alsónémedi|HU|cba.hu
+Cantillon Brewery|Anderlecht|BE|cantillon.be
+Cedevita|Zagreb|HR|cedevita.hr
+CemAir|Kempton Park|ZA|cemair.co.za
+Central Connect Airlines|Ostrava|CZ|flycca.cz
+Centrum Air|Tashkent|UZ|centrum-air.com
+Chanchangi Airlines|Kaduna|NG|flychanchangiair.com
+China Motor Corporation|Taipei|TW|china-motor.com.tw
+Chowking|Pasig|PH|chowkingdelivery.com
+Château Musar|Ghazir|LB|chateaumusar.com.lb
+Clearstream|Luxembourg|LU|clearstream.com
+Coral Sun Airways|Tarawa|KI|coralsunairways.com
+Corendon Airlines Europe|Luqa|MT|corendonairlines.com
+Croatia Film|Zagreb|HR|croatia-film.hr
+DNA Motors|Changwon|KR|dnamotors.co.kr
+Daniel Wellington|Uppsala|SE|danielwellington.com
+Digiturk|Istanbul|TR|digiturk.com.tr
+Direktflyg|Stockholm|SE|direktflyg.com
+Doro|Lund|SE|doro.com
+Drawn & Quarterly|Montreal|CA|drawnandquarterly.com
+Dubai Holding|Dubai|AE|dubaiholding.com
+East Asiatic Company|Copenhagen|DK|eac.dk
+Eczacıbaşı|Istanbul|TR|eczacibasi.com.tr
+Elfin Sports Cars|Melbourne|AU|elfin.com.au
+Embrapa|Brasília|BR|embrapa.br
+Enbridge|Calgary|CA|enbridge.com
+Eslite Bookstore|Xinyi District|TW|eslitecorp.com
+FaSinPat|Neuquén|AR|ceramicafasinpat.com
+Finnlines|Helsinki|FI|finnlines.com
+First Abu Dhabi Bank|Abu Dhabi|AE|fabsecurities-ex.com
+First International Computer|Taipei|TW|fic.com.tw
+First Nation Airways|Lagos|NG|flyfirstnation.com
+Foma Bohemia|Hradec Králové|CZ|foma.cz
+Formosa Plastics Group|Taipei|TW|fpg.com.tw
+Franck d.d.|Zagreb|SI|franck.hr
+Fubon Financial Holding Co., Ltd.|Taipei|TW|fubon.com
+GS25|Seoul|KR|gsretail.com
+Genelec|Iisalmi|FI|genelec.com
+Geocell|Tbilisi|GE|geocell.ge
+Gildan Activewear|Montreal|CA|gildan.com
+Grandhotel Pupp|Karlovy Vary|CZ|pupp.cz
+Greenwich Pizza|Pasig|PH|greenwich.com.ph
+HEPCO|Arak|IR|hepcoir.com
+Hana Financial Group|Seoul|KR|hanafn.com
+HannStar Display Corporation|Taipei|TW|hannstar.com
+Heli Air Monaco|Monaco|MC|heliairmonaco.com
+Hellenic Shipyards Co.|Skaramangas|GR|hellenic-shipyards.gr
+Herend Porcelain Manufactory|Herend|HU|herend.com
+Huobi|Beijing|SC|htx.com
+Huta Stalowa Wola|Stalowa Wola|PL|hsw.pl
+INVAP|Bariloche|AR|invap.com.ar
+Ideal Standard|Brussels metropolitan area|BE|idealstandard.com
+Indo-Asian News Service|Greater Noida|IN|ians.in
+Indonesia Air Transport|Jakarta|ID|indonesia-air.com
+Iraq Stock Exchange|Baghdad|IQ|isx-iq.net
+Isavia|Reykjavík|IS|isavia.is
+Israel Diamond Exchange|Ramat Gan|IL|isde.co.il
+Jinko Solar|George Town|KY|jinkosolar.com
+Kazpost|Almaty|KZ|qazpost.kz
+Kelowna Flightcraft Air Charter|Kelowna|CA|kfaero.ca
+Kyrgyzfilm|Bishkek|KG|kirgizfilm.ru
+Lee Kum Kee|Tai Po District|HK|lkk.com
+Lendlease|Sydney|AU|lendlease.com
+Lotus's|Bangkok|TH|lotuss.com
+Luch|Kyiv|UA|kiev.ua
+Magnicharters|Monterrey|MX|magnicharters.com.mx
+Masdar|Abu Dhabi|AE|masdar.ae
+Media Nusantara Citra|Jakarta|ID|mnc.co.id
+Media Prima|Kuala Lumpur|MY|applecrumby.com
+Mellanox Technologies|Haifa|IL|mellanox.com
+Meyer Turku|Turku|FI|meyerturku.fi
+Mikkeller|Copenhagen|DK|mikkeller.dk
+Molson|Montreal|CA|molson.com
+Mother Dairy|Delhi|IN|motherdairy.com
+Motor Sich Airlines|Zaporizhzhia|UA|flymotorsich.com
+Mphasis|Bengaluru|IN|mphasis.com
+Myanmar National Airlines|Yangon|MM|flymna.com
+Nakhchivan Automobile Plant|Nakhchivan|AZ|naz.az
+Nedbank|Sandton|ZA|nedbank.co.za
+Nolinor Aviation|Montreal|CA|nolinor.com
+Norlandair|Akureyri|IS|norlandair.is
+Nova Airways|Khartoum|SD|novaairways.com
+Nutrien|Saskatoon|CA|nutrien.com
+OQ Company|Muscat|OM|oq.com
+Oil Refineries Ltd.|Haifa|IL|bazan.co.il
+Open Text Corporation|Waterloo|CA|opentext.com
+Origin Energy|Sydney|AU|originenergy.com.au
+PAL Express|Pasay|PH|flypalexpress.com
+Pannonia Film Studio|Budapest|HU|pannoniastudio.com
+Phaidon Press|London|AT|phaidon.com
+Ponsse Corporation|Vieremä church village|FI|ponsse.com
+Postmedia Network|Toronto|CA|postmedia.com
+Postobón|Medellín|CO|postobon.com
+Power Assets Holdings Limited|Hong Kong|HK|powerassets.com
+Power Corporation of Canada|Montreal|CA|powercorporation.com
+Powerchip|Hsinchu City|TW|powerchip.com
+PressReader Inc.|Richmond|CA|pressreader.com
+Prevost Car|Sainte-Claire|CA|prevostcar.com
+Puma|Botucatu|BR|pumaautomoveis.com.br
+RHB Bank|Kuala Lumpur|MY|rhbgroup.com
+Ritzau|Copenhagen|DK|ritzau.dk
+Sea Ltd|Singapore|SG|sea.com
+Semapa|Lisbon|PT|semapa.pt
+Sharp Airlines|Hamilton|AU|sharpairlines.com.au
+Shoprite|Brackenfell|ZA|shoprite.mw
+Siam Cement|Bangkok|TH|scg.com
+Silversea Cruises|Monaco|BS|silversea.com
+Simrik Airlines|Kathmandu|NP|simrikairlines.com
+Singapore Press Holdings|Singapore|SG|sph.com.sg
+Stolt-Nielsen|London|BM|stolt-nielsen.com
+Syrian Railways|Aleppo|SY|cfssyria.sy
+TEC|Jambes|BE|letec.be
+TVBS Media Inc.|Taipei|TW|tvbs.com.tw
+Taiwan Cooperative Bank|Taipei|TW|tcb-bank.com.tw
+Tarco Aviation|Khartoum|SD|tarcoair.co
+Tashkent Stock Exchange|Tashkent|UZ|uzse.uz
+Tata Teleservices|Mumbai|IN|tataindicom.com
+Telekom Srpske|Banja Luka|BA|mtel.ba
+Tempo Beverages Ltd|Netanya|IL|tempo.co.il
+Terra|São Paulo|BR|terra.com
+Toyor Al-Janah|Amman|JO|toyoraljanah.com
+TransAVIAexport Airlines|Minsk|BY|transaviaexport.com
+Trendyol|Istanbul|TR|trendyol.com
+Trustpilot|Copenhagen|DK|trustpilot.com
+Uganda Securities Exchange|Kampala|UG|use.or.ug
+Usiminas|Belo Horizonte|BR|usiminas.com.br
+Vaisala|Vantaanlaakso|FI|vaisala.com
+Wismut|Chemnitz|DD|wismut.de
+Wolford|Bregenz|AT|wolford.com
+World2Fly|Palma|ES|w2fly.es
+Yanair|Kyiv|UA|yanair.com.ua
+beIN Media Group|Doha|QA|beinmediagroup.com
+freelancer.com|Sydney|AU|freelancer.com
+CITIC Limited|Hong Kong|HK|citic.com
+Comisión Federal de Electricidad|Mexico City|MX|cfe.mx
+PKP Polskie Linie Kolejowe|Warsaw|PL|plk-sa.pl
+Financial Group Banamex|Mexico City|MX|banamex.com
+Telefônica Brasil|São Paulo|BR|telefonica.com.br
+Marfrig|São Paulo|BR|marfrig.com.br
+Colruyt Group|Halle|BE|colruytgroup.com
+Agrofert|Prague|CZ|agrofert.cz
+Jollibee Group|Pasig|PH|jollibeegroup.com
+Jastrzębska Spółka Węglowa|Jastrzębie-Zdrój|PL|jsw.pl
+Café Coffee Day|Bengaluru|IN|cafecoffeeday.com
+Grupo Arcor|Arroyito|AR|arcor.com
+Polish Armaments Group|Radom|PL|grupapgz.pl
+Star Cruises|Hong Kong|HK|starcruises.com
+Ternium|Luxembourg|LU|ternium.com
+Halyk Bank of Kazakhstan|Almaty|KZ|halykbank.kz
+Grupa Azoty S.A.|Tarnów|PL|grupaazoty.com
+Zorya-Mashproekt|Mykolaiv|UA|zmturbines.com
+Energetický a průmyslový holding|Prague|CZ|epholding.cz
+Videoton|Székesfehérvár|HU|videoton.hu
+Empresa Municipal de Transportes de Madrid|Adelfas|ES|emtmadrid.es
+Grodno Azot|Hrodna|BY|azot.by
+Balkrishna Industries|Mumbai|IN|bkt-tires.com
+Marjane Group|Casablanca|MA|marjane.ma
+Commercial International Bank|Cairo|EG|cibeg.com
+Atlantic Grupa|Zagreb|HR|atlanticgrupa.com
+Spark New Zealand|Auckland|NZ|spark.co.nz
+ANTEL|Montevideo|UY|antel.com.uy
+CEC Bank|Sector 5|RO|cec.ro
+Tunisian National Railway Company|Tunis|TN|sncft.com.tn
+Banca Comercială Română|Bucharest|RO|bcr.ro
+Elia Group|Brussels|BE|eliagroup.eu
+Ambu|Ballerup|DK|ambu.com
+Nykredit|Copenhagen|DK|nykredit.com
+Tatra banka|Bratislava|SK|tatrabanka.sk
+InDrive|Nicosia|CY|indrive.com
+Kaspi.kz Joint Stock Company|Almaty|KZ|kaspi.kz
+Vivacom|Sofia|BG|vivacom.bg
+Amica S.A.|Wronki|PL|amica.pl
+Lasta Beograd|Belgrade|RS|lasta.rs
+Finlayson|Helsinki|FI|finlayson.fi
+Santos|Adelaide|AU|santos.com
+Widex|Lynge|DK|widex.com
+Vinaphone|Hanoi|VN|vinaphone.com.vn
+NOS|Lisbon|PT|nos.pt
+XLSmart|Jakarta|ID|xlsmart.co.id
+TransNamib|Windhoek|NA|transnamib.com.na
+Sellier & Bellot|Vlašim|CZ|sellier-bellot.cz
+SKIDATA|Grödig|AT|skidata.com
+Bakkafrost|Glyvrar|FO|bakkafrost.com
+Independent News & Media|Dublin|IE|inmplc.com
+Kiwi.com|Prague|CZ|kiwi.com
+KNI A/S|Sisimiut|GL|kni.gl
+Luch|Minsk|SU|luch.by
+Slovenský plynárenský priemysel|Bratislava|SK|spp.sk
+Gottex|Or Yehuda|IL|gottex.co.il
+Elektroprivreda Republike Srpske|Trebinje|BA|ers.ba
+Hrvatska elektroprivreda|Zagreb|HR|hep.hr
+Wiener Lokalbahnen|Vienna|AT|wlb.at
+Tusass|Nuuk|GL|tusass.gl
+Lokalise|Dover|LV|lokalise.com
+AGERPRES|Bucharest|RO|agerpres.ro
+Eik Banki|Tórshavn|FO|betri.fo
+BIG|Valby|DK|big.dk
+Amati Kraslice|Kraslice|CZ|amati.cz
+Sofina|Brussels|BE|sofinagroup.com
+3XN|Copenhagen|DK|3xn.dk
+Norid|Trondheim|NO|norid.no
+ACE Team|Santiago|CL|aceteam.cl
+AVM Productions|Vadapalani|IN|avm.in
+Acer Laboratories Incorporated|Taipei|TW|alitech.com
+Adama Agricultural Solutions Ltd.|Tel Aviv|IL|adama.com
+Aer Arann Islands|Indreabhán|IE|aerarannislands.ie
+Aerostar|Bacău|RO|aerostar.ro
+Air Century|La Isabela|DO|aircentury.com
+Air Congo|Kinshasa|CD|air-congo.com
+Air Mediterranean|Athens|GR|air-mediterranean.com
+Al Baraka Banking Group|Manama|BH|albaraka.com
+Albpetrol|Patos|AL|albpetrol.al
+Algeria Press Service|Algiers|DZ|aps.dz
+Alivaria|Minsk|BY|alivaria.by
+Aluar|Buenos Aires|AR|aluar.com.ar
+Anchor|Auckland|NZ|anchordairy.com
+Animawings|Bucharest|RO|animawings.com
+Antrix Corporation|Bengaluru|IN|antrix.co.in
+Astral Aviation|Nairobi|KE|astral-aviation.com
+Attijariwafa Bank|Casablanca|MA|attijariwafabank.com
+Auric Air|Mwanza|TZ|auricair.com
+Avialeasing|Tashkent|UZ|avialeasing.com
+BBVA Argentina|Buenos Aires|AR|bbva.com.ar
+BQ|Madrid Metropolitan Area|ES|bq.com
+BTG Pactual|Rio de Janeiro|BR|btgpactual.com
+Bakcell|Baku|AZ|bakcell.com
+Baltic News Service|Tallinn|EE|bns.ee
+Bank ABB|Baku|AZ|abb-bank.az
+Bank Islam Malaysia|Kuala Lumpur|MY|bankislam.com
+Bank of Ceylon|Colombo|LK|boc.lk
+Bank of New Zealand|Auckland|NZ|bnz.co.nz
+Bank of the Argentine Nation|Buenos Aires|AR|bna.com.ar
+Belorusneft|Gomel|BY|belorusneft.by
+Bharatiya Jnanpith|New Delhi|IN|jnanpith.net
+Bhartiya Mahila Bank|New Delhi|IN|bhartiyamahilabank.com
+Bilka|Højbjerg|DK|bilka.dk
+Biocon|Bengaluru|IN|biocon.com
+Bismillah Airlines|Dhaka|BD|bismillahairlines.net
+Bitpanda|Vienna|AT|bitpanda.com
+Blizzard Ski|Mittersill|AT|blizzard-tecnica.com
+Bolwell|Mordialloc|AU|bolwell.com
+Business Air|Bangkok|TH|businessaircenter.com
+Böhler-Uddeholm|Vienna|AT|bohler-uddeholm.com
+CERGE-EI|Prague|CZ|cerge-ei.cz
+CSL Limited|Melbourne|AU|csl.com.au
+Cape Verde Stock Exchange|Praia|CV|bvc.cv
+Carlsen Verlag|Copenhagen|DK|carlsen.dk
+Central Hindi Directorate|New Delhi|IN|nic.in
+Chaintech|Taipei|TW|chaintech.com.tw
+Charoen Pokphand Foods|Bangkok|TH|cpfworldwide.com
+Chatime|Zhubei City|TW|chatimejapan.com
+Chinese Television System|Taipei|TW|cts.com.tw
+CityLine Hungary|Vecsés|HU|cityhun.hu
+Commercial Bank of Ethiopia|Addis Ababa|ET|combanketh.et
+Companhia Energética de Minas Gerais|Belo Horizonte|BR|cemig.com.br
+Copenhagen Air Taxi|Roskilde|DK|aircat.dk
+Círculo de Bellas Artes|Cortes|ES|circulobellasartes.com
+DLF Limited|Gurgaon|IN|dlf.in
+Dar es Salaam Stock Exchange|Dar es Salaam|TZ|darstockexchange.com
+Dialog|Colombo|LK|dialog.lk
+Doka Group|Amstetten|AT|doka.com
+Dorotheum|Innere Stadt|AT|dorotheum.com
+Doğuş Holding|Istanbul|TR|dogusgrubu.com.tr
+Dreher Breweries|Budapest|HU|dreher.it
+Dubai Financial Market|Dubai|AE|dfm.co.ae
+Dublin Bus|Dublin|IE|dublinbus.ie
+Dusit International|Bangkok|TH|dusit.com
+EBC|Addis Ababa|ET|ebc.et
+ENKA|Istanbul|TR|enka.com
+Ecole d'Ingénieurs Généralistes La Rochelle|La Rochelle|MA|eigsi.fr
+Ecolines|Riga|LV|ecolines.net
+Eimskip|Reykjavík|IS|eimskip.is
+Elisra|Holon|IL|elisra.com
+Empik|Warsaw|PL|empik.com
+Estafeta Carga Aérea|Mexico City|MX|estafeta.com
+FSP Technology|Taoyuan|TW|fsplifestyle.com
+Faxe Brewery|Faxe|DK|faxe.com
+Federal Air|Kempton Park|ZA|fedair.com
+Filmax|L'Hospitalet de Llobregat|ES|filmaxinternationalsales.com
+Final Fight Championship|Zagreb|HR|finalfight.hr
+First Bank of Nigeria|Lagos|NG|firstbanknigeria.com
+Flutter Entertainment|Dublin|IE|flutter.com
+Foster's Group Limited|Melbourne|AU|fosters.com.au
+Frontline|Limassol|CY|frontlineplc.cy
+G City Ltd|Tel Aviv|IL|gazit-globe.com
+GPA|São Paulo|BR|gpabr.com
+GTA Motor|Torrent|ES|spaniagta.com
+GainJet|Athens|GR|gainjet.com
+Gasum|Espoo|FI|gasum.com
+Goodram|Łaziska Górne|PL|goodram.com
+Gorkha Airlines|Kathmandu|NP|gorkhaairlines.com
+Grand Production|City of Belgrade|RS|nova.rs
+Gubernija|Šiauliai|LT|gubernija.lt
+HEINEKEN Mexico|Monterrey|MX|heinekenmexico.com
+Haifa Group|Haifa|IL|haifa-group.com
+Harvey Norman|Sydney|AU|harveynorman.com.au
+HayPost|Yerevan|AM|haypost.am
+Hong Leong Bank|Kuala Lumpur|MY|hlb.com.my
+Hongkong Land|Hamilton|BM|hkland.com
+Hot mobile|Tel Aviv|IL|hotmobile.co.il
+Hydrema|Støvring|DK|hydrema.dk
+ICR Inbursa|Mexico City|MX|inbursa.com
+IRISL Group|Tehran|IR|irisl.net
+IRS Airlines|Abuja|NG|flyirsairlines.com
+InPost|Kraków|PL|inpost.pl
+Indovision|Jakarta|ID|mncvision.id
+InnoLux Corporation|Zhunan Township|TW|innolux.com
+Inokom|Kulim|MY|inokom.com.my
+Insurance Australia Group|Sydney|AU|iag.com.au
+Intouch Holdings|Bangkok|TH|intouchcompany.com
+Irish Ferries|Dublin|IE|irishferries.com
+JB Hi-Fi|Melbourne|AU|jbhifi.com.au
+Kaipan|Smržovka|CZ|kaipan.cz
+Kantanka Automobile|Kumasi|GH|kantankaautomobiles.com
+Kiloo|Aarhus|DK|kiloo.com
+Kirloskar Group|Pune|IN|kirloskar.com
+Klabin|São Paulo|BR|klabin.com.br
+Kores|Vienna|AT|kores.com
+Kronospan|Nicosia|CY|kronospan-worldwide.com
+Kuala Lumpur Kepong Berhad|Ipoh|MY|klk.com.my
+Kuwait Finance House|Kuwait City|KW|kfh.com
+Latham & Watkins|Los Angeles|BE|lw.com
+Lenzing AG|Lenzing an der Ager|AT|lenzing.com
+Litgrid, AB|Vilnius|LT|litgrid.eu
+Lithuanian Film Studios|Vilnius|LT|lfs.lt
+Lojas Renner|Porto Alegre|BR|lojasrenner.com.br
+LuLu Group International|Abu Dhabi|AE|luluhypermarket.com
+Lumene|Espoo|FI|lumene.com
+Lupin Ltd.|Mumbai|IN|lupin.com
+Machon Meir|Kiryat Moshe|IL|meirtv.co.il
+Maghreb Arabe Presse|Rabat|MA|map.ma
+Malawi Stock Exchange|Blantyre|MW|mse.co.mw
+MaltaPost|Marsa|MT|maltapost.com
+Markaz|Karanthur|IN|markaz.in
+Medavia|Valletta|MT|medavia.com.mt
+Medialink Group|Tsim Sha Tsui|KY|medialink.com.hk
+Megogo|Kyiv|UA|megogo.net
+Meitu|Xiamen|KY|meitu.com
+Metal Storm|Brisbane|AU|metalstorm.com
+Mobarakeh Steel Company|Isfahan|IR|mobarakeh-steel.ir
+MobiFone|Hanoi|VN|mobifone.vn
+Mobicom Corporation|Ulaanbaatar|MN|mobicom.mn
+Moldova-Film|Chișinău|MD|moldovafilm.md
+Moravian Gallery in Brno|Brno|CZ|moravska-galerie.cz
+Moritz (beer)|Eixample|ES|moritz.com
+Motilal Banarsidass|Delhi|IN|mlbd.com
+MyWay Airlines|Tbilisi|GE|mywayairlines.com
+Myer|Melbourne|AU|myer.com.au
+NZ Post|Wellington|NZ|nzpost.co.nz
+Namibia Securities Exchange|Windhoek|NA|nsx.com.na
+National Oil Corporation|Tripoli|LY|noclibya.com.ly
+National Railway Company of the Congo|Lubumbashi|CD|snccsa.com
+Nayara Energy|Mumbai|IN|nayaraenergy.com
+Naza|Kuala Lumpur|MY|naza.com.my
+Newcrest Mining|Melbourne|AU|newcrest.com.au
+Niger Airlines|Niamey|NE|nigerairlines.net
+Norma Precision|Åmotfors|AU|norma-ammunition.com
+Nu Boyana Film Studios|Sofia|BG|nuboyana.com
+Odfjell SE|Bergen|NO|odfjell.com
+Pakistan State Oil|Karachi|PK|psopk.com
+Pelephone|Petah Tikva|IL|pelephone.co.il
+Pfanner|Lauterach|AT|pfanner.com
+Philippine National Bank|Pasay|PH|pnb.com.ph
+Phison|Zhunan Township|TW|phison.com
+Play|Warsaw|PL|play.pl
+Polferries|Kołobrzeg|PL|polferries.pl
+Pos Malaysia|Kuala Lumpur|MY|pos.com.my
+Posta Shqiptare|Tirana|AL|postashqiptare.al
+Pousadas de Portugal|Lisbon|PT|pousadas.pt
+Proflight Zambia|Lusaka|ZM|flyzambia.com
+Qatar Railways|Doha|QA|qr.com.qa
+RS Public Company Limited|Bangkok|TH|rs.co.th
+Rajshri Productions|Mumbai|IN|rajshri.com
+Ralink|Hsinchu City|TW|ralinktech.com
+RedLynx|Helsinki|FI|redlynx.com
+Republic Biscuit Corporation|Pasig|PH|rebisco.com.ph
+Rip Curl|Torquay|AU|ripcurl.com
+Rock Records|Da'an District|TW|rock.com.tw
+Rotana Jet|Abu Dhabi|AE|rotanajet.com
+Rotana Media Group|Riyadh|SA|rotana.net
+SATENA|Bogotá|CO|satena.com
+Sabeco|Ho Chi Minh City|VN|sabeco.com.vn
+Sampoerna|Surabaya|ID|sampoerna.com
+Sappi|Johannesburg|ZA|sappi.com
+Saudi Awwal Bank|Riyadh|SA|sab.com
+Semperit|Vienna|AT|semperit.com
+SentinelOne|Mountain View|IL|sentinelone.com
+Serene Air|Islamabad|PK|sereneair.com
+Shri Mahila Griha Udyog Lijjat Papad|Mumbai|IN|lijjat.com
+Sigma Alimentos|Monterrey|MX|sigma-alimentos.com
+Simonds Farsons Cisk|Birkirkara|MT|farsons.com
+Sina Bank|Tehran|IR|sinabank.ir
+Singapore Post|Geylang|SG|singpost.com
+SmartLynx Australia|Cairns|AU|smartlynx.au
+Société nationale des transports ferroviaires|Algiers|DZ|sntf.dz
+South32|Perth|AU|south32.net
+St. Bernardus Brewery|Watou|BE|sintbernardus.be
+Studio Filmowe Kadr|Warsaw|PL|sfkadr.com
+Sunrise Airways|Port-au-Prince|HT|sunriseairways.net
+Sygic|Bratislava|SK|sygic.com
+Taalkommissie|Bloemfontein|ZA|taalkommissie.co.za
+Tatung Company|Zhongshan District|TW|tatung.com
+Telcel|Mexico City|MX|telcel.com
+The Farm 51|Gliwice|PL|thefarm51.com
+TransNusa Air Services|Jakarta|ID|transnusa.co.id
+Transnet Freight Rail|Johannesburg|ZA|transnetfreightrail.co.za
+Travelex|London|BR|travelexbank.com.br
+Turkmenfilm|Ashgabat|TM|turkmenkino.com
+TÜLOMSAŞ|Tepebaşı district|TR|tulomsas.com.tr
+Ultrapar|São Paulo|BR|ultra.com.br
+Uni-President Enterprises Corporation|Yongkang District|TW|uni-president.com
+Venezolana|Maracaibo|VE|ravsa.com.ve
+Vodafone Idea|Mumbai|IN|myvi.in
+Votorantim Group|São Paulo|BR|votorantim.com.br
+Wawel|Kraków|PL|wawel.com.pl
+Wilderness Air|Maun|BW|sefofane.com
+XTB|Warsaw|PL|xtb.com
+XXXLutz|Wels|AT|xxxlgroup.com
+Yapı ve Kredi Bankası|Istanbul|TR|yapikredi.com.tr
+Zain Group|Kuwait City|KW|zain.com
+Össur|Reykjavík|IS|ossur.com
+ČD Cargo|Prague|CZ|cdcargo.cz
+İstanbul Deniz Otobüsleri|Bursa|TR|ido.com.tr
+Škoda Transtech|Linnanmaa|FI|transtech.fi
+Correios do Brasil|Brasília|BR|correios.com.br
+D'Ieteren Group|Brussels metropolitan area|BE|dieterengroup.com
+PKP Cargo|Warsaw|PL|pkpcargo.com
+Vietnam Posts and Telecommunications Group|Hanoi|VN|vnpt.com.vn
+Coca-Cola Amatil|Sydney|WS|ccamatil.com
+Gold Peak|Hong Kong|HK|goldpeak.com
+Volkswagen Slovakia|Bratislava|SK|volkswagen.sk
+EBX Group|Flamengo District|BR|ebx.com.br
+Belarusian Steel Works|Zhlobin|BY|belsteel.com
+Katoen Natie|Antwerp|BE|katoennatie.com
+MVM Group|Budapest District III|HU|mvm.hu
+Kriukiv Railway Car Building Works|Kremenchuk|UA|kvsz.com
+Třinec Iron and Steel Works|Třinec|CZ|trz.cz
+Lerøy|Bergen|NO|leroyseafood.com
+Kyiv Arsenal|Kyiv|UA|arsenalcdb.com.ua
+Afghan Wireless|Kabul|AF|afghan-wireless.com
+Metlen Energy & Metals|Marousi|GR|metlengroup.com
+Al Sirona (Luxembourg) Acquisition|Luxembourg|LU|zentiva.com
+John Cockerill|Seraing|BE|johncockerill.com
+Jumià|Ikeja|CI|jumia.com
+Nibulon|Mykolaiv|UA|nibulon.com
+Nissan Motor Ibérica|Barcelona|ES|nissan.es
+Slovenská sporiteľňa|Bratislava|SK|slsp.sk
+3. Maj|Rijeka|YU|3maj.hr
+Nufarm|Melbourne|AU|nufarm.com
+MakeMyTrip|Gurgaon|IN|makemytrip.com
+Djezzy GSM|Algiers|DZ|djezzy.dz
+Wielton|Wieluń|PL|wielton.com.pl
+Ukrainian Energy Machines|Kharkiv|UA|ukrenergymachines.com
+Kompania Piwowarska|Poznań|PL|kp.pl
+Banedanmark|Copenhagen|DK|bane.dk
+Srbijavoz|Belgrade|RS|srbijavoz.rs
+du|Dubai|AE|du.ae
+Abu Dhabi Media|Abu Dhabi|AE|admn.ae
+International Bank in Luxembourg|Luxembourg|LU|bil.com
+Aker BP|Fornebu|NO|akerbp.com
+Khortytsa|Zaporizhzhia|UA|khortytsa.com
+Kuznia na Rybalskomu|Kyiv|UA|lk.com.ua
+Inwi|Casablanca|MA|inwi.ma
+TÜVASAŞ|Adapazarı|TR|tuvasas.com.tr
+Roshan|Kabul|AF|roshan.af
+Citadele banka|Riga|LV|citadele.lv
+FL Technics, UAB|Vilnius|LT|fltechnics.com
+Aeronautics Defense Systems|Yavne|IL|aeronautics-sys.com
+AikBank|Belgrade|RS|aikbank.rs
+Pisiffik|Nuuk|GL|pisiffik.gl
+Hellenic Seaways|Athens|GR|hellenicseaways.gr
+Elkjøp|Nydalen|NO|elkjop.no
+Yugoimport SDPR|Belgrade|RS|yugoimport.com
+Tauron Polska Energia|Katowice|PL|tauron.pl
+Monitorul Oficial|Sector 1|RO|monitoruloficial.ro
+investing.com|Nicosia|CY|investing.com
+Azercosmos|Baku|AZ|azercosmos.az
+Dynaudio|Skanderborg|DK|dynaudio.com
+Golan Telecom|Tel Aviv|IL|golantelecom.co.il
+Family Brewery Bernard|Humpolec|CZ|bernardpivo.si
+Czech Mint|Jablonec nad Nisou|CZ|ceskamincovna.cz
+Madfinger Games|Brno|CZ|madfingergames.com
+The New Times|Kigali|RW|newtimes.co.rw
+Filmin|Barcelona|ES|filmin.es
+Naftan oil refinery|Navapolack|BY|naftan.by
+AMAG Austria Metall AG|Braunau am Inn|AT|amag-al4u.com
+ANCAP|Montevideo|UY|ancap.com.uy
+Abanca|Betanzos|ES|abanca.com
+Addiko Bank|Klagenfurt am Wörthersee|AT|addiko.com
+Aero Dili|Dili|TL|aerodili.com
+Air Leisure|Cairo|EG|air-leisure.com
+Air Link|Dubbo|AU|airlinkairlines.com.au
+Air West|Khartoum|SD|airwestuae.com
+Albafilm-Tirana|Tirana|AL|qkk.al
+Algérie Ferries|Algiers|DZ|algerieferries.com
+Alken-Maes|Mechelen|BE|alken-maes.be
+Altyn Asyr|Ashgabat|TM|tmcell.tm
+Am Oved|Tel Aviv|IL|am-oved.co.il
+AmBank|Kuala Lumpur|MY|ambankgroup.com
+Amiri Press|Giza|EG|alamiria.com
+Ansell|Melbourne|AU|ansell.com
+Antofagasta to Bolivia Railway|Antofagasta|BO|fcab.cl
+Apatinska Brewery|Apatin|RS|apatinskapivara.rs
+Apranga, AB|Vilnius|LT|apranga.lt
+Ariana Television Network|Kabul|AF|arianatelevision.com
+Aristocrat Leisure|Sydney|AU|aristocrat.com
+Atlas Corporation Studios|Ouarzazate|MA|ouarzazatestudios.com
+Avianca Cargo México|Mexico City|MX|aerounion.com.mx
+Azarab Industries Company|Tehran|IR|azarab.ir
+Azman Air|Kano|NG|airazman.com
+Azrieli Group Ltd|Tel Aviv|IL|azrieligroup.com
+BAWAG|Vienna|AT|bawag.at
+Bahman Group|Tehran|IR|bahmangroup.com
+Bahrain Petroleum Company|Awali|BH|bapco.net
+Baltika Group|Tallinn|EE|baltikagroup.com
+Bank Audi|Beirut|LB|bankaudigroup.com
+Banque du Caire|Cairo|EG|bdc.com.eg
+Bassaka Air|Phnom Penh|KH|bassakaair.com
+Bio Farma|Bandung|ID|biofarma.co.id
+Bodegas Torres|Barcelona|ES|torres.es
+BreadTalk|Singapore|SG|breadtalk.com
+Brepols|Turnhout|BE|brepols.com
+Brno Conservatory|Brno|CZ|konzervatorbrno.eu
+Bryansk Automobile Plant|Bryansk|SU|baz32.ru
+Brüel & Kjær|Nærum|DK|hbkworld.com
+Bucanero Brewery S.A.|Holguin|CU|cerveceriabucanero.com
+Bulgartabac|Sofia|BG|bulgartabac.bg
+Bunnpris|Trondheim|NO|bunnpris.no
+CANTV|Caracas|VE|cantv.com.ve
+COWI|Kongens Lyngby|DK|cowi.dk
+Cabo Verde Express|Espargos|CV|caboverdeexpress.com
+Canadian Pacific Kansas City|Calgary|MX|cpkcr.com
+Caracas Stock Exchange|Caracas|VE|bolsadecaracas.com
+Carris|Lisbon|PT|carris.pt
+Caspian Pipeline Consortium|Moscow|KZ|cpc.ru
+Cathay United Bank|Taipei|TW|cathaybk.com.tw
+Center for Research and Development in Health Sciences|Monterrey|MX|uanl.mx
+Chicken Licken|Johannesburg|ZA|chickenlicken.co.za
+China Resources Beer (Holdings) Company Limited|Hong Kong|HK|crbeer.com.hk
+Cicaré Helicópteros|Saladillo|AR|cicare.com.ar
+Cineplexx Cinemas|Vienna|AT|cineplexx.at
+Colruyt|Halle|BE|colruyt.fr
+Compagnie de Transports au Maroc|Casablanca|MA|ctm.ma
+Companhia Paranaense de Energia|Curitiba|BR|copel.com
+Cosan|São Paulo|BR|cosan.com.br
+Cronos Airlines|Malabo|GQ|cronosair.com
+David|Barcelona|ES|davidsa.com
+David Jones Limited|Melbourne|AU|davidjones.com
+Davivienda|Bogotá|CO|davivienda.com
+Democratic Voice of Burma|Chiang Mai|TH|dvb.no
+Demonware|Dublin|IE|demonware.net
+Destiny Cable|Pasig|PH|destinycable.com.ph
+DrayTek|Hsinchu City|TW|draytek.com
+ETECSA|Havana|CU|etecsa.cu
+East African Breweries|Nairobi|KE|eabl.com
+EcoJet|Cochabamba|BO|ecojet.com.bo
+Editorial Planeta|Barcelona|ES|planetadelibros.com
+Elex Media Komputindo|Jakarta|ID|elexmedia.id
+Empresas Copec|Santiago|CL|empresascopec.cl
+En+ Group|Moscow|JE|enplusgroup.com
+Euro-Asia Air|Atyrau|KZ|euroasiaair.kz
+Ferromex|Mexico City|MX|ferromex.mx
+First Investment Bank|Sofia|BG|fibank.bg
+Fly All Ways|Paramaribo|SR|flyallways.com
+GE Jenbacher|Jenbach|AT|jenbacher.com
+Global Aviation|Johannesburg|ZA|g-airways.com
+GoRail|Tallinn|EE|gorail.ee
+Golan Heights Winery|Katzrin|SY|golanwines.co.il
+Gomselmash|Čyhunačny District|BY|gomselmash.by
+Gramola|Vienna|AT|gramola.at
+Grinding Gear Games|Auckland|NZ|grindinggear.com
+Grupo Aeroportuario del Pacífico|Guadalajara|MX|aeropuertosgap.com.mx
+Guaranty Trust Holding Company|Lagos|NG|gtbank.com
+Gécamines|Lubumbashi|CD|gecamines.cd
+HEMA|Essen|BE|hema.nl
+Hellenic Aerospace Industry|Tanagra|GR|haicorp.com
+Highlands Coffee|Hanoi|VN|highlandscoffee.com.vn
+Illums Bolighus|Copenhagen|DK|illumsbolighus.com
+Industri Kereta Api|Madiun|ID|inka.co.id
+International Vale Tudo Championship|São Paulo|BR|valetudo.com.br
+Interpipe Group|Dnipro|UA|interpipe.biz
+Investcorp|Manama|BH|investcorp.com
+Iran Tractor Manufacturing Company|Tabriz|IR|itmco.ir
+Israel Land Development Company|Bnei Brak|IL|ildc.co.il
+JKP GRAS Sarajevo|Sarajevo|BA|gras.ba
+Kabar|Bishkek|KG|kabar.kg
+Khartron|Kharkiv|UA|hartron.com.ua
+Khouzestan Steel Company|Ahvaz|IR|ksc.ir
+Korek Telecom|Erbil|IQ|korektele.com
+Kotipizza|Vaasa|FI|kotipizza.fi
+LETA|Riga|LV|leta.lv
+LHV Pank|Tallinn|EE|lhv.ee
+Landsvirkjun|Reykjavík|IS|landsvirkjun.com
+Latvijas Krājbanka|Riga|LV|lkb.lv
+MRV Engenharia|Belo Horizonte|BR|mrv.com.br
+MTN Irancell|Tehran|IR|irancell.ir
+Mack Air|Maun|BW|mackair.co.bw
+MagtiCom|Tbilisi|GE|magticom.ge
+Marrybrown|Johor Bahru|MY|marrybrown.com
+Masovian Railways|Warsaw|PL|mazowieckie.com.pl
+Match|Fleurus|BE|supermarchesmatch.fr
+Mauritius Broadcasting Corporation|Moka|MU|mbcradio.tv
+Mega International Commercial Bank|Taipei|TW|megabank.com.tw
+Merko Ehitus|Tallinn|EE|merko.ee
+Moroccanoil Inc.|Manhattan|IL|moroccanoil.com
+Motiva|São Paulo|BR|motiva.com.br
+Mount Cook Airline|Christchurch|NZ|airnz.co.nz
+Mozambique Ports and Railways|Maputo|MZ|cfm.co.mz
+Muse Communication|Xinzhuang District|TW|e-muse.com.tw
+NPM Silmet OÜ|Sillamäe|EE|neomaterials.com
+NTUC FairPrice|Singapore|SG|fairprice.com.sg
+Nar|Baku|AZ|nar.az
+National Conservatory of Athens|Athens|GR|ethnikoodeio.com
+Neiva|Botucatu|BR|aeroneiva.com.br
+Nepal Telecom|Kathmandu|NP|ntc.net.np
+New World Development Company Limited|Hong Kong|HK|nwd.com.hk
+Noble Group|Hong Kong|BM|thisisnoble.com
+Nordkalk|Skräbböle|FI|nordkalk.com
+OKX|Hong Kong|SC|okx.com
+Oerlikon Balzers|Balzers|LI|oerlikon.com
+Okocim Brewery|Brzesko|PL|carlsbergpolska.pl
+Old Town White Coffee|Ipoh|MY|oldtown.com.my
+Oras|Rauma|FI|orasgroup.com
+Otava|Helsinki|FI|otava.fi
+PAN.am|Yerevan|AM|pan.am
+Pampa Energía|Buenos Aires|AR|pampaenergia.com
+Paulig|Helsinki|FI|paulig.com
+Payam Air|Tehran|IR|payamaviation.ir
+Peeters|Leuven|BE|peeters-leuven.be
+Pelni|Jakarta|ID|pelni.co.id
+Petrolimex|Hanoi|VN|petrolimex.com.vn
+Pick n Pay|Kenilworth|ZW|pnp.co.za
+Planeta DeAgostini|Barcelona|ES|planetadeagostini.es
+Privredna banka Zagreb|Zagreb|HR|pbz.hr
+Qatar Sports Investments|Doha|QA|qsi.com.qa
+RUTACA Airlines|Ciudad Bolívar|VE|flyrutaca.com
+Red Rooster|Balcatta|AU|redrooster.com.au
+Renewable Energy Corporation|Singapore|SG|recgroup.com
+Riedel|Kufstein|AT|riedel.com
+Rodenbach Brewery|Roeselare|BE|rodenbach.be
+Rwanda Stock Exchange|Kigali|RW|rse.rw
+SANSA|San José|CR|flysansa.com
+SEB Pank|Tallinn|EE|seb.ee
+Saidal|Algiers|DZ|saidalgroup.dz
+Salim Group|Jakarta|ID|salim.com.cn
+Sands China|Macau|KY|sandschina.com
+Sarinah|Jakarta|ID|sarinah.co.id
+Saudigulf|Dammam|SA|saudigulfairlines.com
+Serveis Ferroviaris de Mallorca|Palma|ES|trensfm.com
+Shuttle Inc.|Taipei|TW|shuttle.com
+Skippers Aviation|Osborne Park|AU|skippers.com.au
+Smart Aviation Company|Cairo|EG|smartaviation.com.eg
+Smartfren|Jakarta|ID|smartfren.com
+Société des bains de mer de Monaco|Monte Carlo|MC|montecarlosbm.com
+SolarEdge|Herzliya|IL|solaredge.com
+Solbus|Solec Kujawski|PL|solbus.com.pl
+St. Peter Line|Saint Petersburg|FI|stpeterline.com
+Stan|Sydney|AU|stan.com.au
+Stodir|Reykjavík|IS|stodir.is
+Sunday Airlines|Shymkent|KZ|sundayairlines.kz
+Super Air Jet|Jakarta|ID|superairjet.com
+Swissôtel Tallinn|Tallinn|EE|swissotel.com
+Talofa Airways|Apia|WS|talofaairways.com
+Tandem Aero|Chișinău|MD|tandemaero.md
+Tapestry, Inc.|New York City|AU|tapestry.com
+Team Falcons|Riyadh|SA|falcons.sa
+Teboil|Veromies|FI|teboil.fi
+Teleste|Turku|FI|teleste.com
+Tessenderlo Group|Tessenderlo|BE|tessenderlo.com
+The Emirates Group|Al Garhoud|AE|theemiratesgroup.com
+The Wharf (Holdings) Limited|Hong Kong|HK|wharfholdings.com
+Transnet|Johannesburg|ZA|transnet.co.za
+Transnistrian Railway|Tiraspol|MD|pjdpmr.com
+Transportes Aéreos Guatemaltecos|Guatemala City|GT|tag.com.gt
+Tunturi|Runosmäki|FI|tunturi.com
+Tyan Business Unit, MiTAC Computing Technology|Taipei|TW|tyan.com
+Tyrolean Jet Services|Innsbruck|AT|tjs.at
+United Bank for Africa|Lagos|NG|ubagroup.com
+VTT Technical Research Centre of Finland|Espoo|FI|vttresearch.com
+Val Saint Lambert|Seraing|BE|val-saint-lambert.com
+Vivartia|Marousi|GR|vivartia.com
+Volksbank|Vienna|AT|volksbank.com
+Wallapop|Barcelona|ES|wallapop.com
+Weekendavisen|Copenhagen|DK|weekendavisen.dk
+Worley|Sydney|AU|worley.com
+YTL Corporation|Kuala Lumpur|MY|ytl.com.my
+Yeo Hiap Seng|Singapore|SG|yeos.com.sg
+Yerevan Ararat Wine Factory|Yerevan|AM|brandy.am
+Yuzhmashavia|Dnipro|UA|yuzmashair.com.ua
+Zagrebački električni tramvaj|Zagreb|HR|zet.hr
+Zumtobel Group|Vienna|AT|zumtobelgroup.com
+onet.pl|Kraków|PL|onet.pl
+Łucznik Arms Factory|Radom|PL|fabrykabroni.pl
+Reitan AS|Trondheim|NO|reitan.no
+Wilh. Wilhelmsen|Lysaker|NO|wilhelmsen.com
+Danish Crown|Randers|DK|danishcrown.com
+Mabe|Mexico City|MX|mabe.cc
+Eurocash|Komorniki|PL|eurocash.pl
+Alcampo|Villanueva de Gállego|ES|alcampo.es
+Americanas|Rio de Janeiro|BR|americanas.com.br
+Enea SA|Poznań|PL|enea.pl
+Uztelecom|Tashkent|UZ|uztelecom.uz
+ethio telecom|Addis Ababa|ET|ethiotelecom.et
+Dedeman|Bacău|RO|dedeman.ro
+AVL|Graz|AT|avl.com
+Rumo S.A.|Curitiba|BR|rumolog.com
+Prague Public Transit Company|Prague|CZ|dpp.cz
+Česká spořitelna|Prague|CZ|csas.cz
+Albert Česká republika|Prague|CZ|albert.cz
+Stokrotka|Lublin|PL|stokrotka.pl
+AJE Group|Ayacucho|PE|ajegroup.com
+Mediapro|El Parc i la Llacuna del Poblenou|ES|mediapro.tv
+ROMARM|Bucharest|RO|romarm.ro
+Clarín Group|Buenos Aires|AR|grupoclarin.com
+Entel Chile|Santiago|CL|entel.cl
+Mobile Telecommunication Company of Iran|Tehran|IR|mci.ir
+Kapital Bank|Baku|AZ|kapitalbank.az
+Metrovías|Buenos Aires|AR|metrovias.com.ar
+Alexbank|Cairo|EG|alexbank.com
+Rakhat|Almaty|KZ|rakhat.kz
+TORM|London|DK|torm.com
+Stellantis Slovakia|Trnava|SK|stellantis-slovakia.sk
+Jebsen Group|Hong Kong|HK|jebsen.com
+Cielo S.A.|Barueri|BR|cielo.com.br
+Magasin du Nord|Copenhagen|DK|magasin.dk
+Grameenphone|Baridhara|BD|grameenphone.com
+Unitel|Luanda|AO|unitel.ao
+Fluxys|Brussels metropolitan area|BE|fluxys.com
+Argenx SE|Ghent|NL|argenx.com
+Georgian Steel|Rustavi|GE|rustavisteel.ge
+Bob's|Rio de Janeiro|BR|bobs.com.br
+HT ERONET|Mostar|BA|hteronet.ba
+DNA|Helsinki|FI|dna.fi
+Žemaitijos Pienas, AB|Telšiai|LT|zpienas.lt
+Andbank|Les Escaldes|AD|andbank.com
+Dressmann|Billingstad|NO|dressmann.com
+Inter Primo|Copenhagen|DK|primo.com
+Zanella|Caseros|AR|zanella.com.ar
+Sinebrychoff|Kerava|FI|sinebrychoff.fi
+CZ LOKO|Česká Třebová|CZ|czloko.cz
+Snaigė|Alytus|LT|snaige.lt
+Harboes Bryggeri|Skælskør|DK|harboes.dk
+StormGeo|Bergen|NO|stormgeo.com
+One Albania|Tirana|AL|one.al
+Volfas Engelman|Kaunas|LT|volfasengelman.lt
+Cēsu Alus|Cēsis|LV|cesualus.lv
+SAF Tehnika|Riga|LV|saftehnika.com
+Soft2Bet|Santa Venera|MT|soft2bet.com
+24SevenOffice|Tjuvholmen|NO|24sevenoffice.com
+Schiebel|Vienna|AT|schiebel.net
+Madshus|Biri|NO|madshus.no
+Nordjyske Jernbaner|Hjørring|DK|nj.dk
+Abu Dhabi Commercial Bank|Abu Dhabi|AE|adcb.com
+Aero Cóndor|Lima|PE|aerocondor.com.pe
+Afghan Jet International|Kabul|AF|flyaji.com
+Afriquia|Casablanca|MA|afriquia.ma
+Agencia Boliviana Espacial|La Paz|BO|abe.bo
+Air Samarkand|Samarkand|UZ|airsamarkand.com
+Alma Media|Kluuvi|FI|almamedia.fi
+AmRest|Wrocław|ES|amrest.eu
+Amadeo Rossi S.A.|São Leopoldo|BR|rossi.com.br
+Amen Bank|Tunis|TN|amenbank.com.tn
+Arab Contractors|Cairo|EG|arabcont.com
+Arab Wings|Amman|JO|arabwings.com.jo
+ArmeniaNow|Yerevan|AM|armenianow.com
+Armscor|Pretoria|ZA|armscor.co.za
+Asia Atlantic Airlines|Bangkok|TH|asiaatlanticairlines.com
+Askari Bank|Rawalpindi|PK|akbl.com.pk
+Aspen Pharmacare|Durban|ZA|aspenpharma.com
+Astro Malaysia Holdings|Kuala Lumpur|MY|astromalaysia.com.my
+Aurizon|Brisbane|AU|aurizon.com.au
+Auticon|Berlin|AU|auticon.com
+Avibras|São José dos Campos|BR|avibras.com.br
+B&R|Eggelsberg|AT|br-automation.com
+BNP Paribas Fortis|Brussels|BE|bnpparibasfortis.com
+Bahrain Radio and Television Corporation|Manama|BH|bahraintv.com
+Banca Intesa Beograd|Belgrade|RS|bancaintesa.rs
+Banco Azteca|Mexico City|MX|bancoazteca.com.mx
+Banjalučka Pivara|Banja Luka|BA|banjaluckapivara.com
+Bank BPH|Gdańsk|PL|bph.pl
+Bank Handlowy|Warsaw|PL|citibank.pl
+Bank SinoPac|Taipei|TW|sinopac.com
+Bank of Kaohsiung|Zuoying District|TW|bok.com.tw
+Bankwest|Perth|AU|bankwest.com.au
+Banyan Tree Holdings|Singapore|SG|banyantreegroup.com
+Batelco|Hamala|BH|batelcogroup.com
+Bavaria Brewery|Bogotá|CO|bavaria.co
+Borse Dubai|Dubai|AE|borsedubai.ae
+Brasserie Nationale|Bascharage|LU|bofferding.lu
+Brouwerij Boon|Halle|BE|boon.be
+Budapesti Közlekedési Központ|Budapest District VII|HU|bkk.hu
+Bukalapak|Jakarta|ID|bukalapak.com
+Burundi National Radio and Television|Bujumbura|BI|rtnb.bi
+Bónus|Reykjavík|IS|bonus.is
+C-Media|Taipei|TW|cmedia.com.tw
+CFR Marfă|Bucharest|RO|cfrmarfa.com
+CHEP|Sydney|AU|chep.com
+CIB Bank|Budapest|HU|cib.hu
+CMB.TECH|Aalst|BG|euronav.com
+CPFL Energia|Campinas|BR|cpfl.com.br
+CTBC Bank|Taipei|TW|ctbcbank.com
+CTP Cluj-Napoca|Cluj-Napoca|RO|ctpcj.ro
+Caesarstone Sdot-Yam|Caesarea|IL|caesarstone.com
+Cambodia Bayon Airlines|Phnom Penh|KH|bayonairlines.com
+Campofrío Food Group|Alcobendas|ES|campofriofoodgroup.com
+Capitec Bank|Stellenbosch|ZA|capitecbank.co.za
+Celesc|Florianópolis|BR|celesc.com.br
+Central Cooperative Bank|Sofia|BG|ccbank.bg
+Chamonix|São Paulo|BR|chamonixng.com.br
+Chang Hwa Bank|Taichung|TW|bankchb.com
+Chernihiv Brewery|Chernihiv|UA|chernigivske.ua
+China Resources Land|Hong Kong|HK|crland.com.hk
+Chipita|Athens|GR|chipita.com
+Chumak|Kakhovka|UA|chumak.com
+Civair|Cape Town|ZA|civair.co.za
+Comgás|São Paulo|BR|comgas.com.br
+Compagnie Tunisienne de Navigation|Tunis|TN|ctn.com.tn
+Companhia Energética de São Paulo|São Paulo|BR|cesp.com.br
+Compañía Sud Americana de Vapores S.A.|Santiago|CL|csav.com
+Correo Oficial de la República Argentina|San Nicolás, Buenos Aires|AR|correoargentino.com.ar
+Cotton On Group|Geelong|AU|cottonongroup.com.au
+Cricova|Cricova|MD|cricova.md
+DCC Energy plc|Dublin|IE|dcc.ie
+DRB-HICOM|Shah Alam|MY|drb-hicom.com
+DSK Bank|Sofia|BG|dskbank.bg
+Daily Air|Songshan District|TW|dailyair.com.tw
+Dan Bus Company|Tel Aviv|IL|dan.co.il
+Danamon of Indonesia|Jakarta|ID|danamon.co.id
+Delta Galil Industries Ltd.|Tel Aviv|IL|deltagalil.com
+Denton Corker Marshall|Melbourne|AU|dentoncorkermarshall.com
+Dhiraagu|Malé|MV|dhiraagu.com.mv
+Diamond Trading Company|London|ZA|dtc.com
+Donetsian Railway|Donetsk|UA|dnrailway.ru
+Dopravný podnik Bratislava|Bratislava|SK|dpb.sk
+Doğan Media Group|Üsküdar|TR|dyh.com.tr
+Dubai Royal Air Wing|Dubai|AE|govu.ae
+Dutch Lady Milk Industries Berhad|Petaling Jaya|MY|dutchlady.com.my
+ELTE Faculty of Humanities|Budapest District VIII|HU|elte.hu
+ENOC|Dubai|AE|enoc.com
+EastIndo|Jakarta|ID|eastindo.com
+Egyptian German Automotive Company|6th of October City|EG|egasae.com
+El Palacio de Hierro|Guadalajara|MX|elpalaciodehierro.com
+Embratel|Rio de Janeiro|BR|embratel.com.br
+Empresa de Grabaciones y Ediciones Musicales|Havana|CU|egrem.com
+Empresa de Telecomunicaciones de Bogotá|Bogotá|CO|etb.com.co
+Empresas CMPC|Santiago|CL|cmpc.cl
+Enel Américas|Santiago|CL|enelamericas.com
+Energoinvest|Sarajevo|BA|energoinvest.com
+Energía Argentina|Buenos Aires|AR|energia-argentina.com.ar
+Enlight Software|Hong Kong|HK|enlight.com
+Estonia Piano Factory|Tallinn|EE|estoniapiano.com
+Euroleague Basketball|Barcelona|ES|euroleaguebasketball.net
+FN Browning Group|Herstal|BE|fnbrowninggroup.com
+FS1|Salzburg|AT|fs1.tv
+Faisal Islamic Bank of Egypt|Cairo|EG|faisalbank.com.eg
+Ferrovías S.A.C.|Buenos Aires|AR|ferrovias.com.ar
+Fingersoft|Oulu|FI|fingersoft.com
+Finta|São Paulo|BR|finta.com.br
+Fix|Kifisia|GR|fix-beer.gr
+FlyDamas|Damascus|SY|flydamas.com
+Fmi air|Yangon|MM|fmiair.com
+Fondo de Cultura Económica|Mexico City|MX|fondodeculturaeconomica.com
+Frobenius Orgelbyggeri|Birkerød|DK|frobenius.nu
+Gatari Air Service|Jakarta|ID|gatariair.com
+Gogoro|Taoyuan|TW|gogoro.com
+Golar LNG|Hamilton|BM|golargas.com
+Grazer Wechselseitige Versicherung|Graz|AT|grawe.at
+Great Eastern Life|Singapore|SG|lifeisgreat.com.sg
+Grupo Nutresa|Medellín|CO|gruponutresa.com
+Grupo Petrópolis|Petrópolis|BR|grupopetropolis.com.br
+Güleryüz|Gemlik|TR|guleryuz.com
+H. Stern|Rio de Janeiro|BR|hstern.com.br
+H10 Hotels|Barcelona|ES|h10hotels.com
+HAVELSAN|Ankara|TR|havelsan.com.tr
+Harmony Gold|Randfontein|ZA|harmony.co.za
+Helkama|Hanko|FI|helkama.com
+Hempel A/S|Kongens Lyngby|DK|hempel.com
+Hutchison Asia Telecom Group|Hong Kong|HK|ckh.com.hk
+Icelandic National Group of IFPI|Reykjavík|IS|fhf.is
+Imperial Air Cargo|Johannesburg|ZA|safair.com
+Imprensa Nacional-Casa da Moeda|Avenidas Novas|PT|incm.pt
+Insel Verlag|Berlin|DD|suhrkamp.de
+Interisland Airlines|Pasay|PH|interislandairlines.com
+Iranian Aluminium Company|Arak|IR|iralco.ir
+Iskra|Ljubljana|SI|iskra.si
+J. & L. Lobmeyr|Vienna|AT|lobmeyr.at
+JAB Holding Company|Luxembourg|LU|jabholco.com
+JG Summit Holdings|Pasig|PH|jgsummit.com.ph
+Jadranski naftovod|Zagreb|HR|janaf.hr
+Jarritos|Guadalajara|MX|jarritos.com
+K-Rauta|Vantaa|FI|k-rauta.fi
+KEGOC|Astana|KZ|kegoc.kz
+Kalbe Farma|Jakarta|ID|kalbe.co.id
+Karelian Trains|Länsi-Pasila|FI|kareliantrains.fi
+Kazaviaspas|Astana|KZ|kazaviaspas.kz
+Kenya Railways Corporation|Nairobi|KE|krc.co.ke
+Koleje Śląskie|Katowice|PL|kolejeslaskie.com
+Kompas Gramedia Group|Jakarta|ID|kompasgramedia.com
+Konstal|Chorzów|PL|alstom.com
+Koton|Istanbul|TR|koton.com
+Krome Studios|Fortitude Valley|AU|kromestudios.com
+Lalandia|Rødbyhavn|DK|lalandia.dk
+Land Bank of Taiwan|Taipei|TW|landbank.com.tw
+Leitra|Skovlunde|DK|leitra.dk
+Liefmans Brewery|Oudenaarde|BE|liefmans.be
+Livraria Bertrand|Chiado|PT|bertrand.pt
+Luminor Bank|Tallinn|EE|luminor.ee
+Lusaka Stock Exchange|Lusaka|ZM|luse.co.zm
+Lynas|Sydney|AU|lynascorp.com
+MAL Hungarian Aluminium|Ajka|HU|mal.hu
+MAYAir|Cancun|MX|mayair.com.mx
+MISC Group|Kuala Lumpur|MY|misc.com.my
+MTX|Prague|CZ|mtx.cz
+Mapex Drums|Taipei|TW|mapexdrums.com
+Marabu Airlines|Tallinn|EE|flymarabu.com
+Martela|Helsinki|FI|martela.com
+Materialise NV|Leuven|BE|materialise.com
+Maximus Air Cargo|Abu Dhabi|AE|maximus-air.com
+Meralco|Pasig|PH|meralco.com.ph
+Metropoline Public Transportation|Kfar Saba|IL|metropoline.com
+Metsä Board|Espoo|FI|metsaboard.com
+MiTAC|Taipei|TW|mitac.com
+Moldtelecom|Chișinău|MD|moldtelecom.md
+Monacair|Monaco|MC|monacair.mc
+Monaco Telecom|Monaco|MC|monaco-telecom.mc
+Moser|Karlovy Vary|CZ|moser-glass.com
+Movia|Valby|DK|moviatrafik.dk
+Mr Green|Sliema|MT|mrgreen.co.uk
+MultiChoice|Ferndale|ZA|multichoice.com
+Naftal|Algiers|DZ|naftal.dz
+Nankang Rubber Tire|Taipei|TW|nankang-tyre.com
+National Roads Company of Israel|Or Yehuda|IL|iroads.co.il
+National Savings Bank|Kuala Lumpur|MY|mybsn.com.my
+Norse Air|Johannesburg|ZA|norseair.co.uk
+Nortal|Tallinn|EE|nortal.com
+Norwegian Reward|Fornebu|NO|norwegianreward.com
+Nouvelle Air Affaires Gabon|Libreville|GA|sn2ag.com
+Nuclearelectrica|Bucharest|RO|nuclearelectrica.ro
+O'Neills|Strabane|IE|oneills.com
+Odašiljači i veze|Zagreb|HR|oiv.hr
+Ooredoo Tunisia|Tunis|TN|ooredoo.tn
+Oporto|St Leonards|AU|oporto.com.au
+Oriental Brewery|Seoul|BR|ob.co.kr
+Ormat Technologies|Yavne|IL|ormat.com
+PC Tools|Luxembourg|AU|pctools.com
+PORR|Vienna|AT|porr-group.com
+Parsian Bank|Tehran|IR|parsian-bank.ir
+Patagonik Film Group|Buenos Aires|AR|patagonik.com.ar
+Pohjolan Voima|Etu-Töölö|FI|pohjolanvoima.fi
+Pos Indonesia|Bandung|ID|posindonesia.co.id
+Pou Chen Corporation|Taichung|TW|pouchen.com.tw
+Produksi Film Negara|Jakarta|ID|pfn.co.id
+Pronar|Narew|PL|pronar.pl
+Qanot Sharq|Tashkent|UZ|qanotsharq.com
+Qatar Islamic Bank|Doha|QA|qib.com.qa
+RTV BN|Bijeljina|BA|rtvbn.com
+Radio Televisión de Andalucía|Seville metropolitan area|ES|canalsur.es
+Radiodiffusion télévision ivoirienne|Cocody|CI|rti.ci
+Radisson Blu Hotel Olümpia|Tallinn|EE|radissonhotels.com
+Radware|Mahwah|IL|radware.com
+Rail Cargo Austria|Vienna|AT|railcargo.at
+Raízen|São Paulo|BR|raizen.com
+Red Ribbon|Quezon City|PH|redribbon.ph
+Refah Bank|Tehran|IR|refah-bank.ir
+Reserved|Gdańsk|PL|reserved.com
+Riot Sydney|Sydney|AU|bigworldtech.com
+Rovos Rail|Pretoria|ZA|rovos.com
+Royal Jet|Abu Dhabi|AE|royaljetgroup.com
+Sanitec|Helsinki|FI|sanitec.com
+Sarajevo Tobacco Factory|Sarajevo|BA|fds.ba
+Sarsilmaz|Düzce|TR|sarsilmaz.com
+Saurya Airlines|Sinamangal|NP|sauryaairlines.com
+Schmidt Hammer Lassen|Copenhagen|DK|shl.dk
+Shufersal Ltd.|Rishon LeZion|IL|shufersal.co.il
+Siam|Piñeiro, Buenos Aires|AR|siam.com.ar
+SimCorp|Copenhagen|DK|simcorp.com
+Sitel|Skopje|MK|sitel.com.mk
+SkyLink Arabia|Dubai|AE|ska-arabia.com
+Skydance Animation Madrid|Madrid Metropolitan Area|ES|ilion.com
+Skřivánek|Prague|CZ|skrivanek-gmbh.de
+SoftServe|Austin|UA|softserveinc.com
+Softwin|Bucharest|RO|softwin.ro
+Sol Linhas Aéreas|Cascavel|BR|voesol.com.br
+Solvil et Titus|Geneva|HK|solvil-et-titus.com
+Spacecom|Ramat Gan|IL|amos-spacecom.com
+Spetstechnoexport|Kyiv|UA|spetstechnoexport.com
+Star Magic|Quezon City|PH|starmagicph.com
+State Railways Administration of Uruguay|Montevideo|UY|afe.com.uy
+Steimatzky|Kafr Qasim|IL|steimatzky.co.il
+Studio Misr|Cairo|EG|studiomasr.com
+Suncorp Group|Brisbane|AU|suncorpgroup.com.au
+Super-Pharm|Herzliya|IL|super-pharm.co.il
+Synergy Group|São Paulo|BR|synergygroupcorp.com
+TAR México|Santiago de Querétaro|MX|tarmexico.com
+TECO Electric and Machinery|Nangang District|TW|teco.com.tw
+TOT|Bangkok|TH|tot.co.th
+Tanzania Railways Corporation|Dar es Salaam|TZ|trc.co.tz
+Tasman Cargo Airlines|Sydney|AU|tasmancargo.com
+Tecnologia Automotiva Catarinense|Joinville|BR|tacmotors.com.br
+Teletica|San José|CR|teletica.com
+The Pizza Company|Bangkok|TH|pizza.co.th
+Trans Nation Airways|Addis Ababa|ET|midroc-ethiotechgroup.com
+Transtejo & Soflusa|Lisbon|PT|transtejo.pt
+Tüpraş|Körfez|TR|tupras.com.tr
+TŽV Gredelj|Zagreb|HR|tzv-gredelj.hr
+UMM|Lisbon|PT|umm.pt
+UVision|Kokhav Ya'ir-Tzur Yig'al|IL|uvisionuav.com
+Ucell|Tashkent|UZ|ucell.uz
+Ucom|Yerevan|AM|ucom.am
+Ukrainian Automobile Corporation|Kyiv|UA|ukravto.ua
+Unity Line|Szczecin|PL|unityline.eu
+Universo Online|São Paulo|BR|uol.com.br
+Vietsovpetro|Vũng Tàu|VN|vietsov.com.vn
+Virgin Active|London|ZA|virginactive.it
+Viru Keemia Grupp|Kohtla-Järve|EE|vkg.ee
+Vídeo Brinquedo|São Paulo|BR|videobrinquedo.com.br
+Vínbúð|Reykjavík|IS|vinbud.is
+Waves Audio|Tel Aviv|IL|waves.com
+Weber Shandwick|New York City|BE|webershandwick.com
+YAGEO|Taipei|TW|yageogroup.com
+Yarra Trams|Melbourne|AU|yarratrams.com.au
+bKash|Dhaka|BD|bkash.com
+deCODE genetics|Reykjavík|IS|decode.com
+dnata|Dubai|AE|dnata.com
+Çalık Holding|Istanbul|TR|calik.com
+Mobile World Investment Corporation|Ho Chi Minh City|VN|mwg.vn
+First Rand|Johannesburg|ZA|firstrand.co.za
+Vilniaus prekyba|Vilnius|LT|vilniausprekyba.eu
+Müller|Ulm|AT|mueller.at
+Bunnings Group|Burnley|AU|bunnings.co.nz
+Magazine Luiza|Franca|BR|magazineluiza.com.br
+Acıbadem Healthcare Group|Istanbul|TR|acibadem.com.tr
+Majid Al Futtaim Group|Dubai|AE|majidalfuttaim.com
+Bank of Bogota|Bogotá|CO|bancodebogota.com
+UkrGasVydobuvannya|Kyiv|UA|ugv.com.ua
+Správa železnic|Prague|CZ|spravazeleznic.cz
+Grup Agbar|Barcelona|ES|agbar.es
+Fibria|São Paulo|BR|fibria.com.br
+The Warehouse Group|Auckland|NZ|thewarehousegroup.co.nz
+RHI Magnesita|Vienna|AT|rhi-ag.com
+SYENSQO|Brussels|BE|syensqo.com
+Embraco|Joinville|BR|embraco.com
+Mega Image|Bucharest|RO|mega-image.ro
+Do & Co|Vienna|AT|doco.com
+CCC|Polkowice|PL|modivogroup.com
+B2W|Rio de Janeiro|BR|b2wdigital.com
+AT&S|Leoben|AT|ats.net
+Logista|Leganés|ES|grupologista.com
+Atlant|Minsk|BY|atlant.by
+Safaricom|Nairobi|KE|safaricom.co.ke
+Araz Supermarket|Baku|AZ|arazmarket.az
+Kapsch|Vienna|AT|kapsch.net
+Minsk Motor Plant|Minsk|BY|mmz-motor.by
+Carmeuse|Louvain-la-Neuve|BE|carmeuse.com
+Rappi|Bogotá|AR|rappi.com.mx
+Dr. Max|Brno|CZ|drmax.eu
+Codere|Alcobendas|ES|grupocodere.com
+ForteBank|Astana|KZ|forte.kz
+Metsä Tissue|Espoo|FI|metsatissue.com
+Arab Banking Corporation|Manama|BH|bank-abc.com
+Arctic|Găești|RO|arctic.ro
+Notino|Brno|CZ|notino.cz
+Topsoe|Ravnholm|DK|topsoe.com
+Ekornes|Ikornnes|NO|ekornes.com
+Abu Dhabi National Energy Company|Abu Dhabi|AE|taqa.com
+ALBtelecom|Tirana|AL|albtelecom.al
+Alza.cz|Prague|CZ|alza.cz
+BGL BNP Paribas|Luxembourg|LU|bgl.lu
+BoConcept A/S|Herning|DK|boconcept.com
+Melexis|Ypres|BE|melexis.com
+Castro Model Ltd.|Bat Yam|IL|castro.com
+Srbijagas|Novi Sad|RS|srbijagas.com
+Nation Media Group|Nairobi|KE|nationmedia.com
+Banka Kombëtare Tregtare|Tirana|AL|bkt.com.al
+Senate Properties|Vilhonvuori|FI|senaatti.fi
+Georg Jensen A/S|Frederiksberg|DK|georgjensen.com
+MediaKind|Southampton|NO|tandbergtv.com
+Banque de Luxembourg|Luxembourg|LU|banquedeluxembourg.com
+Molslinjen|Aarhus|DK|molslinjen.com
+MND|Hodonín|CZ|mnd.eu
+Irshad|Baku|AZ|irshad.az
+Creand|Andorra la Vella|AD|creandgroup.com
+Rossi Residencial|São Paulo|BR|rossiresidencial.com.br
+Regio Călători|Brașov|RO|regiocalatori.ro
+Naviair|Copenhagen|DK|naviair.dk
+Augstsprieguma tīkls|Riga|LV|ast.lv
+SiteGround|Sofia|BG|siteground.com
+Šiaulių bankas, AB|Šiauliai|LT|artea.lt
+Vichy Catalan Corporation|Barcelona|ES|grupovichycatalan.com
+Endiama|Luanda|AO|endiama.co.ao
+Bradespar|São Paulo|BR|bradespar.com.br
+Hansa Borg Bryggerier|Bergen|NO|hansaborg.no

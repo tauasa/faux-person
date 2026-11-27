@@ -33,7 +33,7 @@ class CompanyGeneratorTest {
     @Test
     void byDefaultCompaniesAreMarked() {
         Set<Company> marked = DATA.companies.stream()
-                .map(c -> new Company(c.name() + " [faux]", c.city(), c.state(),
+                .map(c -> new Company(c.name() + " [faux]", c.city(), c.state(), c.country(),
                         CompanyGenerator.exampleDomain(c.domain())))
                 .collect(Collectors.toSet());
         for (Company c : CompanyGenerator.builder().seed(3).build().next(2000)) {
@@ -49,7 +49,7 @@ class CompanyGeneratorTest {
         for (int i = 0; i < asIs.size(); i++) {
             Company r = asIs.get(i);
             assertTrue(real.contains(r), r.toString());
-            assertEquals(new Company(r.name() + " [faux]", r.city(), r.state(),
+            assertEquals(new Company(r.name() + " [faux]", r.city(), r.state(), r.country(),
                     CompanyGenerator.exampleDomain(r.domain())), marked.get(i));
         }
         assertTrue(real.contains(CompanyGenerator.builder().seed(7).realCompanies(true).build().split().next()));
@@ -64,6 +64,8 @@ class CompanyGeneratorTest {
         }
         assertEquals("costco.example", CompanyGenerator.exampleDomain("costco.com"));
         assertEquals("localhost.example", CompanyGenerator.exampleDomain("localhost"));
+        // The first label, so a country domain gives a clean one too.
+        assertEquals("sony.example", CompanyGenerator.exampleDomain("sony.co.jp"));
     }
 
     @Test
@@ -78,9 +80,10 @@ class CompanyGeneratorTest {
     @Test
     void dataDirectoryReplacesTheCompanyFile(@TempDir Path dir) throws Exception {
         Files.writeString(dir.resolve("us_companies_domains.txt"), "Acme Widgets|Springfield|IL|acme.test\n");
-        for (Company c : CompanyGenerator.builder().seed(4).dataDirectory(dir).build().next(20)) {
-            assertEquals(new Company("Acme Widgets [faux]", "Springfield", "IL", "acme.example"), c);
-        }
+        Files.writeString(dir.resolve("intl_companies_domains.txt"), "Beta Fabrik|Lyon|FR|beta.fr\n");
+        Set<Company> seen = Set.copyOf(CompanyGenerator.builder().seed(4).dataDirectory(dir).build().next(40));
+        assertEquals(Set.of(new Company("Acme Widgets [faux]", "Springfield", "IL", "US", "acme.example"),
+                new Company("Beta Fabrik [faux]", "Lyon", "", "FR", "beta.example")), seen);
     }
 
     @Test

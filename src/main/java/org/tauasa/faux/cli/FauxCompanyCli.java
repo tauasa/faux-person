@@ -77,7 +77,7 @@ public final class FauxCompanyCli {
             }
             CompanyGenerator gen = b.build();
             err.println("seed: " + gen.seed());
-            CliSupport.print(out, format, "name|city|state|domain", count, gen::next,
+            CliSupport.print(out, format, "name|city|state|country|domain", count, gen::next,
                     FauxCompanyCli::text, FauxCompanyCli::pipe, FauxCompanyCli::json);
             return 0;
         } catch (IllegalArgumentException e) {
@@ -90,16 +90,19 @@ public final class FauxCompanyCli {
         }
     }
 
+    /** {@code Costco [faux], Issaquah, WA (costco.example)}; outside the US the country takes the state's place. */
     static String text(Company c) {
-        return c.name() + ", " + c.city() + ", " + c.state() + " (" + c.domain() + ")";
+        return c.name() + ", " + c.city() + ", " + (c.state().isEmpty() ? c.country() : c.state())
+                + " (" + c.domain() + ")";
     }
 
     static String pipe(Company c) {
-        return String.join("|", c.name(), c.city(), c.state(), c.domain());
+        return String.join("|", c.name(), c.city(), c.state(), c.country(), c.domain());
     }
 
     static String json(Company c) {
         return "{" + field("name", c.name()) + "," + field("city", c.city())
-                + "," + field("state", c.state()) + "," + field("domain", c.domain()) + "}";
+                + "," + field("state", c.state()) + "," + field("country", c.country())
+                + "," + field("domain", c.domain()) + "}";
     }
 }

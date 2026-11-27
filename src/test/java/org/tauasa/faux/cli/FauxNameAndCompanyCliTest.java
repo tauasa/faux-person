@@ -76,10 +76,10 @@ class FauxNameAndCompanyCliTest {
     @Test
     void companiesAreMarkedUnlessRealCompanies() {
         assertEquals(0, run(FauxCompanyCli::run, "-n", "30", "-s", "2", "-f", "pipe"));
-        assertEquals("name|city|state|domain", out.lines().findFirst().orElseThrow());
+        assertEquals("name|city|state|country|domain", out.lines().findFirst().orElseThrow());
         out.lines().skip(1).forEach(l -> {
-            String[] c = l.split("\\|");
-            assertTrue(c[0].endsWith(" [faux]") && c[3].endsWith(".example"), l);
+            String[] c = l.split("\\|", -1);
+            assertTrue(c[0].endsWith(" [faux]") && c[4].endsWith(".example") && c[3].matches("[A-Z]{2}"), l);
         });
         String marked = out;
         assertEquals(0, run(FauxCompanyCli::run, "-n", "30", "-s", "2", "-f", "pipe", "--real-companies"));
@@ -94,6 +94,7 @@ class FauxNameAndCompanyCliTest {
         out.lines().forEach(l -> assertTrue(l.matches(".+ \\[faux\\], .+, [A-Z]{2} \\(.+\\.example\\)"), l));
         assertEquals(0, run(FauxCompanyCli::run, "-n", "2", "-s", "2", "-f", "json"));
         assertEquals(2, out.split("\"domain\"").length - 1);
+        assertEquals(2, out.split("\"country\":\"[A-Z]{2}\"").length - 1, out);
     }
 
     @Test

@@ -70,7 +70,8 @@ class PersonGeneratorTest {
     @Test
     void byDefaultEmployersAreMarkedAndEmailsAreUnderDotExample() {
         Set<Company> marked = DATA.companies.stream()
-                .map(c -> new Company(c.name() + " [faux]", c.city(), c.state(), CompanyGenerator.exampleDomain(c.domain())))
+                .map(c -> new Company(c.name() + " [faux]", c.city(), c.state(), c.country(),
+                        CompanyGenerator.exampleDomain(c.domain())))
                 .collect(Collectors.toSet());
         Pattern shape = Pattern.compile("^[a-z0-9]+\\.[a-z0-9]+\\d{0,2}@[a-z0-9-]+\\.example$");
         for (Person p : gen(3).build().next(2000)) {
@@ -78,6 +79,24 @@ class PersonGeneratorTest {
             assertTrue(shape.matcher(e).matches(), e);
             assertTrue(marked.contains(p.employer()), p.employer().toString());
             assertTrue(e.endsWith("@" + p.employer().domain()), e);
+        }
+    }
+
+    /** A person works for a company in their region's countries, or anywhere for WESTERN and small regions. */
+    @org.junit.jupiter.params.ParameterizedTest
+    @org.junit.jupiter.params.provider.EnumSource(Region.class)
+    void employersComeFromThePersonsRegion(Region r) {
+        Set<String> countries = DataSet.COUNTRIES.get(r);
+        long own = countries == null ? 0 : DATA.companies.stream().filter(c -> countries.contains(c.country())).count();
+        Set<String> seen = new java.util.HashSet<>();
+        for (Person p : gen(21).region(r).realCompanies(true).build().next(400)) {
+            seen.add(p.employer().country());
+            if (countries != null && own >= DataSet.MIN_EMPLOYERS) {
+                assertTrue(countries.contains(p.employer().country()), r + ": " + p.employer());
+            }
+        }
+        if (countries == null || own < DataSet.MIN_EMPLOYERS) {
+            assertTrue(seen.size() > 20, r + " should draw from every company: " + seen.size() + " countries");
         }
     }
 

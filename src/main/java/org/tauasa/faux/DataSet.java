@@ -80,13 +80,43 @@ final class DataSet {
     private final Map<Region, Weighted<FirstName>> femaleNames = new EnumMap<>(Region.class);
     private final Map<Region, Weighted<FirstName>> maleNames = new EnumMap<>(Region.class);
     private final Map<Region, Weighted<Surname>> weightedSurnames = new EnumMap<>(Region.class);
+    /** Every company: the US ones, then the international ones. */
     final List<Company> companies;
+    /** Each region's employers: its countries' companies, or every company (see {@link #employers}). */
+    private final Map<Region, List<Company>> employers = new EnumMap<>(Region.class);
     final List<Street> streets;
 
     /** Under the package, so the generic file names can't collide with another jar's. */
     private static final String RESOURCE_DIR = "/org/tauasa/faux/data/";
 
     static final String COMPANIES = "us_companies_domains.txt";
+    static final String INTL_COMPANIES = "intl_companies_domains.txt";
+
+    /**
+     * Each region's countries, as ISO 3166-1 alpha-2 codes: the countries its
+     * names come from. {@code WESTERN} isn't here: its people work anywhere.
+     */
+    static final Map<Region, Set<String>> COUNTRIES = Map.ofEntries(
+            Map.entry(Region.ASIA, Set.of("BD", "CN", "HK", "ID", "IN", "JP", "KH", "KR", "LA", "LK", "MM", "MN",
+                    "MY", "NP", "PH", "PK", "SG", "TH", "TW", "VN")),
+            Map.entry(Region.RUS, Set.of("AM", "AZ", "BY", "EE", "GE", "KG", "KZ", "LT", "LV", "MD", "RU", "TJ",
+                    "TM", "UA", "UZ")),
+            Map.entry(Region.ROK, Set.of("KR")), Map.entry(Region.MEX, Set.of("MX")),
+            Map.entry(Region.IRN, Set.of("IR")), Map.entry(Region.HEB, Set.of("IL")),
+            Map.entry(Region.PSE, Set.of("PS")), Map.entry(Region.JPN, Set.of("JP")),
+            Map.entry(Region.PHL, Set.of("PH")), Map.entry(Region.VNM, Set.of("VN")),
+            Map.entry(Region.THA, Set.of("TH")),
+            Map.entry(Region.NAF, Set.of("DZ", "EG", "EH", "LY", "MA", "SD", "TN")),
+            Map.entry(Region.CAF, Set.of("AO", "CD", "CF", "CG", "CM", "GA", "GQ", "ST", "TD")),
+            Map.entry(Region.SAF, Set.of("BW", "LS", "NA", "SZ", "ZA")),
+            Map.entry(Region.BRA, Set.of("BR")), Map.entry(Region.GBR, Set.of("GB")),
+            Map.entry(Region.FRA, Set.of("FR")), Map.entry(Region.ESP, Set.of("ES")),
+            Map.entry(Region.PRT, Set.of("PT")), Map.entry(Region.GRC, Set.of("GR")),
+            Map.entry(Region.NOR, Set.of("NO")), Map.entry(Region.SWE, Set.of("SE")),
+            Map.entry(Region.FIN, Set.of("FI")));
+
+    /** Fewer companies than this in a region's countries, and its people work anywhere. */
+    static final int MIN_EMPLOYERS = 20;
     static final String STREETS = "us_street_names_city_state_zip.txt";
 
     private static volatile DataSet instance;
@@ -145,6 +175,7 @@ final class DataSet {
             names.add(p + "_surnames.txt");
         }
         names.add(COMPANIES);
+        names.add(INTL_COMPANIES);
         names.add(STREETS);
         return List.copyOf(names);
     }
@@ -161,8 +192,25 @@ final class DataSet {
             surnames.put(r, sn);
             weightedSurnames.put(r, weighted(sn, Surname::weight));
         }
-        companies = read(COMPANIES, 4, f -> new Company(f[0], f[1], f[2], f[3]));
+        List<Company> all = new ArrayList<>(read(COMPANIES, 4, f -> new Company(f[0], f[1], f[2], "US", f[3])));
+        all.addAll(read(INTL_COMPANIES, 4, f -> new Company(f[0], f[1], "", f[2], f[3])));
+        companies = List.copyOf(all);
+        for (Region r : Region.values()) {
+            Set<String> countries = COUNTRIES.get(r);
+            List<Company> own = countries == null ? companies
+                    : companies.stream().filter(c -> countries.contains(c.country())).toList();
+            employers.put(r, own.size() >= MIN_EMPLOYERS ? own : companies);
+        }
         streets = read(STREETS, 4, f -> new Street(f[0], f[1], f[2], f[3]));
+    }
+
+    /**
+     * The companies a person from the region works for: those headquartered in
+     * the region's countries, or every company for {@code WESTERN} and for a
+     * region with fewer than {@link #MIN_EMPLOYERS} of its own.
+     */
+    List<Company> employers(Region r) {
+        return employers.get(r);
     }
 
     /** Null when the list is empty, so a pick from it can say which list. */
