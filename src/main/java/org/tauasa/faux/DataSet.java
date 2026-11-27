@@ -115,8 +115,21 @@ final class DataSet {
             Map.entry(Region.NOR, Set.of("NO")), Map.entry(Region.SWE, Set.of("SE")),
             Map.entry(Region.FIN, Set.of("FI")));
 
-    /** Fewer companies than this in a region's countries, and its people work anywhere. */
+    /** Fewer companies than this in a region's countries, and its people draw from {@link #NEARBY}. */
     static final int MIN_EMPLOYERS = 20;
+
+    /**
+     * Where a region with too few companies of its own looks next: its own
+     * countries and these. Palestine to the Arab Middle East, Central Africa to
+     * all of Africa. A region not listed here, or still short, draws from every
+     * company.
+     */
+    static final Map<Region, Set<String>> NEARBY = Map.of(
+            Region.PSE, Set.of("PS", "JO", "LB", "SY", "IQ", "EG", "SA", "AE", "QA", "KW", "BH", "OM", "YE"),
+            Region.CAF, Set.of("DZ", "AO", "BJ", "BW", "BF", "BI", "CV", "CM", "CF", "TD", "KM", "CG", "CD",
+                    "CI", "DJ", "EG", "GQ", "ER", "SZ", "ET", "GA", "GM", "GH", "GN", "GW", "KE", "LS", "LR",
+                    "LY", "MG", "MW", "ML", "MR", "MU", "MA", "MZ", "NA", "NE", "NG", "RW", "ST", "SN", "SC",
+                    "SL", "SO", "ZA", "SS", "SD", "TZ", "TG", "TN", "UG", "ZM", "ZW", "EH"));
     static final String STREETS = "us_street_names_city_state_zip.txt";
 
     private static volatile DataSet instance;
@@ -193,24 +206,36 @@ final class DataSet {
             weightedSurnames.put(r, weighted(sn, Surname::weight));
         }
         List<Company> all = new ArrayList<>(read(COMPANIES, 4, f -> new Company(f[0], f[1], f[2], "US", f[3])));
-        all.addAll(read(INTL_COMPANIES, 4, f -> new Company(f[0], f[1], "", f[2], f[3])));
+        // May be empty: a data directory's empty file turns the international companies off.
+        all.addAll(read(INTL_COMPANIES, 4, true, f -> new Company(f[0], f[1], "", f[2], f[3])));
         companies = List.copyOf(all);
         for (Region r : Region.values()) {
-            Set<String> countries = COUNTRIES.get(r);
-            List<Company> own = countries == null ? companies
-                    : companies.stream().filter(c -> countries.contains(c.country())).toList();
-            employers.put(r, own.size() >= MIN_EMPLOYERS ? own : companies);
+            employers.put(r, employersFor(r));
         }
         streets = read(STREETS, 4, f -> new Street(f[0], f[1], f[2], f[3]));
     }
 
     /**
      * The companies a person from the region works for: those headquartered in
-     * the region's countries, or every company for {@code WESTERN} and for a
-     * region with fewer than {@link #MIN_EMPLOYERS} of its own.
+     * the region's countries; for a region with fewer than {@link #MIN_EMPLOYERS},
+     * those in its {@link #NEARBY} countries; and every company for {@code WESTERN}
+     * and when that is still too few.
      */
     List<Company> employers(Region r) {
         return employers.get(r);
+    }
+
+    private List<Company> employersFor(Region r) {
+        for (Set<String> countries : java.util.Arrays.asList(COUNTRIES.get(r), NEARBY.get(r))) {
+            if (countries == null) {
+                continue;
+            }
+            List<Company> some = companies.stream().filter(c -> countries.contains(c.country())).toList();
+            if (some.size() >= MIN_EMPLOYERS) {
+                return some;
+            }
+        }
+        return companies;
     }
 
     /** Null when the list is empty, so a pick from it can say which list. */
@@ -313,6 +338,10 @@ final class DataSet {
     }
 
     private <T> List<T> read(String name, int minFields, Function<String[], T> parse) {
+        return read(name, minFields, false, parse);
+    }
+
+    private <T> List<T> read(String name, int minFields, boolean mayBeEmpty, Function<String[], T> parse) {
         Path own = dir == null ? null : dir.resolve(name);
         InputStream in;
         String file;
@@ -357,7 +386,7 @@ final class DataSet {
         } catch (IOException e) {
             throw new UncheckedIOException("reading " + file, e);
         }
-        if (out.isEmpty()) {
+        if (out.isEmpty() && !mayBeEmpty) {
             throw new IllegalStateException("data file is empty: " + file);
         }
         return List.copyOf(out);

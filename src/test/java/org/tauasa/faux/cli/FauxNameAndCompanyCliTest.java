@@ -76,10 +76,11 @@ class FauxNameAndCompanyCliTest {
     @Test
     void companiesAreMarkedUnlessRealCompanies() {
         assertEquals(0, run(FauxCompanyCli::run, "-n", "30", "-s", "2", "-f", "pipe"));
-        assertEquals("name|city|state|country|domain", out.lines().findFirst().orElseThrow());
+        // country is last, so domain stays the fourth column it was in 0.3.0.
+        assertEquals("name|city|state|domain|country", out.lines().findFirst().orElseThrow());
         out.lines().skip(1).forEach(l -> {
             String[] c = l.split("\\|", -1);
-            assertTrue(c[0].endsWith(" [faux]") && c[4].endsWith(".example") && c[3].matches("[A-Z]{2}"), l);
+            assertTrue(c[0].endsWith(" [faux]") && c[3].endsWith(".example") && c[4].matches("[A-Z]{2}"), l);
         });
         String marked = out;
         assertEquals(0, run(FauxCompanyCli::run, "-n", "30", "-s", "2", "-f", "pipe", "--real-companies"));

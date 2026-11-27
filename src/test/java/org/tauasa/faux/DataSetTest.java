@@ -291,7 +291,8 @@ class DataSetTest {
                 assertTrue(STATES.contains(c.state()), c.toString());
             } else {
                 assertEquals("", c.state(), c.toString());
-                assertTrue(c.country().matches("[A-Z]{2}"), c.toString());
+                // A current ISO 3166-1 code: no SU, DD, YU or XK.
+                assertTrue(java.util.Set.of(java.util.Locale.getISOCountries()).contains(c.country()), c.toString());
             }
             assertTrue(c.domain().matches("[a-z0-9-]+(\\.[a-z0-9-]+)+"), c.toString());
         });

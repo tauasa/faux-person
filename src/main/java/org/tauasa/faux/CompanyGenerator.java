@@ -9,7 +9,8 @@ import java.util.stream.Stream;
 import org.tauasa.faux.model.Company;
 
 /**
- * Generates random {@link Company}s from the bundled list of US companies.
+ * Generates random {@link Company}s from the bundled companies: about 1,500 in
+ * the US and 4,000 in other countries, drawn alike.
  *
  * <p>By default each company is marked, as {@link PersonGenerator} marks an
  * employer: its name ends with {@code " [faux]"} and its domain is under the
@@ -139,8 +140,9 @@ public final class CompanyGenerator {
      * The domain under the reserved {@code .example} top-level domain
      * (RFC 2606), so an email at it can never be delivered: its first label
      * and {@code .example}, so {@code costco.com} becomes {@code costco.example}
-     * and {@code sony.co.jp} becomes {@code sony.example}. The data files keep
-     * every company's first label different, so marked domains are too.
+     * and {@code sony.co.jp} becomes {@code sony.example}. The bundled files keep
+     * every company's first label different, so their marked domains are too; a
+     * data directory's own files must do the same, or two companies share one.
      */
     static String exampleDomain(String domain) {
         int dot = domain.indexOf('.');
@@ -168,9 +170,11 @@ public final class CompanyGenerator {
         }
 
         /**
-         * A folder of your own data files. Its {@code us_companies_domains.txt},
-         * if it has one, replaces the bundled list, as
-         * {@link PersonGenerator.Builder#dataDirectory(Path)} reads it.
+         * A folder of your own data files. Its {@code us_companies_domains.txt}
+         * and {@code intl_companies_domains.txt}, if it has them, replace the
+         * bundled lists, as {@link PersonGenerator.Builder#dataDirectory(Path)}
+         * reads them. An empty {@code intl_companies_domains.txt} (or one with
+         * only {@code #} lines) leaves the international companies out.
          *
          * @param dir a folder, or {@code null} for the bundled data only
          * @return this builder

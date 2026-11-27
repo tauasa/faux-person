@@ -548,7 +548,9 @@ public final class PersonGenerator {
          * with the same names, such as {@code western_first_names.txt} or
          * {@code us_companies_domains.txt}. Files it doesn't hold come from
          * the bundled data. The files are read when {@link #build()} runs, and
-         * use the bundled files' formats (README.md, "Use your own data").
+         * use the bundled files' formats (README.md, "Use your own data"). An
+         * empty {@code intl_companies_domains.txt} leaves the international
+         * companies out, so employers come only from your US file.
          *
          * @param dir a folder, or {@code null} for the bundled data only
          * @return this builder

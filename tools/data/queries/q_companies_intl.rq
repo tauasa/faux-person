@@ -1,16 +1,25 @@
 PREFIX wikibase: <http://wikiba.se/ontology#>
-SELECT ?co ?name ?site ?iso ?hqName ?hqIsPlace ?admName ?links (MAX(?emp) AS ?employees) WHERE {
+SELECT ?co ?name ?site ?hqIso ?hqName ?hqIsPlace ?admName ?links
+       (GROUP_CONCAT(DISTINCT ?iso; separator=" ") AS ?isos) (MAX(?emp) AS ?employees) WHERE {
   ?co wikibase:sitelinks ?links. FILTER(?links >= 4)
-  ?co wdt:P17 ?c. FILTER(?c != wd:Q30)
-  ?c wdt:P297 ?iso.
   ?co wdt:P31/wdt:P279* wd:Q4830453.
+  # Not a US company in any of its countries.
+  FILTER NOT EXISTS { ?co wdt:P17 wd:Q30 }
   FILTER NOT EXISTS { ?co wdt:P576 ?dissolved }
+  # Not a university, school, central bank, sports club, hospital, research
+  # institute or public body, whatever else it's also typed as.
+  FILTER NOT EXISTS {
+    VALUES ?not { wd:Q3918 wd:Q2385804 wd:Q66344 wd:Q847017 wd:Q16917 wd:Q31855 wd:Q327333 wd:Q2659904 }
+    ?co wdt:P31/wdt:P279* ?not
+  }
+  ?co wdt:P17 ?c. ?c wdt:P297 ?iso.
   ?co wdt:P856 ?site.
   ?co rdfs:label ?name. FILTER(LANG(?name) = "en")
   OPTIONAL { ?co wdt:P1128 ?emp }
-  OPTIONAL {
-    ?co wdt:P159 ?hq. ?hq rdfs:label ?hqName. FILTER(LANG(?hqName) = "en")
-    OPTIONAL { ?hq wdt:P31/wdt:P279* wd:Q486972. BIND(true AS ?hqIsPlace) }
-    OPTIONAL { ?hq wdt:P131 ?adm. ?adm wdt:P31/wdt:P279* wd:Q486972. ?adm rdfs:label ?admName. FILTER(LANG(?admName) = "en") }
-  }
-} GROUP BY ?co ?name ?site ?iso ?hqName ?hqIsPlace ?admName ?links ORDER BY DESC(?links)
+  # The country comes from the headquarters, and only a country that still exists.
+  ?co wdt:P159 ?hq. ?hq wdt:P17 ?hqc. ?hqc wdt:P297 ?hqIso.
+  FILTER NOT EXISTS { ?hqc wdt:P576 ?gone }
+  ?hq rdfs:label ?hqName. FILTER(LANG(?hqName) = "en")
+  OPTIONAL { ?hq wdt:P31/wdt:P279* wd:Q486972. BIND(true AS ?hqIsPlace) }
+  OPTIONAL { ?hq wdt:P131 ?adm. ?adm wdt:P31/wdt:P279* wd:Q486972. ?adm rdfs:label ?admName. FILTER(LANG(?admName) = "en") }
+} GROUP BY ?co ?name ?site ?hqIso ?hqName ?hqIsPlace ?admName ?links ORDER BY DESC(?links)

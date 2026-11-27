@@ -125,7 +125,7 @@ class FauxPersonCliTest {
         String latin = String.join("\n", out.lines().skip(1)
                 .map(l -> String.join("|", java.util.Arrays.copyOf(l.split("\\|", -1), 13))).toList());
         byte[] sha = java.security.MessageDigest.getInstance("SHA-256").digest(latin.getBytes(StandardCharsets.UTF_8));
-        assertEquals("83a66370159255aedb5ea19ef9c92849bbbe6e377405b2ab551dfd60f2b1becb",
+        assertEquals("def8f34a7af612fbc09e4f66f26d4db8d872d39db2f7917878b4ebb092a45d97",
                 java.util.HexFormat.of().formatHex(sha));
     }
 

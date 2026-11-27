@@ -77,7 +77,7 @@ public final class FauxCompanyCli {
             }
             CompanyGenerator gen = b.build();
             err.println("seed: " + gen.seed());
-            CliSupport.print(out, format, "name|city|state|country|domain", count, gen::next,
+            CliSupport.print(out, format, "name|city|state|domain|country", count, gen::next,
                     FauxCompanyCli::text, FauxCompanyCli::pipe, FauxCompanyCli::json);
             return 0;
         } catch (IllegalArgumentException e) {
@@ -97,7 +97,7 @@ public final class FauxCompanyCli {
     }
 
     static String pipe(Company c) {
-        return String.join("|", c.name(), c.city(), c.state(), c.country(), c.domain());
+        return String.join("|", c.name(), c.city(), c.state(), c.domain(), c.country());
     }
 
     static String json(Company c) {
