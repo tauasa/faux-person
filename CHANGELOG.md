@@ -5,7 +5,7 @@ range or a bundled file changes what a seed produces, so it's called out here
 (see *Versioning* in [SPEC.md](SPEC.md)). Earlier rulings are in SPEC.md's
 *Decisions* table.
 
-## 0.4.0 (unreleased)
+## 0.4.0 (2026-11-26)
 
 - **Native names in seven more regions:** Japanese (`JPN`, in kanji, or kana
   where Wikidata has no kanji, surname first), Cyrillic (`RUS`), Greek (`GRC`),
