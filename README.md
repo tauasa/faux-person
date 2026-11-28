@@ -138,7 +138,7 @@ The artifact is on Maven Central. Add it to your project (usually in _test_ scop
 <dependency>
   <groupId>org.tauasa</groupId>
   <artifactId>faux-person</artifactId>
-  <version>0.4.0</version>
+  <version>0.5.0</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -325,7 +325,7 @@ directly:
 
 ```bash
 mvn package
-java -jar target/faux-person-0.5.0-SNAPSHOT.jar -n 5 -f json
+java -jar target/faux-person-0.5.0.jar -n 5 -f json
 ```
 
 `pipe` prints a header row and then 14 `|`-separated columns. The last,
@@ -402,8 +402,8 @@ Volkswagen Group [faux], Wolfsburg, DE (volkswagenag.example)
 one company with its city, state and domain, per line. Without the scripts, run their classes from the jar:
 
 ```bash
-java -cp target/faux-person-0.5.0-SNAPSHOT.jar org.tauasa.faux.cli.FauxNameCli -n 5
-java -cp target/faux-person-0.5.0-SNAPSHOT.jar org.tauasa.faux.cli.FauxCompanyCli -n 5
+java -cp target/faux-person-0.5.0.jar org.tauasa.faux.cli.FauxNameCli -n 5
+java -cp target/faux-person-0.5.0.jar org.tauasa.faux.cli.FauxCompanyCli -n 5
 ```
 
 The three scripts share their code in `faux-common.sh`, which isn't run on its

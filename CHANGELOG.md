@@ -5,7 +5,7 @@ range or a bundled file changes what a seed produces, so it's called out here
 (see *Versioning* in [SPEC.md](SPEC.md)). Earlier rulings are in SPEC.md's
 *Decisions* table.
 
-## 0.5.0 (unreleased)
+## 0.5.0 (2026-11-28)
 
 - **People live where they work:** a person's address is in their employer's
   country, and the other way round. A US employer still gives a US address,
