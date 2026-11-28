@@ -12,6 +12,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
+import org.tauasa.faux.model.Address;
 import org.tauasa.faux.model.Company;
 import org.tauasa.faux.model.Person;
 
@@ -33,7 +34,7 @@ class CompanyGeneratorTest {
     @Test
     void byDefaultCompaniesAreMarked() {
         Set<Company> marked = DATA.companies.stream()
-                .map(c -> new Company(c.name() + " [faux]", c.city(), c.state(), c.country(),
+                .map(c -> new Company(c.name() + " [faux]", c.address(),
                         CompanyGenerator.exampleDomain(c.domain())))
                 .collect(Collectors.toSet());
         for (Company c : CompanyGenerator.builder().seed(3).build().next(2000)) {
@@ -49,7 +50,7 @@ class CompanyGeneratorTest {
         for (int i = 0; i < asIs.size(); i++) {
             Company r = asIs.get(i);
             assertTrue(real.contains(r), r.toString());
-            assertEquals(new Company(r.name() + " [faux]", r.city(), r.state(), r.country(),
+            assertEquals(new Company(r.name() + " [faux]", r.address(),
                     CompanyGenerator.exampleDomain(r.domain())), marked.get(i));
         }
         assertTrue(real.contains(CompanyGenerator.builder().seed(7).realCompanies(true).build().split().next()));
@@ -82,8 +83,9 @@ class CompanyGeneratorTest {
         Files.writeString(dir.resolve("us_companies_domains.txt"), "Acme Widgets|Springfield|IL|acme.test\n");
         Files.writeString(dir.resolve("intl_companies_domains.txt"), "Beta Fabrik|Lyon|FR|beta.fr\n");
         Set<Company> seen = Set.copyOf(CompanyGenerator.builder().seed(4).dataDirectory(dir).build().next(40));
-        assertEquals(Set.of(new Company("Acme Widgets [faux]", "Springfield", "IL", "US", "acme.example"),
-                new Company("Beta Fabrik [faux]", "Lyon", "", "FR", "beta.example")), seen);
+        assertEquals(Set.of(
+                new Company("Acme Widgets [faux]", new Address("", "Springfield", "IL", "", "US"), "acme.example"),
+                new Company("Beta Fabrik [faux]", new Address("", "Lyon", "", "", "FR"), "beta.example")), seen);
     }
 
     @Test

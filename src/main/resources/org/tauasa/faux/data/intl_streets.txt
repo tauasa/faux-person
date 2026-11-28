@@ -1,0 +1,7375 @@
+# country|street|city|postal; streets from Wikidata (CC0), city and postal code from GeoNames (CC BY 4.0), see NOTICE; an empty street means the country has a city line only; built 2026-11-27
+AD||Aixirivall|AD600
+AD||Andorra la Vella|AD500
+AD||Anyos|AD500
+AD||Arinsal|AD400
+AD||Canillo|AD200
+AD||El Tarter|AD100
+AD||Encamp|AD700
+AD||la Massana|AD400
+AD||Les Bons|AD200
+AD||les Escaldes|AD500
+AD||Ordino|AD400
+AD||Pas de la Casa|AD100
+AD||Sant Julia de Loria|AD600
+AD||Santa Coloma|AD500
+AD||Vila|AD700
+AE||Abu Dhabi|
+AE||Abu Musa|
+AE||Adh Dhayd|
+AE||Ajman|
+AE||Al Ain City|
+AE||Al Hamriyah|
+AE||Al Jazirah al Hamra'|
+AE||Al Lusayli|46956 58358
+AE||Al Madam|
+AE||Al Manamah|
+AE||Al Raafah|
+AE||Al Sajaah|
+AE||Al Shamkhah City|
+AE||Al Wiqan|
+AE||Ar Rams|
+AE||Ar Ruways|
+AE||Ash Sha'm|
+AE||Bani Yas City|
+AE||Bur Dubai|29305 94726
+AE||DAMAC Hills|23930 69540
+AE||Dibba Al-Fujairah|
+AE||Dibba Al-Hisn|
+AE||Dubai|29358 74391
+AE||Dubai Motor City|22944 71129
+AE||Fujairah|
+AE||Halwan|39189 98567
+AE||Hatta|12578 43533
+AE||Jebel Ali|09592 66693
+AE||Kalba|
+AE||Khalifah A City|
+AE||Khawr Fakkan|
+AE||Lahbab|58151 69561
+AE||Margham|61662 55081
+AE||Masdar City|
+AE||Masfut|10549 44067
+AE||Mohammed Bin Zayed City|
+AE||Murbah|
+AE||Musaffah|
+AE||Muzayri'|
+AE||Ras Al Khaimah|
+AE||Reef Al Fujairah City|
+AE||Sha'biyyat Milehah|
+AE||Sharjah|39189 98567
+AE||Suwayhan|
+AE||Tarif Kalba|
+AE||The Palm Jumeirah|12974 79919
+AE||Umm Al Quwain City|
+AE||Warisan|40264 84641
+AE||Zayed City|
+AF||Aibak|
+AF||Andkhoy|
+AF||Art Khwajah|
+AF||Asadabad|
+AF||Asmar|
+AF||Baghlan|
+AF||Bagram|
+AF||Baharak|
+AF||Balkh|
+AF||Bamyan|
+AF||Baraki Barak|
+AF||Bazarak|
+AF||Charikar|
+AF||Dasht-e Qal'ah|
+AF||Eslam Qaleh|
+AF||Farah|
+AF||Fayzabad|
+AF||Gardez|
+AF||Gereshk|
+AF||Ghazni|
+AF||Ghormach|
+AF||Herat|
+AF||Istalif|
+AF||Jalalabad|
+AF||Jurm|
+AF||Kabul|
+AF||Kandahar|
+AF||Karukh|
+AF||Khan Neshin|
+AF||Khanabad|
+AF||Khost|
+AF||Khulm|
+AF||Kunduz|
+AF||Kushk|
+AF||Lashkar Gah|
+AF||Maymana|
+AF||Mazar-e Sharif|
+AF||Mehtar Lam|
+AF||Nahrin|
+AF||Nili|
+AF||Paghman|
+AF||Pul-e Khumri|
+AF||Qarawul|
+AF||Rustaq|
+AF||Sar-e Pul|
+AF||Shahrak|
+AF||Shibirghan|
+AF||Shindand|
+AF||Taloqan|
+AF||Zaranj|
+AG||All Saints|
+AG||Barbuda Parish|
+AG||Bolands|
+AG||Codrington|
+AG||Falmouth|
+AG||Freetown|
+AG||Jacks Hill|
+AG||Liberta|
+AG||New Winthorpes|
+AG||Parham|
+AG||Piggotts|
+AG||Potters Village|
+AG||Saint John's|
+AG||St. George Parish|
+AG||St. Mary Parish|
+AG||St. Paul Parish|
+AG||St. Peter Parish|
+AG||St. Philip Parish|
+AG||Sugar Factory|
+AG||Swetes|
+AG||Willikies|
+AL|Bulevardi Bajram Curri|Tirana|1800
+AL|Bulevardi Dëshmorët e Kombit|Tirana|1800
+AL|Bulevardi Gjergj Fishta|Tirana|1028
+AL|Bulevardi i Ri|Tirana|1800
+AL|Bulevardi Zhan D'Ark|Tirana|1800
+AL|Bulevardi Zogu I|Tirana|1800
+AL|Kavaja Street|Tirana|1800
+AL|Rruga Abdyl Frashëri|Tirana|1800
+AL|Rruga Adem Jashari|Tirana|1800
+AL|Rruga Ali Demi|Tirana|1800
+AL|Rruga Brigada e VIII|Tirana|1800
+AL|Rruga Butrinti|Sarande|9710
+AL|Rruga Dora d'Istria|Tirana|1028
+AL|Rruga Dëshmorët e 4 Shkurtit|Tirana|1800
+AL|Rruga e Durrësit|Tirana|1800
+AL|Rruga e Elbasanit|Tirana|1800
+AL|Rruga e Kavajës|Tirana|1028
+AL|Rruga Ibrahim Rugova|Tirana|1800
+AL|Rruga Ismail Qemali|Tirana|1800
+AL|Rruga Janos Hunyadi|Tirana|1800
+AL|Rruga Mitat Hoxha|Sarande|9716
+AL|Rruga Mustafa Matohiti|Tirana|1800
+AL|Rruga Papa Gjon Pali II|Tirana|1800
+AL|Rruga Pjetër Bogdani|Tirana|1800
+AL|Rruga Pjetër Budi|Tirana|1800
+AL|Rruga Sami Frashëri|Tirana|1028
+AL|Rruga Vaso Pasha|Tirana|1800
+AL|Sheshi Franc J. Shtraus|Tirana|1800
+AM|Abelyan street|Yerevan|0036
+AM|Alexander Spendiaryan Street|Yerevan|0095
+AM|Anastas Mikoyan Street|Yeghegnadzor|3601
+AM|Aram Street|Yerevan|0010
+AM|Artashisyan street|Yerevan|0086
+AM|Artsakh avenue|Yerevan|0041
+AM|Artsruni Street|Yerevan|0012
+AM|Avag Petrosyan Street|Yerevan|0083
+AM|Bardzraberd street|Yerevan|0082
+AM|Belinsky street|Yerevan|0104
+AM|Bernakirneri street|Yerevan|0018
+AM|Budapesht street|Yerevan|0082
+AM|Deghatan Street|Yerevan|0023
+AM|Fizkulturnikneri Sokağı|Yerevan|0083
+AM|Galoyan Yeghbayrner Street|Yerevan|0095
+AM|Gevorg Jahukyan street|Yerevan|0025
+AM|Gharibjanyan Street|Yerevan|0050
+AM|Gohar Gasparyan street|Yerevan|0095
+AM|Grigor Harutyunyan street|Yerevan|0095
+AM|Grigor Magistros street|Hrazdan|2310
+AM|Hayrik Muradyan Caddesi|Yerevan|0051
+AM|Henri Verneuil Street|Yerevan|0010
+AM|Hin Yerevantsi street|Yerevan|0010
+AM|Isahakyan street|Hrazdan|2310
+AM|Kecharetsu street|Hrazdan|2310
+AM|Khanjyan Street|Yerevan|0083
+AM|King Pap Street|Yerevan|0010
+AM|Kori Sokağı|Yerevan|0070
+AM|Lepsius Sokağı|Yerevan|0093
+AM|Ler Kamsari Street|Yerevan|0019
+AM|Marshal Baghramyan Street|Stepanavan|1904
+AM|Mashtots Avenue|Yerevan|0010
+AM|Nalbandyan Street|Yerevan|0083
+AM|Nikoghayos Tigranyan Sokağı|Yerevan|0037
+AM|Orbeli brothers street|Hrazdan|2310
+AM|Pahlavunyants street|Hrazdan|2310
+AM|Paronyan Street|Yerevan|0015
+AM|Pavstos Buzand Street|Yerevan|0083
+AM|Proshyan Street|Yerevan|0019
+AM|rue Adjarian|Yerevan|0096
+AM|rue d'Athènes|Yerevan|0015
+AM|Sari Tagh 8 and 9 lines|Yerevan|0017
+AM|Shahsuvaryan Street|Yerevan|0102
+AM|Tadevos Avdalbegyan street|Yerevan|0025
+AM|Teryan street|Yerevan|0077
+AM|Vagharshyan Street|Yerevan|0012
+AM|Victor Hambardzumyan Street|Yerevan|0012
+AM|Vormnadirneri street|Yerevan|0104
+AM|Yeznik Koghbatsi Street|Yerevan|0010
+AM|Zoravar Andranik Street|Yeghegnadzor|3601
+AO||Balombo|
+AO||Benfica|
+AO||Benguela|
+AO||Bocoio|
+AO||Caala|
+AO||Cabinda|
+AO||Cacuaco|
+AO||Calumbo|
+AO||Camama|
+AO||Catchiungo|
+AO||Cazenga|
+AO||Chitato|
+AO||Cuito|
+AO||Dundo|
+AO||Gabela|
+AO||Golfe|
+AO||Hoji ya Henda|
+AO||Huambo|
+AO||Ingombota|
+AO||Kikolo|
+AO||Kilamba|
+AO||Kima Kieza|
+AO||Lobito|
+AO||Luanda|
+AO||Lubango|
+AO||Lucapa|
+AO||Luena|
+AO||Maianga|
+AO||Malanje|
+AO||Mbanza Kongo|
+AO||Menongue|
+AO||Mossamedes|
+AO||Mulenvos|
+AO||N'dalatando|
+AO||Navegantes|
+AO||Nova Vida|
+AO||Ondjiva|
+AO||Panguila|
+AO||Ramiros|
+AO||Rangel|
+AO||Samba|
+AO||Sambizanga|
+AO||Saurimo|
+AO||Soyo|
+AO||Sumbe|
+AO||Talatona|
+AO||Uige|
+AO||Viana|
+AO||Vila Flor|
+AO||Zango|
+AR|Avenida 27 de febrero|Valentin Alsina|1822
+AR|Avenida Aimé Painé|Buenos Aires|1871
+AR|Avenida Amancio Alcorta|Valentin Alsina|1870
+AR|Avenida Asturias|Valentin Alsina|1822
+AR|Avenida Avellaneda|Valentin Alsina|1702
+AR|Avenida Cerviño|Buenos Aires|1871
+AR|Avenida Colombia|Buenos Aires|1871
+AR|Avenida Colonia|Buenos Aires|1870
+AR|Avenida Coronel Ramón Falcón|Santos Lugares|1702
+AR|Avenida Corrientes|Buenos Aires|1871
+AR|Avenida Córdoba|Buenos Aires|1871
+AR|Avenida de los Corrales|San Justo|1752
+AR|Avenida Escalada|Valentin Alsina|1822
+AR|Avenida García del Río|Santos Lugares|1602
+AR|Avenida Garmendia|Santos Lugares|1678
+AR|Avenida General Mosconi|Santos Lugares|1678
+AR|Avenida Infanta Isabel|Buenos Aires|1871
+AR|Avenida La Plata|Valentin Alsina|1870
+AR|Avenida Larrazábal|San Justo|1752
+AR|Avenida Lidoro J. Quinteros|Buenos Aires|1602
+AR|Avenida Luis María Campos|Buenos Aires|1602
+AR|Avenida Medrano|Buenos Aires|1871
+AR|Avenida Osvaldo Cruz|Avellaneda|1870
+AR|Avenida Patricias Argentina|Buenos Aires|1871
+AR|Avenida Pinedo|Avellaneda|1870
+AR|Avenida Presidente Castillo|San Isidro|4707
+AR|Avenida Ramón Castillo|Buenos Aires|1871
+AR|Avenida Regimiento de Patricios|Avellaneda|1871
+AR|Avenida Roberto Goyeneche|Santos Lugares|1651
+AR|Avenida Santa Fe|Buenos Aires|1871
+AR|Avenida Sáenz|Valentin Alsina|1870
+AR|Avenida Sánchez de Loria|Buenos Aires|1871
+AR|Avenida Tomás Alva Edison|Buenos Aires|1871
+AR|Avenida Triunvirato|Santos Lugares|1678
+AR|Avenida Warnes|Buenos Aires|1678
+AR|Caballito|Valentin Alsina|1870
+AR|Calle Arroyo|Buenos Aires|1871
+AR|Calle Constantino Gaito|Cordoba|5012
+AR|Calle Maestro Vidal|Cordoba|5012
+AR|Calle Serrano|Buenos Aires|1871
+AR|calle Trinidad Guevara|Buenos Aires|1871
+AR|Caperucita|Valentin Alsina|1870
+AR|Francisco Maciel|Buenos Aires|1871
+AR|Giordano Bruno|Buenos Aires|1871
+AR|La Mar|Buenos Aires|1870
+AR|La Nave|Valentin Alsina|1870
+AR|Masón|Buenos Aires|1871
+AR|Pasaje Rodolfo Rivarola|Buenos Aires|1871
+AR|Perú|Buenos Aires|1871
+AR|Roentgen|Buenos Aires|1871
+AT|1. Haidequerstraße|Vienna|1029
+AT|Albrechtskreithgasse|Vienna|1141
+AT|Annagasse|Linz|4031
+AT|Atterkarweg|Soelden|6458
+AT|Bachgasse|Linz|4490
+AT|Bahnweg|Linz|4490
+AT|Blütenweg|Molln|4591
+AT|Braunspergengasse|Vienna|1053
+AT|Breitwiesergutstraße|Linz|4060
+AT|Bürgergasse|Vienna|1045
+AT|Carloneweg|Linz|4490
+AT|Eberstorferweg|Moedling|1239
+AT|Eggenweg|Asten|4470
+AT|Eulenstraße|Freistadt|4240
+AT|Fischingergasse|Vienna|1128
+AT|Franz von Defregger-Straße|Lienz|9900
+AT|Gentzgasse|Vienna|1183
+AT|Girardigasse|Graz|8042
+AT|Grenzgasse|Vienna|1136
+AT|Hafenstraße|Linz|4031
+AT|Harmoniegasse|Vienna|1097
+AT|Hartriegelgasse|Vienna|2232
+AT|Herzgasse|Vienna|1045
+AT|Jetzingerstraße|Linz|4060
+AT|Josefinengasse|Vienna|1211
+AT|Kahlenberger Straße|Vienna|1208
+AT|Karl-Schwed-Gasse|Moedling|1239
+AT|Kernstockstraße|Innsbruck|6020
+AT|Kreisstraße|Linz|4490
+AT|Landeck|Matrei in Osttirol|9971
+AT|Lettenmayrhof|Wels|4531
+AT|Lindenstraße|Linz|4481
+AT|Meeting Waters|Matrei in Osttirol|9971
+AT|Melissenweg|Linz|4061
+AT|Operngasse|Vienna|1610
+AT|Primelweg|Wels|4055
+AT|Ratschkygasse|Vienna|1128
+AT|Reimmichlgasse|Innsbruck|6020
+AT|Schiefersteinstraße|Linz|4060
+AT|Schlossweg|Soelden|6456
+AT|Sengstschmidtweg|Bad Leonfelden|4190
+AT|Sonnenhang|Lasberg|4292
+AT|Teichgasse|Linz|4073
+AT|Tennispointstraße|Linz|4060
+AT|Trunnerstraße|Vienna|1211
+AT|Tulpengasse|Vienna|1161
+AT|Törringstraße|Salzburg|5072
+AT|Wiener Straße|Linz|4060
+AT|Winkel|Muehldorf|3622
+AT|Zentastraße|Linz|4060
+AU|Argyle Place|Sydney|2000
+AU|Beach Street|Perth|6160
+AU|Bennewith Street|Perth|6163
+AU|Bourke Street|Melbourne|8383
+AU|Bravo Serviceway|Liverpool|2171
+AU|Brinsmead Lane|Liverpool|2171
+AU|Bronte Street|Perth|6892
+AU|Carr Street|North Coogee|6162
+AU|Caussade Crescent|Liverpool|2179
+AU|Collie Street|East Fremantle|6959
+AU|Coulter Lane|Liverpool|2179
+AU|Criterion Street|Hobart|7001
+AU|Custace Street|Liverpool|2171
+AU|Dale Street|East Fremantle|6162
+AU|Dunnell Street|Liverpool|2171
+AU|Edward Street|East Fremantle|6160
+AU|Erskine Link|Perth|6892
+AU|Esperanto Court|St Albans|3046
+AU|Esperanto Court|Toowoomba|4350
+AU|Ferres Street|East Fremantle|6162
+AU|Finnerty Street|Perth|6160
+AU|Fletcher Street|Liverpool|2171
+AU|Flinders Street|Melbourne|3005
+AU|Fothergill Street|East Fremantle|6959
+AU|Garden Island Highway|Rockingham|6169
+AU|Glider Avenue|Liverpool|2171
+AU|Goldsbrough Street|East Fremantle|6959
+AU|Henderson Street|East Fremantle|6959
+AU|Holden Street|Adelaide Hills|5068
+AU|Hudson Mews|East Fremantle|6959
+AU|Lockheed Avenue|Liverpool|2171
+AU|Macquarie Street|Hobart|7006
+AU|Malcolm Street|Perth|6160
+AU|Manning Street|East Fremantle|6959
+AU|Market Street|East Fremantle|6959
+AU|McIntyre Circuit|Liverpool|2171
+AU|Merlin Terrace|Liverpool|2171
+AU|Mouat Street|East Fremantle|6959
+AU|Nelson Road|Hobart|7007
+AU|Newman Court|East Fremantle|6959
+AU|Stirling Street|East Fremantle|6160
+AU|Suffolk Street|East Fremantle|6959
+AU|Swanbourne Street|East Fremantle|6160
+AU|Treacy Lane|Liverpool|2171
+AU|Turbot Street|Brisbane|9015
+AU|Watkins Street|Perth|6162
+AU|William Street|East Fremantle|6959
+AU|Windmill Street|Sydney|2000
+AU|Wright Street|East Fremantle|6162
+AU|Wrigley Lane|Liverpool|2171
+AW||Butucu|
+AW||Malmok|
+AW||Noord|
+AW||Oranjestad|
+AW||Paradera|
+AW||Pos Chiquito|
+AW||San Nicolas|
+AW||Santa Cruz|
+AW||Savaneta|
+AW||Tanki Leendert|
+AZ|28 May Street|Baku|AZ 1170
+AZ|Asef Zeynali street|Baku|AZ 1170
+AZ|Aziz Aliyev Street|Baku|AZ 1170
+AZ|Baku Boulevard|Baku|AZ 1170
+AZ|Boyuk Gala Street|Baku|AZ 1170
+AZ|Castle street in Baku|Baku|AZ 1170
+AZ|Fikret Amirov street|Baku|AZ 1170
+AZ|Firdousy Street|Baku|AZ 1170
+AZ|Gazi Muchamed Street|Baku|AZ 1170
+AZ|Göyüşdü|Aghdam|AZ 0230
+AZ|Hagigat Rzayeva street|Baku|AZ 1170
+AZ|Ilyas Efendiyev Street|Baku|AZ 1170
+AZ|Istiglaliyyat Street|Baku|AZ 1170
+AZ|Javad khan street|Ganja|AZ 2024
+AZ|Khagani Street|Baku|AZ 1170
+AZ|Kichik Gala street|Baku|AZ 1170
+AZ|Military Street|Baku|AZ 1170
+AZ|Mirza Mansur street|Baku|AZ 1170
+AZ|Mirza Shafi Street|Baku|AZ 1170
+AZ|Muslim Magomaev street|Baku|AZ 1170
+AZ|Neftchilar Avenue|Baku|AZ 1170
+AZ|Nizami Street|Baku|AZ 1170
+AZ|Sabir Street|Baku|AZ 1170
+AZ|Saftar Quliyev Street|Baku|AZ 1170
+AZ|Sumgayit Boulevard|Sumgayit|AZ 5009
+AZ|Telman Bagirov Street|Baku|AZ 1170
+AZ|Tower Street|Baku|AZ 1170
+AZ|Vagif Mustafazade Street|Baku|AZ 1170
+AZ|Veli Mammedov street|Baku|AZ 1170
+BA|Abadžiluk|Sarajevo|
+BA|Azize Šaćirbegović street|Sarajevo|
+BA|Aščiluk|Sarajevo|
+BA|Bazardžani Street|Sarajevo|
+BA|Bentbaša|Sarajevo|
+BA|Bistrik|Sarajevo|
+BA|Branilaca Sarajeva|Sarajevo|
+BA|Bravadžiluk|Sarajevo|
+BA|Ferhadija|Sarajevo|
+BA|Franjevačka street|Sarajevo|
+BA|Gospodska street|Banja Luka|
+BA|Hamdija Kreševljaković street|Sarajevo|
+BA|Hiseta|Sarajevo|
+BA|Isaije Mitrovića Street|Banja Luka|
+BA|Kazandžiluk|Sarajevo|
+BA|Koturova|Sarajevo|
+BA|Kovači street|Sarajevo|
+BA|Kralja Petra I Karađorđevića Street|Banja Luka|
+BA|Kranjčevićeva Street in Sarajevo|Sarajevo|
+BA|Kujundžiluk|Sarajevo|
+BA|Kulovića Street|Sarajevo|
+BA|Kundurdžiluk|Sarajevo|
+BA|Marshal Tito street|Sarajevo|
+BA|Mejlijina|Sarajevo|
+BA|Mula Mustafe Bašeskije street|Sarajevo|
+BA|Obala Kulina bana|Sarajevo|
+BA|Obala Maka Dizdara|Sarajevo|
+BA|Patrijarha Makarija Sokolovića Street|Banja Luka|
+BA|Prote Bakovića Street|Sarajevo|
+BA|Radićeva street|Sarajevo|
+BA|Sarači|Sarajevo|
+BA|Sniper Alley|Sarajevo|
+BA|Splitska street|Sarajevo|
+BA|Srđan Aleksić street|Sarajevo|
+BA|Strossmayer Street|Sarajevo|
+BA|Tahčića sokak|Sarajevo|
+BA|Tržnička Street|Banja Luka|
+BA|Valter Perić Street|Sarajevo|
+BA|Wilson's Lane|Sarajevo|
+BA|Za Beglukom|Sarajevo|
+BA|Zelenih beretki|Sarajevo|
+BA|Ćumurija street|Sarajevo|
+BA|Čekaluša|Sarajevo|
+BA|Đulagina|Sarajevo|
+BA|Đure Daničića Street|Banja Luka|
+BD||Ashuganj City|3404
+BD||Bagerhat|9322
+BD||Barishal|8206
+BD||Bhatara|1212
+BD||Bogura|5870
+BD||Brahmanbaria|3420
+BD||Chandpur|3603
+BD||Chattogram|4000
+BD||Comilla|3700
+BD||Cox's Bazar|4702
+BD||Dhaka|1000
+BD||Dinajpur|5216
+BD||Faridpur|2013
+BD||Gazipur|1100
+BD||Gulshan|1212
+BD||Hathazari|4330
+BD||Jamalpur|2011
+BD||Jessore|7460
+BD||Kafrul|1207
+BD||Kaliakair|1941
+BD||Karnaphuli|
+BD||Kasipur|1413
+BD||Khulna|9100
+BD||Kushtia|7003
+BD||Maijdi|3802
+BD||Mohammadpur|6520
+BD||Motijheel|1000
+BD||Mymensingh|
+BD||Nagar Naluakot|1652
+BD||Nagarpur|1938
+BD||Narayanganj|1413
+BD||Narsingdi|1602
+BD||Natore|6623
+BD||Nawabganj|6301
+BD||Pabna|6602
+BD||Paltan|1000
+BD||Par Naogaon|5892
+BD||Puthia|6281
+BD||Rajshahi|6100
+BD||Rangpur|5402
+BD||Saidpur|5311
+BD||Satkhira|9415
+BD||Savar|1349
+BD||Shibganj|5810
+BD||Sirajganj|
+BD||Sonargaon|1511
+BD||Sylhet|3107
+BD||Tangail|1984
+BD||Tungi|1230
+BD||Tungipara|8120
+BE|Avenue de Tercoigne - Tercoignelaan|Watermael-Boitsfort|1170
+BE|Avenue des Azalées - Azalealaan|Schaerbeek|1150
+BE|Avenue du Houx - Hulstlaan|Watermael-Boitsfort|1170
+BE|Avenue du Yorkshire - Yorkshirelaan|Woluwe-Saint-Lambert|1200
+BE|Avenue Edmond Candries - Edmond Candrieslaan|Molenbeek-Saint-Jean|1080
+BE|Bavay street|Dour|7380
+BE|Bouwensstraat|Borgerhout|2140
+BE|Clos Fernand Tonnet - Fernand Tonnetgaarde|Jette|1780
+BE|Den Holland|Merelbeke|9052
+BE|Ezelstraat|Leuven|3012
+BE|Gieterijstraat|Brugge|8000
+BE|Hilda Ramstraat|Berchem|2600
+BE|Jakob Jordaensstraat|Gent|9000
+BE|Karel Waeriplein|Gent|9000
+BE|Leysstraat|Antwerp|2060
+BE|Loppemstraat|Brugge|8000
+BE|Matthias Van den Gheynlaan|Leuven|3000
+BE|Oudebareelstraat|Destelbergen|9040
+BE|Prelatenstraat|Leuven|3000
+BE|Rue Adolphe Roobaert - Adolphe Roobaertstraat|Ganshoren|1082
+BE|Rue Alexandre Markelbach - Alexandre Markelbachstraat|Saint-Josse-ten-Noode|1150
+BE|Rue de l'Amazone - Amazonestraat|Saint-Gilles|1050
+BE|Rue de l'Ourthe|Liege|4020
+BE|Rue de l'Équateur - Evenaarsstraat|Uccle|1180
+BE|Rue de la Blanchisserie - Blekerijstraat|Brussels|1000
+BE|Rue de la Fourche - Greepstraat|Brussels|1000
+BE|Rue des Alcyons - Alcyonstraat|Berchem-Sainte-Agathe|1082
+BE|Rue des Aveugles|Liege|4020
+BE|Rue des Faînes - Beukenootjesstraat|Evere|1120
+BE|Rue des Poulets - Kiekensstraat|Dilbeek|1701
+BE|Rue des Vétérinaires - Veeartsenstraat|Anderlecht|1060
+BE|Rue du Dix-sept avril - Zeventien aprilstraat|Woluwe-Saint-Lambert|1140
+BE|Rue du Niveau - Waterpasstraat|Koekelberg|1081
+BE|Rue du Parc Elisabeth - Elisabethparkstraat|Koekelberg|1081
+BE|Rue du Temple - Tempelstraat|Brussels|1000
+BE|Rue Egide Winteroy - Egide Winteroystraat|Berchem-Sainte-Agathe|1082
+BE|Rue Fosse-aux-Raines|Liege|4020
+BE|Rue L'Olivier - L'Olivierstraat|Saint-Josse-ten-Noode|1150
+BE|Rue Léopold Van Asbroeck - Léopold Van Asbroeckstraat|Auderghem|1160
+BE|Rue Princesse Clémentine - Prinses Clementinastraat|Jette|1020
+BE|Rue René Henry - René Henrystraat|Anderlecht|1070
+BE|Sint-Bavostraat|Wilrijk|2610
+BE|Sint-Simonstraat|Gentbrugge|9050
+BE|Sluisweg|Merelbeke|9052
+BE|Spieringstraat|Leuven|3000
+BE|Vierlindenpad|Mariakerke|9031
+BE|Vrijheidstraat|Antwerp|2060
+BE|Wafelijzerhoeve|Mariakerke|9031
+BE|Werkhuizenstraat|Gentbrugge|9050
+BE|Zeilstraat|Sint-Amandsberg|9040
+BF||Aribinda|
+BF||Bama|
+BF||Banfora|
+BF||Barogo|
+BF||Bittou|
+BF||Bobo-Dioulasso|
+BF||Boulsa|
+BF||Bourzanga|
+BF||Bousse|
+BF||Dano|
+BF||Dedougou|
+BF||Diebougou|
+BF||Djibo|
+BF||Dori|
+BF||Fada N'gourma|
+BF||Gao|
+BF||Gaoua|
+BF||Garango|
+BF||Gourcy|
+BF||Hounde|
+BF||Kaya|
+BF||Kokologo|
+BF||Kombissiri|
+BF||Kongoussi|
+BF||Koudougou|
+BF||Koupela|
+BF||Leo|
+BF||Manga|
+BF||Mogtedo|
+BF||Niangoloko|
+BF||Nioko I|
+BF||Nouna|
+BF||Orodara|
+BF||Ouagadougou|
+BF||Ouahigouya|
+BF||Pissila|
+BF||Po|
+BF||Pouytenga|
+BF||Reo|
+BF||Saaba|
+BF||Saonre|
+BF||Sapouy|
+BF||Solenzo|
+BF||Tenkodogo|
+BF||Titao|
+BF||Tougan|
+BF||Yako|
+BF||Yalgo|
+BF||Ziniare|
+BF||Zorgo|
+BG|Aleksandrovska street|Burgas|8000
+BG|Arsenalski Boulevard|Sofia|1000
+BG|Aton|Sofia|1000
+BG|Avitsena|Sofia|1000
+BG|Bitola street|Varna|9000
+BG|Blyan|Varna|9000
+BG|Boulevard Balgaria|Sofia|1000
+BG|Boulevard Bulgaria in Plovdiv|Plovdiv|4000
+BG|boulevard Tsar Boris III|Plovdiv|4000
+BG|Brezovsko shose in Plovdiv|Plovdiv|4135
+BG|Buxton Brothers Boulevard|Sofia|1000
+BG|D-r Ludvig Zamenhof|Sofia|1000
+BG|Danube Boulevard in Plovdiv|Plovdiv|4000
+BG|Dragan Tsankov Boulevard|Sofia|1000
+BG|Ekzarh Antim I|Sofia|1000
+BG|Evlogi and Hristo Georgievi Boulevard|Sofia|1000
+BG|Fridtjof Nansen-bulevarden|Sofia|1000
+BG|Gereniloto|Koprivshtitsa|2090
+BG|Graf Ignatiev Street|Sofia|1000
+BG|Han Asparuh|Byala Slatina|3200
+BG|Ivancho Saynov|Byala Slatina|3200
+BG|Knyaz Aleksandar Dondukov Boulevard|Sofia|1000
+BG|Knyaz Boris I|Varna|9000
+BG|Kraybrezhna|Byala Slatina|3200
+BG|Lomska|Byala Slatina|3200
+BG|Modest Musorgski|Sofia|1000
+BG|Naycho Tsanov Boulevard in Plovdiv|Plovdiv|4000
+BG|Nencho Palaveev Boulevard|Koprivshtitsa|2090
+BG|Ogosta|Byala Slatina|3200
+BG|Petar Danov - Uchitelya|Sofia|1000
+BG|Plovdiv Main street|Plovdiv|4000
+BG|Rayna Knyaginya|Byala Slatina|3200
+BG|Ruski Pametnik|Sofia|1000
+BG|Sladnitsa|Byala Slatina|3200
+BG|Solunska|Byala Slatina|3200
+BG|St. Alexander Nevsky|Sofia|1000
+BG|Strahil voyvoda|Byala Slatina|3200
+BG|Struga street|Varna|9000
+BG|Tsar Osvoboditel Boulevard|Sofia|1000
+BG|Tsarigradsko shose|Sofia|1731
+BG|Ulica dr. Zamenhofa|Pleven|5800
+BG|Ulica dr. Zamenhofa w Sewliewie|Sevlievo|5400
+BG|Ulica Knjaz Aleksandyr I Batenberg|Plovdiv|4000
+BG|Ulica Ludwika Zamenhofa w Gabrowie|Gabrovo|5300
+BG|Ulica Zamenhofa w Płowdiwie|Plovdiv|4000
+BG|Vasil Aprilov Boulevard in Plovdiv|Plovdiv|4000
+BG|Vasil Levski|Sofia|1000
+BG|Vasil Levski Boulevard|Sofia|1000
+BG|Vazrazhdane|Sofia|1000
+BG|Vitosha Boulevard|Sofia|1000
+BH||Al Hadd|
+BH||Al Muharraq|
+BH||Ar Rifa'|
+BH||Az Zallaq|
+BH||Dar Kulayb|
+BH||Jidd Hafs|
+BH||Madinat Hamad|
+BH||Manama|
+BH||Sanabis|
+BH||Sar|
+BH||Sitrah|
+BI||Bubanza|
+BI||Buganda|
+BI||Bujumbura|
+BI||Bururi|
+BI||Bwambarangwe|
+BI||Cankuzo|
+BI||Cendajuru|
+BI||Cibitoke|
+BI||Gatumba|
+BI||Gitega|
+BI||Giteranyi|
+BI||Isale|
+BI||Kanyosha|
+BI||Karusi|
+BI||Kayanza|
+BI||Kayogoro|
+BI||Kirundo|
+BI||Mabanda|
+BI||Makamba|
+BI||Matana|
+BI||Mpanda|
+BI||Mugongomanga|
+BI||Muramvya|
+BI||Muyinga|
+BI||Muzinda|
+BI||Mwaro|
+BI||Ngozi|
+BI||Rumonge|
+BI||Rutana|
+BI||Ruyigi|
+BI||Vyanda|
+BI||Zanandore|
+BJ||Abomey|
+BJ||Abomey-Calavi|
+BJ||Adjarra|
+BJ||Allada|
+BJ||Aplahoue|
+BJ||Banigbe|
+BJ||Banikoara|
+BJ||Bassila|
+BJ||Bembereke|
+BJ||Bohicon|
+BJ||Boukoumbe|
+BJ||Cobly|
+BJ||Come|
+BJ||Cotonou|
+BJ||Cove|
+BJ||Dassa-Zoume|
+BJ||Djidja|
+BJ||Djougou|
+BJ||Dogbo|
+BJ||Ekpe|
+BJ||Godome|
+BJ||Kalale|
+BJ||Kandi|
+BJ||Kerou|
+BJ||Ketou|
+BJ||Klouekanme|
+BJ||Kopargo|
+BJ||Kouande|
+BJ||Kpozoun|
+BJ||Lokossa|
+BJ||Malanville|
+BJ||Materi|
+BJ||Misserete|
+BJ||Natitingou|
+BJ||Ndali|
+BJ||Nikki|
+BJ||Ouidah|
+BJ||Parakou|
+BJ||Pehonko|
+BJ||Pobe|
+BJ||Porto-Novo|
+BJ||Sakete|
+BJ||Savalou|
+BJ||Save|
+BJ||Se|
+BJ||Segbana|
+BJ||Semi|
+BJ||Sinende|
+BJ||Tanguieta|
+BJ||Tchaourou|
+BM||Devonshire Parish|DV BX
+BM||Hamilton|HM PX
+BM||Hamilton Parish|FL BX
+BM||Paget Parish|PG 06
+BM||Saint George|HS 02
+BM||Sandys Parish|SB 03
+BM||Smith's Parish|FL BX
+BM||Southampton Parish|WK 03
+BM||St George's Parish|GE CX
+BM||Warwick Parish|WK BX
+BN||Bandar Seri Begawan|
+BN||Bangar|
+BN||Junjongan|
+BN||Kampong Ayer|
+BN||Kampong Kiajong|
+BN||Kampong Lambak A|
+BN||Kampong Meragang|
+BN||Kampong Mulaut|
+BN||Kampung Beribi|
+BN||Kampung Jerudong|
+BN||Kampung Lugu|
+BN||Kampung Mata-Mata|
+BN||Kampung Panaga|
+BN||Kampung Pangkalan Gadong|
+BN||Kampung Peninjau|
+BN||Kampung Rimba|
+BN||Kampung Selayun|
+BN||Kampung Sungai Teraban|
+BN||Kampung Tanah Jambu|
+BN||Kampung Tanjong Nangka|
+BN||Kapok|
+BN||Katok|
+BN||Keriam|
+BN||Kiudang|
+BN||Kota Batu|
+BN||Kuala Belait|
+BN||Kulapis|
+BN||Kupang|
+BN||Lamunin|
+BN||Liang|
+BN||Lumapas|
+BN||Mentiri|
+BN||Muara|
+BN||Penanjong|
+BN||Pengkalan Batu|
+BN||Perumahan Negara Panchor|
+BN||Salambigar|
+BN||Sengkarai|
+BN||Sengkurong|
+BN||Serasa|
+BN||Seria|
+BN||Sinarubai|
+BN||Subok|
+BN||Sungai Hanching|
+BN||Telamba|
+BN||Telisai|
+BN||Tutong|
+BO||Achocalla|
+BO||Ascencion de Guarayos|
+BO||Ascension|
+BO||Bermejo|
+BO||Camiri|
+BO||Caranavi|
+BO||Ckochas|
+BO||Cobija|
+BO||Cochabamba|
+BO||Colcapirhua|
+BO||Colchani|
+BO||Cotoca|
+BO||El Torno|
+BO||Guayaramerin|
+BO||Huanuni|
+BO||La Paz|
+BO||Laja|
+BO||Llallagua|
+BO||Mecapaca|
+BO||Mineros|
+BO||Mizque|
+BO||Montero|
+BO||Okinawa Uno|
+BO||Oruro|
+BO||Patacamaya|
+BO||Portachuelo|
+BO||Potosi|
+BO||Puerto Suarez|
+BO||Punata|
+BO||Quillacollo|
+BO||Riberalta|
+BO||Rurrenabaque|
+BO||Sacaba|
+BO||San Borja|
+BO||San Ignacio de Velasco|
+BO||Santa Ana de Yacuma|
+BO||Santa Cruz de la Sierra|
+BO||Sipe Sipe|
+BO||Sucre|
+BO||Tarija|
+BO||Tiquipaya|
+BO||Trinidad|
+BO||Tupiza|
+BO||Viacha|
+BO||Villa Yapacani|
+BO||Villamontes|
+BO||Villazon|
+BO||Vinto|
+BO||Warnes|
+BO||Yacuiba|
+BR|Alameda Brustlein|Joinville|
+BR|Alameda dos Estados|Plano Piloto|71000-000
+BR|Avenida Almirante Barroso|Belem|
+BR|Avenida Ayrton Senna|Barra da Tijuca|20000-000
+BR|Avenida Ayrton Senna da Silva|Londrina|
+BR|Avenida Brasil|Belo Horizonte|30000-000
+BR|Avenida Brigadeiro Faria Lima|Sao Paulo|01000-000
+BR|Avenida Cesário Carlos de Almeida|Laranjal Paulista|18500-000
+BR|Avenida Dendezeiros do Bonfim|Salvador|40000-000
+BR|Avenida Dr. Cândido Mota Filho|Osasco|06000-000
+BR|Avenida Feliciano Coelho|Macapa|
+BR|Avenida General San Martin|Salvador|40000-000
+BR|Avenida Jorge Amado|Salvador|
+BR|Avenida José Joaquim Seabra|Salvador|
+BR|Avenida Koeler|Petropolis|
+BR|Avenida Lineu de Paula Machado|Leblon|
+BR|Avenida Luís Eduardo Magalhães|Salvador|
+BR|Avenida Madre Benvenuta|Trindade|88000-000
+BR|Avenida Mário Leal Ferreira|Salvador|
+BR|Avenida Presidente Antônio Carlos|Rio de Janeiro|24000-000
+BR|Avenida Presidente Castelo Branco|Salvador|
+BR|Avenida Presidente Getúlio Vargas|Cuiaba|
+BR|Avenida Professor Magalhães Neto|Salvador|
+BR|Avenida Santos Dumont|Lauro de Freitas|42700-000
+BR|Avenida Simón Bolívar|Salvador|
+BR|Beco do Batman|Sao Paulo|
+BR|Rua Alagoas|Belo Horizonte|30000-000
+BR|Rua Coronel Xavier de Toledo|Sao Paulo|01000-000
+BR|Rua Costa Sena|Ouro Preto|
+BR|Rua Cônego Simões|Ouro Preto|
+BR|Rua da Conceição da Praia|Salvador|
+BR|Rua das Palmeiras|Joinville|
+BR|Rua Direta de Tancredo Neves|Salvador|40000-000
+BR|Rua do Tira Chapéu|Salvador|
+BR|Rua dos Adobes|Salvador|
+BR|Rua dos Rodoviários|Salvador|
+BR|Rua Miguel Calmon|Salvador|
+BR|Rua Ozório Duque Estrada|Curitiba|83320-000
+BR|Rua Padre Agostinho Gomes|Salvador|
+BR|Rua Padre Belchior|Belo Horizonte|30000-000
+BR|Rua Pedro Gama|Salvador|
+BR|Rua Portugal|Salvador|
+BR|Rua Professor Sabino Silva|Salvador|
+BR|Rua Ruy Barbosa|Salvador|
+BR|Rua Santo Amaro|Sao Paulo|01000-000
+BR|Rua Sergipe|Belo Horizonte|30000-000
+BR|Rua Suaidan Abud|Laranjal Paulista|18500-000
+BR|Rua São José|Ouro Preto|
+BR|Rua Vinte e Um de Abril|Salvador|
+BR|Rua Visconde de Nacar|Ponta Grossa|
+BS||Abraham's Bay|
+BS||Alice Town|
+BS||Andros Town|
+BS||Arthur's Town|
+BS||Black Point|
+BS||Bullocks Harbour|
+BS||Clarence Town|
+BS||Cockburn Town|
+BS||Colonel Hill|
+BS||Cooper's Town|
+BS||Duncan Town|
+BS||Dunmore Town|
+BS||Eight Mile Rock|
+BS||Freeport|
+BS||Freetown|
+BS||George Town|
+BS||Governor's Harbour|
+BS||Grand Cay|
+BS||Hard Bargain|
+BS||High Rock|
+BS||Hope Town|
+BS||Kemps Bay|
+BS||Killarney|
+BS||Lucaya|
+BS||Mangrove Cay|
+BS||Marsh Harbour|
+BS||Masons Bay|
+BS||Matthew Town|
+BS||Nassau|
+BS||Port Nelson|
+BS||Rock Sound|
+BS||San Andros|
+BS||Sandy Point|
+BS||Spanish Wells|
+BS||Treasure Cay|
+BS||Upper Bogue|
+BS||West End|
+BT||Autsho|
+BT||Daga|
+BT||Daphu|
+BT||Gasa|
+BT||Geylegphug|
+BT||Ha|
+BT||Jakar|
+BT||Laya|
+BT||Lhuentse|
+BT||Lungtenzampa|
+BT||Mebisa|
+BT||Mongar|
+BT||Pajo|
+BT||Panbang|
+BT||Paro|
+BT||Pemagatshel|
+BT||Phuntsholing|
+BT||Punakha|
+BT||Samdrup Jongkhar|
+BT||Samtengang|
+BT||Samtse|
+BT||Sarpang|
+BT||Shemgang|
+BT||Thimphu|
+BT||Trashi Yangtse|
+BT||Trashigang|
+BT||Trongsa|
+BT||Tsimasham|
+BT||Tsirang|
+BT||Ura|
+BT||Wangdue Phodrang|
+BW||Bobonong|
+BW||Bokaa|
+BW||Borolong|
+BW||Francistown|
+BW||Gabane|
+BW||Gaborone|
+BW||Ghanzi|
+BW||Gumare|
+BW||Janeng|
+BW||Jwaneng|
+BW||Kang|
+BW||Kanye|
+BW||Kasane|
+BW||Kopong|
+BW||Kumakwane|
+BW||Lentsweletau|
+BW||Lerala|
+BW||Letlhakane|
+BW||Letlhakeng|
+BW||Lobatse|
+BW||Lotlhakane|
+BW||Mahalapye|
+BW||Masunga|
+BW||Maun|
+BW||Metsemotlhaba|
+BW||Mmadinare|
+BW||Mmankgodi|
+BW||Mmopone|
+BW||Mochudi|
+BW||Mogoditshane|
+BW||Molepolole|
+BW||Mosopa|
+BW||Nata|
+BW||Oodi|
+BW||Orapa|
+BW||Otse|
+BW||Palapye|
+BW||Ramotswa|
+BW||Sefophe|
+BW||Selebi-Phikwe|
+BW||Serowe|
+BW||Sese|
+BW||Shakawe|
+BW||Shoshong|
+BW||Tati Siding|
+BW||Thamaga|
+BW||Tlokweng|
+BW||Tonota|
+BW||Tshabong|
+BW||Tutume|
+BY|Artylieryjskaja Street|Homyel'|246000
+BY|Astrašyckaja vulica|Kalodzishchy|223055
+BY|Avakiana Street|Minsk|220000
+BY|Aĺšeŭskaha Street|Minsk|220000
+BY|Bangalore Square|Minsk|220902
+BY|Barykina Street|Homyel'|246000
+BY|Baŭmana Street|Viciebsk|210000
+BY|Branskaja Street|Homyel'|213851
+BY|Brykieta Street|Minsk|223018
+BY|Budyonny Street|Hrodna|230000
+BY|Bulwar Mulawina|Minsk|220902
+BY|Dyndy Street|Homyel'|246000
+BY|Fiedasiejenki Street|Homyel'|246000
+BY|Iryninskaja Street|Homyel'|246000
+BY|Iĺiča Street|Homyel'|247001
+BY|Jakubava Street|Homyel'|246000
+BY|Jazepa Žynoviča Street|Minsk|223018
+BY|Juraŭskaja Street|Minsk|223021
+BY|Kalienikava Street|Homyel'|247001
+BY|Kamsamoĺskaja street|Minsk|220000
+BY|Karpoviča Street|Homyel'|246000
+BY|Karziuki Street|Minsk|223056
+BY|Lazarenki Street|Mahiliou|212000
+BY|Lienina Street|Minsk|220000
+BY|Liubienskaja Street|Homyel'|246000
+BY|Nabiarežnaja Street|Homyel'|246000
+BY|Palieskaja Street|Homyel'|246000
+BY|Rafijeva Street|Minsk|223021
+BY|Ramanaŭskaja Slabada Street|Minsk|220000
+BY|Sialianskaja Street|Homyel'|246000
+BY|Sievastopaĺskaja Street|Homyel'|246000
+BY|Skliazniova Street|Homyel'|247001
+BY|Socialističeskaja|Minsk|220000
+BY|St. Andrew's Street|Minsk|220000
+BY|Svabody Street|Homyel'|246000
+BY|Traliejbusnaja Street|Homyel'|246000
+BY|Uladzislava Halubka Street|Minsk|223018
+BY|ulica Janki Żurby|Mahiliou|213130
+BY|Ulica Ludwika Zamenhofa w Grodnie|Hrodna|231710
+BY|Valhadonskaja vulica|Minsk|220902
+BY|Vaŭpšasava Street|Minsk|220902
+BY|Vulica Janki Kupali|Minsk|220000
+BY|Vulica Suvorava|Minsk|220902
+BY|Vyhockaha Street|Minsk|223043
+BY|Zalataja Horka Street|Minsk|220902
+BY|Zaslaŭskaja Street|Minsk|220000
+BY|Zavaĺnaja Street|Pinsk|225710
+BY|Šafarnianskaja Street|Lyasny|223055
+BY|Šasejnaja Street|Homyel'|246000
+BY|Šyrokaja Street|Homyel'|246000
+BZ||Armenia|
+BZ||August Pine Ridge|
+BZ||Belize City|
+BZ||Bella Vista|
+BZ||Belmopan|
+BZ||Benque Viejo el Carmen|
+BZ||Bullet Tree Falls|
+BZ||Burrell Boom|
+BZ||Camelote|
+BZ||Carmelita|
+BZ||Caye Caulker|
+BZ||Corozal|
+BZ||Cotton Tree|
+BZ||Dangriga|
+BZ||Guinea Grass|
+BZ||Hattieville|
+BZ||Independence and Mango Creek|
+BZ||Ladyville|
+BZ||Little Belize|
+BZ||Lord's Bank|
+BZ||Orange Walk|
+BZ||Placencia|
+BZ||Pomona|
+BZ||Punta Gorda|
+BZ||Red Bank Village|
+BZ||Roaring Creek|
+BZ||San Antonio|
+BZ||San Estevan|
+BZ||San Felipe|
+BZ||San Ignacio|
+BZ||San Jose|
+BZ||San Jose Palmar|
+BZ||San Jose Soccoths|
+BZ||San Narciso|
+BZ||San Pedro|
+BZ||San Roman Village|
+BZ||Sand Hill|
+BZ||Santa Cruz|
+BZ||Santa Elena|
+BZ||Santa Familia|
+BZ||Santa Rosa Village|
+BZ||Sarteneja|
+BZ||Seine Bight Village|
+BZ||Shipyard|
+BZ||Silk Grass|
+BZ||Spanish Lookout|
+BZ||Teakettle Village|
+BZ||Trial Farm|
+BZ||Valley of Peace|
+BZ||Yo Creek|
+CA|Acadia Street|Wolfville|B4P
+CA|Atkins Road|Conception Bay South|A1W
+CA|avenue Connaught|Cote-Saint-Luc|H4X
+CA|avenue Grey|Westmount|H4A
+CA|Avenue Saint-Sacrement|Quebec|G1N
+CA|Boggans Lane|Paradise|A1W
+CA|Boggans Meadow|Paradise|A1W
+CA|Bond Street|Toronto|M5B
+CA|Boulevard Angrignon|Le Sud-Ouest|H4E
+CA|boulevard Brien|Repentigny|J6A
+CA|boulevard Charest|Quebec|G1R
+CA|Boulevard de la Gappe|Gatineau|J8T
+CA|boulevard du Saint-Maurice|Trois-Rivieres|G8Z
+CA|boulevard Hochelaga|L'Ancienne-Lorette|G1V
+CA|boulevard Métropolitain|Cote-Saint-Luc|H4M
+CA|chemin Saint-Louis|Quebec|G1S
+CA|chemin Sainte-Foy|Quebec|G1V
+CA|Cote de la Fabrique|Quebec|G1R
+CA|Côte-Saint-Luc Road|Cote-Saint-Luc|H4V
+CA|De Salaberry Avenue|Quebec|G1R
+CA|Drury Lane|Digby|
+CA|Front Street|Toronto|M5X
+CA|Kempt Street|Lunenburg|
+CA|La Vérendrye Boulevard East|Gatineau|J8P
+CA|Lincoln Street|Lunenburg|
+CA|Main Street|Wolfville|B4P
+CA|Millers Road|Paradise|A1W
+CA|Mountain Street|Ville-Marie|H3G
+CA|Nantucket Avenue|Dartmouth|B3A
+CA|Pine Avenue|Le Plateau-Mont-Royal|H2W
+CA|Pleasant Street|Truro|B2N
+CA|Robie Street|Truro|B2N
+CA|rue Allard|Le Sud-Ouest|H4E
+CA|Rue de l'Espéranto|L'Ancienne-Lorette|G1W
+CA|rue de la Cathédrale|Ville-Marie|H3B
+CA|Rue de la Couronne|Quebec|G1R
+CA|Rue des Pains-Bénits|Quebec|G1R
+CA|rue du Corps-de-Garde|Quebec|G1R
+CA|Rue du Parloir|Quebec|G1R
+CA|rue Montbrun|Villeray-Saint-Michel-Parc-Extension|H1S
+CA|Rue Notre-Dame|Trois-Rivieres|G8Z
+CA|rue Notre-Dame Est|Trois-Rivieres|G8T
+CA|rue Radisson|Trois-Rivieres|G8Z
+CA|rue Saint-Stanislas|Quebec|G1R
+CA|rue Sainte-Angèle|Quebec|G1R
+CA|rue Sainte-Anne|Quebec|G1R
+CA|rue Sainte-Marguerite|Le Sud-Ouest|H3Z
+CA|Rue Sainte-Ursule|Quebec|G1R
+CA|Townsend Street|Lunenburg|
+CA|Victoria Street|Digby|
+CD||Babamba|
+CD||Bakwa|
+CD||Bandundu Province|
+CD||Beni|
+CD||Binga|
+CD||Boma|
+CD||Bukama|
+CD||Bukavu|
+CD||Bulungu|
+CD||Bumba|
+CD||Bunia|
+CD||Butembo|
+CD||Gandajika|
+CD||Gemena|
+CD||Idiofa|
+CD||Ilebo|
+CD||Inkisi|
+CD||Isiro|
+CD||Kabinda|
+CD||Kalemie|
+CD||Kambove|
+CD||Kamina|
+CD||Kananga|
+CD||Kasongo|
+CD||Katwa|
+CD||Kikwit|
+CD||Kindu|
+CD||Kinshasa|
+CD||Kipushi|
+CD||Kisangani|
+CD||Kolwezi|
+CD||Kongolo|
+CD||Likasi|
+CD||Lisala|
+CD||Lodja|
+CD||Lubumbashi|
+CD||Manono|
+CD||Masina|
+CD||Matadi|
+CD||Mbandaka|
+CD||Mbanza-Ngungu|
+CD||Mbuji-Mayi|
+CD||Moanda|
+CD||Mulongo|
+CD||Mwene|
+CD||Mwene-Ditu|
+CD||Rutshuru|
+CD||Tshikapa|
+CD||Tshilenge|
+CD||Uvira|
+CF||Abba|
+CF||Alindao|
+CF||Baboua|
+CF||Bambari|
+CF||Bamingui|
+CF||Bangassou|
+CF||Bangui|
+CF||Baoro|
+CF||Batangafo|
+CF||Bayanga|
+CF||Begoua|
+CF||Berberati|
+CF||Bimbo|
+CF||Birao|
+CF||Boali|
+CF||Bobangui|
+CF||Bocaranga|
+CF||Boda|
+CF||Bossangoa|
+CF||Bossembele|
+CF||Bossemtele I|
+CF||Bouar|
+CF||Bouca|
+CF||Bozoum|
+CF||Bria|
+CF||Carnot|
+CF||Damara|
+CF||Dekoa|
+CF||Gambo|
+CF||Gamboula|
+CF||Grimari|
+CF||Ippy|
+CF||Kabo|
+CF||Kaboro|
+CF||Kaga-Bandoro|
+CF||Kembe|
+CF||Kouango|
+CF||Mbaiki|
+CF||Mbres|
+CF||Mobaye|
+CF||Mongoumba|
+CF||Ndele|
+CF||Nola|
+CF||Obo|
+CF||Ouadda|
+CF||Ouango|
+CF||Paoua|
+CF||Sibut|
+CF||Yaloke|
+CF||Zemio|
+CH|Anwilerstrasse|Reinach|4059
+CH|Bannwegli|Riehen|4126
+CH|Baumackerstrasse|Opfikon|8050
+CH|Bionstrasse|Zuerich|8044
+CH|Blümlisalpstrasse|Zuerich|8006
+CH|Büsiseeweg|Opfikon|8046
+CH|Carmenstrasse|Zuerich|8032
+CH|Eichholzweg|Zuerich|8049
+CH|Fasanenstrasse|Riehen|4058
+CH|Fatiostrasse|Basel|4056
+CH|Fürstweg|Zuerich|8037
+CH|Gerberberglein|Basel|4089
+CH|Goethestrasse|Zuerich|8098
+CH|Haspelstrasse|Adliswil|8038
+CH|Heiristeg|Zuerich|8001
+CH|Horneggstrasse|Zuerich|8008
+CH|Hottingerbergstrasse|Zuerich|8044
+CH|Hungerbachweg|Riehen|4125
+CH|Jungholzweg|Opfikon|8050
+CH|Keltenweg|Riehen|4125
+CH|Kilchbergsteig|Zuerich|8038
+CH|Küchengasse|Basel|4053
+CH|Landoltstrasse|Zuerich|8044
+CH|Lenggfussweg|Zuerich|8053
+CH|Metzgergasse|Zuerich|8001
+CH|Nansenstrasse|Opfikon|8050
+CH|Nasenweg|Basel|4052
+CH|Rankstrasse|Riehen|4058
+CH|Rathausstrasse|Rapperswil|8640
+CH|Rebbergstrasse|Zuerich|8049
+CH|Ricarda-Huch-Strasse|Opfikon|8050
+CH|rue du Collège|Grenchen|2502
+CH|rue du Jura|Grenchen|2502
+CH|rue Haute|Grenchen|2502
+CH|Röschibachstrasse|Zuerich|8037
+CH|Sagentobelstrasse|Zuerich|8044
+CH|Schertlingasse|Basel|4051
+CH|Schlossgasse|Riehen|4125
+CH|Schreinerstrasse|Sankt Gallen|9000
+CH|Stettbacherrain|Dubendorf|8051
+CH|Sundgauerstrasse|Basel|4091
+CH|Südstrasse|Zuerich|8008
+CH|Talwiesenstrasse|Zuerich|8045
+CH|Theaterstrasse|Zuerich|8098
+CH|Tuchmacherstrasse|Adliswil|8038
+CH|Tödistrasse|Zuerich|8001
+CH|voie couverte de Saint-Jean|Geneva|1203
+CH|Werdstrasse|Zuerich|8003
+CH|Ziegelhüttenstrasse|Dubendorf|8051
+CH|Zoo-Parkplatz|Basel|4054
+CI||Abengourou|
+CI||Abidjan|
+CI||Abobo|
+CI||Aboisso|
+CI||Adzope|
+CI||Affery|
+CI||Agboville|
+CI||Agnibilekrou|
+CI||Anyama|
+CI||Bingerville|
+CI||Blolequin|
+CI||Bondoukou|
+CI||Bonon|
+CI||Bonoua|
+CI||Bouafle|
+CI||Bouake|
+CI||Boundiali|
+CI||Dabou|
+CI||Daloa|
+CI||Danane|
+CI||Daoukro|
+CI||Diegonefla|
+CI||Dimbokro|
+CI||Divo|
+CI||Doropo|
+CI||Duekoue|
+CI||Ferkessedougou|
+CI||Gagnoa|
+CI||Grand-Bassam|
+CI||Guiglo|
+CI||Issia|
+CI||Katiola|
+CI||Korhogo|
+CI||Koumassi|
+CI||Man|
+CI||Marcory|
+CI||Meagui|
+CI||Odienne|
+CI||Ouangolodougou|
+CI||Oume|
+CI||San-Pedro|
+CI||Seguela|
+CI||Sinfra|
+CI||Soubre|
+CI||Tengrela|
+CI||Toumodi|
+CI||Vavoua|
+CI||Yamoussoukro|
+CI||Zagne|
+CI||Zuenoula|
+CL|Avenida Alejandro Fleming|Penalolen|7850000
+CL|Avenida Alessandri|Vina del Mar|2520000
+CL|Avenida Brasil|Chillan|3780000
+CL|Avenida Camino a Rinconada|Maipu|9250000
+CL|Avenida Costanera|Concepcion|4030000
+CL|Avenida Cristóbal Colón|Penalolen|7630000
+CL|Avenida Departamental|Santiago|8940000
+CL|Avenida Diagonal Las Termas|Chillan|3780000
+CL|Avenida Ecuador|Chillan|3780000
+CL|Avenida Hernando de Magallanes|Penalolen|7630000
+CL|Avenida Irarrázaval|Santiago|7750000
+CL|avenida José Pedro Alessandri|Santiago|7750000
+CL|Avenida Las Rejas|Lo Prado|9160000
+CL|Avenida Las Torres|Lo Prado|9200000
+CL|Avenida Lo Errázuriz|Maipu|9200000
+CL|Avenida Lo Marcoleta|Quilicura|8700000
+CL|Avenida Macul|Santiago|7810000
+CL|Avenida Manquehue|Penalolen|7630000
+CL|Avenida Matucana|Santiago|8500000
+CL|Avenida Nueva Providencia|Santiago|7500000
+CL|Avenida Ossa|Penalolen|7850000
+CL|Avenida Padre Hurtado|Penalolen|7550000
+CL|Avenida Paseo Pie Andino|Providencia|7630000
+CL|Avenida Pedro Montt|Valparaiso|2520000
+CL|Avenida Presidente Sebastián Piñera Echenique|Penalolen|7850000
+CL|Avenida San Pablo|Lo Prado|8980000
+CL|Avenida Tomás Moro|Penalolen|7850000
+CL|Avenida Vicuña Mackenna|Santiago|8940000
+CL|Avenida Víctor Jara|Santiago|9160000
+CL|Calle 21 de Mayo|Santiago|8320000
+CL|Calle Alcántara|Santiago|7500000
+CL|Calle Antonia López de Bello|Santiago|8420000
+CL|Calle Arturo Prat|Santiago|8320000
+CL|Calle Catedral|Santiago|8320000
+CL|Calle Centenario|Chonchi|
+CL|Calle Chacabuco|Santiago|8320000
+CL|Calle Dieciocho|Santiago|8320000
+CL|Calle José Joaquín Vallejos|Santiago|8900000
+CL|Calle Keller|Santiago|7500000
+CL|Calle Mac-Iver|Santiago|8320000
+CL|Calle Monjitas|Santiago|8320000
+CL|Calle Nataniel Cox|Santiago|8320000
+CL|Calle Ossa Cerda|Caldera|
+CL|calle Ricardo Morales|Santiago|8900000
+CL|Calle San Diego|Santiago|8320000
+CL|Calle Santo Domingo|Santiago|8320000
+CL|Calle Teatinos|Santiago|8320000
+CL|Costanera Sur|Renca|8640000
+CL|Paseo 21 de Mayo|Valparaiso|
+CL|Paseo Peatonal Alonso de Ercilla y Zúñiga|Concepcion|4030000
+CM||Bafang|
+CM||Bafia|
+CM||Bafoussam|
+CM||Bamenda|
+CM||Bangangte|
+CM||Banyo|
+CM||Batouri|
+CM||Bertoua|
+CM||Buea|
+CM||Douala|
+CM||Dschang|
+CM||Ebolowa|
+CM||Edea|
+CM||Fontem|
+CM||Foumban|
+CM||Foumbot|
+CM||Fundong|
+CM||Garoua|
+CM||Garoua Boulai|
+CM||Guider|
+CM||Kousseri|
+CM||Kribi|
+CM||Kumba|
+CM||Kumbo|
+CM||Limbe|
+CM||Loum|
+CM||Manjo|
+CM||Maroua|
+CM||Mbalmayo|
+CM||Mbanga|
+CM||Mbouda|
+CM||Meiganga|
+CM||Melong|
+CM||Mokolo|
+CM||Mora|
+CM||Mutengene|
+CM||Muyuka|
+CM||Ndop|
+CM||Ngaoundal|
+CM||Ngaoundere|
+CM||Nkongsamba|
+CM||Obala|
+CM||Oku|
+CM||Sangmelima|
+CM||Tcheboa|
+CM||Tibati|
+CM||Tiko|
+CM||Wum|
+CM||Yagoua|
+CM||Yaounde|
+CN|Cheung Shing Street|Shawei|
+CN|Dai Pang Street|Shenzhen City Centre|
+CN|Enna Boulevard|Shawei|
+CN|Ferentino Boulevard|Shawei|
+CN|First Street Tai Wai|Huanggang|
+CN|Fu Keung Street|Huanggang|
+CN|Fu Shing Street|Shenzhenwan|
+CN|Fuchengmen Inner Street|Beijing|102600
+CN|Helorus Boulevard|Shawei|
+CN|Hin Kwai Lane|Huanggang|
+CN|Hung Shui Kiu Main Street|Shenzhenwan|
+CN|Kak Tin Village Fourth Street|Huanggang|
+CN|Kam Chuk Lane|Huanggang|
+CN|King Cho Road|Huanggang|
+CN|Kui Tat Street|Shenzhen City Centre|518000
+CN|Kwei Tei Street|Nanyuan Residential|
+CN|Loi Tung Sixth Lane|Shenzhen City Centre|
+CN|Ma Kam Street|Nanyuan Residential|
+CN|Ma Wan Main Street|Huanggang|
+CN|Mun Hau Tsuen Lane No.4|Shenzhen City Centre|518000
+CN|Nam Pin Wai Tenth Lane|Shawei|
+CN|Pak Tai Temple Street|Shawei|
+CN|Pak Wai Lane|Shenzhen City Centre|518000
+CN|Ping Tong Street West|Shenzhenwan|
+CN|Ping'anli West Street|Beijing|102600
+CN|Po Sheung Tsuen Lane No.1|Shenzhen City Centre|518000
+CN|Po Sheung Tsuen Lane No.11|Shenzhen City Centre|518000
+CN|Po Sheung Tsuen Lane No.6|Shenzhen City Centre|518000
+CN|Po Sheung Tsuen Lane No.9|Shenzhen City Centre|518000
+CN|Pratas Street|Huanggang|
+CN|Rua do Campo|Sao Lazaro|519100
+CN|Second Street Tai Wai|Huanggang|
+CN|Shan Mei Street|Nanyuan Residential|
+CN|Sheung Ko Tan Street|Huanggang|
+CN|Shiu Wo Street|Huanggang|
+CN|Small Traders New Village Street 7|Shawei|
+CN|Tai Uk Street|Huanggang|
+CN|Tai Yuen Tsuen Lane No.3|Shenzhen City Centre|518000
+CN|Tai Yuen Tsuen Lane No.6|Shenzhen City Centre|518000
+CN|Tam Kon Shan Road|Huanggang|
+CN|Tonkin Street West|Huanggang|
+CN|Tso Kung Street|Huanggang|
+CN|Tsz Wan Shan Road|Huanggang|
+CN|Tuen Mun Road|Shenzhenwan|
+CN|Tuen Shun Street|Shenzhenwan|
+CN|Tung Pin Road|Shawei|
+CN|Tung Tau Tsuen Road|Huanggang|
+CN|Xinyongan Road|Huangpu|201300
+CN|Yen Chow Street West|Huanggang|
+CN|Yuk Hok Lane|Huanggang|
+CO||Armenia|630003
+CO||Barrancabermeja|687031
+CO||Barranquilla|080003
+CO||Bello|051053
+CO||Bogota|111411
+CO||Bucaramanga|680002
+CO||Buenaventura|764509
+CO||Cali|760042
+CO||Cartagena|130014
+CO||Cartago|762021
+CO||Chia|250001
+CO||Cucuta|540002
+CO||Dosquebradas|661002
+CO||Envigado|055422
+CO||Facatativa|253051
+CO||Florencia|180002
+CO||Floridablanca|681003
+CO||Funza|250020
+CO||Guadalajara de Buga|763041
+CO||Ibague|730002
+CO||Itaguei|055410
+CO||Madrid|250030
+CO||Magangue|132512
+CO||Maicao|442001
+CO||Malambo|083021
+CO||Manizales|170001
+CO||Medellin|050015
+CO||Monteria|230003
+CO||Mosquera|250040
+CO||Neiva|410010
+CO||Palmira|763531
+CO||Pasto|520003
+CO||Pereira|660002
+CO||Piedecuesta|681012
+CO||Pitalito|417030
+CO||Popayan|190003
+CO||Quibdo|270002
+CO||Riohacha|440002
+CO||Rionegro|054040
+CO||Santa Marta|470004
+CO||Sincelejo|700003
+CO||Soacha|250053
+CO||Sogamoso|152211
+CO||Soledad|083003
+CO||Tulua|763022
+CO||Tunja|150002
+CO||Valledupar|200003
+CO||Villavicencio|500001
+CO||Yopal|850001
+CO||Zipaquira|250252
+CR||Alajuela|20101
+CR||Alajuelita|11001
+CR||Aserri|10601
+CR||Buenos Aires|60301
+CR||Canas|50601
+CR||Cartago|30101
+CR||Chacarita|60112
+CR||Colon|10701
+CR||Concepcion|30305
+CR||Curridabat|11801
+CR||Desamparados|20903
+CR||Escazu|10201
+CR||Esparza|60201
+CR||Guadalupe|10801
+CR||Guapiles|70202
+CR||Heredia|40101
+CR||Liberia|50101
+CR||Limon|70101
+CR||Naranjo|20601
+CR||Nicoya|50201
+CR||Paraiso|30201
+CR||Patarra|10307
+CR||Puntarenas|60101
+CR||Purral|10807
+CR||Quesada|21001
+CR||Rio Segundo|21203
+CR||Sabanilla|11502
+CR||San Antonio|40701
+CR||San Diego|30302
+CR||San Felipe|11005
+CR||San Isidro|11901
+CR||San Jose|10103
+CR||San Josecito|40502
+CR||San Juan|11301
+CR||San Juan de Dios|10303
+CR||San Miguel|10313
+CR||San Pablo|40901
+CR||San Pedro|11501
+CR||San Rafael|10201
+CR||San Rafael Abajo|10405
+CR||San Rafael Arriba|10304
+CR||San Ramon|20201
+CR||San Vicente|11401
+CR||San Vicente de Moravia|11401
+CR||Santa Cruz|50301
+CR||Santiago|10408
+CR||Siquirres|70304
+CR||Tejar|11204
+CR||Tres Rios|30301
+CR||Turrialba|30501
+CU||Arroyo Naranjo|
+CU||Artemisa|
+CU||Banes|
+CU||Baracoa|
+CU||Bartolome Maso|
+CU||Bauta|
+CU||Bayamo|
+CU||Cabaiguan|
+CU||Camagueey|
+CU||Cardenas|
+CU||Ciego de Avila|
+CU||Cienfuegos|
+CU||Colon|
+CU||Consolacion del Sur|
+CU||Contramaestre|
+CU||Corralillo|
+CU||Florida|
+CU||Fontanar|
+CU||Guanabacoa|
+CU||Guantanamo|
+CU||Gueines|
+CU||Gueira de Melena|
+CU||Havana|
+CU||Holguin|
+CU||Jagueey Grande|
+CU||Jesus Menendez|
+CU||Jobabo|
+CU||Jovellanos|
+CU||Las Tunas|
+CU||Manzanillo|
+CU||Matanzas|
+CU||Moa|
+CU||Moron|
+CU||Nuevitas|
+CU||Palma Soriano|
+CU||Pinar del Rio|
+CU||Placetas|
+CU||Puerto Padre|
+CU||Regla|
+CU||Sagua la Grande|
+CU||San Cristobal|
+CU||San German|
+CU||San Jose de las Lajas|
+CU||San Luis|
+CU||San Miguel del Padron|
+CU||Sancti Spiritus|
+CU||Santa Clara|
+CU||Santiago de Cuba|
+CU||Santo Domingo|
+CU||Trinidad|
+CV||Achada Fazenda|
+CV||Achada Lem|
+CV||Achada Monte|
+CV||Achada Riba|
+CV||Achada Tenda|
+CV||Assomada|
+CV||Bom Sossego|
+CV||Calheta de Sao Miguel|
+CV||Cancelo|
+CV||Centro Historico|
+CV||Cha da Silva|
+CV||Cha de Pedras|
+CV||Chao Bom|
+CV||Cidade Velha|
+CV||Cutelinho|
+CV||Espargos|
+CV||Gil Bispo|
+CV||Hortela de Baixo|
+CV||Igreja|
+CV||Mindelo|
+CV||Nhagar|
+CV||Nova Sintra|
+CV||Palmeira|
+CV||Pedra Badejo|
+CV||Picos|
+CV||Picos Acima|
+CV||Pombas|
+CV||Ponta do Sol|
+CV||Porto Novo|
+CV||Praia|
+CV||Rabil|
+CV||Ribeira Brava|
+CV||Ribeira da Barca|
+CV||Ribeira Grande|
+CV||Rincao|
+CV||Sal Rei|
+CV||Salinas|
+CV||Santa Cruz|
+CV||Santa Filomena|
+CV||Santa Maria|
+CV||Santa Maria Centro|
+CV||Sao Domingos|
+CV||Sao Filipe|
+CV||Sao Martinho Pequeno|
+CV||Sao Paulo|
+CV||Tarrafal|
+CV||Tarrafal de Sao Nicolau|
+CV||Veneza|
+CV||Vila do Maio|
+CV||Zona Tenda|
+CY||Agios Dometios|2373
+CY||Aglantzia|2123
+CY||Akaki|2720
+CY||Aradippou|7105
+CY||Athienou|7600
+CY||Avgorou|5510
+CY||Ayia Napa|5330
+CY||Chlorakas|8221
+CY||Dali|2549
+CY||Deryneia|5380
+CY||Dhromolaxia|7020
+CY||Egkomi|5627
+CY||Emba|8250
+CY||Famagusta|5627
+CY||Frenaros|5350
+CY||Geri|2202
+CY||Germasogeia|4049
+CY||Geroskipou|8201
+CY||Kato Lakatameia|2066
+CY||Kato Polemidia|4170
+CY||Kiti|7550
+CY||Kokkinotrimithia|2660
+CY||Kolossi|4630
+CY||Kyrenia|9000
+CY||Lapithos|9300
+CY||Larnaca|6060
+CY||Lefka|2900
+CY||Lefkonoiko|5600
+CY||Limassol|3150
+CY||Liopetri|5320
+CY||Livadia|7060
+CY||Morfou|2700
+CY||Mouttagiaka|4527
+CY||Nicosia|1107
+CY||Ormidhia|7530
+CY||Pano Polemidia|4131
+CY||Paphos|8049
+CY||Paralimni|5297
+CY||Pergamos|7504
+CY||Protaras|5330
+CY||Rizokarpaso|5850
+CY||Sotira|4633
+CY||Strovolos|2066
+CY||Trachoni|4653
+CY||Trikomo|5700
+CY||Tseri|2480
+CY||Voroklini|7041
+CY||Xylofagou|7520
+CY||Xylotymbou|7510
+CY||Ypsonas|4194
+CZ|Benátská|Karlovy Vary|360 18
+CZ|Bezovka|Pilsen|338 24
+CZ|Boršická|Uhersky Brod|687 62
+CZ|Do Chuchle|Modrany|154 00
+CZ|Dětřichova|Liberec|463 11
+CZ|Fügnerova|Blatna|388 01
+CZ|Hrušovská|Ostrava|702 00
+CZ|Javorová|Rymarov|795 01
+CZ|K Racandě|Kladno|272 04
+CZ|Ke Kocandě|Kralupy nad Vltavou|278 01
+CZ|Komenského|Dolni Kounice|664 64
+CZ|Kotkova|Ostrava|742 83
+CZ|Lety pod lesem|Beroun|252 29
+CZ|Lýskova|Bystrc|641 00
+CZ|Malá Tratidla|Prerov|751 04
+CZ|Matěchova|Krc|142 00
+CZ|Na Baranovci|Ostrava|710 00
+CZ|Na Komárově|Kaznejov|331 51
+CZ|Na Rybníku|Nachod|549 01
+CZ|Na střelnici|Zizkov|180 00
+CZ|Nad Školou|Usti nad Labem|403 39
+CZ|Nebovidského|Kutna Hora|284 03
+CZ|Novosady|Kromeriz|769 01
+CZ|Nová|Brno stred|664 61
+CZ|Nádražní|Lanskroun|561 25
+CZ|Ovocná|Ostrava|720 00
+CZ|Palackého|Most|418 04
+CZ|Palackého|Otrokovice|765 02
+CZ|Pečírkova|Uhlirske Janovice|285 04
+CZ|Podříčí|Koprivnice|744 01
+CZ|Polní|Rakovnik|271 01
+CZ|Poplužní|Rumburk|408 01
+CZ|Předlická|Usti nad Labem|400 01
+CZ|Příčná|Uherske Hradiste|698 01
+CZ|Rantířovská|Jihlava|586 05
+CZ|Rybáře|Uherske Hradiste|698 01
+CZ|Severní|Mnisek pod Brdy|252 10
+CZ|Sportovní|Ceske Budejovice|373 82
+CZ|Stavební|Podebrady|290 01
+CZ|Svatého|Liberec|463 12
+CZ|Tyršova|Zbiroh|338 08
+CZ|U Radnice|Kralupy nad Vltavou|250 70
+CZ|Vosátkova|Tabor|391 56
+CZ|Vřesová|Beroun|266 01
+CZ|Zahradní kolonie|Benesov|256 01
+CZ|Čajkovského|Zabovresky|616 00
+CZ|Školní|Rumburk|407 53
+CZ|Škroupova|Teplice|415 01
+CZ|Šmeralova|Hradec Kralove|500 02
+CZ|Železničářská|Ceska Lipa|470 06
+DE|Alleestraße|Dorsten|46282
+DE|Am Kurhaus Bühlau|Radeberg|01324
+DE|Am Nordbahnhof|Berlin|10898
+DE|Am Schleiferberg|Radeberg|01465
+DE|An der Vogelweide|Hemmingen|30459
+DE|Beethovenstraße|Zittau|02763
+DE|Bienwaldring|Blankenfelde-Mahlow|12349
+DE|Bormanns Weg|Freital|01705
+DE|Breesen|Laage|18299
+DE|Böhmertstraße|Dresden|04064
+DE|Carl-von-Ossietzky-Straße|Gotha|99867
+DE|Doktorweg|Detmold|32756
+DE|Einzel|Weissdorf|95237
+DE|Eisteichweg|Laatzen|30700
+DE|Ekensunder Weg|Blankenfelde-Mahlow|12305
+DE|Falltorstraße|Bergisch Gladbach|51425
+DE|Ferdinandstraße|Oranienburg|16556
+DE|Grandeweg|Ronnenberg|30457
+DE|Hakenfelder Straße|Falkensee|13565
+DE|Harryweg|Hannover|30149
+DE|Hauptstraße|Freital|01705
+DE|Heinrich-Grone-Stieg|Hamburg|22789
+DE|Hermann-Ilgen-Straße|Radebeul|01445
+DE|Hochsitzweg|Kleinmachnow|14169
+DE|Kantstraße|Helmbrechts|95233
+DE|Kirchgasse|Saalfeld|07387
+DE|Kompagniegang|Flensburg|24937
+DE|Kálmánweg|Blankenfelde-Mahlow|12355
+DE|Lammertweg|Markkleeberg|04209
+DE|Oldesloer Straße|Kiel|24131
+DE|Oldestraße|Kiel|24159
+DE|Ostender Straße|Berlin|13344
+DE|Peter-Breuer-Straße|Zwickau|08056
+DE|Pfarrhufenanger|Neuenhagen|12616
+DE|Pferdemarkt|Nordhausen|99738
+DE|Quellenweg|Sankt Andreasberg|37444
+DE|Rainer-Dierichs-Platz|Kassel|34196
+DE|Rochwitzer Weg|Dresden|01279
+DE|Schmiedestraße|Luebeck|23547
+DE|Sebnitzer Straße|Neuenhagen|12616
+DE|Sonnenstraße|Doebeln|04720
+DE|Stelzenweg|Berlin|12345
+DE|Stubbenkammer|Sassnitz|18551
+DE|Stöckigtweg|Radebeul|01157
+DE|Teplitzer Allee|Elmschenhagen|24222
+DE|Tolstoistraße|Dresden|01309
+DE|Torgartenstraße|Lauda-Konigshofen|97922
+DE|Trachauer Heideweg|Klotzsche|01129
+DE|Vinzenzstraße|Dorsten|46282
+DE|Wölkauer Weg|Leipzig|04357
+DJ||'Ali 'Adde|
+DJ||'As 'Ela|
+DJ||Airolaf|
+DJ||Ali Sabih|
+DJ||Arta|
+DJ||Balbala|
+DJ||Damerdjog|
+DJ||Dasbiyo|
+DJ||Dikhil|
+DJ||Djibouti|
+DJ||Dorra|
+DJ||Egahlou|
+DJ||Galafi|
+DJ||Goubetto|
+DJ||Holhol|
+DJ||Khor Angar|
+DJ||Kouta Bouyya|
+DJ||Loyada|
+DJ||Medeho|
+DJ||Obock|
+DJ||Oue'a|
+DJ||Randa|
+DJ||Tadjoura|
+DJ||Waddi|
+DJ||Yoboki|
+DK|Aggersborggade|Copenhagen|1329
+DK|Allégade|Frederiksberg|1835
+DK|Baldersgade|Frederiksberg|2200
+DK|Birkedals Alle|Esbjerg|6700
+DK|Bissensgade|Frederiksberg|1828
+DK|Bredegade|Aalborg|0900
+DK|Dyrkøb|Copenhagen|1533
+DK|Ewaldsgade|Copenhagen|1928
+DK|Forstalle|Aabenraa|6200
+DK|Gammel Mønt|Copenhagen|1304
+DK|Gearhalsvej|Frederiksberg|2500
+DK|Georg Carstensens Plads|Frederiksberg|1835
+DK|Guldbergs Plads|Frederiksberg|2200
+DK|Guldbergsgade|Frederiksberg|2200
+DK|Henrik Steffens Vej|Frederiksberg|1958
+DK|Håndværkerhaven|Hellerup|2870
+DK|Jagtvej|Copenhagen|2100
+DK|Jerichausgade|Frederiksberg|1828
+DK|Kildevænget|Hellerup|2100
+DK|Klaipedagade|Hellerup|2150
+DK|Krusemyntegade|Copenhagen|1350
+DK|Linnésgade|Copenhagen|1533
+DK|Marthagade|Hellerup|2100
+DK|Munkemøllestræde|Odense|5100
+DK|Mølby|Sonderborg|6400
+DK|Møllepladsen|Haderslev|6100
+DK|Nina Bangs Plads|Copenhagen|1304
+DK|Nordre Fasanvej|Frederiksberg|1959
+DK|Odinsgade|Frederiksberg|2200
+DK|Otto Busses Vej|Copenhagen|1561
+DK|Prinsensgade|Aalborg|0900
+DK|Puggaardsgade|Copenhagen|1513
+DK|Refsnæsgade|Frederiksberg|2200
+DK|Skibbroen|Aabenraa|6200
+DK|Skoletorvet|Silkeborg|8600
+DK|Smedegade|Ribe|6760
+DK|Sofiegade|Copenhagen|1425
+DK|St. Sct. Hans Gade|Viborg|8800
+DK|Strandboulevarden|Hellerup|2150
+DK|Strandvejen|Arhus|8000
+DK|Studsgaardsgade|Hellerup|2100
+DK|Svanelundsvej|Hjorring|9800
+DK|Teglgårdstræde|Copenhagen|1533
+DK|Tingslippe|Ribe|6760
+DK|Toldbodgade|Sonderborg|6300
+DK|Trommesalen|Copenhagen|1719
+DK|Vestagervej|Hellerup|2900
+DK|Vester Voldgade|Copenhagen|1513
+DK|Vesterled|Hellerup|2100
+DK|Ågade|Brande|7330
+DO||Azua|11402
+DO||Bajos de Haina|11117
+DO||Bani|10505
+DO||Bayaguana|
+DO||Boca Chica|
+DO||Bonao|
+DO||Cabral|
+DO||Cambita Garabitos|11601
+DO||Constanza|11204
+DO||Cotui|10801
+DO||Dajabon|11005
+DO||Duverge|
+DO||Esperanza|11301
+DO||Guayacanes|10126
+DO||Hato Mayor del Rey|11904
+DO||Jarabacoa|10804
+DO||La Julia|10109
+DO||La Romana|
+DO||La Vega|10702
+DO||Las Matas de Farfan|
+DO||Mao|
+DO||Moca|
+DO||Monte Llano|
+DO||Monte Plata|11102
+DO||Nagua|
+DO||Neiba|
+DO||Puerto Plata|10502
+DO||Punta Cana|
+DO||Quisqueya|
+DO||Rio Grande|
+DO||Sabana de la Mar|
+DO||Sabana Grande de Boya|
+DO||Salcedo|11005
+DO||Salvaleon de Higueey|
+DO||San Cristobal|10108
+DO||San Fernando de Monte Cristi|10803
+DO||San Francisco de Macoris|
+DO||San Ignacio de Sabaneta|
+DO||San Jose de Ocoa|11809
+DO||San Juan de la Maguana|10604
+DO||San Pedro de Macoris|
+DO||Santa Cruz de Barahona|
+DO||Santa Cruz de El Seibo|11102
+DO||Santiago de los Caballeros|11403
+DO||Santo Domingo|10215
+DO||Santo Domingo Este|11605
+DO||Santo Domingo Oeste|10902
+DO||Tamboril|
+DO||Villa Altagracia|10701
+DO||Villa Bisono|
+DZ|Al-Quds Street|Boumerdas|35021
+DZ|Ali Anou Street|Thenia|35005
+DZ|boulevard Che-Guevara|Rais Hamidou|16030
+DZ|boulevard Colonel-Amirouche|Algiers|16030
+DZ|boulevard Krim-Belkacem|Algiers|16030
+DZ|Boulevard Mohamed-Khemisti|Algiers|16030
+DZ|boulevard Zighoud-Youcef|Algiers|16030
+DZ|Cité des fleurs|Bou Arfa|35012
+DZ|Cité Mami Rue H|Bou Arfa|35012
+DZ|Cité Tlemceni Rue F Zabana|Bou Arfa|09010
+DZ|Fatah Abdelkader Street|Relizane|48009
+DZ|Hocine Mekiri Street|Boumerdas|35021
+DZ|Independence Avenue|Boumerdas|35046
+DZ|Larbi Ben M’Hidi street|Algiers|16030
+DZ|Liberty Avenue|Boumerdas|35046
+DZ|Lounès Timizar Street|Beni Amrane|35020
+DZ|Martyrs Avenue|Boumerdas|35039
+DZ|Mohamed Khemisti Avenue|Thenia|35005
+DZ|National Liberation Army Avenue|Boumerdas|35021
+DZ|Rabah Rahmoune Street|Thenia|35005
+DZ|Ramdane Redjouani Street|Thenia|35005
+DZ|Raïs Hamidou Avenue|Boumerdas|35046
+DZ|Rue B Cité Mami|Bou Arfa|35012
+DZ|rue Colonel-Haouas|Algiers|16030
+DZ|Rue Didouche Mourad|Algiers|16015
+DZ|Rue du 11 Decembre 1960|Bou Arfa|35012
+DZ|Rue G Cité Mami|Bou Arfa|35012
+DZ|Rue I|Bou Arfa|35012
+DZ|Rue Ramoul Abdelaziz|Bou Arfa|35012
+DZ|Slimane Ambar Street|Thenia|35005
+DZ|Tatareg River Avenue|Boumerdas|35021
+DZ|Yahia Boushaki Boulevard|Thenia|35005
+EC|Avenida 12 de Octubre|Quito|170512
+EC|Avenida 25 de Julio|Guayaquil|090106
+EC|Avenida Isidro Ayora|Guayaquil|090504
+EC|Avenida Perimetral|Guayaquil|090201
+EC|Calle Alfonso Jerves|Cuenca|010101
+EC|Calle Antonio Elizalde|Quito|170408
+EC|Calle Ascencio Gandara|Quito|170408
+EC|Calle Bolívar|Quito|170405
+EC|Calle Caldas|Quito|170408
+EC|Calle Cayetano Ramirez|Latacunga|050113
+EC|Calle Coronel Tálbot|Cuenca|010202
+EC|Calle Cuenca|Quito|170405
+EC|Calle de la Cruz|Cuenca|010101
+EC|Calle de San Sebastian|Cuenca|010202
+EC|Calle Esmeraldas|Quito|170405
+EC|Calle Espejo|Quito|170405
+EC|Calle Fernando Sánchez de Orellana|Latacunga|050113
+EC|Calle García Moreno|Alausi|060202
+EC|Calle General Maldonado|Latacunga|050113
+EC|Calle General Torres|Cuenca|010101
+EC|Calle Gran Colombia|Cuenca|010101
+EC|Calle Guayaquil|Latacunga|050113
+EC|Calle Guayaquil|Quito|170405
+EC|Calle José Antepara|Quito|170405
+EC|Calle José Marti|Quito|170408
+EC|Calle Juan Jaramillo|Cuenca|010101
+EC|Calle Lizardo García|Quito|170512
+EC|Calle Los Ríos|Quito|170408
+EC|Calle Luis Cordero|Cuenca|010101
+EC|Calle Luis F. Vivero|Latacunga|050113
+EC|Calle Manuel Vega|Cuenca|010101
+EC|Calle Mariano Cueva|Cuenca|010101
+EC|Calle Mariscal Sucre|Cuenca|010101
+EC|Calle Mejía|Quito|170405
+EC|Calle Morales|Quito|170405
+EC|Calle Nicolás Jiménez|Quito|170512
+EC|Calle Olmedo|Quito|170405
+EC|Calle Oriente|Quito|170405
+EC|Calle Padre Manuel Salcedo|Latacunga|050113
+EC|Calle Presidente Borrero|Cuenca|010101
+EC|Calle Rocafuerte|Quito|170405
+EC|Calle Rumiñahui|Cuenca|010104
+EC|Calle San Blas|Cuenca|010101
+EC|Calle Santa Ana|Cuenca|010101
+EC|Calle Sucre|Alausi|060202
+EC|Calle Sucre|Quito|170405
+EC|Calle Tomás Ordoñez|Cuenca|010101
+EC|Calle Valparaíso|Quito|170408
+EC|Calle Vargas Machuca|Cuenca|010101
+EC|Calle Venezuela|Quito|170405
+EE|Aardlavälja tänav|Tartu|50112
+EE|Aiaääre tänav|Tartu|51011
+EE|Apteegi tänav|Tallinn|15070
+EE|Edela tänav|Viljandi|71024
+EE|Emajõe tänav|Tartu|51008
+EE|Estonia puiestee|Tallinn|15099
+EE|Falgi tee|Tallinn|15199
+EE|Hobusepea tänav|Tallinn|15070
+EE|Jalaka tänav|Viljandi|71073
+EE|Jääraku põik|Maardu|12015
+EE|Kanepi tänav|Tallinn|10323
+EE|Kastani puiestee|Rakvere|44204
+EE|Kauba tänav|Viljandi|70101
+EE|Kolde tänav|Viljandi|71024
+EE|Kuke tänav|Tallinn|10145
+EE|Kursi tänav|Tallinn|15070
+EE|Külvi tänav|Viljandi|71024
+EE|Künni tänav|Viljandi|71024
+EE|Lembitu puiestee|Viljandi|70101
+EE|Lina tänav|Viljandi|71073
+EE|Lohu tänav|Viljandi|71073
+EE|Lossi tänav|Tartu|51003
+EE|Manufaktuuri tänav|Tallinn|10323
+EE|Mündi tänav|Tallinn|15070
+EE|Niidi tänav|Tallinn|10323
+EE|Oa tänav|Tartu|51007
+EE|Paavli tänav|Tallinn|10416
+EE|Pargi tänav|Viljandi|71066
+EE|Pikk tänav|Rakvere|44204
+EE|Pikk tänav|Tallinn|15070
+EE|Puidu tänav|Viljandi|71066
+EE|Pärna tänav|Viljandi|71024
+EE|Põhjatamme puiestee|Tartu|51011
+EE|Rahu tänav|Narva|40103
+EE|Raua tänav|Rakvere|44204
+EE|Ristiku tänav|Tallinn|10614
+EE|Tamme tänav|Viljandi|71073
+EE|Tasuja puiestee|Viljandi|70101
+EE|Toom-Rüütli tänav|Tallinn|15193
+EE|Uusküla põik|Narva|40103
+EE|Vabaduse puiestee|Tartu|51004
+EE|Vambola tänav|Tallinn|10145
+EE|Vanemuise tänav|Tartu|51003
+EE|Vase tänav|Tartu|50106
+EE|Veere tänav|Viljandi|71024
+EE|Vikerkaare tänav|Viljandi|71024
+EE|Viru tänav|Tallinn|15070
+EE|Väike tänav|Viljandi|70101
+EE|Väike-Kaare tänav|Viljandi|71024
+EE|Väike-Pääsukese tänav|Tallinn|10145
+EG|Abd Al Bari|Alexandria|
+EG|Al Bassra|Alexandria|
+EG|Al Kataai|Alexandria|
+EG|Al Kawashi|Alexandria|
+EG|Al Lowa' Magdy Gamal Rashed Street|Alexandria|
+EG|Al Maqoula|Alexandria|
+EG|Al Mohtaseb|Alexandria|
+EG|Al Riaash|Alexandria|
+EG|al-Gamaliya street|Cairo|
+EG|Bab al-Wazir|Cairo|
+EG|Beit Al Qady Street|Cairo|
+EG|Champollion Street|Alexandria|
+EG|Corniche el-Nil Street|Al Hawamidiyah|
+EG|Dr Salem|Alexandria|
+EG|El-Amir Mostafa|Alexandria|
+EG|El-Qader|Alexandria|
+EG|El-Sayeda Fatma|Alexandria|
+EG|Elmegharbelin|Cairo|
+EG|Fahmy Ln|Alexandria|
+EG|Gabr Mosque|Alexandria|
+EG|Haret Ahmed Al Nagdi|Alexandria|
+EG|Haret Al Farargi|Alexandria|
+EG|Haret Al Mkhzwmi|Alexandria|
+EG|Haret Al Shashi|Alexandria|
+EG|Haret Al Zouhdai|Alexandria|
+EG|Haret Ibn Al Aarabi|Alexandria|
+EG|Haret Ibn Al Mola|Alexandria|
+EG|Haret Ibn Gaafar|Alexandria|
+EG|Haret Mohammed Raian|Alexandria|
+EG|Hussain Pasha Al Maamari Street|Cairo|
+EG|Ibn Al Anbare|Alexandria|
+EG|Ibn Atek|Alexandria|
+EG|Ibn Khakan|Alexandria|
+EG|Ibn Koser|Alexandria|
+EG|Ibn Ragab|Alexandria|
+EG|Ibrahim Bahy Al Gbali|Alexandria|
+EG|Ismail Ghanem|Alexandria|
+EG|Mahfouz Bek|Alexandria|
+EG|Mohammed Othman Abdel Rabbo Street|Alexandria|
+EG|Mostafa Fayed Ln|Alexandria|
+EG|Muizz Street|Cairo|
+EG|Rashid Ln|Alexandria|
+EG|Roxy square|Al Khusus|
+EG|Saad Zaghloul Street|Alexandria|
+EG|Safeya Zaghloul Street|Alexandria|
+EG|Salah Salem Street|Cairo|
+EG|Saleh Abd El-Karim|Alexandria|
+EG|Street 4|Alexandria|
+EG|Suez Canal Road|Alexandria|
+EG|Talaat Harb Street|Cairo|
+ES|Acera del Casino|Granada|18005
+ES|avenida de Medina Azahara|Cordoba|14191
+ES|CA 213|Conil de la Frontera|11140
+ES|calle Cruz de la Tinaja|Sevilla|41002
+ES|calle de Amador de los Ríos|Madrid|28010
+ES|Calle de la Compañía|Malaga|29593
+ES|calle de la República Argentina|San Sebastian|20160
+ES|calle de los Reyes Católicos|Murguia|01080
+ES|calle de Mariano Benlliure|Sagunto|46500
+ES|Calle de Ofelia Nieto|Chamartin|28039
+ES|calle de Sánchez Barcáiztegui|Madrid|28007
+ES|calle Deanes|Cordoba|14350
+ES|Calle del Amor de Dios|Madrid|28012
+ES|calle del Carnero|Madrid|28005
+ES|calle del Lazo|Madrid|28013
+ES|calle del Rancho|Segovia|40005
+ES|calle Emilio Thuillier|Malaga|29593
+ES|Calle Europa|Fuengirola|29640
+ES|calle Guadiana|Sevilla|41002
+ES|calle Guardamino|Sevilla|41004
+ES|Calle Juan de Ajuriaguerra|Bilbao|48009
+ES|calle Logroño|San Sebastian|20160
+ES|calle Maestro Quiroga|Sevilla|41004
+ES|calle Melquíades Álvarez|Oviedo|33007
+ES|calle Miguel Fluiters|Guadalajara|19003
+ES|calle Mosqueta|Sevilla|41004
+ES|calle Pachecos|Sevilla|41001
+ES|calle Pedro López|Cordoba|14350
+ES|Calle Remo|Haria|35541
+ES|calle Rodrigo Caro|Sevilla|41004
+ES|calle Rosario Cepeda|Cadiz|11080
+ES|calle Santa Ana|Oviedo|33199
+ES|calle Vida|Sevilla|41004
+ES|calle Vitoria|Burgos|09080
+ES|calle Álamos|Malaga|29593
+ES|Carrer de Josep Anselm Clavé|Barcelona|08003
+ES|Carrer de Sant Antoni|Tortosa|43500
+ES|carrer de Vic|Barcelona|08012
+ES|Carrer del Nord 28|Figueres|17600
+ES|carrer del Rector Roca|Vic|08504
+ES|Carrer Major|Salt|17160
+ES|Carrer Petit del Raval|Blanes|17300
+ES|Carrer Sant Antoni|Cardedeu|08440
+ES|Carrer Solervicens|Manresa|08270
+ES|Corredera Baja de San Pablo|Madrid|28087
+ES|Oihenart kalea|San Sebastian|20160
+ES|Paseo de Mariano Renovales|Zaragoza|50006
+ES|Paseo del Valle de Hebrón|Barcelona|08035
+ES|Plaza de la Constitución|Los Llanos de Aridane|38760
+ES|torrent de Lligalbé|Barcelona|08025
+ET||Addis Ababa|
+ET||Adigrat|
+ET||Adwa|
+ET||Aksum|
+ET||Alamata|
+ET||Arabi|
+ET||Arba Minch|
+ET||Areka|
+ET||Arsi Negele|
+ET||Asela|
+ET||Asosa|
+ET||Awasa|
+ET||Bahir Dar|
+ET||Bishoftu|
+ET||Burayu|
+ET||Butajira|
+ET||Ciro|
+ET||Debre Birhan|
+ET||Debre Mark'os|
+ET||Debre Tabor|
+ET||Dessie|
+ET||Dila|
+ET||Dire Dawa|
+ET||Gambela|
+ET||Gode|
+ET||Gonder|
+ET||Gununo|
+ET||Hagere Hiywet|
+ET||Harar|
+ET||Hosa'ina|
+ET||Inda Silase|
+ET||Jijiga|
+ET||Jimma|
+ET||K'olito|
+ET||Kombolcha|
+ET||Mek'ele|
+ET||Mek'i|
+ET||Nazret|
+ET||Negele|
+ET||Nek'emte|
+ET||Sebeta|
+ET||Shashamane|
+ET||Sodo|
+ET||Tepi|
+ET||Waliso|
+ET||Warder|
+ET||Weldiya|
+ET||Welk'it'e|
+ET||Yirga 'Alem|
+ET||Ziway|
+FI|Arielinkatu|Helsinki|00540
+FI|Bulevardi|Helsinki|00150
+FI|Eerikinkatu|Turku|20800
+FI|Eteläesplanadi|Helsinki|00981
+FI|Haapatie|Rovaniemi|96190
+FI|Hakintie|Vantaa|01370
+FI|Happotie|Lappeenranta|53920
+FI|Henrikinkatu|Turku|20500
+FI|Huvilakatu|Helsinki|00150
+FI|Hylkeenpyytäjänkatu|Helsinki|00150
+FI|Hämeentie|Helsinki|00500
+FI|Iiriksentie|Vaasa|65200
+FI|Itäinenkatu|Tampere|33210
+FI|Kairatie|Rovaniemi|96190
+FI|Keskusväylä Yhdysväylä|Rovaniemi|96910
+FI|Kirkkokatu|Oulu|90651
+FI|Kiveliöntie|Rovaniemi|96500
+FI|Korkeavuorenkatu|Helsinki|00140
+FI|Lautatarhankatu|Helsinki|00580
+FI|Liisankatu|Helsinki|00170
+FI|Luotsikatu|Vaasa|65200
+FI|Maaherrantie|Helsinki|00650
+FI|Mannerheiminkatu|Naantali|21100
+FI|Mariankatu|Helsinki|00170
+FI|Moisionkatu|Tampere|33180
+FI|Museokatu|Helsinki|00102
+FI|Palokunnankatu|Haemeenlinna|13100
+FI|Pasilanraitio|Helsinki|00240
+FI|Peltokankaantie|Vaasa|65200
+FI|Pinninkatu|Tampere|33100
+FI|Puijonkatu|Kuopio|70821
+FI|Risukuja|Pirkkala|33300
+FI|Sammatintie|Helsinki|00550
+FI|Seurasaarentie|Helsinki|00270
+FI|Sillilaituri|Helsinki|00220
+FI|Sörnäisten rantatie|Helsinki|00530
+FI|Tammikaivonrinne|Vaasa|65231
+FI|Tehtaankatu|Vaasa|65200
+FI|Tuomiokirkonkatu|Tampere|33100
+FI|Tuureporinkatu|Turku|20811
+FI|Tuusulanjärven rantatie|Tuusula|04310
+FI|Tyysterniementie|Lappeenranta|53920
+FI|Työväenkatu|Vaasa|65200
+FI|Töölönlahdenkatu|Helsinki|00981
+FI|Uudenmaankatu|Helsinki|00150
+FI|Vellamonkatu|Helsinki|00580
+FI|Vestonkatu|Tampere|33730
+FI|Virtakatu|Heinola|18100
+FI|Väinö Linnan aukio|Tampere|33210
+FI|Välimerenkatu|Helsinki|00220
+FJ||Ahau|
+FJ||Ba|
+FJ||Labasa|
+FJ||Lami|
+FJ||Lautoka|
+FJ||Levuka|
+FJ||Nadi|
+FJ||Nasinu|
+FJ||Navua|
+FJ||Savusavu|
+FJ||Sigatoka|
+FJ||Suva|
+FJ||Tavua|
+FJ||Tubou|
+FJ||Vaileka|
+FJ||Vatukoula|
+FO||Argir|165
+FO||Eidi|470
+FO||Eystur|512
+FO||Fuglafjordur|535
+FO||Hov|960
+FO||Hoyvik|188
+FO||Hvalba|850
+FO||Kirkja|766
+FO||Klaksvik|710
+FO||Kunoy|780
+FO||Leirvik|520
+FO||Midvagur|375
+FO||Porkeri|950
+FO||Saltangara|620
+FO||Sandavagur|360
+FO||Sandur|215
+FO||Skalavik|220
+FO||Skopun|240
+FO||Skuvoy|260
+FO||Sorvagur|386
+FO||Torshavn|110
+FO||Tvoroyri|810
+FO||Vagur|910
+FO||Vestmanna|355
+FO||Vid Sjogv|490
+FO||Vidareidi|750
+FR|avenue de Joinville|Joinville-le-Pont|94340
+FR|avenue du Maréchal-Leclerc|Saint-Amand-les-Eaux|59310
+FR|avenue du Président-Salvador-Allende|Gentilly|94250
+FR|avenue Louis-Barrault|Aulnay-sous-Bois|93600
+FR|chemin de la Grenouillère|Nogent-sur-Oise|60250
+FR|rond-point de Mazagran|Vouziers|08400
+FR|rue Alexis-Lepère|Montreuil|93100
+FR|rue Alfred-de-Vigny|Lille|59800
+FR|rue Amundsen|Orly|94290
+FR|rue Antoine-Vitez|Brest|29820
+FR|rue Batillat|Macon|71000
+FR|rue Baudin|Courbevoie|92250
+FR|rue Baudoin|Asnieres-sur-Seine|92600
+FR|rue d'Alsace|Paris 10 Entrepot|75010
+FR|rue d'Auvergne|Viroflay|78220
+FR|rue de Champagne|Torcy|77090
+FR|rue de l'Eau|Toulouse|31500
+FR|rue de l'Yser|Saint-Denis|93450
+FR|rue de la Durantière|Reze|44400
+FR|rue de La Désirade|Saint-Malo|35400
+FR|rue de la Gare|Montrevel-en-Bresse|01340
+FR|rue de la Poterie|Laval|53000
+FR|rue de Milan|Villeurbanne|69100
+FR|rue de Rabastens|Balma|31130
+FR|rue de Stalingrad|Mulhouse|68200
+FR|rue des Berrichons|Epinay-sur-Seine|95210
+FR|rue des Bruyères|Bois-Colombes|92270
+FR|rue des Chauffernes|Lagny-sur-Marne|77400
+FR|rue des Coudreaux|Rueil-Malmaison|92210
+FR|rue des Marronniers|Bagneux|92340
+FR|rue des Neuf Clés|Macon|71000
+FR|rue des Primevères|Rueil-Malmaison|92500
+FR|rue des Pucelles|Strasbourg|67200
+FR|rue des Quatre-Tours|Gentilly|94270
+FR|rue des Vikings|Lagny-sur-Marne|77700
+FR|rue du Cimetière|Villepinte|95700
+FR|rue du Docteur-Georges-Assant|Tremblay-en-France|93290
+FR|rue du Potager|Villemomble|93250
+FR|rue du Soleil|Marseille 07|13007
+FR|rue Garibaldi|Saint-Ouen|93400
+FR|rue Harouys|Nantes|44300
+FR|rue Jean-Renoir|Noisy-le-Sec|93000
+FR|rue Randon|Brest|29200
+FR|rue Saint-Paulin|Chennevieres-sur-Marne|94210
+FR|rue Tainturier|Gagny|93220
+FR|rue Verte|Orleans|45100
+FR|rue Édouard-Branly|Villeneuve-le-Roi|94290
+FR|rue Élie Marais|Saint-Malo|35400
+FR|rue Émile-Zola|Denain|59490
+FR|rue-Blanche-Monier|Saint-Martin-d'Heres|38950
+GA||Aboumi|
+GA||Akanda|
+GA||Akieni|
+GA||Bakoumba|
+GA||Bitam|
+GA||Bongoville|
+GA||Booue|
+GA||Boumango|
+GA||Cocobeach|
+GA||Fougamou|
+GA||Franceville|
+GA||Gamba|
+GA||Iboundji|
+GA||Kango|
+GA||Koulamoutou|
+GA||Lambarene|
+GA||Lastoursville|
+GA||Lebamba|
+GA||Lekoni|
+GA||Libreville|
+GA||Makanda|
+GA||Makokou|
+GA||Malinga|
+GA||Mayumba|
+GA||Mbigou|
+GA||Medouneu|
+GA||Mekambo|
+GA||Mimongo|
+GA||Minvoul|
+GA||Mitzic|
+GA||Moabi|
+GA||Moanda|
+GA||Mouila|
+GA||Mounana|
+GA||Ndende|
+GA||Ndindi|
+GA||Ndjole|
+GA||Ngwoni|
+GA||Ntoum|
+GA||Okondja|
+GA||Omboue|
+GA||Onga|
+GA||Ovan|
+GA||Owendo|
+GA||Oyam|
+GA||Oyem|
+GA||Pana|
+GA||Port-Gentil|
+GA||Tchibanga|
+GA||Tsogni|
+GB|Abbey Street|Reading|RG1
+GB|Adeline Place|London|W1
+GB|Artizan Street|Shadwell|EC3A
+GB|Brill Place|Camden Town|WC1
+GB|Caledonia Street|Islington|WC1
+GB|Carlos Place|London|W1
+GB|Chantreys|Fleet|GU52
+GB|Clare Street|Glasgow|G31
+GB|Duncan Drive|Elgin|IV30
+GB|Ealing Green|West Ealing|W13
+GB|Elvaston Place|Fulham|SW7
+GB|Farm Road|Palmers Green|N21
+GB|Fisher Street|London|WC2
+GB|Flask Walk|Chalk Farm|NW3
+GB|Florence Road|Fleet|GU52
+GB|Great Smith Street|City of Westminster|SW1A
+GB|Hampton Close|Fleet|GU10
+GB|Hanover Crescent|Brighton|BN88
+GB|Harrow Road|Wembley|HA9
+GB|Hassard Street|Islington|N1
+GB|High Pavement|Nottingham|NG7
+GB|Hornor Close|Norwich|NR4
+GB|Hyndford Road|Dalserf|ML11
+GB|Kent Terrace|Chalk Farm|W1
+GB|Kinnoull Terrace|Perth|PH1
+GB|Lewisham High Street|Catford|SE13
+GB|Long John Hill|Norwich|NR14
+GB|Mandeville Place|London|W1
+GB|Meadway|Golders Green|NW11
+GB|Mermaid Court|London|SE1
+GB|Morton Mews|Fulham|SW5
+GB|Mulberry Walk|Fleet|RG27
+GB|Myrtle Avenue|Feltham|TW14
+GB|Phipp Street|Islington|EC3A
+GB|Pinstone Street|Sheffield|S4
+GB|Pratt Street|Camden Town|NW1
+GB|Saffron Hill|Islington|WC1
+GB|Seacole Square|Edinburgh|EH16
+GB|Selwood Place|Fulham|SW7
+GB|Shelford Place|Highbury|E8
+GB|Sidney Street|Shadwell|E1W
+GB|Silverdale|Fleet|GU52
+GB|St Mary Street|Cardiff|CF24
+GB|The Ridgeway|Totteridge|NW7
+GB|Tonbridge Street|Islington|WC1
+GB|Wapping Wall|Shadwell|E1W
+GB|Warwick Lane|London|EC1
+GB|West Street Lane|Carshalton|SM5
+GB|Westow Street|Streatham|SE26
+GB|Whitehorse Road|Croydon|CR90
+GE|Akaki Tsereteli Street|Gori|
+GE|Askani Caddesi|Tbilisi|
+GE|Bazaleti Street|Tbilisi|
+GE|Bezhan Kalandadze Street|Tbilisi|
+GE|Brothers Zubalashvili Street|Tbilisi|
+GE|Chakhrukhadze street|Tbilisi|
+GE|David Baazov Street|Tbilisi|
+GE|Davit Aghmashenebeli Avenue|Tbilisi|
+GE|Didim Mirtskhulava Street|Tbilisi|
+GE|Dimitri Arakishvili Street|Tbilisi|
+GE|Dodo Abashidze Street|Tbilisi|
+GE|Ekaterine Gabashvili Street|Tbilisi|
+GE|Elene Akhvlediani Street|Tbilisi|
+GE|Evelina Tavadze Street|Tbilisi|
+GE|Geronti Kikodze Street|Tbilisi|
+GE|Giorgi Chubinashvili street|Tbilisi|
+GE|Gogi Dolidze Street|Tbilisi|
+GE|Gudiashvili street|Tbilisi|
+GE|Iakob Nikoladze Street|Tbilisi|
+GE|Ioseb Grishashvili Street|Tbilisi|
+GE|Ivane Machabeli Street|Tbilisi|
+GE|Kote Abkhazi street|Tbilisi|
+GE|Lado Kavsadze Street|Tbilisi|
+GE|Lui Pasteur Caddesi|Tbilisi|
+GE|Marie Brosset Street|Tbilisi|
+GE|Metekhi Street|Tbilisi|
+GE|Mikheil Tamarashvili Avenue|Tbilisi|
+GE|Mikheil Zandukeli Street|Tbilisi|
+GE|Mitropane Laghidze Street|Tbilisi|
+GE|Mtskheta Street|Tbilisi|
+GE|Napareuli Street|Tbilisi|
+GE|Nikoloz Khudadov Street|Tbilisi|
+GE|Nikoloz Kipshidze Street|Tbilisi|
+GE|Nino Zhvania Street|Tbilisi|
+GE|Otar Taktakishvili Street|Tbilisi|
+GE|Platon Ioseliani Street|Tbilisi|
+GE|Ramaz Chkhikvadze Street|Tbilisi|
+GE|Revaz Tabukashvili Street|Tbilisi|
+GE|Rusudan Mepisashvili Street|Tbilisi|
+GE|Sairme Street|Tbilisi|
+GE|Sololaki Alley|Tbilisi|
+GE|Sulkhan Tsintsadze Street|Tbilisi|
+GE|Tiflis Haçatur Aboviani Caddesi|Tbilisi|
+GE|Tiflis Kudüs Caddesi|Tbilisi|
+GE|Tsotne Dadiani Street|Tbilisi|
+GE|Vakhtang Chabukiani Street|Tbilisi|
+GE|Vashlovani Street|Tbilisi|
+GE|Vasil Barnovi street|Tbilisi|
+GE|Vazha Banetishvili Street|Tbilisi|
+GE|Zhiuli Shartava Street|Tbilisi|
+GG||Castel|GY5
+GG||Forest Parish|GY8
+GG||Saint Andrew|GY6
+GG||Saint Peter Port|GY6
+GG||Saint Pierre du Bois Parish|GY7
+GG||Saint Sampson|GY6
+GG||Saint Saviour|GY7
+GG||St Anne|GY9
+GG||St Martin|GY6
+GG||Torteval|GY8
+GG||Vale Parish|GY6
+GH||Accra|
+GH||Adenta|
+GH||Aflao|
+GH||Agogo|
+GH||Akim Oda|
+GH||Amanfrom|
+GH||Asamankese|
+GH||Ashaiman|
+GH||Atsiaman|
+GH||Bawku|
+GH||Berekum|
+GH||Bolgatanga|
+GH||Buduburam|
+GH||Cape Coast|
+GH||Dome|
+GH||Ejura|
+GH||Gbawe|
+GH||Ho|
+GH||Hohoe|
+GH||Japekrom|
+GH||Jirapa|
+GH||Kasoa|
+GH||Kintampo|
+GH||Koforidua|
+GH||Konongo|
+GH||Kumasi|
+GH||Lashibi|
+GH||Mampong|
+GH||Mandela|
+GH||Medina Estates|
+GH||Nkawkaw|
+GH||Nsawam|
+GH||Obuase|
+GH||Sekondi|
+GH||Sekondi-Takoradi|
+GH||Suhum|
+GH||Sunyani|
+GH||Swedru|
+GH||Tafo|
+GH||Takoradi|
+GH||Tamale|
+GH||Tarkwa|
+GH||Techiman|
+GH||Tema|
+GH||Tema New Town|
+GH||Twifu Praso|
+GH||Wa|
+GH||Wankyi|
+GH||Winneba|
+GH||Yendi|
+GL||Aasiaat|3950
+GL||Ilulissat|3952
+GL||Maniitsoq|3912
+GL||Nanortalik|3922
+GL||Narsaq|3921
+GL||Nuuk|3900
+GL||Paamiut|3940
+GL||Qaqortoq|3920
+GL||Qasigiannguit|3951
+GL||Sisimiut|3911
+GL||Tasiilaq|3913
+GL||Upernavik|3962
+GL||Uummannaq|3961
+GQ||Abaamang|
+GQ||Aconibe|
+GQ||Acurenam|
+GQ||Anisoc|
+GQ||Aual|
+GQ||Ayene|
+GQ||Bata|
+GQ||Bicurga|
+GQ||Bitica|
+GQ||Ciudad de la Paz|
+GQ||Cogo|
+GQ||Ebebiyin|
+GQ||Evinayong|
+GQ||Luba|
+GQ||Machinda|
+GQ||Malabo|
+GQ||Mbini|
+GQ||Mikomeseng|
+GQ||Mongomo|
+GQ||Ncue|
+GQ||Nsang|
+GQ||Nsok|
+GQ||Rebola|
+GQ||Rio Campo|
+GQ||San Antonio de Pale|
+GQ||Santiago de Baney|
+GR|19is Maiou|Drama|
+GR|Akti Kanari|Rhodes|
+GR|Akti Miaouli|Rhodes|
+GR|Athinas Street|Athens|
+GR|Dionisiou Areopagitou Pedestrian Street|Athens|
+GR|Leoforos Eptanisou|Corfu|
+GR|Leoforos Georgiou Theotoki|Corfu|
+GR|Leoforos Kountourioti Pavlou|Rethymno|
+GR|Leoforos Vassilissis Olgas|Athens|
+GR|Nikis Avenue|Thessaloniki|
+GR|Odos 44ou Sintagmatos|Rethymno|
+GR|Odos Agias Theodoras|Corfu|
+GR|Odos Alexandrou Diakou|Rhodes|
+GR|Odos Alexandrou Panagouli|Corfu|
+GR|Odos Alexandrou Ypsilanti|Rhodes|
+GR|Odos Alkinoou|Corfu|
+GR|Odos Ammochostou|Rhodes|
+GR|Odos Apollonos|Rhodes|
+GR|Odos Asklipiou|Rhodes|
+GR|Odos Erithrou Stayrou|Rhodes|
+GR|Odos Ernest Bevin|Rhodes|
+GR|Odos Ethnarhou Makariou|Rhodes|
+GR|Odos Evgeniou Voulgareos|Corfu|
+GR|Odos Gallias|Rhodes|
+GR|Odos Georgiou Efstathiou|Rhodes|
+GR|Odos Georgiou Griva|Rhodes|
+GR|Odos Georgiou Leontos|Rhodes|
+GR|Odos Ikaron|Rhodes|
+GR|Odos Kritis|Rhodes|
+GR|Odos Lerou|Rhodes|
+GR|Odos Menekratous|Corfu|
+GR|Odos Michail Michailidi-Nouarou|Rhodes|
+GR|Odos Nafsikas|Corfu|
+GR|Odos Nikiforou Theotoki|Corfu|
+GR|Odos Papadopoulou|Thessaloniki|
+GR|Odos Parodiakou Sillogou Amerikis|Rhodes|
+GR|Odos Patmou|Rhodes|
+GR|Odos Savva Nikolaou|Rhodes|
+GR|Odos Scholemvourgou|Corfu|
+GR|Odos Theodorou Kolokotroni|Rhodes|
+GR|Odos Tilou|Rhodes|
+GR|Odos Vlaikou|Corfu|
+GR|Othonos-Amalias Avenue|Patra|
+GR|rue Antoni Gampa|Chania|
+GR|rue Michael Voda|Athens|
+GR|rue Minous A. Zompanaki|Chania|
+GR|rue Théotokopoulou|Chania|
+GR|rue Xanthoudidou|Irakleion|
+GR|Sofokleous Street|Athens|
+GR|ulica Kallirois|Dhafni|
+GT||Amatitlan|01063
+GT||Antigua Guatemala|03001
+GT||Asuncion Mita|22005
+GT||Barberena|06002
+GT||Cantel|09014
+GT||Chicacao|10013
+GT||Chichicastenango|14006
+GT||Chimaltenango|04001
+GT||Chinautla|01055
+GT||Chiquimula|20001
+GT||Coatepeque|09020
+GT||Coban|16001
+GT||Colomba|09017
+GT||Comitancillo|12004
+GT||Cuilapa|06001
+GT||Escuintla|05001
+GT||Fraijanes|01062
+GT||Guatemala City|01073
+GT||Huehuetenango|13001
+GT||Jalapa|21001
+GT||Jutiapa|22001
+GT||Malacatan|12015
+GT||Masagua|05005
+GT||Mazatenango|10001
+GT||Mixco|01057
+GT||Ostuncalco|09009
+GT||Palin|05011
+GT||Panzos|16007
+GT||Patulul|10014
+GT||Patzun|04007
+GT||Petapa|01066
+GT||Puerto Barrios|18001
+GT||Quetzaltenango|09001
+GT||Retalhuleu|11001
+GT||Salama|15001
+GT||San Francisco El Alto|08003
+GT||San Jose Pinula|01052
+GT||San Juan Sacatepequez|01059
+GT||San Marcos|12001
+GT||San Pedro Ayampuc|01056
+GT||San Pedro Sacatepequez|12002
+GT||Santa Catarina Pinula|01051
+GT||Santa Cruz del Quiche|14001
+GT||Santa Lucia Cotzumalguapa|05002
+GT||Solola|07001
+GT||Soloma|13023
+GT||Totonicapan|08001
+GT||Villa Canales|01065
+GT||Villa Nueva|01064
+GT||Zacapa|19001
+HR|Anina ulica|Varazdin|42000
+HR|Antun Mihanović Street|Zagreb|10000
+HR|August Cesarec Street|Zagreb|10000
+HR|Avenija Dubrovnik|Zagreb|10040
+HR|Avenija Gojka Šuška|Zagreb|10000
+HR|Avenija Hrvatske bratske zajednice|Zagreb|10135
+HR|Avenija Marina Držića|Zagreb|10000
+HR|Donji Ratac|Tucepi|21300
+HR|Dragutin Mandl Street|Zagreb|10000
+HR|Drid I|Marina|21222
+HR|Drid II|Marina|21222
+HR|Drid IV|Marina|21222
+HR|Esperantska Street|Osijek|31000
+HR|Europska avenija|Osijek|31000
+HR|Franjo Rački Street|Zagreb|10000
+HR|Frankopanska|Zagreb|10000
+HR|Gajeva|Zagreb|10000
+HR|Garibaldi ulica|Pula|52100
+HR|Iza Grada Street in Dubrovnik|Dubrovnik|20000
+HR|Kaptol|Zagreb|10000
+HR|Kneza Branimira|Zagreb|10000
+HR|Koludraško|Marina|21222
+HR|Kotorina|Marina|21222
+HR|Mali Gorač|Marina|21222
+HR|Marmontova ulica|Split|21000
+HR|Medveščak Street|Zagreb|10000
+HR|Nova Ves|Zagreb|10000
+HR|Obala|Marina|21222
+HR|Ozaljska Street|Zagreb|10135
+HR|Pavao Hatz Street|Zagreb|10000
+HR|Pod zidom Street|Zagreb|10000
+HR|Porch of Gjuro Deželić|Zagreb|10000
+HR|Skalinska Street|Zagreb|10000
+HR|Slatina|Tucepi|21300
+HR|Slavonska avenija|Zagreb|10000
+HR|Srebnjak Street|Zagreb|10000
+HR|Stara cesta v Senji|Senj|53270
+HR|Tomićeva Street|Zagreb|10000
+HR|Tratinska Street|Zagreb|10135
+HR|Ulica Frana Supila|Varazdin|42000
+HR|Ulica grada Vukovara|Zagreb|10000
+HR|ulica Ivana Lučića|Zagreb|10135
+HR|Ulica kralja Tomislava|Cakovec|40000
+HR|Ulica Matka Brajše Rašana|Pazin|52000
+HR|Ulica Milke Trnine|Zagreb|10000
+HR|Ulica Mirka Bogovića|Zagreb|10000
+HR|Ulica Pavla Šubića|Zagreb|10000
+HR|Ulica Vilka Novaka|Varazdin|42000
+HR|Ulica Vjenceslava Novaka|Zagreb|10000
+HR|Vukovarska cesta|Osijek|31000
+HT||Anse a Galets|HT6520
+HT||Aquin|HT8310
+HT||Arcahaie|HT6410
+HT||Cap-Haitien|HT1114
+HT||Carrefour|HT6134
+HT||Cite Soleil|HT6122
+HT||Cornillon|HT6330
+HT||Croix-des-Bouquets|HT6310
+HT||Dame-Marie|HT7220
+HT||Delmas|HT6114
+HT||Desarmes|HT4321
+HT||Dessalines|
+HT||Fond Parisien|HT6330
+HT||Fort Liberte|HT2111
+HT||Gonaives|HT4110
+HT||Grand Gosier|HT9320
+HT||Grande Riviere du Nord|HT1230
+HT||Grangwav|HT6230
+HT||Gressier|HT6160
+HT||Gros Morne|HT4210
+HT||Hinche|HT5110
+HT||Jacmel|HT9110
+HT||Jean-Rabel|HT3340
+HT||Jeremie|HT7110
+HT||Kenscoff|HT6150
+HT||Lascahobas|HT5310
+HT||Lenbe|HT1610
+HT||Leogane|HT6210
+HT||Les Anglais|HT8520
+HT||Les Cayes|HT8110
+HT||Milot|HT1230
+HT||Miragoane|HT7410
+HT||Mirebalais|HT5210
+HT||Ouanaminthe|HT2210
+HT||Petionville|HT6140
+HT||Pignon|HT1440
+HT||Port-au-Prince|HT6110
+HT||Port-de-Paix|HT3110
+HT||Saint-Louis du Nord|HT3212
+HT||Saint-Marc|HT4310
+HT||Saint-Michel de l'Atalaye|HT5121
+HT||Saint-Raphael|HT1410
+HT||Sassier|HT7111
+HT||Sources Chaudes|HT7141
+HT||Terrier Rouge|HT2330
+HT||Thomazeau|HT6320
+HT||Ti Port-de-Paix|HT3110
+HT||Tigwav|HT6121
+HT||Trou du Nord|HT2310
+HT||Verrettes|HT4320
+HU|Baross utca|Budapest|2096
+HU|Belgrád rakpart|Budapest|1239
+HU|Benczúr utca|Budapest|1239
+HU|Bezerédj utca|Budapest|1239
+HU|Bulcsú utca|Budapest|1239
+HU|Bíró Lajos utca|Budapest|1239
+HU|Csengery utca|Budapest|1239
+HU|Cserhát utca|Budapest|1239
+HU|Cukrasz utca|Miskolc|3558
+HU|Delej utca|Budapest|1239
+HU|Dembinszky utca|Budapest|1239
+HU|Dologház utca|Budapest|1239
+HU|Dr. Kovács Pál utca|Gyor|9030
+HU|Déri Miksa utca|Budapest|1239
+HU|Füvészkert utca|Budapest|1239
+HU|Hajnóczy utca|Szeged|6791
+HU|Himfy utca|Budapest|1239
+HU|Holló utca|Budapest|1239
+HU|Hunfalvy utca|Budapest|1239
+HU|Hársfa utca|Budapest|1239
+HU|Illés utca|Budapest|1239
+HU|Jókai utca|Budapest|1239
+HU|József Attila utca|Budapest|1239
+HU|Keresztúri út|Budapest|2141
+HU|Kinizsi utca|Budapest|1239
+HU|Király utca|Pecs|7693
+HU|Kiskörút|Budapest|1239
+HU|Koszorú utca|Budapest|1239
+HU|Károly körút|Budapest|1239
+HU|Lebstück Mária utca|Budapest|2096
+HU|Lujza utca|Budapest|1239
+HU|Mester utca|Budapest|1239
+HU|Munkácsy Mihály utca|Budapest|1239
+HU|Mérleg utca|Budapest|1239
+HU|Nefelejcs utca|Budapest|1239
+HU|Orgonafüzér utca|Gyal|2360
+HU|Ostrom utca|Budapest|1239
+HU|Pestújhelyi út|Budapest|1239
+HU|Rozgonyi utca|Budapest|1239
+HU|Salgótarjáni utca|Budapest|1239
+HU|Sas utca|Budapest|1239
+HU|Somogyi Béla utca|Budapest|1239
+HU|Sport utca|Budapest|1239
+HU|Szentpáli utca|Miskolc|3558
+HU|Szepességi  utca|Debrecen|4225
+HU|Szigetvári utca|Budapest|1239
+HU|Szilágyi utca|Budapest|1239
+HU|Szondi utca|Dunakeszi|2011
+HU|Vörösmarty utca|Budapest|1239
+HU|Őr utca|Budapest|1239
+ID||Ambon|97114
+ID||Balikpapan|76113
+ID||Bandar Lampung|35245
+ID||Bandung|40287
+ID||Banjarmasin|70234
+ID||Batam|29445
+ID||Bekasi|17136
+ID||Bengkulu|38223
+ID||Bogor|16830
+ID||Cibinong|16911
+ID||Cilegon|42411
+ID||Cimahi|40525
+ID||Cirebon|45154
+ID||Denpasar|80239
+ID||Depok|16516
+ID||Dumai|28813
+ID||Jakarta|13150
+ID||Jambi City|36122
+ID||Jayapura|99567
+ID||Jember|68137
+ID||Jepara|59411
+ID||Karawang|41315
+ID||Kediri|64123
+ID||Kendari|93118
+ID||Kupang|85111
+ID||Makassar|90231
+ID||Malang|65119
+ID||Manado|95128
+ID||Mataram|83127
+ID||Medan|20152
+ID||Padang|25154
+ID||Palangkaraya|73118
+ID||Palembang|30961
+ID||Palu|94222
+ID||Pekalongan|51193
+ID||Pekanbaru|28122
+ID||Percut|20371
+ID||Pontianak|78919
+ID||Samarinda|77111
+ID||Semarang|50232
+ID||Serang|42127
+ID||Situbondo|68315
+ID||South Tangerang|15415
+ID||Sukabumi|43131
+ID||Surabaya|60273
+ID||Surakarta|57133
+ID||Tangerang|11840
+ID||Tasikmalaya|46461
+ID||Tegal|52124
+ID||Yogyakarta|55262
+IE|Abbey Street|Kilkenny|R95
+IE|Anglesea Road|Dublin|D04
+IE|Anne Street North|Dublin|D16
+IE|Anne Street South|Dublin|D02
+IE|Athlunkard Street|Limerick|V94
+IE|Beresford Place|Dublin|D01
+IE|Bridge Street|Dublin|D04
+IE|Bridgefoot Street|Dublin|D16
+IE|Buckingham Street|Dublin|D01
+IE|Cathedral Street|Dublin|D01
+IE|Christchurch Place|Dublin|D16
+IE|Church Street|Dublin|D16
+IE|College Street|Dublin|D01
+IE|Constitution Hill|Dublin|D07
+IE|Eblana Avenue|Dun Laoghaire|A96
+IE|Eccles Street|Dublin|D01
+IE|Fenian Street|Dublin|D02
+IE|Foley Street|Dublin|D01
+IE|Foster Place|Dublin|D02
+IE|Golden Lane|Dublin|D16
+IE|Harcourt Terrace|Dublin|D08
+IE|Hawkins Street|Dublin|D01
+IE|Liffey Street|Dublin|D01
+IE|Montpelier Hill|Dublin|D07
+IE|Mount Street Lower|Dublin|D02
+IE|Newbridge Avenue|Dublin|D04
+IE|North Brunswick Street|Dublin|D16
+IE|North Earl Street|Dublin|D01
+IE|North Frederick Street|Dublin|D01
+IE|North Great George's Street|Dublin|D01
+IE|North Main Street|Cork|T23
+IE|Parliament Street|Dublin|D16
+IE|Prussia Street|Dublin|D07
+IE|Seán McDermott Street|Dublin|D01
+IE|Sheriff Street|Dublin|D01
+IE|Sheriff Street Lower|Dublin|D01
+IE|Sheriff Street Upper|Dublin|D01
+IE|Ship Street Little|Dublin|D16
+IE|Simmonscourt Road|Dublin|D04
+IE|Sir John Rogerson's Quay|Dublin|D01
+IE|South Frederick Street|Dublin|D02
+IE|South Street|New Ross|Y34
+IE|St Andrew's Street|Dublin|D02
+IE|Stephen Street|Dublin|D16
+IE|Talbot Street|Dublin|D01
+IE|Thomas Street|Dublin|D16
+IE|West Street|Callan|
+IE|Winetavern Street|Dublin|D16
+IE|Wolfe Tone Street|Dublin|D01
+IE|York Street|Dublin|D02
+IL|Agrippas Street|Jerusalem|
+IL|Ben Yehuda Street|Jerusalem|
+IL|Ben Yehuda Street|Tel Aviv|
+IL|Bialik Street|Ashdod|
+IL|Bialik Street|Ramat Gan|
+IL|Bloch Street|Tel Aviv|
+IL|Bugrashov street|Tel Aviv|
+IL|Chazon Ish street|Bnei Brak|
+IL|Chen Boulevard|Tel Aviv|
+IL|Derech HaRakevet|Ashdod|
+IL|Derech Yerushalayim|Ra'anana|
+IL|Dov Gur Street|Ashdod|
+IL|Exodus Street|Ashdod|
+IL|Frishman Sokağı|Tel Aviv|
+IL|HaAyin-Het street|Jerusalem|
+IL|Habad street|Jerusalem|
+IL|HaDekel Street|Ashdod|
+IL|Hagdud HaIvri Street|Ashdod|
+IL|HaNasi Yitzhak Ben Zvi Street|Herzliya|
+IL|HaRakevet st.|Tel Aviv|
+IL|HaRav Kook Street|Herzliya|
+IL|HaRishonim Street|Qiryat Shmona|
+IL|HaShalom road|Givatayim|
+IL|Hassan Shukri street|Haifa|
+IL|Herzl Boulevard|Ashdod|
+IL|Herzl Street|Haifa|
+IL|Ibn Gabirol Street|Jerusalem|
+IL|Judah Halevi Street|Ashdod|
+IL|Kibbutz Galuyot Street|Ashdod|
+IL|Levanon street|Ramat Gan|
+IL|Lilienblum Sokağı|Tel Aviv|
+IL|Lion's Gate Street|Jerusalem|
+IL|Mazeh street|Tel Aviv|
+IL|Moses ibn Ezra street|Ashdod|
+IL|Moshe Dayan street|Givatayim|
+IL|Moshe Sne road|Ramat HaSharon|
+IL|Nordau Street|Herzliya|
+IL|Paul-Emile Botta street|Jerusalem|
+IL|Paulus VI street|Nazareth|
+IL|Rachel Imenou Street|Jerusalem|
+IL|Razi'el street|Tel Aviv|
+IL|Sderot Herzl|Ramla|
+IL|Shprintsak Street|Tel Aviv|
+IL|Ulica Zamenhofa w Hajfie|Tirat Karmel|
+IL|Ulica Zamenhofa w Herclijji|Herzliya|
+IL|Ulica Zamenhofa w Holonie|Holon|
+IL|Washingtonias parkway in Tirat Tzvi|Bet She'an|
+IL|Weizmann Boulevard|Ashdod|
+IL|Yigal Allon street|Tel Aviv|
+IL|Zamenhof Street in Jerusalem|Jerusalem|
+IM||Andreas|IM7
+IM||Ballabeg|IM9
+IM||Ballasalla|IM9
+IM||Ballaugh|IM6
+IM||Bride|IM7
+IM||Castletown|IM9
+IM||Crosby|IM4
+IM||Douglas|IM2
+IM||Jurby|IM7
+IM||Kirk Braddan|IM2
+IM||Kirkmichael|IM6
+IM||Laxey|IM8
+IM||Lezayre|IM8
+IM||Maughold|IM8
+IM||Onchan|IM3
+IM||Patrick|IM5
+IM||Peel|IM5
+IM||Port Erin|IM9
+IM||Port Saint Mary|IM9
+IM||Ramsey|IM8
+IM||Santon|IM9
+IN|Armenian Street|Chennai|600001
+IN|Bandstand Promenade|Mumbai|400018
+IN|Bangabandhu Sheikh Mujib Road|New Delhi|110055
+IN|Bepin Behari Ganguly Street|Kolkata|700108
+IN|Broadway|Chennai|600001
+IN|Broadway|Kanayannur|683514
+IN|CHHATRAPATI SHIVAJI MAHARAJ|New Delhi|110098
+IN|Chowrasta|Darjiling|734124
+IN|College Street|Kolkata|700108
+IN|Dinshaw Wachha Road|Uran|400021
+IN|Gali Paranthe Wali|Delhi|110100
+IN|Gandhi Chowk|Nizamabad|503002
+IN|Garba Chowk|Baola|382260
+IN|Hughes Road|Mumbai|400009
+IN|Janpath|New Delhi|110100
+IN|Kazimar Street|Madurai|625012
+IN|Krishnaraja Boulevard|Mysuru|570032
+IN|Linking Road|Mumbai|402308
+IN|M. Kantharaj Urs Road|Mysuru|570032
+IN|Maharshi Karve Road|Uran|400021
+IN|Mahatma Gandhi Road|Malkajgiri|500016
+IN|Mahim Causeway|Mumbai|400022
+IN|Manaveeyam Veedhi|Thiruvananthapuram|695003
+IN|Market street|Dausa|303507
+IN|Meena Nursing Home Road|Bikaner|334001
+IN|MG Road|Bengaluru|
+IN|Mint Street|Chennai|600001
+IN|Mirza Road|Mysuru|570028
+IN|Nai Sarak|Delhi|110100
+IN|Necklace Road|Malkajgiri|500016
+IN|New Kantharaj Urs Road|Mysuru|570032
+IN|Nowroji Road|Rasapudipalem|530002
+IN|Old Jail Road|Chennai|600013
+IN|Prithviraj Road|Kusum Pur|110029
+IN|Rajaji Marg|New Delhi|110098
+IN|Rajaji Salai|Chennai|600001
+IN|Ranganathan Street|Nerkunram|600033
+IN|S.M. Street|Kozhikode|673004
+IN|Sankara Matam Road|Rasapudipalem|530002
+IN|Sansad Marg|New Delhi|110055
+IN|Shahjahan Road|New Delhi|110098
+IN|Shantipath|New Delhi|110021
+IN|Sharmaji Chowk|Maharajgani|841233
+IN|Sri Aurobindo Sarani|Kolkata|700037
+IN|Strand Road|Chandannagar|712136
+IN|Suranjan Das Road|Bengaluru|
+IN|Tughlaq Road|New Delhi|110098
+IN|TZ Road|Bhagirathpur|847239
+IN|Vasant Kunj Marg|Sultan Pur|110030
+IN|VV Puram Food Street|Bengaluru|
+IQ||'Akra|
+IQ||Abu al-Kahsib|
+IQ||Abu Gharaq|
+IQ||Abu Ghurayb|
+IQ||Al 'Amarah|
+IQ||Al Diwaniyah|
+IQ||Al Fallujah|
+IQ||Al Faw|
+IQ||Al Hillah|
+IQ||Al Hindiyah|
+IQ||Al Madinah|
+IQ||Al Mahmudiyah|
+IQ||Al Miqdadiyah|
+IQ||Al Qurnah|
+IQ||Al-Kut|
+IQ||Al-Musayab|
+IQ||An Nu'maniyah|
+IQ||As Samawah|
+IQ||Ash Sharqat|
+IQ||Ash Shatrah|
+IQ||Az Zubayr|
+IQ||Baghdad|
+IQ||Baharkah|
+IQ||Baqubah|
+IQ||Basrah|
+IQ||Bayji|
+IQ||Dihok|
+IQ||Erbil|
+IQ||Karbala|
+IQ||Kelar|
+IQ||Khanaqin|
+IQ||Khasnahzan|
+IQ||Kirkuk|
+IQ||Kufa|
+IQ||Mosul|
+IQ||Najaf|
+IQ||Nasiriyah|
+IQ||Qal'at Sukkar|
+IQ||Qeladize|
+IQ||Ramadi|
+IQ||Ranyah|
+IQ||Sadr City|
+IQ||Samarra'|
+IQ||Simele|
+IQ||Sinah|
+IQ||Sulaymaniyah|
+IQ||Sumayl|
+IQ||Tuz Khurmatu|
+IQ||Umm Qasr|
+IQ||Zaxo|
+IR|1st Amir Kabir Street|Kish|
+IR|Abu Ishaq Street|Kazerun|
+IR|Asadi Manesh Street|Tehran|
+IR|Bagheri Street|Tehran|
+IR|Bahar Shiraz Street|Tehran|
+IR|Bahonar Street|Kazerun|
+IR|Barati Boulevard|Kazerun|
+IR|Behbudi Street|Tehran|
+IR|Beyhaqi Street|Tehran|
+IR|Casino Boulevard|Ramsar|
+IR|Dezashib Street|Tajrish|
+IR|Ejarehdar Street|Vahidiyeh|
+IR|Eskandarzadeh Street|Tehran|
+IR|Farahzadi Boulevard|Tajrish|
+IR|Farhang Cinema Street|Kermanshah|
+IR|Farhang Street|Tehran|
+IR|Fazel Tuni Boulevard|Kermanshah|
+IR|Forsat-e Shirazi Street|Tehran|
+IR|Golnaz Street|Tehran|
+IR|Hamidi Street|Kazerun|
+IR|Imam Khomeini Boulevard|Bandar Abbas|
+IR|Izadi Moqaddam Street|Tehran|
+IR|Javanshir Street|Kermanshah|
+IR|Kargar Boulevard|Kazerun|
+IR|Keikhosrow Shahrokh Street|Tehran|
+IR|Kushk-e Mesri Street|Tehran|
+IR|Larestan Street|Tehran|
+IR|Lavasani Boulevard|Tajrish|
+IR|Madrasa Street|Kazerun|
+IR|Marvdasht Street|Vahidiyeh|
+IR|Masih Street|Tehran|
+IR|Mirdamad Boulevard|Tajrish|
+IR|Moallem Street|Vahidiyeh|
+IR|Nejatollahi Street|Tehran|
+IR|Nurmohammadi Street|Tehran|
+IR|Pajuhandeh Boulevard|Tehran|
+IR|Pakistan Street|Tehran|
+IR|Paknejad Boulevard|Tajrish|
+IR|Pardis Boulevard|Kazerun|
+IR|Pardis Boulevard|Kermanshah|
+IR|Pursina Street|Tehran|
+IR|Rahmati Behambari Alley|Tehran|
+IR|Raisi Street|Tehran|
+IR|Razi Street|Tehran|
+IR|Saleh Street|Tehran|
+IR|Shahriar Street|Tehran|
+IR|Sharifi Manesh Street|Tajrish|
+IR|Somayyeh Street|Tehran|
+IR|Tarbiyat street|Tabriz|
+IR|Yarjani Street|Tehran|
+IS|Austurstræti|Reykjavik|162
+IS|Auðarstræti|Reykjavik|162
+IS|Aðalstræti|Reykjavik|162
+IS|Bankastræti|Reykjavik|162
+IS|Barónsstígur|Reykjavik|162
+IS|Bergstaðastræti|Reykjavik|162
+IS|Borgartún|Reykjavik|162
+IS|Fríkirkjuvegur|Reykjavik|162
+IS|Garðastræti|Reykjavik|162
+IS|Geirsgata|Reykjavik|162
+IS|Grettisgata|Reykjavik|162
+IS|Hafnarstræti|Akureyri|607
+IS|Hafnarstræti|Reykjavik|162
+IS|Hlíðarendi|Reykjavik|162
+IS|Hringbraut|Reykjavik|162
+IS|Hverfisgata|Reykjavik|162
+IS|Hávallagata|Reykjavik|172
+IS|Ingólfsstræti|Reykjavik|162
+IS|Kalkofnsvegur|Reykjavik|162
+IS|Klapparstígur|Reykjavik|162
+IS|Kringlan|Reykjavik|162
+IS|Kringlumýrarbraut|Reykjavik|162
+IS|Laufásvegur|Reykjavik|162
+IS|Laugavegur|Reykjavik|162
+IS|Lækjargata|Reykjavik|162
+IS|Miklabraut|Reykjavik|162
+IS|Njálsgata|Reykjavik|162
+IS|Pósthússtræti|Reykjavik|162
+IS|Skeifan|Reykjavik|162
+IS|Skólabrú|Reykjavik|162
+IS|Skólavörðustígur|Reykjavik|162
+IS|Skúlagata|Reykjavik|162
+IS|Suðurgata|Reykjavik|162
+IS|Sæbraut|Reykjavik|162
+IS|Templarasund|Reykjavik|162
+IS|Tjarnargata|Reykjavik|162
+IS|Tryggvagata|Reykjavik|162
+IS|Túngata|Reykjavik|172
+IS|Vesturgata|Reykjavik|172
+IS|Vonarstræti|Reykjavik|162
+IS|Óðinsgata|Reykjavik|162
+IS|Þingholtsstræti|Reykjavik|162
+IT|borgo Pinti|Florence|50145
+IT|Clivus Capitolinus|Rome|00199
+IT|Corso Belgio|Turin|10156
+IT|Ripa di Porta Ticinese|Milan|20143
+IT|Salita San Camillo|Catania|95125
+IT|Stradone San Fermo|Verona|37142
+IT|Via Adele Zoagli|Novate Milanese|20157
+IT|Via Agostino Bertani|Genoa|16167
+IT|via Agostino Bertani|Grosseto|58100
+IT|via Alessandro Repetti|Milan|20134
+IT|via Camillo Benso conte di Cavour|Busto Arsizio|21052
+IT|Via Cernaia|Turin|10156
+IT|via Cesario Console|Naples|80145
+IT|via dei Banchi Vecchi|Rome|00199
+IT|via dei Cinquecento|Milan|20090
+IT|via dei Fibbiai|Florence|50145
+IT|via del Mulino a Vento|Grosseto|58100
+IT|via del Refugio|Siena|53100
+IT|via del Sambuco|Rome|00199
+IT|via della Conciliazione|Rome|00135
+IT|Via di Monserrato|Rome|00199
+IT|Via di San Donato|Montepulciano|53045
+IT|via Francesco Barberini|San Giovanni in Persiceto|40014
+IT|Via Giacomo Bertesi|Cremona|26100
+IT|Via Giambattista Odierna|Ragusa|97100
+IT|Via Giovan Battista de Rossi|Rome|00199
+IT|Via Giovan Battista Plasio|Cremona|26100
+IT|via Giovanni Battista Pergolesi|Milan|20125
+IT|Via Giulia di Barolo|Turin|10156
+IT|Via Giuseppe Puricelli Guerra|Vimodrone|20127
+IT|via Guglielmo Oberdan|Pisa|56128
+IT|via Gustavo Modena|Milan|20125
+IT|Via Ibla|Ragusa|97100
+IT|Via Laurin|Bolzano|39100
+IT|via Lazzaretto|Milan|20125
+IT|Via Molino delle Armi|Milan|20162
+IT|Via Monalda|Florence|50145
+IT|Via Montesano|Catania|95125
+IT|via Palmanova|Vimodrone|20127
+IT|via Paolo Gorini|Lodi|26900
+IT|via Piave|Grosseto|58100
+IT|via Pietro Giordani|Corsico|20094
+IT|Via Pietro Paleocapa|Savona|17100
+IT|via Porta Vecchia|Montecatini-Terme|51010
+IT|via Roma|Castiglione della Pescaia|58043
+IT|via San Bernardo|Pisa|56128
+IT|via Santo Spirito|Florence|50125
+IT|via Vincenzo Foppa|Milan|20143
+IT|Viale di Trastevere|Rome|00199
+IT|viale Francesco Restelli|Milan|20125
+JE||Le Hocq|JE3
+JE||Saint Helier|JE3
+JE||Saint John|JE4
+JE||St Lawrence|JE4
+JE||St Martin|JE4
+JE||Trinity|JE4
+JO||'Ajlun|
+JO||Al Azraq ash Shamali|
+JO||Al Fuhays|
+JO||Al Jubayhah|
+JO||Al Karamah|
+JO||Al Mazar al Janubi|
+JO||Al Qatranah|
+JO||Al Quwayrah|
+JO||Amman|
+JO||Aqaba|
+JO||Ar Ramtha|
+JO||As Salt|
+JO||Ash Shajarah|
+JO||At Tafilah|
+JO||At Tayyibah|
+JO||At Turrah|
+JO||Az Zulayl|
+JO||Bayt Yafa|
+JO||Busayra|
+JO||Hakama|
+JO||Irbid|
+JO||Jarash|
+JO||Jawa|
+JO||Judita|
+JO||Kafr Asad|
+JO||Kafr Sawm|
+JO||Karak City|
+JO||Khuraybat as Suq|
+JO||Kurayyimah|
+JO||Ma'an|
+JO||Madaba|
+JO||Mafraq|
+JO||Mahis|
+JO||Marj Al Hamam|
+JO||Qir Moav|
+JO||Rukban|
+JO||Russeifa|
+JO||Ruwaished|
+JO||Safi|
+JO||Sahab|
+JO||Sakhrah|
+JO||Sakib|
+JO||Sal|
+JO||Samma|
+JO||Suf|
+JO||Suwaylih|
+JO||Umm as Summaq|
+JO||Wadi as Sir|
+JO||Wadi Musa|
+JO||Zarqa|
+JP|Akasaka-Fureai-dōro|Fukuoka|810-0073
+JP|Badai Street|Kyoto|602-8385
+JP|Bunkamura Street|Tokyo|151-8677
+JP|Burabura Yokochō|Fukuoka|810-0021
+JP|Cedar Avenue of Nikkō|Imaichi|321-1293
+JP|Daimyō 753rd Street|Fukuoka|810-0073
+JP|Daimyō-shō-mae Enoki Dōri|Fukuoka|810-0073
+JP|Dekimachi Dōri|Fukuoka|812-0043
+JP|Demizu Street|Kyoto|604-0087
+JP|Hakatagawa Dōri|Fukuoka|812-0039
+JP|Haruyoshi 103rd Street|Fukuoka|812-0039
+JP|Haruyoshi 69th Street|Fukuoka|812-0039
+JP|Haruyoshi-riverside Dōri|Fukuoka|812-0039
+JP|Inabachō Dōri|Fukuoka|810-0021
+JP|Kagiyamachi-dōri|Kyoto|600-8329
+JP|Kami-nishimachi Dōri|Fukuoka|812-0044
+JP|Kamidachiuri Street|Kamigyo-ku|602-8611
+JP|Komachi Street|Kamigyo-ku|602-8611
+JP|Kototoi Street|Machiya|110-0008
+JP|Kyū-Ōhamashō Dōri|Fukuoka|812-0044
+JP|Minami-shinchi Dōri|Fukuoka|812-0039
+JP|Minamikurumaya Street|Kyoto|606-8387
+JP|Naka-gofukumachi 420th Street|Fukuoka|812-0044
+JP|Nakamachi Komise Street|Kuroishi|036-0374
+JP|Nihon Ōdōri|Yokohama|231-0021
+JP|Ninenzaka|Kyoto|605-0863
+JP|Ogawa Street|Kyoto|604-0087
+JP|Okeya-machi Dōri|Fukuoka|812-0044
+JP|Omotesandō|Tokyo|150-0002
+JP|Reisen-kōen Dōri|Fukuoka|812-0044
+JP|Ryōma Street|Kyoto|606-8387
+JP|Saimon Dōri|Fukuoka|812-0044
+JP|Sanbongi Street|Kyoto|606-8397
+JP|Shimonomori Street|Kyoto|602-8372
+JP|Shinbashi Street|Kyoto|605-0901
+JP|Taishō Dōri|Fukuoka|810-0073
+JP|Takeyamachi Street|Kyoto|604-0976
+JP|Tatechō Suji|Fukuoka|812-0044
+JP|Tenjin 3rd Street|Fukuoka|810-0021
+JP|Tenjin 52nd Street|Fukuoka|810-0021
+JP|Tenjin 54th Street|Fukuoka|810-0021
+JP|Tenjin-kita Dōri|Fukuoka|810-0021
+JP|Teramachi Street|Kyoto|606-8387
+JP|Tominokōji Street|Kyoto|604-8224
+JP|Uramon Street|Kyoto|604-0087
+JP|Wakamiya Street|Kyoto|604-8224
+JP|Wakana-dōri|Kamigyo-ku|603-8863
+JP|Yoko Ōji|Kamakura|248-0005
+JP|Ōmiya Street|Kamigyo-ku|603-8863
+JP|Ōsu Hon-dōri Street|Nagoya|469-8796
+KE||Athi River|00204
+KE||Bungoma|50200
+KE||Busia|50400
+KE||El Wak|
+KE||Eldoret|30100
+KE||Embu|60100
+KE||Garissa|70100
+KE||Gilgil|20116
+KE||Githunguri|00216
+KE||Isiolo|60300
+KE||Jomvu|80102
+KE||Juja|01001
+KE||Kakamega|50100
+KE||Karuri|00219
+KE||Khwisero|50135
+KE||Kiambu|00900
+KE||Kikuyu|00902
+KE||Kilifi|80108
+KE||Kimilili|50204
+KE||Kiserian|00206
+KE||Kisii|40200
+KE||Kisumu|40100
+KE||Kitale|30200
+KE||Kitengela|00242
+KE||Limuru|00217
+KE||Lodwar|30500
+KE||Machakos|90100
+KE||Malindi|80200
+KE||Mandera|70301
+KE||Matuga|80406
+KE||Mbale|50325
+KE||Meru|60205
+KE||Migori|40419
+KE||Mlolongo|00519
+KE||Mombasa|80100
+KE||Mtwapa|80109
+KE||Mwala|90116
+KE||Nairobi|00800
+KE||Naivasha|20117
+KE||Nakuru|20100
+KE||Nanyuki|10407
+KE||Narok|20500
+KE||Ngong|00502
+KE||Nyeri|10100
+KE||Ongata Rongai|00511
+KE||Ruiru|00232
+KE||Thika|01017
+KE||Ukunda|80400
+KE||Upper Gilgil|20118
+KE||Wajir|70200
+KG||Ak-Suu|
+KG||Ala-Buka|
+KG||At-Bashi|
+KG||Aydarken|
+KG||Baetovo|
+KG||Balykchy|
+KG||Batken|
+KG||Bazar-Korgon|
+KG||Belovodskoye|
+KG||Bishkek|
+KG||Bokombayevskoye|
+KG||Cholpon-Ata|
+KG||Gul'cha|
+KG||Iradan|
+KG||Ivanovka|
+KG||Kaindy|
+KG||Kant|
+KG||Kara Suu|
+KG||Kara-Balta|
+KG||Kara-Kul'|
+KG||Kara-Kulja|
+KG||Karakol|
+KG||Kazarman|
+KG||Kemin|
+KG||Kerben|
+KG||Kochkor-Ata|
+KG||Kojomkul|
+KG||Kulundu|
+KG||Kyzyl-Adyr|
+KG||Kyzyl-Kyya|
+KG||Kyzyl-Suu|
+KG||Lebedinovka|
+KG||Manas|
+KG||Massy|
+KG||Naryn|
+KG||Nookat|
+KG||Osh|
+KG||Pokrovka|
+KG||Razzakov|
+KG||Samarkandyk|
+KG||Sovetskoye|
+KG||Suluktu|
+KG||Suzak|
+KG||Talas|
+KG||Tash-Kumyr|
+KG||Tokmok|
+KG||Toktogul|
+KG||Tyup|
+KG||Uch-Korgon|
+KG||Uzgen|
+KH||Angk Tasaom|
+KH||Anlong Veaeng|
+KH||Banlung|
+KH||Battambang|
+KH||Bavet|
+KH||Boeng Kak Muoy|
+KH||Boeng Kak Pir|
+KH||Chrang Chamreh Muoy|
+KH||Dangkao|
+KH||Dar|
+KH||Kampong Cham|
+KH||Kampong Chhnang|
+KH||Kampong Speu|
+KH||Kampong Thom|
+KH||Kampot|
+KH||Kandoeng|
+KH||Kep|
+KH||Koh Kong|
+KH||Kratie|
+KH||Lumphat|
+KH||Memot|
+KH||Ou Bei Choan|
+KH||Ou Char|
+KH||Pailin|
+KH||Paoy Paet|
+KH||Phnom Penh|
+KH||Phum Anlung Vil|
+KH||Phumi Ampil Leu|
+KH||Phumi Anhchaeum|
+KH||Phumi Tnaot|
+KH||Phumi Veal Sre|
+KH||Phumi Veal Tonsay|
+KH||Phumi Youl Toung|
+KH||Preaek Prasab|
+KH||Prey Veng|
+KH||Pursat|
+KH||Samraong|
+KH||Siem Reap|
+KH||Sihanoukville|
+KH||Sisophon|
+KH||Smach Mean Chey|
+KH||Snuol|
+KH||Stung Treng|
+KH||Suong|
+KH||Svay Rieng|
+KH||Ta Khmau|
+KH||Takeo|
+KH||Tbeng Meanchey|
+KH||Veal Sbov|
+KH||Yeang|
+KI||Ambo Village|
+KI||Bairiki Village|
+KI||Banana|
+KI||Banana Village|
+KI||Banraeaba Village|
+KI||Betio Village|
+KI||Bikenibeu Village|
+KI||Bonriki Village|
+KI||Buota Village|
+KI||Eita Village|
+KI||London Village|
+KI||Makin Village|
+KI||Napari Village|
+KI||Nawerewere Village|
+KI||Rawannawi Village|
+KI||Tabwakea Village|
+KI||Tarawa|
+KI||Teaoraereke Village|
+KI||Temaiku Village|
+KM||Adda-Doueni|
+KM||Bambao|
+KM||Bimbini|
+KM||Boungoueni|
+KM||Chandra|
+KM||Chezani|
+KM||Chironkamba|
+KM||Chouani|
+KM||Daji|
+KM||Dembeni|
+KM||Djoyezi|
+KM||Domoni|
+KM||Fomboni|
+KM||Foumbouni|
+KM||Hajoho|
+KM||Ikoni|
+KM||Itsandra|
+KM||Kangani|
+KM||Kavani|
+KM||Koimbani|
+KM||Koki|
+KM||Koni-Djodjo|
+KM||Koni-Ngani|
+KM||Kyo|
+KM||Lingoni|
+KM||Magnassini-Nindri|
+KM||Mbeni|
+KM||Mirontsi|
+KM||Mitsamiouli|
+KM||Mitsoudje|
+KM||Mjimandra|
+KM||Mohoro|
+KM||Moroni|
+KM||Moutsamoudou|
+KM||Moya|
+KM||Mramani|
+KM||Mremani|
+KM||Mvouni|
+KM||Nioumachoua|
+KM||Nkourani|
+KM||Ntsaoueni|
+KM||Ntsoudjini|
+KM||Ongoni|
+KM||Ouani|
+KM||Ouellah|
+KM||Sima|
+KM||Singani|
+KM||Tsidje|
+KM||Tsimbeo|
+KM||Vouani|
+KP||Anju|
+KP||Ch'ongdan-up|
+KP||Chaeryong-ni|
+KP||Chaeryong-up|
+KP||Changam-ch'on|
+KP||Chongjin|
+KP||Haeju|
+KP||Hamhung|
+KP||Hongwon|
+KP||Hungnam|
+KP||Hwadae|
+KP||Hwasong|
+KP||Hyesan|
+KP||Hyesan-dong|
+KP||Kaech'on|
+KP||Kaesong|
+KP||Kanggye|
+KP||Kangnyong|
+KP||Kangson|
+KP||Kilju|
+KP||Kwail-up|
+KP||Man'gyongdae-ri|
+KP||Manp'o|
+KP||Myongch'on|
+KP||Myonggan-dong|
+KP||Namp'o|
+KP||Namyang-nodongjagu|
+KP||Ongjin|
+KP||Orang|
+KP||P'yongsong|
+KP||Paech'on-up|
+KP||Paek'ak|
+KP||Pongch'on-up|
+KP||Pyongyang|
+KP||Rajin|
+KP||Samch'on|
+KP||Sariwon-si|
+KP||Sinch'on-up|
+KP||Sinp'o|
+KP||Sinuiju|
+KP||Sinwon-up|
+KP||Songnim-ni|
+KP||Sunch'on|
+KP||T'aet'an-up|
+KP||Tokch'on|
+KP||Ullyul|
+KP||Unch'on-up|
+KP||Undok|
+KP||Wonsan|
+KP||Yuktae-dong|
+KR||Ansan-si|15458
+KR||Anyang-si|14092
+KR||Bucheon-si|14582
+KR||Busan|49254
+KR||Changwon|51516
+KR||Cheonan|31144
+KR||Cheongju-si|28546
+KR||Chinju|52707
+KR||Chuncheon|24406
+KR||Chungju|27378
+KR||Daegu|41943
+KR||Daejeon|35265
+KR||Gangneung|25522
+KR||Geoje|53329
+KR||Gimpo-si|10108
+KR||Goyang-si|10466
+KR||Gumi|39318
+KR||Gunpo|15809
+KR||Gunsan|54122
+KR||Guri-si|11934
+KR||Gwangju|61485
+KR||Gwangmyeong|14238
+KR||Gyeongju|38168
+KR||Gyeongsan-si|38642
+KR||Hanam|12964
+KR||Hwaseong-si|18267
+KR||Icheon-si|17377
+KR||Iksan|54662
+KR||Incheon|21561
+KR||Jeju City|63179
+KR||Jeonju|55042
+KR||Kimhae|50927
+KR||Masan|62076
+KR||Mokpo|58649
+KR||Osan|18141
+KR||Paju|10929
+KR||Pohang|37777
+KR||Pyeongtaek|17917
+KR||Sejong|30154
+KR||Seogwipo|63593
+KR||Seongnam-si|13361
+KR||Seoul|04540
+KR||Suncheon|57960
+KR||Suwon|16484
+KR||Uijeongbu-si|11697
+KR||Ulsan|44690
+KR||Wonju|26432
+KR||Yangju|11437
+KR||Yangsan|50629
+KR||Yeosu|59677
+KW||Abu Al Hasaniya|
+KW||Abu Fatira|
+KW||Ad Dasmah|
+KW||Al Ahmadi|
+KW||Al Fahahil|
+KW||Al Farwaniyah|
+KW||Al Fintas|
+KW||Al Funaytis|
+KW||Al Jahra'|
+KW||Al Mahbulah|
+KW||Al Manqaf|
+KW||Al Wafrah|
+KW||Al-Masayel|
+KW||Ar Riqqah|
+KW||Az Zawr|
+KW||Hawalli|
+KW||Janub as Surrah|
+KW||Kuwait City|
+KW||Mazari' al 'Abdali|
+KW||Mubarak al Kabir|
+KW||Sabah as Salim|
+KY||Ally Land|
+KY||Battle Ground|
+KY||Belford Estates|
+KY||Birch Tree Hill|
+KY||Blakes|
+KY||Bodden Town|
+KY||Botabano|
+KY||Breakers|
+KY||Breezy Castle|
+KY||Brinkleys|
+KY||Cayman Palms|
+KY||Channel Land|
+KY||Colliers|
+KY||Coral Gables|
+KY||Driftwood Village|
+KY||Dusty Place|
+KY||Frank Sound|
+KY||Further Ground|
+KY||George Town|
+KY||Gun Bay|
+KY||Half Moon Bay|
+KY||Half Way Pond|
+KY||High Rock|
+KY||High Rock Estates|
+KY||Hutland|
+KY||Lower Valley|
+KY||Midland Acres|
+KY||Mount Pleasant|
+KY||Newlands|
+KY||North Sound Estates|
+KY||North Ward|
+KY||Old Man Bay|
+KY||Omega Gardens|
+KY||Pease Bay|
+KY||Pedro|
+KY||Prospect|
+KY||Prospect Park|
+KY||Red Bay Estate|
+KY||Saint James|
+KY||Sand Bluff|
+KY||Savannah|
+KY||Savannah Acres|
+KY||Spotts|
+KY||The Common|
+KY||The Mountain|
+KY||Tropical Gardens|
+KY||Upper Land|
+KY||Water Ground|
+KY||West Bay|
+KY||Whitehall Estates|
+KZ||Abay|
+KZ||Aksu|
+KZ||Aktau|
+KZ||Aktobe|
+KZ||Almaty|
+KZ||Altay|
+KZ||Aqsay|
+KZ||Arkalyk|
+KZ||Arys|
+KZ||Astana|
+KZ||Atbasar|
+KZ||Atyrau|
+KZ||Baikonur|
+KZ||Balqash|
+KZ||Ekibastuz|
+KZ||Karagandy|
+KZ||Karatau|
+KZ||Kentau|
+KZ||Kokshetau|
+KZ||Konayev|
+KZ||Kostanay|
+KZ||Kyzylorda|
+KZ||Lisakovsk|
+KZ||Novokazalinsk|
+KZ||OEskemen|
+KZ||Oral|
+KZ||Pavlodar|
+KZ||Petropavl|
+KZ||Qulsary|
+KZ||Ridder|
+KZ||Rudnyy|
+KZ||Saran|
+KZ||Sarqant|
+KZ||Satpayev|
+KZ||Semey|
+KZ||Shakhtinsk|
+KZ||Shchuchinsk|
+KZ||Shu|
+KZ||Shymkent|
+KZ||Stepnogorsk|
+KZ||Taldykorgan|
+KZ||Talghar|
+KZ||Taraz|
+KZ||Temirtau|
+KZ||Turkistan|
+KZ||Zhanaozen|
+KZ||Zharkent|
+KZ||Zhetysay|
+KZ||Zhezqazghan|
+KZ||Zhitikara|
+LA||Attapeu|
+LA||Ban Bachiang|
+LA||Ban Boun-Nua|
+LA||Ban Hatxao|
+LA||Ban Houakhoua|
+LA||Ban Houayxay|
+LA||Ban Kengkok|
+LA||Ban Khoan|
+LA||Ban Lak Xao|
+LA||Ban Laongam|
+LA||Ban Muang-Nan|
+LA||Ban Nahin|
+LA||Ban Nalaotay|
+LA||Ban Nambak|
+LA||Ban Nongdeun|
+LA||Ban Phonsavang-Nua|
+LA||Ban Simuangngam|
+LA||Ban Siphom|
+LA||Ban Thakham|
+LA||Ban Thateng|
+LA||Ban Vangluang|
+LA||Ban Xamtai|
+LA||Ban Xeno|
+LA||Borikhan|
+LA||Champasak|
+LA||Dak Cheung|
+LA||Lamam|
+LA||Luang Namtha|
+LA||Luang Prabang|
+LA||Muang Hongsa|
+LA||Muang Khong|
+LA||Muang Phon-Hong|
+LA||Muang Phonsavan|
+LA||Muang Sing|
+LA||Muang Xay|
+LA||Muang Xon|
+LA||Oudomsouk|
+LA||Pakkading|
+LA||Pakse|
+LA||Pakxan|
+LA||Pakxong|
+LA||Phongsali|
+LA||Sainyabuli|
+LA||Salavan|
+LA||Savannakhet|
+LA||Sekong|
+LA||Thakhek|
+LA||Vang Vieng|
+LA||Vientiane|
+LA||Xam Nua|
+LB|Allenby Street|Beirut|
+LB|Avenue Général de Gaulle|Beirut|
+LB|Bakhazi Street|Beirut|
+LB|Bliss Street|Beirut|
+LB|Damascus Road|Beirut|
+LB|Foch Street|Beirut|
+LB|Gouraud Street|Beirut|
+LB|Jaitawi Street|Beirut|
+LB|Mar Maroun Street|Beirut|
+LB|Omar bin Abdulaziz Street|Beirut|
+LB|Rue Bchara el Khouri|Aley|
+LB|Rue de Phénicie|Beirut|
+LB|Rue George Post|Beirut|
+LB|Rue Huvelin|Beirut|
+LB|Rue Jeanne d'Arc|Beirut|
+LB|Rue Madame Curie|Beirut|
+LB|Rue Monnot|Beirut|
+LB|Rue Verdun|Beirut|
+LB|Rue Weygand|Beirut|
+LB|Sursock Street|Beirut|
+LI||Balzers|9496
+LI||Bendern|9487
+LI||Eschen|9492
+LI||Gamprin|9487
+LI||Maels|9496
+LI||Mauren|9493
+LI||Nendeln|9485
+LI||Planken|9498
+LI||Ruggell|9491
+LI||Schaan|9494
+LI||Schellenberg|9488
+LI||Triesen|9495
+LI||Triesenberg|9497
+LI||Vaduz|9490
+LK||Ambalangoda|80300
+LK||Ambalantota|82100
+LK||Ampara|32008
+LK||Anuradhapura|50000
+LK||Badulla|90000
+LK||Battaramulla South|10120
+LK||Batticaloa|30000
+LK||Beliatta|82401
+LK||Bentota|80500
+LK||Beruwala|12070
+LK||Colombo|00100
+LK||Dambulla|21100
+LK||Dehiwala-Mount Lavinia|10350
+LK||Devinuwara|81170
+LK||Galle|80000
+LK||Hendala|11104
+LK||Homagama|10200
+LK||Ja Ela|11350
+LK||Jaffna|40000
+LK||Kalmunai|32300
+LK||Kalutara|12000
+LK||Kandana|11320
+LK||Kandy|20000
+LK||Katunayaka|11450
+LK||Kelaniya|11600
+LK||Kolonnawa|10600
+LK||Kotikawatta|10120
+LK||Kurunegala|60000
+LK||Maharagama|10280
+LK||Mannar|41000
+LK||Matale|21000
+LK||Matara|81000
+LK||Moratuwa|10400
+LK||Mullaittivu|
+LK||Mulleriyawa|11600
+LK||Negombo|11500
+LK||Nuwara Eliya|22208
+LK||Panadura|12500
+LK||Peliyagoda|11830
+LK||Pita Kotte|10120
+LK||Point Pedro|
+LK||Pottuvil|32500
+LK||Puttalam|61308
+LK||Ratnapura|70000
+LK||Sri Jayewardenepura Kotte|10120
+LK||Trincomalee|31000
+LK||Valvedditturai|
+LK||Vavuniya|43000
+LK||Wattala|11104
+LK||Welisara|11010
+LT|A. Jakšto gatvė|Vilnius|14019
+LT|A. Mickevičiaus gatvė|Vilnius|08123
+LT|A. Rotundo gatvė|Vilnius|01400
+LT|Architektų gatvė|Vilnius|04215
+LT|Arsenalo Street|Vilnius|09312
+LT|Aukštaičių gatvė|Vilnius|11349
+LT|Birželio 23-iosios gatvė|Vilnius|03208
+LT|Dariaus ir Girėno gatvė|Vilnius|02190
+LT|Dominikonų gatvė|Vilnius|03233
+LT|Esperanto gatvė|Kazlu Ruda|69083
+LT|Filaretų gatvė|Vilnius|10310
+LT|Giedraičių gatvė|Vilnius|09320
+LT|Gėlių gatvė|Vilnius|03214
+LT|Išganytojo gatvė|Vilnius|01306
+LT|Jogailos gatvė|Vilnius|14019
+LT|Kalvarijų gatvė|Vilnius|08338
+LT|Laisvės prospektas|Vilnius|05127
+LT|Lapų Street|Vilnius|02112
+LT|Latako gatvė|Vilnius|01306
+LT|Lenktoji gatvė|Vilnius|08129
+LT|Livonijos gatvė|Joniskis|84007
+LT|Lvivo gatvė|Vilnius|09321
+LT|M. Daukšos gatvė|Vilnius|02112
+LT|Mindaugo gatvė|Vilnius|03227
+LT|Oslo gatvė|Vilnius|04226
+LT|Pakalnės gatvė|Vilnius|08122
+LT|Pylimo gatvė|Vilnius|03233
+LT|Statybininkų gatvė|Joniskis|84007
+LT|Stiklių gatvė|Vilnius|01306
+LT|Subačiaus gatvė|Vilnius|11349
+LT|Trakų gatvė|Vilnius|03233
+LT|Turgaus gatvė|Joniskis|84007
+LT|Turgaus gatvė|Vilnius|09320
+LT|Ulonų gatvė|Vilnius|08246
+LT|V. Šopeno gatvė|Vilnius|03214
+LT|Vilniaus gatvė|Joniskis|84007
+LT|Vilniaus gatvė|Vilnius|14019
+LT|Vinco Kudirkos gatvė|Vilnius|01400
+LT|Šeškinės gatvė|Vilnius|07159
+LT|Šilo gatvė|Vilnius|10318
+LT|Šiltadaržio gatvė|Vilnius|01306
+LT|Šv. Jono gatvė|Vilnius|01306
+LT|Šv. Mykolo gatvė|Vilnius|01306
+LT|Šv. Stepono gatvė|Vilnius|03214
+LT|Švarco gatvė|Vilnius|01306
+LT|Šventosios Dvasios gatvė|Vilnius|02112
+LT|Žalgirio gatvė|Vilnius|09320
+LT|Žemaitijos gatvė|Vilnius|03233
+LT|Žydų gatvė|Vilnius|01306
+LT|Žygimantų gatvė|Vilnius|14019
+LU|Avenue Amélie|Luxembourg|L-2733
+LU|avenue Charles-de-Gaulle|Luxembourg|L-2726
+LU|avenue du Blues|Esch-sur-Alzette|L-4373
+LU|Avenue du Bois|Luxembourg|L-2762
+LU|Avenue du Dix-Septembre|Luxembourg|L-2740
+LU|Avenue Gaston-Diderich|Luxembourg|L-2715
+LU|Avenue Guillaume|Luxembourg|L-2740
+LU|Avenue Jean-Pierre-Pescatore|Luxembourg|L-2733
+LU|Avenue John-F.-Kennedy|Luxembourg|L-2360
+LU|Avenue Marie-Thérèse|Luxembourg|L-2740
+LU|Avenue Monterey|Luxembourg|L-2740
+LU|avenue Pasteur|Luxembourg|L-2762
+LU|Boulevard d'Avranches|Luxembourg|L-2651
+LU|Boulevard de Kyiv|Luxembourg|L-2734
+LU|Boulevard de la Pétrusse|Luxembourg|L-2740
+LU|Boulevard de la Recherche|Esch-sur-Alzette|L-4373
+LU|Boulevard du Brill|Luxembourg|L-2717
+LU|Boulevard Friedrich-Wilhelm-Raiffeisen|Luxembourg|L-2681
+LU|Boulevard Jean-Ulveling|Luxembourg|L-2733
+LU|boulevard Joseph-II|Luxembourg|L-2740
+LU|Boulevard Prince-Henri|Luxembourg|L-2740
+LU|Boulevard Robert-Schuman|Luxembourg|L-2609
+LU|Boulevard Victor-Thorn|Luxembourg|L-2733
+LU|Côte d'Eich|Luxembourg|L-2609
+LU|Ierzewee|Luxembourg|L-2452
+LU|Knäppchen|Luxembourg|L-2635
+LU|montée de la Pétrusse|Luxembourg|L-2733
+LU|Montée de Pfaffenthal|Luxembourg|L-2733
+LU|Rangwee|Luxembourg|L-2734
+LU|route d'Arlon|Luxembourg|L-2635
+LU|Rue Beaumont|Luxembourg|L-2733
+LU|Rue Ch.-W.-Gluck|Luxembourg|L-2764
+LU|Rue Chimay|Luxembourg|L-2733
+LU|Rue de Chiny|Luxembourg|L-2763
+LU|Rue de l'Eau|Luxembourg|L-2733
+LU|rue de la Congrégation|Luxembourg|L-2733
+LU|rue des Bains|Luxembourg|L-2733
+LU|Rue du Curé|Luxembourg|L-2733
+LU|Rue du Fossé|Luxembourg|L-2733
+LU|Rue Glesener|Luxembourg|L-2763
+LU|Rue Génistre|Luxembourg|L-2733
+LU|Rue Jacques de Deventer|Luxembourg|L-2232
+LU|rue Jacques Santer|Luxembourg|L-6148
+LU|Rue Jean-Pierre Probst|Luxembourg|L-2651
+LU|Rue Leonardo-da-Vinci|Luxembourg|L-2681
+LU|rue Marie-Adélaïde|Luxembourg|L-2725
+LU|Rue Notre-Dame|Luxembourg|L-2733
+LU|rue Sainte-Zithe|Luxembourg|L-2733
+LU|rue Waassertrap|Esch-sur-Alzette|L-4489
+LU|Val des Bons-Malades|Luxembourg|L-2514
+LV|Akmeņu iela|Ogre|LV-5003
+LV|Apšu iela|Jurmala|LV-2105
+LV|Avotu iela|Liepaja|LV-3430
+LV|Azovas iela|Daugavpils|LV-5458
+LV|Baraviku iela|Jelgava|LV-3018
+LV|Bruģu iela|Daugavpils|LV-5461
+LV|Bērzu iela|Valmiera|LV-4201
+LV|Daugavsalas iela|Jekabpils|LV-5201
+LV|Draudzības iela|Jelgava|LV-3018
+LV|Dundagas iela|Smarde|LV-3118
+LV|Dzelzceļa iela|Kuldiga|LV-3301
+LV|Dzirnavu iela|Liepaja|LV-3430
+LV|Elektrības iela|Dobele|LV-3732
+LV|Elkšņu iela|Riga|LV-2123
+LV|Ežu iela|Riga|LV-2130
+LV|Garā iela|Adazi|LV-2163
+LV|Kalna iela|Ainazi|
+LV|Kastaņu aleja|Aizpute|LV-3456
+LV|Kaļķu iela|Daugavpils|LV-5461
+LV|Koku iela|Cesis|LV-4103
+LV|Kārļa iela|Liepaja|LV-3430
+LV|Lazaretes iela|Liepaja|LV-3430
+LV|Leldes iela|Riga|LV-1024
+LV|Lielā Skolas iela|Cesis|LV-4103
+LV|Liliju iela|Bauska|LV-3901
+LV|Liliju iela|Marupe|LV-2167
+LV|Malu iela|Daugavpils|LV-5474
+LV|Mazā Nometņu iela|Riga|LV-2167
+LV|Medņu iela|Jurmala|LV-2011
+LV|Mežinieku iela|Aluksne|LV-4350
+LV|Mārtiņa Lutera iela|Balvi|LV-4501
+LV|Mēmeles iela|Marupe|LV-2167
+LV|Priežu iela|Kuldiga|LV-3301
+LV|Pērses iela|Salaspils|LV-2125
+LV|Pļavas iela|Saulkrasti|LV-2160
+LV|Randenes iela|Daugavpils|LV-5461
+LV|Rojas iela|Riga|LV-2101
+LV|Rītausmas iela|Marupe|LV-2167
+LV|Rītu iela|Daugavpils|LV-5465
+LV|Rūpniecības iela|Ape|
+LV|Sakas iela|Liepaja|LV-3430
+LV|Skārņu iela|Aluksne|LV-4301
+LV|Stirnu iela|Riga|LV-2130
+LV|Valkas iela|Ape|
+LV|Vidzemes iela|Gulbene|LV-4410
+LV|Vēju iela|Salaspils|LV-2125
+LV|Zingberga iela|Aizpute|LV-3456
+LV|Zīļu iela|Ogre|LV-2117
+LV|Čiekurkalna 2. līnija|Riga|LV-1024
+LV|Īsā iela|Salaspils|LV-2130
+LY||Ajdabiya|
+LY||Al 'Aziziyah|
+LY||Al Abyar|
+LY||Al Ajaylat|
+LY||Al Asabi'ah|
+LY||Al Bayda'|
+LY||Al Burayqah|
+LY||Al Ghurayfah|
+LY||Al Hurshah|
+LY||Al Jadid|
+LY||Al Jawf|
+LY||Al Jumayl|
+LY||Al Khums|
+LY||Al Marj|
+LY||Al Qubbah|
+LY||An Nasiriyah|
+LY||As Sawani|
+LY||At Taj|
+LY||Az Zahra'|
+LY||Az Zawiyah|
+LY||Az Zuwaytinah|
+LY||Bani Walid|
+LY||Benghazi|
+LY||Darnah|
+LY||Gharyan|
+LY||Hun|
+LY||Janzur|
+LY||Misratah|
+LY||Msalatah|
+LY||Murzuk|
+LY||Nalut|
+LY||Qaryat Suluq|
+LY||Qasr al Qarabulli|
+LY||Qasr Bin Ghashir|
+LY||Sabha|
+LY||Sabratah|
+LY||Shahhat|
+LY||Sidi Bin Zinah|
+LY||Sirte|
+LY||Surman|
+LY||Tajura'|
+LY||Tarhuna|
+LY||Tobruk|
+LY||Tripoli|
+LY||Ubari|
+LY||Yafran|
+LY||Zawiya|
+LY||Zintan|
+LY||Zliten|
+LY||Zuwarah|
+MA||Agadir|80750
+MA||Ait Melloul|86622
+MA||Al Fqih Ben Calah|
+MA||Al Hoceima|32000
+MA||Ben Guerir|
+MA||Beni Mellal|23602
+MA||Berkane|63652
+MA||Berrechid|
+MA||Bouskoura|27182
+MA||Casablanca|
+MA||Dar Bouazza|27223
+MA||El Jadida|24005
+MA||El Kelaa des Srarhna|43423
+MA||Errachidia|52002
+MA||Essaouira|44000
+MA||Fes|
+MA||Fnidek|
+MA||Guelmim|81000
+MA||Guercif|35104
+MA||Inezgane|86622
+MA||Kenitra|12122
+MA||Khemisset|15026
+MA||Khenifra|
+MA||Khouribga|
+MA||Ksar El Kebir|92150
+MA||Larache|92002
+MA||Lqoliaa|87052
+MA||Marrakesh|
+MA||Meknes|50152
+MA||Mohammedia|28815
+MA||Nador|62026
+MA||Oued Zem|25383
+MA||Ouislane|
+MA||Oujda|
+MA||Oulad Teima|83350
+MA||Rabat|
+MA||Safi|
+MA||Sale|11052
+MA||Sale Al Jadida|12152
+MA||Sefrou|31000
+MA||Settat|26006
+MA||Sidi Kacem|
+MA||Sidi Slimane|
+MA||Tangier|
+MA||Taourirt|65800
+MA||Taroudant|83000
+MA||Taza|35000
+MA||Temara|
+MA||Tetouan|93100
+MA||Tiflet|15400
+MC||Monaco|98000
+MD||Anenii Noi|MD-6501
+MD||Balti|MD-4502
+MD||Basarabeasca|MD-6711
+MD||Bender|MD-3200
+MD||Bilicenii Vechi|MD-6214
+MD||Briceni|MD-5114
+MD||Cahul|MD-3909
+MD||Calarasi|MD-4402
+MD||Camenca|MD-6603
+MD||Causeni|MD-7702
+MD||Ceadir-Lunga|MD-6104
+MD||Chisinau|MD-2000
+MD||Chitcani|MD-5714
+MD||Cimislia|MD-4101
+MD||Codru|MD-2011
+MD||Comrat|MD-5354
+MD||Congaz|MD-3819
+MD||Cricova|MD-2084
+MD||Dancu|MD-3424
+MD||Dnestrovsc|MD-3352
+MD||Donduseni|MD-5102
+MD||Drochia|MD-5216
+MD||Dubasari|MD-4501
+MD||Durlesti|MD-2003
+MD||Edinet|MD-4601
+MD||Falesti|MD-5904
+MD||Floresti|MD-5022
+MD||Glodeni|MD-4901
+MD||Hincesti|MD-3401
+MD||Hryhoriopol|MD-4001
+MD||Ialoveni|MD-6801
+MD||Leova|MD-6301
+MD||Mindresti|MD-5825
+MD||Nisporeni|MD-6401
+MD||Ocnita|MD-7102
+MD||Orhei|MD-3505
+MD||Otaci|MD-7106
+MD||Pervomaisc|MD-5724
+MD||Rezina|MD-5401
+MD||Ribnita|MD-5509
+MD||Riscani|MD-5626
+MD||Singerei|MD-6201
+MD||Slobozia|MD-5702
+MD||Soroca|MD-3006
+MD||Stefan Voda|MD-4217
+MD||Straseni|MD-3702
+MD||Taraclia|MD-7402
+MD||Tiraspol|MD-3300
+MD||Ungheni|MD-3621
+MD||Vulcanesti|MD-5302
+ME||Andrijevica|
+ME||Bar|
+ME||Berane|
+ME||Bijela|
+ME||Bijelo Polje|
+ME||Budva|
+ME||Cetinje|
+ME||Danilovgrad|
+ME||Dobrota|
+ME||Golubovci|
+ME||Goricani|
+ME||Gusinje|
+ME||Herceg Novi|
+ME||Ibarac|
+ME||Igalo|
+ME||Kolasin|
+ME||Kotor|
+ME||Lipci|
+ME||Mataguzi|
+ME||Mojanovici|
+ME||Mojkovac|
+ME||Niksic|
+ME||Pesca|
+ME||Petnjica|
+ME||Petrovac na Moru|
+ME||Plav|
+ME||Pljevlja|
+ME||Pluzine|
+ME||Podgorica|
+ME||Prcanj|
+ME||Risan|
+ME||Rozaje|
+ME||Savnik|
+ME||Spuz|
+ME||Stari Bar|
+ME||Susanj|
+ME||Sutomore|
+ME||Tivat|
+ME||Tuzi|
+ME||Ulcinj|
+ME||Zabljak|
+MG||Ambalavao|
+MG||Ambanja|
+MG||Ambato Boeny|
+MG||Ambatofinandrahana|
+MG||Ambatolampy|
+MG||Ambatondrazaka|
+MG||Ambilobe|
+MG||Amboasary|
+MG||Ambositra|
+MG||Ambovombe|
+MG||Ampanihy|
+MG||Amparafaravola|
+MG||Andapa|
+MG||Andilamena|
+MG||Antalaha|
+MG||Antananarivo|
+MG||Antanifotsy|
+MG||Antsalova|
+MG||Antsirabe|
+MG||Antsiranana|
+MG||Antsohihy|
+MG||Betafo|
+MG||Farafangana|
+MG||Faratsiho|
+MG||Fenoarivo Atsinanana|
+MG||Fianarantsoa|
+MG||Hell-Ville|
+MG||Ihosy|
+MG||Ikongo|
+MG||Imerintsiatosika|
+MG||Ivato|
+MG||Mahajanga|
+MG||Mahanoro|
+MG||Manakara|
+MG||Mananara|
+MG||Maroantsetra|
+MG||Maromandia|
+MG||Marovoay|
+MG||Moramanga|
+MG||Morondava|
+MG||Nosy Varika|
+MG||Sambava|
+MG||Soanierana Ivongo|
+MG||Soavinandriana|
+MG||Toamasina|
+MG||Tolanaro|
+MG||Toliara|
+MG||Tsiroanomandidy|
+MG||Vangaindrano|
+MG||Vavatenina|
+MH||Ailuk|
+MH||Airuk|
+MH||Arno|
+MH||Aur|
+MH||Dalap-Uliga-Dorrit|
+MH||Ebaye|
+MH||Ebon|
+MH||Enewetak|
+MH||Jabat|
+MH||Jabor|
+MH||Kili|
+MH||Lae|
+MH||Laura|
+MH||Lib|
+MH||Likiep|
+MH||Loen|
+MH||Majuro|
+MH||Mejit|
+MH||Mili|
+MH||Namdrik|
+MH||Rongelap|
+MH||Taroa|
+MH||Ujae|
+MH||Utrik|
+MH||Wotho|
+MH||Wotje|
+MK||Arachinovo|1045
+MK||Berovo|2330
+MK||Bitola|7000
+MK||Bogovinje|1220
+MK||Bosilovo|2431
+MK||Brvenica|1216
+MK||Butel|1040
+MK||Cair|1040
+MK||Cegrane|1237
+MK||Centar Zupa|1258
+MK||Debar|1250
+MK||Delcevo|2320
+MK||Dolna Banjica|1230
+MK||Dolneni|7504
+MK||Dracevo|2436
+MK||Gevgelija|1480
+MK||Gostivar|1230
+MK||Ilinden|1041
+MK||Kamenjane|1221
+MK||Kavadarci|1430
+MK||Kicevo|6250
+MK||Kisela Voda|2436
+MK||Kochani|2300
+MK||Kondovo|1060
+MK||Kratovo|1360
+MK||Kriva Palanka|1330
+MK||Kumanovo|1300
+MK||Lipkovo|1307
+MK||Negotino|1440
+MK||Novo Selo|2435
+MK||Ohrid|6322
+MK||Prilep|7500
+MK||Probishtip|2210
+MK||Radovis|2420
+MK||Resen|7310
+MK||Shtip|2000
+MK||Skopje|1040
+MK||Sopiste|1040
+MK||Struga|6330
+MK||Strumica|2400
+MK||Studenicani|2436
+MK||Suto Orizare|1040
+MK||Sveti Nikole|2220
+MK||Tearce|1224
+MK||Tetovo|1200
+MK||Vasilevo|2411
+MK||Veles|1400
+MK||Vinica|2310
+MK||Zajas|6253
+MK||Zelino|1226
+ML||Bafoulabe|
+ML||Bamako|
+ML||Bamba|
+ML||Banamba|
+ML||Bandiagara|
+ML||Bankass|
+ML||Bla|
+ML||Bougouni|
+ML||Bourem|
+ML||Dialakorodji|
+ML||Diema|
+ML||Dioila|
+ML||Diourou|
+ML||Dire|
+ML||Djenne|
+ML||Douentza|
+ML||Dougabougou|
+ML||Fana|
+ML||Finnkolo|
+ML||Gao|
+ML||Kadiolo|
+ML||Kati|
+ML||Kayes|
+ML||Kidal|
+ML||Kita|
+ML||Kolokani|
+ML||Koro|
+ML||Koulikoro|
+ML||Kouri|
+ML||Koutiala|
+ML||Mahina|
+ML||Markala|
+ML||Massiogo|
+ML||Moninnpebougou|
+ML||Mopti|
+ML||Moribabougou|
+ML||Nara|
+ML||Niono|
+ML||Nioro|
+ML||Pelengana|
+ML||San|
+ML||Sangarebougou|
+ML||Segou|
+ML||Sibi|
+ML||Sikasso|
+ML||Sirakoro Meguetana|
+ML||Siribala Coro|
+ML||Timbuktu|
+ML||Yanfolila|
+ML||Zegoua|
+MM||Amarapura|
+MM||Ann|
+MM||Bago|
+MM||Chauk|
+MM||Dawei|
+MM||Heho|
+MM||Hinthada|
+MM||Hlaingthaya|
+MM||Insein|
+MM||Kalaw|
+MM||Kalemyo|
+MM||Keng Tung|
+MM||Kyaukpyu|
+MM||Kyauktan|
+MM||Lashio|
+MM||Magway|
+MM||Mandalay|
+MM||Mawlamyine|
+MM||Meiktila|
+MM||Mingala Tangnyunt|
+MM||Mingaladon|
+MM||Moeng Yang|
+MM||Mogok|
+MM||Monywa|
+MM||Mu-se|
+MM||Mudon|
+MM||Myeik|
+MM||Myingyan|
+MM||Myitkyina|
+MM||Nay Pyi Taw|
+MM||Nyaunglebin|
+MM||Pakokku|
+MM||Pathein|
+MM||Pyay|
+MM||Pyin Oo Lwin|
+MM||Pyinmana|
+MM||San Chaung|
+MM||Sangyoung|
+MM||Set Ka Lay|
+MM||Shwebo|
+MM||Sittwe|
+MM||Taikkyi|
+MM||Taunggyi|
+MM||Taungoo|
+MM||Thandwe|
+MM||Thaton|
+MM||Thayetmyo|
+MM||Yangon|
+MM||Yawnghwe|
+MM||Yenangyaung|
+MN||Altai|82130
+MN||Altanbulag|43040
+MN||Argalant|41180
+MN||Arvayheer|62173
+MN||Baruun-Urt|22070
+MN||Bayanhongor|64090
+MN||Berh|
+MN||Bogd|62190
+MN||Bor-OEndoer|23220
+MN||Buerenhayrhan|84211
+MN||Bulgan|
+MN||Choibalsan|21040
+MN||Choyr|42030
+MN||Dalandzadgad|46180
+MN||Darhan|45040
+MN||Dashinchilling|63060
+MN||Dzuunharaa|
+MN||Dzuunmod|41100
+MN||Erdenet|61020
+MN||Ereencav|
+MN||Ergel|
+MN||Halhgol|21010
+MN||Hongor|45020
+MN||Horiult|64050
+MN||Hutag|63140
+MN||Jargalant|83015
+MN||Kharkhorin|62090
+MN||Khovd|84170
+MN||Mandalgovi|48090
+MN||Moeroen|67120
+MN||Nalayh|
+MN||OElgii|83120
+MN||Orhon|
+MN||Saynshand|44100
+MN||Sharga|63180
+MN||Sharingol|
+MN||Soert|63030
+MN||Suehbaatar|43080
+MN||Tosontsengel|81030
+MN||Tsengel|67115
+MN||Tsetserleg|65190
+MN||Turt|67070
+MN||Ulaangom|85160
+MN||Ulaanhudag|41290
+MN||Ulan Bator|
+MN||Uliastay|81090
+MN||Undurkhaan|23123
+MN||Urt|46150
+MN||Zamiin Uud|44010
+MN||Zuunmod|41100
+MR||Akjoujt|
+MR||Aleg|
+MR||Atar|
+MR||Ayoun El Atrous|
+MR||Bababe|
+MR||Bagodine|
+MR||Basseknou|
+MR||Bogue|
+MR||Bougadoum|
+MR||Bouhdida|
+MR||Bouly|
+MR||Bousteila|
+MR||Boutilimitt|
+MR||Dar el Barka|
+MR||Dar Naim|
+MR||Djiguenni|
+MR||Djowol|
+MR||El 'Ayoun|
+MR||El Ghayra|
+MR||Elghabra|
+MR||Fonde Elimane|
+MR||Ganki Un|
+MR||Guerou|
+MR||HassiChegar|
+MR||Kaedi|
+MR||Kankossa|
+MR||Kiffa|
+MR||Kobenni|
+MR||Ksar|
+MR||LexeibaUn|
+MR||Maghama|
+MR||Magta' Lahjar|
+MR||Mbera|
+MR||Ndiago|
+MR||Nema|
+MR||Nouadhibou|
+MR||Nouakchott|
+MR||Oualata|
+MR||R'kiz|
+MR||Rosso|
+MR||Sagne|
+MR||Selibaby|
+MR||Tekane|
+MR||Tembedgha|
+MR||Tevragh Zeina|
+MR||Tidjikja|
+MR||Tintane|
+MR||Vassala|
+MR||Wali Djantang|
+MR||Zouerat|
+MT|Republic Street|Sliema|VLT
+MT|Strait Street|Sliema|VLT
+MT|Triq Cospicua|Zabbar|FGR
+MT|Triq Dingli-Cornelio|Zabbar|ISL
+MT|Triq Dom Mintoff|Zabbar|BML
+MT|Triq Fuq San Pawl|Zabbar|BML
+MT|Triq il-Fran|Sliema|VLT
+MT|Triq il-Kardinal Fabrizio Sciberras|Zabbar|ISL
+MT|Triq il-Karmnu|Sliema|VLT
+MT|Triq il-Karmnu|Zabbar|BML
+MT|Triq il-Kunċizzjoni|Zabbar|ISL
+MT|Triq il-Macina|Zabbar|ISL
+MT|Triq il-Marfa|San Pawl il-Bahar|MLH
+MT|Triq il-Mediterran|Sliema|VLT
+MT|Triq il-Merkanti|Sliema|VLT
+MT|Triq il-Mitħna|Sliema|VLT
+MT|Triq il-Pellegrinaġġ|Zabbar|BML
+MT|Triq il-Punent|Sliema|VLT
+MT|Triq il-Vitorja|Zabbar|ISL
+MT|Triq il-Vittmi tal-Porvlista|Zabbar|ISL
+MT|Triq il-Vittorja|Sliema|VLT
+MT|Triq il-Ħabs l-Antik|Zabbar|ISL
+MT|Triq is-Sirena|Zabbar|ISL
+MT|Triq it-8 ta' Diċembru|Zabbar|ISL
+MT|Triq it-Tramuntana|Sliema|VLT
+MT|Triq ix-Xatt Juan B. Azopardo|Zabbar|ISL
+MT|Triq iz-Zekka|Sliema|VLT
+MT|Triq John Pace|Zabbar|BML
+MT|Triq l-Arċisqof|Sliema|VLT
+MT|Triq l-Immakulata|Zabbar|BML
+MT|Triq l-Infermerija|Sliema|VLT
+MT|Triq L. Zamenhof|Birkirkara|MSD
+MT|Triq Lvant|Sliema|VLT
+MT|Triq Marsamxett|Sliema|VLT
+MT|Triq Nofs-in-Nhar|Sliema|VLT
+MT|Triq Portu Salvu|Zabbar|ISL
+MT|Triq San Bastjan|Qormi|QRM
+MT|Triq San Duminku|Sliema|VLT
+MT|Triq San Kristofru|Sliema|VLT
+MT|Triq San Lawrenz|Zabbar|ISL
+MT|Triq San Nikola|Sliema|VLT
+MT|Triq San Pietru u San Pawl|Zabbar|ISL
+MT|Triq San Ġużepp|Zabbar|ISL
+MT|Triq San Ġwann|Sliema|VLT
+MT|Triq Sant Andrija|Sliema|VLT
+MT|Triq Sant' Orsla|Sliema|VLT
+MT|Triq Santa Tereża|Zabbar|BML
+MT|Triq Wenzu Dyer|Zabbar|ISL
+MT|Xatt il-Barriera|Sliema|VLT
+MT|Xatt Lascaris|Sliema|VLT
+MU||Baie du Tombeau|
+MU||Bambous|
+MU||Beau Bassin-Rose Hill|
+MU||Beau Vallon|
+MU||Bel Air Riviere Seche|
+MU||Belle Vue Harel|
+MU||Belle Vue Maurel|
+MU||Bon Accueil|
+MU||Brisee Verdiere|
+MU||Calodyne|
+MU||Centre de Flacq|
+MU||Chemin Grenier|
+MU||Curepipe|
+MU||Dagotiere|
+MU||Goodlands|
+MU||Grand Baie|
+MU||Grand Bois|
+MU||Grand Gaube|
+MU||L'Escalier|
+MU||Lallmatie|
+MU||Lalmatie|
+MU||Le Hochet|
+MU||Long Mountain|
+MU||Mahebourg|
+MU||Moka|
+MU||Montagne Blanche|
+MU||New Grove|
+MU||Nouvelle France|
+MU||Pailles|
+MU||Pamplemousses|
+MU||Petit Raffray|
+MU||Plaine des Papayes|
+MU||Plaine Magnien|
+MU||Pointe aux Piments|
+MU||Port Louis|
+MU||Port Mathurin|
+MU||Poste de Flacq|
+MU||Quartier Militaire|
+MU||Quatre Bornes|
+MU||Richelieu|
+MU||Riviere des Anguilles|
+MU||Riviere du Rempart|
+MU||Rose Belle|
+MU||Rouge Terre|
+MU||Saint Pierre|
+MU||Surinam|
+MU||Terre Rouge|
+MU||Triolet|
+MU||Trou aux Biches|
+MU||Vacoas|
+MV||Dhihdhoo|
+MV||Eydhafushi|
+MV||Felidhoo|
+MV||Fonadhoo|
+MV||Funadhoo|
+MV||Fuvahmulah|
+MV||Gadhdhoo|
+MV||Guraidhoo|
+MV||Hithadhoo|
+MV||Hulhumale|
+MV||Kudahuvadhoo|
+MV||Kulhudhuffushi|
+MV||Maafushi|
+MV||Madifushi|
+MV||Mahibadhoo|
+MV||Male|
+MV||Manadhoo|
+MV||Meedhoo|
+MV||Muli|
+MV||Naifaru|
+MV||Nilandhoo|
+MV||Open Stage|
+MV||Thinadhoo|
+MV||Thulusdhoo|
+MV||Un'goofaaru|
+MV||Vaadhoo|
+MV||Veymandoo|
+MV||Viligili|
+MV||Vilufushi|
+MW||Balaka|302100
+MW||Blantyre|312224
+MW||Chikwawa|315101
+MW||Chipeni|210109
+MW||Chipoka|208109
+MW||Chiradzulu|306100
+MW||Chisumulu|105215
+MW||Chitipa|
+MW||Dedza|209104
+MW||Dowa|
+MW||Karonga|102100
+MW||Kasungu|201306
+MW||Likoma|107101
+MW||Lilongwe|207207
+MW||Livingstonia|
+MW||Liwonde|303110
+MW||Luchenza|
+MW||Machinga|303117
+MW||Makata|311108
+MW||Mangochi|301110
+MW||Mchinji|205111
+MW||Monkey Bay|
+MW||Mponela|204104
+MW||Mulanje|308100
+MW||Mwanza|314103
+MW||Mzimba|105216
+MW||Mzuzu|105214
+MW||Neno|313104
+MW||Ngabu|315110
+MW||Nkhata Bay|
+MW||Nkhotakota|
+MW||Nsanje|316106
+MW||Ntcheu|210105
+MW||Ntchisi|203100
+MW||Phalombe|
+MW||Rumphi|103100
+MW||Salima|208105
+MW||Thyolo|310115
+MW||Zomba|305210
+MX|Avenida Chapultepec|Benito Juarez|06707
+MX|Avenida Chapultepec|Guadalajara|45186
+MX|Avenida de los Insurgentes|Benito Juarez|06707
+MX|Avenida Francisco I. Madero|Mexico City|06699
+MX|Avenida Francisco Sosa|Coyoacan|04327
+MX|Avenida Gobernador Luis Gonzalo Curiel|Guadalajara|44790
+MX|Avenida Hidalgo|Cuauhtemoc|06309
+MX|Avenida Juárez|Cuauhtemoc|06309
+MX|Avenida Juárez|Puebla|72410
+MX|Avenida Revolución|Tijuana|22025
+MX|Avenida Álvaro Obregón|Benito Juarez|06707
+MX|Boulevard Adolfo López Mateos|Leon de los Aldama|37270
+MX|Calle 16 de Septiembre|Ciudad Juarez|32020
+MX|Calle Coruña|Mexico City|06850
+MX|calle de Donceles|Mexico City|06309
+MX|Calle de Dulce Olivia|Coyoacan|04327
+MX|Calle de República de Cuba|Cuauhtemoc|06309
+MX|Calle Enrique Ibsen|Miguel Hidalgo|11640
+MX|Calle Esperanto|Ciudad Juarez|32663
+MX|calle Tacuba|Mexico City|06309
+MX|Calle Xicoténcatl|Coyoacan|09208
+MX|Calzada de Tlalpan|Coyoacan|03590
+MX|Calzada Independencia|Guadalajara|45186
+MX|Diagonal Patriotismo|Benito Juarez|06179
+MX|Glorieta de los Insurgentes|Benito Juarez|06707
+MX|Instituto Técnico Industrial|Cuauhtemoc|06400
+MX|Jesús Galindo y Villa|Iztacalco|15540
+MX|Maestro José Vasconcelos|Benito Juarez|06179
+MX|Melchor Ocampo|Cuauhtemoc|11370
+MX|Paseo de la Reforma|Cuauhtemoc|06090
+MX|Paseo de las Jacarandas|Cuauhtemoc|06430
+MX|Patriotismo|Benito Juarez|06179
+MX|Periférico de la Juventud|Chihuahua|31150
+MX|Periférico de la Juventud Chihuahua|Chihuahua|31150
+MX|Plaza de la República|Cuauhtemoc|06090
+MX|Puerto Aéreo|Mexico City|15990
+MX|Revolución|Benito Juarez|01184
+MX|rue Paso Florentino|Magdalena Contreras|01299
+MX|Río Churubusco|Coyoacan|04239
+MX|Río Consulado|Mexico City|15310
+MX|Río Mixcoac|Coyoacan|03920
+MY||Alor Setar|06550
+MY||Bandar Seri Alam|81700
+MY||Bandar Utama|47650
+MY||Batu Caves|68100
+MY||Bukit Jalil|43300
+MY||Bukit Mertajam|14020
+MY||Bukit Rahman Putra|44300
+MY||Ipoh|31650
+MY||Iskandar Puteri|81550
+MY||Johor Bahru|80644
+MY||Kajang|43558
+MY||Kampung Baru Subang|42300
+MY||Kampung Kangkar Teberau|80620
+MY||Kampung Larkin Lama|80400
+MY||Kapar|42200
+MY||Klang|41990
+MY||Kluang|
+MY||Kota Bharu|15616
+MY||Kota Damansara|47810
+MY||Kota Kinabalu|88858
+MY||Kota Kuala Muda|08509
+MY||Kuala Lumpur|59990
+MY||Kuala Terengganu|20680
+MY||Kuantan|25676
+MY||Kuching|93632
+MY||Malacca|75519
+MY||Miri|98009
+MY||Muar|
+MY||Mukim Pulai|81300
+MY||Pasir Gudang|81600
+MY||Pasir Mas|17009
+MY||Paya Terubong|11900
+MY||Pelentong|81700
+MY||Petaling Jaya|47307
+MY||Puchong|63300
+MY||Rawang|48010
+MY||Sandakan|88630
+MY||Selayang Baru Utara|53100
+MY||Sepang|71960
+MY||Seremban|70600
+MY||Setapak|53100
+MY||Shah Alam|40990
+MY||Sibu|96009
+MY||Sungai Buloh|44300
+MY||Sungai Petani|05517
+MY||Taiping|34009
+MY||Taman Petaling|52000
+MY||Tawau|91035
+MY||Teluk Intan|36009
+MY||Wangsa Maju|53100
+MZ||Alto Molocue|
+MZ||Angoche|
+MZ||Beira|
+MZ||Boane|
+MZ||Catandica|
+MZ||Chibuto|
+MZ||Chimoio|
+MZ||Chiure|
+MZ||Chokwe|
+MZ||Cuamba|
+MZ||Dondo|
+MZ||Gondola|
+MZ||Gurue|
+MZ||Inhambane|
+MZ||Lichinga|
+MZ||Macia|
+MZ||Mandimba|
+MZ||Manhica|
+MZ||Manica|
+MZ||Maputo|
+MZ||Marromeu|
+MZ||Massinga|
+MZ||Matola|
+MZ||Maxixe|
+MZ||Micolene|
+MZ||Milange|
+MZ||Moatize|
+MZ||Mocimboa|
+MZ||Mocimboa da Praia|
+MZ||Mocuba|
+MZ||Monapo|
+MZ||Montepuez|
+MZ||Mossuril|
+MZ||Mozambique|
+MZ||Mueda|
+MZ||Mutuali|
+MZ||Nacala|
+MZ||Namapa-erati|
+MZ||Nametil|
+MZ||Namialo|
+MZ||Nampula|
+MZ||Nhamatanda|
+MZ||Pemba|
+MZ||Quelimane|
+MZ||Ressano Garcia|
+MZ||Ribaue|
+MZ||Songo|
+MZ||Tete|
+MZ||Vilankulo|
+MZ||Xai-Xai|
+NA||Arandis|
+NA||Aranos|
+NA||Aussenkehr|
+NA||Bethanie|
+NA||Eenhana|
+NA||Gibeon|
+NA||Gobabis|
+NA||Groot Aub|
+NA||Grootfontein|
+NA||Helao Nafidi|
+NA||Henties Bay|
+NA||Hoachanas|
+NA||Karasburg|
+NA||Karibib|
+NA||Katima Mulilo|
+NA||Keetmanshoop|
+NA||Khorixas|
+NA||Luderitz|
+NA||Mariental|
+NA||Ndiyona|
+NA||Okahandja|
+NA||Okahao|
+NA||Okakarara|
+NA||Omaruru|
+NA||Omuthiya|
+NA||Ondangwa|
+NA||Ondangwa East|
+NA||Ongwediva|
+NA||Oniipa|
+NA||Opuwo|
+NA||Oranjemund|
+NA||Oshakati|
+NA||Oshikuku|
+NA||Osire|
+NA||Otavi|
+NA||Otjimbingwe|
+NA||Otjiwarongo|
+NA||Outapi|
+NA||Outjo|
+NA||Rehoboth|
+NA||Rosh Pinah|
+NA||Ruacana|
+NA||Rundu|
+NA||Swakopmund|
+NA||Tsintsabis|
+NA||Tsumeb|
+NA||Usakos|
+NA||Walvis Bay|
+NA||Warmbad|
+NA||Windhoek|
+NE||Abala|
+NE||Abalak|
+NE||Agadez|
+NE||Aguie|
+NE||Alaghsas|
+NE||Arlit|
+NE||Ayorou|
+NE||Bagaroua|
+NE||Baleyara|
+NE||Birni N Konni|
+NE||Birnin Gaoure|
+NE||Bouza|
+NE||Dakoro|
+NE||Diffa|
+NE||Dogondoutchi|
+NE||Dosso|
+NE||Dungas|
+NE||Filingue|
+NE||Gaya|
+NE||Gazaoua|
+NE||Goure|
+NE||Guidan Roumdji|
+NE||Illela|
+NE||Keita|
+NE||Kollo|
+NE||Madaoua|
+NE||Madarounfa|
+NE||Magaria|
+NE||Maine Soroa|
+NE||Malbaza|
+NE||Maradi|
+NE||Matamey|
+NE||Mayahi|
+NE||Mehana|
+NE||Mirriah|
+NE||Nguigmi|
+NE||Niamey|
+NE||Ouallam|
+NE||Say|
+NE||Tahoua|
+NE||Tanout|
+NE||Tchin Tabaraden|
+NE||Tchirozerine|
+NE||Tera|
+NE||Tessaoua|
+NE||Tibiri|
+NE||Tillaberi|
+NE||Torodi|
+NE||Youri Kourtere|
+NE||Zinder|
+NG|Abari street|Akowonjo|
+NG|Abayomi Odukoya Close|Ota|
+NG|Adekunle lawal street|Obalende|
+NG|Adeyinka Adebayo street|Abuja|
+NG|Adio Gigado Cre|Badagry|
+NG|Agbojinu Street|Akowonjo|
+NG|Agunbiade Street|Agege|
+NG|Ajara Farm Settlement Road|Badagry|
+NG|Ajayi Bembe Street|Shomolu|
+NG|Akintunde aduwo street|Abuja|
+NG|Alexander Street|Akowonjo|
+NG|Anazonwu street|Onitsha|
+NG|Andrew Street|Lagos|
+NG|Anthony enahoro street|Abuja|
+NG|Audu bako street|Kano|
+NG|Ayo Akwe Avenue|Badagry|
+NG|Balogun Mejer Close|Badagry|
+NG|Benjamin street Onitsha|Onitsha|
+NG|Bola ige close|Isanlu-Itedoijowa|
+NG|Calabar Street|Onitsha|
+NG|Dan archibong street|Calabar|
+NG|Erelu street|Lagos|
+NG|Garba lawal avenue|Lekki|
+NG|Ibrahim Umar Street|Kano|
+NG|Idemili Street|Onitsha|
+NG|Idoluwo Street|Lagos|
+NG|Ita Alagba Street|Lagos|
+NG|Jagwa Street Onitsha|Onitsha|
+NG|John Cardinal Onaiyekan street|Bwari|
+NG|Kakawa street|Obalende|
+NG|Kano street|Onitsha|
+NG|Lewis Street|Lagos|
+NG|Lucky Igbinedion street|Benin City|
+NG|Matthew Mbu street|Abuja|
+NG|Michael Ama Nnachi street|Abuja|
+NG|Modebe Street|Onitsha|
+NG|Moshalashi street|Lagos|
+NG|Moubuike street okpoko|Onitsha|
+NG|New Yidi Road|Ilorin|
+NG|Odunfa street|Lagos|
+NG|Oil Mill street|Lagos|
+NG|Olusegun Obasanjo Way Akure|Akure|
+NG|Onyeabo Street|Onitsha|
+NG|Pike Street|Lagos|
+NG|Pipe Line|Ilorin|
+NG|Porter Street|Lagos|
+NG|Sanni Adewale Street|Lagos|
+NG|Sarki Tafida Street|Abuja|
+NG|Saviour Street|Lagos|
+NG|Uzii street|Onitsha|
+NO|Abbediengveien|Oslo|1366
+NO|Adventveien|Oslo|1366
+NO|Anders Reitans veg|Trondheim|7089
+NO|Armauer Hansens veg|Trondheim|7498
+NO|Arnstein Arnebergs vei|Oslo|1295
+NO|Dokkgata|Trondheim|7498
+NO|Dyvekes vei|Oslo|1295
+NO|Elgeseter gate|Trondheim|7498
+NO|Finnbergåsen|Bergen|5232
+NO|Frostvedtveien|Larvik|3259
+NO|Gaupefaret|Oslo|1359
+NO|Grefsentunet|Oslo|1295
+NO|Gydas vei|Oslo|1295
+NO|Haakon Sæthres veg|Nesttun|5228
+NO|Hartmanns vei|Oslo|1358
+NO|Hauges vei|Oslo|1295
+NO|Hellerudstubben|Oslo|1476
+NO|Holmestrandgata|Oslo|1295
+NO|Høgtunveien|Lillestrom|1478
+NO|Kallerudveien|Oslo|1486
+NO|Kjelsåsveien|Oslo|1295
+NO|Klostergata|Moss|1532
+NO|Koefoedgeilan|Trondheim|7498
+NO|Kroken|Oslo|1486
+NO|Langbryggen|Arendal|4859
+NO|Markveien|Tonsberg|3117
+NO|Mikrobølgen|Oslo|1413
+NO|Nedre Ullern terrasse|Oslo|1358
+NO|Poppelstien|Oslo|1413
+NO|Porfyrveien|Oslo|1359
+NO|Proms gate|Bergen|5899
+NO|Schiøtts vei|Oslo|1366
+NO|Skøyen allé|Oslo|1295
+NO|Skøyenveien|Oslo|1358
+NO|Snarveien|Bergen|5232
+NO|St. Halvards vei|Bergen|5899
+NO|St. Jørgens vei|Oslo|1295
+NO|Steinborgveien|Oslo|1295
+NO|Storchveita|Trondheim|7498
+NO|Storoveien|Oslo|1295
+NO|Sturlas vei|Oslo|1359
+NO|Sverres gate|Hamar|2326
+NO|Syrinvegen|Trondheim|7060
+NO|Søndre gate|Trondheim|7498
+NO|Tyslevkroken|Oslo|1413
+NO|Vennerliveien|Oslo|1359
+NO|Vestheimgata|Oslo|1295
+NO|Åkersvikvegen|Hamar|2326
+NO|Åveitbakken|Lillehammer|2629
+NO|Øvre Skogvei|Oslo|1366
+NP||Amargadhi|
+NP||Baglun|
+NP||Banepa|
+NP||Bhadrapur|
+NP||Bharatpur|
+NP||Bhimdatta|
+NP||Biratnagar|
+NP||Birendranagar|
+NP||Birganj|
+NP||Butwal|
+NP||Chapali Bhadrakali|
+NP||Charikot|
+NP||Chautara|
+NP||Dailekh|
+NP||Darchula|
+NP||Dhangadhi|
+NP||Dhankuta|
+NP||Dharan|
+NP||Dhulikhel|
+NP||Dipayal|
+NP||Gaur|
+NP||Gulariya|
+NP||Hetauda|
+NP||Ilam|
+NP||Inaruwa|
+NP||Itahari|
+NP||Jaleshwar|
+NP||Janakpur|
+NP||Jumla|
+NP||kankrabari Dovan|
+NP||Kathmandu|
+NP||Khadbari|
+NP||Kirtipur|
+NP||Kusma|
+NP||Lahan|
+NP||Lobuche|
+NP||Madhyapur Thimi|
+NP||Malangawa|
+NP||Nepalgunj|
+NP||Panauti|
+NP||Patan|
+NP||Pokhara|
+NP||Rajbiraj|
+NP||Siddharthanagar|
+NP||Siraha|
+NP||Tansen|
+NP||Tikapur|
+NP||Triyuga|
+NP||Tulsipur|
+NP||Walin|
+NR||Anabar|NRU68
+NR||Anibare|NRU68
+NR||Arijejen|NRU68
+NR||Baiti|NRU68
+NR||Denigomodu|NRU68
+NR||Ijuw|NRU68
+NR||Menen|NRU68
+NR||Uaboe|NRU68
+NR||Yangor|NRU68
+NR||Yaren|NRU68
+NZ|Airedale Street|Auckland|1150
+NZ|Alten Road|Auckland|1145
+NZ|Anzac Avenue|Dunedin|9016
+NZ|Asquith Avenue|Avondale|1246
+NZ|Avenue Road|Hastings|4159
+NZ|Breakwater Road|Napier|4144
+NZ|Castle Street|Dunedin|9059
+NZ|Charles Street|Hastings|4153
+NZ|Dalton Street|Napier|4143
+NZ|Dickens Street|Napier|4143
+NZ|Edinburgh Street|Pukekohe East|2340
+NZ|Ellice Street|Wellington|6148
+NZ|Elliott Street|Auckland|1150
+NZ|Emily Place|Auckland|1150
+NZ|Fanshawe Street|Auckland|1150
+NZ|Frimley Road|Hastings|4153
+NZ|Gladstone Road|Gisborne|4040
+NZ|Hereford Street|Auckland|1021
+NZ|Herschell Street|Napier|4144
+NZ|Hillside Road|Dunedin|9012
+NZ|Hurstmere Road|Auckland|0750
+NZ|Jervois Road|Auckland|1144
+NZ|King Street|Pukekohe East|2340
+NZ|Lambton Quay|Wellington|6160
+NZ|Latimer Square|Christchurch|8147
+NZ|Maioro Street|New Lynn|1041
+NZ|Manurere Avenue|Auckland|0750
+NZ|Maxwell Road|Blenheim|7241
+NZ|Mercury Lane|Auckland|1021
+NZ|Montreal Street|Christchurch|8144
+NZ|Mortimer Pass|Mount Eden|1149
+NZ|Otara Road|Otara|2159
+NZ|Pah Road|Mount Eden|1345
+NZ|Parliament Street|Auckland|1150
+NZ|Princes Street|Auckland|1150
+NZ|Quay Street|Auckland|1143
+NZ|Queenstown Road|Mount Eden|1345
+NZ|Rata Street|New Lynn|0640
+NZ|Saint George Street|Papatoetoe|2156
+NZ|Saint Marys Road|Auckland|1142
+NZ|Saint Paul Street|Auckland|1150
+NZ|Shakespeare Road|Napier|4144
+NZ|St Asaph Street|Christchurch|8147
+NZ|Swanson Street|Auckland|1150
+NZ|Tennyson Street|Napier|4143
+NZ|Tiverton Road|New Lynn|1746
+NZ|Wellington Street|Auckland|1142
+NZ|Williams Street|Hastings|4159
+NZ|Woodfern Crescent|New Lynn|0642
+NZ|Ōkahu Street|Remuera|1745
+OM||'Ibri|
+OM||Adam|
+OM||Al Buraymi|
+OM||Al Khaburah|
+OM||Al Mazim|
+OM||Al Mazyunah|
+OM||Al Qabil|
+OM||An Najdah|
+OM||As Suwayq|
+OM||Badiyah|
+OM||Bahla'|
+OM||Bawshar|
+OM||Bidbid|
+OM||Dib Dibba|
+OM||Hayma'|
+OM||Ibra'|
+OM||Izki|
+OM||Khasab|
+OM||Lima'|
+OM||Liwa|
+OM||Madha'|
+OM||Madha' al Jadidah|
+OM||Masirah|
+OM||Mazari' al 'Uqdah|
+OM||Mina' Daba|
+OM||Muscat|
+OM||Nizwa|
+OM||Qurayyat|
+OM||Rustaq|
+OM||Saham|
+OM||Salalah|
+OM||Sama'il|
+OM||Seeb|
+OM||Shinas|
+OM||Sohar|
+OM||Sufalat Sama'il|
+OM||Sur|
+OM||Thamarit|
+OM||Yanqul|
+PA||Aguadulce|02042
+PA||Alcalde Diaz|07104
+PA||Almirante|01007
+PA||Ancon|07098
+PA||Anton|02006
+PA||Arraijan|07007
+PA||Boquete|04058
+PA||Canto del Llano|08007
+PA||Cativa|03004
+PA||Changuinola|01011
+PA||Chepo|07052
+PA||Chilibre|07141
+PA||Chitre|05005
+PA||Colon|03001
+PA||Curundu|07094
+PA||David|04005
+PA||El Coco|07069
+PA||El Empalme|01011
+PA||Guadalupe|07069
+PA||Juan Diaz|07143
+PA||La Arena|05002
+PA||La Chorrera|07069
+PA||La Concepcion|04018
+PA||La Mitra|07069
+PA||Las Lomas|04006
+PA||Las Tablas|06013
+PA||Llano Bonito|05005
+PA||Los Santos|06040
+PA||Monagrillo|05003
+PA||Nuevo Arraijan|07008
+PA||Pacora|07105
+PA||Panama City|07185
+PA||Pedregal|04007
+PA||Penonome|02014
+PA||Pocri|02041
+PA||Puerto Armuelles|
+PA||Puerto Escondido|03021
+PA||Puerto Pilon|03010
+PA||Rio Hato|
+PA||Sabanitas|03011
+PA||San Juan Bautista|05005
+PA||San Miguelito|07229
+PA||San Pablo Viejo Abajo|04010
+PA||Santiago de Veraguas|08001
+PA||Sona|08026
+PA||Tocumen|07107
+PA||Union Choco|12024
+PA||Veracruz|07005
+PA||Vista Alegre|07008
+PA||Volcan|04027
+PE|Alameda de Acho|Lima|15088
+PE|Arco Iris|Santiago|08003
+PE|Avenida 225|Ventanilla|15122
+PE|Avenida del Ejército|Santiago|08003
+PE|Avenida El Sauce|San Francisco De Borja|15048
+PE|Avenida Elmer Faucett|Carmen De La Legua Reynoso|07021
+PE|Avenida Guillermo Irazola|Piura|20009
+PE|Avenida José de la Riva Agüero|Carmen De La Legua Reynoso|15088
+PE|Avenida José de San Martín|Jesus Maria|15088
+PE|Avenida Junín|Piura|20009
+PE|Avenida La Molina|Santa Anita - Los Ficus|15026
+PE|Avenida Marcelino Champagnat|Sullana|20103
+PE|Avenida Nicolás de Piérola|Lima|15088
+PE|Avenida Progreso|Piura|20009
+PE|Avenida Saenz Peña de Barranco|San Isidro|15063
+PE|Avenida Salaverry|San Isidro|15086
+PE|Avenida Santa Rosa|Lima|15457
+PE|Avenida Sánchez Carrión|Piura|20003
+PE|Avenida Tacna|Piura|20009
+PE|Calle Alto Lima|Tacna|23006
+PE|Calle Bernardo Monteagudo|San Isidro|15086
+PE|Calle Choquechaka|Wanchaq|08003
+PE|Calle Loreto|Santiago|08003
+PE|Calle Los Petirrojos|San Francisco De Borja|15076
+PE|Calle Mesón de la Estrella|Santiago|08003
+PE|Calle Plateros|Santiago|08003
+PE|Calle Procuradores|Santiago|08003
+PE|Calle Qanchipata|Wanchaq|08003
+PE|Calle Santa Clara|Santiago|08003
+PE|Calle Suecia|Santiago|08003
+PE|Calle Tigre|Santiago|08003
+PE|Calle Varsovia|San Francisco De Borja|15048
+PE|Cuesta del Almirante|Santiago|08003
+PE|Eje procesional del Cusco|Santiago|08003
+PE|Jirón Amazonas|Lima|15088
+PE|Jirón Andahuaylas|Lima|15034
+PE|Jirón Belén|Cajamarca|06003
+PE|Jirón Carabaya|Lima|15088
+PE|Jirón Gamarra|Lima|15034
+PE|Jirón Gamarra|Trujillo|13011
+PE|Jirón Huancavelica|Piura|20009
+PE|Jirón José Olaya|Huaraz|02002
+PE|Jirón Lima|Puno|21002
+PE|Jirón Miguel Aljovín|Lima|15034
+PE|Jirón Moquegua|Lima|15088
+PE|Malecón Eguiguren|Piura|20009
+PE|Pasaje Olaya|Lima|15088
+PE|Pasaje Piura|Lima|15088
+PE|Paseo Cívico de Tacna|Tacna|23006
+PE|Tarata|San Isidro|15048
+PG||Aitape|
+PG||Alotau|
+PG||Ambunti|
+PG||Angoram Village|
+PG||Arawa|
+PG||Bereina|
+PG||Buka|
+PG||Bulolo|
+PG||Daru|
+PG||Finschhafen|
+PG||Goroka|
+PG||Ialibu|
+PG||Ihu|
+PG||Kainantu|
+PG||Kandrian|
+PG||Kavieng|
+PG||Kerema|
+PG||Kieta|
+PG||Kimbe|
+PG||Kiunga|
+PG||Kokoda|
+PG||Kokopo|
+PG||Kulumadau|
+PG||Kundiawa|
+PG||Kurumul|
+PG||Kwikila|
+PG||Lae|
+PG||Lelefiru|
+PG||Londolovit|
+PG||Lorengau|
+PG||Madang|
+PG||Mendi|
+PG||Morehead|
+PG||Mount Hagen|
+PG||Namatanai|
+PG||Panguna|
+PG||Popo|
+PG||Popondetta|
+PG||Porgera|
+PG||Port Moresby|
+PG||Rabaul|
+PG||Samarai|
+PG||Silo Number 1|
+PG||Tabubil|
+PG||Tari|
+PG||Uritai|
+PG||Vanimo|
+PG||Wabag|
+PG||Wau|
+PG||Wewak|
+PH|Abad Santos Avenue|Manila|1413
+PH|Aguilar Street|Dipolog|7100
+PH|Amorsolo Street|Bel Air|1306
+PH|Andrews Avenue|Pasay|1232
+PH|Anonas Street|Quezon City|1102
+PH|Arnaiz Avenue|Pasay|1306
+PH|Ayala Avenue|Bel Air|1209
+PH|Batasan Road|Commonwealth|1121
+PH|Betty Go-Belmonte Street|San Juan|1109
+PH|Biak na Bato Street|Naga|4400
+PH|Boni Avenue|Mandaluyong|1551
+PH|Bonifacio Drive|Manila|1018
+PH|Caceres Street|Naga|4400
+PH|Chino Roces Avenue|Bel Air|1306
+PH|Commonwealth Avenue|Quezon City|1128
+PH|Domestic Road|Baclaran|1303
+PH|Elias Angeles Street|Naga|4400
+PH|Elliptical Road|Quezon City|1177
+PH|Estrella Street|Bel Air|1209
+PH|F. Llamas Street|Cebu City|6000
+PH|Fraternidad Street|Naga|4400
+PH|Gregorio Araneta Avenue|San Juan|1115
+PH|Harrison Avenue|Pasay|1381
+PH|Honorata G. Manalo Drive|Bacolod City|6100
+PH|J.P. Rizal Avenue|Bel Air|1206
+PH|Julia Vargas Avenue|Pasig City|0401
+PH|Kalaw Avenue|Manila|1045
+PH|Kalayaan Avenue|Bel Air|1209
+PH|Katipunan Avenue|Calumpang|1102
+PH|Lawton Avenue|Makati City|1229
+PH|Legarda Street|Manila|1005
+PH|Leveriza Street|Bel Air|1206
+PH|M. T. Villanueva Avenue|Naga|4400
+PH|McKinley Road|Makati City|1299
+PH|Meralco Avenue|Pasig City|0401
+PH|Muelle Loney Street|Iloilo|5039
+PH|Nicanor Garcia Street|Santa Rosa|4024
+PH|P. Diaz Street|Naga|4400
+PH|P. Lopez Street|Cebu City|6000
+PH|Padre Burgos Avenue|Manila|1002
+PH|Paseo de Roxas|Bel Air|1209
+PH|Paterio Aquino Avenue|Navotas|1473
+PH|Peñafrancia Avenue|Naga|4400
+PH|Quezon Avenue|Dipolog|7100
+PH|Quirino Avenue|Manila|1009
+PH|Recto Avenue|Manila|1003
+PH|Rizal Avenue|Dipolog|7100
+PH|Rizal Avenue|Manila|1003
+PH|Taft Avenue|Pasay|1235
+PH|Zobel Roxas Street|Bel Air|1206
+PK||Abbottabad|22080
+PK||Arifwala|
+PK||Bahawalnagar|
+PK||Bahawalpur|63180
+PK||Bannu|28030
+PK||Battagram|21046
+PK||Bhawana|
+PK||Burewala|61010
+PK||Chak Jhumra|37700
+PK||Chiniot|35400
+PK||Chunian|55220
+PK||Dera Ghazi Khan|
+PK||Dera Ismail Khan|29080
+PK||Faisalabad|38090
+PK||Gujranwala|52260
+PK||Gujrat|47580
+PK||Hafizabad|
+PK||Hyderabad|71500
+PK||Islamabad|44800
+PK||Jalalpur Pirwala|59250
+PK||Jhang Sadr|
+PK||Kamoke|
+PK||Karachi|74900
+PK||Kasur|
+PK||Lahore|54030
+PK||Larkana|77280
+PK||Mardan|75460
+PK||Mingora|19060
+PK||Mirpur Khas|
+PK||Multan|60750
+PK||Muridke|39000
+PK||Muzaffarabad|13220
+PK||Nawabshah|
+PK||Okara|
+PK||Peshawar|24470
+PK||Pindi Bhattian|52180
+PK||Quetta|87550
+PK||Rahim Yar Khan|84200
+PK||Rawalpindi|46620
+PK||Saddiqabad|
+PK||Sahiwal|57050
+PK||Sargodha|
+PK||Shahkot|39630
+PK||Shekhupura|
+PK||Sialkot|51300
+PK||Sinjhoro|68220
+PK||Skardu|16110
+PK||Sukkur|65170
+PK||Tando Allahyar|70010
+PK||Tando Bago|72120
+PL|aleja Marszałka Józefa Piłsudskiego|Tomaszow Mazowiecki|97-202
+PL|Bulwar Nadmorski im. Feliksa Nowowiejskiego|Gdynia|81-435
+PL|Kiliński Street in Siedlce|Siedlce|08-110
+PL|ulica 3 Maja|Pultusk|06-100
+PL|ulica Adama Mickiewicza|Czestochowa|42-202
+PL|ulica Antoniego Padewskiego|Lodz|91-334
+PL|ulica Armanda Călinescu|Srodmiescie|00-676
+PL|Ulica Bagienna w Katowicach|Katowice|40-334
+PL|ulica Borowej Góry|Wola|01-384
+PL|ulica Brwinowska|Ochota|02-345
+PL|Ulica Bulwar Filadelfijski w Toruniu|Torun|87-108
+PL|ulica Chemiczna|Praga Polnoc|03-786
+PL|ulica Chemiczna|Sosnowiec|41-205
+PL|Ulica Cicha w Warszawie|Srodmiescie|00-368
+PL|ulica Dominika Merliniego|Mokotow|02-511
+PL|ulica Dominika Ździebły-Danowskiego|Krakow|31-276
+PL|ulica Gotycka|Bielany|01-931
+PL|ulica Henrykowska|Bialoleka|03-093
+PL|Ulica Ignacego Krasickiego w Czeladzi|Sosnowiec|41-253
+PL|Ulica Jana Heweliusza w Gdańsku|Gdansk|80-895
+PL|ulica Jana Maklakiewicza|Mokotow|02-673
+PL|ulica Jasnodworska|Zoliborz|01-798
+PL|ulica Juliana Święcickiego|Zoliborz|01-648
+PL|Ulica Józefa Wybickiego w Sosnowcu|Sosnowiec|41-200
+PL|ulica Katowicka|Chorzow|41-507
+PL|ulica Katowicka|Pszczyna|43-243
+PL|Ulica Kosmonautów w Czeladzi|Czeladz|41-254
+PL|ulica Koziołka|Bialoleka|03-037
+PL|ulica Kuropatwy|Piaseczno|02-893
+PL|ulica Leona Schillera|Warsaw|00-288
+PL|ulica Ludwika Zamenhofa|Poznan|61-397
+PL|ulica Lęborska|Praga Polnoc|03-535
+PL|Ulica Marii i Bolesława Wysłouchów|Krakow|30-613
+PL|ulica Naddnieprzańska|Praga Poludnie|04-255
+PL|ulica Odległa|Praga Poludnie|03-893
+PL|ulica Odrzykońska|Ochota|02-345
+PL|ulica Okolska|Mokotow|02-511
+PL|Ulica Parkowa w Prudniku|Prudnik|48-200
+PL|ulica Piotra Czajkowskiego|Lodz|92-518
+PL|ulica Powszechna|Rembertow|04-661
+PL|ulica Przyszkole|Lodz|93-554
+PL|ulica Rokicińska w Łodzi|Lodz|92-444
+PL|Ulica Rycerska w Będzinie|Bedzin|42-500
+PL|ulica Stanisława Mierzwy|Bienczyce|31-978
+PL|Ulica Stanisława Staszica w Będzinie|Bedzin|42-500
+PL|ulica Stefanii Sempołowskiej|Lodz|91-738
+PL|ulica Tadeusza Kościuszki|Kalisz|62-800
+PL|Ulica Wałowa w Wodzisławiu Śląskim|Wodzislaw Slaski|44-300
+PL|ulica Winogronowa|Ursynow|02-761
+PL|ulica Łąkowa|Piaseczno|05-500
+PS||'Abasan al Kabirah|
+PS||'Atarut|
+PS||Al 'Ayzariyah|
+PS||Al Birah|
+PS||Al Burayj|
+PS||Al Qararah|
+PS||Al Yamun|
+PS||An Nusayrat|
+PS||Ar Ram wa Dahiyat al Barid|
+PS||As Samu'|
+PS||Az Zahiriyah|
+PS||Az Zuwaydah|
+PS||Balatah|
+PS||Bani Na'im|
+PS||Bani Suhayla|
+PS||Battir|
+PS||Bayt Hanina|
+PS||Bayt Hanun|
+PS||Bayt Jala|
+PS||Bayt Lahya|
+PS||Bayt Sahur|
+PS||Baytunya|
+PS||Bethlehem|
+PS||Dayr al Balah|
+PS||Dura|
+PS||Gaza|
+PS||Halhul|
+PS||Hebron|
+PS||Idhna|
+PS||Jabalya|
+PS||Janin|
+PS||Jericho|
+PS||Khan Yunis|
+PS||Ma'ale Adummim|
+PS||Nablus|
+PS||Qabatiyah|
+PS||Qalqilyah|
+PS||Rafah|
+PS||Ramallah|
+PS||Sa'ir|
+PS||Shokat as-Sufi|
+PS||Shu'fat|
+PS||Sur Bahir|
+PS||Surif City|
+PS||Tarqumya|
+PS||Tubas|
+PS||Tulkarm|
+PS||Wadi al-Joz|
+PS||Ya'bad|
+PS||Yatta|
+PT|Alameda da Encarnação|Olivais|2689-505
+PT|Avenida Calouste Gulbenkian|Sete Rios|1999-002
+PT|Avenida da Boavista|Aldoar|4464-513
+PT|Avenida de Berlim|Olivais|2689-505
+PT|Avenida de Berna|Sete Rios|1999-002
+PT|Avenida do Doutor Lourenço Peixinho|Aveiro|3814-507
+PT|Avenida Dom João II|Parque das Nacoes|1886-502
+PT|Avenida dos Aliados|Porto|4369-008
+PT|Avenida Marechal Gomes da Costa|Olivais|2689-505
+PT|Avenida Ressano Garcia|Sete Rios|1999-002
+PT|Avenida Sá Carneiro|Sao Martinho|9064-512
+PT|Avenida Zarco|Funchal|9064-512
+PT|Cais Português|Parque das Nacoes|1886-502
+PT|Calçada da Ajuda|Belem|2665-411
+PT|Calçadinha de São Brás de Alportel|Loule|8150-999
+PT|Escadas das Verdades|Porto|4369-008
+PT|Estrada da Pontinha|Sao Martinho|9064-512
+PT|Largo dos Varadouros|Funchal|9064-512
+PT|Rua 5 de Outubro|Funchal|9240-122
+PT|Rua António Inácio Marques da Costa|Setubal|2914-525
+PT|Rua António Maria Cardoso|Lisbon|1999-002
+PT|Rua da Alfândega|Funchal|9064-512
+PT|Rua da Boa Viagem|Funchal|9064-512
+PT|Rua da Cadeia Velha|Funchal|9064-512
+PT|Rua da Pena|Funchal|9240-122
+PT|Rua da República|Figueira da Foz|3084-501
+PT|Rua da Saudade|Lisbon|1999-002
+PT|Rua das Escolas Gerais|Lisbon|1999-002
+PT|Rua de Belomonte|Porto|4369-008
+PT|Rua de Costa Cabral|Paranhos|4415-686
+PT|Rua de Cândido dos Reis|Porto|4369-008
+PT|Rua de D. João I|Guimaraes|4839-019
+PT|Rua de D. Manuel II|Porto|4369-008
+PT|Rua de Nun' Álvares Pereira|Aldoar|4454-515
+PT|Rua de Santa Maria|Funchal|9064-512
+PT|Rua de São Bento da Vitória|Porto|4369-008
+PT|Rua de São Julião|Lisbon|1999-002
+PT|Rua de São Vicente|Braga|4719-006
+PT|Rua do Aljube|Funchal|9064-512
+PT|Rua do Carvalhido|Paranhos|4415-686
+PT|Rua do Castanheiro|Funchal|9064-512
+PT|Rua do Jasmineiro|Sao Martinho|9064-512
+PT|Rua do Pombal|Funchal|9350-409
+PT|Rua do Sol a Santana|Lisbon|1999-002
+PT|Rua do Til|Funchal|9350-409
+PT|Rua dos Fanqueiros|Lisbon|1999-002
+PT|Rua Elias Garcia|Funchal|9240-122
+PT|Rua João de Deus|Lisbon|1999-002
+PT|Rua Nova de São Pedro|Funchal|9064-512
+PT|Travessa João Caetano|Funchal|9064-512
+QA||Al Ghuwayriyah|
+QA||Al Jumayliyah|
+QA||Al Khawr|
+QA||Al Wakrah|
+QA||Al Wukayr|
+QA||Ar Rayyan|
+QA||Ar Ruways|
+QA||Ash Shihaniyah|
+QA||Az Za'ayin|
+QA||Doha|
+QA||Dukhan|
+QA||Fuwayrit|
+QA||Lusail|
+QA||Madinat ash Shamal|
+QA||Mu'aydhir Rawdat Rashid|
+QA||Nu'ayjah|
+QA||Umm Bab|
+QA||Umm Ghuwaylinah|
+QA||Umm Salal Muhammad|
+RO|Aleea Modrogan|Bucharest|015245
+RO|Bulevardul 16 Decembrie 1989|Timisoara|300789
+RO|Bulevardul Eroilor din Cluj|Cluj-Napoca|400699
+RO|Bulevardul Gheorghe Magheru|Bucharest|052839
+RO|Bulevardul Ion Mihalache|Bucharest|015245
+RO|Bulevardul Lascăr Catargiu|Bucharest|015245
+RO|Bulevardul Nicolae Bălcescu|Buzau|120282
+RO|Bulevardul Regele Carol I|Bucharest|033107
+RO|Calea Bogdăneștilor|Timisoara|300789
+RO|Calea Moșilor|Bucharest|077086
+RO|Calea Moților|Cluj-Napoca|400699
+RO|Calea Victoriei|Bucharest|052839
+RO|Călărașilor street in Târgu Mureș|Targu Mures|540570
+RO|Episcop Roman Ciorogariu Street|Oradea|410609
+RO|Intrarea Luigi Cazzavillan|Bucharest|052839
+RO|Predeal street|Targu Mures|540570
+RO|Splaiul Tudor Vladimirescu|Timisoara|300789
+RO|Str. Emil Racovita|Cluj-Napoca|400699
+RO|Strada  Academiei|Oradea|410609
+RO|Strada Alexandru Beldiman|Bucharest|052839
+RO|Strada Anatole France|Cluj-Napoca|400699
+RO|Strada Biserica Doamnei|Bucharest|052839
+RO|Strada Bogdan Vodă|Sighetu Marmatiei|435503
+RO|Strada Brâncoveanu din Brașov|Brasov|500486
+RO|Strada Bălcescu din Brașov|Brasov|500486
+RO|Strada Cerbului|Brasov|500486
+RO|Strada Cișmigiu|Cluj-Napoca|400699
+RO|Strada Corvinilor|Satu Mare|440278
+RO|Strada Covaci|Bucharest|052839
+RO|Strada Cuza Vodă|Buzau|120282
+RO|Strada Cuza Vodă|Cluj-Napoca|400699
+RO|Strada Cuza Vodă|Iasi|700951
+RO|Strada Cuza Vodă|Targu Mures|540570
+RO|Strada Domnească din Galați|Galati|800702
+RO|Strada Eroul Necunoscut|Oradea|410609
+RO|Strada Eugeniu Carada|Bucharest|052839
+RO|Strada Fluierașului|Oradea|410609
+RO|Strada Franceză|Bucharest|052839
+RO|Strada Gruia|Cluj-Napoca|400699
+RO|Strada Halelor|Bucharest|052839
+RO|Strada Ialomiţei|Satu Mare|440278
+RO|Strada Mihai Vodă|Bucharest|052839
+RO|Strada Mihail Kogălniceanu|Cluj-Napoca|400699
+RO|Strada Mircea Popescu|Oradea|410609
+RO|Strada Postăvarului|Brasov|500486
+RO|Strada Rimanóczy Kálmán|Oradea|410609
+RO|Strada Traian|Sighetu Marmatiei|435503
+RO|Strada Vulcan Iosif|Oradea|410609
+RO|Strada Șelari|Bucharest|052839
+RO|Strada Știrbei Vodă|Bucharest|052839
+RS|1300 kaplara|Novi Sad|21102
+RS|Aleksandra Tišme|Novi Sad|21102
+RS|Aleksandra Vojinovića|Sremcica|11226
+RS|Antuna Urbana|Novi Sad|21203
+RS|Belilo|Novi Sad|21205
+RS|Braće Jovanović|Novi Sad|21102
+RS|Cara Lazara|Vrsac|26300
+RS|Cetinjska|Vrsac|26300
+RS|Dimitrija Sabova|Novi Sad|21205
+RS|Dr Agostinja Neta|Novi Beograd|11031
+RS|Dunavska|Bela Crkva|26340
+RS|Ilije Birčanina|Novi Sad|21102
+RS|Ivo Lole Ribara|Novi Sad|21102
+RS|Jelisavete Načić|Belgrade|11000
+RS|Karađorđeva|Novi Sad|21102
+RS|Kej Oslobođenja|Zemun|11080
+RS|Kestenjara|Novi Sad|21209
+RS|Kosančić Ivana|Novi Sad|21102
+RS|Kozaračka|Novi Sad|21209
+RS|Kumodraška|Belgrade|11000
+RS|Lele Radulj|Bela Crkva|26340
+RS|Ljutice Bogdana|Vrsac|26300
+RS|Miloša Obilića|Vrsac|26300
+RS|Novosadskog sajma|Novi Sad|21102
+RS|Ohridska|Novi Sad|21208
+RS|Partizanskih baza|Novi Sad|21102
+RS|Patrijarha Čarnojevića|Novi Sad|21102
+RS|Plitvička|Novi Sad|21102
+RS|Preradovićeva|Novi Sad|21205
+RS|Prizrenska|Belgrade|11000
+RS|Proleterska|Bela Crkva|26340
+RS|Prvomajska|Zemun|11080
+RS|Rudolfa Kornauera|Vrsac|26300
+RS|Save Ljuboljeva|Novi Sad|21102
+RS|Save Đisalova|Novi Sad|21102
+RS|Sinđelićeva|Vrsac|26300
+RS|Stražilovska|Novi Sad|21102
+RS|Studenička|Vrsac|26300
+RS|Sunčani kej|Novi Sad|21102
+RS|Ulica Kralja Petra|Belgrade|11031
+RS|Veljka Petrovića|Novi Sad|21102
+RS|Vojvode Knićanina|Vrsac|26300
+RS|Vojvode Stepe Boulevard|Belgrade|11000
+RS|Vorosovo|Novi Sad|21205
+RS|Vula Antića|Vranje|17501
+RS|Zmaj Jovina|Zemun|11080
+RS|Čika Stevina|Novi Sad|21102
+RS|Đorđe Đerđa|Novi Sad|21102
+RS|Đure Jakšića|Bela Crkva|26340
+RS|Šajkaška|Novi Sad|21102
+RU|1st Goncharny Lane|Moscow|144700
+RU|3rd Predportovy Passage|Shushary|196626
+RU|4th Monetchikovsky Lane|Moscow|144700
+RU|8th March Street|Petrozavodsk|185035
+RU|Balakireva street|Vladimir|601280
+RU|Beregovoy Proezd|Moscow|141662
+RU|Bolshoy Devyatinsky Lane|Moscow|144700
+RU|Budapestskaya Street|Shushary|196626
+RU|Charlza Gaskoyna Street|Petrozavodsk|185035
+RU|Doynikov Lane|Saint Petersburg|195213
+RU|Drevlyanka Street|Petrozavodsk|185035
+RU|Dzhazovaya Street|Moscow|901080
+RU|Gagarina Street|Zelenogradsk|238530
+RU|Gerasim Kurin street|Obruchevo|141662
+RU|Glebova embankment|Staraya Russa|175207
+RU|Kalinina Street|Kazan|422528
+RU|Kazarmenskaya Street|Petrozavodsk|185035
+RU|Komsomolskaya Street|Kaliningrad|236985
+RU|Kovalikhinskaya Street|Nizhniy Novgorod|603098
+RU|Krasnoflotskaya Street|Petrozavodsk|185035
+RU|Krymskaya Ploshchad|Moscow|144700
+RU|Kulakov Lane|Moscow|901080
+RU|Kuznetsky Most|Moscow|144700
+RU|Lesnaya Street|Segezha|186424
+RU|Lesnaya Street|Zelenogorsk|197720
+RU|Medynskaya Street|Vidnoye|142717
+RU|Nelidovskaya street|Khimki|143441
+RU|Novaya Doroga Street|Moscow|901080
+RU|Oktyabrskoy Revolyutsii Street|Smolensk|214039
+RU|Oktyabrsky Prospekt|Lyubertsy|140009
+RU|Podgornaya Street|Vyborg|188931
+RU|Popova Street|Barnaul|656008
+RU|Preobrazhenskij Lane|Kudrovo|196626
+RU|Prospekt Generala Dorokhova|Obruchevo|249028
+RU|Respublikanskaya Street|Saint Petersburg|191015
+RU|Reznoy Lane|Saint Petersburg|199155
+RU|Romanov street|Novosibirsk|630099
+RU|rue de la Commune de Paris|Kazan|422528
+RU|Shchors street|Tolyatti|355899
+RU|Sovietskaya ulitsa|Salavat|453259
+RU|Timura Frunze Street|Moscow|144700
+RU|Tretiya Vladimirskaya Street|Reutov|143969
+RU|Truda Street|Kolpino|196658
+RU|Turgeneva Street|Tyumen|625999
+RU|Turku Street|Shushary|196626
+RU|Vasilisa Kozhina Street|Moscow|141662
+RU|Vokzalnaya street|Vidnoye|142704
+RU|Voroshilovsky avenue in Rostov-on-Don|Rostov-on-Don|344961
+RU|Vysotskogo Street|Moscow|144700
+RU|Zarubinskiy Lane|Sestroretsk|197706
+RW||Bugaragara|
+RW||Bugarama|
+RW||Bushekeri|
+RW||Bushenge|
+RW||Busogo|
+RW||Butare|
+RW||Byumba|
+RW||Cyangugu|
+RW||Cyato|
+RW||Gahini|
+RW||Gihombo|
+RW||Gikongoro|
+RW||Gisenyi|
+RW||Gitarama|
+RW||Gitesi|
+RW||Kagano|
+RW||Karambi|
+RW||Karengera|
+RW||Kayonza|
+RW||Kibungo|
+RW||Kibuye|
+RW||Kigali|
+RW||Kinigi|
+RW||Kirambo|
+RW||Kirimbi|
+RW||Kora|
+RW||Mabanza|
+RW||Macuba|
+RW||Mahembe|
+RW||Mugina|
+RW||Muhanga|
+RW||Mukamira|
+RW||Mukingo|
+RW||Musanze|
+RW||Ndera|
+RW||Ngororero|
+RW||Nyabitekeli|
+RW||Nyagatare|
+RW||Nyamata|
+RW||Nyanza|
+RW||Nzega|
+RW||Rangiro|
+RW||Ruhango|
+RW||Ruhuha|
+RW||Rwamagana|
+RW||Shangi|
+RW||Shyorongi|
+RW||Tare|
+RW||Umutara|
+SA||Abha|
+SA||Abu 'Arish|
+SA||Ad Dawadimi|
+SA||Ad Dir'iyah|
+SA||Al Bada'i' al Wusta|
+SA||Al Bahah|
+SA||Al Hufuf|
+SA||Al Jubayl|
+SA||Al Khafji|
+SA||Al Kharj|
+SA||Al Lith|
+SA||Al Mubarraz|
+SA||Al Qatif|
+SA||Ar Rass|
+SA||Arar|
+SA||Ash Shafa|
+SA||Az Zulfi|
+SA||Baljurashi|
+SA||Bariq|
+SA||Bishah|
+SA||Buraydah|
+SA||Dammam|
+SA||Dhahran|
+SA||Ha'il|
+SA||Hafar Al-Batin|
+SA||Jeddah|
+SA||Jizan|
+SA||Khamis Mushait|
+SA||Khobar|
+SA||King Faisal Military City|
+SA||Madinah|
+SA||Makkah|
+SA||Najran|
+SA||Qurayyat|
+SA||Rabigh|
+SA||Ranyah|
+SA||Ras Tanura|
+SA||Riyadh|
+SA||Sabt Alalayah|
+SA||Sabya|
+SA||Sakakah|
+SA||Sayhat|
+SA||Sultanah|
+SA||Ta'if|
+SA||Tabuk|
+SA||Tarut|
+SA||Turayf|
+SA||Umluj|
+SA||Unaizah|
+SA||Yanbu|
+SB||Auki|
+SB||Buala|
+SB||Gizo|
+SB||Honiara|
+SB||Kirakira|
+SB||Lata|
+SB||Malango|
+SB||Munda|
+SB||Noro|
+SB||Tandai|
+SB||Taro|
+SB||Tulagi|
+SD||'Ardamata|
+SD||Abu Jibeha|
+SD||Ad Douiem|
+SD||Ad-Damazin|
+SD||Ad-Damir|
+SD||Al Hasaheisa|
+SD||Al Manaqil|
+SD||Al Mijlad|
+SD||Al Qadarif|
+SD||Al-Junaynah|
+SD||An Nuhud|
+SD||Ar Rahad|
+SD||As Suki|
+SD||Atbara|
+SD||Babanusah|
+SD||Buram|
+SD||Dilling|
+SD||Dongola|
+SD||El Daein|
+SD||El Fasher|
+SD||El Geneina Fort|
+SD||El Obeid|
+SD||Er Roseires|
+SD||Gereida|
+SD||Kabkabiyah|
+SD||Kadugli|
+SD||Kas|
+SD||Kassala|
+SD||Khartoum|
+SD||Khartoum North|
+SD||Khashm al Qirbah|
+SD||Kosti|
+SD||Kutum|
+SD||Mellit|
+SD||New Halfa|
+SD||Nyala|
+SD||Omdurman|
+SD||Port Sudan|
+SD||Rabak|
+SD||Sennar|
+SD||Sh'iariah|
+SD||Shendi|
+SD||Singa|
+SD||Sinkat|
+SD||Suakin|
+SD||Tokar|
+SD||Tullus|
+SD||Umm Ruwaba|
+SD||Wad Medani|
+SD||Zalinjay|
+SE|Anna Branzells gata|Partille|433 70
+SE|Aroseniusvägen|Sundbyberg|178 93
+SE|Asperögatan|Gothenburg|422 20
+SE|Berguven|Vaestra Froelunda|436 58
+SE|Bobergsgatan|Gaevle|808 86
+SE|Bräcke Östergårdsgata|Gothenburg|418 02
+SE|Bökersgatan|Gothenburg|418 02
+SE|Carl Larssons väg|Sundbyberg|178 93
+SE|Elfrida Andrées gata|Gothenburg|418 02
+SE|Erling Skackes Gata|Gothenburg|418 02
+SE|Fredrikshovsgatan|Stockholm|131 87
+SE|Frostgatan|Gothenburg|418 02
+SE|Fältspatsgatan|Vaestra Froelunda|426 20
+SE|Hazeliusbacken|Stockholm|131 87
+SE|Högatan|Gothenburg|424 38
+SE|Kabyssgatan|Gothenburg|422 20
+SE|Knalteskärsgatan|Vaestra Froelunda|426 20
+SE|Kungens rondell|Norrkoeping|608 49
+SE|Kyrkogatan|Joenkoeping|558 10
+SE|Kärnvedsgatan|Gothenburg|433 70
+SE|Laghamragatan|Gothenburg|424 38
+SE|Lavettgatan|Vaestra Froelunda|426 20
+SE|Lona Knapes Gata|Vaestra Froelunda|426 20
+SE|Lägatan|Vaestra Froelunda|426 20
+SE|Långes gata|Vaestra Froelunda|430 84
+SE|Mogatan|Vaestra Froelunda|426 20
+SE|Morkullevägen|Boxholm|595 76
+SE|Nordengatan|Norrkoeping|608 49
+SE|Norra Säterigatan|Gothenburg|418 02
+SE|Norra Vallgatan|Malmoe|218 44
+SE|Nybergsgatan|Partille|433 70
+SE|Prickskyttestigen|Vaestra Froelunda|422 20
+SE|Rörstrandsgatan|Stockholm|121 25
+SE|Saltängsgatan|Norrkoeping|608 49
+SE|Samuel Owens gata|Stockholm|121 25
+SE|Sandmusslegatan|Vaestra Froelunda|426 20
+SE|Specksrum|Visby|622 70
+SE|Stenbergsgatan|Gothenburg|418 02
+SE|Stjärnbåtsgatan|Vaestra Froelunda|426 20
+SE|Terrassgatan|Gothenburg|418 02
+SE|Toppsegelsgatan|Gothenburg|422 20
+SE|Torgpassagen|Gothenburg|418 02
+SE|Tryggvegatan|Gothenburg|418 02
+SE|Tyska brinken|Stockholm|173 86
+SE|Tönsbergsgatan|Gothenburg|418 02
+SE|Västerhagen|Bjoerlanda|423 73
+SE|Västra Kyrkogatan|Visby|622 70
+SE|Växelmyntsgatan|Vaestra Froelunda|426 20
+SE|Wargentinsgatan|Stockholm|121 25
+SE|Älvegårdsgränden|Bjoerlanda|423 20
+SG|Ah Hood Road|Novena|329984
+SG|Amoy Street|Singapore|079912
+SG|Arab Street|Singapore|208826
+SG|Armenian Street|Singapore|189673
+SG|Banda Street|Singapore|169856
+SG|Bartley Road|MacPherson|539788
+SG|Bencoolen Street|Singapore|238893
+SG|Bernam Street|Singapore|089770
+SG|Boon Tat Street|Singapore|079912
+SG|Bras Basah Road|Singapore|238893
+SG|Buangkok Drive|Sengkang New Town|548265
+SG|Bukit Timah Road|Bukit Timah|299696
+SG|Clemenceau Avenue|Singapore|239949
+SG|Club Street|Singapore|079912
+SG|Connaught Drive|Singapore|189673
+SG|Dickenson Hill Road|Singapore|169856
+SG|Duxton Hill|Singapore|169856
+SG|Erskine Road|Singapore|079912
+SG|Eu Tong Sen Street|Singapore|169856
+SG|Geylang Road|MacPherson|399915
+SG|Havelock Road|Singapore|239949
+SG|Hume Avenue|Anak Bukit|679058
+SG|Kim Seng Road|Singapore|249903
+SG|Malay Street|Singapore|208826
+SG|Shenton Way|Singapore|079912
+SG|Stamford Road|Singapore|189673
+SG|Victoria Street|Singapore|238893
+SI|Aškerčeva cesta|Ljubljana|1600
+SI|Bazoviška ulica|Koper|6600
+SI|Beblerjeva ulica|Idrija|5280
+SI|Belveder|Koper|6600
+SI|Cafova ulica|Maribor|2610
+SI|Cankarjeva cesta|Ljubljana|1600
+SI|Cankarjeva ulica|Postojna|6230
+SI|Cankarjevo nabrežje|Ljubljana|1600
+SI|Dellavallejeva ulica|Koper|6600
+SI|Dolga reber|Koper|6600
+SI|Gallusova ulica|Koper|6600
+SI|Gimnazijski trg|Koper|6600
+SI|Goriška ulica|Koper|6600
+SI|Goriška ulica|Maribor|2610
+SI|Gosposka ulica|Ljubljana|1600
+SI|Gosposka ulica|Maribor|2610
+SI|Gradaška street|Ljubljana|1600
+SI|Gregorčičev drevored|Postojna|6230
+SI|Gregorčičeva ulica|Ljubljana|1600
+SI|Jamska cesta|Postojna|6230
+SI|Kacova ulica|Maribor|2610
+SI|Kamnita ulica|Koper|6600
+SI|Kidričeva ulica|Koper|6600
+SI|Knafljev prehod|Ljubljana|1600
+SI|Koroška cesta|Maribor|2351
+SI|Levstikova ulica|Ljubljana|1600
+SI|Masarykova cesta|Ljubljana|1600
+SI|Mladinska ulica|Koper|6600
+SI|Obrežna steza|Ljubljana|1600
+SI|Prešernova ulica|Postojna|6230
+SI|Puharjeva ulica|Ljubljana|1600
+SI|Ribiška ulica|Maribor|2610
+SI|Santorijeva ulica|Koper|6600
+SI|Strma ulica|Maribor|2610
+SI|Tavčarjeva ulica|Ljubljana|1600
+SI|Tržaška cesta|Ljubljana|1600
+SI|Ulica heroja Tomšiča|Maribor|2610
+SI|Ulica na Grad|Ljubljana|1600
+SI|Ulica Pariške komune|Maribor|2610
+SI|Ulica slovenske osamosvojitve|Maribor|2610
+SI|Ulica Vita Kraigherja|Maribor|2610
+SI|Verdijeva ulica|Koper|6600
+SI|Vetrinjska ulica|Maribor|2610
+SI|Vinarska ulica|Maribor|2610
+SI|Vlačičeva ulica|Koper|6600
+SI|Vrbanska cesta|Maribor|2351
+SI|Čevljarska ulica|Koper|6600
+SI|Čevljarska ulica|Ljubljana|1600
+SI|Šubičeva ulica|Ljubljana|1600
+SI|Židovska steza|Ljubljana|1600
+SK|9. ulica|Dubravka|841 06
+SK|Bagarova ulica|Dubravka|845 51
+SK|Bebravská ulica|Vrakuna|829 90
+SK|Blumentálska|Bratislava|821 08
+SK|Brečtanová ulica|Bratislava|831 01
+SK|Bytčianska ulica|Zilina|010 10
+SK|Drevená ulica|Bratislava|819 44
+SK|Floriánska ulica|Bratislava|819 44
+SK|Goláňova ulica|Vrakuna|821 05
+SK|Hlavná|Kosice|040 01
+SK|Hlohová|Petrzalka|851 01
+SK|Holekova ulica|Bratislava|819 44
+SK|Hraničná ulica|Petrzalka|821 05
+SK|Hydinárska ulica|Podunajske Biskupice|821 07
+SK|Inovecká ulica|Bratislava|819 44
+SK|Jastrabia ulica|Vrakuna|821 05
+SK|Jastrabinová ulica|Podunajske Biskupice|821 07
+SK|Jungmannova ulica|Petrzalka|851 04
+SK|K lomu|Karlova Ves|831 01
+SK|Korunská ulica|Dubravka|841 10
+SK|Kôstková ulica|Petrzalka|851 10
+SK|Lenardova ulica|Bratislava|851 01
+SK|Lyžiarska ulica|Bratislava|851 01
+SK|Malajská ulica|Petrzalka|851 01
+SK|Malobytčianska cesta|Povazska Bystrica|013 51
+SK|Matejská|Petrzalka|851 01
+SK|Mostová|Ruzomberok|034 95
+SK|Pankúchova ulica|Petrzalka|851 04
+SK|Platanová ulica|Vrakuna|829 90
+SK|Pod agátmi|Vrakuna|821 05
+SK|Pri celulózke|Zilina|013 01
+SK|Pri mlyne|Vrakuna|831 07
+SK|Pri starom letisku|Vrakuna|831 07
+SK|Pri trati|Podunajske Biskupice|821 07
+SK|Pribinova ulica|Hlohovec|920 03
+SK|Pílová ulica|Petrzalka|851 10
+SK|Rajecká ulica|Petrzalka|851 01
+SK|Riečna ulica|Bratislava|819 44
+SK|Rožňavská ulica|Bratislava|821 04
+SK|Ružinovská|Vrakuna|821 02
+SK|Starohájska cesta|Petrzalka|851 04
+SK|Thurzova ulica|Bratislava|831 03
+SK|Ulica Dúhová|Kosice|040 01
+SK|Ulica T. Vansovej|Prievidza|971 01
+SK|Uralská ulica|Bratislava|851 01
+SK|Velehradská ulica|Bratislava|821 08
+SK|Údernícka ulica|Petrzalka|851 01
+SK|Úvozná ulica|Dubravka|841 10
+SK|Ľubietovská ulica|Bratislava|851 01
+SK|Šuty|Vrakuna|831 07
+SN||Bambey|
+SN||Bargny|
+SN||Bignona|
+SN||Dakar|
+SN||Dara|
+SN||Diamniadio|
+SN||Diaoube|
+SN||Diourbel|
+SN||Dougnane|
+SN||Fatick|
+SN||Guediawaye|
+SN||Joal|
+SN||Kaffrine|
+SN||Kahone|
+SN||Kaolack|
+SN||Kayar|
+SN||Kedougou|
+SN||KeurMedoune|
+SN||Kolda|
+SN||Koungheul|
+SN||Louga|
+SN||Matam|
+SN||Mbake|
+SN||Mboro|
+SN||Mbour|
+SN||Medina Gounas|
+SN||Mekhe|
+SN||N'diareme limamoulaye|
+SN||Ndibene Dahra|
+SN||Nguekhokh|
+SN||Niakoul Rab|
+SN||Ouro Sogui|
+SN||Pikine|
+SN||PoukhamUn|
+SN||Pout|
+SN||Richard-Toll|
+SN||Rufisque|
+SN||Saint-Louis|
+SN||Sali|
+SN||Sebikhotane|
+SN||Sedhiou|
+SN||Tambacounda|
+SN||Thies|
+SN||Thies Nones|
+SN||Tiebo|
+SN||Tivaouane|
+SN||Touba|
+SN||Velingara|
+SN||Yoff|
+SN||Ziguinchor|
+SO||Afgooye|
+SO||Baardheere|
+SO||Baidoa|
+SO||Baki|
+SO||Balanbale|
+SO||Bandarbeyla|
+SO||Beled Hawo|
+SO||Beledweyne|
+SO||Berbera|
+SO||Bereeda|
+SO||Borama|
+SO||Bosaso|
+SO||Bu'aale|
+SO||Buhodle|
+SO||Burao|
+SO||Buulobarde|
+SO||Buurhakaba|
+SO||Cabudwaaq|
+SO||Ceeldheer|
+SO||Ceerigaabo|
+SO||Dhabad|
+SO||Dhamas|
+SO||Diinsoor|
+SO||El Dibir|
+SO||Eyl|
+SO||Gaalkacyo|
+SO||Garadag|
+SO||Garbahaarrey|
+SO||Garoowe|
+SO||Gebiley|
+SO||Hargeysa|
+SO||Hobyo|
+SO||Jamaame|
+SO||Jawhar|
+SO||Jilib|
+SO||Kaambooni|
+SO||Kismayo|
+SO||Laascaanood|
+SO||Luuq|
+SO||Marka|
+SO||Mogadishu|
+SO||Qandala|
+SO||Qoryooley|
+SO||Ruqi|
+SO||Saaxo|
+SO||Saylac|
+SO||Tog Wajaale|
+SO||Wanlaweyn|
+SO||Xuddur|
+SO||Yagoori|
+SR|Abraham Crijnssenweg|Paramaribo|
+SR|Anniestraat|Paramaribo|
+SR|Catostraat|Paramaribo|
+SR|Costerstraat|Paramaribo|
+SR|Doreenstraat|Paramaribo|
+SR|Dr. Sophie Redmondstraat|Paramaribo|
+SR|Emmastraat|Paramaribo|
+SR|Fredericistraat|Paramaribo|
+SR|Frederik Derbystraat|Paramaribo|
+SR|Gongrijpstraat|Paramaribo|
+SR|Grote Combéweg|Paramaribo|
+SR|Heerenstraat|Paramaribo|
+SR|Hertogstraat|Paramaribo|
+SR|Hofstede Crulllaan|Paramaribo|
+SR|Jacobstraat|Paramaribo|
+SR|Jaggernath Lachmonstraat|Paramaribo|
+SR|Jessurunstraat|Paramaribo|
+SR|Jodenbreestraat|Paramaribo|
+SR|Kamponglaan 1|Paramaribo|
+SR|Kartaramstraat|Paramaribo|
+SR|Kerkplein|Paramaribo|
+SR|Kleine Dwarsstraat|Paramaribo|
+SR|Koffielaan|Paramaribo|
+SR|Koninginnestraat|Paramaribo|
+SR|Korte Kerkstraat|Paramaribo|
+SR|Kromme Elleboogstraat|Paramaribo|
+SR|Laat en Dadelstraat|Paramaribo|
+SR|Ladesmastraat|Paramaribo|
+SR|Leeuwensteinstraat|Paramaribo|
+SR|Letitia Vriesdelaan|Paramaribo|
+SR|Limesgracht|Paramaribo|
+SR|Maagdenstraat|Paramaribo|
+SR|Mauriciusstraat|Paramaribo|
+SR|Mr. F.H.R. Lim A Postraat|Paramaribo|
+SR|Neumanpad|Paramaribo|
+SR|Prinsenstraat|Paramaribo|
+SR|Ro Carstersstraat|Paramaribo|
+SR|Sanirsadstraat|Paramaribo|
+SR|Saramaccastraat|Paramaribo|
+SR|Tourtonnelaan|Paramaribo|
+SR|Van Esveldstraat|Paramaribo|
+SR|Van Idsingastraat|Paramaribo|
+SR|Van Landsbergestraat|Paramaribo|
+SR|Van Roseveltkade|Paramaribo|
+SR|Vlaggenplein|Paramaribo|
+SR|Wagenwegstraat|Paramaribo|
+SR|Waterkant|Paramaribo|
+SR|Wichersstraat|Paramaribo|
+SR|Wilhelminastraat|Paramaribo|
+SR|Zeelandiaweg|Paramaribo|
+ST||Agua Ize|
+ST||Almas|
+ST||Almeirim|
+ST||Bombom|
+ST||Changra|
+ST||Cova Barro|
+ST||Dona Eugenia|
+ST||Folha Fede|
+ST||Guadalupe|
+ST||Lemos|
+ST||Micolo|
+ST||Micondo|
+ST||Neves|
+ST||Pantufo|
+ST||Piedade|
+ST||Ribeira Afonso|
+ST||Riboque|
+ST||Riboque Santana|
+ST||Rosema|
+ST||Santo Amaro|
+ST||Santo Antonio|
+ST||Sao Joao dos Angolares|
+ST||Sao Tome|
+ST||Trindade|
+SV||Acajutla|
+SV||Aguilares|
+SV||Ahuachapan|
+SV||Antiguo Cuscatlan|
+SV||Apopa|
+SV||Armenia|
+SV||Atiquizaya|
+SV||Ayutuxtepeque|
+SV||Berlin|
+SV||Chalatenango|
+SV||Chalchuapa|
+SV||Ciudad Arce|
+SV||Cojutepeque|
+SV||Cuscatancingo|
+SV||Delgado|
+SV||El Transito|
+SV||Guazapa|
+SV||Ilopango|
+SV||Izalco|
+SV||Juayua|
+SV||Jucuapa|
+SV||La Libertad|
+SV||La Union|
+SV||Mejicanos|
+SV||Metapan|
+SV||Nueva Concepcion|
+SV||Puerto El Triunfo|
+SV||Quezaltepeque|
+SV||San Antonio del Monte|
+SV||San Francisco|
+SV||San Marcos|
+SV||San Martin|
+SV||San Miguel|
+SV||San Rafael Oriente|
+SV||San Salvador|
+SV||San Vicente|
+SV||Santa Ana|
+SV||Santa Rosa de Lima|
+SV||Santa Tecla|
+SV||Santiago de Maria|
+SV||Santiago Nonualco|
+SV||Santo Tomas|
+SV||Sensuntepeque|
+SV||Sonsonate|
+SV||Sonzacate|
+SV||Soyapango|
+SV||Turin|
+SV||Usulutan|
+SV||Zacatecoluca|
+SV||Zaragoza|
+SY||'Ayn al 'Arab|
+SY||Al Bab|
+SY||Al Hasakah|
+SY||Al Mayadin|
+SY||Al Qamishli|
+SY||Al Qaryatayn|
+SY||Al Qunaytirah|
+SY||Al Qusayr|
+SY||Al-Tabqa|
+SY||al-Yarmuk|
+SY||Albu Kamal|
+SY||Aleppo|
+SY||An Nabk|
+SY||Ar Raqqah|
+SY||Ar Rastan|
+SY||As Safirah|
+SY||As Salamiyah|
+SY||As-Suwayda|
+SY||At Tall|
+SY||Babila|
+SY||Baniyas|
+SY||Damascus|
+SY||Dar'a|
+SY||Darayya|
+SY||Deir ez-Zor|
+SY||Duma|
+SY||Hamah|
+SY||Harasta|
+SY||Homs|
+SY||Idlib|
+SY||Jablah|
+SY||Jaramana|
+SY||Jayrud|
+SY||Jisr ash Shughur|
+SY||Kabbasin|
+SY||Kafranbel|
+SY||Khan Shaykhun|
+SY||Latakia|
+SY||Manbij|
+SY||Masyaf|
+SY||Muadamiyat al-Sham|
+SY||Nawa|
+SY||Salqin|
+SY||Saraqib|
+SY||Tadif|
+SY||Tadmur|
+SY||Tafas|
+SY||Tallbisah|
+SY||Tartus|
+SY||Yabrud|
+TG||Adeta|
+TG||Afanyangan|
+TG||Agou Gadzepe|
+TG||Amlame|
+TG||Aneho|
+TG||Anie|
+TG||Atakpame|
+TG||Badou|
+TG||Bafilo|
+TG||Bassar|
+TG||Blitta|
+TG||Danyi-Apeyeme|
+TG||Dapaong|
+TG||Elavagnon|
+TG||Guerin-Kouka|
+TG||Kande|
+TG||Kara|
+TG||Keve|
+TG||Kouniohou|
+TG||Kpalime|
+TG||Lome|
+TG||Mandouri|
+TG||Mango|
+TG||Niamtougou|
+TG||Notse|
+TG||Pagouda|
+TG||Sinkasse|
+TG||Sokode|
+TG||Sotouboua|
+TG||Tabligbo|
+TG||Tandjouare|
+TG||Tchamba|
+TG||Tohoun|
+TG||Tsevie|
+TG||Vogan|
+TH|Atsadang Road|Bangkok|10700
+TH|Ban Mo road|Bangkok|10600
+TH|Banthat Thong Road|Pathum Wan|10200
+TH|Borommaratchachonnani Road|Ban Khlong Bang Ramat|10170
+TH|Chak Phet Road|Bangkok|10600
+TH|Charoen Nakhon road|Thon Buri|10600
+TH|Ekkamai Road|Watthana|10260
+TH|Khao Lam road|Samphanthawong|10200
+TH|Luk Luang road|Pom Prap Sattru Phai|10200
+TH|Mahai Sawan Road|Bang Kho Laem|10150
+TH|Mahannop Road|Bangkok|10200
+TH|Nakhon Pathom road|Pom Prap Sattru Phai|10330
+TH|Nakhon Ratchasima road|Dusit|10330
+TH|On Nut Road|Suan Luang|10240
+TH|Patpong Road|Bang Rak|10500
+TH|Phaya Thai Road|Ratchathewi|10400
+TH|Phetchaburi Road|Ratchathewi|10400
+TH|Phlapphla Chai road|Samphanthawong|10200
+TH|Phra Chan street|Bangkok|10700
+TH|Phra Phiphit road|Bangkok|10700
+TH|Phra Phithak road|Bangkok|10600
+TH|Phran Nok - Phuttamonthon Sai 4 road|Ban Khlong Bang Ramat|10170
+TH|Plaeng Nam road|Samphanthawong|10200
+TH|Rama I road|Pom Prap Sattru Phai|10200
+TH|Ratchawithi Road|Dusit|10330
+TH|Sathon Tai Road|Bang Rak|10500
+TH|Si Ayutthaya road|Pom Prap Sattru Phai|10400
+TH|Si Lom Road|Bang Rak|10500
+TH|Soi Ngam Du Phli|Sathon|10500
+TH|Soi Sukhumvit 23|Watthana|10500
+TH|Sukhumvit 71 Road|Watthana|10260
+TH|Sunthon Kosa Road|Khlong Toei|10500
+TH|Sutthisan Winitchai Road|Din Daeng|10800
+TH|Thanon Bang Khun Thian|Ban Tha Kham|10150
+TH|Thanon Chao Fa|Phra Nakhon|10700
+TH|Thanon Mom Chao Sanga Ngam Supradit|Khan Na Yao|10510
+TH|Thanon Phitsanulok|Pom Prap Sattru Phai|10200
+TH|Thanon Phutthamonthon Sai 3|Thawi Watthana|10160
+TH|Thanon Prasert Manukitch|Chatuchak|10220
+TH|Thanon Sip Sam Hang|Phra Nakhon|10700
+TH|Thanon Somdet Phra Chao Tak Sin|Thon Buri|10600
+TH|Thanon Thawi Watthana - Kanchanaphisek|Thawi Watthana|10160
+TH|Thong Lo Road|Watthana|10500
+TH|Tri Mit road|Samphanthawong|10200
+TH|Tri Phet Road|Bangkok|10600
+TH|Wang Doem street|Thon Buri|10700
+TH|Wisut Kasat Road|Phra Nakhon|10200
+TH|Witthayu Road|Bang Rak|10500
+TH|Worachak Road|Bangkok|10200
+TH|Yaowarat Road|Samphanthawong|10200
+TJ|1st Pass of Akademicians Rajabovs|Dushanbe|
+TJ|1st Passage of Habib Ahrori Street|Dushanbe|
+TJ|1st Passage of Moscow Street|Dushanbe|
+TJ|1st Passage of Negmat Karabaev Street|Dushanbe|
+TJ|1st Passage of Shodmoni Street|Dushanbe|
+TJ|2nd Passage of Gafurov Street|Dushanbe|
+TJ|2nd Passage of Moscow Street|Dushanbe|
+TJ|3rd Passage of Moscow Street|Dushanbe|
+TJ|Abdullo Commander Street|Dushanbe|
+TJ|Alokhon Afsahzod Street|Dushanbe|
+TJ|Amirshoev street|Dushanbe|
+TJ|Ayni street|Dushanbe|
+TJ|Badakhshan Street|Dushanbe|
+TJ|Dousti Square|Dushanbe|
+TJ|Gagarin Street|Dushanbe|
+TJ|Govorova Street|Dushanbe|
+TJ|Guldast Street|Dushanbe|
+TJ|Guliston Street|Dushanbe|
+TJ|Hamza Hakimzoda Street|Dushanbe|
+TJ|I. Narzikulov street|Dushanbe|
+TJ|Isomiddin Soatov Street|Dushanbe|
+TJ|Kuchai Ahror Mukhtorov|Dushanbe|
+TJ|Kuchai Akbar Makhsumov|Dushanbe|
+TJ|Kuchai Bobo Hamdam|Dushanbe|
+TJ|Kuchai Khorazmi|Dushanbe|
+TJ|Kuchai Mustafo Sodiqov|Dushanbe|
+TJ|Kuchai Navobod|Dushanbe|
+TJ|kuchai Nazarsho Dodkhudoev|Dushanbe|
+TJ|Kuchai Nizomi Ganjavi|Dushanbe|
+TJ|Kuchai Sayf Rahimzod Afardi|Dushanbe|
+TJ|Kūchai Alisher Navoi|Dushanbe|
+TJ|Kūchai Karamov|Dushanbe|
+TJ|L'va Tolstogo Street|Dushanbe|
+TJ|Mayakovskogo Street|Dushanbe|
+TJ|Moscow Street|Dushanbe|
+TJ|Omar Khayyam Street|Dushanbe|
+TJ|Ozodi Street|Dushanbe|
+TJ|Pushkin Street|Dushanbe|
+TJ|Rudaki Avenue|Dushanbe|
+TJ|Safarali Rajabov Street|Dushanbe|
+TJ|Said Nosir Street|Dushanbe|
+TJ|Shabboda Street|Varzob|
+TJ|Shodmoni Street|Dushanbe|
+TJ|Shota Rustaveli Street|Dushanbe|
+TJ|Shotemur Street|Dushanbe|
+TJ|Sportivnaya Street|Dushanbe|
+TJ|Surkhob Street|Dushanbe|
+TJ|Toshkent Street|Dushanbe|
+TJ|Tudiev Street|Dushanbe|
+TJ|Třída Ismáíla Sámáního|Dushanbe|
+TL||Abo|
+TL||Aileu|
+TL||Ainaro|
+TL||Aissirimou|
+TL||Atauro|
+TL||Atsabe|
+TL||Barique|
+TL||Baukau|
+TL||Bobonaro|
+TL||Dare|
+TL||Dili|
+TL||Fohorem|
+TL||Gleno|
+TL||Hatoudo|
+TL||Irabin de Baixo|
+TL||Lautem|
+TL||Lifau|
+TL||Likisa|
+TL||Lospalos|
+TL||Luro|
+TL||Maliana|
+TL||Manatutu|
+TL||Maubara|
+TL||Metinaro|
+TL||Pante Makasar|
+TL||Same|
+TL||Suai|
+TL||Tilomar|
+TL||Tutuala|
+TL||Venilale|
+TL||Viqueque|
+TM||Abadan|
+TM||AEnew|
+TM||Ahal|
+TM||Akdepe|
+TM||Altyn asyr|
+TM||Ashgabat|
+TM||Babadayhan|
+TM||Babadaykhan|
+TM||Baeherden|
+TM||Balkanabat|
+TM||Bayramaly|
+TM||Bereket|
+TM||Boldumsaz|
+TM||Casgyn|
+TM||Daenew|
+TM||Darganata|
+TM||Dasoguz|
+TM||Dostluk|
+TM||Farap|
+TM||Gaemi|
+TM||Gazojak|
+TM||Goekdepe|
+TM||Goerogly|
+TM||Gubadag|
+TM||Gumdag|
+TM||Gyzylarbat|
+TM||Halac|
+TM||Hazar|
+TM||Hojambaz|
+TM||Jebel|
+TM||Kaka|
+TM||Kerki|
+TM||Kerkici|
+TM||Koeneuergenc|
+TM||Magdanly|
+TM||Magtymguly|
+TM||Mary|
+TM||Murgap|
+TM||Oyrat|
+TM||Saparmyrat Tuerkmenbasy|
+TM||Sarahs|
+TM||Sayat|
+TM||Seydi|
+TM||Tagtabazar|
+TM||Tejen|
+TM||Tuerkmenabat|
+TM||Tuerkmenbasy|
+TM||Tuerkmengala|
+TM||Yoloeten|
+TM||Yylanly|
+TN||Aryanah|
+TN||Beja|
+TN||Ben Arous|
+TN||Ben Gardane|
+TN||Bizerte|
+TN||Djemmal|
+TN||Douane|
+TN||Douar Hicher|
+TN||El Kef|
+TN||El Mgarsa|
+TN||El Mourouj|
+TN||Ettadhamen|
+TN||Feriana|
+TN||Gabes|
+TN||Gafsa|
+TN||Hammamet|
+TN||Houmt Souk|
+TN||Jendouba|
+TN||Kairouan|
+TN||Kasserine|
+TN||Kelaa Kebira|
+TN||Kelibia|
+TN||Korba|
+TN||Ksar Hellal|
+TN||La Marsa|
+TN||La Mohammedia|
+TN||Le Bardo|
+TN||Le Kram|
+TN||Mahdia|
+TN||Medenine|
+TN||Menzel Bourguiba|
+TN||Mnihla|
+TN||Moknine|
+TN||Monastir|
+TN||Msaken|
+TN||Nabeul|
+TN||Oued Lill|
+TN||Rades|
+TN||Rawad|
+TN||Sakiet ed Daier|
+TN||Sakiet ez Zit|
+TN||Sfax|
+TN||Sidi Bouzid|
+TN||Sidi Husayn|
+TN||Skanes|
+TN||Sousse|
+TN||Sukrah|
+TN||Tataouine|
+TN||Tunis|
+TN||Zarzis|
+TR|1. TBMM Caddesi|Etimesgut|06560
+TR|Abdülkerim Paşa Sokağı|UEskuedar|34674
+TR|Ahlâtlı Tarla Sokağı|UEskuedar|34676
+TR|Ayvalık Su Yolu Sokağı|UEskuedar|34680
+TR|Bakkaloğlu Sokağı|UEskuedar|34662
+TR|Barbaros Hayrettin Sokağı|UEskuedar|34676
+TR|Bestekâr Saadettin Kaynak Sokağı|UEskuedar|34662
+TR|Bodrumi Cami Sokağı|UEskuedar|34662
+TR|Buğday Sokak|Cankaya|06705
+TR|Bülbüldere Çıkmazı Büyük Hamam Sokağı|UEskuedar|34674
+TR|Celal Atik Sokağı|UEmraniye|34873
+TR|Cumhuriyet Bulvarı|Izmir|35240
+TR|Dibekçi Ahmet Sokağı|UEskuedar|34674
+TR|Eşrefpaşa Caddesi|Izmir|35280
+TR|Fıstıklı Mescit Sokağı|UEskuedar|34676
+TR|Fıstıklı Sokağı|UEskuedar|34676
+TR|Gazi Mustafa Kemal Bulvarı|Mersin|33115
+TR|Güllübahçe Sokağı|UEskuedar|34664
+TR|Gülüm Caddesi|Etimesgut|06560
+TR|Gümüş Arayıcı Sokağı|UEskuedar|34674
+TR|Halit Sokak|Tokat|60000
+TR|Hasan Ali Yücel Bulvarı|Karsiyaka|35580
+TR|Hoca Nasreddin Sokağı|UEskuedar|34662
+TR|İnadiye Mektebi Sokağı|UEskuedar|34668
+TR|İnönü Caddesi|Konak|35260
+TR|John F. Kennedy Caddesi|Cankaya|06680
+TR|Kalfa Çeşmesi Sokağı|UEskuedar|34664
+TR|Kardeşler Sokak|Ankara|06230
+TR|Kocalar Sokak|Ankara|06230
+TR|Limyra Sütunlu Cadde|Beykonak|07740
+TR|Mersin Sokak|Ankara|06230
+TR|Mimarsinan Sokağı|UEskuedar|34662
+TR|Namık Kemal Sokağı|UEskuedar|34662
+TR|Palandöken Sokağı|UEskuedar|34662
+TR|Pasinler Sokağı|UEskuedar|34662
+TR|Perihan Abla Sokağı|UEskuedar|34674
+TR|Rauf Paşa Sokağı|UEskuedar|34662
+TR|Tahtalı Bostan Sokağı|UEskuedar|34674
+TR|Tomruk Ağası Sokağı|UEskuedar|34674
+TR|Turgut Reis Sokağı|UEmraniye|34662
+TR|Uzunçayır Sokağı|UEskuedar|34662
+TR|Varyant|Izmir|35280
+TR|Viransaray Sokağı|UEskuedar|34668
+TR|Yahya Efendi Sokağı|UEskuedar|34347
+TR|Çilehane Sokağı|UEskuedar|34662
+TR|Ömer Seyfettin Sokağı|UEmraniye|34662
+TR|Üryanizâde Sokağı|UEskuedar|34674
+TR|Şair Eşref Bulvarı|Izmir|35240
+TR|Şehit Serhat Emre Sokağı|UEskuedar|34662
+TR|Şemsi Efendi Sokağı|UEskuedar|34676
+TW|Anping Old Street|Tainan|
+TW|Central Street|Magong|
+TW|Ciaonan Street|Xinying|
+TW|Dalong Street|Taipei|
+TW|Danshui Old Street|Danshui|
+TW|Daxi Old Street|Daxi|
+TW|Fengyuan Boulevard|Xizhou|
+TW|Gangshan Old Street|Fengshan|
+TW|Gaotie Boulevard|Taibao|
+TW|Jiadong Scenic Boulevard|Hsinchu|
+TW|Keya Boulevard|Hsinchu|
+TW|Minsheng Road|Taipei|
+TW|Mofan Street|Jincheng|
+TW|Mujialiouwan Boulevard|Yongkang|
+TW|Nanzhuang Old Street|Toufen|
+TW|New Taipei Boulevard|New Taipei City|
+TW|Sanxia Old Street|Sanxia|
+TW|Shenkeng Old Street|Xizhi|
+TW|Shennong Street|Tainan|
+TW|Shihdai Boulevard|Kaohsiung|
+TW|Sihcao Boulevard|Tainan|
+TW|Singangshe Boulevard|Yongkang|
+TW|Siraya Boulevard|Yongkang|
+TW|Snake Alley|Taipei|
+TW|Taijiang Boulevard|Tainan|
+TW|Taiwan Boulevard|Taichung|
+TW|Toucheng Old Street|Yilan|
+TW|Xianmin Boulevard|Banqiao|
+TW|Ximei Drain|New Taipei City|
+TW|Xinhua Old Street|Yongkang|
+TW|Yizhong Street|Taichung|
+TW|Yuanlin Boulevard|Yuanlin|
+TZ||Arusha|
+TZ||Babati|
+TZ||Bagamoyo|
+TZ||Bariadi|
+TZ||Bukoba|
+TZ||Bunda|
+TZ||Buseresere|
+TZ||Dar es Salaam|
+TZ||Dodoma|
+TZ||Geita|
+TZ||Handeni|
+TZ||Ifakara|
+TZ||Iringa|
+TZ||Kahama|
+TZ||Kasulu|
+TZ||Katoro|
+TZ||Katumba|
+TZ||Kibaha|
+TZ||Kigoma|
+TZ||Kilosa|
+TZ||Kondoa|
+TZ||Korogwe|
+TZ||Lindi|
+TZ||Mafinga|
+TZ||Makumbako|
+TZ||Masasi|
+TZ||Mbeya|
+TZ||Mbinga|
+TZ||Morogoro|
+TZ||Moshi|
+TZ||Mpanda|
+TZ||Mtwara|
+TZ||Musoma|
+TZ||Mwanza|
+TZ||Njombe|
+TZ||Nzega|
+TZ||Sengerema|
+TZ||Shinyanga|
+TZ||Singida|
+TZ||Songea|
+TZ||Sumbawanga|
+TZ||Tabora|
+TZ||Tanga|
+TZ||Tarime|
+TZ||Tunduma|
+TZ||Ushirombo|
+TZ||Uyovu|
+TZ||Vikindu|
+TZ||Vwawa|
+TZ||Zanzibar|
+UA|Calle Vokzalna|Kyiv|04215
+UA|Chokolivskyi Boulevard|Kyiv|04215
+UA|Drazhinskogo Street|Simferopol|
+UA|Dzhmelynyi Lane|Bortnychi|09419
+UA|Feodosiiska Street|Saperna Slobidka|04215
+UA|Gareta Dzhonsa Lane|Kyiv|04215
+UA|Golovachyova Street|Vasylkiv|08606
+UA|Heroiv UPA Street|Novi Kodaky|49131
+UA|Holovatoho Street|Lviv|81114
+UA|Ihoria Dychenka Street|Saperna Slobidka|08172
+UA|Internatsionalnoho Lehionu Street|Kyiv|07527
+UA|Isaakiana Street|Kyiv|04215
+UA|Ivana Kotlyarevskoho Boulevard|Kyiv|04215
+UA|Kaminna Street|Ternopil|46000
+UA|Khodosivska Street|Saperna Slobidka|09419
+UA|Leontovycha Street|Kyiv|04215
+UA|Londonska Street|Kyiv|04215
+UA|Lukretska Street|Saperna Slobidka|08171
+UA|Lychakivska Street|Lviv|79071
+UA|Mstyslavska vulytsia|Chernihiv|14037
+UA|Mykoly Plahotniuka Street|Vyshhorod|07527
+UA|Nebesnoi Sotni Street|Nizhyn|16612
+UA|Okruzhna Street|Lviv|79071
+UA|Oleksandra Stankova Street|Odesa|65125
+UA|Oleksandrivska Street|Vyshhorod|07527
+UA|Petra Chaadaieva Street|Kyiv|04215
+UA|Petra Synenkoho Street|Chortkiv|59346
+UA|Poljowa-Straße|Kyiv|07527
+UA|Polskyi Descent|Odesa|65125
+UA|Popova Street|Kyiv|04215
+UA|Pryozerna Street|Kyiv|04215
+UA|Radhospnyi Lane|Bilychi|08131
+UA|Repina street|Chernihiv|14037
+UA|rue Knyahynya|Lviv|79071
+UA|rue Pidvalna|Lviv|79071
+UA|rue Voznessensk|Kyiv|04215
+UA|Shota Rustaveli Street|Cheremushky|65125
+UA|Tadeia Rylskoho Boulevard|Vyshneve|08160
+UA|Ulica Braci Rohatyńców|Lviv|79071
+UA|Ulica Ruska w Tarnopolu|Ternopil|46000
+UA|Ulica Wygoda we Lwowie|Lviv|80379
+UA|Vasylia Ovsiienka Street|Saperna Slobidka|04215
+UA|Verbova Street|Kyiv|04215
+UA|vulytsya Avhustyna Voloshyna|Mukachevo|89677
+UA|Vulytsya Zrini|Berehove|90264
+UA|Yatskova Street|Lviv|79071
+UA|Yunosti Street|Kyiv|07527
+UA|Zapashnyi Lane|Bortnychi|09419
+UA|Zaporizka Square|Kyiv|04215
+UA|Zrubova Street|Lviv|77158
+UG||Apac|
+UG||Arua|
+UG||Bunamwaya|
+UG||Busia|
+UG||Bwizibwera|
+UG||Entebbe|
+UG||Fort Portal|
+UG||Gulu|
+UG||Hoima|
+UG||Ibanda|
+UG||Iganga|
+UG||Jinja|
+UG||Kabale|
+UG||Kajansi|
+UG||Kakira|
+UG||Kampala|
+UG||Kamuli|
+UG||Kapchorwa|
+UG||Kasangati|
+UG||Kasanje|
+UG||Kasese|
+UG||Katabi|
+UG||Kira|
+UG||Kitgum|
+UG||Koboko|
+UG||Kotido|
+UG||Kumi|
+UG||Kyengera|
+UG||Lira|
+UG||Lugazi|
+UG||Luwero|
+UG||Masaka|
+UG||Masindi|
+UG||Mbale|
+UG||Mbarara|
+UG||Mityana|
+UG||Mpigi|
+UG||Mpondwe|
+UG||Mubende|
+UG||Mukono|
+UG||Nakivale Refugee Camp|
+UG||Nansana|
+UG||Njeru|
+UG||Paidha|
+UG||Rutoma|
+UG||Rwamwanja Refugee Camp|
+UG||Soroti|
+UG||Tororo|
+UG||Wakiso|
+UG||Yumbe|
+UZ|Abdughazi Bahodirhon Street|Urganch|
+UZ|Alisher Navoiy shoh ko'chasi|Tashkent|
+UZ|Arabon Street|Bukhara|
+UZ|Babur Street|Tashkent|
+UZ|Beshkayragach Street|Tashkent|
+UZ|Gaukushan street|Bukhara|
+UZ|Ghoziyon Street|Bukhara|
+UZ|Juybor street|Bukhara|
+UZ|Khoja Rushnoyi Street|Bukhara|
+UZ|Khoja Tabband Street|Bukhara|
+UZ|Mekhtar Anbar street|Bukhara|
+UZ|Mirdustim Street|Bukhara|
+UZ|Mustaqillik Avenue|Salor|
+UZ|Mustaqillik Maydoni|Tashkent|
+UZ|Osiyo Street|Salor|
+UZ|Registan Street|Samarkand|
+UZ|Shota Rustaveli Street|Tashkent|
+UZ|Street Tashkent by Bobyrr|Samarkand|
+UZ|Turki Jandiy street|Bukhara|
+UZ|Universitet Boulevard|Samarkand|
+UZ|Yusuf Khos Khojib Street|Tashkent|
+UZ|Zarapetyan Street|Navoiy|
+UZ|Ziyolilar street|Salor|
+VE||Acarigua|
+VE||Alto Barinas|
+VE||Anaco|
+VE||Araure|
+VE||Barcelona|
+VE||Barinas|
+VE||Barquisimeto|
+VE||Baruta|
+VE||Cabimas|
+VE||Calabozo|
+VE||Caracas|
+VE||Carupano|
+VE||Charallave|
+VE||Ciudad Bolivar|
+VE||Ciudad Guayana|
+VE||Ciudad Ojeda|
+VE||Coro|
+VE||Cua|
+VE||Cumana|
+VE||El Limon|
+VE||El Tigre|
+VE||El Vigia|
+VE||Guacara|
+VE||Guarenas|
+VE||Guatire|
+VE||La Victoria|
+VE||Lander|
+VE||Los Teques|
+VE||Machiques|
+VE||Maracaibo|
+VE||Maracay|
+VE||Maturin|
+VE||Merida|
+VE||Ocumare del Tuy|
+VE||Palo Negro|
+VE||Petare|
+VE||Porlamar|
+VE||Puerto Cabello|
+VE||Puerto La Cruz|
+VE||Punto Fijo|
+VE||San Cristobal|
+VE||San Felipe|
+VE||San Fernando de Apure|
+VE||San Juan de los Morros|
+VE||Santa Teresa del Tuy|
+VE||Tariba|
+VE||Turmero|
+VE||Valencia|
+VE||Valera|
+VE||Valle de La Pascua|
+VN||An Nhon|
+VN||Ba Vi|
+VN||Bac Giang|
+VN||Bac Ninh|
+VN||Bac Tu Liem|
+VN||Ben Cat|
+VN||Bien Hoa|
+VN||Buon Ma Thuot|
+VN||Can Tho|
+VN||Cau Giay|
+VN||Da Lat|
+VN||Da Nang|
+VN||Di An|
+VN||Gia Lam|
+VN||GJong GJa|
+VN||Ha Long|
+VN||Ha Tinh|
+VN||Hai Ba Trung|
+VN||Hai Duong|
+VN||Haiphong|
+VN||Hanoi|
+VN||Ho Chi Minh City|
+VN||Hoa Lu|
+VN||Hue|
+VN||Long Bien|
+VN||Long Xuyen|
+VN||My Tho|
+VN||Nam GJinh|
+VN||Nghi Son|
+VN||Nha Trang|
+VN||Phu My|
+VN||Phu Quoc|
+VN||Quan Muoi|
+VN||Quan Muoi Mot|
+VN||Quan Sau|
+VN||Quang Ngai|
+VN||Qui Nhon|
+VN||Rach Gia|
+VN||Thai Nguyen|
+VN||Thanh Hoa|
+VN||Thanh Pho Ba Ria|
+VN||Thanh Xuan|
+VN||Thi Tran GJong Trieu|
+VN||Thu Dau Mot|
+VN||Thu GJuc|
+VN||Thuan An|
+VN||Viet Tri|
+VN||Vinh|
+VN||Vung Tau|
+VN||Xuan Loc|
+VU||Isangel|
+VU||Lakatoro|
+VU||Luganville|
+VU||Norsup|
+VU||Pango|
+VU||Port-Olry|
+VU||Port-Vila|
+VU||Saratamata|
+VU||Sola|
+WS||Afega|
+WS||Apia|
+WS||Asau|
+WS||Falefa|
+WS||Faleula|
+WS||Gataivai|
+WS||Lauli'i|
+WS||Leulumoega|
+WS||Lotofaga|
+WS||Lufilufi|
+WS||Malie|
+WS||Matavai|
+WS||Moata'a|
+WS||Mulifanua|
+WS||Nofoali'i|
+WS||Palauli|
+WS||Safotu|
+WS||Safotulafai|
+WS||Sale'imoa|
+WS||Samamea|
+WS||Sapulu|
+WS||Satapuala|
+WS||Si'umu|
+WS||Siusega|
+WS||Solosolo|
+WS||Tuana'i|
+WS||Vailoa|
+WS||Vaimoso|
+WS||Vaitele|
+WS||Vaiusu|
+YE||'Amran|
+YE||Abs|
+YE||Ad Dahi|
+YE||Ad Dann|
+YE||Ad Dimnah|
+YE||Aden|
+YE||Ahl Mohammed bin Ahmed|
+YE||Al Bayda|
+YE||Al Ghayzah|
+YE||Al Hazm|
+YE||Al Hudaydah|
+YE||Al Khaniq|
+YE||Al Madakisha|
+YE||Al Madu|
+YE||Al Mahwit|
+YE||Al Musaymir|
+YE||Al Qabyal|
+YE||AL-khasha upper|
+YE||Ash Shawati|
+YE||Ataq|
+YE||Bajil|
+YE||Bayt al Faqih|
+YE||CPF|
+YE||Dhamar|
+YE||Dhi as Sufal|
+YE||Ghayl Ba Wazir|
+YE||Hadibu|
+YE||Hajjah|
+YE||Ibb|
+YE||Jadder Cemetery|
+YE||Jawf al Maqbabah|
+YE||Khimar|
+YE||Kilmia|
+YE||Lahij|
+YE||Ma'rib|
+YE||Mocha|
+YE||Mukalla|
+YE||Qalansiyah|
+YE||Sa'dah|
+YE||Sahar|
+YE||Sanaa|
+YE||Saqayn|
+YE||Sayyan|
+YE||Shibam|
+YE||Suhayl Shibam|
+YE||Taiz|
+YE||Village of ALAMRAH|
+YE||Yarim|
+YE||Zabid|
+YE||Zinjibar|
+ZA||Benoni|1527
+ZA||Bloemfontein|9928
+ZA||Boksburg|1485
+ZA||Botshabelo|9789
+ZA||Brakpan|1554
+ZA||Cape Town|8001
+ZA||Carletonville|2519
+ZA||Centurion|0172
+ZA||Durban|4001
+ZA||East London|5201
+ZA||Emalahleni|2230
+ZA||eMbalenhle|2285
+ZA||Etwatwa|1521
+ZA||Evaton|1984
+ZA||George|6615
+ZA||Germiston|1497
+ZA||Gqeberha|6001
+ZA||Johannesburg|2041
+ZA||Kariega|6242
+ZA||Kimberley|8745
+ZA||Klerksdorp|2578
+ZA||Krugersdorp|1933
+ZA||KwaDukuza|4490
+ZA||Ladysmith|3384
+ZA||Mdantsane|5221
+ZA||Middelburg|5900
+ZA||Motherwell|6529
+ZA||Mpumalanga|3730
+ZA||Mthatha|5127
+ZA||Newcastle|3082
+ZA||Nigel|1590
+ZA||Paarl|7681
+ZA||Pietermaritzburg|3296
+ZA||Pinetown|3612
+ZA||Polokwane|
+ZA||Potchefstroom|2538
+ZA||Pretoria|0183
+ZA||Randburg|2194
+ZA||Richards Bay|3900
+ZA||Roodepoort|1794
+ZA||Rustenburg|0378
+ZA||Somerset West|7130
+ZA||Soshanguve|0219
+ZA||Soweto|1809
+ZA||Thembisa|1693
+ZA||Vanderbijlpark|1914
+ZA||Vereeniging|1944
+ZA||Vryheid|3184
+ZA||Welkom|9488
+ZA||Westonaria|1789
+ZM||Chambishi|
+ZM||Chilanga Township|
+ZM||Chililabombwe|
+ZM||Chingola|
+ZM||Chinsali|
+ZM||Chipata|
+ZM||Chirundu|
+ZM||Chisankane|
+ZM||Choma|
+ZM||Chongwe|
+ZM||Chunga|
+ZM||Isoka|
+ZM||Kabwe|
+ZM||Kafue|
+ZM||Kalomo|
+ZM||Kalulushi|
+ZM||Kansanshi|
+ZM||Kaoma|
+ZM||Kapiri Mposhi|
+ZM||Kaputa|
+ZM||Kasama|
+ZM||Kasempa|
+ZM||Katete|
+ZM||Kawambwa|
+ZM||Kitwe|
+ZM||Livingstone|
+ZM||Luanshya|
+ZM||Lundazi|
+ZM||Lusaka|
+ZM||Madido|
+ZM||Mansa|
+ZM||Mazabuka|
+ZM||Mbala|
+ZM||Mkushi|
+ZM||Mongu|
+ZM||Monze|
+ZM||Mpika|
+ZM||Mporokoso|
+ZM||Mpulungu|
+ZM||Mufulira|
+ZM||Mumbwa|
+ZM||Nakonde|
+ZM||Namalombwe|
+ZM||Nchelenge|
+ZM||Ndola|
+ZM||Petauke|
+ZM||Samfya|
+ZM||Serenje|
+ZM||Sesheke|
+ZM||Solwezi|

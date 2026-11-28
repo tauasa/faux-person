@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
+import java.util.Set;
 import java.util.SplittableRandom;
 import java.util.stream.Stream;
 
@@ -91,10 +92,47 @@ public final class PersonGenerator {
         Company employer = CompanyGenerator.draw(data.employers(drawn.region()), realCompanies, random);
         String email = emailLocalPart(name.firstName(), name.lastName()) + "@" + employer.domain();
         String phone = String.format(Locale.ROOT, "(%03d) 555-01%02d", pickAreaCode(), random.nextInt(100));
-        DataSet.Street s = pick(data.streets);
-        int houseNumber = 1 + random.nextInt(9999);
-        Address address = new Address(houseNumber + " " + s.street(), s.city(), s.state(), s.postalCode(), "US");
+        Address address = addressIn(employer.address());
         return new Person(name, drawn.gender(), drawn.region(), dob, email, phone, address, employer);
+    }
+
+    /**
+     * Countries that write the house number before the street name
+     * ({@code "12 Rue de Rivoli"}). Everywhere else outside the US it comes
+     * after ({@code "Hauptstraße 12"}).
+     */
+    private static final Set<String> NUMBER_FIRST = Set.of("AU", "BD", "BS", "BW", "CA", "FR", "GB", "GH", "HK",
+            "IE", "IN", "JM", "KE", "LK", "LU", "MY", "NA", "NG", "NZ", "PH", "PK", "SG", "TT", "TZ", "UG", "ZA",
+            "ZM", "ZW");
+
+    /**
+     * Where a person lives: in their employer's country. In the US, a US
+     * street, drawn as faux-person always has. Elsewhere, one of that country's
+     * streets, or only a city and postal code where the data has no streets
+     * for it, or the headquarters' city where it has nothing at all.
+     *
+     * <p>Every address takes two draws, the street and the house number, used
+     * or not, so where a person lives never changes who the seed draws next.
+     */
+    private Address addressIn(Address employer) {
+        String country = employer.country();
+        if (country.equals("US")) {
+            DataSet.Street s = pick(data.streets);
+            int houseNumber = 1 + random.nextInt(9999);
+            return new Address(houseNumber + " " + s.street(), s.city(), s.state(), s.postalCode(), "US");
+        }
+        List<DataSet.Street> streets = data.intlStreets(country);
+        DataSet.Street s = streets.isEmpty() ? null : streets.get(random.nextInt(streets.size()));
+        int houseNumber = 1 + random.nextInt(199);
+        if (s == null) {
+            random.nextInt(2);  // the street draw there was nothing to draw from
+            return new Address("", employer.city(), "", "", country);
+        }
+        if (s.street().isEmpty()) {
+            return new Address("", s.city(), "", s.postalCode(), country);
+        }
+        String street = NUMBER_FIRST.contains(country) ? houseNumber + " " + s.street() : s.street() + " " + houseNumber;
+        return new Address(street, s.city(), "", s.postalCode(), country);
     }
 
     /**

@@ -13,8 +13,9 @@ Feedback and comments are welcome, or just submit a pull request.
 
 A Java library and command-line tool that generates random, realistic people
 for tests, demos and seed data. Each person has a name, gender, date of birth,
-email, phone, US street address and employer, and the fields agree with each
-other: the email is built from the name and the employer, a woman with
+email, phone, street address and employer, and the fields agree with each
+other: the email is built from the name and the employer, the person lives in
+the employer's country, a woman with
 a Russian surname gets the feminine form (Petrova, not Petrov), and the age
 fits the date of birth. Names come up about as often as they do in real life:
 about one South Korean in five is a Kim, and so is about one generated one,
@@ -36,7 +37,7 @@ Jose Barra (male, 36) <jose.barra48@fourwaybooks.example> (260) 555-0158, 8418 G
 Jens Klausen (male, 73) <jens.klausen@catabasis.example> (959) 555-0112, 4859 Page St, Manchester, NH 03109, works at Catabasis Pharmaceuticals [faux]
 ```
 
-> **Emails and phone numbers can't reach anyone.** Employers are real US
+> **Emails and phone numbers can't reach anyone.** Employers are real
 > companies, marked so nobody mistakes them for a real person's employer: the
 > name ends in `[faux]` and the domain is under `.example`, which is reserved
 > so mail to it is never delivered (`Costco [faux]`, `jane.doe@costco.example`). Phone
@@ -83,8 +84,7 @@ classDiagram
     }
     class Company {
         String name
-        String city
-        String state
+        Address address
         String domain
     }
     class Gender {
@@ -123,8 +123,8 @@ Persian. All seven types are in `org.tauasa.faux.model`. `Person`, `Name`,
 | `Person` | Name, gender, the region the names came from, date of birth, email, phone, address and employer. There's no age field, because a stored age goes stale: call `ageOn(date)`. `firstName()` and `lastName()` are shortcuts for `name().firstName()` and `name().lastName()` |
 | `Name` | A first name and a surname from one region, in Latin letters, the surname in the form that fits the gender (`Anna Petrova`). `fullName()` gives `"Anna Petrova"`. `nativeName()` gives the name in its own script where the region's data has one, and is empty otherwise. New in 0.3.0 for `ROK` (Hangul); 0.4.0 adds `JPN` (kanji, or kana where Wikidata has none), `RUS` (Cyrillic), `GRC` (Greek), `HEB` (Hebrew), `PSE` and `NAF` (Arabic) and `IRN` (Persian), for the names Wikidata spells in that script |
 | `NativeName` | New in 0.3.0. The name in its own script: first name, surname, and the full name as that language writes it. For `Yeong-min Kim` it's `영민`, `김` and `김영민`, surname first with no space, as Japanese is too; for `Anna Petrova`, `Анна`, `Петрова` and `Анна Петрова` |
-| `Address` | Street with house number (`2304 Eileen Ave`), city, two-letter state, five-digit ZIP, and country, always `US` |
-| `Company` | A company: name, headquarters city, state (US companies only; empty elsewhere), country (ISO code, from 0.4.0) and web domain, which the email uses. 1,500 US companies and, from 0.4.0, 4,000 from 170 other countries; a person works for one in their region's countries. Generated ones are real companies, marked by default (`Costco [faux]`, `costco.example`) |
+| `Address` | Street with house number, city, state, postal code and country (ISO code). In the US: `2304 Eileen Ave`, a two-letter state and a five-digit ZIP. Elsewhere, from 0.5.0: a real street with a house number, before or after the name as the country writes it (`12 rue de Rivoli`, `Hauptstraße 12`), the state empty, and the postal code where GeoNames has one near the street, else empty. In countries where Wikidata has too few streets, the address is a city and postal code with an empty street |
+| `Company` | A company: name, headquarters `Address` and web domain, which the email uses. From 0.5.0 the address holds the headquarters' city, state (US companies only; empty elsewhere) and country, with the street and postal code empty: the data has neither. A person lives in their employer's country. 1,500 US companies and, from 0.4.0, 4,000 from 170 other countries; a person works for one in their region's countries. Generated ones are real companies, marked by default (`Costco [faux]`, `costco.example`) |
 | `Gender` | `FEMALE`, `MALE` or `NONBINARY`. Women get women's and unisex first names and the feminine surname form, men get men's and unisex names and the masculine form. A nonbinary person gets a woman's or a man's first name at 50/50, and either surname form at 50/50 |
 | `Region` | Where the names come from, in 24 values. Three broad ones: `WESTERN` (the Americas, Europe, Australia, New Zealand), `ASIA` (East, South and Southeast Asia) and `RUS` (Russia and the former Soviet Union). Three African: `NAF`, `CAF`, `SAF` (North, Central and Southern Africa). The rest are countries, by ISO code: `ROK` (South Korea), `JPN`, `PHL`, `VNM`, `THA`, `MEX`, `BRA`, `IRN`, `PSE`, `GBR`, `FRA`, `ESP`, `PRT`, `GRC`, `NOR`, `SWE`, `FIN`. The odd one out is `HEB`, which holds Hebrew names, from Israeli citizens |
 
@@ -260,8 +260,10 @@ PersonGenerator gen = PersonGenerator.builder()
 
 The names are `<region>_first_names.txt` and `<region>_surnames.txt` for each
 region in lowercase (`western`, `rok`, …), plus `us_companies_domains.txt`,
-`intl_companies_domains.txt` and `us_street_names_city_state_zip.txt`. An empty
-`intl_companies_domains.txt` leaves the international companies out. Each file uses the format its bundled
+`intl_companies_domains.txt`, `us_street_names_city_state_zip.txt` and
+`intl_streets.txt`. An empty `intl_companies_domains.txt` leaves the
+international companies out, and an empty `intl_streets.txt` puts each person
+abroad in their employer's headquarters city. Each file uses the format its bundled
 copy names in its first line, such as `# name|gender|weight`. Weights are
 optional, and a name without one counts as 1. Lines starting with `#` are
 skipped.
@@ -329,12 +331,13 @@ java -jar target/faux-person-0.5.0-SNAPSHOT.jar -n 5 -f json
 `pipe` prints a header row and then 14 `|`-separated columns. The last,
 `native`, is the name in its own script, and it's empty for regions without
 one and for names Wikidata doesn't spell in it. It's new in 0.3.0: 0.2.0 prints
-13 columns. This example came from `--seed 42 --today 2026-11-20`, and the JSON
+13 columns. The last, `country`, is new in 0.5.0, now that people live outside
+the US; outside it, `state` is empty. This example came from `--seed 42 --today 2026-11-20`, and the JSON
 one below from the same plus `-r asia`:
 
 ```text
-first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer|native
-Juha|Karvonen|MALE|FIN|1963-08-07|63|juha.karvonen@huhtamaki.example|(319) 555-0128|9694 W 6th Ave|Humboldt|SD|57035|Huhtamäki [faux]|
+first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer|native|country
+Juha|Karvonen|MALE|FIN|1963-08-07|63|juha.karvonen@huhtamaki.example|(319) 555-0128|Happotie 136|Lappeenranta||53920|Huhtamäki [faux]||FI
 ```
 
 A South Korean shows the Hangul in every format: first in the brackets in
@@ -342,7 +345,7 @@ A South Korean shows the Hangul in every format: first in the brackets in
 `lastName` in `json`. The email stays in Latin letters. With `-r rok`:
 
 ```text
-Yeong-min Jeon (전영민, female, 19) <yeongmin.jeon56@spglobal.example> (319) 555-0128, 9694 W 6th Ave, Humboldt, SD 57035, works at S&P Global [faux]
+Yeong-min Jeon (전영민, female, 19) <yeongmin.jeon56@bravesound.example> (319) 555-0128, 28546 Cheongju-si, KR, works at Brave Entertainment [faux]
 ```
 
 ```json
@@ -356,8 +359,9 @@ fit):
 [
   {"firstName":"Maya","lastName":"Guo","gender":"FEMALE","region":"ASIA","dateOfBirth":"2007-02-06","age":19,
    "email":"maya.guo56@hannstar.example","phone":"(319) 555-0128",
-   "address":{"street":"9694 W 6th Ave","city":"Humboldt","state":"SD","postalCode":"57035","country":"US"},
-   "employer":{"name":"HannStar Display Corporation [faux]","city":"Taipei","state":"","country":"TW","domain":"hannstar.example"}}
+   "address":{"street":"Danshui Old Street 136","city":"Danshui","state":"","postalCode":"","country":"TW"},
+   "employer":{"name":"HannStar Display Corporation [faux]",
+     "address":{"street":"","city":"Taipei","state":"","postalCode":"","country":"TW"},"domain":"hannstar.example"}}
 ]
 ```
 
@@ -392,7 +396,7 @@ Volkswagen Group [faux], Wolfsburg, DE (volkswagenag.example)
 | Script | Also takes | `pipe` columns | `json` fields |
 |---|---|---|---|
 | `faux-name.sh` | `-r, --region R` | `first\|last\|native` | `firstName`, `lastName`, and `nativeName` when there is one |
-| `faux-company.sh` | `--real-companies` | `name\|city\|state\|domain\|country` | `name`, `city`, `state`, `country`, `domain` |
+| `faux-company.sh` | `--real-companies` | `name\|city\|state\|domain\|country` | `name`, `address` (`street`, `city`, `state`, `postalCode`, `country`), `domain` |
 
 `text` prints one name, with its native form in brackets when it has one, or
 one company with its city, state and domain, per line. Without the scripts, run their classes from the jar:
@@ -407,7 +411,7 @@ own.
 
 ## Where the data comes from
 
-50 bundled files in `src/main/resources/org/tauasa/faux/data/`, all
+52 bundled files in `src/main/resources/org/tauasa/faux/data/`, all
 UTF-8 and NFC-normalized. Each file's first line names its fields, its source
 and the date it was built:
 
@@ -417,6 +421,7 @@ and the date it was built:
 | US companies with headquarters and domain | 1,500 | Wikidata: by revenue, then NYSE- and Nasdaq-listed companies by employee count. Headquarters placed with GeoNames (CC BY 4.0) |
 | Companies outside the US with headquarters city, country and domain | 4,000 from 170 countries, at most 120 each | Wikidata: by how many Wikipedia language editions have an article on them, less what Wikidata types as universities, schools, central banks, sports clubs, hospitals, research institutes or public bodies, and names of other non-businesses. The country is the headquarters' |
 | US streets with city, state and ZIP | 1,500, 30 per state | US Census TIGER/Line 2024 (public domain), with each ZIP's city and state from GeoNames |
+| Streets outside the US with city and postal code, for every country an employer is in | 7,374: up to 50 streets in each of 64 countries, and up to 50 cities, with an empty street, in each of the other 106 | Wikidata streets (CC0) with coordinates, named in the country's own language where it's written in Latin letters, else in English; city and postal code from GeoNames (CC BY 4.0), the nearest to the street. 82% of the international companies are in a country with streets; South Korea, Indonesia, South Africa, Malaysia, the UAE and Vietnam are among those with cities only |
 
 One more file is in [`tools/data/extra/`](tools/data/extra/), outside the
 jar, until the generator reads it: 1,250 US cities with state and ZIP (25 per

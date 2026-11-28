@@ -108,7 +108,7 @@ public final class FauxPersonCli {
             err.println("seed: " + gen.seed());
             LocalDate on = today;
             CliSupport.print(out, format,
-                    "first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer|native",
+                    "first|last|gender|region|dob|age|email|phone|street|city|state|zip|employer|native|country",
                     count, gen::next, p -> text(p, on), p -> pipe(p, on), p -> json(p, on));
             return 0;
         } catch (IllegalArgumentException e) {
@@ -134,17 +134,18 @@ public final class FauxPersonCli {
     static String text(Person p, LocalDate today) {
         var a = p.address();
         String nat = CliSupport.nativeFull(p.name());
-        return String.format(Locale.ROOT, "%s %s (%s%s, %d) <%s> %s, %s, %s, %s %s, works at %s",
+        return String.format(Locale.ROOT, "%s %s (%s%s, %d) <%s> %s, %s, works at %s",
                 p.firstName(), p.lastName(), nat.isEmpty() ? "" : nat + ", ",
                 p.gender().name().toLowerCase(Locale.ROOT), p.ageOn(today),
-                p.email(), p.phone(), a.street(), a.city(), a.state(), a.postalCode(), p.employer().name());
+                p.email(), p.phone(), CliSupport.addressText(a), p.employer().name());
     }
 
     static String pipe(Person p, LocalDate today) {
         var a = p.address();
         return String.join("|", p.firstName(), p.lastName(), p.gender().name(), p.region().name(),
                 p.dateOfBirth().toString(), Integer.toString(p.ageOn(today)), p.email(), p.phone(),
-                a.street(), a.city(), a.state(), a.postalCode(), p.employer().name(), CliSupport.nativeFull(p.name()));
+                a.street(), a.city(), a.state(), a.postalCode(), p.employer().name(), CliSupport.nativeFull(p.name()),
+                a.country());
     }
 
     static String json(Person p, LocalDate today) {
@@ -155,11 +156,8 @@ public final class FauxPersonCli {
                 + "," + field("gender", p.gender().name()) + "," + field("region", p.region().name())
                 + "," + field("dateOfBirth", p.dateOfBirth().toString()) + ",\"age\":" + p.ageOn(today)
                 + "," + field("email", p.email()) + "," + field("phone", p.phone())
-                + ",\"address\":{" + field("street", a.street()) + "," + field("city", a.city())
-                + "," + field("state", a.state()) + "," + field("postalCode", a.postalCode())
-                + "," + field("country", a.country()) + "}"
-                + ",\"employer\":{" + field("name", e.name()) + "," + field("city", e.city())
-                + "," + field("state", e.state()) + "," + field("country", e.country())
+                + "," + CliSupport.addressJson(a)
+                + ",\"employer\":{" + field("name", e.name()) + "," + CliSupport.addressJson(e.address())
                 + "," + field("domain", e.domain()) + "}}";
     }
 }

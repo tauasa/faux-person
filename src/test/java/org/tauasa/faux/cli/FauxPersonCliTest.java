@@ -89,27 +89,27 @@ class FauxPersonCliTest {
     }
 
     @Test
-    void pipeFormatHasAHeaderAndFourteenColumns() {
+    void pipeFormatHasAHeaderAndFifteenColumns() {
         assertEquals(0, run("-n", "3", "-s", "2", "--format", "pipe"));
         var lines = out.lines().toList();
         assertEquals(4, lines.size());
-        assertTrue(lines.get(0).endsWith("|employer|native"), lines.get(0));
-        lines.forEach(l -> assertEquals(14, l.split("\\|", -1).length, l));
+        assertTrue(lines.get(0).endsWith("|employer|native|country"), lines.get(0));
+        lines.forEach(l -> assertEquals(15, l.split("\\|", -1).length, l));
     }
 
-    /** A South Korean's Hangul name leads the text brackets, fills the last pipe column and is a JSON object. */
+    /** A South Korean's Hangul name leads the text brackets, fills the native pipe column and is a JSON object. */
     @Test
     void koreansShowTheirHangulInEachFormat() {
         assertEquals(0, run("-n", "3", "-s", "2", "-r", "rok", "--today", "2026-11-20"));
         out.lines().forEach(l -> assertTrue(l.matches("[A-Za-z' -]+ \\([\\uAC00-\\uD7A3]{2,6}, \\w+, \\d+\\) <.*"), l));
         assertEquals(0, run("-n", "3", "-s", "2", "-r", "rok", "-f", "pipe"));
-        out.lines().skip(1).forEach(l -> assertTrue(l.matches(".*\\|[\\uAC00-\\uD7A3]{2,6}"), l));
+        out.lines().skip(1).forEach(l -> assertTrue(l.matches(".*\\|[\\uAC00-\\uD7A3]{2,6}\\|KR"), l));
         assertEquals(0, run("-n", "3", "-s", "2", "-r", "rok", "-f", "json"));
         assertEquals(3, out.split("\"nativeName\":\\{\"firstName\":\"[^\"]+\",\"lastName\":\"[^\"]+\",\"fullName\":\"").length - 1, out);
         assertEquals(0, run("-n", "3", "-s", "2", "-r", "gbr", "-f", "json"));
         assertTrue(!out.contains("nativeName"), out);
         assertEquals(0, run("-n", "3", "-s", "2", "-r", "gbr", "-f", "pipe"));
-        out.lines().skip(1).forEach(l -> assertTrue(l.endsWith("|"), l));
+        out.lines().skip(1).forEach(l -> assertTrue(l.matches(".*\\|\\|[A-Z]{2}"), l));
     }
 
     /**
@@ -117,7 +117,9 @@ class FauxPersonCliTest {
      * names are only added beside them, so this fails when anything changes who a
      * seed draws. Update the hash only with a CHANGELOG line saying what changed.
      * 0.4.0's: employers come from the person's region, so employer and email
-     * changed from 0.3.0's and nothing else did.
+     * changed from 0.3.0's and nothing else did. 0.5.0's: a person lives in their
+     * employer's country, so the address of everyone with an employer outside
+     * the US changed from 0.4.0's and nothing else did.
      */
     @Test
     void seed42sPeopleArePinned() throws Exception {
@@ -125,7 +127,7 @@ class FauxPersonCliTest {
         String latin = String.join("\n", out.lines().skip(1)
                 .map(l -> String.join("|", java.util.Arrays.copyOf(l.split("\\|", -1), 13))).toList());
         byte[] sha = java.security.MessageDigest.getInstance("SHA-256").digest(latin.getBytes(StandardCharsets.UTF_8));
-        assertEquals("def8f34a7af612fbc09e4f66f26d4db8d872d39db2f7917878b4ebb092a45d97",
+        assertEquals("c0097c1ebdc13632d32b1d99f7c334fb3665d7800cf69fc5b37180356ad6a83b",
                 java.util.HexFormat.of().formatHex(sha));
     }
 

@@ -3,7 +3,7 @@ Copyright 2026 Tauasa Timoteo
 
 The data files in src/main/resources/org/tauasa/faux/data/ (bundled in
 the jar) and tools/data/extra/ (in the source repository only) were built on
-2026-11-19 and 2026-11-20 by the scripts in tools/data/ from these sources.
+2026-11-19, 2026-11-20, 2026-11-26 and 2026-11-28 by the scripts in tools/data/ from these sources.
 Each file's first line gives its build date.
 
 1. Wikidata (https://www.wikidata.org), CC0 1.0, queried through the QLever
@@ -14,6 +14,7 @@ Each file's first line gives its build date.
      romanization.
    - us_companies_domains.txt and intl_companies_domains.txt: company names,
      headquarters, countries and official websites.
+   - intl_streets.txt: names and locations of streets outside the US.
 
 2. GeoNames (https://www.geonames.org), licensed under the Creative Commons
    Attribution 4.0 License (https://creativecommons.org/licenses/by/4.0/).
@@ -21,8 +22,12 @@ Each file's first line gives its build date.
      (export/zip/US.zip, export/dump/cities1000.zip).
    - us_street_names_city_state_zip.txt: the city and state for each ZIP code.
    - us_companies_domains.txt: headquarters coordinates resolved to a city.
+   - intl_streets.txt: the city and postal code nearest each street, and the
+     largest places of countries with too few streets
+     (export/dump/cities1000.zip, export/zip/allCountries.zip).
    Changes: places were sampled per state, joined to postal codes, and reduced
-   to name, state and one ZIP code.
+   to name, state and one ZIP code; for intl_streets.txt, reduced to a place
+   name and one postal code per street.
 
 3. US Census Bureau, TIGER/Line Shapefiles 2024, Address Features (ADDRFEAT).
    A work of the US Government, not subject to copyright in the United States.

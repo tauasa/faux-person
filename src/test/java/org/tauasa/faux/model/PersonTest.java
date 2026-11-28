@@ -14,7 +14,7 @@ class PersonTest {
 
     private static final Address ADDRESS =
             new Address("1234 Maple Ave", "Springfield", "IL", "62704", "US");
-    private static final Company COMPANY = new Company("Costco", "Issaquah", "WA", "costco.com");
+    private static final Company COMPANY = new Company("Costco", new Address("", "Issaquah", "WA", "", "US"), "costco.com");
 
     private static Person bornOn(LocalDate dob) {
         return new Person(new Name("Ada", "Lovelace"), Gender.FEMALE, Region.WESTERN, dob,
@@ -92,12 +92,12 @@ class PersonTest {
                 return new Address(a[0], a[1], a[2], a[3], a[4]);
             });
         }
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 3; i++) {
             int at = i;
             b.add(args -> {
-                String[] a = {"Costco", "Issaquah", "WA", "costco.com"};
+                Object[] a = {"Costco", new Address("", "Issaquah", "WA", "", "US"), "costco.com"};
                 a[at] = null;
-                return new Company(a[0], a[1], a[2], a[3]);
+                return new Company((String) a[0], (Address) a[1], (String) a[2]);
             });
         }
         return b.build();

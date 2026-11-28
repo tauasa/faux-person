@@ -3,24 +3,27 @@ package org.tauasa.faux.model;
 import java.util.Objects;
 
 /**
- * A postal address. In v1 every address is in the US.
+ * A postal address, in the US or another country. A field the data has no
+ * value for is empty, never {@code null}.
  *
- * @param street     house number and street, for example {@code "1234 Maple Ave"}
+ * @param street     house number and street, for example {@code "1234 Maple Ave"} or
+ *                   {@code "Hauptstraße 12"}; empty where the data has a city but no street
  * @param city       city name, for example {@code "Springfield"}
- * @param state      two-letter USPS state code, for example {@code "IL"}
- * @param postalCode five-digit ZIP code, for example {@code "62704"}
- * @param country    ISO 3166-1 alpha-2 country code, {@code "US"} in v1
+ * @param state      two-letter USPS state code in the US, for example {@code "IL"}; empty elsewhere
+ * @param postalCode ZIP code in the US, for example {@code "62704"}; elsewhere the country's
+ *                   postal code, or empty where the data has none
+ * @param country    ISO 3166-1 alpha-2 country code, for example {@code "US"} or {@code "FR"}
  */
 public record Address(String street, String city, String state, String postalCode, String country) {
 
     /**
      * Rejects {@code null} fields.
      *
-     * @param street     house number and street, for example {@code "1234 Maple Ave"}
-     * @param city       city name, for example {@code "Springfield"}
-     * @param state      two-letter USPS state code, for example {@code "IL"}
-     * @param postalCode five-digit ZIP code, for example {@code "62704"}
-     * @param country    ISO 3166-1 alpha-2 country code, {@code "US"} in v1
+     * @param street     house number and street, or empty
+     * @param city       city name
+     * @param state      two-letter USPS state code in the US, or empty
+     * @param postalCode postal code, or empty
+     * @param country    ISO 3166-1 alpha-2 country code
      * @throws NullPointerException if any field is {@code null}
      */
     public Address {

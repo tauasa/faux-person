@@ -133,7 +133,7 @@ public final class CompanyGenerator {
      */
     static Company draw(List<Company> companies, boolean real, SplittableRandom random) {
         Company c = companies.get(random.nextInt(companies.size()));
-        return real ? c : new Company(c.name() + " [faux]", c.city(), c.state(), c.country(), exampleDomain(c.domain()));
+        return real ? c : new Company(c.name() + " [faux]", c.address(), exampleDomain(c.domain()));
     }
 
     /**

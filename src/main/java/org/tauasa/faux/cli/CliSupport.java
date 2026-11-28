@@ -3,12 +3,15 @@ package org.tauasa.faux.cli;
 import java.io.PrintStream;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Locale;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
+import org.tauasa.faux.model.Address;
 import org.tauasa.faux.model.Name;
 import org.tauasa.faux.model.NativeName;
 import org.tauasa.faux.model.Region;
@@ -107,6 +110,33 @@ final class CliSupport {
 
     static String field(String name, String value) {
         return "\"" + name + "\":" + quote(value);
+    }
+
+    /**
+     * An address on one line, leaving out what's empty: {@code 12 Main St, Springfield, IL 62704}
+     * in the US, and {@code Hauptstraße 12, 10115 Berlin, DE} elsewhere.
+     */
+    static String addressText(Address a) {
+        List<String> parts = new ArrayList<>();
+        if (!a.street().isEmpty()) {
+            parts.add(a.street());
+        }
+        if (a.country().equals("US")) {
+            parts.add(a.city());
+            parts.add((a.state() + " " + a.postalCode()).strip());
+        } else {
+            parts.add((a.postalCode() + " " + a.city()).strip());
+            parts.add(a.country());
+        }
+        parts.removeIf(String::isEmpty);
+        return String.join(", ", parts);
+    }
+
+    /** {@code "address":{...}}, with every field, empty ones included. */
+    static String addressJson(Address a) {
+        return "\"address\":{" + field("street", a.street()) + "," + field("city", a.city())
+                + "," + field("state", a.state()) + "," + field("postalCode", a.postalCode())
+                + "," + field("country", a.country()) + "}";
     }
 
     /** The name in its own script, written as that language writes it, or "" when there's none. */

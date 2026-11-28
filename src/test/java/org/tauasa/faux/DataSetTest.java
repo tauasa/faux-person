@@ -280,6 +280,19 @@ class DataSetTest {
         cities.forEach(c -> assertTrue(ZIP.matcher(c[2]).matches(), String.join("|", c)));
     }
 
+    /** A person lives in their employer's country, so every employer's country needs addresses. */
+    @Test
+    void everyEmployersCountryHasAddresses() {
+        DataSet d = DataSet.get();
+        Set<String> countries = d.companies.stream().map(c -> c.address().country())
+                .filter(c -> !c.equals("US")).collect(java.util.stream.Collectors.toCollection(java.util.TreeSet::new));
+        for (String c : countries) {
+            // At least one: Monaco has a single place.
+            assertTrue(!d.intlStreets(c).isEmpty(), c + " has no address lines");
+            assertTrue(d.intlStreets(c).stream().noneMatch(s -> s.city().isEmpty()), c);
+        }
+    }
+
     @Test
     void streetsAndCompaniesAreInTheFiftyStates() {
         DATA.streets.forEach(s -> {
@@ -287,19 +300,19 @@ class DataSetTest {
             assertTrue(ZIP.matcher(s.postalCode()).matches(), s.toString());
         });
         DATA.companies.forEach(c -> {
-            if (c.country().equals("US")) {
-                assertTrue(STATES.contains(c.state()), c.toString());
+            if (c.address().country().equals("US")) {
+                assertTrue(STATES.contains(c.address().state()), c.toString());
             } else {
-                assertEquals("", c.state(), c.toString());
+                assertEquals("", c.address().state(), c.toString());
                 // A current ISO 3166-1 code: no SU, DD, YU or XK.
-                assertTrue(java.util.Set.of(java.util.Locale.getISOCountries()).contains(c.country()), c.toString());
+                assertTrue(java.util.Set.of(java.util.Locale.getISOCountries()).contains(c.address().country()), c.toString());
             }
             assertTrue(c.domain().matches("[a-z0-9-]+(\\.[a-z0-9-]+)+"), c.toString());
         });
-        long us = DATA.companies.stream().filter(c -> c.country().equals("US")).count();
+        long us = DATA.companies.stream().filter(c -> c.address().country().equals("US")).count();
         assertTrue(us >= 1000, "US companies: " + us);
         assertTrue(DATA.companies.size() - us >= 3000, "international companies: " + (DATA.companies.size() - us));
-        assertTrue(DATA.companies.stream().map(Company::country).distinct().count() >= 100, "countries");
+        assertTrue(DATA.companies.stream().map(c -> c.address().country()).distinct().count() >= 100, "countries");
         assertEquals(DATA.companies.size(), DATA.companies.stream().map(Company::domain).distinct().count());
         // Marked, a domain keeps its first label, so those must differ too.
         assertEquals(DATA.companies.size(),
