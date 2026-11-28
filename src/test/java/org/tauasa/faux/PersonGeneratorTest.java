@@ -70,7 +70,7 @@ class PersonGeneratorTest {
     @Test
     void byDefaultEmployersAreMarkedAndEmailsAreUnderDotExample() {
         Set<Company> marked = DATA.companies.stream()
-                .map(c -> new Company(c.name() + " [faux]", c.city(), c.state(), c.country(),
+                .map(c -> new Company(c.name() + " [faux]", c.address(),
                         CompanyGenerator.exampleDomain(c.domain())))
                 .collect(Collectors.toSet());
         Pattern shape = Pattern.compile("^[a-z0-9]+\\.[a-z0-9]+\\d{0,2}@[a-z0-9-]+\\.example$");
@@ -92,13 +92,13 @@ class PersonGeneratorTest {
     void employersComeFromThePersonsRegion(Region r) {
         Set<String> own = DataSet.COUNTRIES.get(r);
         Set<String> near = DataSet.NEARBY.get(r);
-        long ownCount = own == null ? 0 : DATA.companies.stream().filter(c -> own.contains(c.country())).count();
+        long ownCount = own == null ? 0 : DATA.companies.stream().filter(c -> own.contains(c.address().country())).count();
         Set<String> allowed = own == null ? null : ownCount >= DataSet.MIN_EMPLOYERS ? own : near;
         Set<String> seen = new java.util.HashSet<>();
         for (Person p : gen(21).region(r).realCompanies(true).build().next(400)) {
-            seen.add(p.employer().country());
+            seen.add(p.employer().address().country());
             if (allowed != null) {
-                assertTrue(allowed.contains(p.employer().country()), r + ": " + p.employer());
+                assertTrue(allowed.contains(p.employer().address().country()), r + ": " + p.employer());
             }
         }
         if (r == Region.WESTERN) {
@@ -115,7 +115,7 @@ class PersonGeneratorTest {
     void anEmptyInternationalFileLeavesOnlyUsEmployers(@TempDir Path dir) throws Exception {
         Files.writeString(dir.resolve("intl_companies_domains.txt"), "# none\n");
         for (Person p : gen(22).region(Region.JPN).dataDirectory(dir).build().next(50)) {
-            assertEquals("US", p.employer().country(), p.employer().toString());
+            assertEquals("US", p.employer().address().country(), p.employer().toString());
         }
     }
 
@@ -169,13 +169,71 @@ class PersonGeneratorTest {
         Set<String> lines = DATA.streets.stream()
                 .map(s -> s.street() + "|" + s.city() + "|" + s.state() + "|" + s.postalCode())
                 .collect(Collectors.toSet());
-        for (Person p : gen(5).build().next(2000)) {
+        int us = 0;
+        for (Person p : gen(5).region(Region.WESTERN).build().next(2000)) {
             Address a = p.address();
+            if (!a.country().equals("US")) {
+                continue;
+            }
+            us++;
             String[] parts = a.street().split(" ", 2);
             int number = Integer.parseInt(parts[0]);
             assertTrue(number >= 1 && number <= 9999, a.street());
             assertTrue(lines.contains(parts[1] + "|" + a.city() + "|" + a.state() + "|" + a.postalCode()), a.toString());
-            assertEquals("US", a.country());
+        }
+        assertTrue(us > 200, "WESTERN people with a US employer: " + us);
+    }
+
+    /**
+     * A person lives in their employer's country, both ways: a US employer, a
+     * US address; a French employer, a French one. Abroad the address is one of
+     * that country's lines, with a house number when it has a street, and no
+     * state.
+     */
+    @ParameterizedTest
+    @EnumSource(Region.class)
+    void peopleLiveInTheirEmployersCountry(Region r) {
+        for (Person p : gen(23).region(r).build().next(300)) {
+            Address home = p.address();
+            String country = p.employer().address().country();
+            assertEquals(country, home.country(), p.toString());
+            if (country.equals("US")) {
+                assertTrue(home.state().matches("[A-Z]{2}"), home.toString());
+                continue;
+            }
+            assertEquals("", home.state(), home.toString());
+            Set<String> lines = DATA.intlStreets(country).stream()
+                    .map(s -> s.street() + "|" + s.city() + "|" + s.postalCode()).collect(Collectors.toSet());
+            String street = home.street().replaceFirst("^\\d{1,3} | \\d{1,3}$", "");
+            assertTrue(home.street().isEmpty() || !street.equals(home.street()), "a house number: " + home);
+            assertTrue(lines.contains(street + "|" + home.city() + "|" + home.postalCode()), home.toString());
+        }
+    }
+
+    /** With no streets for a country, a person there lives in their employer's headquarters city. */
+    @Test
+    void anEmptyStreetFileAbroadLeavesTheHeadquartersCity(@TempDir Path dir) throws Exception {
+        Files.writeString(dir.resolve("intl_streets.txt"), "# none\n");
+        for (Person p : gen(24).region(Region.FRA).dataDirectory(dir).build().next(50)) {
+            Address hq = p.employer().address();
+            assertEquals(new Address("", hq.city(), "", "", hq.country()), p.address(), p.toString());
+        }
+    }
+
+    /** Where a person lives takes the same draws wherever it is, so the rest of each person is as before. */
+    @Test
+    void anEmptyStreetFileAbroadChangesOnlyAddresses(@TempDir Path dir) throws Exception {
+        Files.writeString(dir.resolve("intl_streets.txt"), "# none\n");
+        List<Person> with = gen(25).build().next(300);
+        List<Person> without = gen(25).dataDirectory(dir).build().next(300);
+        for (int i = 0; i < with.size(); i++) {
+            Person a = with.get(i);
+            Person b = without.get(i);
+            assertEquals(a.name(), b.name());
+            assertEquals(a.dateOfBirth(), b.dateOfBirth());
+            assertEquals(a.email(), b.email());
+            assertEquals(a.phone(), b.phone());
+            assertEquals(a.employer(), b.employer());
         }
     }
 

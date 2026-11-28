@@ -67,5 +67,18 @@ Query Service for their `P159`, `P131` or `P276` place names and added those
 as `hqName`. That placed 58 more companies. Without it, the file has the same
 shape with slightly different companies.
 
+Streets outside the US come after the international companies, since there's a
+line for each of their countries:
+
+```bash
+# 5. Streets outside the US: Wikidata streets (about 100 MB of query results),
+#    placed with GeoNames places and postal codes (about 30 MB of downloads).
+python3 -I tools/data/wdq.py tools/data/queries/q_streets_intl.rq $D/wd/streets_intl.csv
+curl -sSfL -o $D/geonames/postal-all.zip https://download.geonames.org/export/zip/allCountries.zip
+unzip -o -q $D/geonames/postal-all.zip -d $D/geonames/postal
+python3 -I tools/data/build_streets_intl.py $D/wd/streets_intl.csv $D/geonames/cities/cities1000.txt \
+  $D/geonames/postal/allCountries.txt $OUT/intl_companies_domains.txt $OUT 50 20
+```
+
 Then run `mvn verify`: `DataSetTest` checks every file still has the sizes and
 shapes the library relies on.

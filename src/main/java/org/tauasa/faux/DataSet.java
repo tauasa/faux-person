@@ -1,5 +1,6 @@
 package org.tauasa.faux;
 
+import org.tauasa.faux.model.Address;
 import org.tauasa.faux.model.Company;
 import org.tauasa.faux.model.Gender;
 import org.tauasa.faux.model.Region;
@@ -71,7 +72,11 @@ final class DataSet {
         }
     }
 
-    /** A street with the city, state and ZIP it runs through. */
+    /**
+     * A street with the city, state and postal code it runs through. Outside
+     * the US the state is empty, and so is the postal code where GeoNames has
+     * none near it; the street is empty where the country has city lines only.
+     */
     record Street(String street, String city, String state, String postalCode) {}
 
     final Map<Region, List<FirstName>> firstNames = new EnumMap<>(Region.class);
@@ -84,7 +89,10 @@ final class DataSet {
     final List<Company> companies;
     /** Each region's employers: its countries' companies, or every company (see {@link #employers}). */
     private final Map<Region, List<Company>> employers = new EnumMap<>(Region.class);
+    /** US streets. */
     final List<Street> streets;
+    /** Streets outside the US, by ISO 3166-1 alpha-2 country code. */
+    private final Map<String, List<Street>> intlStreets;
 
     /** Under the package, so the generic file names can't collide with another jar's. */
     private static final String RESOURCE_DIR = "/org/tauasa/faux/data/";
@@ -131,6 +139,7 @@ final class DataSet {
                     "LY", "MG", "MW", "ML", "MR", "MU", "MA", "MZ", "NA", "NE", "NG", "RW", "ST", "SN", "SC",
                     "SL", "SO", "ZA", "SS", "SD", "TZ", "TG", "TN", "UG", "ZM", "ZW", "EH"));
     static final String STREETS = "us_street_names_city_state_zip.txt";
+    static final String INTL_STREETS = "intl_streets.txt";
 
     private static volatile DataSet instance;
 
@@ -190,6 +199,7 @@ final class DataSet {
         names.add(COMPANIES);
         names.add(INTL_COMPANIES);
         names.add(STREETS);
+        names.add(INTL_STREETS);
         return List.copyOf(names);
     }
 
@@ -205,14 +215,35 @@ final class DataSet {
             surnames.put(r, sn);
             weightedSurnames.put(r, weighted(sn, Surname::weight));
         }
-        List<Company> all = new ArrayList<>(read(COMPANIES, 4, f -> new Company(f[0], f[1], f[2], "US", f[3])));
+        List<Company> all = new ArrayList<>(read(COMPANIES, 4,
+                f -> new Company(f[0], new Address("", f[1], f[2], "", "US"), f[3])));
         // May be empty: a data directory's empty file turns the international companies off.
-        all.addAll(read(INTL_COMPANIES, 4, true, f -> new Company(f[0], f[1], "", f[2], f[3])));
+        all.addAll(read(INTL_COMPANIES, 4, true,
+                f -> new Company(f[0], new Address("", f[1], "", "", f[2]), f[3])));
         companies = List.copyOf(all);
         for (Region r : Region.values()) {
             employers.put(r, employersFor(r));
         }
         streets = read(STREETS, 4, f -> new Street(f[0], f[1], f[2], f[3]));
+        // May be empty too: then a person abroad lives in their employer's headquarters city.
+        Map<String, List<Street>> abroad = new java.util.TreeMap<>();
+        for (String[] f : read(INTL_STREETS, 4, true, f -> f)) {
+            if (f[0].length() != 2 || f[2].isEmpty()) {
+                throw new IllegalStateException(INTL_STREETS + ": need a two-letter country and a city: "
+                        + String.join("|", f));
+            }
+            abroad.computeIfAbsent(f[0], k -> new ArrayList<>()).add(new Street(f[1], f[2], "", f[3]));
+        }
+        abroad.replaceAll((k, v) -> List.copyOf(v));
+        intlStreets = Map.copyOf(abroad);
+    }
+
+    /**
+     * The streets of a country other than the US, in file order, or an empty
+     * list if the data has none for it.
+     */
+    List<Street> intlStreets(String country) {
+        return intlStreets.getOrDefault(country, List.of());
     }
 
     /**
@@ -230,7 +261,7 @@ final class DataSet {
             if (countries == null) {
                 continue;
             }
-            List<Company> some = companies.stream().filter(c -> countries.contains(c.country())).toList();
+            List<Company> some = companies.stream().filter(c -> countries.contains(c.address().country())).toList();
             if (some.size() >= MIN_EMPLOYERS) {
                 return some;
             }

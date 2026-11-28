@@ -1,0 +1,17 @@
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+# Streets, avenues and boulevards outside the US, with their country, where
+# they are, and their names in Latin-script languages. build_streets_intl.py
+# picks one name per street and places it with GeoNames.
+SELECT ?s ?iso ?coord ?lang ?label WHERE {
+  VALUES ?type { wd:Q79007 wd:Q7543083 wd:Q54114 }
+  ?s wdt:P31 ?type.
+  ?s wdt:P17 ?c. ?c wdt:P297 ?iso.
+  FILTER(?iso != "US")
+  FILTER NOT EXISTS { ?c wdt:P576 ?gone }
+  ?s wdt:P625 ?coord.
+  ?s rdfs:label ?label.
+  BIND(LANG(?label) AS ?lang)
+  VALUES ?lang { "en" "mul" "fr" "de" "es" "it" "pt" "nl" "sv" "nb" "nn" "da" "fi" "pl" "cs" "sk" "hu" "ro"
+                 "hr" "sl" "tr" "id" "ms" "vi" "tl" "sq" "et" "lv" "lt" "ca" "eu" "gl" "is" "ga" "cy" "af"
+                 "sw" "lb" "mt" "az" "uz" "tk" }
+}

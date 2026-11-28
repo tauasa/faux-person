@@ -92,17 +92,18 @@ public final class FauxCompanyCli {
 
     /** {@code Costco [faux], Issaquah, WA (costco.example)}; outside the US the country takes the state's place. */
     static String text(Company c) {
-        return c.name() + ", " + c.city() + ", " + (c.state().isEmpty() ? c.country() : c.state())
+        var a = c.address();
+        return c.name() + ", " + a.city() + ", " + (a.state().isEmpty() ? a.country() : a.state())
                 + " (" + c.domain() + ")";
     }
 
     static String pipe(Company c) {
-        return String.join("|", c.name(), c.city(), c.state(), c.domain(), c.country());
+        var a = c.address();
+        return String.join("|", c.name(), a.city(), a.state(), c.domain(), a.country());
     }
 
     static String json(Company c) {
-        return "{" + field("name", c.name()) + "," + field("city", c.city())
-                + "," + field("state", c.state()) + "," + field("country", c.country())
+        return "{" + field("name", c.name()) + "," + CliSupport.addressJson(c.address())
                 + "," + field("domain", c.domain()) + "}";
     }
 }

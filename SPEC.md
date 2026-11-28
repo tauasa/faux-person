@@ -19,6 +19,7 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 
 | Date | Decision |
 |---|---|
+| 2026-11-28 | For 0.5.0: **a person lives in their employer's country**, both ways: a US employer, a US address; a French employer, a French one. **`Company` holds an `Address`** in place of `city`, `state` and `country`: `Company(name, address, domain)`, the address holding the headquarters' city, state (US only) and country, with street and postal code empty, since the data has neither. The old `city()`, `state()` and `country()` and the four-argument constructor are **removed, not deprecated**. Addresses abroad come from **Wikidata streets (CC0) placed with GeoNames (CC BY 4.0)**: a country with fewer than 20 usable streets gets city lines with an empty street. OpenStreetMap was ruled out: its ODbL is share-alike. Every address takes two draws, used or not, so **each seed's people are the same as 0.4.0's but for the addresses of those with an employer outside the US** |
 | 2026-11-26 | For 0.4.0: **international companies**. `intl_companies_domains.txt` adds 4,000 companies from 170 countries beside the 1,500 US ones, and **`Company` gains `country`** (ISO 3166-1 alpha-2, the headquarters' country), with `state` empty outside the US; `new Company(name, city, state, domain)` still builds a US one. **A person's employer comes from their region's countries** (a Japanese person works for a Japanese company), drawn uniformly as before, one draw. A region with fewer than 20 companies of its own looks to nearby countries (`DataSet.NEARBY`): Palestine to the Arab Middle East, Central Africa to all of Africa. `WESTERN`, and any region still short, draw from every company. So **every seed's employers and emails change**; nothing else does. `CompanyGenerator` draws from every company. A marked domain keeps the domain's first label (`sony.co.jp` → `sony.example`), which leaves every US one as it was; the bundled files keep first labels distinct. The company CLI adds a `country` pipe column after `domain` and a JSON field, a person's JSON employer adds `country`, and `text` shows a non-US company's country where a US one's state goes. An empty `intl_companies_domains.txt` in a data directory leaves the international companies out. Addresses stay in the US |
 | 2026-11-26 | For 0.4.0: **native names in seven more regions**: Japanese (`JPN`, kanji, or kana where Wikidata has no kanji), Cyrillic (`RUS`), Greek (`GRC`), Hebrew (`HEB`), Arabic (`PSE`, `NAF`) and Persian (`IRN`). Unlike South Korea's, the lists don't change: each existing line gains the native spelling most people on Wikidata carry for that Latin name, so **draws are unchanged and every seed gives the same people**, who only gain a native form. Japanese prefers a kanji spelling to a kana one and is written surname first with no space; the rest first name, space, surname. A surname line gains a fifth field for a feminine form that differs (`Petrov\|Petrova\|1663\|Петров\|Петрова`); Russian builds it from the masculine ending. A name with no native spelling on Wikidata stays without one, so coverage varies: at seed 42, every Japanese person has a native name, 93% of Palestinians, 84% of Greeks and Russians, 75% of Israelis, 57% of North Africans and 23% of Iranians. Thai was asked for and left out: Wikidata has Thai script for under 3% of the Thai names. A few spellings are hand fixes where Wikidata's most-carried label is a foreign form of the name (David דוד and Jonathan יונתן in Hebrew, Elena Елена and Eva Ева in Russian). For those seven regions every seed's people are the same in Latin letters, but `Name` and `Person` no longer `equals` 0.3.0's, and every output format adds their native name, so golden files that hold those regions change |
 | 2026-11-25 | For 0.3.0: **names in their own script**. `Name` gains `Optional<NativeName> nativeName()`, and a new **`NativeName`** record holds the first name, surname and full name as that language writes it (`영민`, `김`, `김영민`). `Region` doesn't change. Any region's first-name and surname lines may carry the native form as a fourth field, and a name gets one only when both halves have it. Today only `ROK` does: `rok_first_names.txt` and `rok_surnames.txt` are rebuilt from the Hangul lists, each line the romanization most people carry with its Hangul last, and the two `rok_hangul_*.txt` files leave `tools/data/extra/`. The Hangul lists' surnames drop the same non-Korean names as before, plus 리, 쑹 and 훙, so a South Korean Lee, Song or Hong is always 이, 송 or 홍. The full name's order is set per region as each one gains native names: South Korea's is surname first with no space. Adding a third component to `Name` breaks source and behavior that relied on two: a record pattern `Name(var f, var l)` no longer compiles, a mapper that calls the canonical constructor needs the third argument, and a generated South Korean name no longer `equals` a hand-built `new Name(first, last)`. On 0.x that's a minor bump. Draws are unchanged in number and order, so for a given seed only South Korean people change, and only their names and emails. Emails still use the romanized name. The CLIs add the native name in brackets in `text`, a last `native` column in `pipe`, and a `nativeName` object in `json` |
@@ -58,7 +59,9 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
    deliverable**: they're under the reserved `.example` domain, and employer
    names end in `[faux]`. `realCompanies(true)` opts into real names and
    domains, and its emails can be real inboxes. Addresses use real streets by
-   decision (above), so nothing should be mailed to one.
+   decision (above), in the US and elsewhere, so nothing should be mailed to
+   one. Phones stay in the US 555 range for everyone, including people who
+   live abroad.
 4. Zero runtime dependencies.
 
 ## Non-goals for v1
@@ -66,7 +69,7 @@ Dated rulings by the project owner. Change one only by writing a new dated line.
 - Government IDs, payment card numbers, bank accounts or passwords. They look
   like restricted data, and a library that makes convincing ones mostly helps
   fraud. They stay out by design.
-- Locales other than US addresses and phones.
+- Phone numbers outside the US format.
 - Matching names to a single country within a region (see *Known limits*).
 - Thread-safe sharing of one generator (see *Concurrency*).
 
@@ -90,9 +93,7 @@ public record Name(String firstName, String lastName, Optional<NativeName> nativ
 }
 public record NativeName(String firstName, String lastName, String fullName) {}   // 영민, 김, 김영민
 public record Address(String street, String city, String state, String postalCode, String country) {}
-public record Company(String name, String city, String state, String country, String domain) {
-    public Company(String name, String city, String state, String domain);   // a US company
-}
+public record Company(String name, Address address, String domain) {}   // address: HQ city, state, country
 public enum Gender { FEMALE, MALE, NONBINARY }
 public enum Region { WESTERN, ASIA, RUS, ROK, MEX, IRN, HEB, PSE, JPN, PHL, VNM, THA,
                      NAF, CAF, SAF, BRA, GBR, FRA, ESP, PRT, GRC, NOR, SWE, FIN }
@@ -142,7 +143,7 @@ every seed produces (see *Versioning*).
 | 6 | `employer` | Uniform from the companies headquartered in the region's countries (`DataSet.COUNTRIES`); for a region with fewer than 20, from its nearby countries (`DataSet.NEARBY`); for `WESTERN`, or a region still short, from every company in `us_companies_domains.txt` and `intl_companies_domains.txt`. Unless `realCompanies` is on, the name gets the suffix ` [faux]` and the domain becomes its first label and `.example` (`sony.co.jp` → `sony.example`). No other draw |
 | 7 | `email` | `first.last` from the romanized name, folded to lowercase ASCII, plus a 0–99 suffix on a coin flip, `@` the employer's domain (step 6) |
 | 8 | `phone` | `(AAA) 555-01NN`: AAA is 200–999 but not N11, NN is 00–99 |
-| 9 | `address` | Uniform line from `us_street_names_city_state_zip.txt`, then a house number 1–9999. Country `US` |
+| 9 | `address` | In the employer's country (step 6). In the US: a uniform line from `us_street_names_city_state_zip.txt`, then a house number 1–9999. Elsewhere: a uniform line of that country's from `intl_streets.txt`, then a house number 1–199, written before the street in countries that do so (`PersonGenerator.NUMBER_FIRST`: France, Britain, Ireland, Canada, Australia and others) and after it elsewhere. A city line, with an empty street, gives an address with no street and no number. A country with no lines gives the employer's headquarters city. State is empty outside the US. Every case takes the same two draws, used or not, so where a person lives never changes the people after them |
 
 Every file is read from the builder's `dataDirectory` when it holds a file of
 that name, and from the bundled data otherwise.
@@ -257,6 +258,7 @@ The African and European lists keep their diacritics (Félix, João, Härkönen)
 | `intl_companies_domains.txt` | 4,000 | `name\|HQ city\|country\|domain` | Wikidata: businesses none of whose countries is the US, with an English name, an official website and a headquarters city, ranked by how many Wikipedia language editions have an article on them, at most 120 per country, from 170 countries. The country is the headquarters' (ISO 3166-1 alpha-2), when the company lists it too. Left out: what Wikidata types as universities, schools, central banks, sports clubs, hospitals, research institutes or public bodies; other non-businesses by name; names not in Latin letters. Domains are registrable domains by the Public Suffix List (`build_companies_intl.py`) |
 | `us_cities_states_zip.txt` *(extra)* | 1,250 | `city\|state\|zip` | GeoNames (CC BY 4.0): 25 per state, the 10 largest plus 15 at random |
 | `us_street_names_city_state_zip.txt` | 1,500 | `street\|city\|state\|zip` | Census TIGER/Line 2024 address features (public domain): 30 per state from its largest city's county |
+| `intl_streets.txt` | 7,374 | `country\|street\|city\|postal` | Wikidata streets, avenues and boulevards (CC0) with coordinates, outside the US, for every country in `intl_companies_domains.txt`: up to 50 per country, shuffled with a fixed seed. Named in the country's own language where it's written in Latin letters (`tools/data/build_streets_intl.py`'s `OWN`), else `mul`, then English. City: the nearest GeoNames place of 15,000+ people within 15 km, else the nearest within 25 km. Postal code: the nearest GeoNames postal code within 10 km, less French CEDEX codes, else empty. 64 countries have streets; the other 106 have up to 50 of their largest places with an empty street |
 
 How names were chosen: each country's names are ranked by how many people of
 that citizenship carry them on Wikidata, and countries take turns, rank by
@@ -305,8 +307,9 @@ output. The jar's `Main-Class` is `org.tauasa.faux.cli.FauxPersonCli`.
 | `--real-companies` | off: employer names end in `[faux]`, emails are under `.example` |
 | `-h, --help` | |
 
-`pipe` prints a header and 14 columns, the last, `native`, empty unless the
-name has a native form. `json` prints one array, with a `nativeName` object
+`pipe` prints a header and 15 columns: `native`, empty unless the name has a
+native form, then `country`, the address's. Outside the US `state` is empty.
+`json` gives the address and the employer's `address` as objects. `json` prints one array, with a `nativeName` object
 (`firstName`, `lastName`, `fullName`) after `lastName` only when there is
 one. `text` puts the native full name first in the brackets:
 `Yeong-min Kim (김영민, female, 19) <...>`. A bad argument
@@ -335,7 +338,7 @@ the bundled files' shape.
 | Ages at `ageRange(30,30)` and `(0,120)` with a fixed clock; 29 February | Date-of-birth bounds are off by one |
 | Email is `first.last[nn]@` the employer's domain; by default every employer is a company from the file with a `[faux]` name and a `.example` domain, and no two share one; with `realCompanies` it's the company as filed; the switch changes nothing else, `split()` keeps it | Email and employer drift apart, a default email could deliver, or the switch changes who is generated |
 | Phone matches `^\([2-9]\d{2}\) 555-01\d{2}$`, no N11 | A real-range number can come out |
-| Address is a bundled street line plus a 1–9999 house number | Addresses are invented or mismatched |
+| Address is a bundled street line plus a 1–9999 house number in the US, and abroad one of the country's lines with a 1–199 house number, or its city line; per region, every person lives in their employer's country, with a state only in the US; with no streets abroad, the HQ city, and nothing else about anyone changes; every employer's country has address lines | Addresses are invented or mismatched, or a person lives in another country than their employer |
 | Per region: names come from that region's files and fit the gender; women get feminine surnames | Region or gender rules break |
 | Weights `(1,0,0)` and `(0,0,1)`; mixed covers all regions | Weights are ignored |
 | The jar holds exactly the files the generator reads; every data file starts with a header | A file is left out, or an unused one creeps back in |

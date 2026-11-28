@@ -5,6 +5,33 @@ range or a bundled file changes what a seed produces, so it's called out here
 (see *Versioning* in [SPEC.md](SPEC.md)). Earlier rulings are in SPEC.md's
 *Decisions* table.
 
+## 0.5.0 (unreleased)
+
+- **People live where they work:** a person's address is in their employer's
+  country, and the other way round. A US employer still gives a US address,
+  drawn as before. A foreign one gives a real street in that country with a
+  house number, its city and, where GeoNames has one nearby, its postal code,
+  from the new `intl_streets.txt` (Wikidata streets placed with GeoNames). 64
+  countries have streets; the other 106, among them South Korea, Indonesia,
+  South Africa and Vietnam, have too few usable streets in Wikidata, and get a
+  city and postal code with an empty street. State is empty outside the US.
+- **Seeds:** names, genders, regions, dates of birth, emails, phones and
+  employers are the same as 0.4.0's for every seed. Only the addresses of
+  people with an employer outside the US change. In `WESTERN` that's about
+  three people in four, and in the other regions nearly everyone.
+- **Breaks:**
+  - `Company` is now `Company(name, Address address, domain)`. `city()`,
+    `state()` and `country()` are gone: use `address().city()` and so on. The
+    four- and five-argument constructors are gone too.
+  - `Address` can be outside the US: its `state`, `postalCode` and `street`
+    can be empty.
+- **Output:**
+  - The person CLI's `pipe` adds a last `country` column, and `text` writes a
+    foreign address as `street, postal city, country`.
+  - In `json`, a person's `employer` and each company hold an `address` object
+    in place of `city`, `state` and `country`.
+  - The company CLI's `pipe` and `text` are unchanged.
+
 ## 0.4.0 (2026-11-26)
 
 - **Native names in seven more regions:** Japanese (`JPN`, in kanji, or kana
